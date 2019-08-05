@@ -3,7 +3,6 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #169dff;
   color: #333;
 }
 
@@ -18,4 +17,28 @@ body {
   right: 0;
   height: 48px;
   transition: all 0.5s ease;
+}
+
+/*--------------------------------------------------------------
+# Side Bar
+--------------------------------------------------------------*/
+
+#side-bar {
+  background: #66ffe3;
+  position: absolute;
+  height: calc(100vh - 48px);
+  top: 48px;
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Main Content
+--------------------------------------------------------------*/
+
+#main-content {
+  background: blue;
+  position: absolute;
+  height: calc(100vh - 48px);
+  top: 48px;
+  right: 0;
 }
