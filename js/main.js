@@ -5,13 +5,24 @@ jQuery(document).ready(function( $ ) {
   });
 
   // handler for clicking on sidebar list
-  $(document).on('click', '.submenu', function(e) {
-    const subMenus = $('.submenu-list');
-    for (let i = 0; i< subMenus.length; i++) {
-      if (`#${subMenus[i].id}` !== e.target.hash) {
-        subMenus[i].classList.remove('show');
-      } else {
-        subMenus[i].classList.add('show');
+  $(document).on('click', '.side-bar-menu-title', function(e) {
+    const selectedMenuTitle = e.target;
+    const subMenuLists = $('.submenu-list');
+    const menuTitles = $('.side-bar-menu-title');
+    const menus = $('.side-bar-menu');
+
+    selectedMenuTitle.classList.contains('active') ? selectedMenuTitle.classList.remove('active')
+      : selectedMenuTitle.classList.add('active');
+
+    for (let i = 0; i< subMenuLists.length; i++) {
+      if(menuTitles[i] !== selectedMenuTitle) {
+        menuTitles[i].classList.remove('active');
+      }
+      menus[i].classList.remove('active');
+      subMenuLists[i].classList.remove('active');
+      if (`#${subMenuLists[i].id}` === e.target.hash) {
+        menus[i].classList.add('active');
+        subMenuLists[i].classList.add('active');
       }
     }
   });
