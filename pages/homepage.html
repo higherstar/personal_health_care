@@ -52,7 +52,7 @@
              aria-expanded="true"
              class="dropdown-toggle side-bar-menu-title active">HOME</a>
           <ul class="collapse list-unstyled submenu-list active show" id="home-submenu">
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Welcome</a>
             </li>
           </ul>
@@ -60,19 +60,19 @@
         <li class="side-bar-menu">
           <a href="#diagnosis-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle side-bar-menu-title">DIAGNOSIS</a>
           <ul class="collapse list-unstyled submenu-list" id="diagnosis-submenu">
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Companion Diagnostics</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Digital Health</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Genomics</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Advanced Imaging</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Digital Pathology</a>
             </li>
           </ul>
@@ -127,7 +127,7 @@
 
         <!-- MONITORING -->
         <div id="monitoring-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="monitoring-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             MONITORING
             <img src="../img/toggle_left.png">
           </button>
@@ -138,7 +138,7 @@
 
         <!-- CARE -->
         <div id="care-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="care-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             CARE
             <img src="../img/toggle_left.png">
           </button>
@@ -149,7 +149,7 @@
 
         <!-- ACCESS -->
         <div id="access-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="access-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ACCESS
             <img src="../img/toggle_left.png">
           </button>
@@ -160,7 +160,7 @@
 
         <!-- STAKEHOLDERS -->
         <div id="stakeholders-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="stakeholders-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             STAKEHOLDERS
             <img src="../img/toggle_left.png">
           </button>
@@ -171,7 +171,7 @@
 
         <!-- ENABLERS -->
         <div id="enablers-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="enablers-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ENABLERS
             <img src="../img/toggle_left.png">
           </button>
@@ -182,7 +182,7 @@
 
         <!-- VALUE-BASED HEALTHCARE -->
         <div id="health-care-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="health-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             VALUE-BASED<br/>HEALTHCARE
             <img src="../img/toggle_left.png">
           </button>
