@@ -191,10 +191,31 @@ ul {
   height: 30px !important;
 }
 
-.dropdown-item {
+.map-dropdown-menu .dropdown-toggle {
+  background: white;
+}
+
+.map-dropdown-menu .dropdown-menu {
+  min-width: 120px;
+  background: #FFFFFF94;
+}
+
+.map-dropdown-menu .dropdown-menu a {
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.map-dropdown-menu .dropdown-toggle::after {
+  display: none;
+}
+
+.map-dropdown-menu .dropdown-item {
   padding: 2px 7px;
 }
 
-.dropdown-menu {
-  min-width: 120px;
+.map-dropdown-menu .dropdown-item:hover, .map-dropdown-menu .dropdown-item:focus {
+  color: #16181B;
+  text-decoration: none;
+  background-color: #F8F9FAB0;
 }

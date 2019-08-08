@@ -136,24 +136,3 @@
   left: 83%;
   top: 47%;
 }
-
-/*--------------------------------------------------------------
-# Customize DropDown Menu
---------------------------------------------------------------*/
-.map-dropdown-menu .dropdown-toggle {
-  background: white;
-}
-
-.dropdown-menu {
-  background: #fff9;
-}
-
-.dropdown-menu a {
-  font-size: 11px;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
