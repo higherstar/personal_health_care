@@ -26,4 +26,18 @@ jQuery(document).ready(function( $ ) {
       }
     }
   });
+
+  // handler for clicking on dropdown
+  $('.custom-dropdown').click(function() {
+    const dropDowns = $('.custom-dropdown');
+
+    for (let i = 0; i< dropDowns.length; i++) {
+      $(dropDowns[i]).find('img').attr('src', '../img/toggle_left.png');
+    }
+
+    if ($(this).find('img').attr('src') === '../img/toggle_left.png')
+      $(this).find('img').attr('src', '../img/toggle_down.png');
+    else
+      $(this).find('img').attr('src', '../img/toggle_left.png');
+  });
 });

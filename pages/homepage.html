@@ -24,12 +24,16 @@
   Content Wrapper
 ============================-->
 <div class="content-wrapper">
+
+  <!--==========================
+      Header
+    ============================-->
   <header id="header" class="header header-hide">
     <div id="logo" class="pull-left d-flex">
       <h1>PERSONALISE HEALTHCARE SYSTEMS MAP</h1>
       <img src="../img/logo.png">
     </div>
-  </header><!-- #header -->
+  </header><!-- Header -->
 
   <!--==========================
       Content
@@ -42,12 +46,12 @@
     <div class="side-bar d-lg-block d-sm-none">
       <div class="side-bar-splitter"></div>
       <ul class="list-unstyled side-bar-content">
-        <li class="side-bar-menu">
+        <li class="side-bar-menu active">
           <a href="#home-submenu"
              data-toggle="collapse"
-             aria-expanded="false"
-             class="dropdown-toggle side-bar-menu-title">HOME</a>
-          <ul class="collapse list-unstyled submenu-list" id="home-submenu">
+             aria-expanded="true"
+             class="dropdown-toggle side-bar-menu-title active">HOME</a>
+          <ul class="collapse list-unstyled submenu-list active show" id="home-submenu">
             <li>
               <a href="#" class="side-bar-submenu-title">Welcome</a>
             </li>
@@ -108,9 +112,9 @@
 
         <!-- DIAGNOSIS -->
         <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             DIAGNOSIS
-            <i class="fa fa-heart"></i>
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Companion Diagnostics</a>
@@ -120,67 +124,74 @@
             <a class="dropdown-item" href="#">Digital Pathology</a>
           </div>
         </div><!-- DIAGNOSIS -->
+
         <!-- MONITORING -->
         <div id="monitoring-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             MONITORING
-            <i class="fa fa-heart"></i>
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Monitoring</a>
           </div>
         </div><!-- MONITORING -->
+
         <!-- CARE -->
         <div id="care-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             CARE
-            <i class="fa fa-heart"></i>
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Care</a>
           </div>
         </div><!-- CARE -->
+
         <!-- ACCESS -->
         <div id="access-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ACCESS
-            <i class="fa fa-heart"></i>
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Access</a>
           </div>
         </div><!-- ACCESS -->
+
         <!-- STAKEHOLDERS -->
         <div id="stakeholders-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             STAKEHOLDERS
-            <i class="fa fa-heart"></i>
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Stakeholders</a>
           </div>
         </div><!-- STAKEHOLDERS -->
+
         <!-- ENABLERS -->
         <div id="enablers-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ENABLERS
-            <i class="fa fa-heart"></i>
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Enablers</a>
           </div>
         </div><!-- ENABLERS -->
+
         <!-- VALUE-BASED HEALTHCARE -->
         <div id="health-care-dropdown" class="position-absolute map-dropdown-menu">
-          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            VALUE-BASED HEALTHCARE
-            <i class="fa fa-heart"></i>
+          <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            VALUE-BASED<br/>HEALTHCARE
+            <img src="../img/toggle_left.png">
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">Value-Based Healthcare</a>
           </div>
         </div><!-- VALUE-BASED HEALTHCARE -->
-      </div><!-- System map -->
+
+      </div><!-- System Map -->
 
       <!--==========================
         Welcome Modal
