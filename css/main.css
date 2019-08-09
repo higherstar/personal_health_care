@@ -139,7 +139,7 @@ ul {
   content: '―';
   position: absolute;
   margin-left: -20px;
-  margin-top: 1px;
+  margin-top: 0px;
   font-size: 9px;
   font-weight: bold;
   transform: scale(2, 5);
