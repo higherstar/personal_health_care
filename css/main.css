@@ -103,7 +103,7 @@ ul {
   padding-left: 10px;
 }
 
-.active > .side-bar-menu-title {
+.active > a{
   font-weight: bold;
 }
 
@@ -212,7 +212,7 @@ ul {
   background: #FFFFFFCC;
   z-index: 1;
   top: -24px !important;
-  padding-top: 24px;
+  padding-top: 26px;
 }
 
 .map-dropdown-menu .dropdown-menu a {

@@ -10,12 +10,15 @@
   <!-- Favicons -->
   <!--<link href="img/favicon.png" rel="icon">-->
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 
   <!-- Main Stylesheet File -->
   <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/homepage.css" rel="stylesheet">
+  <link href="../css/diagnosis.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +27,6 @@
   Content Wrapper
 ============================-->
 <div class="content-wrapper">
-
   <!--==========================
       Header
     ============================-->
@@ -38,7 +40,8 @@
   <!--==========================
       Content
     ============================-->
-  <div class="content d-flex">
+  <div class="content d-flex position-relative">
+    <div class="content-header"></div>
 
     <!--==========================
       Side Bar
@@ -47,32 +50,31 @@
       <div class="side-bar-splitter"></div>
       <ul class="list-unstyled side-bar-content">
         <li class="side-bar-menu">
-          <a href="#home-submenu"
-             data-toggle="collapse"
-             aria-expanded="false"
+          <a href="homepage.html"
+             aria-expanded="true"
              class="dropdown-toggle side-bar-menu-title">HOME</a>
-          <ul class="collapse list-unstyled submenu-list" id="home-submenu">
-            <li>
+          <ul class="collapse list-unstyled submenu-list active" id="home-submenu">
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Welcome</a>
             </li>
           </ul>
         </li >
         <li class="side-bar-menu active">
-          <a href="#diagnosis-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <a href="diagnosis.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
           <ul class="collapse list-unstyled submenu-list show active" id="diagnosis-submenu">
-            <li>
-              <a href="#" class="side-bar-submenu-title">Companion Diagnostics</a>
+            <li class="side-bar-submenu active">
+              <a href="#" class="side-bar-submenu-title active">Companion Diagnostics</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Digital Health</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Genomics</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Advanced Imaging</a>
             </li>
-            <li>
+            <li class="side-bar-submenu">
               <a href="#" class="side-bar-submenu-title">Digital Pathology</a>
             </li>
           </ul>
@@ -102,14 +104,23 @@
       Main Content
     ============================-->
     <div class="main-content align-items-center justify-content-center d-flex">
-
       <!--==========================
-        System Map
+        Details Map
       ============================-->
-      <div class="main-content-map d-flex justify-content-center align-items-center">
-        <!-- Map Image -->
-        <img src="../img/overview-map.png">
-      </div><!-- System Map -->
+      <div class="main-content-map row">
+
+        <div class="col-lg-6 diagnosis-map">
+          <div class="diagnosis-details-map">
+            <img src="../img/diagnosis_map.png">
+          </div>
+
+          <img src="../img/life_cycle.png" id="diagnosis-life-cycle">
+        </div>
+        <div class="col-lg-6 diagnosis-details">
+
+        </div>
+
+      </div><!-- Details Map -->
     </div><!-- Main Content -->
   </div><!-- Content -->
 </div><!-- Content Wrapper -->

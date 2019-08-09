@@ -4,26 +4,6 @@ jQuery(document).ready(function( $ ) {
     $('#welcome-modal').modal('show');
   });
 
-  // handler for clicking on sidebar list
-  $(document).on('click', '.side-bar-menu-title', function(e) {
-
-    e.target.classList.contains('active') ? e.target.classList.remove('active')
-      : e.target.classList.add('active');
-
-    for (let i = 0; i< $('.submenu-list').length; i++) {
-      if($('.submenu-list')[i] !== e.target) {
-        $('.side-bar-menu-title')[i].classList.remove('active');
-      }
-      $('.side-bar-menu')[i].classList.remove('active');
-      $('.submenu-list')[i].classList.remove('active');
-      if (`#${$('.submenu-list')[i].id}` === e.target.hash) {
-        $('.side-bar-menu')[i].classList.add('active');
-        $('.submenu-list')[i].classList.add('active');
-        e.target.classList.add('active');
-      }
-    }
-  });
-
   // handler for clicking on side bar submenu list
   $(document).on('click', '.side-bar-submenu-title', function(e) {
     for (let i = 0; i< $('.side-bar-submenu-title').length; i++) {
