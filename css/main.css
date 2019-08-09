@@ -2,6 +2,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Imago';
+  src: url('../lib/font/Berthold_Imago_Book.ttf');
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -78,32 +83,37 @@ ul {
 }
 
 .side-bar-menu {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   padding-left: calc(23vw + 21px);
   margin-left: -23vw;
 }
 
-.active > .side-bar-menu-title {
-  font-weight: bold;
-}
-
 .side-bar-menu::before {
   color: #71C6FF;
-  font-size: 20px;
+  font-size: 23px;
   content: '⬤';
-  margin-left: -32px;
+  margin-left: -34px;
   z-index: 3;
   position: relative;
 }
 
 .side-bar-menu-title, .side-bar-submenu-title {
   color: #000;
-  font-family: sans-serif;
+  font-family: Imago;
+  padding-left: 10px;
+}
+
+.active > .side-bar-menu-title {
+  font-weight: bold;
+}
+
+.side-bar-menu-title {
+  font-size: 18px;
   padding-left: 10px;
 }
 
 .side-bar-submenu-title {
-  font-size: 15px;
+  font-size: 16px;
   padding-left: 0;
 }
 
@@ -129,7 +139,7 @@ ul {
   content: '―';
   position: absolute;
   margin-left: -20px;
-  margin-top: 0;
+  margin-top: 1px;
   font-size: 9px;
   font-weight: bold;
   transform: scale(2, 5);
@@ -166,6 +176,7 @@ ul {
   padding-right: 15px;
   padding-left: 18px;
   color: black;
+  font-family: Imago;
   font-size: 11px;
   font-weight: bold;
   min-height: 30px;
@@ -202,7 +213,7 @@ ul {
 
 .map-dropdown-menu .dropdown-menu a {
   font-size: 11px;
-  font-family: sans-serif;
+  font-family: Imago;
   font-weight: bold;
 }
 

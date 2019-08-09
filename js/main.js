@@ -39,6 +39,10 @@ jQuery(document).ready(function( $ ) {
   });
 
   // handler for clicking on dropdown
+  $( ".custom-dropdown" ).blur(function() {
+    $(this).find('img').attr('src', '../img/toggle_left.png');
+  });
+
   $('.custom-dropdown').click(function() {
     const dropDowns = $('.custom-dropdown');
 
