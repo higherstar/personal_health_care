@@ -14,7 +14,6 @@ jQuery(document).ready(function( $ ) {
         $('.side-bar-submenu')[i].classList.add('active');
       }
     }
-
     e.target.classList.add('active');
   });
 
@@ -25,13 +24,11 @@ jQuery(document).ready(function( $ ) {
 
   $('.custom-dropdown').click(function() {
     const dropDowns = $('.custom-dropdown');
-
     for (let i = 0; i< dropDowns.length; i++) {
       if ($(dropDowns[i])[0].id !== $(this)[0].id) {
         $(dropDowns[i]).find('img').attr('src', '../img/toggle_left.png');
       }
     }
-
     if ($(this).find('img').attr('src') === '../img/toggle_left.png')
       $(this).find('img').attr('src', '../img/toggle_down.png');
     else
