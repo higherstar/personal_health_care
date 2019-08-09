@@ -41,7 +41,7 @@
       Content
     ============================-->
   <div class="content d-flex position-relative">
-    <div class="content-header"></div>
+    <div class="content-header position-absolute"><p>EARLY & ACCURATE DIAGNOSIS (INITIAL & RECURRENCE)</p></div>
 
     <!--==========================
       Side Bar
@@ -103,22 +103,85 @@
     <!--==========================
       Main Content
     ============================-->
-    <div class="main-content align-items-center justify-content-center d-flex">
+    <div class="main-content">
       <!--==========================
         Details Map
       ============================-->
-      <div class="main-content-map row">
+      <div class="main-content-map d-flex">
 
-        <div class="col-lg-6 diagnosis-map">
-          <div class="diagnosis-details-map">
+        <div class="col-lg-6 diagnosis-map position-relative d-flex justify-content-center">
+          <div class="diagnosis-details-map position-absolute">
             <img src="../img/diagnosis_map.png">
+            <div id="companion-diagnostics" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="companion-diagnostics-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="companion-diagnostics-btn-title" class="custom-expand-btn-title">Companion Diagnostics</p>
+            </div>
+
+            <div id="digital-health" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-health-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="digital-health-btn-title" class="custom-expand-btn-title">Digital Health</p>
+            </div>
+
+            <div id="genomics" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="genomics-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="genomics-btn-title" class="custom-expand-btn-title">Genomics</p>
+            </div>
+
+            <div id="advanced-imaging" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-imaging-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="advanced-imaging-btn-title" class="custom-expand-btn-title">Advanced Imaging</p>
+            </div>
+            <div id="digital-pathology" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-pathology-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="digital-pathology-btn-title" class="custom-expand-btn-title">Digital Pathology</p>
+            </div>
           </div>
-
-          <img src="../img/life_cycle.png" id="diagnosis-life-cycle">
+          <img src="../img/life_cycle.png" id="diagnosis-life-cycle" class="position-absolute">
         </div>
+
+        <!--==========================
+          Diagnosis  Details
+        ============================-->
         <div class="col-lg-6 diagnosis-details">
-
-        </div>
+          <div class="diagnosis-container">
+            <div class="diagnosis-right-header d-flex">
+              <img src="../img/toggle_prev.png">
+              <h1>ADVANCED IMAGEING</h1>
+              <img src="../img/toggle_next.png">
+            </div>
+            <div class="diagnosis-right-border-div"></div>
+            <div class="diagnosis-right-content">
+              <h2>Description</h2>
+              <p>Advanced imaging is a type of Meaningful Data at Scale. It refers to the use of computer algorithms to analyze digital outputs of X-rays, computed tomography (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used for medical diagnosis. </p>
+              <strong>Click button below to see:</strong>
+              <div class="diagnosis-red-section">
+                <img src="../img/connection_icon.png" />Connections with Other PHC Topics</div>
+              <div class="diagnosis-second-section"></div>
+              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left) </h2>
+              <p><strong>Improved access & personalized care - </strong>Development of automated algorithms can provide better and more accurate measurements of disease than currently available to help predict progression and response to therapy.</p>
+              <p><strong>Smarter & more ef?cient R&D - </strong>By automating time-consuming & costly processes (eg., secondary imaging reads & IRFs), this effort will result in signi?cantly faster trials, while more accurate quanti?cation of disease burden will. </p>
+              <h2>Roche and Roche partner examples/initiatives</h2>
+              <p>At Roche, we are focusing on curating and analyzing clinical images collected across Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms for more accurate predictions for disease progression and response to therapy. This automation will result in faster trials, more accurate quanti?cation of disease burden, and more robust cohort matching to synthetic control arm studies. </p>
+              <h2>Key drivers/considerations </h2>
+              <p><strong>Contracts -</strong>When entering into partnerships with Commercial companies and Academic institutions be aware of complex IP negotiations. Important to have both Legal and Partnering take a proactive lead to put a contract in place that meets the</p>
+            </div>
+          </div>
+        </div><!-- Diagnosis Details -->
 
       </div><!-- Details Map -->
     </div><!-- Main Content -->

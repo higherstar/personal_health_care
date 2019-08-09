@@ -108,7 +108,7 @@ ul {
 }
 
 .side-bar-menu-title {
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 10px;
 }
 
@@ -233,4 +233,63 @@ ul {
   color: #16181B;
   text-decoration: none;
   background-color: #F8F9FAB0;
+}
+
+
+/*--------------------------------------------------------------
+# Custom expand button
+--------------------------------------------------------------*/
+.custom-expand-btn {
+  background: #0066CC;
+  position: relative;
+  font-family: Imago;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 21px;
+  border-radius: 50%;
+  border: 3px solid white;
+  height: 40px;
+  width: 40px;
+  padding-left: 7px;
+  padding-top: 4px;
+  z-index: 2;
+}
+
+.custom-expand-btn:hover {
+  border: 3px solid white;
+}
+
+.custom-expand-btn:focus {
+  box-shadow: none;
+}
+
+.custom-expand-btn-minus {
+  transform: scale(1.9, 1);
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  z-index: 2;
+}
+
+.custom-expand-btn-plus {
+  z-index: 2;
+}
+
+.custom-expand-btn-title {
+  display: none;
+  background: white;
+  position: absolute;
+  height: 29px;
+  top: 0;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: black;
+  font-family: Imago;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 3px 8px 3px 24px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 1;
 }
