@@ -380,9 +380,9 @@
 }
 
 .arrow-to-cds {
-  width: 25%;
-  height: 25%;
-  top: calc(18% - 3px);
+  width: 18%;
+  height: 18%;
+  top: calc(25% - 3px);
   left: 14%;
 }
 
@@ -421,8 +421,8 @@
 }
 
 #diagnostics-solutions-cds {
-  left: 39%;
-  top: 11%;
+  left: 32%;
+  top: 17%;
   width: 23%;
   min-height: 13%;
 }
