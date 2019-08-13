@@ -282,7 +282,7 @@
   border-radius: 4px;
   background-color: #007bff;
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   margin-top:5px;
 }
 
@@ -352,7 +352,7 @@
 .diagnostics-solutions-circle-block {
   top: 0;
   left: 0;
-  height: 250%;
+  height: 225%;
   width: 75%;
   font-size: 12px;
   margin-left: 45px;
@@ -375,7 +375,7 @@
 
 .diagnostics-solutions-circle-block .key-card-content-star {
   font-size: 33px;
-  top: 57%;
+  top: 52%;
   left: 19%;
 }
 
@@ -449,7 +449,7 @@
 
 #arrow-patients {
   left: 2px;
-  top: 54%;
+  top: 53%;
 }
 
 #arrow-hospitals {
