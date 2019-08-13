@@ -61,6 +61,7 @@ ul {
   height: 100%;
   margin-left: 0;
   display: flex !important;
+  z-index: 100;
 }
 .side-bar-splitter {
   width: 23%;

@@ -169,7 +169,7 @@
               <h2>Description</h2>
               <p>Advanced imaging is a type of Meaningful Data at Scale. It refers to the use of computer algorithms to analyze digital outputs of X-rays, computed tomography (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used for medical diagnosis. </p>
               <strong>Click button below to see:</strong>
-              <div class="diagnosis-red-section">
+              <div class="diagnosis-red-section" data-toggle="modal" data-target="#diagnostics-connections">
                 <img src="../img/connection_icon.png" />Connections with Other PHC Topics</div>
               <div class="diagnosis-second-section"></div>
               <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left) </h2>
@@ -182,8 +182,224 @@
             </div>
           </div>
         </div><!-- Diagnosis Details -->
-
       </div><!-- Details Map -->
+
+      <!--==========================
+          Connections Modal
+      ============================-->
+      <div class="modal fade" id="diagnostics-connections">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header d-flex align-items-center justify-content-center text-center">
+              <img src="../img/connection_icon.png" />
+              <p class="font-weight-bold">Where Diagnostics Solution Fit Within PHC</p>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <!-- Key Stakeholders -->
+              <div class="key-card key-stakeholders d-flex flex-column font-weight-normal">
+                <div class="key-card-header flex-grow-0 d-flex align-items-center justify-content-center">
+                  <span>Key Stakeholders</span>
+                </div>
+                <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                  <div class="key-card-content-block">
+                    Regulators
+                  </div>
+                  <div class="key-card-content-block">
+                    Players
+                  </div>
+                  <div class="key-card-content-block">
+                    Policy makers
+                  </div>
+                  <div class="key-card-content-block">
+                    HCPs
+                  </div>
+                  <div class="key-card-content-block">
+                    Patients
+                  </div>
+                  <div class="key-card-content-block">
+                    Hospitals/<br>Healthcare<br>systems
+                  </div>
+                  <div class="key-card-content-block">
+                    Pharma & Tech industry
+                  </div>
+                </div>
+              </div><!-- Key Stakeholders -->
+              <!-- Key Drivers -->
+              <div class="key-card key-drivers d-flex flex-column font-weight-normal">
+                <div class="key-card-header flex-grow-0 d-flex align-items-center justify-content-center">
+                  <span>Key Drivers/<br>Considerations</span>
+                </div>
+                <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                  <div class="key-card-content-block">
+                    Regulatory pathway for approval
+                  </div>
+                  <div class="key-card-content-block">
+                    Access pathway
+                  </div>
+                  <div class="key-card-content-block position-relative">
+                    Data policy<br>ollection<br>Usage<br>Privacy<br>Security
+                    <span id="data-policy-star" class="key-card-content-star position-absolute">*</span>
+                  </div>
+                  <div class="key-card-content-block">
+                    Clinical adoption
+                  </div>
+                  <div class="key-card-content-block position-relative">
+                    IT infrastructure
+                    <span id="it-infrastructure-star" class="key-card-content-star position-absolute">*</span>
+                  </div>
+                </div>
+              </div><!-- Key Drivers -->
+              <!-- Arrows Lines-->
+              <div class="arrow-key-card position-absolute">
+                <svg id="arrow-regulators" class="position-absolute" width="80px" height="50px" top="30%">
+                  <defs><marker id="arrow1" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,25 L70,30" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow1);"/>
+                </svg>
+                <svg id="arrow-players" class="position-absolute" width="80px" height="50px" top="30%">
+                  <defs><marker id="arrow2" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,15 L70,35" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow2);"/>
+                </svg>
+                <svg id="arrow-policy" class="position-absolute" width="80px" height="80px" top="30%">
+                  <defs><marker id="arrow3" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,10 L70,60" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow3);"/>
+                </svg>
+                <svg id="arrow-hcps" class="position-absolute" width="80px" height="160px" top="30%">
+                  <defs><marker id="arrow4" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,25 L70,150" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow4);"/>
+                </svg>
+                <svg id="arrow-patients" class="position-absolute" width="80px" height="130px" top="30%">
+                  <defs><marker id="arrow5" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,30 L70,120" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow5);"/>
+                </svg>
+                <svg id="arrow-hospitals" class="position-absolute" width="80px" height="90px" top="30%">
+                  <defs><marker id="arrow6" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,30 L70,77" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow6);"/>
+                </svg>
+                <svg id="arrow-pharma" class="position-absolute" width="80px" height="50px" top="30%">
+                  <defs><marker id="arrow7" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,25 L70,30" style="stroke:#00b0ff; stroke-width: 3px; fill: none; marker-end: url(#arrow7);"/>
+                </svg>
+              </div><!-- Arrows Lines-->
+              <!-- Curly Brace -->
+              <div class="arrow-curly-brace position-relative">
+                <!--<img src="../img/arrow-curly-brace.png">-->
+                <svg id="arrow-curly-brace" width="200px" height="640px" position="absolute" top="30%">
+                  <defs><marker id="arrow8" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                    <path d="M1,1 L1,4 L4,3 L1,2" style="fill:#00b0ff;" /></marker></defs>
+                  <path d="M0,40 q 60 0 60 80" style="stroke:#00b0ff; stroke-width: 4px; fill: none;"/>
+                  <path d="M0,600 q 60 0 60 -80" style="stroke:#00b0ff; stroke-width: 4px; fill: none;"/>
+                  <path d="M60,120 q 0 200 60 200" style="stroke:#00b0ff; stroke-width: 4px; fill: none;"/>
+                  <path d="M60,520 q 0 -200 60 -200" style="stroke:#00b0ff; stroke-width: 4px; fill: none;"/>
+                  <path d="M120,320 L150,320" style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow8);"/>
+                </svg>
+              </div><!-- Curly Brace -->
+              <!-- Diagnostics Solutions -->
+              <div class="diagnostics-solutions text-center">
+                <div id="diagnostics-solutions-cds" class="diagnostics-solutions-rectangle position-absolute  d-flex align-items-center justify-content-center">
+                  <span>CDS</span>
+                  <span class="key-card-content-star position-absolute font-weight-normal">*</span>
+                </div>
+                <div class="diagnostics-solutions-rectangle-block position-absolute d-flex justify-content-between">
+                  <div id="diagnostics-solutions" class="diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                    <span>Diagnostics<br>solutions</span>
+                    <div class="diagnostics-solutions-circle-dot position-absolute"></div>
+                  </div>
+                  <div class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                    <span>Advanced<br>analytics</span>
+                    <span class="key-card-content-star position-absolute font-weight-normal">*</span>
+                  </div>
+                  <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
+                    <span>Improved patients<br>outcomes</span>
+                  </div>
+                </div>
+                <div class="diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
+                  <div class="diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
+                    <span>Digital<br>pathology</span>
+                    <span class="key-card-content-star position-absolute">*</span>
+                  </div>
+                  <div class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                    <span>Advanced<br>Imaging</span>
+                    <span class="key-card-content-star position-absolute">*</span>
+                  </div>
+                  <div class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                    <span>Companion<br>diagnostics</span>
+                    <span class="key-card-content-star position-absolute">*</span>
+                  </div>
+                </div>
+                <!-- Arrow Lines -->
+                <svg id="arrow-to-cds" class="position-absolute" width="200px" height="200px" top="30%">
+                  <defs><marker id="arrow9" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;" /></marker></defs>
+                  <path d="M0,170 L150,40" style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow9);"/>
+                </svg>
+                <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
+                  <defs><marker id="arrow10" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;" /></marker></defs>
+                  <path d="M5,15 L63,15" style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow10);"/>
+                </svg>
+                <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
+                  <defs><marker id="arrow11" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;" /></marker></defs>
+                  <path d="M10,15 L68,15" style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow11);"/>
+                </svg>
+                <div class="arrow-diagnostics-solution position-absolute">
+                  <svg id="arrow-to-vertical" class="position-absolute" width="200px" height="250px" top="30%">
+                    <defs><marker id="arrow12" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto"><path d="M1,1 L1,5 L4,3 L1,1" style="fill:#abacad;" /></marker></defs>
+                    <path d="M20,215 L20,10" style="stroke:#abacad; stroke-width: 4px; fill: none; marker-end: url(#arrow12);"/>
+                    <path d="M20,213 L60,213" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
+                    <path d="M20,150 L60,150" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
+                    <path d="M20,85 L60,85" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
+                  </svg>
+                </div>
+                <!-- Arrow Lines -->
+              </div><!-- Diagnostics Solutions -->
+              <div id="zoom-out-button" data-toggle="modal" data-target="#zoomout-modal" class="position-absolute d-flex align-items-center justify-content-center">
+                <span>Zoom out</span>
+              </div>
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Connections Modal -->
+      <!--==========================
+          Zoom Out Modal
+      ============================-->
+      <div class="modal fade" id="zoomout-modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex justify-content-center align-items-center">
+              <!-- Zoom Out map -->
+              <div class="zoom-out-map position-relative">
+                <img src="../img/diagnosis_map-zoomout.png">
+                <!-- DIAGNOSIS -->
+                <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
+                  <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    DIAGNOSIS
+                    <img src="../img/toggle_left.png">
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Companion Diagnostics</a>
+                    <a class="dropdown-item" href="#">Digital Health</a>
+                    <a class="dropdown-item" href="#">Genomics</a>
+                    <a class="dropdown-item" href="#">Advanced Imaging</a>
+                    <a class="dropdown-item" href="#">Digital Pathology</a>
+                  </div>
+              </div><!-- DIAGNOSIS -->
+              </div><!-- Zoom Out map -->
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Zoom Out Modal -->
     </div><!-- Main Content -->
   </div><!-- Content -->
 </div><!-- Content Wrapper -->
