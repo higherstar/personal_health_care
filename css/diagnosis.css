@@ -449,7 +449,7 @@
 
 #arrow-patients {
   left: 2px;
-  top: 53%;
+  top: 54%;
 }
 
 #arrow-hospitals {
@@ -483,9 +483,10 @@
 
 @media (min-width: 992px) {
   .modal-lg {
-    max-width: 80%;
     margin-top: 8%;
+    max-width: 80%;
     height: 75%;
+    min-height: 520px;
   }
 }
 
