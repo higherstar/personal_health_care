@@ -391,6 +391,11 @@
   height: 100%;
 }
 
+.enable-solution-mark {
+  margin-left: 0;
+  position: absolute;
+}
+
 #zoom-out-button {
   bottom: 20px;
   right: 30px;
