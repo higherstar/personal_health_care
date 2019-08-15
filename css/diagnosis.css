@@ -1,4 +1,11 @@
 /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+hr {
+  border: 0;
+}
+
+/*--------------------------------------------------------------
 # Content Header
 --------------------------------------------------------------*/
 .content-header {
@@ -41,6 +48,10 @@
 #diagnosis-life-cycle {
   width: 80%;
   align-self: flex-end;
+}
+
+.hide {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -106,6 +117,14 @@
 .diagnosis-right-header img{
   width: 40px;
   height: 40px;
+  padding: 0;
+  opacity: 0.8;
+}
+.diagnosis-right-header img:hover{
+  opacity: 1;
+}
+.diagnosis-right-header img:active{
+  opacity: 0.8;
 }
 .diagnosis-right-header h1{
   font-size: 26px;
@@ -128,6 +147,7 @@
   overflow-y: auto;
   height: 90%;
 }
+
 .diagnosis-red-section {
   font-size: 20px;
   font-weight: bold;
@@ -148,6 +168,11 @@
   margin-top: -5px;
   object-fit: contain;
   width: 44px;
+}
+
+.img-floodlight img{
+  width: 100%;
+  margin-top: 14%;
 }
 
 /*--------------------------------------------------------------
