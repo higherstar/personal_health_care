@@ -26,7 +26,8 @@ jQuery(document).ready(function( $ ) {
           $(expandButtonId).find('.custom-expand-btn-minus')[0].style.display = 'none';
           const titleId = '#' + $(expandButtonId)[0].id + '-title';
           $(titleId)[0].style.display = 'none';
-        }
+        };
+        $(expandButtonId).trigger('click');
       }
     }
     e.target.classList.add('active');
