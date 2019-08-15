@@ -65,10 +65,8 @@ jQuery(document).ready(function( $ ) {
       titleId = '#' + $(this)[0].id + '-title';
       const submenuHash = '#' + $(this)[0].id.slice(0, $(this)[0].id.length - 3) + 'details';
       for (let i = 0; i< $('.side-bar-submenu-title').length; i++) {
-        if($('.side-bar-submenu-title')[i].hash === submenuHash) {
-          console.log($('.side-bar-submenu-title')[i]);
+        if($('.side-bar-submenu-title')[i].hash === submenuHash)
           $('.side-bar-submenu-title')[i].click();
-        }
       }
       $(titleId)[0].style.display = 'block';
     } else {

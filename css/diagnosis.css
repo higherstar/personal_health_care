@@ -169,9 +169,10 @@ hr {
   object-fit: contain;
   width: 44px;
 }
-
-.img-floodlight img{
+.text-content-img img {
   width: 100%;
+}
+.img-floodlight img{
   margin-top: 14%;
 }
 

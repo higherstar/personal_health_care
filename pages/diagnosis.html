@@ -160,6 +160,9 @@
           Diagnosis  Details
         ============================-->
         <div class="col-lg-6 diagnosis-details">
+          <!--==========================
+            Companion Diagnostics
+          ============================-->
           <div id="companion-diagnostics-details" class="details-container diagnosis-container show">
             <div class="diagnosis-right-header d-flex">
               <img id="companion-diagnostics-details-prev" class="diagnostics-details-btn-prev btn" src="../img/toggle_prev.png">
@@ -198,7 +201,10 @@
             <div class="companion-diagnostics-details-content diagnosis-right-content hide">
               <h2>Key drivers/considerations</h2>
             </div>
-          </div>
+          </div><!-- Companion Diagnostics -->
+          <!--==========================
+            Digital Health
+          ============================-->
           <div id="digital-health-details" class="details-container diagnosis-container hide">
             <div class="diagnosis-right-header d-flex">
               <img id="digital-health-details-prev" class="diagnostics-details-btn-prev btn" src="../img/toggle_prev.png">
@@ -215,7 +221,7 @@
                 Disease Areas of Focus.<sup>3</sup>
                 <hr>
                 Software as medical device  (SaMD) is a software intended to be used for one or more medical purposes
-                that perform these purposes without being part of a hardware medical device.4 Click here to learn more.
+                that perform these purposes without being part of a hardware medical device.<sup>4</sup> Click here to learn more.
                 [Link to Digital Health/SaMD module in Starter Pack]
               </p>
               <strong>Click button below to see:</strong>
@@ -257,65 +263,117 @@
                     tools to improve the lives of people living with MS.<sup>3</sup>
                   </p>
                 </div>
-                <div class="col-lg-4 img-floodlight">
+                <div class="col-lg-4 text-content-img img-floodlight">
                   <img src="../img/floodlight.png">
                 </div>
               </div>
             </div>
             <div class="digital-health-details-content diagnosis-right-content hide">
-              <h2>Key drivers/considerations1
+              <h2>Key drivers/considerations<sup>1</sup>
               </h2>
             </div>
-          </div>
+          </div><!-- Digital Health -->
+          <!--==========================
+            Genomics
+          ============================-->
           <div id="genomics-details" class="details-container diagnosis-container hide">
             <div class="diagnosis-right-header d-flex">
-              <img class="btn" src="../img/toggle_prev.png">
-              <h1>GENOMICS</h1>
-              <img class="btn" src="../img/toggle_next.png">
+              <img id="genomics-details-prev" class="diagnostics-details-btn-prev btn" src="../img/toggle_prev.png">
+              <h1 class="genomics-details-title show">GENOMICS[1/3]</h1>
+              <h1 class="genomics-details-title hide">GENOMICS[2/3]</h1>
+              <h1 class="genomics-details-title hide">GENOMICS[3/3]</h1>
+              <img id="genomics-details-next" class="diagnostics-details-btn-next btn" src="../img/toggle_next.png">
             </div>
             <div class="diagnosis-right-border-div"></div>
-            <div class="diagnosis-right-content">
+            <div class="genomics-details-content diagnosis-right-content show">
               <h2>Description</h2>
-              <p>Advanced imaging is a type of Meaningful Data at Scale. It refers to the use of computer algorithms to
-                analyze digital outputs of X-rays, computed tomography (CT), ultrasound, magnetic resonance imaging
-                (MRI) and positron emission tomography (PET) that are used for medical diagnosis. </p>
+              <p>According to our PHC engine, genomics is a type of Meaningful Data at Scale (MDAS). Genomic profiling
+                is a broad term that refers to the sequencing and analysis of genomic alterations (base substitutions,
+                insertions and deletions, copy number alterations, and rearrangements) and biomarkers that are known to
+                be relevant in a disease.1 Click here to learn more. [Link to Meaningful Data at Scale,
+                Advanced Analytics, and Realizing Value Module in Starter Pack]
+              <hr>
+                Genomic profiling is done through the technique of Next-generation Sequencing (NGS), which refers to
+                panel diagnostic tests of >10 genes that capture multiple classes of genomic alterations and biomarkers
+                to provide HCPs with appropriate information to select therapies (may include a report with available
+                treatment and clinical trial information).<sup>2</sup>
+              <hr>
+              Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene panels
+              that detect all classes of genomic alterations and biomarkers, providing a holistic view to physicians
+              of appropriate treatments (targeted or immunotherapy) and potential clinical trials.<sup>2</sup>
+              </p>
               <strong>Click button below to see:</strong>
               <div class="diagnosis-red-section" data-toggle="modal" data-target="#diagnostics-connections">
                 <img src="../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
-              <div class="diagnosis-second-section"></div>
-              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
-                the left) </h2>
-              <p><strong>Improved access & personalized care - </strong>Development of automated algorithms can provide
-                better and more accurate measurements of disease than currently available to help predict progression
-                and response to therapy.</p>
-              <p><strong>Smarter & more efficient R&D - </strong>By automating time-consuming & costly processes (eg.,
-                secondary imaging reads & IRFs), this effort will result in significantly faster trials, while more
-                accurate quantification of disease burden will. </p>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p>At Roche, we are focusing on curating and analyzing clinical images collected across Ophthalmology,
-                Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms for more accurate
-                predictions for disease progression and response to therapy. This automation will result in faster
-                trials, more accurate quantification of disease burden, and more robust cohort matching to synthetic
-                control arm studies. </p>
-              <h2>Key drivers/considerations </h2>
-              <p><strong>Contracts -</strong>When entering into partnerships with Commercial companies and Academic
-                institutions be aware of complex IP negotiations. Important to have both Legal and Partnering take a
-                proactive lead to put a contract in place that meets the</p>
             </div>
-          </div>
+            <div class="genomics-details-content diagnosis-right-content hide">
+              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram
+                on the left)
+              </h2>
+              <p><strong>Smarter & more efficient R&D –  </strong>Genomics data can also be used to derive novel disease
+                and MoA specific insights to inform drug development and R&D investments.
+                <sup>3,4</sup>
+                <hr>
+                <strong>Improved access & personalized care – </strong>
+                Insights from genomics provide invaluable information to physicians that can help them determine the
+                best possible treatment for each patient, and even map their treatment journey to identify future courses
+                of action should the disease progress.<sup>3</sup>
+              </p>
+              <h2>Roche and Roche partner examples/initiatives</h2>
+              <div class="d-flex">
+                <div class="col-lg-8">
+                  <p>As a member of the Roche Group, Foundation Medicine (FMI) provides comprehensive genomic profiling
+                    services to help personalize patients’ treatment plans.
+                    <sup>1</sup>
+                  </p>
+                </div>
+                <div class="col-lg-4 text-content-img">
+                  <img src="../img/foundation_medicine.png">
+                </div>
+              </div>
+              <hr>
+              <p>The <strong>CUPISCO trial</strong> is an example of the use of CGP in combination with a patient-centric
+                decision-making process by a Molecular Tumor Board to provide a highly-specific treatment decision for
+                each patient.2  Click here to learn more about the CUPISCO trial.
+                [Link to CUPISCO case study, Starter Pack]
+              </p>
+            </div>
+            <div class="genomics-details-content diagnosis-right-content hide" >
+              <h2>Key drivers/considerations<sup>1</sup>
+              </h2>
+              <p><strong>Testing adoption – </strong> Level of adoption of NGS tests and CGP in diagnostic practice
+                <sup>3</sup><br>
+                <strong>Advanced diagnostics funding – </strong> Level of funding of NGS tests by the healthcare system
+                as diagnostic tool
+                <sup>3</sup><br>
+                <strong>Regulatory perspective - </strong>
+                Existence of pathway for the approval of molecularly-informed therapies
+                <sup>3</sup><br>
+                <strong>Payer acceptance – </strong>Level of reimbursement of molecularly-informed therapies
+                <sup>3</sup>
+              </p>
+            </div>
+          </div><!-- Genomics -->
+          <!--==========================
+            Advanced Imaging
+          ============================-->
           <div id="advanced-imaging-details" class="details-container diagnosis-container hide">
             <div class="diagnosis-right-header d-flex">
-              <img class="btn" src="../img/toggle_prev.png">
-              <h1>ADVANCED IMAGEING</h1>
-              <img class="btn" src="../img/toggle_next.png">
+              <img id="advanced-imaging-details-prev" class="diagnostics-details-btn-prev btn" src="../img/toggle_prev.png">
+              <h1 class="advanced-imaging-details-title show">ADVANCED IMAGING[1/2]</h1>
+              <h1 class="advanced-imaging-details-title hide">ADVANCED IMAGING[2/2]</h1>
+              <img id="advanced-imaging-details-next" class="diagnostics-details-btn-next btn" src="../img/toggle_next.png">
             </div>
             <div class="diagnosis-right-border-div"></div>
-            <div class="diagnosis-right-content">
+            <div class="advanced-imaging-details-content diagnosis-right-content show">
               <h2>Description</h2>
-              <p>Advanced imaging is a type of Meaningful Data at Scale. It refers to the use of computer algorithms to
-                analyze digital outputs of X-rays, computed tomography (CT), ultrasound, magnetic resonance imaging
-                (MRI) and positron emission tomography (PET) that are used for medical diagnosis. </p>
+              <p>Advanced imaging is a type of Meaningful Data at Scale (MDAS) as defined in our PHC engine.
+                It refers to the use of computer algorithms to analyze digital outputs of X-rays, computed tomography
+                (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used
+                for medical diagnosis.1 Click here to learn more. [Link to Meaningful Data at Scale, Advanced Analytics,
+                and Realizing Value Module in Starter Pack]
+              </p>
               <strong>Click button below to see:</strong>
               <div class="diagnosis-red-section" data-toggle="modal" data-target="#diagnostics-connections">
                 <img src="../img/connection_icon.png"/>Connections with Other PHC Topics
@@ -323,36 +381,57 @@
               <div class="diagnosis-second-section"></div>
               <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
                 the left) </h2>
+              <p><strong>Smarter & more efficient R&D - </strong>By automating time-consuming & costly processes
+                (e.g., secondary imaging reads & IRFs), this effort will result in significantly faster trials,
+                while more accurate quantification of disease burden will enable robust cohort matching for use in
+                synthetic control arm studies.
+                <sup>2</sup>
+              </p>
               <p><strong>Improved access & personalized care - </strong>Development of automated algorithms can provide
                 better and more accurate measurements of disease than currently available to help predict progression
-                and response to therapy.</p>
-              <p><strong>Smarter & more efficient R&D - </strong>By automating time-consuming & costly processes (eg.,
-                secondary imaging reads & IRFs), this effort will result in significantly faster trials, while more
-                accurate quantification of disease burden will. </p>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p>At Roche, we are focusing on curating and analyzing clinical images collected across Ophthalmology,
-                Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms for more accurate
-                predictions for disease progression and response to therapy. This automation will result in faster
-                trials, more accurate quantification of disease burden, and more robust cohort matching to synthetic
-                control arm studies. </p>
-              <h2>Key drivers/considerations </h2>
-              <p><strong>Contracts -</strong>When entering into partnerships with Commercial companies and Academic
-                institutions be aware of complex IP negotiations. Important to have both Legal and Partnering take a
-                proactive lead to put a contract in place that meets the</p>
+                and response to <therapy></therapy>
+                <sup>2</sup></p>
             </div>
-          </div>
+            <div class="advanced-imaging-details-content diagnosis-right-content hide">
+              <h2>Roche and Roche partner examples/initiatives</h2>
+              <P>At Roche, we are focusing on curating and analyzing clinical images collected across Ophthalmology,
+                Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms for more accurate
+                predictions for disease progression and response to therapy. This automation will result
+                in faster trials, more accurate quantification of disease burden, and more robust cohort matching to
+                synthetic control arm studies.<sup>1</sup>
+              </P>
+              <h2>Key drivers/considerations</h2>
+              <p><strong>Contracts - </strong>When entering into partnerships with commercial companies and academic
+                institutions, be aware of complex IP negotiations. Important to have both Legal and Partnering
+                take a proactive lead to put a contract in place that meets the needs of the project.<sup>2</sup>
+              </p>
+              <p><strong>Data Sharing/Privacy - </strong>When sharing images externally with 3rd parties
+                (and even internally), there is a need to take data privacy into consideration. The Data Privacy team
+                can help determine the right level of privacy required before data can be shared.<sup>2</sup>
+              </p>
+              <p><strong>Complex data -</strong>The scale of the imaging data requires close collaboration and
+                coordination with IT and imaging science.<sup>2</sup></p>
+            </div>
+          </div><!-- Advanced Imaging -->
+          <!--==========================
+            Digital Pathology
+          ============================-->
           <div id="digital-pathology-details" class="details-container diagnosis-container  hide">
             <div class="diagnosis-right-header d-flex">
-              <img class="btn" src="../img/toggle_prev.png">
-              <h1>DIGITAL PATHOLOGY</h1>
-              <img class="btn" src="../img/toggle_next.png">
+              <img id="digital-pathology-details-prev" class="diagnostics-details-btn-prev btn" src="../img/toggle_prev.png">
+              <h1 class="digital-pathology-details-title show">DATA PATHOLOGY[1/2]</h1>
+              <h1 class="digital-pathology-details-title hide">DATA PATHOLOGY[2/2]</h1>
+              <img id="digital-pathology-details-next" class="diagnostics-details-btn-next btn" src="../img/toggle_next.png">
             </div>
             <div class="diagnosis-right-border-div"></div>
-            <div class="diagnosis-right-content">
+            <div class="digital-pathology-details-content diagnosis-right-content show">
               <h2>Description</h2>
-              <p>Advanced imaging is a type of Meaningful Data at Scale. It refers to the use of computer algorithms to
-                analyze digital outputs of X-rays, computed tomography (CT), ultrasound, magnetic resonance imaging
-                (MRI) and positron emission tomography (PET) that are used for medical diagnosis. </p>
+              <p>Digital pathology is a type of Meaningful Data at Scale (MDAS) as defined in our PHC engine.
+                It is the collection, management, sharing, and interpretation of pathology information in a digital
+                environment. Digital slides are created when glass slides are captured with a scanning device to
+                provide a high-resolution digital image that can be viewed and analyzed.1 Click here to learn more.
+                [Link to Meaningful Data at Scale, Advanced Analytics, and Realizing Value Module in Starter Pack]
+              </p>
               <strong>Click button below to see:</strong>
               <div class="diagnosis-red-section" data-toggle="modal" data-target="#diagnostics-connections">
                 <img src="../img/connection_icon.png"/>Connections with Other PHC Topics
@@ -360,24 +439,24 @@
               <div class="diagnosis-second-section"></div>
               <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
                 the left) </h2>
-              <p><strong>Improved access & personalized care - </strong>Development of automated algorithms can provide
-                better and more accurate measurements of disease than currently available to help predict progression
-                and response to therapy.</p>
-              <p><strong>Smarter & more efficient R&D - </strong>By automating time-consuming & costly processes (eg.,
-                secondary imaging reads & IRFs), this effort will result in significantly faster trials, while more
-                accurate quantification of disease burden will. </p>
+              <p><strong>Smarter & more efficient R&D - </strong>Digital pathology can generate insights with the
+                potential to collate histological features with prognosis, outcomes, disease biology, treatment.
+                <sup>2</sup>
+              </p>
               <h2>Roche and Roche partner examples/initiatives</h2>
-              <p>At Roche, we are focusing on curating and analyzing clinical images collected across Ophthalmology,
-                Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms for more accurate
-                predictions for disease progression and response to therapy. This automation will result in faster
-                trials, more accurate quantification of disease burden, and more robust cohort matching to synthetic
-                control arm studies. </p>
-              <h2>Key drivers/considerations </h2>
-              <p><strong>Contracts -</strong>When entering into partnerships with Commercial companies and Academic
-                institutions be aware of complex IP negotiations. Important to have both Legal and Partnering take a
-                proactive lead to put a contract in place that meets the</p>
+                <p>A Pharma-Dia collaboration at Roche is working to curate, analyze and apply advanced analytics to
+                  digital pathology images to produce novel insights during the drug development process.
+                <sup>1</sup></p>
             </div>
-          </div>
+            <div class="digital-pathology-details-content diagnosis-right-content hide">
+              <h2>Key drivers/considerations</h2>
+              <li>Collaboration between Pharma and DIA can combine Roche in-house data and DIA’s technology to produce
+                novel insights.<sup>2</sup>
+              </li>
+              <li>DIA has an interest in generating insights, not just performing clinical analyses.<sup>2</sup>
+              </li>
+            </div>
+          </div><!-- Digital Pathology -->
         </div><!-- Diagnosis Details -->
       </div><!-- Details Map -->
 
