@@ -62,7 +62,7 @@
           </ul>
         </li>
         <li class="side-bar-menu active">
-          <a href="diagnosis.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <a href="#" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
           <ul class="collapse list-unstyled submenu-list show active" id="diagnosis-submenu">
             <li class="side-bar-submenu active">
               <a href="#companion-diagnostics-details" class="side-bar-submenu-title active">Companion Diagnostics</a>
@@ -307,7 +307,7 @@
               of appropriate treatments (targeted or immunotherapy) and potential clinical trials.<sup>2</sup>
               </p>
               <strong>Click button below to see:</strong>
-              <div class="diagnosis-red-section" data-toggle="modal" data-target="#diagnostics-connections">
+              <div class="diagnosis-red-section" data-toggle="modal" data-target="#genomics-diagnostics-connections">
                 <img src="../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
             </div>
@@ -618,14 +618,12 @@
               <div class="col-lg-6">
                 <!-- Diagnostics Solutions -->
                 <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
-                  <div id="diagnostics-solutions-cds"
-                       class="diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                  <div class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
                     <span>CDS</span>
                     <span class="key-card-content-star position-absolute font-weight-normal">*</span>
                   </div>
                   <div class="diagnostics-solutions-rectangle-block d-flex">
-                    <div id="diagnostics-solutions"
-                         class="diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                    <div class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
                       <span>Diagnostics<br>solutions</span>
                       <div class="diagnostics-solutions-circle-dot position-absolute"></div>
                       <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
@@ -696,8 +694,204 @@
                   <!-- Arrow Lines -->
                 </div><!-- Diagnostics Solutions -->
               </div>
-              <div id="zoom-out-button" data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
-                   class="position-absolute d-flex align-items-center justify-content-center">
+              <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
+                   class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
+                <span>Zoom out</span>
+              </div>
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Connections Modal -->
+      <!--==========================
+          Connections Modal
+      ============================-->
+      <div class="modal fade" id="genomics-diagnostics-connections">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header d-flex align-items-center justify-content-center text-center flex-grow-0 flex-shrink-0">
+              <img src="../img/connection_icon.png"/>
+              <p class="font-weight-bold">Where Diagnostics Solution Fit Within PHC</p>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <div class="col-lg-6 d-flex justify-content-center ">
+                <!-- Key Stakeholders -->
+                <div class="key-card flex-shrink-0 flex-grow-0 key-stakeholders d-flex flex-column font-weight-normal">
+                  <div
+                      class="key-card-header flex-shrink-0 flex-grow-0 d-flex align-items-center justify-content-center">
+                    <span>Key Stakeholders</span>
+                  </div>
+                  <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-block">
+                      Regulators
+                    </div>
+                    <div class="key-card-content-block">
+                      Players
+                    </div>
+                    <div class="key-card-content-block">
+                      HCPs
+                    </div>
+                    <div class="key-card-content-block">
+                      Patients
+                    </div>
+                    <div class="key-card-content-block">
+                      Hospitals/<br>Healthcare<br>systems
+                    </div>
+                  </div>
+                </div><!-- Key Stakeholders -->
+                <!-- Key Drivers -->
+                <div class="key-card flex-shrink-0 flex-grow-0 key-drivers d-flex flex-column font-weight-normal">
+                  <div
+                      class="key-card-header flex-shrink-0 flex-grow-0 d-flex align-items-center justify-content-center">
+                    <span>Key Drivers/<br>Considerations</span>
+                  </div>
+                  <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-block">
+                      Regulatory pathway<br>for approval
+                    </div>
+                    <div class="key-card-content-block">
+                      Reimbursement<br>level
+                    </div>
+                    <div class="key-card-content-block position-relative">
+                      Testing adoption in<br>clinical practice
+                    </div>
+                  </div>
+                </div><!-- Key Drivers -->
+                <div class="arrow-lines-wrap position-absolute d-flex justify-content-center">
+                  <!-- Arrows Lines-->
+                  <div class="arrow-key-card position-relative">
+                    <svg id="genomics-arrow-regulators" class="position-absolute" width="80px" height="50px" top="30%">
+                      <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,25 L70,30"
+                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow);"/>
+                    </svg>
+                    <svg id="genomics-arrow-players" class="position-absolute" width="80px" height="100px" top="30%">
+                      <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,15 L70,95"
+                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow);"/>
+                    </svg>
+                    <svg id="genomics-arrow-hcps" class="position-absolute" width="80px" height="200px" top="30%">
+                      <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,25 L70,170"
+                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow);"/>
+                    </svg>
+                    <svg id="genomics-arrow-patients" class="position-absolute" width="80px" height="130px" top="30%">
+                      <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,40 L70,115"
+                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow);"/>
+                    </svg>
+                    <svg id="genomics-arrow-hospitals" class="position-absolute" width="80px" height="90px" top="30%">
+                      <defs>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,50 L70,50"
+                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow);"/>
+                    </svg>
+                  </div><!-- Arrows Lines-->
+                </div>
+              </div>
+              <div class="curly-brace-wrap position-absolute d-flex justify-content-center">
+                <!-- Curly Brace -->
+                <div class="arrow-curly-brace position-relative">
+                  <img src="../img/arrow-curly-brace.png">
+                </div><!-- Curly Brace -->
+              </div>
+              <div class="col-lg-6">
+                <!-- Diagnostics Solutions -->
+                <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
+                  <div class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                    <span>CDS</span>
+                  </div>
+                  <div class="genomics-rectangle-block diagnostics-solutions-rectangle-block d-flex">
+                    <div class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                      <span>Genomics</span>
+                      <div class="diagnostics-solutions-circle-dot position-absolute"></div>
+                      <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
+                        <defs>
+                          <marker id="arrow-genomics" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                          </marker>
+                        </defs>
+                        <path d="M15,15 L40,15"
+                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow-genomics);"/>
+                      </svg>
+
+                      <div
+                          class="genomics-circle-block diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
+                        <div
+                            class="genomics-circle diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
+                          <span>NGC</span>
+                        </div>
+                        <div
+                            class="genomics-circle diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                          <span>CGP</span>
+                        </div>
+                        <div class="arrow-diagnostics-solution position-absolute">
+                          <svg id="genomics-arrow-to-vertical" class="position-absolute" width="200px" height="215px" top="30%">
+                            <defs>
+                              <marker id="arrow-multi" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                                <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#abacad;"/>
+                              </marker>
+                            </defs>
+                            <path d="M20,195 L20,30"
+                                  style="stroke:#abacad; stroke-width: 4px; fill: none; marker-end: url(#arrow-multi);"/>
+                            <path d="M20,193 L50,193" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
+                            <path d="M20,105 L50,105" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                      <span class="enable-solution-title">Advanced<br>analytics</span>
+                      <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
+                        <defs>
+                          <marker id="arrow-genomics" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                          </marker>
+                        </defs>
+                        <path d="M15,15 L40,15"
+                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow-genomics);"/>
+                      </svg>
+                    </div>
+                    <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
+                      <span>Molecularly-guide<br>therapy (MGT)</span>
+                    </div>
+                  </div>
+                  <!-- Arrow Lines -->
+                  <div class="arrow-to-cds position-absolute">
+                    <img src="../img/arrow-top-right.png">
+                  </div>
+                  <!-- Arrow Lines -->
+                </div><!-- Diagnostics Solutions -->
+              </div>
+              <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
+                   class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
                 <span>Zoom out</span>
               </div>
             </div><!-- Modal Body -->

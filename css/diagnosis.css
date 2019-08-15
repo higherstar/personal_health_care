@@ -376,7 +376,7 @@ hr {
 
 .diagnostics-solutions-circle {
   background-color:  #e40046;;
-  height: 31%;
+  height: 44%;
   border-radius: 50%;
   width: 77%;
   margin-top: 4px;
@@ -433,7 +433,7 @@ hr {
   margin-right: -16px;
 }
 
-#zoom-out-button {
+.zoom-out-button {
   bottom: 20px;
   right: 30px;
   border: 2px solid #e40046;
@@ -444,17 +444,17 @@ hr {
   cursor: pointer;
 }
 
-#zoom-out-button:hover {
+.zoom-out-button:hover {
   background-color: rgba(228, 0, 70, 0.61);
   border: 2px solid transparent !important;
   color: white;
 }
 
-#diagnostics-solutions {
+.diagnostics-solutions-field {
   background-color:  #e40046;;
 }
 
-#diagnostics-solutions-cds {
+.diagnostics-solutions-cds {
   left: 32%;
   top: 17%;
   width: 23%;
@@ -569,3 +569,45 @@ hr {
   left: -14px;
 }
 
+/*--------------------------------------------------------------
+# Genomic connection Modal dialog
+--------------------------------------------------------------*/
+.genomics-circle {
+  margin-top: 9px;
+  height: 70px;
+}
+
+.genomics-rectangle-block {
+  height: 12%;
+  font-size: 14px;
+}
+
+.genomics-circle-block {
+  height: 162px;
+  margin-top: 85px;
+}
+
+#genomics-arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#genomics-arrow-players {
+  left: 2px;
+  top: 34%;
+}
+
+#genomics-arrow-hcps {
+  left: 2px;
+  top: 47%;
+}
+
+#genomics-arrow-patients {
+  left: 2px;
+  top: 62%;
+}
+
+#genomics-arrow-hospitals {
+  left: 2px;
+  top: 79%;
+}
