@@ -21,8 +21,12 @@ jQuery(document).ready(function( $ ) {
           $(e.target.hash)[0].classList.replace('hide', 'show');
         }
         const expandButtonId = $('.side-bar-submenu-title')[i].hash.slice(0, $('.side-bar-submenu-title')[i].hash.length-8)+ '-btn';
-        if (!$('.side-bar-submenu-title')[i].classList.contains('active') && $(expandButtonId))
-          $(expandButtonId).trigger('click');
+        if (!$('.side-bar-submenu-title')[i].classList.contains('active') && $(expandButtonId)) {
+          $(expandButtonId).find('.custom-expand-btn-plus')[0].style.display = 'block';
+          $(expandButtonId).find('.custom-expand-btn-minus')[0].style.display = 'none';
+          const titleId = '#' + $(expandButtonId)[0].id + '-title';
+          $(titleId)[0].style.display = 'none';
+        }
       }
     }
     e.target.classList.add('active');
