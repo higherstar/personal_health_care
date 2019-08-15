@@ -25,6 +25,12 @@ jQuery(document).ready(function( $ ) {
           $(expandButtonId).find('.custom-expand-btn-plus')[0].style.display = 'block';
           $(expandButtonId).find('.custom-expand-btn-minus')[0].style.display = 'none';
           const titleId = '#' + $(expandButtonId)[0].id + '-title';
+          const imageId = '#' + $(expandButtonId)[0].id.slice(0, $(expandButtonId)[0].id.length-3) + 'image';
+          for (let i = 0; i < $('.life-cycle-image').length; i++) {
+            if($('.life-cycle-image')[i].classList.contains('show'))
+              $('.life-cycle-image')[i].classList.replace('show', 'hide');
+          }
+          $(imageId)[0].classList.replace('hide', 'show');
           $(titleId)[0].style.display = 'none';
         };
         $(expandButtonId).trigger('click');

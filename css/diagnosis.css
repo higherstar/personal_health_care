@@ -49,7 +49,7 @@ hr {
   height: 100%;
 }
 
-#diagnosis-life-cycle {
+.life-cycle-image {
   width: 80%;
   align-self: flex-end;
 }
@@ -166,12 +166,20 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+  opacity: 0.85;
 }
 .diagnosis-red-section img {
   margin-left: -40px;
   margin-top: -5px;
   object-fit: contain;
   width: 44px;
+}
+.diagnosis-red-section:hover {
+  opacity: 1;
+  background-color: #eeec;
+}
+.diagnosis-red-section:active {
+  opacity: 0.8;
 }
 .text-content-img img {
   width: 100%;
