@@ -1,2 +1,2 @@
-<?php include_once("pages/homepage.html"); ?>
-<?php include_once("pages/diagnosis.html"); ?>
+<a href="/pages/homepage.html">HomePage</a>
+<a href="/pages/diagnosis.html">Diagnosis</a>
