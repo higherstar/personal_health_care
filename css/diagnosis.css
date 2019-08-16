@@ -374,6 +374,10 @@ hr {
   padding: 0 10px;
 }
 
+.diagnostics-solutions-rectangle a:hover {
+  text-decoration: none;
+}
+
 .diagnostics-solutions-circle {
   background-color:  #e40046;;
   height: 44%;
