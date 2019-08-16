@@ -611,3 +611,79 @@ hr {
   left: 2px;
   top: 79%;
 }
+
+/*--------------------------------------------------------------
+# Digital Health connection Modal dialog
+--------------------------------------------------------------*/
+
+.digital-health-rectangle-block {
+  font-size: 14px;
+}
+
+.digital-health-rectangle-bottom-block {
+  align-self: flex-end;
+  width: 41%;
+  height: 70px;
+  margin-bottom: 7%;
+  margin-left: -47%;
+  color: white;
+}
+
+#digital-health-arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#digital-health-arrow-regulators-proven {
+  left: 2px;
+  top: 17%;
+}
+
+#digital-health-arrow-players {
+  left: 2px;
+  top: 24%;
+}
+
+#digital-health-arrow-players-clinical {
+  left: 2px;
+  top: 22%;
+}
+
+#digital-health-arrow-healthcare {
+  left: 2px;
+  top: 26%;
+}
+
+#digital-health-arrow-hcps {
+  left: 2px;
+  top: 29%;
+}
+
+#digital-health-arrow-hcps-patient {
+  left: 2px;
+  top: 43.5%;
+}
+
+#digital-health-arrow-medical {
+  left: 2px;
+  top: 30%;
+}
+
+#digital-health-arrow-patients {
+  left: 2px;
+  top: 40%;;
+}
+
+#digital-health-arrow-it {
+  left: 2px;
+  top: 87%;
+}
+
+#digital-health-arrow-it-proven {
+  left: 2px;
+  top: 71%;
+}
+
+#digital-health-rectangle-bottom-block {
+  ;
+}
