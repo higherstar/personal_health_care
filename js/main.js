@@ -4,41 +4,6 @@ jQuery(document).ready(function( $ ) {
     $('#welcome-modal').modal('show');
   });
 
-  // handler for clicking on side bar submenu list
-  $(document).on('click', '.side-bar-submenu-title', function(e) {
-    if ($('.details-container').length > 0)
-      for (let i = 0; i< $('.details-container').length; i++) {
-        $('.details-container')[i].classList.replace('show', 'hide');
-      }
-    for (let i = 0; i< $('.side-bar-submenu-title').length; i++) {
-      if($('.side-bar-submenu-title')[i] !== e.target) {
-        $('.side-bar-submenu-title')[i].classList.remove('active');
-        $('.side-bar-submenu')[i].classList.remove('active');
-      } else {
-        $('.side-bar-submenu')[i].classList.add('active');
-        if ($('.details-container').length > 0) {
-          $(e.target.hash)[0].classList.replace('hide', 'show');
-          $(e.target.hash)[0].classList.replace('hide', 'show');
-        }
-        const expandButtonId = $('.side-bar-submenu-title')[i].hash.slice(0, $('.side-bar-submenu-title')[i].hash.length-8)+ '-btn';
-        if (!$('.side-bar-submenu-title')[i].classList.contains('active') && $(expandButtonId)) {
-          $(expandButtonId).find('.custom-expand-btn-plus')[0].style.display = 'block';
-          $(expandButtonId).find('.custom-expand-btn-minus')[0].style.display = 'none';
-          const titleId = '#' + $(expandButtonId)[0].id + '-title';
-          const imageId = '#' + $(expandButtonId)[0].id.slice(0, $(expandButtonId)[0].id.length-3) + 'image';
-          for (let i = 0; i < $('.life-cycle-image').length; i++) {
-            if($('.life-cycle-image')[i].classList.contains('show'))
-              $('.life-cycle-image')[i].classList.replace('show', 'hide');
-          }
-          $(imageId)[0].classList.replace('hide', 'show');
-          $(titleId)[0].style.display = 'none';
-        };
-        $(expandButtonId).trigger('click');
-      }
-    }
-    e.target.classList.add('active');
-  });
-
   // handler for clicking on dropdown
   $( ".custom-dropdown" ).blur(function() {
     $(this).find('img').attr('src', '../img/toggle_left.png');
@@ -59,33 +24,8 @@ jQuery(document).ready(function( $ ) {
 
   // handler for clicking on expand button
   $('.custom-expand-btn').click(function() {
-    const expandBtns = $('.custom-expand-btn');
-    let titleId = '';
-    for (let i = 0; i< expandBtns.length; i++) {
-      if ($(expandBtns[i])[0].id !== $(this)[0].id) {
-        $(expandBtns[i]).find('.custom-expand-btn-plus')[0].style.display = 'block';
-        $(expandBtns[i]).find('.custom-expand-btn-minus')[0].style.display = 'none';
-        titleId = '#' + $(expandBtns[i])[0].id + '-title';
-        $(titleId)[0].style.display = 'none';
-      }
-    }
-
-    if ($(this).find('.custom-expand-btn-plus')[0].style.display === 'block') {
-      $(this).find('.custom-expand-btn-plus')[0].style.display = 'none';
-      $(this).find('.custom-expand-btn-minus')[0].style.display = 'block';
-      titleId = '#' + $(this)[0].id + '-title';
-      const submenuHash = '#' + $(this)[0].id.slice(0, $(this)[0].id.length - 3) + 'details';
-      for (let i = 0; i< $('.side-bar-submenu-title').length; i++) {
-        if($('.side-bar-submenu-title')[i].hash === submenuHash)
-          $('.side-bar-submenu-title')[i].click();
-      }
-      $(titleId)[0].style.display = 'block';
-    } else {
-      $(this).find('.custom-expand-btn-plus')[0].style.display = 'block';
-      $(this).find('.custom-expand-btn-minus')[0].style.display = 'none';
-      titleId = '#' + $(this)[0].id + '-title';
-      $(titleId)[0].style.display = 'none';
-    }
+    const hrefLink = $(this)[0].id.slice(0, $(this)[0].id.length-4) + '.html';
+    location.href = hrefLink;
   });
 
   // handler for clicking on prev next button of diagnosis details
