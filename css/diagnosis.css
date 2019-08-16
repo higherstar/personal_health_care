@@ -621,12 +621,13 @@ hr {
 }
 
 .digital-health-rectangle-bottom-block {
-  align-self: flex-end;
-  width: 41%;
-  height: 70px;
-  margin-bottom: 7%;
-  margin-left: -47%;
+  position: absolute;
+  flex-shrink: 0;
+  width: calc(277% + 120px);
+  height: 100%;
+  margin-left: 123%;
   color: white;
+  margin-top: 151px;
 }
 
 #digital-health-arrow-regulators {
@@ -684,6 +685,26 @@ hr {
   top: 71%;
 }
 
-#digital-health-rectangle-bottom-block {
-  ;
+#digital-health-arrow-endpoints {
+  margin-top: -73px;
+}
+
+#digital-health-arrow-rwd {
+  margin-top: -72px;
+  margin-left: -97px;
+}
+
+#digital-health-arrow-clinical {
+  top: 23%;
+  left: -2px;
+}
+
+#digital-health-arrow-patient {
+  top: 36%;
+  left: -2px;
+}
+
+#digital-health-arrow-proven {
+  top: 66%;
+  left: -2px;
 }

@@ -1078,6 +1078,33 @@
                 <!-- Curly Brace -->
                 <div class="arrow-curly-brace position-relative">
                   <img src="../img/arrow-curly-brace.png">
+                  <svg id="digital-health-arrow-clinical" class="position-absolute" width="110px" height="270px" top="30%">
+                    <defs>
+                      <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                      </marker>
+                    </defs>
+                    <path d="M105,260 L10,25"
+                          style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                  </svg>
+                  <svg id="digital-health-arrow-patient" class="position-absolute" width="110px" height="250px" top="30%">
+                    <defs>
+                      <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                      </marker>
+                    </defs>
+                    <path d="M105,210 L10,65"
+                          style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                  </svg>
+                  <svg id="digital-health-arrow-proven" class="position-absolute" width="110px" height="100px" top="30%">
+                    <defs>
+                      <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                      </marker>
+                    </defs>
+                    <path d="M105,60 L10,20"
+                          style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                  </svg>
                 </div><!-- Curly Brace -->
               </div>
               <div class="col-lg-6">
@@ -1101,6 +1128,35 @@
                         <path d="M15,15 L40,15"
                               style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
                       </svg>
+                      <!-- Rectangle Block Bottom -->
+                      <div class="digital-health-rectangle-bottom-block d-flex">
+                        <div class="diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                          <span>Digital endpoints</span>
+                          <svg id="digital-health-arrow-endpoints" class="position-absolute" width="80px" height="80px" top="30%">
+                            <defs>
+                              <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                                <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                              </marker>
+                            </defs>
+                            <path d="M40,5 L40,70"
+                                  style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                          </svg>
+                        </div>
+                        <div
+                            class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                          <span class="enable-solution-title">RWD</span>
+                          <span class="enable-solution-mark key-card-content-star font-weight-normal">*</span>
+                          <svg id="digital-health-arrow-rwd" class="position-absolute" width="80px" height="80px" top="30%">
+                            <defs>
+                              <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                                <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                              </marker>
+                            </defs>
+                            <path d="M10,5 L55,70"
+                                  style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                          </svg>
+                        </div>
+                      </div><!-- Rectangle Block Bottom -->
                     </div>
                     <div
                         class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
@@ -1127,35 +1183,7 @@
                   <!-- Arrow Lines -->
                 </div><!-- Diagnostics Solutions -->
               </div>
-              <!-- Rectangle Block Bottom -->
-              <div class="digital-health-rectangle-bottom-block d-flex">
-                <div class="diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
-                  <span>Digital endpoints</span>
-                  <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
-                    <defs>
-                      <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
-                      </marker>
-                    </defs>
-                    <path d="M15,15 L40,15"
-                          style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
-                  </svg>
-                </div>
-                <div
-                    class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
-                  <span class="enable-solution-title">RWD</span>
-                  <span class="enable-solution-mark key-card-content-star font-weight-normal">*</span>
-                  <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
-                    <defs>
-                      <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
-                      </marker>
-                    </defs>
-                    <path d="M48,15 L22,15"
-                          style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
-                  </svg>
-                </div>
-              </div><!-- Rectangle Block Bottom -->
+
               <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
                    class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
                 <span>Zoom out</span>
