@@ -231,6 +231,7 @@ hr {
 .clinical-solutions-rectangle-block {
   width: calc(100% - 54px);
   font-size: 14px;
+  height: 65px;
 }
 
 
@@ -242,6 +243,49 @@ hr {
   font-size: 10px;
   margin-left: 45px;
   margin-top: 91px;
+}
+
+.clinical-rectangle-bottom-imaging {
+  height: 100%;
+  left: 21%;
+}
+
+.clinical-rectangle-bottom-rwd {
+  height: 100%;
+  top: 114%
+}
+
+.clinical-rectangle-bottom-block {
+  top: 0;
+  left: 0;
+  margin-left: 48px;
+  margin-top: 100px;
+  height: 66px;
+  width: 348%;
+}
+
+.clinical-rectangle-top-block {
+  top: 0;
+  left: 0;
+  margin-left: 48px;
+  margin-top: -100px;
+  height: 66px;
+  width: 348%;
+}
+
+.clinical-rectangle-top-genomics {
+  height: 100%;
+  top: -114%
+}
+
+.clinical-rectangle-top-health {
+  height: 100%;
+  left: 21%
+}
+
+.arrow-toward-analysis {
+  top: 0;
+  left: 0;
 }
 
 .arrow-clinical-solution {
@@ -409,6 +453,24 @@ hr {
   margin-right: -66px;
   margin-top: 11px;
   right: 0;
+}
+
+#clinical-arrow-genomics {
+  margin-top: 63px;
+}
+
+#clinical-arrow-imaging {
+  margin-top: -46px;
+  margin-left: -53px;
+}
+
+#clinical-arrow-health {
+  margin-top: 51px;
+  margin-left: -48px;
+}
+
+#clinical-arrow-rwd {
+  margin-top: -113px;
 }
 
 @media (min-width: 992px) {
