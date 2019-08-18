@@ -253,7 +253,7 @@ hr {
 .key-card-content-star {
   font-size: 49px;
   color: black;
-  top: -2px;
+  top: -12px;
   right: 13px;
   z-index: 3;
 }
@@ -306,6 +306,15 @@ hr {
   top: 17%;
   width: 23%;
   min-height: 13%;
+}
+
+#clinical-connections .modal-body .key-card-content .key-card-content-block{
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  margin-top: 0;
 }
 
 #arrow-regulators {
@@ -398,19 +407,19 @@ hr {
   height: 100%;
 }
 
-#zoomout-modal #clinical-dropdown {
-  top: 3%;
-  left: 36%;
+#zoomout-modal #care-dropdown {
+  top: 47%;
+  left: 83%;
 }
 
-#zoomout-modal #clinical-dropdown button {
+#zoomout-modal #care-dropdown button {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 22px;
   font-size: 14px;
 }
 
-#zoomout-modal #clinical-dropdown button img {
+#zoomout-modal #care-dropdown button img {
   width: 30px;
   top: -6px;
   left: -14px;

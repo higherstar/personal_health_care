@@ -6,20 +6,32 @@ jQuery(document).ready(function( $ ) {
 
   // handler for clicking on dropdown
   $( ".custom-dropdown" ).blur(function() {
-    $(this).find('img').attr('src', '../img/toggle_left.png');
+    if($(this)[0].classList.contains('zoom-out'))
+      $(this).find('img').attr('src', '../../img/toggle_left.png');
+    else
+      $(this).find('img').attr('src', '../img/toggle_left.png');
   });
 
   $('.custom-dropdown').click(function() {
     const dropDowns = $('.custom-dropdown');
     for (let i = 0; i< dropDowns.length; i++) {
       if ($(dropDowns[i])[0].id !== $(this)[0].id) {
+        if($(this)[0].classList.contains('zoom-out'))
+          $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left.png');
+        else
         $(dropDowns[i]).find('img').attr('src', '../img/toggle_left.png');
       }
     }
-    if ($(this).find('img').attr('src') === '../img/toggle_left.png')
-      $(this).find('img').attr('src', '../img/toggle_down.png');
+    if($(this)[0].classList.contains('zoom-out'))
+      if ($(this).find('img').attr('src') === '../../img/toggle_left.png')
+        $(this).find('img').attr('src', '../../img/toggle_down.png');
+      else
+        $(this).find('img').attr('src', '../../img/toggle_left.png');
     else
-      $(this).find('img').attr('src', '../img/toggle_left.png');
+      if ($(this).find('img').attr('src') === '../img/toggle_left.png')
+        $(this).find('img').attr('src', '../img/toggle_down.png');
+      else
+        $(this).find('img').attr('src', '../img/toggle_left.png');
   });
 
   // handler for clicking on expand button
