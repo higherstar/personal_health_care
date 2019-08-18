@@ -473,6 +473,11 @@ hr {
   margin-top: -113px;
 }
 
+#clinical-arrow-cds-workflow {
+  top: 21%;
+  right: 14%;
+}
+
 @media (min-width: 992px) {
   .modal-lg {
     margin-top: 8%;
