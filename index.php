@@ -5,5 +5,5 @@
 <a href="/pages/diagnosis/digital-pathology.html">Diagnosis / Digital Pathology</a><br />
 <a href="/pages/diagnosis/genomics.html">Diagnosis / Genomics</a><br />
 <a href="/pages/diagnosis/real-world-data.html">Diagnosis / Real World Data</a><br />
-<a href="/pages/care/clinical-decision-support.html">Diagnosis / Clinical Decision Support</a><br />
-<a href="/pages/care/molecularly-guided.html">Diagnosis / Molecularly Guided</a><br />
+<a href="/pages/care/clinical-decision-support.html">Care / Clinical Decision Support</a><br />
+<a href="/pages/care/molecularly-guided.html">Care / Molecularly Guided</a><br />
