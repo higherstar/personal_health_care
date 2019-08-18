@@ -317,39 +317,79 @@ hr {
   margin-top: 0;
 }
 
-#arrow-regulators {
+#arrow-hcps {
   left: 2px;
   top: 16%;
 }
 
-#arrow-players {
-  left: 2px;
-  top: 29%;
-}
-
-#arrow-policy {
-  left: 2px;
-  top: 39%;
-}
-
-#arrow-hcps {
-  left: 2px;
-  top: 47%;
-}
-
 #arrow-patients {
   left: 2px;
-  top: 54%;
+  top: 23%;
+}
+
+#arrow-hospitals-shape {
+  left: 2px;
+  top: 28%;
 }
 
 #arrow-hospitals {
   left: 2px;
-  top: 65%;
+  top: 24%;
+}
+
+#arrow-regulators {
+  left: 2px;
+  top: 38%;
+}
+
+#arrow-players {
+  left: 2px;
+  top: 41%;
+}
+
+#arrow-policy {
+  left: 2px;
+  top: 47%;
+}
+
+#arrow-policy-shape {
+  left: 2px;
+  top: 57%;
+}
+
+#arrow-patient-group {
+  left: 2px;
+  top: 62%;
+}
+
+#arrow-academia {
+  left: 2px;
+  top: 69%;
+}
+
+#arrow-medical-societies {
+  left: 2px;
+  top: 72%;
+}
+
+#arrow-medical-tech {
+  left: 2px;
+  top: 72%;
+}
+
+#arrow-medical-tech-cds {
+  left: 2px;
+  top: 83%;
 }
 
 #arrow-pharma {
   left: 2px;
-  top: 87%;
+  top: 76%;
+}
+
+#arrow-pharma-cds {
+  left: 2px;
+  top: 77%;
 }
 
 #arrow-curly-brace {
