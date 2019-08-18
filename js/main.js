@@ -41,7 +41,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   // handler for clicking on prev next button of diagnosis details
-  $('.diagnostics-details-btn-prev').click(function() {
+  $('.details-btn-prev').click(function() {
     let titleClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'title';
     let contentClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'content';
     const detailTitles = $(titleClass);
@@ -59,7 +59,7 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  $('.diagnostics-details-btn-next').click(function() {
+  $('.details-btn-next').click(function() {
     let titleClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'title';
     let contentClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'content';
     const detailTitles = $(titleClass);
