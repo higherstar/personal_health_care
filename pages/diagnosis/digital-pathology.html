@@ -361,10 +361,6 @@
               <div class="col-lg-6">
                 <!-- Diagnostics Solutions -->
                 <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
-                  <div class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
-                    <span>CDS</span>
-                    <span class="key-card-content-star position-absolute font-weight-normal">*</span>
-                  </div>
                   <div class="diagnostics-solutions-rectangle-block d-flex">
                     <div class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
                       <span>Diagnostics<br>solutions</span>
@@ -378,6 +374,19 @@
                         <path d="M15,15 L40,15"
                               style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow10);"/>
                       </svg>
+                      <svg id="arrow-toward-cds" class="position-absolute" width="100px" height="120px" top="30%">
+                        <defs>
+                          <marker id="clinical-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                          </marker>
+                        </defs>
+                        <path d="M10,110 L90,35"
+                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#clinical-arrow-maker);"/>
+                      </svg>
+                      <div class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                        <span>CDS</span>
+                        <span class="key-card-content-star position-absolute font-weight-normal">*</span>
+                      </div>
 
                       <div
                           class="diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
@@ -430,11 +439,6 @@
                       <span>Improved patients<br>outcomes</span>
                     </div>
                   </div>
-                  <!-- Arrow Lines -->
-                  <div class="arrow-to-cds position-absolute">
-                    <img src="../../img/arrow-top-right.png">
-                  </div>
-                  <!-- Arrow Lines -->
                 </div><!-- Diagnostics Solutions -->
               </div>
               <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"

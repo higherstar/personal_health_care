@@ -301,10 +301,12 @@ hr {
 }
 
 .diagnostics-solutions-cds {
-  left: 32%;
-  top: 17%;
-  width: 23%;
-  min-height: 13%;
+  left: 0;
+  top: 0;
+  margin-top: -139px;
+  margin-left: 127px;
+  width: 100%;
+  min-height: 100%;
 }
 
 #arrow-regulators {
@@ -359,6 +361,13 @@ hr {
   margin-right: -66px;
   margin-top: 11px;
   right: 0;
+}
+
+#arrow-toward-cds {
+  top: 0;
+  left: 0;
+  margin-top: -113px;
+  margin-left: 30px;
 }
 
 @media (min-width: 992px) {
