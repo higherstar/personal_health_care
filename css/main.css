@@ -15,6 +15,11 @@ body {
 ul {
   margin-bottom: 0;
 }
+
+.hide {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -50,10 +55,32 @@ ul {
   height: 52px;
   margin: auto 60px auto auto;
 }
+
+/*--------------------------------------------------------------
+# Content Header
+--------------------------------------------------------------*/
+.content-header {
+  background: #0066CC;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  z-index: 100;
+}
+
+.content-header p{
+  font-size: 27px;
+  font-weight: bold;
+  font-family: Imago;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+
+
+}
+
 /*--------------------------------------------------------------
 # Side Bar
 --------------------------------------------------------------*/
-
 .side-bar {
   background: #fff5;
   position: relative;
@@ -293,4 +320,138 @@ ul {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   z-index: 1;
+}
+/*--------------------------------------------------------------
+# Connection Modal dialog
+--------------------------------------------------------------*/
+.modal {
+  position: absolute;
+}
+
+.modal-open .modal {
+  overflow-y: hidden;
+}
+
+.modal-content {
+  height: 100%;
+  background-color: #efefef;
+}
+
+.modal-header {
+  border-bottom: 8px solid #0066CC;
+  padding: 0;
+  height: 12%;
+}
+
+.modal-header img {
+  height: 100%;
+}
+
+.modal-header button{
+  position: absolute;
+  opacity: 1;
+  right: -25px;
+  top: -25px;
+}
+
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+  opacity: 1;
+  outline: none;
+}
+
+.modal-header p {
+  margin-bottom: 0;
+  font-size: 38px;
+  color: #000;
+}
+
+.modal-header button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid white;
+  padding: 0;
+}
+
+.modal-header button span {
+  font-family: auto;
+  font-size: 50px;
+  line-height: 45px;
+  height: 50px;
+}
+
+.modal-header button:hover{
+  border: 3px solid white;
+}
+
+.modal-header button img{
+  width: 50px;
+}
+
+.modal-body {
+  font-family: Imago;
+  font-size: 17px;
+  font-weight: bold;
+  height: 88%;
+}
+
+.modal-body .key-card {
+  width: 45%;
+  height: 96%;
+  background: white;
+  margin-top: 8px;
+  font-family: Imago;
+}
+
+.modal-body .key-drivers {
+  margin-left: 20px;
+}
+
+.modal-body .key-card-header {
+  background-color: #00b0ff;
+  height: 15%;
+  font-size: 22px;
+  color: white;
+}
+
+.modal-body .key-card-content {
+  padding: 10px 30px;
+}
+
+.modal-body .key-card-content .key-card-content-block {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  margin-top:5px;
+}
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0066CC;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #007bff;
 }

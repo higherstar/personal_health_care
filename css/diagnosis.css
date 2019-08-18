@@ -10,28 +10,6 @@ hr {
 }
 
 /*--------------------------------------------------------------
-# Content Header
---------------------------------------------------------------*/
-.content-header {
-  background: #0066CC;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  z-index: 100;
-}
-
-.content-header p{
-  font-size: 27px;
-  font-weight: bold;
-  font-family: Imago;
-  color: white;
-  text-align: center;
-  padding-top: 7px;
-
-
-}
-
-/*--------------------------------------------------------------
 # Details Map
 --------------------------------------------------------------*/
 .diagnosis-map {
@@ -52,10 +30,6 @@ hr {
 .life-cycle-image {
   width: 80%;
   align-self: flex-end;
-}
-
-.hide {
-  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -189,141 +163,8 @@ hr {
 }
 
 /*--------------------------------------------------------------
-# Custom Scrollbar
---------------------------------------------------------------*/
-
-/* width */
-::-webkit-scrollbar {
-  width: 13px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0066CC;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #007bff;
-}
-
-/*--------------------------------------------------------------
 # Connection Modal dialog
 --------------------------------------------------------------*/
-.modal {
-  position: absolute;
-}
-
-.modal-open .modal {
-  overflow-y: hidden;
-}
-
-.modal-content {
-  height: 100%;
-  background-color: #efefef;
-}
-
-.modal-header {
-  border-bottom: 8px solid #0066CC;
-  padding: 0;
-  height: 12%;
-}
-
-.modal-header img {
-  height: 100%;
-}
-
-.modal-header button{
-  position: absolute;
-  opacity: 1;
-  right: -25px;
-  top: -25px;
-}
-
-.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
-  opacity: 1;
-  outline: none;
-}
-
-.modal-header p {
-  margin-bottom: 0;
-  font-size: 38px;
-  color: #000;
-}
-
-.modal-header button {
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  background-color: #007bff;
-  border-radius: 50%;
-  border: 3px solid white;
-  padding: 0;
-}
-
-.modal-header button span {
-  font-family: auto;
-  font-size: 50px;
-  line-height: 45px;
-  height: 50px;
-}
-
-.modal-header button:hover{
-  border: 3px solid white;
-}
-
-.modal-header button img{
-  width: 50px;
-}
-
-.modal-body {
-  font-family: Imago;
-  font-size: 17px;
-  font-weight: bold;
-  height: 88%;
-}
-
-.modal-body .key-card {
-  width: 45%;
-  height: 96%;
-  background: white;
-  margin-top: 8px;
-  font-family: Imago;
-}
-
-.modal-body .key-drivers {
-  margin-left: 20px;
-}
-
-.modal-body .key-card-header {
-  background-color: #00b0ff;
-  height: 15%;
-  font-size: 22px;
-  color: white;
-}
-
-.modal-body .key-card-content {
-  padding: 10px 30px;
-}
-
-.modal-body .key-card-content .key-card-content-block {
-  padding: 5px;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  font-size: 15px;
-  margin-top:5px;
-}
-
 .arrow-lines-wrap {
   width: 100%;
   height: 100%;
@@ -425,7 +266,7 @@ hr {
 .arrow-to-cds {
   width: 18%;
   height: 18%;
-  top: calc(25% - 3px);
+  top: calc(25% - 5px);
   left: 14%;
 }
 
@@ -527,51 +368,6 @@ hr {
     height: 75%;
     min-height: 520px;
   }
-}
-
-/*--------------------------------------------------------------
-# Zoom Out Modal dialog
---------------------------------------------------------------*/
-#zoomout-modal .modal-header {
-  border: 0;
-  height: 0;
-}
-
-#zoomout-modal .modal-header button {
-  z-index: 3;
-}
-
-#zoomout-modal .modal-body {
-  background: url("../img/background.png") no-repeat;
-  background-size: 100% 100%;
-  padding: 0;
-}
-
-#zoomout-modal .modal-body .zoom-out-map {
-  height: 100%;
-  width: fit-content;
-}
-
-#zoomout-modal .modal-body .zoom-out-map img {
-  height: 100%;
-}
-
-#zoomout-modal #diagnosis-dropdown {
-  top: 3%;
-  left: 36%;
-}
-
-#zoomout-modal #diagnosis-dropdown button {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 22px;
-  font-size: 14px;
-}
-
-#zoomout-modal #diagnosis-dropdown button img {
-  width: 30px;
-  top: -6px;
-  left: -14px;
 }
 
 /*--------------------------------------------------------------
@@ -799,4 +595,50 @@ hr {
 .diagnostics-solutions-circle-block-top {
   margin-top: -132px;
   height: 155%;
+}
+
+
+/*--------------------------------------------------------------
+# Zoom Out Modal dialog
+--------------------------------------------------------------*/
+#zoomout-modal .modal-header {
+  border: 0;
+  height: 0;
+}
+
+#zoomout-modal .modal-header button {
+  z-index: 3;
+}
+
+#zoomout-modal .modal-body {
+  background: url("../img/background.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+#zoomout-modal .modal-body .zoom-out-map {
+  height: 100%;
+  width: fit-content;
+}
+
+#zoomout-modal .modal-body .zoom-out-map img {
+  height: 100%;
+}
+
+#zoomout-modal #diagnosis-dropdown {
+  top: 3%;
+  left: 36%;
+}
+
+#zoomout-modal #diagnosis-dropdown button {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 22px;
+  font-size: 14px;
+}
+
+#zoomout-modal #diagnosis-dropdown button img {
+  width: 30px;
+  top: -6px;
+  left: -14px;
 }

@@ -1,0 +1,486 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+hr {
+  border: 0;
+}
+
+.col-lg-8 {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Details Map
+--------------------------------------------------------------*/
+.clinical-map {
+  height: 89.5vh;
+}
+
+.clinical-details-map {
+  width: 100%;
+  height: 80%;
+  padding: 75px 30px;
+}
+
+.clinical-details-map img {
+  width: 100%;
+  height: 100%;
+}
+
+.life-cycle-image {
+  width: 80%;
+  align-self: flex-end;
+}
+
+/*--------------------------------------------------------------
+# Custom expand button
+--------------------------------------------------------------*/
+.expand-btn-field {
+  width: 40px;
+  height: 40px;
+}
+
+.custom-expand-btn {
+  width: 100%;
+  height: 100%;
+}
+
+#clinical-expand-one{
+  top: 48%;
+  left: 50%;
+}
+
+#clinical-expand-two {
+  top: 11%;
+  left: 26%;
+}
+
+#clinical-expand-three {
+  top: 19%;
+  left: 52%;
+}
+
+#clinical-expand-four {
+  top: 29%;
+  left: 67%;
+}
+
+/*--------------------------------------------------------------
+# Dignosis Details
+--------------------------------------------------------------*/
+
+.clinical-details {
+  align-self: flex-end;
+  margin-bottom: 35px;
+}
+.clinical-container {
+  width: 80%;
+  height: 78vh;
+  margin:0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 2px black;
+}
+.clinical-right-header {
+  font-family: Imago;
+  justify-content: space-between;
+  align-items: center;
+}
+.clinical-right-header img{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  opacity: 0.8;
+}
+.clinical-right-header img:hover{
+  opacity: 1;
+}
+.clinical-right-header img:active{
+  opacity: 0.8;
+}
+.clinical-right-header h1{
+  font-size: 26px;
+  font-weight: bold;
+  color: #0066cc;
+  margin: 0;
+}
+.clinical-right-border-div {
+  height: 3px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #0066cc;
+}
+.clinical-container h2 {
+  font-size: 20px;
+  color: #0066cc;
+  font-weight: bold;
+}
+.clinical-right-content {
+  overflow-y: auto;
+  height: 90%;
+}
+
+.clinical-red-section {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+  border:solid 2px red;
+  box-shadow: 1px 1px 4px 1px black;
+  border-radius: 20px 20px 20px 20px;
+  width: fit-content;
+  padding: 0 20px 0 30px;
+  height: 37px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.clinical-red-section img {
+  margin-left: -40px;
+  margin-top: -5px;
+  object-fit: contain;
+  width: 44px;
+}
+.clinical-red-section:hover {
+  opacity: 1;
+  background-color: #eeec;
+}
+.clinical-red-section:active {
+  opacity: 0.8;
+}
+.text-content-img img {
+  width: 100%;
+}
+.img-floodlight img{
+  margin-top: 30%;
+}
+
+.clinical-decision-support-roche-use-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Connection Modal dialog
+--------------------------------------------------------------*/
+.arrow-lines-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-key-card {
+  width: 80px;
+  height: 100%;
+}
+
+.curly-brace-wrap {
+  height: calc(100% - 2em);
+  width: calc(100% - 2em);
+}
+
+.arrow-curly-brace {
+  height: 100%;
+  transform: scale(1,1.02);
+  padding-right: 20px;
+
+}
+
+.arrow-curly-brace img {
+  height: 100%;
+  width: 108px;
+}
+
+.clinical-solutions {
+  font-family: Imago;
+  color: white;
+  height: 100%;
+}
+
+.clinical-solutions-circle-dot {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  left: 10px;
+}
+
+.clinical-solutions-rectangle {
+  background-color: #9572d4;
+  width: 29%;
+  min-height: 10%;
+  border-radius: 9px;
+  margin-right: 35px;
+  padding: 0 10px;
+}
+
+.clinical-solutions-rectangle a:hover {
+  text-decoration: none;
+}
+
+.clinical-solutions-circle {
+  background-color:  #e40046;;
+  height: 44%;
+  border-radius: 50%;
+  width: 77%;
+  margin-top: 4px;
+}
+
+.clinical-solutions-rectangle-block {
+  width: calc(100% - 54px);
+  font-size: 14px;
+}
+
+
+.clinical-solutions-circle-block {
+  top: 0;
+  left: 0;
+  height: 225%;
+  width: 75%;
+  font-size: 10px;
+  margin-left: 45px;
+  margin-top: 91px;
+}
+
+.arrow-clinical-solution {
+  margin-top: -64px;
+  margin-left: -44px;
+  left: 0;
+}
+
+.key-card-content-star {
+  font-size: 49px;
+  color: black;
+  top: -2px;
+  right: 13px;
+  z-index: 3;
+}
+
+.clinical-solutions-circle-block .key-card-content-star {
+  font-size: 33px;
+  top: 52%;
+  left: 19%;
+}
+
+.arrow-to-cds {
+  width: 18%;
+  height: 18%;
+  top: calc(25% - 5px);
+  left: 14%;
+}
+
+.arrow-to-cds img {
+  width: 100%;
+  height: 100%;
+}
+
+.enable-solution-mark {
+  margin-right: -16px;
+}
+
+.zoom-out-button {
+  bottom: 20px;
+  right: 30px;
+  border: 2px solid #e40046;
+  color: #e40046;
+  width: 10%;
+  height: 10%;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.zoom-out-button:hover {
+  background-color: rgba(228, 0, 70, 0.61);
+  border: 2px solid transparent !important;
+  color: white;
+}
+
+.clinical-solutions-field {
+  background-color:  #e40046;;
+}
+
+.clinical-solutions-cds {
+  left: 32%;
+  top: 17%;
+  width: 23%;
+  min-height: 13%;
+}
+
+#arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#arrow-players {
+  left: 2px;
+  top: 29%;
+}
+
+#arrow-policy {
+  left: 2px;
+  top: 39%;
+}
+
+#arrow-hcps {
+  left: 2px;
+  top: 47%;
+}
+
+#arrow-patients {
+  left: 2px;
+  top: 54%;
+}
+
+#arrow-hospitals {
+  left: 2px;
+  top: 65%;
+}
+
+#arrow-pharma {
+  left: 2px;
+  top: 87%;
+}
+
+#arrow-curly-brace {
+  left: -36px;
+  top: -43px;
+  position: absolute;
+  transform: scale(0.6, 0.96);
+}
+
+#arrow-to-analysis {
+  margin-right: -66px;
+  margin-top: 11px;
+  right: 0;
+}
+
+#arrow-to-patients {
+  margin-right: -66px;
+  margin-top: 11px;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    margin-top: 8%;
+    max-width: 80%;
+    height: 75%;
+    min-height: 520px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Zoom Out Modal dialog
+--------------------------------------------------------------*/
+#zoomout-modal .modal-header {
+  border: 0;
+  height: 0;
+}
+
+#zoomout-modal .modal-header button {
+  z-index: 3;
+}
+
+#zoomout-modal .modal-body {
+  background: url("../img/background.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+#zoomout-modal .modal-body .zoom-out-map {
+  height: 100%;
+  width: fit-content;
+}
+
+#zoomout-modal .modal-body .zoom-out-map img {
+  height: 100%;
+}
+
+#zoomout-modal #clinical-dropdown {
+  top: 3%;
+  left: 36%;
+}
+
+#zoomout-modal #clinical-dropdown button {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 22px;
+  font-size: 14px;
+}
+
+#zoomout-modal #clinical-dropdown button img {
+  width: 30px;
+  top: -6px;
+  left: -14px;
+}
+
+/*--------------------------------------------------------------
+# Clinical decision support detail modal
+--------------------------------------------------------------*/
+
+.clinical-decision-support-image-modal .modal-dialog {
+  margin-left: 0;
+}
+
+.clinical-decision-support-image-modal .modal-header {
+  height: 0;
+  border: 0;
+}
+
+.clinical-decision-support-image-modal .modal-header button {
+  z-index: 1;
+}
+
+
+.clinical-decision-support-image-modal .modal-body {
+  padding: 0;
+}
+
+.clinical-decision-support-image-modal .modal-body img {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Genomic connection Modal dialog
+--------------------------------------------------------------*/
+.genomics-circle {
+  margin-top: 9px;
+  height: 70px;
+}
+
+.genomics-rectangle-block {
+  height: 12%;
+  font-size: 14px;
+}
+
+.genomics-circle-block {
+  height: 162px;
+  margin-top: 85px;
+}
+
+#genomics-arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#genomics-arrow-players {
+  left: 2px;
+  top: 34%;
+}
+
+#genomics-arrow-hcps {
+  left: 2px;
+  top: 47%;
+}
+
+#genomics-arrow-patients {
+  left: 2px;
+  top: 62%;
+}
+
+#genomics-arrow-hospitals {
+  left: 2px;
+  top: 79%;
+}

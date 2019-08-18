@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -20,7 +19,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="../../css/main.css" rel="stylesheet">
-  <link href="../../css/diagnosis.css" rel="stylesheet">
+  <link href="../../css/clinical.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,28 +60,28 @@
             </li>
           </ul>
         </li>
-        <li class="side-bar-menu active">
-          <a href="#" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
-          <ul class="collapse list-unstyled submenu-list show active" id="diagnosis-submenu">
+        <li class="side-bar-menu">
+          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <ul class="collapse list-unstyled submenu-list" id="diagnosis-submenu">
             <li class="side-bar-submenu">
-              <a href="companion-diagnostics.html" class="side-bar-submenu-title">Companion Diagnostics</a>
+              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title active">Companion Diagnostics</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="digital-health.html" class="side-bar-submenu-title">Digital Health</a>
-            </li>
-            <li class="side-bar-submenu active">
-              <a href="genomics.html" class="side-bar-submenu-title active">Genomics</a>
+              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
+              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
             </li>
           </ul>
         </li>
-        <li class="side-bar-menu">
-          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
+        <li class="side-bar-menu active">
+          <a href="clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
         </li>
         <li class="side-bar-menu">
           <a href="#" class="side-bar-menu-title">ACCESS</a>
@@ -111,143 +110,111 @@
       ============================-->
       <div class="main-content-map d-flex">
 
-        <div class="col-lg-6 diagnosis-map position-relative d-flex justify-content-center">
-          <div class="diagnosis-details-map position-absolute">
-            <img src="../../img/diagnosis_map.png">
-            <div id="companion-diagnostics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="companion-diagnostics-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="companion-diagnostics-btn-title" class="custom-expand-btn-title">Companion Diagnostics</p>
-            </div>
-
-            <div id="digital-health" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-health-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="digital-health-btn-title" class="custom-expand-btn-title">Digital Health</p>
-            </div>
-
-            <div id="genomics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="genomics-btn">
+        <div class="col-lg-6 clinical-map position-relative d-flex justify-content-center">
+          <div class="clinical-details-map position-absolute">
+            <img src="../../img/care-map.png">
+            <div id="clinical-expand-one" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-one-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="genomics-btn-title" class="custom-expand-btn-title" style="display: block">Genomics</p>
+              <p id="clinical-expand-one-btn-title" class="custom-expand-btn-title" style="display: block">
+                Clinical Expand</p>
             </div>
 
-            <div id="advanced-imaging" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-imaging-btn">
+            <div id="clinical-expand-two" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-two-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="advanced-imaging-btn-title" class="custom-expand-btn-title">Advanced Imaging</p>
+              <p id="clinical-expand-two-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
             </div>
-            <div id="digital-pathology" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-pathology-btn">
+
+            <div id="clinical-expand-three" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-three-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="digital-pathology-btn-title" class="custom-expand-btn-title">Digital Pathology</p>
+              <p id="clinical-expand-three-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
+            </div>
+
+            <div id="clinical-expand-four" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-four-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="clinical-expand-four-btn-title" class="custom-expand-btn-title">AClinical Expand</p>
             </div>
           </div>
-          <img src="../../img/life_cycle_digital_pathology.png" id="genomics-image" class="life-cycle-image position-absolute show">
+          <img src="../../img/life_cycle_digital_health.png" id="cinical-decision-image" class="life-cycle-image position-absolute show">
         </div>
-
         <!--==========================
-          Diagnosis  Details
+          Care Details
         ============================-->
-        <div class="col-lg-6 diagnosis-details">
+        <div class="col-lg-6 clinical-details">
           <!--==========================
-            Genomics
+            Molecularly Guided
           ============================-->
-          <div id="genomics-details" class="details-container diagnosis-container show">
-            <div class="diagnosis-right-header d-flex">
-              <img id="genomics-details-prev" class="diagnostics-details-btn-prev btn" src="../../img/toggle_prev.png">
-              <h1 class="genomics-details-title show">GENOMICS[1/3]</h1>
-              <h1 class="genomics-details-title hide">GENOMICS[2/3]</h1>
-              <h1 class="genomics-details-title hide">GENOMICS[3/3]</h1>
-              <img id="genomics-details-next" class="diagnostics-details-btn-next btn" src="../../img/toggle_next.png">
+          <div id="clinical-decision-support-details" class="details-container clinical-container show">
+            <div class="clinical-right-header d-flex">
+              <img id="clinical-decision-support-details-prev" class="clinical-details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="clinical-decision-support-details-title show">Molecularly-guided Therapy (MGT) [1/2]</h1>
+              <h1 class="clinical-decision-support-details-title hide">Molecularly-guided Therapy (MGT) [2/2]</h1>
+              <img id="clinical-decision-support-details-next" class="clinical-details-btn-next btn" src="../../img/toggle_next.png">
             </div>
-            <div class="diagnosis-right-border-div"></div>
-            <div class="genomics-details-content diagnosis-right-content show">
+            <div class="clinical-right-border-div"></div>
+            <div class="clinical-decision-support-details-content clinical-right-content show">
               <h2>Description</h2>
-              <p>According to our PHC engine, genomics is a type of Meaningful Data at Scale (MDAS). Genomic profiling
-                is a broad term that refers to the sequencing and analysis of genomic alterations (base substitutions,
-                insertions and deletions, copy number alterations, and rearrangements) and biomarkers that are known to
-                be relevant in a disease.1 Click here to learn more. [Link to Meaningful Data at Scale,
-                Advanced Analytics, and Realizing Value Module in Starter Pack]
-              <hr>
-              Genomic profiling is done through the technique of Next-generation Sequencing (NGS), which refers to
-              panel diagnostic tests of >10 genes that capture multiple classes of genomic alterations and biomarkers
-              to provide HCPs with appropriate information to select therapies (may include a report with available
-              treatment and clinical trial information).<sup>2</sup>
-              <hr>
-              Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene panels
-              that detect all classes of genomic alterations and biomarkers, providing a holistic view to physicians
-              of appropriate treatments (targeted or immunotherapy) and potential clinical trials.<sup>2</sup>
+              <p>In oncology, molecularly-guided therapy (MGT) refers to a treatment approach based on each patient's
+                genomic profile as opposed to the tumor location.
+                <sup>1</sup>
               </p>
               <strong>Click button below to see:</strong>
-              <div class="diagnosis-red-section" data-toggle="modal" data-target="#genomics-diagnostics-connections">
+              <div class="clinical-red-section" data-toggle="modal" data-target="#clinical-genomics-connections">
                 <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
-            </div>
-            <div class="genomics-details-content diagnosis-right-content hide">
-              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram
-                on the left)
+              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left)
               </h2>
-              <p><strong>Smarter & more efficient R&D –  </strong>Genomics data can also be used to derive novel disease
-                and MoA specific insights to inform drug development and R&D investments.
-                <sup>3,4</sup>
-              <hr>
-              <strong>Improved access & personalized care – </strong>
-              Insights from genomics provide invaluable information to physicians that can help them determine the
-              best possible treatment for each patient, and even map their treatment journey to identify future courses
-              of action should the disease progress.<sup>3</sup>
-              </p>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <div class="d-flex">
-                <div class="col-lg-8">
-                  <p>As a member of the Roche Group, Foundation Medicine (FMI) provides comprehensive genomic profiling
-                    services to help personalize patients’ treatment plans.
-                    <sup>1</sup>
-                  </p>
-                </div>
-                <div class="col-lg-4 text-content-img">
-                  <img src="../../img/foundation_medicine.png">
-                </div>
-              </div>
-              <hr>
-              <p>The <strong>CUPISCO trial</strong> is an example of the use of CGP in combination with a patient-centric
-                decision-making process by a Molecular Tumor Board to provide a highly-specific treatment decision for
-                each patient.2  Click here to learn more about the CUPISCO trial.
-                [Link to CUPISCO case study, Starter Pack]
-              </p>
-            </div>
-            <div class="genomics-details-content diagnosis-right-content hide" >
-              <h2>Key drivers/considerations<sup>1</sup>
-              </h2>
-              <p><strong>Testing adoption – </strong> Level of adoption of NGS tests and CGP in diagnostic practice
-                <sup>3</sup><br>
-                <strong>Advanced diagnostics funding – </strong> Level of funding of NGS tests by the healthcare system
-                as diagnostic tool
-                <sup>3</sup><br>
-                <strong>Regulatory perspective - </strong>
-                Existence of pathway for the approval of molecularly-informed therapies
-                <sup>3</sup><br>
-                <strong>Payer acceptance – </strong>Level of reimbursement of molecularly-informed therapies
+              <p><strong>Smarter & more efficient R&D – </strong>Understanding mechanisms of resistance in cancer
+                patients can help to drive faster, smarter and more efficient decision making in cancer
+                immunotherapy development and to enable differentiation and expanded access for our therapies.
                 <sup>3</sup>
               </p>
+              <p><strong>Improved access & personalized care - </strong>Rather than finding the site of tumor origin,
+                which can be costly and time-consuming, it may be more efficient to target gene alteration against
+                which an effective therapy already existed.<sup>1</sup>
+                Giving patients MGT early can potentially prolong survival.
+              </p>
             </div>
-          </div><!-- Genomics -->
-        </div><!-- Diagnosis Details -->
+            <div class="clinical-decision-support-details-content clinical-right-content hide">
+              <hr>
+              <h2>Roche and Roche partner examples/initiatives
+              </h2>
+              <p>The <strong>CUPISCO trial </strong>is the first of its kind: It combines Comprehensive Genomic
+                Profiling (CGP) of each patient’s tumor either by tissue or blood with a patient-centric
+                decision-making process by a Molecular Tumor Board for individual cases. Based on these parameters,
+                a highly-specific molecularly-guided therapy is designed for each patient.
+              </p>
+              <h2>Key drivers/considerations<sup>1</sup>
+              </h2>
+              <p><strong>Testing adoption – </strong>Level of adoption of NGS tests and CGP in diagnostic practice
+                <br>
+                <strong>Advanced diagnostics funding – </strong>Level of funding of NGS tests by the healthcare
+                system as diagnostic tool
+                <br>
+                <strong>Advanced diagnostics funding – </strong>Existence of pathway for the approval of
+                molecularly-guided therapies
+                <br>
+                <strong>Payer acceptance – </strong>Level of reimbursement of molecularly-guided therapies
+              </p>
+            </div>
+          </div><!-- Molecularly Guided -->
+        </div><!-- Care Details -->
       </div><!-- Details Map -->
       <!--==========================
           Genomics Connections Modal
       ============================-->
-      <div class="modal fade" id="genomics-diagnostics-connections">
+      <div class="modal fade" id="clinical-genomics-connections">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -365,14 +332,14 @@
               </div>
               <div class="col-lg-6">
                 <!-- Diagnostics Solutions -->
-                <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
-                  <div class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                <div class="clinical-solutions text-center d-flex align-items-center justify-content-center">
+                  <div class="clinical-solutions-cds clinical-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
                     <span>CDS</span>
                   </div>
-                  <div class="genomics-rectangle-block diagnostics-solutions-rectangle-block d-flex">
-                    <div class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                  <div class="genomics-rectangle-block clinical-solutions-rectangle-block d-flex">
+                    <div class="clinical-solutions-field clinical-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
                       <span>Genomics</span>
-                      <div class="diagnostics-solutions-circle-dot position-absolute"></div>
+                      <div class="clinical-solutions-circle-dot position-absolute"></div>
                       <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
                         <defs>
                           <marker id="arrow-genomics" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
@@ -384,16 +351,16 @@
                       </svg>
 
                       <div
-                          class="genomics-circle-block diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
+                          class="genomics-circle-block clinical-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
                         <div
-                            class="genomics-circle diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
+                            class="genomics-circle clinical-solutions-circle position-relative  d-flex align-items-center justify-content-center">
                           <span>NGC</span>
                         </div>
                         <div
-                            class="genomics-circle diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                            class="genomics-circle clinical-solutions-circle position-relative d-flex align-items-center justify-content-center">
                           <span>CGP</span>
                         </div>
-                        <div class="arrow-diagnostics-solution position-absolute">
+                        <div class="arrow-clinical-solution position-absolute">
                           <svg id="genomics-arrow-to-vertical" class="position-absolute" width="200px" height="215px" top="30%">
                             <defs>
                               <marker id="arrow-multi" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
@@ -409,7 +376,7 @@
                       </div>
                     </div>
                     <div
-                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                        class="clinical-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
                       <span class="enable-solution-title">Advanced<br>analytics</span>
                       <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
                         <defs>
@@ -421,7 +388,7 @@
                               style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow-genomics);"/>
                       </svg>
                     </div>
-                    <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
+                    <div class="clinical-solutions-rectangle  d-flex align-items-center justify-content-center">
                       <span>Molecularly-guide<br>therapy (MGT)</span>
                     </div>
                   </div>
@@ -440,6 +407,72 @@
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
       </div><!-- Genomics Connections Modal -->
+      <!--==========================================
+          Clinical decision support detail modal
+      ===========================================-->
+      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-detail">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/clinical-decision-support-desc.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Clinical decision support detail modal -->
+      <!--==========================================
+          Clinical decision support customer impact modal
+      ===========================================-->
+      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-customer-impact">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/clinical-decision-support-customer-impact.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Clinical decision support customer impact modal -->
+      <!--==========================================
+          Clinical decision support business impact modal
+      ===========================================-->
+      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-business-impact">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/clinical-decision-support-business-impact.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Clinical decision support business impact modal -->
       <!--==========================
           Zoom Out Modal
       ============================-->
@@ -458,7 +491,7 @@
               <div class="zoom-out-map position-relative">
                 <img src="../../img/diagnosis_map-zoomout.png">
                 <!-- DIAGNOSIS -->
-                <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
+                <div id="clinical-dropdown" class="position-absolute map-dropdown-menu">
                   <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     DIAGNOSIS

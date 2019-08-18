@@ -1,26 +1,26 @@
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>HealthCare System Map</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta content="" name="keywords">
-      <meta content="" name="description">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HealthCare System Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-      <!-- Favicons -->
-      <!--<link href="img/favicon.png" rel="icon">-->
+  <!-- Favicons -->
+  <!--<link href="img/favicon.png" rel="icon">-->
 
-      <!-- Google Fonts -->
-      <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
-          rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+      rel="stylesheet">
 
-      <!-- Bootstrap css -->
-      <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
 
-      <!-- Main Stylesheet File -->
-      <link href="../../css/main.css" rel="stylesheet">
-      <link href="../../css/diagnosis.css" rel="stylesheet">
-    </head>
+  <!-- Main Stylesheet File -->
+  <link href="../../css/main.css" rel="stylesheet">
+  <link href="../../css/clinical.css" rel="stylesheet">
+</head>
 
 <body>
 
@@ -60,28 +60,28 @@
             </li>
           </ul>
         </li>
-        <li class="side-bar-menu active">
-          <a href="#" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
-          <ul class="collapse list-unstyled submenu-list show active" id="diagnosis-submenu">
-            <li class="side-bar-submenu active">
-              <a href="companion-diagnostics.html" class="side-bar-submenu-title active">Companion Diagnostics</a>
+        <li class="side-bar-menu">
+          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <ul class="collapse list-unstyled submenu-list" id="diagnosis-submenu">
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title active">Companion Diagnostics</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="genomics.html" class="side-bar-submenu-title">Genomics</a>
+              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
+              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
             </li>
           </ul>
         </li>
-        <li class="side-bar-menu">
-          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
+        <li class="side-bar-menu active">
+          <a href="clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
         </li>
         <li class="side-bar-menu">
           <a href="#" class="side-bar-menu-title">ACCESS</a>
@@ -110,103 +110,130 @@
       ============================-->
       <div class="main-content-map d-flex">
 
-        <div class="col-lg-6 diagnosis-map position-relative d-flex justify-content-center">
-          <div class="diagnosis-details-map position-absolute">
-            <img src="../../img/diagnosis_map.png">
-            <div id="companion-diagnostics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="companion-diagnostics-btn">
+        <div class="col-lg-6 clinical-map position-relative d-flex justify-content-center">
+          <div class="clinical-details-map position-absolute">
+            <img src="../../img/care-map.png">
+            <div id="clinical-expand-one" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-one-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="companion-diagnostics-btn-title" class="custom-expand-btn-title" style="display: block">Companion Diagnostics</p>
+              <p id="clinical-expand-one-btn-title" class="custom-expand-btn-title" style="display: block">Clinical Expand</p>
             </div>
 
-            <div id="digital-health" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-health-btn">
+            <div id="clinical-expand-two" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-two-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="digital-health-btn-title" class="custom-expand-btn-title">Digital Health</p>
+              <p id="clinical-expand-two-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
             </div>
 
-            <div id="genomics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="genomics-btn">
+            <div id="clinical-expand-three" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-three-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="genomics-btn-title" class="custom-expand-btn-title">Genomics</p>
+              <p id="clinical-expand-three-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
             </div>
 
-            <div id="advanced-imaging" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-imaging-btn">
+            <div id="clinical-expand-four" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-four-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="advanced-imaging-btn-title" class="custom-expand-btn-title">Advanced Imaging</p>
-            </div>
-            <div id="digital-pathology" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-pathology-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="digital-pathology-btn-title" class="custom-expand-btn-title">Digital Pathology</p>
+              <p id="clinical-expand-four-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
             </div>
           </div>
-          <img src="../../img/life_cycle_companion.png" id="companion-diagnostics-image" class="life-cycle-image position-absolute show">
+          <img src="../../img/life_cycle_companion.png" id="cinical-decision-image" class="life-cycle-image position-absolute show">
         </div>
         <!--==========================
-          Diagnosis  Details
+          Care Details
         ============================-->
-        <div class="col-lg-6 diagnosis-details">
+        <div class="col-lg-6 clinical-details">
           <!--==========================
-            Companion Diagnostics
+            Clinical Decision Support
           ============================-->
-          <div id="companion-diagnostics-details" class="details-container diagnosis-container show">
-            <div class="diagnosis-right-header d-flex">
-              <img id="companion-diagnostics-details-prev" class="diagnostics-details-btn-prev btn" src="../../img/toggle_prev.png">
-              <h1 class="companion-diagnostics-details-title show">COMPANION DIAGNOSTICS[1/2]</h1>
-              <h1 class="companion-diagnostics-details-title hide">COMPANION DIAGNOSTICS[2/2]</h1>
-              <img id="companion-diagnostics-details-next" class="diagnostics-details-btn-next btn" src="../../img/toggle_next.png">
+          <div id="clinical-decision-support-details" class="details-container clinical-container show">
+            <div class="clinical-right-header d-flex">
+              <img id="clinical-decision-support-details-prev" class="diagnostics-details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="clinical-decision-support-details-title show">Clinical Decision Support (CDS) [1/3]</h1>
+              <h1 class="clinical-decision-support-details-title hide">Clinical Decision Support (CDS) [2/3]</h1>
+              <h1 class="clinical-decision-support-details-title hide">Clinical Decision Support (CDS) [3/3]</h1>
+              <img id="clinical-decision-support-details-next" class="diagnostics-details-btn-next btn" src="../../img/toggle_next.png">
             </div>
-            <div class="diagnosis-right-border-div"></div>
-            <div class="companion-diagnostics-details-content diagnosis-right-content show">
+            <div class="clinical-right-border-div"></div>
+            <div class="clinical-decision-support-details-content clinical-right-content show">
               <h2>Description</h2>
-              <p>Companion diagnostic refers to targeted diagnostics tests that aid in the choice of
-                specific therapies for each patient.
+              <p>Increased volumes of healthcare data are now available to both HCPs and patients1,2 This overwhelming
+                growth in healthcare data is making clinical decisions more complex. High-quality Clinical Decision
+                Support (CDS) leverages objective health data and analytics to improve individual patient outcomes by
+                enabling more confident clinical decisions in real time at the point of care. Most CDS solution are
+                currently in Oncology, followed by Neuroscience and Ophthalmology—all areas of interest for Roche.
+                <sup>1,4</sup>
               </p>
+              <img data-toggle="modal" data-target="#clinical-decision-support-detail"
+                   class="clinical-decision-support-roche-use-image"
+                   src="../../img/clinical-decision-support-desc.png">
               <strong>Click button below to see:</strong>
-              <div class="diagnosis-red-section" data-toggle="modal" data-target="#diagnostics-connections">
+              <div class="clinical-red-section" data-toggle="modal" data-target="#clinical-connections">
                 <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
-              <div class="diagnosis-second-section"></div>
-              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
-                the left) </h2>
-              <p><strong>Improved access & personalized care - </strong>Companion Diagnostics help to advance
-                Personalized Healthcare by delivering diagnostic confidence through a broad menu of high medical
-                value predictive assays. Targeted therapies and diagnostic tests that help to improve medical
-                decision making not only offer clinical benefits for patients but are also attractive through
-                health economic benefits to regulatory authorities and payers.<sup>2</sup>
-              </p>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p><strong>Roche Diagnostics </strong>is the global partner of choice for companion diagnostics.
-                We identify and develop innovative predictive diagnostics to target patients who are more likely to
-                respond to specific therapies.<sup>2</sup></p>
-              <p>The <strong>VENTANA ALK (D5F3) CDx Assay </strong>is an example of a companion diagnostics.
-                This assay helps identify ALK+ non-small cell lung cancer (NSCLC) patients for targeted treatment.
-                <sup>2</sup>
-              </p>
             </div>
-            <div class="companion-diagnostics-details-content diagnosis-right-content hide">
-              <h2>Key drivers/considerations</h2>
+            <div class="clinical-decision-support-details-content clinical-right-content hide">
+              <h2>Why it is important & connection to our PHC vision and strategy
+                (see PHC vision & strategy diagram on the left)
+              </h2>
+              <p><strong>Improved access & personalized care -  </strong>CDS systems have the potential to improve
+                both healthcare provider and patient experiences.<sup>1</sup>
+              </p>
+              <img data-toggle="modal" data-target="#clinical-decision-support-customer-impact"
+                   class="clinical-decision-support-roche-use-image"
+                   src="../../img/clinical-decision-support-customer-impact.png">
+              <p>CDS will also impact pharmaceutical industries by influencing how products are represented at
+                the time of clinical decision making.
+              </p>
+              <img data-toggle="modal" data-target="#clinical-decision-support-business-impact"
+                   class="clinical-decision-support-roche-use-image"
+                   src="../../img/clinical-decision-support-business-impact.png">
             </div>
-          </div><!-- Companion Diagnostics -->
-        </div><!-- Diagnosis Details -->
+            <div class="clinical-decision-support-details-content clinical-right-content hide">
+              <h2>Roche and Roche partner examples/initiatives
+              </h2>
+              <p>At Roche Pharma, our vision is that high-quality CDS improves individual patient outcomes by
+                supporting personalized clinical decisions at the point of care.<sup>1</sup>
+              </p>
+              <p>Roche’s Global Pharma CDS strategy was developed to ensure that CDS systems are high quality and that
+                we are prepared to operate in an environment where CDS has significant influence on clinical care.
+                <sup>1</sup>
+              </p>
+              <div class="d-flex">
+                <div class="col-lg-8">
+                  <p>For example, Navify® Tumor Board is a Clinical Decision Support product from Roche. It is a
+                    cloud-based workflow product that securely integrates and displays relevant aggregated
+                    data into a single, holistic patient dashboard for oncology care teams to review, align
+                    and decide on the optimal treatment for the patient.<sup>2</sup>
+                  </p>
+                </div>
+                <div class="col-lg-4 text-content-img img-floodlight">
+                  <img src="../../img/clinical-decision-support-navify-btn.png">
+                </div>
+              </div>
+              <h2>Key drivers/considerations
+              </h2>
+              <li><strong>High-quality CDS: </strong>The impact of CDS on patients, healthcare providers and the
+                business is dependent on the quality of CDS.<sup>1</sup></li>
+              <li><strong>Objectivity </strong>is essential to preserve the integrity of CDS systems and pharmaceutical
+                credibility.<sup>1</sup></li>
+            </div>
+          </div><!-- Clinical Decision Support -->
+        </div><!-- Care Details -->
       </div><!-- Details Map -->
 
       <!--==========================
           Connections Modal
       ============================-->
-      <div class="modal fade" id="diagnostics-connections">
+      <div class="modal fade" id="clinical-connections">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -216,7 +243,7 @@
             <div
                 class="modal-header d-flex align-items-center justify-content-center text-center flex-grow-0 flex-shrink-0">
               <img src="../../img/connection_icon.png"/>
-              <p class="font-weight-bold">Where Diagnostics Solution Fit Within PHC</p>
+              <p class="font-weight-bold">Where CDS Fit Within PHC</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
 
@@ -267,7 +294,7 @@
                       Access pathway
                     </div>
                     <div class="key-card-content-block position-relative">
-                      Data policy<br>Collection<br>Usage<br>Privacy<br>Security
+                      Data policy<br>ollection<br>Usage<br>Privacy<br>Security
                       <span id="data-policy-star" class="key-card-content-star position-absolute">*</span>
                     </div>
                     <div class="key-card-content-block">
@@ -355,16 +382,16 @@
                 </div><!-- Curly Brace -->
               </div>
               <div class="col-lg-6">
-                <!-- Diagnostics Solutions -->
-                <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
-                  <div class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                <!-- clinical Solutions -->
+                <div class="clinical-solutions text-center d-flex align-items-center justify-content-center">
+                  <div class="clinical-solutions-cds clinical-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
                     <span>CDS</span>
                     <span class="key-card-content-star position-absolute font-weight-normal">*</span>
                   </div>
-                  <div class="diagnostics-solutions-rectangle-block d-flex">
-                    <div class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
-                      <span>Diagnostics<br>solutions</span>
-                      <div class="diagnostics-solutions-circle-dot position-absolute"></div>
+                  <div class="clinical-solutions-rectangle-block d-flex">
+                    <div class="clinical-solutions-field clinical-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                      <span>clinical<br>solutions</span>
+                      <div class="clinical-solutions-circle-dot position-absolute"></div>
                       <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
                         <defs>
                           <marker id="arrow10" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
@@ -376,23 +403,23 @@
                       </svg>
 
                       <div
-                          class="diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
+                          class="clinical-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
                         <div
-                            class="diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative  d-flex align-items-center justify-content-center">
                           <span>Digital<br>pathology</span>
                           <span class="key-card-content-star position-absolute">*</span>
                         </div>
                         <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative d-flex align-items-center justify-content-center">
                           <span>Advanced<br>Imaging</span>
                           <span class="key-card-content-star position-absolute">*</span>
                         </div>
                         <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
-                          <span>Companion<br>diagnostics</span>
+                            class="clinical-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                          <span>Companion<br>clinical</span>
                           <span class="key-card-content-star position-absolute">*</span>
                         </div>
-                        <div class="arrow-diagnostics-solution position-absolute">
+                        <div class="arrow-clinical-solution position-absolute">
                           <svg id="arrow-to-vertical" class="position-absolute" width="200px" height="280px" top="30%">
                             <defs>
                               <marker id="arrow12" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
@@ -409,7 +436,7 @@
                       </div>
                     </div>
                     <div
-                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                        class="clinical-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
                       <span class="enable-solution-title">Advanced<br>analytics</span>
                       <span class="enable-solution-mark key-card-content-star font-weight-normal">*</span>
                       <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
@@ -422,7 +449,7 @@
                               style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow11);"/>
                       </svg>
                     </div>
-                    <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
+                    <div class="clinical-solutions-rectangle  d-flex align-items-center justify-content-center">
                       <span>Improved patients<br>outcomes</span>
                     </div>
                   </div>
@@ -431,7 +458,7 @@
                     <img src="../../img/arrow-top-right.png">
                   </div>
                   <!-- Arrow Lines -->
-                </div><!-- Diagnostics Solutions -->
+                </div><!-- clinical Solutions -->
               </div>
               <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
                    class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
@@ -441,6 +468,72 @@
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
       </div><!-- Connections Modal -->
+      <!--==========================================
+          Clinical decision support detail modal
+      ===========================================-->
+      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-detail">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/clinical-decision-support-desc.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Clinical decision support detail modal -->
+      <!--==========================================
+          Clinical decision support customer impact modal
+      ===========================================-->
+      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-customer-impact">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/clinical-decision-support-customer-impact.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Clinical decision support customer impact modal -->
+      <!--==========================================
+          Clinical decision support business impact modal
+      ===========================================-->
+      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-business-impact">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/clinical-decision-support-business-impact.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Clinical decision support business impact modal -->
       <!--==========================
           Zoom Out Modal
       ============================-->
@@ -459,7 +552,7 @@
               <div class="zoom-out-map position-relative">
                 <img src="../../img/diagnosis_map-zoomout.png">
                 <!-- DIAGNOSIS -->
-                <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
+                <div id="clinical-dropdown" class="position-absolute map-dropdown-menu">
                   <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     DIAGNOSIS
