@@ -52,6 +52,7 @@
   align-self: flex-end;
   margin-bottom: 35px;
 }
+
 .clinical-container {
   width: 80%;
   height: 78vh;
@@ -61,40 +62,48 @@
   border-radius: 20px;
   box-shadow: 0px 1px 10px 2px black;
 }
+
 .clinical-right-header {
   font-family: Imago;
   justify-content: space-between;
   align-items: center;
 }
+
 .clinical-right-header img{
   width: 40px;
   height: 40px;
   padding: 0;
   opacity: 0.8;
 }
+
 .clinical-right-header img:hover{
   opacity: 1;
 }
+
 .clinical-right-header img:active{
   opacity: 0.8;
 }
+
 .clinical-right-header h1{
   font-size: 26px;
   font-weight: bold;
   color: #0066cc;
   margin: 0;
 }
+
 .clinical-right-border-div {
   height: 3px;
   width: 100%;
   margin-top: 10px;
   background-color: #0066cc;
 }
+
 .clinical-container h2 {
   font-size: 20px;
   color: #0066cc;
   font-weight: bold;
 }
+
 .clinical-right-content {
   overflow-y: auto;
   height: 90%;
@@ -116,22 +125,27 @@
   cursor: pointer;
   opacity: 0.85;
 }
+
 .clinical-red-section img {
   margin-left: -40px;
   margin-top: -5px;
   object-fit: contain;
   width: 44px;
 }
+
 .clinical-red-section:hover {
   opacity: 1;
   background-color: #eeec;
 }
+
 .clinical-red-section:active {
   opacity: 0.8;
 }
+
 .text-content-img img {
   width: 100%;
 }
+
 .img-floodlight img{
   margin-top: 30%;
 }
