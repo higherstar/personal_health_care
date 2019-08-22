@@ -81,7 +81,15 @@
           </ul>
         </li>
         <li class="side-bar-menu active">
-          <a href="clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
+          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
+          <ul class="collapse list-unstyled submenu-list show active" id="care-submenu">
+            <li class="side-bar-submenu">
+              <a href="../care/clinical-decision-support.html" class="side-bar-submenu-title">Clinical Decision Support</a>
+            </li>
+            <li class="side-bar-submenu active">
+              <a href="../care/molecularly-guided.html" class="side-bar-submenu-title active">Molecularly Guided</a>
+            </li>
+          </ul>
         </li>
         <li class="side-bar-menu">
           <a href="#" class="side-bar-menu-title">ACCESS</a>
@@ -90,13 +98,13 @@
           <a href="#" class="side-bar-menu-title">MONITORING</a>
         </li>
         <li class="side-bar-menu">
-          <a href="#" class="side-bar-menu-title">STAKEHOLDERS</a>
+          <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
         </li>
         <li class="side-bar-menu">
-          <a href="#" class="side-bar-menu-title">ENABLERS</a>
+          <a href="../enablers/data-policy.html" class="side-bar-menu-title">ENABLERS</a>
         </li>
         <li class="side-bar-menu">
-          <a href="#" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
+          <a href="../vbhc/value-based-healthcare.html" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
         </li>
       </ul>
     </div><!--Side Bar-->
@@ -113,37 +121,22 @@
         <div class="col-lg-6 clinical-map position-relative d-flex justify-content-center">
           <div class="clinical-details-map position-absolute">
             <img src="../../img/care-map.png">
-            <div id="clinical-expand-one" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-one-btn">
+            <div id="clinical-decision-support" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-decision-support-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="clinical-decision-support-btn-title" class="custom-expand-btn-title">
+                Clinical Decision Support</p>
+            </div>
+
+            <div id="molecularly-guided" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="molecularly-guided-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="clinical-expand-one-btn-title" class="custom-expand-btn-title" style="display: block">
-                Clinical Expand</p>
-            </div>
-
-            <div id="clinical-expand-two" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-two-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="clinical-expand-two-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
-            </div>
-
-            <div id="clinical-expand-three" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-three-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="clinical-expand-three-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
-            </div>
-
-            <div id="clinical-expand-four" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-four-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="clinical-expand-four-btn-title" class="custom-expand-btn-title">AClinical Expand</p>
+              <p id="molecularly-guided-btn-title" class="custom-expand-btn-title" style="display: block">
+                Molecularly Guided</p>
             </div>
           </div>
           <img src="../../img/life_cycle_digital_health.png" id="cinical-decision-image" class="life-cycle-image position-absolute show">
@@ -155,15 +148,15 @@
           <!--==========================
             Molecularly Guided
           ============================-->
-          <div id="clinical-decision-support-details" class="details-container clinical-container show">
+          <div id="care-details" class="details-container clinical-container show">
             <div class="clinical-right-header d-flex">
-              <img id="clinical-decision-support-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
-              <h1 class="clinical-decision-support-details-title show">Molecularly-guided Therapy (MGT) [1/2]</h1>
-              <h1 class="clinical-decision-support-details-title hide">Molecularly-guided Therapy (MGT) [2/2]</h1>
-              <img id="clinical-decision-support-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
+              <img id="care-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="care-details-title show">Molecularly-guided Therapy (MGT) [1/2]</h1>
+              <h1 class="care-details-title hide">Molecularly-guided Therapy (MGT) [2/2]</h1>
+              <img id="care-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
             </div>
             <div class="clinical-right-border-div"></div>
-            <div class="clinical-decision-support-details-content clinical-right-content show">
+            <div class="care-details-content clinical-right-content show">
               <h2>Description</h2>
               <p>In oncology, molecularly-guided therapy (MGT) refers to a treatment approach based on each patient's
                 genomic profile as opposed to the tumor location.
@@ -186,7 +179,7 @@
                 Giving patients MGT early can potentially prolong survival.
               </p>
             </div>
-            <div class="clinical-decision-support-details-content clinical-right-content hide">
+            <div class="care-details-content clinical-right-content hide">
               <hr>
               <h2>Roche and Roche partner examples/initiatives
               </h2>
@@ -412,72 +405,6 @@
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
       </div><!-- Genomics Connections Modal -->
-      <!--==========================================
-          Clinical decision support detail modal
-      ===========================================-->
-      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-detail">
-        <!-- Modal Dialog -->
-        <div class="modal-dialog modal-lg">
-
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div
-                class="modal-header">
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
-            </div><!-- Modal Header -->
-
-            <!-- Modal Body -->
-            <div class="modal-body d-flex text-center">
-              <img src="../../img/clinical-decision-support-desc.png">
-            </div><!-- Modal Body -->
-          </div><!-- Modal Content -->
-        </div><!-- Modal Dialog -->
-      </div><!-- Clinical decision support detail modal -->
-      <!--==========================================
-          Clinical decision support customer impact modal
-      ===========================================-->
-      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-customer-impact">
-        <!-- Modal Dialog -->
-        <div class="modal-dialog modal-lg">
-
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div
-                class="modal-header">
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
-            </div><!-- Modal Header -->
-
-            <!-- Modal Body -->
-            <div class="modal-body d-flex text-center">
-              <img src="../../img/clinical-decision-support-customer-impact.png">
-            </div><!-- Modal Body -->
-          </div><!-- Modal Content -->
-        </div><!-- Modal Dialog -->
-      </div><!-- Clinical decision support customer impact modal -->
-      <!--==========================================
-          Clinical decision support business impact modal
-      ===========================================-->
-      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-business-impact">
-        <!-- Modal Dialog -->
-        <div class="modal-dialog modal-lg">
-
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div
-                class="modal-header">
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
-            </div><!-- Modal Header -->
-
-            <!-- Modal Body -->
-            <div class="modal-body d-flex text-center">
-              <img src="../../img/clinical-decision-support-business-impact.png">
-            </div><!-- Modal Body -->
-          </div><!-- Modal Content -->
-        </div><!-- Modal Dialog -->
-      </div><!-- Clinical decision support business impact modal -->
       <!--==========================
           Zoom Out Modal
       ============================-->

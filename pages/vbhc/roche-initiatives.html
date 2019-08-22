@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HealthCare System Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!--<link href="img/favicon.png" rel="icon">-->
+
+  <!-- Google Fonts -->
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+      rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="../../css/main.css" rel="stylesheet">
+  <link href="../../css/vbhc.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--==========================
+  Content Wrapper
+============================-->
+<div class="content-wrapper">
+  <!--==========================
+      Header
+    ============================-->
+  <header id="header" class="header header-hide">
+    <div id="logo" class="pull-left d-flex">
+      <h1>PERSONALISE HEALTHCARE SYSTEMS MAP</h1>
+      <img src="../../img/logo.png">
+    </div>
+  </header><!-- Header -->
+
+  <!--==========================
+      Content
+    ============================-->
+  <div class="content d-flex position-relative">
+    <div class="content-header position-absolute"><p>EARLY & ACCURATE DIAGNOSIS (INITIAL & RECURRENCE)</p></div>
+
+    <!--==========================
+      Side Bar
+    ============================-->
+    <div class="side-bar d-lg-block d-sm-none">
+      <div class="side-bar-splitter"></div>
+      <ul class="list-unstyled side-bar-content">
+        <li class="side-bar-menu">
+          <a href="../homepage.html"
+             aria-expanded="true"
+             class="dropdown-toggle side-bar-menu-title">HOME</a>
+          <ul class="collapse list-unstyled submenu-list active" id="home-submenu">
+            <li class="side-bar-submenu">
+              <a href="#" class="side-bar-submenu-title">Welcome</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <ul class="collapse list-unstyled submenu-list" id="diagnosis-submenu">
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title active">Companion Diagnostics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="#" class="side-bar-menu-title">ACCESS</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="#" class="side-bar-menu-title">MONITORING</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../enablers/data-policy.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title">
+            ENABLERS</a>
+        </li>
+        <li class="side-bar-menu active">
+          <a href="../vbhc/value-based-healthcare.html" class="side-bar-menu-title active">VALUE-BASED HEALTHCARE</a>
+          <ul class="collapse list-unstyled submenu-list show active" id="vbhc-submenu">
+            <li class="side-bar-submenu">
+              <a href="../vbhc/value-based-healthcare.html" class="side-bar-submenu-title">
+                Value-Based Healthcare</a>
+            </li>
+            <li class="side-bar-submenu active">
+              <a href="../vbhc/roche-initiatives.html" class="side-bar-submenu-title active">
+                Roche Initiatives</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--Side Bar-->
+
+    <!--==========================
+      Main Content
+    ============================-->
+    <div class="main-content">
+      <!--==========================
+        Details Map
+      ============================-->
+      <div class="main-content-map d-flex">
+
+        <div class="col-lg-6 vbhc-map position-relative d-flex justify-content-center">
+          <div class="vbhc-details-map position-absolute">
+            <img src="../../img/vbhc-map.png">
+            <div id="roche-initiatives" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="roche-initiatives-btn">
+                <span class="custom-expand-btn-plus" style="display: none">+</span>
+                <span class="custom-expand-btn-minus" style="display: block">-</span>
+              </button>
+              <p id="roche-initiatives-btn-title" class="custom-expand-btn-title" style="display: block">
+                Roche Initiatives</p>
+            </div>
+
+            <div id="value-based-healthcare" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="value-based-healthcare-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="value-based-healthcare-btn-title" class="custom-expand-btn-title">
+                Value-Based Healthcare</p>
+            </div>
+          </div>
+          <img src="../../img/life_cycle_stakeholders.png" id="vbhc-image"
+               class="life-cycle-image position-absolute show">
+        </div>
+        <!--==========================
+          Roche Initiatives Details
+        ============================-->
+        <div class="col-lg-6 vbhc-details">
+          <!--==========================
+            Roche Initiatives
+          ============================-->
+          <div id="vbhc-details" class="details-container vbhc-container show">
+            <div class="vbhc-right-header d-flex">
+              <img id="vbhc-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="vbhc-details-title show">Roche Initiatives [1/3]</h1>
+              <h1 class="vbhc-details-title hide">Roche Initiatives [2/3]</h1>
+              <h1 class="vbhc-details-title hide">Roche Initiatives [3/3]</h1>
+              <img id="vbhc-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
+            </div>
+            <div class="vbhc-right-border-div"></div>
+            <div class="vbhc-details-content vbhc-right-content show">
+              <h2>Achieving a Fully Enabled PHC Engine</h2>
+              <p>We recognize that fully embedded PHC capabilities won’t happen instantaneously. Instead,
+                we see this transformation towards a fully enabled PHC engine taking place over the next 5 years,
+                shown below:
+              </p>
+              <img data-toggle="modal" data-target="#phc-engine-modal" class="image-description"
+                   src="../../img/phc-engine.png">
+              <h2>Accelerating Personalised Healthcare Internally and Externally</h2>
+              <img data-toggle="modal" data-target="#phc-accelerating-modal" class="image-description"
+                   src="../../img/phc-accelerating.png">
+            </div>
+            <div class="vbhc-details-content vbhc-right-content hide">
+              <h2>Showcases</h2>
+              <p><strong>Neuroscience showcase<sup>1</sup> – </strong>Striving to understand Multiple Sclerosis (MS)
+                disease progression will enable everyone to deliver better care, improve patient outcomes and accelerate
+                the next generation of MS therapies. By building real-world, large and deep datasets that integrate
+                clinical, digital, imaging and genomic data, and applying advanced analytics, we aim to find
+                clinically meaningful new perspectives into the disease. From this we will develop new tools to
+                better measure and manage MS.
+              </p>
+              <p><strong>Ophthalmology showcase<sup>2</sup> – </strong>To predict and prevent disease progression
+                and vision loss in patients with age-related macular degeneration and diabetic retinopathy,
+                we are building MDAS by curating imaging, genetics, and clinical data to better predict treatment
+                responses, dosing, and progression to advanced disease. We are also leveraging recent advances
+                in machine learning to analyze these datasets and develop algorithms for both disease detection
+                and progression.
+              </p>
+              <p><strong>Oncology showcase<sup>3</sup> – </strong>We are leveraging MDAS and advanced analytics in
+                cancer immunotherapy to identify early predictors of treatment benefit and toxicity, develop
+                alternative endpoints, and understand the mechanisms of resistance/escape. We are also integrating
+                and harmonizing data sets from multiple clinical trials through efforts such as EDIS. Full genomic
+                analysis and advanced imaging with these data sets is generating insights that inform initial
+                pilot studies, such as development of novel combination therapies.
+              </p>
+            </div>
+            <div class="vbhc-details-content vbhc-right-content hide">
+              <h2>Shining Towers</h2>
+              <p>Shining towers are the result of establishing integrated PHC solutions.<sup>1</sup><br/>
+                An example of Shining Tower exists in Australia, where the conjoint efforts of Roche,
+                the Australian Government and the Australian Genomic Cancer Medicines Program (AGCMP)
+                supported national reimbursement of CGP, increased access to therapies and helped defined RWE framework.
+              </p>
+            </div>
+          </div><!-- Roche Initiatives -->
+        </div><!-- Roche Initiatives Details -->
+      </div><!-- Details Map -->
+      <!--=========================================
+        PHC Engine Modal
+      ==========================================-->
+      <div class="modal fade image-modal" id="phc-engine-modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/phc-engine.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- PHC Engine Modal Modal -->
+      <!--=========================================
+        PHC Accelerating Modal
+      ==========================================-->
+      <div class="modal fade image-modal" id="phc-accelerating-modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/phc-accelerating.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- PHC accelerating Modal -->
+    </div><!-- Main Content -->
+  </div><!-- Content -->
+</div><!-- Content Wrapper -->
+
+<!-- JavaScript Libraries -->
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/jquery/jquery-migrate.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HealthCare System Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!--<link href="img/favicon.png" rel="icon">-->
+
+  <!-- Google Fonts -->
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+      rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="../../css/main.css" rel="stylesheet">
+  <link href="../../css/enablers.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--==========================
+  Content Wrapper
+============================-->
+<div class="content-wrapper">
+  <!--==========================
+      Header
+    ============================-->
+  <header id="header" class="header header-hide">
+    <div id="logo" class="pull-left d-flex">
+      <h1>PERSONALISE HEALTHCARE SYSTEMS MAP</h1>
+      <img src="../../img/logo.png">
+    </div>
+  </header><!-- Header -->
+
+  <!--==========================
+      Content
+    ============================-->
+  <div class="content d-flex position-relative">
+    <div class="content-header position-absolute"><p>EARLY & ACCURATE DIAGNOSIS (INITIAL & RECURRENCE)</p></div>
+
+    <!--==========================
+      Side Bar
+    ============================-->
+    <div class="side-bar d-lg-block d-sm-none">
+      <div class="side-bar-splitter"></div>
+      <ul class="list-unstyled side-bar-content">
+        <li class="side-bar-menu">
+          <a href="../homepage.html"
+             aria-expanded="true"
+             class="dropdown-toggle side-bar-menu-title">HOME</a>
+          <ul class="collapse list-unstyled submenu-list active" id="home-submenu">
+            <li class="side-bar-submenu">
+              <a href="#" class="side-bar-submenu-title">Welcome</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <ul class="collapse list-unstyled submenu-list" id="diagnosis-submenu">
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title active">Companion Diagnostics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="#" class="side-bar-menu-title">ACCESS</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="#" class="side-bar-menu-title">MONITORING</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
+        </li>
+        <li class="side-bar-menu active">
+          <a href="data-policy.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">ENABLERS</a>
+          <ul class="collapse list-unstyled submenu-list active show" id="enablers-submenu">
+            <li class="side-bar-submenu">
+              <a href="../enablers/data-policy.html" class="side-bar-submenu-title">Data Policy</a>
+            </li>
+            <li class="side-bar-submenu active">
+              <a href="../enablers/advanced-analytics.html" class="side-bar-submenu-title active">Advanced Analytics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../enablers/it-infrastructure.html" class="side-bar-submenu-title">IT Infrastructure</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../vbhc/value-based-healthcare.html" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
+        </li>
+      </ul>
+    </div><!--Side Bar-->
+
+    <!--==========================
+      Main Content
+    ============================-->
+    <div class="main-content">
+      <!--==========================
+        Details Map
+      ============================-->
+      <div class="main-content-map d-flex">
+
+        <div class="col-lg-6 enablers-map position-relative d-flex justify-content-center">
+          <div class="enablers-details-map position-absolute">
+            <img src="../../img/enablers-map.png">
+            <div id="data-policy" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="data-policy-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="data-policy-btn-title" class="custom-expand-btn-title">Data Policy</p>
+            </div>
+
+            <div id="advanced-analytics" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-analytics-btn">
+                <span class="custom-expand-btn-plus" style="display: none">+</span>
+                <span class="custom-expand-btn-minus" style="display: block">-</span>
+              </button>
+              <p id="advanced-analytics-btn-title" class="custom-expand-btn-title" style="display: block">Advanced Analytics</p>
+            </div>
+
+            <div id="it-infrastructure" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="it-infrastructure-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="it-infrastructure-btn-title" class="custom-expand-btn-title">IT Infrastructure</p>
+            </div>
+          </div>
+          <img src="../../img/life_cycle_advanced-analytics.png" id="enablers-image" class="life-cycle-image position-absolute show">
+        </div>
+        <!--==========================
+          Advanced Analytics Details
+        ============================-->
+        <div class="col-lg-6 enablers-details">
+          <!--==========================
+            Advanced Analytics
+          ============================-->
+          <div id="enablers-details" class="details-container enablers-container show">
+            <div class="enablers-right-header d-flex">
+              <img id="enablers-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="enablers-details-title show">Advanced Analytics [1/2]</h1>
+              <h1 class="enablers-details-title hide">Advanced Analytics [2/2]</h1>
+              <img id="enablers-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
+            </div>
+            <div class="enablers-right-border-div"></div>
+            <div class="enablers-details-content enablers-right-content show">
+              <h2>Description</h2>
+              <p>To generate value from MDAS, we employ advanced analytics and sophisticated techniques to gain
+                deeper insights or make predictions.<sup>1</sup> Technologies, such as machine learning and artificial
+                intelligence, show the promise for wide reaching impact. At Roche, we are building algorithms using
+                Artificial Intelligence (AI) and machine learning to help us make faster, more accurate, and more
+                precise decisions based on insights and predictions generated from Meaningful Data at Scale.
+                <sup>2</sup> We are also integrating data from multiple sources and types.
+              </p>
+              <h2>Why it is important & Connection to our PHC Vision and Strategy</h2>
+              <p>We are enabling the use of Advanced Analytics (AA) to generate evidence/insights from MDAS to
+                create value for R&D and patient care and access.<sup>3</sup>
+              </p>
+              <h2>Roche and Roche partner examples/initiatives</h2>
+              <p><strong>Enhanced Data and Insight Sharing (EDIS) - </strong>EDIS is a project at Roche that aims to
+                make our internal data Findable, Accessible, Interoperable, and Reusable (F.A.I.R.).
+                This will facilitate data management and sharing.
+              </p>
+              <p><strong>Roche Advanced Analytics Network (RAAN) </strong>was launched in mid-2017 (with 300+ members)
+                to connect advanced analytics experts across Roche.<sup>3</sup> It established the RAAN
+                Advisory Group and sponsored the RAAD Challenge (130+ teams participating).
+              </p>
+            </div>
+            <div class="enablers-details-content enablers-right-content hide">
+              <h2>Key drivers/considerations</h2>
+              <span><strong>Key Learnings</strong>
+                <li>Roche has strong existing AA capabilities, however they are fragmented</li>
+                <li>Lots of enthusiasm & interest in AA across the organization</li>
+                <li>We can better leverage this expertise to help answer business questions,
+                  establish external connections and evaluate opportunities</li>
+                <li>Roche is well positioned to build academic partnerships to continue to strengthen its AA
+                  capabilities & enhance our brand as leader in this field</li>
+              </span>
+              <hr>
+              <span><strong>Watch-Outs</strong>
+                <li>Data is the bottleneck and should be the core focus initially</li>
+                <li>Attracting and retaining AA talent is challenging - highly competitive</li>
+                <li>Fast moving environment - easy to fall behind with emerging methodologies and technologies
+                  if not proactive</li>
+                <li>Need to ensure we keep on fostering an environment of learning and communication between
+                  departments to drive our AA capabilities</li>
+                <li>Sometimes challenging to coordinate RAAN activities across the globe & keep 400+ people engaged
+                  and utilized.  Also this is a volunteer driven network.</li>
+              </span>
+            </div>
+          </div><!-- Advanced Analytics -->
+        </div><!-- Advanced Analytics Details -->
+      </div><!-- Details Map -->
+    </div><!-- Main Content -->
+  </div><!-- Content -->
+</div><!-- Content Wrapper -->
+
+<!-- JavaScript Libraries -->
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/jquery/jquery-migrate.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../../js/main.js"></script>
+</body>
+</html>

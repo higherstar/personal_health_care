@@ -81,7 +81,16 @@
           </ul>
         </li>
         <li class="side-bar-menu active">
-          <a href="clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
+          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
+          <ul class="collapse list-unstyled submenu-list show active" id="care-submenu">
+            <li class="side-bar-submenu active">
+              <a href="../care/clinical-decision-support.html" class="side-bar-submenu-title active">
+                Clinical Decision Support</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../care/molecularly-guided.html" class="side-bar-submenu-title">Molecularly Guided</a>
+            </li>
+          </ul>
         </li>
         <li class="side-bar-menu">
           <a href="#" class="side-bar-menu-title">ACCESS</a>
@@ -90,13 +99,13 @@
           <a href="#" class="side-bar-menu-title">MONITORING</a>
         </li>
         <li class="side-bar-menu">
-          <a href="#" class="side-bar-menu-title">STAKEHOLDERS</a>
+          <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
         </li>
         <li class="side-bar-menu">
-          <a href="#" class="side-bar-menu-title">ENABLERS</a>
+          <a href="../enablers/data-policy.html" class="side-bar-menu-title">ENABLERS</a>
         </li>
         <li class="side-bar-menu">
-          <a href="#" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
+          <a href="../vbhc/value-based-healthcare.html" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
         </li>
       </ul>
     </div><!--Side Bar-->
@@ -113,36 +122,21 @@
         <div class="col-lg-6 clinical-map position-relative d-flex justify-content-center">
           <div class="clinical-details-map position-absolute">
             <img src="../../img/care-map.png">
-            <div id="clinical-expand-one" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-one-btn">
+            <div id="clinical-decision-support" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-decision-support-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="clinical-expand-one-btn-title" class="custom-expand-btn-title" style="display: block">Clinical Expand</p>
+              <p id="clinical-decision-support-btn-title" class="custom-expand-btn-title" style="display: block">
+                Clinical Decision Support</p>
             </div>
 
-            <div id="clinical-expand-two" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-two-btn">
+            <div id="molecularly-guided" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="molecularly-guided-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="clinical-expand-two-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
-            </div>
-
-            <div id="clinical-expand-three" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-three-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="clinical-expand-three-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
-            </div>
-
-            <div id="clinical-expand-four" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-expand-four-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="clinical-expand-four-btn-title" class="custom-expand-btn-title">Clinical Expand</p>
+              <p id="molecularly-guided-btn-title" class="custom-expand-btn-title">Molecularly Guided</p>
             </div>
           </div>
           <img src="../../img/life_cycle_companion.png" id="cinical-decision-image" class="life-cycle-image position-absolute show">
@@ -154,16 +148,16 @@
           <!--==========================
             Clinical Decision Support
           ============================-->
-          <div id="clinical-decision-support-details" class="details-container clinical-container show">
+          <div id="care-details" class="details-container clinical-container show">
             <div class="clinical-right-header d-flex">
-              <img id="clinical-decision-support-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
-              <h1 class="clinical-decision-support-details-title show">Clinical Decision Support (CDS) [1/3]</h1>
-              <h1 class="clinical-decision-support-details-title hide">Clinical Decision Support (CDS) [2/3]</h1>
-              <h1 class="clinical-decision-support-details-title hide">Clinical Decision Support (CDS) [3/3]</h1>
-              <img id="clinical-decision-support-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
+              <img id="care-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="care-details-title show">Clinical Decision Support (CDS) [1/3]</h1>
+              <h1 class="care-details-title hide">Clinical Decision Support (CDS) [2/3]</h1>
+              <h1 class="care-details-title hide">Clinical Decision Support (CDS) [3/3]</h1>
+              <img id="care-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
             </div>
             <div class="clinical-right-border-div"></div>
-            <div class="clinical-decision-support-details-content clinical-right-content show">
+            <div class="care-details-content clinical-right-content show">
               <h2>Description</h2>
               <p>Increased volumes of healthcare data are now available to both HCPs and patients1,2 This overwhelming
                 growth in healthcare data is making clinical decisions more complex. High-quality Clinical Decision
@@ -172,32 +166,32 @@
                 currently in Oncology, followed by Neuroscience and Ophthalmology—all areas of interest for Roche.
                 <sup>1,4</sup>
               </p>
-              <img data-toggle="modal" data-target="#clinical-decision-support-detail"
-                   class="clinical-decision-support-roche-use-image"
+              <img data-toggle="modal" data-target="#care-detail"
+                   class="care-roche-use-image"
                    src="../../img/clinical-decision-support-desc.png">
               <strong>Click button below to see:</strong>
               <div class="clinical-red-section" data-toggle="modal" data-target="#clinical-connections">
                 <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
             </div>
-            <div class="clinical-decision-support-details-content clinical-right-content hide">
+            <div class="care-details-content clinical-right-content hide">
               <h2>Why it is important & connection to our PHC vision and strategy
                 (see PHC vision & strategy diagram on the left)
               </h2>
               <p><strong>Improved access & personalized care -  </strong>CDS systems have the potential to improve
                 both healthcare provider and patient experiences.<sup>1</sup>
               </p>
-              <img data-toggle="modal" data-target="#clinical-decision-support-customer-impact"
-                   class="clinical-decision-support-roche-use-image"
+              <img data-toggle="modal" data-target="#care-customer-impact"
+                   class="care-roche-use-image"
                    src="../../img/clinical-decision-support-customer-impact.png">
               <p>CDS will also impact pharmaceutical industries by influencing how products are represented at
                 the time of clinical decision making.
               </p>
-              <img data-toggle="modal" data-target="#clinical-decision-support-business-impact"
-                   class="clinical-decision-support-roche-use-image"
+              <img data-toggle="modal" data-target="#care-business-impact"
+                   class="care-roche-use-image"
                    src="../../img/clinical-decision-support-business-impact.png">
             </div>
-            <div class="clinical-decision-support-details-content clinical-right-content hide">
+            <div class="care-details-content clinical-right-content hide">
               <h2>Roche and Roche partner examples/initiatives
               </h2>
               <p>At Roche Pharma, our vision is that high-quality CDS improves individual patient outcomes by
@@ -573,7 +567,7 @@
       <!--==========================================
           Clinical decision support detail modal
       ===========================================-->
-      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-detail">
+      <div class="modal fade care-image-modal" id="care-detail">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -592,10 +586,10 @@
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
       </div><!-- Clinical decision support detail modal -->
-      <!--==========================================
+      <!--=====================================================
           Clinical decision support customer impact modal
-      ===========================================-->
-      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-customer-impact">
+      =======================================================-->
+      <div class="modal fade care-image-modal" id="care-customer-impact">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -617,7 +611,7 @@
       <!--==========================================
           Clinical decision support business impact modal
       ===========================================-->
-      <div class="modal fade clinical-decision-support-image-modal" id="clinical-decision-support-business-impact">
+      <div class="modal fade care-image-modal" id="care-business-impact">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 

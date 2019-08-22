@@ -1,15 +1,4 @@
 /*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-hr {
-  border: 0;
-}
-
-.col-lg-8 {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
 # Details Map
 --------------------------------------------------------------*/
 .clinical-map {
@@ -32,6 +21,7 @@ hr {
   align-self: flex-end;
 }
 
+
 /*--------------------------------------------------------------
 # Custom expand button
 --------------------------------------------------------------*/
@@ -45,26 +35,15 @@ hr {
   height: 100%;
 }
 
-#clinical-expand-one{
+#clinical-decision-support{
   top: 48%;
   left: 50%;
 }
 
-#clinical-expand-two {
+#molecularly-guided {
   top: 11%;
   left: 26%;
 }
-
-#clinical-expand-three {
-  top: 19%;
-  left: 52%;
-}
-
-#clinical-expand-four {
-  top: 29%;
-  left: 67%;
-}
-
 /*--------------------------------------------------------------
 # Dignosis Details
 --------------------------------------------------------------*/
@@ -157,7 +136,7 @@ hr {
   margin-top: 30%;
 }
 
-.clinical-decision-support-roche-use-image {
+.care-roche-use-image {
   width: 100%;
   height: auto;
   cursor: pointer;
@@ -545,25 +524,25 @@ hr {
 # Clinical decision support detail modal
 --------------------------------------------------------------*/
 
-.clinical-decision-support-image-modal .modal-dialog {
+.care-image-modal .modal-dialog {
   margin-left: 0;
 }
 
-.clinical-decision-support-image-modal .modal-header {
+.care-image-modal .modal-header {
   height: 0;
   border: 0;
 }
 
-.clinical-decision-support-image-modal .modal-header button {
+.care-image-modal .modal-header button {
   z-index: 1;
 }
 
 
-.clinical-decision-support-image-modal .modal-body {
+.care-image-modal .modal-body {
   padding: 0;
 }
 
-.clinical-decision-support-image-modal .modal-body img {
+.care-image-modal .modal-body img {
   width: 100%;
 }
 

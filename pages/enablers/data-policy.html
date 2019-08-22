@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HealthCare System Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!--<link href="img/favicon.png" rel="icon">-->
+
+  <!-- Google Fonts -->
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+      rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="../../css/main.css" rel="stylesheet">
+  <link href="../../css/enablers.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--==========================
+  Content Wrapper
+============================-->
+<div class="content-wrapper">
+  <!--==========================
+      Header
+    ============================-->
+  <header id="header" class="header header-hide">
+    <div id="logo" class="pull-left d-flex">
+      <h1>PERSONALISE HEALTHCARE SYSTEMS MAP</h1>
+      <img src="../../img/logo.png">
+    </div>
+  </header><!-- Header -->
+
+  <!--==========================
+      Content
+    ============================-->
+  <div class="content d-flex position-relative">
+    <div class="content-header position-absolute"><p>EARLY & ACCURATE DIAGNOSIS (INITIAL & RECURRENCE)</p></div>
+
+    <!--==========================
+      Side Bar
+    ============================-->
+    <div class="side-bar d-lg-block d-sm-none">
+      <div class="side-bar-splitter"></div>
+      <ul class="list-unstyled side-bar-content">
+        <li class="side-bar-menu">
+          <a href="../homepage.html"
+             aria-expanded="true"
+             class="dropdown-toggle side-bar-menu-title">HOME</a>
+          <ul class="collapse list-unstyled submenu-list active" id="home-submenu">
+            <li class="side-bar-submenu">
+              <a href="#" class="side-bar-submenu-title">Welcome</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <ul class="collapse list-unstyled submenu-list" id="diagnosis-submenu">
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title active">Companion Diagnostics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="#" class="side-bar-menu-title">ACCESS</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="#" class="side-bar-menu-title">MONITORING</a>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
+        </li>
+        <li class="side-bar-menu active">
+          <a href="data-policy.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">ENABLERS</a>
+          <ul class="collapse list-unstyled submenu-list active show" id="enablers-submenu">
+            <li class="side-bar-submenu active">
+              <a href="../enablers/data-policy.html" class="side-bar-submenu-title active">Data Policy</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../enablers/advanced-analytics.html" class="side-bar-submenu-title">Advanced Analytics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../enablers/it-infrastructure.html" class="side-bar-submenu-title">IT Infrastructure</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../vbhc/value-based-healthcare.html" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
+        </li>
+      </ul>
+    </div><!--Side Bar-->
+
+    <!--==========================
+      Main Content
+    ============================-->
+    <div class="main-content">
+      <!--==========================
+        Details Map
+      ============================-->
+      <div class="main-content-map d-flex">
+
+        <div class="col-lg-6 enablers-map position-relative d-flex justify-content-center">
+          <div class="enablers-details-map position-absolute">
+            <img src="../../img/enablers-map.png">
+            <div id="data-policy" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="data-policy-btn">
+                <span class="custom-expand-btn-plus" style="display: none">+</span>
+                <span class="custom-expand-btn-minus" style="display: block">-</span>
+              </button>
+              <p id="data-policy-btn-title" class="custom-expand-btn-title" style="display: block">Data Policy</p>
+            </div>
+
+            <div id="advanced-analytics" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-analytics-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="advanced-analytics-btn-title" class="custom-expand-btn-title">Advanced Analytics</p>
+            </div>
+
+            <div id="it-infrastructure" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="it-infrastructure-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="it-infrastructure-btn-title" class="custom-expand-btn-title">IT Infrastructure</p>
+            </div>
+          </div>
+          <img src="../../img/life_cycle_stakeholders.png" id="enablers-image" class="life-cycle-image position-absolute show">
+        </div>
+        <!--==========================
+          Data Policy Details
+        ============================-->
+        <div class="col-lg-6 enablers-details">
+          <!--==========================
+            Data Policy
+          ============================-->
+          <div id="enablers-details" class="details-container enablers-container show">
+            <div class="enablers-right-header d-flex">
+              <img id="enablers-details-prev" class="details-btn-prev btn" src="../../img/toggle_prev.png">
+              <h1 class="enablers-details-title show">Data Policy</h1>
+              <img id="enablers-details-next" class="details-btn-next btn" src="../../img/toggle_next.png">
+            </div>
+            <div class="enablers-right-border-div"></div>
+            <div class="enablers-details-content enablers-right-content show">
+              <h2>Description</h2>
+              <p>Legal frameworks around the collection, processing & sharing of data is an important enable for PHC.
+                <sup>2</sup> Stakeholders such as patients, HCPs, regulators and policy makers, may be involved.
+              </p>
+              <h2>Why it is important & connection to our PHC Vision and Strategy
+              </h2>
+              <span>It is important to identify, understand and address key barriers to building and gaining access to
+                Meaningful Data at Scale (MDAS). Initial barriers to considered are:<sup>1</sup>
+                <li>Cost</li>
+                <li>Scale (breadth and depth</li>
+                <li>Data privacy laws and regulations</li>
+                <li>Patient cultural perspectives</li>
+                <li>Infrastructure</li>
+                <li>Data quality and completeness</li>
+                <li>Access mode</li>
+                <li>Unstructured nature of data</li>
+                <li>Intellectual property</li>
+              </span>
+              <hr>
+              <h2>Key drivers/considerations</h2>
+              <p>Data privacy is a key area where much is unknown and requirements vary across geographies.<sup>3</sup>
+                As data becomes more “meaningful”, de-identification/anonymization can be challenging.
+                The Roche MDAS Working Group will connect with the newly formed Data Privacy Advisory Group to
+                obtain advice on data privacy matters including data anonymization requirements for all data types.
+              </p>
+            </div>
+          </div><!-- Data Policy -->
+        </div><!-- Data Policy Details -->
+      </div><!-- Details Map -->
+    </div><!-- Main Content -->
+  </div><!-- Content -->
+</div><!-- Content Wrapper -->
+
+<!-- JavaScript Libraries -->
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/jquery/jquery-migrate.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../../js/main.js"></script>
+</body>
+</html>

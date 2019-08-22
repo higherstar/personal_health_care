@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+# Details Map
+--------------------------------------------------------------*/
+.enablers-map {
+  height: 89.5vh;
+}
+
+.enablers-details-map {
+  width: 100%;
+  height: 80%;
+  padding: 75px 30px;
+}
+
+.enablers-details-map img {
+  width: 100%;
+  height: 100%;
+}
+
+.life-cycle-image {
+  width: 80%;
+  align-self: flex-end;
+}
+
+/*--------------------------------------------------------------
+# Dignosis Details
+--------------------------------------------------------------*/
+
+.enablers-details {
+  align-self: flex-end;
+  margin-bottom: 35px;
+}
+.enablers-container {
+  width: 80%;
+  height: 78vh;
+  margin:0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 2px black;
+}
+.enablers-right-header {
+  font-family: Imago;
+  justify-content: space-between;
+  align-items: center;
+}
+.enablers-right-header img{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  opacity: 0.8;
+}
+.enablers-right-header img:hover{
+  opacity: 1;
+}
+.enablers-right-header img:active{
+  opacity: 0.8;
+}
+.enablers-right-header h1{
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #0066cc;
+  margin: 0;
+}
+.enablers-right-border-div {
+  height: 3px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #0066cc;
+}
+.enablers-details-content p span, .enablers-container h2 {
+  font-size: 20px;
+  color: #0066cc;
+  font-weight: bold;
+}
+.enablers-container h2 {
+  font-size: 20px;
+  color: #0066cc;
+  font-weight: bold;
+}
+.enablers-right-content {
+  overflow-y: auto;
+  height: 90%;
+}
+.text-content-img img {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+#   Expand buttons
+--------------------------------------------------------------*/
+#data-policy {
+  top: 69%;
+  left: 64%;
+}
+#advanced-analytics {
+  top: 16%;
+  left: 46%;
+}
+#it-infrastructure {
+  top: 33%;
+  left: 12%;
+}
