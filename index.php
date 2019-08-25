@@ -7,3 +7,9 @@
 <a href="/pages/diagnosis/real-world-data.html">Diagnosis / Real World Data</a><br />
 <a href="/pages/care/clinical-decision-support.html">Care / Clinical Decision Support</a><br />
 <a href="/pages/care/molecularly-guided.html">Care / Molecularly Guided</a><br />
+<a href="/pages/enablers/advanced-analytics.html">Enablers / Advanced Analytics</a><br />
+<a href="/pages/enablers/data-policy.html">Enablers / Data Policy</a><br />
+<a href="/pages/enablers/it-infrastructure.html">Enablers / IT Infrastructure</a><br />
+<a href="/pages/stakeholders/stakeholders.html">Stakeholders / Stakeholders</a><br />
+<a href="/pages/vbhc/roche-initiatives.html">VBHC / Roche Initiatives</a><br />
+<a href="/pages/vbhc/value-based-healthcare.html">VBHC / Value-Based Healthcare</a><br />
