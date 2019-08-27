@@ -62,12 +62,14 @@ jQuery(document).ready(function( $ ) {
     let activeSubmenuList;
     let activeSubmenu;
     let activeSubmenuIndex;
+
     const submenuLists = $('.submenu-list');
     for (let i = 0; i< submenuLists.length; i++) {
       if(submenuLists[i].classList.contains('active')) {
         activeSubmenuList = submenuLists[i];
       }
     }
+
     const activeSubmenus = $(activeSubmenuList).find('a');
     for (let i = 0; i< activeSubmenus.length; i++) {
       if(activeSubmenus[i].classList.contains('active')) {
@@ -75,9 +77,10 @@ jQuery(document).ready(function( $ ) {
         activeSubmenuIndex = i;
       }
     }
+
     if (this.classList.contains('details-btn-prev') && activeSubmenuIndex !== 0) {
       activeSubmenus[activeSubmenuIndex - 1].click();
-    } else if (this.classList.contains('details-btn-next') && activeSubmenuIndex !== activeSubmenus.length) {
+    } else if (this.classList.contains('details-btn-next') && activeSubmenuIndex !== activeSubmenus.length - 1) {
       activeSubmenus[activeSubmenuIndex + 1].click();
     }
   });
