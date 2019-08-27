@@ -5,7 +5,9 @@ jQuery(document).ready(function( $ ) {
       $('#welcome-modal').modal('show');
       localStorage.setItem('welcome', 'true');
     } else {
-      $('#welcome-modal-submenu')[0].classList.remove('active');
+      if($('#welcome-modal-submenu').length > 0) {
+        $('#welcome-modal-submenu')[0].classList.remove('active');
+      }
     }
   });
 
