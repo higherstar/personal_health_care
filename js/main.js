@@ -1,7 +1,22 @@
 jQuery(document).ready(function( $ ) {
   // open welcome modal when load first page
   $(document).ready(function() {
+    if(localStorage.getItem('welcome') === null) {
+      $('#welcome-modal').modal('show');
+      localStorage.setItem('welcome', 'true');
+    } else {
+      $('#welcome-modal-submenu')[0].classList.remove('active');
+    }
+  });
+
+  //handler for welcome modal
+  $('#welcome-modal-link').click(function () {
     $('#welcome-modal').modal('show');
+    $('#welcome-modal-submenu')[0].classList.add('active');
+  });
+
+  $('#welcome-modal').on('hidden.bs.modal', function () {
+    $('#welcome-modal-submenu')[0].classList.remove('active');
   });
 
   // handler for clicking on dropdown
@@ -41,39 +56,27 @@ jQuery(document).ready(function( $ ) {
   });
 
   // handler for clicking on prev next button of diagnosis details
-  $('.details-btn-prev').click(function() {
-    let titleClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'title';
-    let contentClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'content';
-    const detailTitles = $(titleClass);
-    const detailContents = $(contentClass);
-    for (let i = 0; i< detailTitles.length; i++) {
-      if ($(detailTitles[i])[0].classList.contains('show')) {
-        if (i !== 0) {
-          $(detailTitles[i])[0].classList.replace('show', 'hide');
-          $(detailContents[i])[0].classList.replace('show', 'hide');
-          $(detailContents[(i - 1)])[0].classList.replace('hide', 'show');
-          $(detailTitles[(i - 1)])[0].classList.replace('hide', 'show');
-        }
-        break;
+  $('.details-prev-next').click(function() {
+    let activeSubmenuList;
+    let activeSubmenu;
+    let activeSubmenuIndex;
+    const submenuLists = $('.submenu-list');
+    for (let i = 0; i< submenuLists.length; i++) {
+      if(submenuLists[i].classList.contains('active')) {
+        activeSubmenuList = submenuLists[i];
       }
     }
-  });
-
-  $('.details-btn-next').click(function() {
-    let titleClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'title';
-    let contentClass = '.' + $(this)[0].id.slice(0, $(this)[0].id.length-4) + 'content';
-    const detailTitles = $(titleClass);
-    const detailContents = $(contentClass);
-    for (let i = 0; i< detailTitles.length; i++) {
-      if ($(detailTitles[i])[0].classList.contains('show')) {
-        if (i !== detailTitles.length - 1) {
-          $(detailTitles[i])[0].classList.replace('show', 'hide');
-          $(detailContents[i])[0].classList.replace('show', 'hide');
-          $(detailContents[(i + 1)])[0].classList.replace('hide', 'show');
-          $(detailTitles[(i + 1)])[0].classList.replace('hide', 'show');
-        }
-        break;
+    const activeSubmenus = $(activeSubmenuList).find('a');
+    for (let i = 0; i< activeSubmenus.length; i++) {
+      if(activeSubmenus[i].classList.contains('active')) {
+        activeSubmenu = activeSubmenus[i];
+        activeSubmenuIndex = i;
       }
+    }
+    if (this.classList.contains('details-btn-prev') && activeSubmenuIndex !== 0) {
+      activeSubmenus[activeSubmenuIndex - 1].click();
+    } else if (this.classList.contains('details-btn-next') && activeSubmenuIndex !== activeSubmenus.length) {
+      activeSubmenus[activeSubmenuIndex + 1].click();
     }
   });
 });

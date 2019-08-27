@@ -54,8 +54,8 @@
              aria-expanded="true"
              class="dropdown-toggle side-bar-menu-title active">HOME</a>
           <ul class="collapse list-unstyled submenu-list active show" id="home-submenu">
-            <li class="side-bar-submenu active">
-              <a href="#welcome" class="side-bar-submenu-title">Welcome</a>
+            <li class="side-bar-submenu active" id="welcome-modal-submenu">
+              <a id="welcome-modal-link" href="#welcome" class="side-bar-submenu-title">Welcome</a>
             </li>
           </ul>
         </li >
@@ -212,7 +212,7 @@
             <div class="modal-header d-block text-center">
               <p class="modal-title font-italic font-weight-bold">Welcome to</p>
               <h4 class="font-weight-bold">THE PERSONALISED HEALTHCARE (PHC) SYSTEMS MAP</h4>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+              <button id="welcome-close-btn" type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
 
             <!-- Modal Body -->
@@ -225,7 +225,7 @@
 
             <!-- Modal Footer -->
             <div class="modal-footer d-flex justify-content-center">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">EXPLORE</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="explore-btn">EXPLORE</button>
             </div><!-- Modal Footer -->
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
