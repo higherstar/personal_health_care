@@ -49,7 +49,14 @@
       Side Bar
     ============================-->
     <div class="side-bar d-lg-block d-sm-none">
-      <div class="side-bar-splitter"></div>
+      <div class="side-bar-splitter position-relative">
+        <div data-toggle="modal" data-target="#search-modal"  class="side-bar-search d-flex align-items-center justify-content-between position-absolute">
+          <div class="side-bar-search-icon">
+            <img src="../../img/search-icon.png">
+          </div>
+          <span>SEARCH</span>
+        </div>
+      </div>
       <ul class="list-unstyled side-bar-content">
         <li class="side-bar-menu">
           <a href="../homepage.html"
@@ -579,6 +586,45 @@
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
       </div><!-- Zoom Out Modal -->
+      <!--==========================
+        Search Modal
+      ============================-->
+      <div class="modal fade" id="search-modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header d-flex text-center align-items-center justify-content-center">
+              <div class="modal-search-input d-flex align-items-center">
+                <div class="side-bar-search-icon">
+                  <img src="../../img/search-icon-white.png">
+                </div>
+                <input type="text" placeholder="Search">
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <h2>Search result for "Search Text":</h2>
+              <hr>
+              <div class="modal-search-result">
+                <div class="modal-search-result-item">
+                  There is <a href="#">result one</a>.
+                </div>
+                <div class="modal-search-result-item">
+                  There is <a href="#">result two</a>.
+                </div>
+                <div class="modal-search-result-item">
+                  There is <a href="#">result three</a>.
+                </div>
+              </div>
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Search Modal -->
     </div><!-- Main Content -->
   </div><!-- Content -->
 </div><!-- Content Wrapper -->
