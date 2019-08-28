@@ -476,6 +476,10 @@ hr {
 /*--------------------------------------------------------------
 # Search Modal dialog
 --------------------------------------------------------------*/
+#search-modal {
+  height: 100%;
+}
+
 #search-modal .modal-content {
   padding: 30px;
 }
@@ -530,6 +534,9 @@ hr {
 @media (min-width: 992px) {
   #search-modal .modal-lg {
     max-width: 70%;
+    margin-top: 8%;
+    height: 75%;
+    min-height: 520px;
   }
 }
 
