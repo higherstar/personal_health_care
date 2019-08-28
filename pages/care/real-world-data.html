@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -20,7 +19,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="../../css/main.css" rel="stylesheet">
-  <link href="../../css/diagnosis.css" rel="stylesheet">
+  <link href="../../css/care.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,37 +60,32 @@
             </li>
           </ul>
         </li>
-        <li class="side-bar-menu active">
+        <li class="side-bar-menu">
           <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
-          <ul class="collapse list-unstyled submenu-list show active" id="diagnosis-submenu">
+        </li>
+        <li class="side-bar-menu active">
+          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title active">CARE</a>
+          <ul class="collapse list-unstyled submenu-list show active" id="care-submenu">
             <li class="side-bar-submenu">
-              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title">Companion Diagnostics</a>
+              <a href="../care/clinical-decision-support.html" class="side-bar-submenu-title">
+                Clinical Decision Support</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
+              <a href="../care/molecularly-guided.html" class="side-bar-submenu-title">Molecularly Guided</a>
             </li>
             <li class="side-bar-submenu active">
-              <a href="../diagnosis/real-world-data.html" class="side-bar-submenu-title active">Real-World Data</a>
+              <a href="../care/real-world-data.html" class="side-bar-submenu-title active">Real-World Data</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../care/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
             </li>
           </ul>
-        </li>
-        <li class="side-bar-menu">
-          <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
         </li>
         <li class="side-bar-menu">
           <a href="../access/digital-health.html" class="side-bar-menu-title">ACCESS</a>
         </li>
         <li class="side-bar-menu">
-          <a href="../monitoring/digital-health.html" class="side-bar-menu-title">MONITORING</a>
+          <a href="../diagnosis/digital-health.html" class="side-bar-menu-title">MONITORING</a>
         </li>
         <li class="side-bar-menu">
           <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
@@ -114,18 +108,27 @@
       ============================-->
       <div class="main-content-map d-flex">
 
-        <div class="col-lg-6 diagnosis-map position-relative d-flex justify-content-center">
-          <div class="diagnosis-details-map position-absolute">
-            <img src="../../img/diagnosis_map.png">
-            <div id="companion-diagnostics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="companion-diagnostics-btn">
+        <div class="col-lg-6 clinical-map position-relative d-flex justify-content-center">
+          <div class="clinical-details-map position-absolute">
+            <img src="../../img/care-map.png">
+            <div id="clinical-decision-support" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="clinical-decision-support-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="companion-diagnostics-btn-title" class="custom-expand-btn-title">Companion Diagnostics</p>
+              <p id="clinical-decision-support-btn-title" class="custom-expand-btn-title">
+                Clinical Decision Support</p>
             </div>
 
-            <div id="digital-health" class="position-absolute expand-btn-filed">
+            <div id="molecularly-guided" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="molecularly-guided-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="molecularly-guided-btn-title" class="custom-expand-btn-title">Molecularly Guided</p>
+            </div>
+
+            <div id="digital-health" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="digital-health-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
@@ -133,168 +136,142 @@
               <p id="digital-health-btn-title" class="custom-expand-btn-title">Digital Health</p>
             </div>
 
-            <div id="genomics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="genomics-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="genomics-btn-title" class="custom-expand-btn-title">Genomics</p>
-            </div>
-
-            <div id="advanced-imaging" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-imaging-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="advanced-imaging-btn-title" class="custom-expand-btn-title">Advanced Imaging</p>
-            </div>
-
-            <div id="digital-pathology" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-pathology-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="digital-pathology-btn-title" class="custom-expand-btn-title">Digital Pathology</p>
-            </div>
-
-            <div id="real-world-data" class="position-absolute expand-btn-filed">
+            <div id="real-world-data" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="real-world-data-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="real-world-data-btn-title" class="custom-expand-btn-title" style="display: block">Real-World Data</p>
+              <p id="real-world-data-btn-title" class="custom-expand-btn-title"  style="display: block">Real-World Data</p>
             </div>
           </div>
-          <img src="../../img/life_cycle_real_world_data.png" id="real-world-data-image"
-               class="life-cycle-image position-absolute show">
+          <img src="../../img/life_cycle_companion.png" id="cinical-decision-image" class="life-cycle-image position-absolute show">
         </div>
-
         <!--==========================
-          Diagnosis  Details
+          Care Details
         ============================-->
-        <div class="col-lg-6 diagnosis-details">
+        <div class="col-lg-6 clinical-details">
           <!--==========================
-            Real World Data
+            Clinical Decision Support
           ============================-->
-          <div id="real-world-data-detail" class="details-container diagnosis-container show">
-            <div class="diagnosis-right-header d-flex">
-              <img id="real-world-data-prev" class="details-btn-prev btn details-prev-next"
-                   src="../../img/toggle_prev.png">
-              <h1 class="real-world-data-title show">Real-world Data (RWD)</h1>
-              <img id="real-world-data-next" class="details-btn-next btn details-prev-next"
-                   src="../../img/toggle_next.png">
+          <div id="care-details" class="details-container clinical-container show">
+            <div class="clinical-right-header d-flex">
+              <img id="care-details-prev" class="details-btn-prev btn details-prev-next" src="../../img/toggle_prev.png">
+              <h1 class="care-details-title show">Real-world Data (RWD)</h1>
+              <img id="care-details-next" class="details-btn-next btn details-prev-next" src="../../img/toggle_next.png">
             </div>
-            <div class="diagnosis-right-border-div"></div>
-            <div class="real-world-data-content diagnosis-right-content show">
-              <p><strong>Real-World Data (RWD)</strong> is a source of Meaningful Data at Scale (MDAS) for our PHC
-                engine. It refers to data relating to patient health routinely collected from a variety of sources
-                outside of traditional controlled clinical interventional trials, under real-life clinical practice.
-                <strong>Real-World Evidence (RWE)</strong> refers to the evidence derived from the analysis and/or
-                synthesis of RWD.<sup>1</sup>
-              </p>
-              <p><strong>Electronic Medical Record (EMR)</strong> is a source of RWD. EMR is an electronic version of a
-                patient’s medical history, that is maintained by the provider over time, and includes structured input
-                data fields covering key clinical data relevant to a patients care under a particular provider,
-                including demographics, progress notes, medications, vital signs, past medical history, laboratory data
-                and radiology reports. Some of these items may be stored as unstructured fields (electronic copies of
-                notes/reports, not entered in a pre-determined data field), such as progress notes or radiology reports.
-                <sup>2</sup>
-              </p>
-              <strong>Click button below to see:</strong>
-              <div class="diagnosis-red-section" data-toggle="modal"
-                   data-target="#real-world-data-diagnostics-connections">
-                <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
+            <div class="clinical-right-border-div"></div>
+            <div class="care-details-content clinical-right-content show">
+              <div class="real-world-data-content clinical-right-content show">
+                <p><strong>Real-World Data (RWD)</strong> is a source of Meaningful Data at Scale (MDAS) for our PHC
+                  engine. It refers to data relating to patient health routinely collected from a variety of sources
+                  outside of traditional controlled clinical interventional trials, under real-life clinical practice.
+                  <strong>Real-World Evidence (RWE)</strong> refers to the evidence derived from the analysis and/or
+                  synthesis of RWD.<sup>1</sup>
+                </p>
+                <p><strong>Electronic Medical Record (EMR)</strong> is a source of RWD. EMR is an electronic version of a
+                  patient’s medical history, that is maintained by the provider over time, and includes structured input
+                  data fields covering key clinical data relevant to a patients care under a particular provider,
+                  including demographics, progress notes, medications, vital signs, past medical history, laboratory data
+                  and radiology reports. Some of these items may be stored as unstructured fields (electronic copies of
+                  notes/reports, not entered in a pre-determined data field), such as progress notes or radiology reports.
+                  <sup>2</sup>
+                </p>
+                <strong>Click button below to see:</strong>
+                <div class="clinical-red-section" data-toggle="modal"
+                     data-target="#real-world-data-diagnostics-connections">
+                  <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
+                </div>
+                <hr>
+                <h2>Roche and Roche partner examples/initiatives</h2>
+                <p><strong>Smarter & more efficient R&D – </strong>Complement/replace trials (virtual control arms);
+                  Draw insights on patient populations to accelerate clinical development (e.g., informing study design);
+                  Inform the development of future treatments, taking information from patient’s bedside back to the
+                  research bench.
+                  <sup>4</sup>
+                </p>
+                <p><strong>Improved access & personalized care - </strong>Collecting RWD allows us to build a bigger
+                  picture, for the benefit of the individual patient, including optimize treatment approaches; reduce
+                  times to regulatory decisions; ensure efficient post-approval monitoring
+                  <sup>1,3</sup>
+                </p>
+                <hr>
+                <h2>Roche and Roche partner examples/initiatives</h2>
+                <p>Roche’s RWD assets span sources including platforms,
+                  registries, and genomic databases.
+                  <sup>5</sup>
+                </p>
+                <img data-toggle="modal"
+                     data-target="#real-world-data-roche" class="real-world-data-content-image"
+                     src="../../img/real-world-roche.png">
+                <hr>
+                <h2>Roche and Roche partner examples/initiatives</h2>
+                <p>Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
+                  <sup>5</sup>
+                </p>
+                <div class="image-description d-flex">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="color-box image-description-color-global"></div>
+                    <p>Global use cases of RWD</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="color-box image-description-color-regional"></div>
+                    <p>Global/Regional</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="color-box image-description-color-local"></div>
+                    <p>Local use cases of RWD in close collaboration with Global on e.g., messaging-strategy</p>
+                  </div>
+                </div>
+                <img data-toggle="modal" data-target="#real-world-data-roche-use" class="real-world-data-roche-use-image"
+                     src="../../img/real-world-roche-use.png">
+                <hr>
+                <h2>Key drivers/considerations</h2>
+                <strong>Access to and use of data (data policy): <sup>5</sup></strong>
+                <li>Legal and regulatory frameworks for data collection & sharing – legal basis, frameworks, and codes of
+                  conduct; data quality, standards and attributes
+                </li>
+                <strong>Acceptance of RWD solutions: <sup>5</sup></strong>
+                <li>Acceptance of RWE in regulatory approval</li>
+                <li>Acceptance of innovative and adaptive reimbursement frameworks based on RWE</li>
+                <hr>
+                <h2>Key drivers/considerations</h2>
+                <li>Harmonizing data from multiple sources while retaining data comprehensiveness<sup>1,2</sup>
+                </li>
+                <li>
+                  Ensuring similar data quality and compatibility<sup>1,2</sup>
+                </li>
+                <li>
+                  Extracting meaningful information from unstructured data
+                </li>
+                <li>
+                  Defining meaningful but achievable RWD endpoints (e.g., TTNT vs PFS)<sup>1,2</sup>
+                </li>
+                <li>
+                  Identifying biases<sup>1,2</sup>
+                </li>
+                <li>
+                  Guarantying consent, patient privacy and confidentiality<sup>1,2</sup>
+                </li>
+                <li>
+                  Securing needed resources for planning, educating, collecting/upkeeping data, quality control, etc.
+                  <sup>1,2</sup>
+                </li>
+                <strong>Study design:</strong>
+                <li>
+                  Common study designs to leverage RWD: case-control study, prospective cohort study, Retrospective
+                  cohort study, Nested case-control study, Cross-sectional study.
+                  <sup>1</sup>
+                </li>
+                <strong>Integration in the Integrated Evidence Plan (iEP)</strong>
+                <li>
+                  RWD is an important source of the evidence that helps build the integrated Evidence Plan (iEP).
+                  The quality required of the real-world data will depend on use cases.
+                  <sup>3</sup>
+                </li>
               </div>
-              <hr>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p><strong>Smarter & more efficient R&D – </strong>Complement/replace trials (virtual control arms);
-                Draw insights on patient populations to accelerate clinical development (e.g., informing study design);
-                Inform the development of future treatments, taking information from patient’s bedside back to the
-                research bench.
-                <sup>4</sup>
-              </p>
-              <p><strong>Improved access & personalized care - </strong>Collecting RWD allows us to build a bigger
-                picture, for the benefit of the individual patient, including optimize treatment approaches; reduce
-                times to regulatory decisions; ensure efficient post-approval monitoring
-                <sup>1,3</sup>
-              </p>
-              <hr>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p>Roche’s RWD assets span sources including platforms,
-                registries, and genomic databases.
-                <sup>5</sup>
-              </p>
-              <img data-toggle="modal"
-                   data-target="#real-world-data-roche" class="real-world-data-content-image"
-                   src="../../img/real-world-roche.png">
-              <hr>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p>Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
-                <sup>5</sup>
-              </p>
-              <div class="image-description d-flex">
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="color-box image-description-color-global"></div>
-                  <p>Global use cases of RWD</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="color-box image-description-color-regional"></div>
-                  <p>Global/Regional</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="color-box image-description-color-local"></div>
-                  <p>Local use cases of RWD in close collaboration with Global on e.g., messaging-strategy</p>
-                </div>
-              </div>
-              <img data-toggle="modal" data-target="#real-world-data-roche-use" class="real-world-data-roche-use-image"
-                   src="../../img/real-world-roche-use.png">
-              <hr>
-              <h2>Key drivers/considerations</h2>
-              <strong>Access to and use of data (data policy): <sup>5</sup></strong>
-              <li>Legal and regulatory frameworks for data collection & sharing – legal basis, frameworks, and codes of
-                conduct; data quality, standards and attributes
-              </li>
-              <strong>Acceptance of RWD solutions: <sup>5</sup></strong>
-              <li>Acceptance of RWE in regulatory approval</li>
-              <li>Acceptance of innovative and adaptive reimbursement frameworks based on RWE</li>
-              <hr>
-              <h2>Key drivers/considerations</h2>
-              <li>Harmonizing data from multiple sources while retaining data comprehensiveness<sup>1,2</sup>
-              </li>
-              <li>
-                Ensuring similar data quality and compatibility<sup>1,2</sup>
-              </li>
-              <li>
-                Extracting meaningful information from unstructured data
-              </li>
-              <li>
-                Defining meaningful but achievable RWD endpoints (e.g., TTNT vs PFS)<sup>1,2</sup>
-              </li>
-              <li>
-                Identifying biases<sup>1,2</sup>
-              </li>
-              <li>
-                Guarantying consent, patient privacy and confidentiality<sup>1,2</sup>
-              </li>
-              <li>
-                Securing needed resources for planning, educating, collecting/upkeeping data, quality control, etc.
-                <sup>1,2</sup>
-              </li>
-              <strong>Study design:</strong>
-              <li>
-                Common study designs to leverage RWD: case-control study, prospective cohort study, Retrospective
-                cohort study, Nested case-control study, Cross-sectional study.
-                <sup>1</sup>
-              </li>
-              <strong>Integration in the Integrated Evidence Plan (iEP)</strong>
-              <li>
-                RWD is an important source of the evidence that helps build the integrated Evidence Plan (iEP).
-                The quality required of the real-world data will depend on use cases.
-                <sup>3</sup>
-              </li>
             </div>
-          </div><!-- Real World Data -->
-        </div><!-- Diagnosis Details -->
+          </div><!-- Real-World Data -->
+        </div><!-- Care Details -->
       </div><!-- Details Map -->
       <!--===================================
           Real World Data Connections Modal
@@ -477,13 +454,13 @@
               </div>
               <div class="col-lg-6">
                 <!-- Diagnostics Solutions -->
-                <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
+                <div class="clinical-solutions text-center d-flex align-items-center justify-content-center">
                   <!-- Rectangle Block Mid -->
-                  <div class="digital-health-rectangle-block diagnostics-solutions-rectangle-block d-flex">
+                  <div class="digital-health-rectangle-block clinical-solutions-rectangle-block d-flex">
                     <div
-                        class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                        class="clinical-solutions-field clinical-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
                       <span>RWD</span>
-                      <div class="diagnostics-solutions-circle-dot position-absolute"></div>
+                      <div class="clinical-solutions-circle-dot position-absolute"></div>
                       <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
                         <defs>
                           <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
@@ -496,20 +473,20 @@
                       </svg>
                       <!-- Circle Block Bottom -->
                       <div
-                          class="diagnostics-solutions-circle-block-bottom diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
+                          class="clinical-solutions-circle-block-bottom clinical-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
                         <div
-                            class="diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative  d-flex align-items-center justify-content-center">
                           <span>Digital<br>health</span>
                         </div>
                         <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative d-flex align-items-center justify-content-center">
                           <span>EMR</span>
                         </div>
                         <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative d-flex align-items-center justify-content-center">
                           <span>Diagnostics</span>
                         </div>
-                        <div class="arrow-diagnostics-solution position-absolute">
+                        <div class="arrow-clinical-solution position-absolute">
                           <svg id="arrow-to-vertical" class="position-absolute" width="200px" height="280px" top="30%">
                             <defs>
                               <marker id="arrow12" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
@@ -526,16 +503,16 @@
                       </div><!-- Circle Block Bottom -->
                       <!-- Circle Block Top -->
                       <div
-                          class="diagnostics-solutions-circle-block-top diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
+                          class="clinical-solutions-circle-block-top clinical-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
                         <div
-                            class="diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative  d-flex align-items-center justify-content-center">
                           <span>PRO</span>
                         </div>
                         <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
+                            class="clinical-solutions-circle position-relative d-flex align-items-center justify-content-center">
                           <span>Genomics</span>
                         </div>
-                        <div class="arrow-diagnostics-solution position-absolute">
+                        <div class="arrow-clinical-solution position-absolute">
                           <svg id="arrow-to-vertical" class="position-absolute" width="200px" height="280px" top="30%">
                             <defs>
                               <marker id="arrow12" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
@@ -551,7 +528,7 @@
                       </div><!-- Circle Block Top -->
                     </div>
                     <div
-                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                        class="clinical-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
                       <span class="enable-solution-title">Advanced<br>analytics</span>
                       <span class="enable-solution-mark key-card-content-star font-weight-normal">*</span>
                       <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
@@ -565,7 +542,7 @@
                               style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
                       </svg>
                     </div>
-                    <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
+                    <div class="clinical-solutions-rectangle  d-flex align-items-center justify-content-center">
                       <span>RWE</span>
                     </div>
                   </div><!-- Rectangle Block Mid -->
@@ -650,23 +627,20 @@
             <div class="modal-body d-flex justify-content-center align-items-center">
               <!-- Zoom Out map -->
               <div class="zoom-out-map position-relative">
-                <img src="../../img/diagnosis_map-zoomout.png">
-                <!-- DIAGNOSIS -->
-                <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
-                  <button class="btn btn-light dropdown-toggle custom-dropdown zoom-out" type="button" id="dropdownMenuButton"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    DIAGNOSIS
+                <img src="../../img/care_map-zoomout.png">
+                <!-- CARE -->
+                <div id="care-dropdown" class="position-absolute map-dropdown-menu">
+                  <button id="care-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown zoom-out" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CARE
                     <img src="../../img/toggle_left.png">
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="../diagnosis/companion-diagnostics.html">Companion Diagnostics</a>
-                    <a class="dropdown-item" href="../diagnosis/digital-health.html">Digital Health</a>
-                    <a class="dropdown-item" href="../diagnosis/genomics.html">Genomics</a>
-                    <a class="dropdown-item" href="../diagnosis/advanced-imaging.html">Advanced Imaging</a>
-                    <a class="dropdown-item" href="../diagnosis/digital-pathology.html">Digital Pathology</a>
-                    <a class="dropdown-item" href="../diagnosis/real-world-data.html">Real-World Data</a>
+                    <a class="dropdown-item" href="../care/clinical-decision-support.html">Clinical Decision Support</a>
+                    <a class="dropdown-item" href="../care/molecularly-guided.html">Molecularly-Guided</a>
+                    <a class="dropdown-item" href="../care/real-world-data.html">Real-World Data</a>
+                    <a class="dropdown-item" href="../care/digital-health.html">Digital Health</a>
                   </div>
-                </div><!-- DIAGNOSIS -->
+                </div><!-- CARE -->
               </div><!-- Zoom Out map -->
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->

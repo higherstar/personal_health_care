@@ -20,7 +20,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="../../css/main.css" rel="stylesheet">
-  <link href="../../css/diagnosis.css" rel="stylesheet">
+  <link href="../../css/monitoring.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,28 +61,8 @@
             </li>
           </ul>
         </li>
-        <li class="side-bar-menu active">
-          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
-          <ul class="collapse list-unstyled submenu-list show active" id="diagnosis-submenu">
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/companion-diagnostics.html" class="side-bar-submenu-title">Companion Diagnostics</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
-            </li>
-            <li class="side-bar-submenu">
-              <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
-            </li>
-            <li class="side-bar-submenu active">
-              <a href="../diagnosis/real-world-data.html" class="side-bar-submenu-title active">Real-World Data</a>
-            </li>
-          </ul>
+        <li class="side-bar-menu">
+          <a href="../diagnosis/companion-diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title">DIAGNOSIS</a>
         </li>
         <li class="side-bar-menu">
           <a href="../care/clinical-decision-support.html" class="side-bar-menu-title">CARE</a>
@@ -90,8 +70,16 @@
         <li class="side-bar-menu">
           <a href="../access/digital-health.html" class="side-bar-menu-title">ACCESS</a>
         </li>
-        <li class="side-bar-menu">
-          <a href="../monitoring/digital-health.html" class="side-bar-menu-title">MONITORING</a>
+        <li class="side-bar-menu active">
+          <a href="../monitoring/digital-health.html" class="side-bar-menu-title active">MONITORING</a>
+          <ul class="collapse list-unstyled submenu-list show active" id="monitoring-submenu">
+            <li class="side-bar-submenu">
+              <a href="../monitoring/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+            </li>
+            <li class="side-bar-submenu active">
+              <a href="../monitoring/real-world-data.html" class="side-bar-submenu-title active">Real-World Data</a>
+            </li>
+          </ul>
         </li>
         <li class="side-bar-menu">
           <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
@@ -114,47 +102,15 @@
       ============================-->
       <div class="main-content-map d-flex">
 
-        <div class="col-lg-6 diagnosis-map position-relative d-flex justify-content-center">
-          <div class="diagnosis-details-map position-absolute">
-            <img src="../../img/diagnosis_map.png">
-            <div id="companion-diagnostics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="companion-diagnostics-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="companion-diagnostics-btn-title" class="custom-expand-btn-title">Companion Diagnostics</p>
-            </div>
-
+        <div class="col-lg-6 monitoring-map position-relative d-flex justify-content-center">
+          <div class="monitoring-details-map position-absolute">
+            <img src="../../img/monitoring-map.png">
             <div id="digital-health" class="position-absolute expand-btn-filed">
               <button type="button" class="btn btn-primary custom-expand-btn" id="digital-health-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
               <p id="digital-health-btn-title" class="custom-expand-btn-title">Digital Health</p>
-            </div>
-
-            <div id="genomics" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="genomics-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="genomics-btn-title" class="custom-expand-btn-title">Genomics</p>
-            </div>
-
-            <div id="advanced-imaging" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-imaging-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="advanced-imaging-btn-title" class="custom-expand-btn-title">Advanced Imaging</p>
-            </div>
-
-            <div id="digital-pathology" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-pathology-btn">
-                <span class="custom-expand-btn-plus" style="display: block">+</span>
-                <span class="custom-expand-btn-minus" style="display: none">-</span>
-              </button>
-              <p id="digital-pathology-btn-title" class="custom-expand-btn-title">Digital Pathology</p>
             </div>
 
             <div id="real-world-data" class="position-absolute expand-btn-filed">
@@ -170,22 +126,22 @@
         </div>
 
         <!--==========================
-          Diagnosis  Details
+          Monitoring  Details
         ============================-->
-        <div class="col-lg-6 diagnosis-details">
+        <div class="col-lg-6 monitoring-details">
           <!--==========================
             Real World Data
           ============================-->
-          <div id="real-world-data-detail" class="details-container diagnosis-container show">
-            <div class="diagnosis-right-header d-flex">
+          <div id="real-world-data-detail" class="details-container monitoring-container show">
+            <div class="monitoring-right-header d-flex">
               <img id="real-world-data-prev" class="details-btn-prev btn details-prev-next"
                    src="../../img/toggle_prev.png">
               <h1 class="real-world-data-title show">Real-world Data (RWD)</h1>
               <img id="real-world-data-next" class="details-btn-next btn details-prev-next"
                    src="../../img/toggle_next.png">
             </div>
-            <div class="diagnosis-right-border-div"></div>
-            <div class="real-world-data-content diagnosis-right-content show">
+            <div class="monitoring-right-border-div"></div>
+            <div class="real-world-data-content monitoring-right-content show">
               <p><strong>Real-World Data (RWD)</strong> is a source of Meaningful Data at Scale (MDAS) for our PHC
                 engine. It refers to data relating to patient health routinely collected from a variety of sources
                 outside of traditional controlled clinical interventional trials, under real-life clinical practice.
@@ -201,7 +157,7 @@
                 <sup>2</sup>
               </p>
               <strong>Click button below to see:</strong>
-              <div class="diagnosis-red-section" data-toggle="modal"
+              <div class="monitoring-red-section" data-toggle="modal"
                    data-target="#real-world-data-diagnostics-connections">
                 <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
@@ -294,7 +250,7 @@
               </li>
             </div>
           </div><!-- Real World Data -->
-        </div><!-- Diagnosis Details -->
+        </div><!-- Monitoring Details -->
       </div><!-- Details Map -->
       <!--===================================
           Real World Data Connections Modal
@@ -650,23 +606,19 @@
             <div class="modal-body d-flex justify-content-center align-items-center">
               <!-- Zoom Out map -->
               <div class="zoom-out-map position-relative">
-                <img src="../../img/diagnosis_map-zoomout.png">
-                <!-- DIAGNOSIS -->
-                <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
+                <img src="../../img/monitoring_map-zoomout.png">
+                <!-- Monitoring -->
+                <div id="monitoring-dropdown" class="position-absolute map-dropdown-menu">
                   <button class="btn btn-light dropdown-toggle custom-dropdown zoom-out" type="button" id="dropdownMenuButton"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    DIAGNOSIS
+                    MONITORING
                     <img src="../../img/toggle_left.png">
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="../diagnosis/companion-diagnostics.html">Companion Diagnostics</a>
                     <a class="dropdown-item" href="../diagnosis/digital-health.html">Digital Health</a>
-                    <a class="dropdown-item" href="../diagnosis/genomics.html">Genomics</a>
-                    <a class="dropdown-item" href="../diagnosis/advanced-imaging.html">Advanced Imaging</a>
-                    <a class="dropdown-item" href="../diagnosis/digital-pathology.html">Digital Pathology</a>
                     <a class="dropdown-item" href="../diagnosis/real-world-data.html">Real-World Data</a>
                   </div>
-                </div><!-- DIAGNOSIS -->
+                </div><!-- Monitoring -->
               </div><!-- Zoom Out map -->
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->

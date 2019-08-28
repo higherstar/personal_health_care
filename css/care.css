@@ -44,6 +44,16 @@
   top: 11%;
   left: 26%;
 }
+
+#digital-health {
+  top: 18%;
+  left: 54%;
+}
+
+#real-world-data {
+  top: 72%;
+  left: 69%;
+}
 /*--------------------------------------------------------------
 # Dignosis Details
 --------------------------------------------------------------*/
@@ -231,7 +241,7 @@
 .clinical-solutions-circle-block {
   top: 0;
   left: 0;
-  height: 225%;
+  height: 242%;
   width: 75%;
   font-size: 10px;
   margin-left: 45px;
@@ -282,7 +292,7 @@
 }
 
 .arrow-clinical-solution {
-  margin-top: -64px;
+  margin-top: -69px;
   margin-left: -44px;
   left: 0;
 }
@@ -601,4 +611,188 @@
 #genomics-arrow-hospitals {
   left: 2px;
   top: 79%;
+}
+
+/*--------------------------------------------------------------
+# Digital Health connection Modal dialog
+--------------------------------------------------------------*/
+
+.digital-health-rectangle-block {
+  font-size: 14px;
+}
+
+.digital-health-rectangle-bottom-block {
+  position: absolute;
+  flex-shrink: 0;
+  width: calc(277% + 120px);
+  height: 100%;
+  margin-left: 123%;
+  color: white;
+  margin-top: 151px;
+}
+
+#digital-health-arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#digital-health-arrow-regulators-proven {
+  left: 2px;
+  top: 17%;
+}
+
+#digital-health-arrow-players {
+  left: 2px;
+  top: 24%;
+}
+
+#digital-health-arrow-players-clinical {
+  left: 2px;
+  top: 22%;
+}
+
+#digital-health-arrow-healthcare {
+  left: 2px;
+  top: 26%;
+}
+
+#digital-health-arrow-hcps {
+  left: 2px;
+  top: 29%;
+}
+
+#digital-health-arrow-hcps-patient {
+  left: 2px;
+  top: 43.5%;
+}
+
+#digital-health-arrow-medical {
+  left: 2px;
+  top: 30%;
+}
+
+#digital-health-arrow-patients {
+  left: 2px;
+  top: 40%;;
+}
+
+#digital-health-arrow-it {
+  left: 2px;
+  top: 87%;
+}
+
+#digital-health-arrow-it-proven {
+  left: 2px;
+  top: 71%;
+}
+
+#digital-health-arrow-endpoints {
+  margin-top: -73px;
+}
+
+#digital-health-arrow-rwd {
+  margin-top: -72px;
+  margin-left: -97px;
+}
+
+#digital-health-arrow-clinical {
+  top: 23%;
+  left: -2px;
+}
+
+#digital-health-arrow-patient {
+  top: 36%;
+  left: -2px;
+}
+
+#digital-health-arrow-proven {
+  top: 69%;
+  left: -2px;
+}
+
+/*--------------------------------------------------------------
+# Real World Data Connection
+--------------------------------------------------------------*/
+.real-world-data-roche-use-image, .real-world-data-content-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#real-world-data-roche img, #real-world-data-roche-use img {
+  width: 100%;
+  height: 100%;
+}
+
+#real-world-data-roche button, #real-world-data-roche-use button{
+  z-index: 1;
+}
+
+#real-world-data-roche-use .modal-dialog, #real-world-data-roche .modal-dialog{
+  margin-left: 0;
+}
+
+#real-world-data-roche-use .modal-content, #real-world-data-roche .modal-content{
+  border-radius: 0;
+}
+
+#real-world-data-roche-use .modal-header {
+  height: 60px;
+  border-bottom: 0;
+}
+
+#real-world-data-roche .modal-header{
+  border-bottom: 0;
+  height: 0;
+}
+
+#real-world-data-roche-use .modal-body, #real-world-data-roche .modal-body{
+  padding: 0;
+}
+
+#real-world-data-roche-use .modal-body {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+#real-world-data-roche-use .image-description p {
+  font-size: 19px;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.image-description-color-global {
+  background: #2a89ef;
+}
+
+.image-description-color-regional {
+  background: #70b4f7;
+}
+
+.image-description-color-local {
+  background: #87ceeb;
+}
+
+.real-world-data-content .image-description {
+  font-size: 7px;
+  font-family: Imago;
+}
+
+.real-world-data-content .image-description p {
+  margin-top: 16px;
+}
+
+.real-world-data-content .image-description .color-box {
+  width: 25px;
+  height: 25px;
+}
+
+.clinical-solutions-circle-block-top {
+  margin-top: -132px;
+  height: 155%;
 }
