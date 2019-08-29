@@ -1,8 +1,12 @@
 /*--------------------------------------------------------------
 # Side Bar
 --------------------------------------------------------------*/
-.side-bar-search-icon img {
+.side-bar .side-bar-search-icon img {
   margin-top: -12px;
+}
+
+#search-modal .side-bar-search-icon img {
+  margin-top: -5px;
 }
 
 /*--------------------------------------------------------------
