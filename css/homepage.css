@@ -152,7 +152,7 @@
 }
 
 #care-dropdown {
-  left: 81%;
+  left: 83%;
   top: 47%;
 }
 
@@ -168,5 +168,9 @@
 
   #diagnosis-dropdown {
     left: 23.7%;
+  }
+
+  #care-dropdown {
+    left: 81%;
   }
 }
