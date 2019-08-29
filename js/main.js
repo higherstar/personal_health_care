@@ -99,4 +99,9 @@ jQuery(document).ready(function( $ ) {
       $('.main-content')[0].style.marginLeft = '73%';
     }
   });
+
+  //handler for search modal
+  $('#search-input').change(function () {
+    $('#search-text').text($('#search-input')[0].value);
+  });
 });
