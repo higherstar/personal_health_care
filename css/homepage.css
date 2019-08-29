@@ -152,6 +152,21 @@
 }
 
 #care-dropdown {
-  left: 83%;
+  left: 81%;
   top: 47%;
+}
+
+@media (max-width: 750px) {
+  #health-care-dropdown .dropdown-menu {
+    top: -23px !important;
+    padding-top: 25px !important;
+  }
+
+  #care-dropdown .dropdown-menu {
+    left: -14px !important;
+  }
+
+  #diagnosis-dropdown {
+    left: 23.7%;
+  }
 }

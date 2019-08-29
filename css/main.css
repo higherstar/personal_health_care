@@ -62,6 +62,44 @@ hr {
   margin: auto 60px auto auto;
 }
 
+@media (max-width: 750px) {
+  #logo img {
+    margin-right: 20px !important;
+  }
+
+  #logo h1 {
+    font-size: 21px;
+    margin-right: 25px;
+  }
+
+  .mobile-title {
+    margin-right: 0 !important;
+    margin-left: 5px !important;
+  }
+
+  #logo .menu-button {
+    margin-right: 5px !important;
+    margin-left: 10px !important;
+    height: 70%;
+    cursor: pointer;
+  }
+
+  .mobile-header {
+    position: absolute;
+    width: 100%;
+    left: 73%;
+  }
+
+  .right-space {
+    position: absolute;
+    width: 27%;
+    height: 100vh;
+    left: 73%;
+    top: 0;
+    z-index: -1;
+  }
+}
+
 /*--------------------------------------------------------------
 # Content Header
 --------------------------------------------------------------*/
@@ -80,8 +118,6 @@ hr {
   color: white;
   text-align: center;
   padding-top: 7px;
-
-
 }
 
 /*--------------------------------------------------------------
@@ -216,6 +252,27 @@ hr {
   height: 100%;
 }
 
+@media (max-width: 750px) {
+  .side-bar-wrapper {
+    width: 100%
+
+  }
+
+  .side-bar {
+    display: none !important;
+  }
+
+  .mobile-side-bar {
+    display: flex !important;
+    width: 73%;
+    position: absolute;
+    z-index: 10;
+    background: #eee;
+    top: 0;
+  }
+
+}
+
 /*--------------------------------------------------------------
 # Main Content
 --------------------------------------------------------------*/
@@ -236,7 +293,25 @@ hr {
   margin-right: 0;
 }
 
+@media (max-width: 750px) {
+  .content-wrapper {
+    background-size: cover;
+    overflow: hidden;
+  }
 
+  .main-content {
+    width: 100%;
+  }
+
+  .main-content-map {
+    height: auto !important;
+  }
+
+  .main-content-map img {
+    height: auto !important;
+    width: 100vw;
+  }
+}
 /*--------------------------------------------------------------
 # Custom DropDown
 --------------------------------------------------------------*/
@@ -281,7 +356,7 @@ hr {
 .map-dropdown-menu .dropdown-menu {
   min-width: 160px;
   background: #FFFFFFCC;
-  z-index: 1;
+  z-index: 5;
   top: -24px !important;
   padding-top: 26px;
 }
@@ -306,6 +381,25 @@ hr {
   background-color: #F8F9FAB0;
 }
 
+@media (max-width: 750px) {
+  .map-dropdown-menu .dropdown-menu {
+    top: -15px !important;
+    padding-top: 15px;
+  }
+
+  .custom-dropdown {
+    font-size: 12px;
+    min-height: 23px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .custom-dropdown img {
+    width: 25px;
+    left: -10px;
+    height: 25px !important;
+  }
+}
 
 /*--------------------------------------------------------------
 # Custom expand button

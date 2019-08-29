@@ -31,8 +31,10 @@ jQuery(document).ready(function( $ ) {
 
   $('.custom-dropdown').click(function() {
     const dropDowns = $('.custom-dropdown');
+    $(this)[0].style.zIndex = '6';
     for (let i = 0; i< dropDowns.length; i++) {
       if ($(dropDowns[i])[0].id !== $(this)[0].id) {
+        $(dropDowns[i])[0].style.zIndex = '1';
         if($(this)[0].classList.contains('zoom-out'))
           $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left.png');
         else
@@ -82,6 +84,19 @@ jQuery(document).ready(function( $ ) {
       activeSubmenus[activeSubmenuIndex - 1].click();
     } else if (this.classList.contains('details-btn-next') && activeSubmenuIndex !== activeSubmenus.length - 1) {
       activeSubmenus[activeSubmenuIndex + 1].click();
+    }
+  });
+
+  //handler for mobile menu button
+  $('.menu-button').click(function() {
+    if ($('.side-bar')[0].classList.contains('mobile-side-bar')) {
+      $('.side-bar')[0].classList.remove('mobile-side-bar');
+      $('#header')[0].classList.remove('mobile-header');
+      $('.main-content')[0].style.marginLeft = '0';
+    } else {
+      $('.side-bar')[0].classList.add('mobile-side-bar');
+      $('#header')[0].classList.add('mobile-header');
+      $('.main-content')[0].style.marginLeft = '73%';
     }
   });
 });
