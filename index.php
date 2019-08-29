@@ -19,4 +19,4 @@
 <a href="/pages/stakeholders/stakeholders.html">Stakeholders / Stakeholders</a><br />
 <a href="/pages/vbhc/roche-initiatives.html">VBHC / Roche Initiatives</a><br />
 <a href="/pages/vbhc/value-based-healthcare.html">VBHC / Value-Based Healthcare</a><br />
-<a href="/pages/vbhc/roche-examples.html">VBHC / Roche Examples in PHC</a><br />
+<a href="/pages/vbhc/roche-examples.html">VBHC / Examples</a><br />
