@@ -58,8 +58,7 @@ hr {
 }
 
 #logo > img {
-  width: 100px;
-  height: 52px;
+  height: 50%;
   margin: auto 60px auto auto;
 }
 
