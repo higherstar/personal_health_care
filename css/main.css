@@ -87,16 +87,17 @@ hr {
   .mobile-header {
     position: absolute;
     width: 100%;
-    left: 73%;
+    left: 0%;
   }
 
   .right-space {
     position: absolute;
-    width: 27%;
+    width: 100%;
     height: 100vh;
-    left: 73%;
+    left: 0;
     top: 0;
     z-index: -1;
+    background: #0066ccb5;
   }
 }
 
@@ -255,20 +256,25 @@ hr {
 @media (max-width: 750px) {
   .side-bar-wrapper {
     width: 100%
-
   }
 
-  .side-bar {
-    display: none !important;
+  .side-bar-content {
+    padding-top: 36%;
+  }
+
+  .side-bar-search {
+    margin-top: 30px;
   }
 
   .mobile-side-bar {
     display: flex !important;
-    width: 73%;
+    width: 68%;
     position: absolute;
     z-index: 10;
     background: #eee;
     top: 0;
+    left: -68%;
+    transition: all 0.5s ease;
   }
 
 }
@@ -301,6 +307,7 @@ hr {
 
   .main-content {
     width: 100%;
+    transition: all 0.5s ease;
   }
 
   .main-content-map {

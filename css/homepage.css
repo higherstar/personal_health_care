@@ -112,6 +112,16 @@
   }
 }
 
+@media (max-width: 750px) {
+  #welcome-modal {
+    padding-right: 0;
+  }
+
+  #welcome-close-btn {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # System map DropDown Menu
 --------------------------------------------------------------*/
