@@ -608,6 +608,10 @@ hr {
   padding: 10px 30px;
 }
 
+.modal-body .key-card-content-star:hover {
+  text-decoration: none;
+}
+
 .modal-body .key-card-content .key-card-content-block {
   padding: 5px;
   border-radius: 4px;

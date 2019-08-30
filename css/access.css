@@ -588,6 +588,7 @@
 
 #zoomout-modal #access-dropdown button img {
   width: 30px;
-  top: -6px;
+  top: -1px;
   left: -14px;
+  height: 30px !important;
 }
