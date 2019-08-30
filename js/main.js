@@ -89,6 +89,7 @@ jQuery(document).ready(function( $ ) {
   $('#search-input').change(function () {
     console.log(data);
     $('#search-text').text($('#search-input')[0].value);
+    search($('#search-input')[0].value);
   });
 
   //handler for sidebar search
@@ -127,5 +128,33 @@ jQuery(document).ready(function( $ ) {
     $('#mobile-search').find('input')[0].style.display = 'none';
     $('.mobile-search-result')[0].style.display = 'none';
     $('.mobile-search-result')[0].style.right = '0';
+  }
+
+  function search(keyword) {
+    let resultContent = '';
+    data.forEach(d => {
+      let keyDescription_before;
+      let keyDescription_after;
+      let result, keyIndexList = [];
+      let regex = new RegExp(keyword,'gi');
+      while ( (result = regex.exec(d.content)) ) {
+        keyIndexList.push(result.index);
+      }
+      console.log(keyIndexList);
+      keyIndexList.forEach(keyIndex => {
+        if(keyIndex >= 70) {
+          keyDescription_before = d.content.slice(keyIndex - 70, keyIndex);
+          keyDescription_after = d.content.slice(keyIndex + keyword.length, keyIndex + keyword.length + 80);
+        }
+        else {
+          keyDescription_before = d.content.slice(0, keyIndex);
+          keyDescription_after = d.content.slice(keyIndex + keyword.length, keyIndex + keyword.length + 100);
+        }
+        resultContent += '<div class="modal-search-result-item">' + keyDescription_before +
+          '<a href=' + d.url + '>' + keyword + '</a>' + keyDescription_after + '   ' + '<span class="search-result-page">'
+          + d.page +'</span>' + '</div>';
+      });
+    });
+    $('#search-result').html(resultContent);
   }
 });

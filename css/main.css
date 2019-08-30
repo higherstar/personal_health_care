@@ -655,12 +655,23 @@ hr {
   outline: none;
 }
 
+.modal-search-result {
+  height: calc(100% - 48px);
+  overflow-y: auto;
+}
+
 .modal-search-result-item {
   border-bottom: 1px solid #cdcdcd;
 }
 
 .modal-search-result-item a {
   text-decoration: underline;
+}
+
+.search-result-page {
+  color: #0066cc;
+  padding: 5px;
+  font-size: 16px;
 }
 
 @media (min-width: 992px) {
