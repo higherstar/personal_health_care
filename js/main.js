@@ -1,5 +1,13 @@
 jQuery(document).ready(function( $ ) {
   //handler for welcome modal
+  $( window ).on( "load", function() {
+    if(localStorage.getItem('firstVisit') === null) {
+      $('#welcome-modal').modal('show');
+      localStorage.setItem('firstVisit', 'true');
+      $('#welcome-modal-submenu')[0].classList.add('active');
+    }
+  });
+
   $('#welcome-modal-link').click(function () {
     $('#welcome-modal').modal('show');
     $('#welcome-modal-submenu')[0].classList.add('active');
