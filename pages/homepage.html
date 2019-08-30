@@ -51,15 +51,34 @@
     ============================-->
     <div class="side-bar mobile-side-bar">
       <div class="side-bar-splitter position-relative">
-        <div data-toggle="modal" data-target="#search-modal"  class="side-bar-search d-flex align-items-center justify-content-between position-absolute">
+        <div data-toggle="modal" data-target="#search-modal"
+             class="side-bar-search d-flex align-items-center justify-content-between position-absolute d-sm-none d-md-flex">
           <div class="side-bar-search-icon">
             <img src="../img/search-icon.png">
           </div>
           <span>SEARCH</span>
         </div>
+
+        <div id="mobile-search" class="side-bar-search d-flex align-items-center justify-content-between position-absolute d-md-none d-sm-block">
+          <div class="side-bar-search-icon">
+            <img src="../img/search-icon.png">
+          </div>
+          <span style="display: block">SEARCH</span>
+          <input id="mobile-search-input" type="text" placeholder="Search" style="display: none;" autofocus>
+        </div>
+      </div>
+      <div class="mobile-search-result position-absolute d-md-none d-sm-block">
+        <div class="modal-search-result-item">
+          There is <a href="#">result one</a>.
+        </div>
+        <div class="modal-search-result-item">
+          There is <a href="#">result two</a>.
+        </div>
+        <div class="modal-search-result-item">
+          There is <a href="#">result three</a>.
+        </div>
       </div>
       <ul class="list-unstyled side-bar-content">
-
         <li class="side-bar-menu active">
           <a href="#"
              aria-expanded="true"
