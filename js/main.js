@@ -87,7 +87,6 @@ jQuery(document).ready(function( $ ) {
 
   //handler for search modal
   $('#search-input').change(function () {
-    console.log(data);
     $('#search-text').text($('#search-input')[0].value);
     search($('#search-input')[0].value);
   });
@@ -140,7 +139,6 @@ jQuery(document).ready(function( $ ) {
       while ( (result = regex.exec(d.content)) ) {
         keyIndexList.push(result.index);
       }
-      console.log(keyIndexList);
       keyIndexList.forEach(keyIndex => {
         if(keyIndex >= 70) {
           keyDescription_before = d.content.slice(keyIndex - 70, keyIndex);
