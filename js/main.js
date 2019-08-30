@@ -11,10 +11,7 @@ jQuery(document).ready(function( $ ) {
 
   // handler for clicking on dropdown
   $( ".custom-dropdown" ).blur(function() {
-    if($(this)[0].classList.contains('zoom-out'))
-      $(this).find('img').attr('src', '../../img/toggle_left.png');
-    else
-      $(this).find('img').attr('src', '../img/toggle_left.png');
+    $(this).find('img').attr('src', '../../img/toggle_left.png');
   });
 
   $('.custom-dropdown').click(function() {
