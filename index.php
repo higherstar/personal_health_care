@@ -1,4 +1,4 @@
-<a href="/pages/homepage.html">HomePage</a> <br />
+<a href="/pages/homepage/homepage.html">HomePage</a> <br />
 <a href="/pages/diagnosis/advanced-imaging.html">Diagnosis / Advanced Imaging</a><br />
 <a href="/pages/diagnosis/companion-diagnostics.html">Diagnosis / Companion Diagnostics</a><br />
 <a href="/pages/diagnosis/digital-health.html">Diagnosis / Digital Health</a><br />

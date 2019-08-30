@@ -155,6 +155,9 @@ jQuery(document).ready(function( $ ) {
           + d.page +'</span>' + '</div>';
       });
     });
-    $('#search-result').html(resultContent);
+    if(resultContent !== '')
+      $('#search-result').html(resultContent);
+    else
+      $('#search-result').html('<span>No Result</span>');
   }
 });
