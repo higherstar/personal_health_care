@@ -375,11 +375,12 @@ hr {
 .custom-dropdown:hover, .custom-dropdown:focus {
   background: #0066CC !important;
   color: white !important;
+  border-color: #0066cc99 !important;
 }
 
 .custom-dropdown:focus {
   box-shadow: #000000eb 1px 1px 10px 1px !important;
-  border: 1px solid #21252957;
+  border: 1px solid #0066cc99;
 }
 
 .custom-dropdown img {
@@ -425,6 +426,10 @@ hr {
   background-color: #F8F9FAB0;
 }
 
+.show > .btn-light.dropdown-toggle {
+  border-color: #0066cc99 !important;
+}
+
 @media (max-width: 750px) {
   .map-dropdown-menu .dropdown-menu {
     top: -15px !important;
@@ -457,6 +462,7 @@ hr {
   line-height: 21px;
   border-radius: 50%;
   border: 3px solid white;
+  box-shadow: #000000eb -4px 1px 13px -2px;
   height: 40px;
   width: 40px;
   padding-left: 7px;
@@ -500,6 +506,7 @@ hr {
   padding: 3px 8px 3px 24px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  box-shadow: #000000eb 1px 1px 10px 1px;
   z-index: 1;
 }
 /*--------------------------------------------------------------
