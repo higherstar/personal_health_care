@@ -154,4 +154,40 @@
     height: 75%;
     min-height: 520px;
   }
+
+  #roche-world-data .modal-lg{
+    max-width: 60%;
+    margin-left: 10%;
+  }
 }
+
+/*--------------------------------------------------------------
+#   Roche World Data Modal
+--------------------------------------------------------------*/
+#roche-world-data .modal-content {
+  background-color: #eeeeeebf;
+}
+
+#roche-world-data table {
+  height: 100%;
+}
+
+#roche-world-data table th {
+  background: #70ad47;
+  color: white;
+  padding-left: 8px;
+  border: 2px solid white;
+  min-width: 100px;
+}
+
+#roche-world-data table td {
+  padding-left: 8px;
+  border: 2px solid white;
+  min-width: 100px;
+}
+
+#roche-world-data table td span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+

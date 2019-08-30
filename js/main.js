@@ -96,6 +96,11 @@ jQuery(document).ready(function( $ ) {
     showSideBarSearch();
   });
 
+  //handler for World Map modal
+  $('#roche-world-map-modal').on('shown.bs.modal', function () {
+    $('#roche-world-data').modal('show');
+  });
+
   function hideSideBar() {
     $('.mobile-side-bar')[0].style.left = '-68%';
     $('.mobile-header')[0].style.left = '0';
