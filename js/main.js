@@ -1,16 +1,4 @@
 jQuery(document).ready(function( $ ) {
-  // open welcome modal when load first page
-  $(document).ready(function() {
-    if(localStorage.getItem('welcome') === null) {
-      $('#welcome-modal').modal('show');
-      localStorage.setItem('welcome', 'true');
-    } else {
-      if($('#welcome-modal-submenu').length > 0) {
-        $('#welcome-modal-submenu')[0].classList.remove('active');
-      }
-    }
-  });
-
   //handler for welcome modal
   $('#welcome-modal-link').click(function () {
     $('#welcome-modal').modal('show');
@@ -35,22 +23,13 @@ jQuery(document).ready(function( $ ) {
     for (let i = 0; i< dropDowns.length; i++) {
       if ($(dropDowns[i])[0].id !== $(this)[0].id) {
         $(dropDowns[i])[0].style.zIndex = '1';
-        if($(this)[0].classList.contains('zoom-out'))
-          $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left.png');
-        else
-        $(dropDowns[i]).find('img').attr('src', '../img/toggle_left.png');
+        $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left.png');
       }
     }
-    if($(this)[0].classList.contains('zoom-out'))
-      if ($(this).find('img').attr('src') === '../../img/toggle_left.png')
-        $(this).find('img').attr('src', '../../img/toggle_down.png');
-      else
-        $(this).find('img').attr('src', '../../img/toggle_left.png');
+    if ($(this).find('img').attr('src') === '../../img/toggle_left.png')
+      $(this).find('img').attr('src', '../../img/toggle_down.png');
     else
-      if ($(this).find('img').attr('src') === '../img/toggle_left.png')
-        $(this).find('img').attr('src', '../img/toggle_down.png');
-      else
-        $(this).find('img').attr('src', '../img/toggle_left.png');
+      $(this).find('img').attr('src', '../../img/toggle_left.png');
   });
 
   // handler for clicking on expand button
@@ -111,6 +90,7 @@ jQuery(document).ready(function( $ ) {
 
   //handler for search modal
   $('#search-input').change(function () {
+    console.log(data);
     $('#search-text').text($('#search-input')[0].value);
   });
 
