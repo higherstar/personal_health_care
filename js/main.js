@@ -92,12 +92,14 @@ jQuery(document).ready(function( $ ) {
   //handler for search modal
   $('#search-input').change(function () {
     $('#search-text').text($('#search-input')[0].value);
-    search($('#search-input')[0].value);
+    if($('#search-input')[0].value !== '')
+      search($('#search-input')[0].value);
   });
 
   //handler for search side bar
   $('#mobile-search-input').change(function () {
-    search($('#mobile-search-input')[0].value);
+    if($('#mobile-search-input')[0].value !== '')
+      search($('#mobile-search-input')[0].value);
   });
 
   //handler for sidebar search
