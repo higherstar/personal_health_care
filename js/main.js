@@ -193,6 +193,7 @@ jQuery(document).ready(function( $ ) {
   function search(keyword) {
     let resultContent = '';
     data.forEach(d => {
+      let keyDescription;
       let keyDescription_before;
       let keyDescription_after;
       let result, keyIndexList = [];
@@ -201,6 +202,7 @@ jQuery(document).ready(function( $ ) {
         keyIndexList.push(result.index);
       }
       keyIndexList.forEach(keyIndex => {
+        keyDescription = d.content.slice(keyIndex, keyIndex + keyword.length);
         if(keyIndex >= 70) {
           keyDescription_before = d.content.slice(keyIndex - 70, keyIndex);
           keyDescription_after = d.content.slice(keyIndex + keyword.length, keyIndex + keyword.length + 80);
@@ -210,7 +212,7 @@ jQuery(document).ready(function( $ ) {
           keyDescription_after = d.content.slice(keyIndex + keyword.length, keyIndex + keyword.length + 100);
         }
         resultContent += '<div class="modal-search-result-item">' + keyDescription_before +
-          '<a href=' + d.url + '>' + keyword + '</a>' + keyDescription_after + '   ' + '<span class="search-result-page">'
+          '<a href=' + d.url + '>' + keyDescription + '</a>' + keyDescription_after + '   ' + '<span class="search-result-page">'
           + d.page +'</span>' + '</div>';
       });
     });
