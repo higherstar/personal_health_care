@@ -393,6 +393,11 @@ hr {
     height: 75vh !important;
   }
 
+  .main-content-map .image-description-list .col-lg-6:nth-child(1) {
+    height: fit-content !important;
+    bottom: 0 !important;
+  }
+
   .main-content-map .col-lg-6:nth-child(1) > div{
     height: auto !important;
     padding: 10px !important;
