@@ -185,7 +185,7 @@ jQuery(document).ready(function( $ ) {
   }
 
   function hideSideBarSearchResult() {
-    $('.mobile-search-result')[0].style.transition = 'all 0.8s ease';
+    $('.mobile-search-result')[0].style.transition = 'all 0.7s ease';
     $('.mobile-search-result')[0].style.right = '0';
     $('.mobile-search-result')[0].classList.add('fade');
     $('.mobile-header')[0].style.left = '68%';
