@@ -9,6 +9,9 @@ jQuery(document).ready(function( $ ) {
   });
 
   $('#welcome-modal-link').click(function () {
+    if($(window).width() <= 750) {
+      hideSideBar();
+    }
     $('#welcome-modal').modal('show');
     $('#welcome-modal-submenu')[0].classList.add('active');
   });
@@ -81,20 +84,9 @@ jQuery(document).ready(function( $ ) {
     hideSideBar();
   });
 
-  $('.side-bar-menu-title').click(function () {
-    if($(window).width() <= 750) {
-      hideSideBar();
-    }
-  });
-
-  $('.side-bar-submenu-title').click(function () {
-    if($(window).width() <= 750) {
-      hideSideBar();
-    }
-  });
-
   $('.side-bar-content').click(function () {
-    hideSideBarSearchResult();
+    if(!$('.mobile-search-result')[0].classList.contains('fade'))
+      hideSideBarSearchResult();
   });
 
   //handler for search modal
@@ -138,6 +130,7 @@ jQuery(document).ready(function( $ ) {
     $('#mobile-search')[0].classList.add('mobile-side-bar-search');
     $('#mobile-search').find('span')[0].style.display = 'none';
     $('#mobile-search').find('input')[0].style.display = 'block';
+    $('.mobile-search-result')[0].style.zIndex = '0';
     $('.mobile-search-result')[0].classList.remove('fade');
     $('.mobile-search-result')[0].style.display = 'block';
     $('.mobile-search-result')[0].style.transition = 'all 0.3s ease';
@@ -152,7 +145,7 @@ jQuery(document).ready(function( $ ) {
     $('#mobile-search').find('input')[0].style.display = 'none';
     $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
     $('.mobile-search-result')[0].classList.add('fade');
-    $('#mobile-search').find('input')[0].style.display = 'none';
+    $('.mobile-search-result')[0].style.zIndex = '-1';
     $('.mobile-search-result')[0].style.right = '0';
     showSideBarTitle();
   }
@@ -188,6 +181,7 @@ jQuery(document).ready(function( $ ) {
     $('.mobile-search-result')[0].style.transition = 'all 0.7s ease';
     $('.mobile-search-result')[0].style.right = '0';
     $('.mobile-search-result')[0].classList.add('fade');
+    $('.mobile-search-result')[0].style.zIndex = '-1';
     $('.mobile-header')[0].style.left = '68%';
     $('.main-content')[0].style.marginLeft = '68%';
     $('#mobile-search').find('span')[0].style.display = 'block';
