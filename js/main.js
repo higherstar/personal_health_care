@@ -149,13 +149,15 @@ jQuery(document).ready(function( $ ) {
   }
 
   function hideSideBarSearch() {
-    $('#mobile-search').find('span')[0].style.display = 'block';
-    $('#mobile-search').find('input')[0].style.display = 'none';
-    $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
-    $('.mobile-search-result')[0].classList.add('fade');
-    $('.mobile-search-result')[0].style.zIndex = '-1';
-    $('.mobile-search-result')[0].style.right = '0';
-    showSideBarTitle();
+    if(!$('.mobile-search-result')[0].classList.contains('fade')) {
+      $('#mobile-search').find('span')[0].style.display = 'block';
+      $('#mobile-search').find('input')[0].style.display = 'none';
+      $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
+      $('.mobile-search-result')[0].classList.add('fade');
+      $('.mobile-search-result')[0].style.zIndex = '-1';
+      $('.mobile-search-result')[0].style.right = '0';
+      showSideBarTitle();
+    }
   }
 
   function showSideBarTitle() {
@@ -165,16 +167,12 @@ jQuery(document).ready(function( $ ) {
     for(let i = 0; i< $('.side-bar-submenu-title').length; i++) {
       $('.side-bar-submenu-title')[i].style.display = 'initial';
     }
-    for(let i = 0; i< $('.side-bar-menu').length; i++) {
-      if(localStorage.getItem('activeSideBarMenu') !== null)
-        $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))].classList.add('active');
-      localStorage.removeItem('activeSideBarMenu');
-    }
-    for(let i = 0; i< $('.side-bar-submenu').length; i++) {
-      if(localStorage.getItem('activeSideBarSubMenu') !== null)
-        $('.side-bar-submenu')[parseInt(localStorage.getItem('activeSideBarSubMenu'))].classList.add('active');
-      localStorage.removeItem('activeSideSubBarMenu');
-    }
+    if(localStorage.getItem('activeSideBarMenu') !== null)
+      $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))].classList.add('active');
+    localStorage.removeItem('activeSideBarMenu');
+    if(localStorage.getItem('activeSideBarSubMenu') !== null)
+      $('.side-bar-submenu')[parseInt(localStorage.getItem('activeSideBarSubMenu'))].classList.add('active');
+    localStorage.removeItem('activeSideSubBarMenu');
   }
 
   function hideSideBarTitle() {
@@ -192,8 +190,8 @@ jQuery(document).ready(function( $ ) {
     }
     for(let i = 0; i< $('.side-bar-submenu').length; i++) {
       if($('.side-bar-submenu')[i].classList.contains('active')) {
-        localStorage.setItem('activeSideBarSubMenu', `${i}`);
         $('.side-bar-submenu')[i].classList.remove('active');
+        localStorage.setItem('activeSideBarSubMenu', `${i}`);
       }
     }
   }
