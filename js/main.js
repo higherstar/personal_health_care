@@ -172,7 +172,7 @@ jQuery(document).ready(function( $ ) {
     localStorage.removeItem('activeSideBarMenu');
     if(localStorage.getItem('activeSideBarSubMenu') !== null)
       $('.side-bar-submenu')[parseInt(localStorage.getItem('activeSideBarSubMenu'))].classList.add('active');
-    localStorage.removeItem('activeSideSubBarMenu');
+    localStorage.removeItem('activeSideBarSubMenu');
   }
 
   function hideSideBarTitle() {
