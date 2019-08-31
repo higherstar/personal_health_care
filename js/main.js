@@ -113,6 +113,8 @@ jQuery(document).ready(function( $ ) {
   });
 
   function hideSideBar() {
+    $('.content-wrapper')[0].style.overflowY = 'auto';
+    $('.content-wrapper')[0].style.overflowX = 'hidden';
     $('.mobile-side-bar')[0].style.left = '-68%';
     $('.mobile-header')[0].style.left = '0';
     $('.main-content')[0].style.marginLeft = '0';
@@ -123,6 +125,7 @@ jQuery(document).ready(function( $ ) {
   }
 
   function showSideBar() {
+    $('.content-wrapper')[0].style.overflow = 'hidden';
     $('.mobile-side-bar')[0].style.left = '0';
     $('.mobile-header')[0].style.left = '68%';
     $('.main-content')[0].style.marginLeft = '68%';
