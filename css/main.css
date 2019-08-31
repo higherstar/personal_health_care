@@ -312,6 +312,7 @@ hr {
   #mobile-search-result-content {
     height: 100%;
     overflow: auto;
+    overflow-x: hidden;
   }
 
   /* width */
@@ -683,6 +684,7 @@ hr {
 .modal-search-result {
   height: calc(100% - 48px);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-search-result-item {
