@@ -31,30 +31,48 @@
 <div class="content-wrapper">
   <!--==========================
       Header
-    ============================-->
-  <header id="header" class="header header-hide">
+  ============================-->
+  <header id="header" class="header header-hide mobile-header">
     <div id="logo" class="pull-left d-flex">
-      <h1>PERSONALISED HEALTHCARE SYSTEMS MAP</h1>
+      <img class="d-md-none d-sm-block menu-button" src="../../img/sidebar-icon.svg">
+      <h1 class="d-none d-sm-none d-md-block">PERSONALISED HEALTHCARE SYSTEMS MAP</h1>
+      <h1 class="d-md-none d-sm-block mobile-title">PHC SYSTEMS MAP</h1>
       <img src="../../img/logo.png">
     </div>
+    <div class="right-space"></div>
   </header><!-- Header -->
 
   <!--==========================
       Content
-    ============================-->
-  <div class="content d-flex position-relative">
+  ============================-->
+  <div class="content d-flex">
     <div class="content-header position-absolute"><p>CONTINUOUS & REMOTE OUTCOME CAPTURE, PATIENT MANAGEMENT</p></div>
 
     <!--==========================
       Side Bar
     ============================-->
-    <div class="side-bar d-lg-block d-sm-none">
+    <div class="side-bar mobile-side-bar">
       <div class="side-bar-splitter position-relative">
-        <div data-toggle="modal" data-target="#search-modal"  class="side-bar-search d-flex align-items-center justify-content-between position-absolute">
+        <div data-toggle="modal" data-target="#search-modal"
+             class="side-bar-search align-items-center justify-content-between position-absolute d-none d-sm-none d-md-flex">
           <div class="side-bar-search-icon">
             <img src="../../img/search-icon.png">
           </div>
           <span>SEARCH</span>
+        </div>
+
+        <div id="mobile-search" class="side-bar-search d-flex align-items-center justify-content-between position-absolute d-md-none d-sm-block">
+          <div class="side-bar-search-icon">
+            <img src="../../img/search-icon.png">
+          </div>
+          <span style="display: block">SEARCH</span>
+          <input id="mobile-search-input" type="text" placeholder="Search" style="display: none;" autofocus>
+        </div>
+      </div>
+      <div id="mobile-search-result" class="mobile-search-result position-absolute d-md-none d-sm-block fade">
+        <div id="mobile-search-result-content">
+          <div class="modal-search-result-item">
+          </div>
         </div>
       </div>
       <ul class="list-unstyled side-bar-content">
