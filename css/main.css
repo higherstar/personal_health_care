@@ -299,7 +299,6 @@ hr {
   }
 
   .mobile-search-result {
-    display: none;
     background: white;
     width: 80%;
     height: 100%;
@@ -308,6 +307,16 @@ hr {
     right: 0;
     z-index: 0;
     transition: all 0.5s ease;
+  }
+
+  #mobile-search-result-content {
+    height: 100%;
+    overflow: auto;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px !important;
   }
 }
 

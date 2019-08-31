@@ -93,10 +93,19 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
+  $('.side-bar-content').click(function () {
+    hideSideBarSearchResult();
+  });
+
   //handler for search modal
   $('#search-input').change(function () {
     $('#search-text').text($('#search-input')[0].value);
     search($('#search-input')[0].value);
+  });
+
+  //handler for search side bar
+  $('#mobile-search-input').change(function () {
+    search($('#mobile-search-input')[0].value);
   });
 
   //handler for sidebar search
@@ -122,24 +131,69 @@ jQuery(document).ready(function( $ ) {
     $('.mobile-header')[0].style.left = '68%';
     $('.main-content')[0].style.marginLeft = '68%';
     $('.right-space')[0].style.zIndex = '7';
+    $('.mobile-search-result')[0].style.display = 'none';
   }
 
   function showSideBarSearch() {
     $('#mobile-search')[0].classList.add('mobile-side-bar-search');
     $('#mobile-search').find('span')[0].style.display = 'none';
     $('#mobile-search').find('input')[0].style.display = 'block';
+    $('.mobile-search-result')[0].classList.remove('fade');
     $('.mobile-search-result')[0].style.display = 'block';
+    $('.mobile-search-result')[0].style.transition = 'all 0.3s ease';
     $('.mobile-search-result')[0].style.right = '-40px';
     $('.mobile-header')[0].style.left = 'calc(68% + 40px)';
     $('.main-content')[0].style.marginLeft = 'calc(68% + 40px)';
+    hideSideBarTitle();
   }
 
   function hideSideBarSearch() {
-    $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
     $('#mobile-search').find('span')[0].style.display = 'block';
     $('#mobile-search').find('input')[0].style.display = 'none';
-    $('.mobile-search-result')[0].style.display = 'none';
+    $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
+    $('.mobile-search-result')[0].classList.add('fade');
+    $('#mobile-search').find('input')[0].style.display = 'none';
     $('.mobile-search-result')[0].style.right = '0';
+    showSideBarTitle();
+  }
+
+  function showSideBarTitle() {
+    for(let i = 0; i< $('.side-bar-menu-title').length; i++) {
+      $('.side-bar-menu-title')[i].style.display = 'initial';
+    }
+    for(let i = 0; i< $('.side-bar-submenu-title').length; i++) {
+      $('.side-bar-submenu-title')[i].style.display = 'initial';
+    }
+    for(let i = 0; i< $('.side-bar-menu').length; i++) {
+      $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))].classList.add('active');
+    }
+  }
+
+  function hideSideBarTitle() {
+    for(let i = 0; i< $('.side-bar-menu-title').length; i++) {
+      $('.side-bar-menu-title')[i].style.display = 'none';
+    }
+    for(let i = 0; i< $('.side-bar-submenu-title').length; i++) {
+      $('.side-bar-submenu-title')[i].style.display = 'none';
+    }
+    for(let i = 0; i< $('.side-bar-menu').length; i++) {
+      if($('.side-bar-menu')[i].classList.contains('active')) {
+        localStorage.setItem('activeSideBarMenu', `${i}`);
+        $('.side-bar-menu')[i].classList.remove('active');
+      }
+    }
+  }
+
+  function hideSideBarSearchResult() {
+    $('.mobile-search-result')[0].style.transition = 'all 0.8s ease';
+    $('.mobile-search-result')[0].style.right = '0';
+    $('.mobile-search-result')[0].classList.add('fade');
+    $('.mobile-header')[0].style.left = '68%';
+    $('.main-content')[0].style.marginLeft = '68%';
+    $('#mobile-search').find('span')[0].style.display = 'block';
+    $('#mobile-search').find('input')[0].style.display = 'none';
+    $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
+    showSideBarTitle();
   }
 
   function search(keyword) {
@@ -166,9 +220,12 @@ jQuery(document).ready(function( $ ) {
           + d.page +'</span>' + '</div>';
       });
     });
-    if(resultContent !== '')
+    if(resultContent !== '') {
       $('#search-result').html(resultContent);
-    else
+      $('#mobile-search-result-content').html(resultContent);
+    } else {
       $('#search-result').html('<span>No Result</span>');
+      $('#mobile-search-result-content').html('<span>No Result</span>');
+    }
   }
 });
