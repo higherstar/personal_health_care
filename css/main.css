@@ -123,13 +123,17 @@ hr {
 
 @media (max-width: 750px) {
   .content-header {
+    position: relative !important;
     height: fit-content;
     transition: all 0.5s ease;
+    top: 0;
     z-index: 5;
   }
   .content-header p {
     font-size: 20px;
     padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 5px;
   }
 }
@@ -372,6 +376,10 @@ hr {
   .main-content-map img {
     height: auto !important;
     width: 100vw;
+  }
+
+  .content {
+    flex-direction: column;
   }
 }
 /*--------------------------------------------------------------
