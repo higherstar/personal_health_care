@@ -411,6 +411,18 @@ hr {
     overflow: hidden !important;
   }
 
+  .details-container div:nth-child(3) > div{
+    flex-direction: column;
+  }
+
+  .image-description {
+    flex-direction: row !important;
+  }
+
+  .text-content-img img {
+    margin-top: 0 !important;
+  }
+
   .details-container h1 {
     font-size: 19px !important;
     text-align: center;
