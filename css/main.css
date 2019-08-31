@@ -317,7 +317,7 @@ hr {
 
   /* width */
   ::-webkit-scrollbar {
-    width: 5px !important;
+    width: 3px !important;
   }
 }
 
