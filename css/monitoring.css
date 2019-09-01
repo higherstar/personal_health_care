@@ -53,6 +53,18 @@
   left: 41%;
 }
 
+@media (max-width: 750px) {
+  #digital-health {
+    top: 3%;
+    left: 57%;
+  }
+
+  #real-world-data {
+    top: 26%;
+    left: 40%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Monitoring Details
 --------------------------------------------------------------*/
@@ -546,6 +558,13 @@
   height: 155%;
 }
 
+@media (max-width: 750px) {
+  .real-world-data-content .image-description .color-box {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+}
 
 /*--------------------------------------------------------------
 # Zoom Out Modal dialog

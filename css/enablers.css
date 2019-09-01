@@ -109,3 +109,10 @@
   top: 33%;
   left: 12%;
 }
+
+@media (max-width: 750px) {
+  #data-policy {
+    top: 69%;
+    left: 61%;
+  }
+}

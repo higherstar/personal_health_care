@@ -48,6 +48,23 @@
   top: 72%;
   left: 69%;
 }
+
+@media (max-width: 750px) {
+  #clinical-decision-support {
+    top: 42%;
+    left: 35%;
+  }
+
+  #molecularly-guided {
+    top: 0;
+    left: 26%;
+  }
+
+  #real-world-data {
+    top: 64%;
+    left: 50%;
+  }
+}
 /*--------------------------------------------------------------
 # Dignosis Details
 --------------------------------------------------------------*/
@@ -790,4 +807,12 @@
 .clinical-solutions-circle-block-top {
   margin-top: -132px;
   height: 155%;
+}
+
+@media (max-width: 750px) {
+  .real-world-data-content .image-description .color-box {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
 }

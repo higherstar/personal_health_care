@@ -70,6 +70,33 @@
   left: 80%;
 }
 
+@media (max-width: 750px) {
+  #digital-health {
+    top: 0;
+    left: 10%;
+  }
+
+  #genomics {
+    top: 11%;
+    left: 29%;
+  }
+
+  #advanced-imaging {
+    top: 32%;
+    left: 49%;
+  }
+
+  #digital-pathology {
+    top: 62%;
+    left: 48%;
+  }
+
+  #real-world-data {
+    top: 74%;
+    left: 52%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Dignosis Details
 --------------------------------------------------------------*/
@@ -606,6 +633,13 @@
   height: 155%;
 }
 
+@media (max-width: 750px) {
+  .real-world-data-content .image-description .color-box {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+}
 
 /*--------------------------------------------------------------
 # Zoom Out Modal dialog
