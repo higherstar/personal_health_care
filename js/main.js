@@ -170,10 +170,10 @@ jQuery(document).ready(function( $ ) {
     for(let i = 0; i< $('.side-bar-submenu-title').length; i++) {
       $('.side-bar-submenu-title')[i].style.display = 'initial';
     }
-    if(localStorage.getItem('activeSideBarMenu') !== null)
+    if(localStorage.getItem('activeSideBarMenu') !== null && $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))])
       $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))].classList.add('active');
     localStorage.removeItem('activeSideBarMenu');
-    if(localStorage.getItem('activeSideBarSubMenu') !== null)
+    if(localStorage.getItem('activeSideBarSubMenu') !== null && $('.side-bar-submenu')[parseInt(localStorage.getItem('activeSideBarSubMenu'))])
       $('.side-bar-submenu')[parseInt(localStorage.getItem('activeSideBarSubMenu'))].classList.add('active');
     localStorage.removeItem('activeSideBarSubMenu');
   }
