@@ -654,8 +654,8 @@ hr {
 
 @media (max-width: 750px) {
   .custom-expand-btn {
-    width: 80% !important;
-    height: 80% !important;
+    height: 32px !important;
+    width: 32px !important;
   }
 
   .custom-expand-btn-minus {
