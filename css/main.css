@@ -651,6 +651,30 @@ hr {
   box-shadow: #000000eb 1px 1px 10px 1px;
   z-index: 1;
 }
+
+@media (max-width: 750px) {
+  .custom-expand-btn {
+    width: 80% !important;
+    height: 80% !important;
+  }
+
+  .custom-expand-btn-minus {
+    top: 6px;
+    left: 9px;
+  }
+
+  .custom-expand-btn {
+    font-size: 23px;
+    line-height: 11px;
+    padding-left: 6px;
+    padding-top: 5px;
+  }
+
+  .custom-expand-btn-title {
+    margin-top: 1px;
+    margin-left: 15px;
+  }
+}
 /*--------------------------------------------------------------
 # Connection Modal dialog
 --------------------------------------------------------------*/
