@@ -151,6 +151,8 @@ jQuery(document).ready(function( $ ) {
     for(let i = 0; i< $('.side-bar-menu').length; i++) {
       if(!$($('.side-bar-menu')[i]).find('svg')[0].classList.contains('active'))
         $($('.side-bar-menu')[i]).find('svg')[0].style.display = 'none';
+      if($($('.side-bar-menu')[i])[0].classList.contains('active'))
+        $($('.side-bar-menu')[i])[0].style.background = 'unset';
     }
     $('#mobile-side-bar-submenu')[0].classList.remove('fade');
     $('#mobile-side-bar-submenu')[0].style.zIndex = '1';
@@ -161,13 +163,15 @@ jQuery(document).ready(function( $ ) {
     if(localStorage.getItem('activeSideBarMenu') !== null && $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))])
       $('.side-bar-menu')[parseInt(localStorage.getItem('activeSideBarMenu'))].classList.add('active');
     for(let i = 0; i< $('.side-bar-menu-arrow-right').length; i++) {
-      $('.side-bar-menu-arrow-right')[i].style.left = '30%';
+      $('.side-bar-menu-arrow-right')[i].style.left = '32%';
     }
   }
 
   function hideSideBarSubMenu() {
     for(let i = 0; i< $('.side-bar-menu').length; i++) {
         $($('.side-bar-menu')[i]).find('svg')[0].style.display = 'inline-flex';
+        if($($('.side-bar-menu')[i])[0].classList.contains('active'))
+          $($('.side-bar-menu')[i])[0].style.background = 'white';
     }
     $('#mobile-side-bar-submenu')[0].classList.add('fade');
     $('#mobile-side-bar-submenu')[0].style.zIndex = '-1';
@@ -179,6 +183,9 @@ jQuery(document).ready(function( $ ) {
   
   function showSideBarSearch() {
     hideSideBarSubMenu();
+    for(let i = 0; i< $('.side-bar-menu').length; i++) {
+        $($('.side-bar-menu')[i])[0].style.background = 'unset';
+    }
     $('#mobile-search')[0].classList.add('mobile-side-bar-search');
     $('#mobile-search').find('span')[0].style.display = 'none';
     $('#mobile-search').find('input')[0].style.display = 'block';
@@ -258,6 +265,10 @@ jQuery(document).ready(function( $ ) {
     $('#mobile-search').find('input')[0].style.display = 'none';
     $('#mobile-search')[0].classList.remove('mobile-side-bar-search');
     showSideBarTitle();
+    for(let i = 0; i< $('.side-bar-menu').length; i++) {
+      if($($('.side-bar-menu')[i])[0].classList.contains('active'))
+        $($('.side-bar-menu')[i])[0].style.background = 'white';
+    }
   }
 
   function search(keyword) {
