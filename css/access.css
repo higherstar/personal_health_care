@@ -5,6 +5,11 @@
   margin-top: -12px;
 }
 
+@media (max-width: 750px) {
+  .mobile-side-bar-submenu {
+    padding-top: 71% !important;
+  }
+}
 /*--------------------------------------------------------------
 # Search Modal Dialog
 --------------------------------------------------------------*/
