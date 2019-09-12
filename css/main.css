@@ -15,6 +15,7 @@ body {
 ul {
   margin-bottom: 0;
 }
+
 hr {
   border: 0;
 }
@@ -87,7 +88,7 @@ hr {
   .mobile-header {
     position: absolute;
     width: 100%;
-    left: 0%;
+    left: 0;
   }
 
   .right-space {
@@ -112,7 +113,7 @@ hr {
   z-index: 100;
 }
 
-.content-header p{
+.content-header p {
   font-size: 27px;
   font-weight: bold;
   font-family: Imago;
@@ -129,6 +130,7 @@ hr {
     top: 0;
     z-index: 5;
   }
+
   .content-header p {
     font-size: 20px;
     padding-top: 5px;
@@ -150,12 +152,14 @@ hr {
   display: flex !important;
   z-index: 100;
 }
+
 .side-bar-splitter {
   width: 23%;
   height: 100%;
   border-right: 5px solid #71C6FF;
   z-index: 2;
 }
+
 .side-bar-content {
   padding-top: 60%;
   height: 100%;
@@ -193,7 +197,7 @@ hr {
   transition: all 0.5s ease;
 }
 
-.active > a{
+.active > a {
   font-weight: bold;
 }
 
@@ -215,7 +219,6 @@ hr {
   font-weight: bold;
 }
 
-
 .side-bar-menu-title:hover, .side-bar-submenu-title:hover {
   text-decoration: none;
 }
@@ -229,7 +232,7 @@ hr {
   content: '―';
   position: absolute;
   margin-left: -20px;
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 9px;
   font-weight: bold;
   transform: scale(2, 5);
@@ -262,7 +265,7 @@ hr {
   padding: 3px;
 }
 
-.side-bar-search span{
+.side-bar-search span {
   color: white;
   padding-right: 25px;
 }
@@ -397,7 +400,7 @@ hr {
   height: 100%;
 }
 
-.content{
+.content {
   height: 89.6%;
 }
 
@@ -448,7 +451,7 @@ hr {
     bottom: 0 !important;
   }
 
-  .main-content-map .col-lg-6:nth-child(1) > div{
+  .main-content-map .col-lg-6:nth-child(1) > div {
     height: auto !important;
     padding: 10px !important;
   }
@@ -462,11 +465,11 @@ hr {
     overflow: hidden !important;
   }
 
-  .details-container div:nth-child(3){
+  .details-container div:nth-child(3) {
     overflow: hidden !important;
   }
 
-  .details-container div:nth-child(3) > div{
+  .details-container div:nth-child(3) > div {
     flex-direction: column;
   }
 
@@ -493,6 +496,7 @@ hr {
     flex-direction: column;
   }
 }
+
 /*--------------------------------------------------------------
 # Custom DropDown
 --------------------------------------------------------------*/
@@ -533,7 +537,7 @@ hr {
   left: -22px;
   height: 40px !important;
   border-radius: 50%;
-  box-shadow: #000000eb -4px 0px 9px -1px !important;
+  box-shadow: #000000eb -4px 0 9px -1px !important;
 }
 
 .map-dropdown-menu .dropdown-toggle {
@@ -675,6 +679,7 @@ hr {
     margin-left: 15px;
   }
 }
+
 /*--------------------------------------------------------------
 # Connection Modal dialog
 --------------------------------------------------------------*/
@@ -701,7 +706,7 @@ hr {
   height: 100%;
 }
 
-.modal-header button{
+.modal-header button {
   position: absolute;
   opacity: 1;
   right: -25px;
@@ -736,11 +741,11 @@ hr {
   height: 50px;
 }
 
-.modal-header button:hover{
+.modal-header button:hover {
   border: 3px solid white;
 }
 
-.modal-header button img{
+.modal-header button img {
   width: 50px;
 }
 
@@ -784,7 +789,7 @@ hr {
   background-color: #007bff;
   color: white;
   font-size: 15px;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -865,6 +870,7 @@ hr {
     min-height: 520px;
   }
 }
+
 /*--------------------------------------------------------------
 # PHC Engine
 --------------------------------------------------------------*/

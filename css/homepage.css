@@ -38,7 +38,7 @@
   padding-bottom: 0;
 }
 
-.modal-header button{
+.modal-header button {
   position: absolute;
   opacity: 1;
   right: -25px;
@@ -78,11 +78,11 @@
   height: 50px;
 }
 
-.modal-header button:hover{
+.modal-header button:hover {
   border: 3px solid white;
 }
 
-.modal-header button img{
+.modal-header button img {
   width: 50px;
 }
 

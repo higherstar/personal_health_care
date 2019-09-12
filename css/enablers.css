@@ -37,7 +37,7 @@
 .enablers-container {
   width: 80%;
   height: 78vh;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: white;
   padding: 20px;
   border-radius: 20px;
@@ -50,22 +50,22 @@
   align-items: center;
 }
 
-.enablers-right-header img{
+.enablers-right-header img {
   width: 40px;
   height: 40px;
   padding: 0;
   opacity: 0.8;
 }
 
-.enablers-right-header img:hover{
+.enablers-right-header img:hover {
   opacity: 1;
 }
 
-.enablers-right-header img:active{
+.enablers-right-header img:active {
   opacity: 0.8;
 }
 
-.enablers-right-header h1{
+.enablers-right-header h1 {
   text-align: center;
   font-size: 26px;
   font-weight: bold;

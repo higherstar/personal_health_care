@@ -34,7 +34,7 @@
 .vbhc-container {
   width: 80%;
   height: 78vh;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: white;
   padding: 20px;
   border-radius: 20px;
@@ -47,22 +47,22 @@
   align-items: center;
 }
 
-.vbhc-right-header img{
+.vbhc-right-header img {
   width: 40px;
   height: 40px;
   padding: 0;
   opacity: 0.8;
 }
 
-.vbhc-right-header img:hover{
+.vbhc-right-header img:hover {
   opacity: 1;
 }
 
-.vbhc-right-header img:active{
+.vbhc-right-header img:active {
   opacity: 0.8;
 }
 
-.vbhc-right-header h1{
+.vbhc-right-header h1 {
   text-align: center;
   font-size: 26px;
   font-weight: bold;
@@ -83,7 +83,7 @@
   font-weight: bold;
 }
 
-.vbhc-details-content img{
+.vbhc-details-content img {
   width: 100%
 }
 
@@ -178,7 +178,7 @@
     min-height: 520px;
   }
 
-  #roche-world-data .modal-lg{
+  #roche-world-data .modal-lg {
     max-width: 60%;
     margin-left: 10%;
   }
