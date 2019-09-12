@@ -1,32 +1,32 @@
 const data = [{
-    "page": "ACCESS",
-    "url": "../access/digital-health.html",
-    "content": "Description In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is defined" +
-      " as clinically grade data from digital devices that inform R&D or clinical care for the Roche" +
-      " Disease Areas of Focus. Software as medical device  (SaMD) is a software intended to be used for one or more medical purposes" +
-      " that perform these purposes without being part of a hardware medical device. Click here to learn more." +
-      " [Link to Digital Health/SaMD module in Starter Pack] Click button below to see: Connections with Other PHC Topics" +
-      " Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on" +
-      " the left) Smarter & more efficient R&D – Digital Health also has the possibility to transform" +
-      " clinical practice – from an earlier detection of disease progression to a better disease management and" +
-      " even disease treatment.Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram" +
-      " on the left) Improved access & personalized care - The development of novel digital biomarkers" +
-      " based on data from wearable devices and mobile apps from our smartphones offers the unprecedented" +
-      " opportunity for continuous data collection but it also opens the door to build new tools more sensitive" +
-      " to change that the current ones. The adoption of novel biomarkers and other digital health solutions" +
-      " such as Digital Therapeutics (DTx) could lead to faster and cheaper research. Roche and Roche partner examples/initiatives" +
-      " At Roche, we aim to use digital health platforms to help capture Meaningful Data at Scale (MDAS)" +
-      " in areas such as movement, respiration (e.g., pulmonary function, asthma, exacerbations), and sleep." +
-      " Where needed, we seek clinical and regulatory validation of digital health platforms for deployment" +
-      " in late-stage clinical trials. Our expertise is in creating operational capabilities informed by pilots" +
-      " to incorporate digital technologies into late-stage trials. One example of a digital health platform created by Roche is the" +
-      " Floodlight technology. Floodlight aims to allow people with Multiple Sclerosis (MS), physicians, and researchers" +
-      " to monitor MS and health over time using a smartphone, with the ultimate goal of creating practical" +
-      " tools to improve the lives of people living with MS. Key drivers/considerations " +
-      " Identification & validation of new types of endpoints / outcomes that matter to patients Design & integration " +
-      " of digital biomarkers and / or health programs along the patient journey Sources of digital health data and " +
-      " understanding of RWD Regulatory definition and classification of medical device Collaboration model with external stakeholders (e.g., IT companies, hospitals/HCPs and patients",
-  },
+  "page": "ACCESS",
+  "url": "../access/digital-health.html",
+  "content": "Description In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is defined" +
+    " as clinically grade data from digital devices that inform R&D or clinical care for the Roche" +
+    " Disease Areas of Focus. Software as medical device  (SaMD) is a software intended to be used for one or more medical purposes" +
+    " that perform these purposes without being part of a hardware medical device. Click here to learn more." +
+    " [Link to Digital Health/SaMD module in Starter Pack] Click button below to see: Connections with Other PHC Topics" +
+    " Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on" +
+    " the left) Smarter & more efficient R&D – Digital Health also has the possibility to transform" +
+    " clinical practice – from an earlier detection of disease progression to a better disease management and" +
+    " even disease treatment.Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram" +
+    " on the left) Improved access & personalized care - The development of novel digital biomarkers" +
+    " based on data from wearable devices and mobile apps from our smartphones offers the unprecedented" +
+    " opportunity for continuous data collection but it also opens the door to build new tools more sensitive" +
+    " to change that the current ones. The adoption of novel biomarkers and other digital health solutions" +
+    " such as Digital Therapeutics (DTx) could lead to faster and cheaper research. Roche and Roche partner examples/initiatives" +
+    " At Roche, we aim to use digital health platforms to help capture Meaningful Data at Scale (MDAS)" +
+    " in areas such as movement, respiration (e.g., pulmonary function, asthma, exacerbations), and sleep." +
+    " Where needed, we seek clinical and regulatory validation of digital health platforms for deployment" +
+    " in late-stage clinical trials. Our expertise is in creating operational capabilities informed by pilots" +
+    " to incorporate digital technologies into late-stage trials. One example of a digital health platform created by Roche is the" +
+    " Floodlight technology. Floodlight aims to allow people with Multiple Sclerosis (MS), physicians, and researchers" +
+    " to monitor MS and health over time using a smartphone, with the ultimate goal of creating practical" +
+    " tools to improve the lives of people living with MS. Key drivers/considerations " +
+    " Identification & validation of new types of endpoints / outcomes that matter to patients Design & integration " +
+    " of digital biomarkers and / or health programs along the patient journey Sources of digital health data and " +
+    " understanding of RWD Regulatory definition and classification of medical device Collaboration model with external stakeholders (e.g., IT companies, hospitals/HCPs and patients",
+},
   {
     "page": "ACCESS",
     "url": "../access/real-world-data.html",
