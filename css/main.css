@@ -505,11 +505,12 @@ hr {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   padding-right: 15px;
-  padding-left: 18px;
+  padding-left: 20px;
   color: black;
   font-family: Imago;
   font-size: 17px;
   font-weight: bold;
+  text-align: left;
   min-height: 30px;
   outline: none;
   background-size: contain;

@@ -110,6 +110,10 @@
   #welcome-modal .modal-lg {
     max-width: 710px;
   }
+
+  #welcome-modal .modal-header {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -126,6 +130,11 @@
 # System map DropDown Menu
 --------------------------------------------------------------*/
 
+.map-dropdown-menu .multi-line-title {
+  top: -38px !important;
+  padding-top: 40px !important;
+}
+
 #diagnosis-dropdown {
   left: 35.7%;
   top: 4%;
@@ -139,11 +148,6 @@
 #health-care-dropdown {
   top: 4%;
   left: 52.3%;
-}
-
-#health-care-dropdown .dropdown-menu {
-  top: -38px !important;
-  padding-top: 40px !important;
 }
 
 #enablers-dropdown {
@@ -166,14 +170,19 @@
   top: 47%;
 }
 
+#roche-initiatives-dropdown {
+  left: 91.6%;
+  top: 16%;
+}
+
 @media (max-width: 750px) {
-  #health-care-dropdown .dropdown-menu {
-    top: -23px !important;
+  .map-dropdown-menu .multi-line-title {
+    top: -26px !important;
     padding-top: 25px !important;
   }
 
   #care-dropdown .dropdown-menu {
-    left: -14px !important;
+    left: -5px !important;
   }
 
   #diagnosis-dropdown {
@@ -181,6 +190,10 @@
   }
 
   #care-dropdown {
-    left: 79%;
+    left: 70%;
+  }
+
+  #roche-initiatives-dropdown {
+    left: 75%;
   }
 }
