@@ -197,7 +197,7 @@ const data = [{
   },
   {
     "page": "DIAGNOSIS",
-    "url": "../diagnosis/companion-diagnostics.html",
+    "url": "../diagnosis/diagnostics.html",
     "content": "Description Companion diagnostic refers to targeted diagnostics tests that aid in the choice of" +
       " specific therapies for each patient. Click button below to see: Connections with Other PHC Topics " +
       "Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left)" +
