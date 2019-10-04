@@ -22,7 +22,10 @@ jQuery(document).ready(function ($) {
 
   // handler for clicking on dropdown
   $(".custom-dropdown").blur(function () {
-    $(this).find('img').attr('src', '../../img/toggle_left.png');
+    if ($(this)[0].classList.contains('red-color'))
+      $(this).find('img').attr('src', '../../img/toggle_left_red.png');
+    else
+      $(this).find('img').attr('src', '../../img/toggle_left.png');
   });
 
   $('.custom-dropdown').click(function () {
@@ -31,13 +34,23 @@ jQuery(document).ready(function ($) {
     for (let i = 0; i < dropDowns.length; i++) {
       if ($(dropDowns[i])[0].id !== $(this)[0].id) {
         $(dropDowns[i])[0].style.zIndex = '1';
-        $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left.png');
+        if ($(dropDowns[i])[0].classList.contains('red-color'))
+          $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left_red.png');
+        else
+          $(dropDowns[i]).find('img').attr('src', '../../img/toggle_left.png');
       }
     }
-    if ($(this).find('img').attr('src') === '../../img/toggle_left.png')
-      $(this).find('img').attr('src', '../../img/toggle_down.png');
-    else
-      $(this).find('img').attr('src', '../../img/toggle_left.png');
+    if ($(this)[0].classList.contains('red-color')) {
+      if ($(this).find('img').attr('src') === '../../img/toggle_left_red.png')
+        $(this).find('img').attr('src', '../../img/toggle_down_red.png');
+      else
+        $(this).find('img').attr('src', '../../img/toggle_left_red.png');
+    } else {
+      if ($(this).find('img').attr('src') === '../../img/toggle_left.png')
+        $(this).find('img').attr('src', '../../img/toggle_down.png');
+      else
+        $(this).find('img').attr('src', '../../img/toggle_left.png');
+    }
   });
 
   // handler for clicking on expand button

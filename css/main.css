@@ -698,13 +698,18 @@ hr {
 }
 
 .modal-header {
-  border-bottom: 8px solid #0066CC;
-  padding: 0;
+  background: #ed8b00;
+  padding: 0 0 0 40px;
   height: 12%;
 }
 
 .modal-header img {
   height: 100%;
+}
+
+#search-modal .modal-header {
+  background: #efefef;
+  padding-left: 0 !important;
 }
 
 .modal-header button {
@@ -722,7 +727,7 @@ hr {
 .modal-header p {
   margin-bottom: 0;
   font-size: 38px;
-  color: #000;
+  color: white !important;
 }
 
 .modal-header button {
@@ -757,27 +762,37 @@ hr {
   height: 88%;
 }
 
+.modal-body .key-card-wrapper {
+  background: #dadada;
+  padding-top: 20px;
+}
+
 .modal-body .key-card {
   width: 45%;
   height: 96%;
-  background: white;
   margin-top: 8px;
   font-family: Imago;
 }
 
+.modal-body .key-stakeholders {
+  padding-right: 30px;
+}
+
 .modal-body .key-drivers {
   margin-left: 20px;
+  padding-left: 30px;
 }
 
 .modal-body .key-card-header {
-  background-color: #00b0ff;
+  background-color: #e40046;
   height: 15%;
   font-size: 22px;
   color: white;
 }
 
 .modal-body .key-card-content {
-  padding: 10px 30px;
+  position: relative;
+  padding: 10px 0;
 }
 
 .modal-body .key-card-content-star:hover {
@@ -785,13 +800,53 @@ hr {
 }
 
 .modal-body .key-card-content .key-card-content-block {
-  padding: 5px;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
+  position: relative;
+  padding: 5px 5px 5px 28px;
+  background: white;
   font-size: 15px;
+  font-weight: bold;
+  text-align: left;
   margin-top: 5px;
 }
+
+.modal-body .key-card-content-band {
+  width: 7px;
+  height: calc(100% - 10px);
+  background: white;
+  left: 18px;
+  top: 0;
+}
+
+.modal-body .rectangle-block-right-band {
+  background: #0066cc;
+  width: 40px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.modal-body .rectangle-block-circle-dot {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  left: 10px;
+}
+
+.modal-body .key-card-content-block-right, .modal-body .rectangle-block-right {
+  position: absolute;
+  width: 18px;
+  height: 100%;
+  background-color: #e40046;
+  left: 0;
+  top: 0;
+}
+
+.modal-body .rectangle-block-right {
+  background-color: #0066cc;
+}
+
+.modal-body .
 
 /*--------------------------------------------------------------
 # Search Modal dialog

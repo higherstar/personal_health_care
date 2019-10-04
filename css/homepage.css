@@ -130,6 +130,16 @@
 # System map DropDown Menu
 --------------------------------------------------------------*/
 
+.red-color {
+  color: #cc0052;
+}
+
+.red-color:hover, .red-color:focus, .red-color:active {
+  background: #cc0052 !important;
+  border-color: #cc005299 !important;
+}
+
+
 .map-dropdown-menu .multi-line-title {
   top: -38px !important;
   padding-top: 40px !important;

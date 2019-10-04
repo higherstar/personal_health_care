@@ -45,7 +45,7 @@
       Content
   ============================-->
   <div class="content d-flex">
-    <div class="content-header position-absolute"><p>EARLY & ACCURATE DIAGNOSIS (INITIAL & RECURRENCE)</p></div>
+    <div class="content-header position-absolute"><p>EARLY & ACCURATE DIAGNOSIS</p></div>
 
     <!--==========================
       Side Bar
@@ -372,15 +372,15 @@
           <div class="modal-content">
             <!-- Modal Header -->
             <div
-                class="modal-header d-flex align-items-center justify-content-center text-center flex-grow-0 flex-shrink-0">
-              <img src="../../img/connection_icon.png"/>
+                class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
+              <img src="../../img/connection_icon_black.png"/>
               <p class="font-weight-bold">Where Diagnostics Solution Fit Within PHC</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
 
             <!-- Modal Body -->
             <div class="modal-body d-flex text-center">
-              <div class="col-lg-6 d-flex justify-content-center ">
+              <div class="col-lg-6 d-flex justify-content-center key-card-wrapper">
                 <!-- Key Stakeholders -->
                 <div class="key-card flex-shrink-0 flex-grow-0 key-stakeholders d-flex flex-column font-weight-normal">
                   <div
@@ -388,26 +388,34 @@
                     <span>Key Stakeholders</span>
                   </div>
                   <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-band position-absolute"></div>
                     <div class="key-card-content-block">
                       Regulators
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
-                      Players
+                      Governments<br/>and Payers
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       Policy makers
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       HCPs
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
-                      Patients
+                      Patients and<br/>caregivers
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
-                      Hospitals/<br>Healthcare<br>systems
+                      Hospitals<br>administrators and <br>staff
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       Pharma & Tech industry
+                      <div class="key-card-content-block-right"></div>
                     </div>
                   </div>
                 </div><!-- Key Stakeholders -->
@@ -418,24 +426,43 @@
                     <span>Key Drivers/<br>Considerations</span>
                   </div>
                   <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-band position-absolute"></div>
                     <div class="key-card-content-block">
                       Regulatory pathway<br>for approval
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       Access pathway
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block position-relative">
                       Data policy<br>Collection<br>Usage<br>Privacy<br>Security
                       <a href="../enablers/data-policy.html" id="data-policy-star"
                          class="key-card-content-star position-absolute">*</a>
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       Clinical adoption
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block position-relative">
                       IT infrastructure
                       <a href="../enablers/it-infrastructure.html" id="it-infrastructure-star"
                          class="key-card-content-star position-absolute">*</a>
+                      <div class="key-card-content-block-right"></div>
+                      <svg id="arrow-curly-brace-diagnostics" class="position-absolute" width="150px" height="200px" top="30%">
+                        <defs>
+                          <marker id="arrow-black" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#000000;"/>
+                          </marker>
+                        </defs>
+                        <path d="M28,145 L105,145"
+                              style="stroke:#000000; stroke-width: 6px; fill: none;"/>
+                        <path d="M28,197 L105,197"
+                              style="stroke:#000000; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,200 L108,70"
+                              style="stroke:#000000; stroke-width: 6px; fill: none; marker-end: url(#arrow-black);"/>
+                      </svg>
                     </div>
                   </div>
                 </div><!-- Key Drivers -->
@@ -448,53 +475,39 @@
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,25 L70,30"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow1);"/>
+                      <path d="M0,30 L65,30"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow1);"/>
                     </svg>
-                    <svg id="arrow-players" class="position-absolute" width="80px" height="50px" top="30%">
+                    <svg id="arrow-players" class="position-absolute" width="80px" height="60px" top="30%">
                       <defs>
                         <marker id="arrow2" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,15 L70,45"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow2);"/>
+                      <path d="M0,15 L30,15 L30,45 L65,45"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow2);"/>
                     </svg>
-                    <svg id="arrow-policy" class="position-absolute" width="80px" height="80px" top="30%">
+                    <svg id="arrow-policy" class="position-absolute" width="80px" height="90px" top="30%">
                       <defs>
                         <marker id="arrow3" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,15 L70,60"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow3);"/>
+                      <path d="M0,15 L40,15 L40,60 L65,60"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow3);"/>
                     </svg>
-                    <svg id="arrow-hcps" class="position-absolute" width="80px" height="160px" top="30%">
-                      <defs>
-                        <marker id="arrow4" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,25 L70,150"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow4);"/>
-                    </svg>
-                    <svg id="arrow-patients" class="position-absolute" width="80px" height="130px" top="30%">
-                      <defs>
-                        <marker id="arrow5" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,40 L70,123"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow5);"/>
-                    </svg>
-                    <svg id="arrow-hospitals" class="position-absolute" width="80px" height="90px" top="30%">
+                    <svg id="arrow-hospitals" class="position-absolute" width="80px" height="180px" top="30%">
                       <defs>
                         <marker id="arrow6" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,50 L70,83"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow6);"/>
+                        <path d="M0,150 L65,150"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow6);"/>
+                        <path d="M0,70 L30,70 L30,150"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                        <path d="M0,15 L30,15 L30,70"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
                     </svg>
                     <svg id="arrow-pharma" class="position-absolute" width="80px" height="50px" top="30%">
                       <defs>
@@ -502,110 +515,183 @@
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,25 L70,30"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#arrow7);"/>
+                      <path d="M0,15 L65,15"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow7);"/>
                     </svg>
                   </div><!-- Arrows Lines-->
                 </div>
               </div>
-              <div class="curly-brace-wrap position-absolute d-flex justify-content-center">
+              <div class="curly-brace-wrap position-absolute d-flex justify-content-center align-items-center">
                 <!-- Curly Brace -->
                 <div class="arrow-curly-brace position-relative">
-                  <img src="../../img/arrow-curly-brace.png">
+                  <div class="arrow-curly-brace-left"></div>
+                  <!--<img src="../../img/arrow-curly-brace.png">-->
+                  <svg id="arrow-curly-brace-right" class="position-absolute" width="80px" height="80px" top="30%">
+                    <defs>
+                      <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#b0b0b0;"/>
+                      </marker>
+                    </defs>
+                    <path d="M0,25 L25,25"
+                          style="stroke:#b0b0b0; stroke-width: 10px; fill: none; marker-end: url(#arrow);"/>
+                  </svg>
                 </div><!-- Curly Brace -->
               </div>
               <div class="col-lg-6">
                 <!-- Diagnostics Solutions -->
-                <div class="diagnostics-solutions text-center d-flex align-items-center justify-content-center">
+                <div class="diagnostics-solutions d-flex align-items-center justify-content-center">
                   <div class="diagnostics-solutions-rectangle-block d-flex">
                     <div
-                        class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                        class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center">
                       <span>Diagnostics<br>solutions</span>
-                      <div class="diagnostics-solutions-circle-dot position-absolute"></div>
-                      <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
+                      <div class="rectangle-block-right-band position-absolute d-flex justify-content-center align-items-center">
+                        <div class="rectangle-block-circle-dot position-absolute"></div>
+                      </div>
+                      <svg id="arrow-to-analysis" class="position-absolute" width="100px" height="160px" top="30%">
                         <defs>
                           <marker id="arrow10" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
                             <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
                           </marker>
                         </defs>
-                        <path d="M15,15 L40,15"
-                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow10);"/>
+                        <path d="M45,75 L15,75"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                        <path d="M45,75 L45,135"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none;"/>
+                        <path d="M42,135 L62,135"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                        <path d="M45,75 L45,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none;"/>
+                        <path d="M42,15 L62,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
                       </svg>
-                      <svg id="arrow-toward-cds" class="position-absolute" width="100px" height="120px" top="30%">
+                      <svg id="arrow-to-cds" class="position-absolute" width="150px" height="120px" top="30%">
                         <defs>
-                          <marker id="clinical-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                  orient="auto">
-                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                          <marker id="arrow-black" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#000000;"/>
                           </marker>
                         </defs>
-                        <path d="M10,110 L90,35"
-                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#clinical-arrow-maker);"/>
+                        <path d="M97,40 L132,40"
+                              style="stroke:#000000; stroke-width: 6px; fill: none; marker-end: url(#arrow-black);"/>
+                        <path d="M100,40 L100,100"
+                              style="stroke:#000000; stroke-width: 6px; fill: none;"/>
+                        <path d="M103,97 L85,97"
+                              style="stroke:#000000; stroke-width: 6px; fill: none; marker-end: url(#arrow-black);"/>
+                      </svg>
+                      <svg id="arrow-to-down" class="position-absolute" width="150px" height="200px" top="30%">
+                        <defs>
+                          <marker id="arrow-grey" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#AFABAB;"/>
+                          </marker>
+                        </defs>
+                        <path d="M105,60 L132,60"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M105,115 L132,115"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M105,182 L132,182"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,185 L108,20"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none; marker-end: url(#arrow-grey);"/>
+                      </svg>
+                      <svg id="arrow-to-up" class="position-absolute" width="150px" height="120px" top="30%">
+                        <defs>
+                          <marker id="arrow-grey" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#AFABAB;"/>
+                          </marker>
+                        </defs>
+                        <path d="M105,40 L132,40"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,40 L108,85"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none; marker-end: url(#arrow-grey);"/>
+                      </svg>
+                      <svg id="arrow-to-up-submenu" class="position-absolute" width="150px" height="120px" top="30%">
+                        <defs>
+                          <marker id="arrow-grey" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#AFABAB;"/>
+                          </marker>
+                        </defs>
+                        <path d="M105,55 L132,55"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M105,5 L132,5"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,5 L108,85"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none; marker-end: url(#arrow-grey);"/>
                       </svg>
                       <div
-                          class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                          class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
                         <span>CDS</span>
                         <a href="../care/clinical-decision-support.html"
                            class="key-card-content-star position-absolute font-weight-normal">*</a>
+                        <div class="rectangle-block-right"></div>
+                        <svg id="arrow-to-cds-analytics" class="position-absolute" width="150px" height="80px" top="30%">
+                          <defs>
+                            <marker id="arrow10" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                              <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                            </marker>
+                          </defs>
+                          <path d="M45,40 L45,65"
+                                style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                          <path d="M45,40 L45,25"
+                                style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                        </svg>
                       </div>
-
                       <div
-                          class="diagnostics-solutions-circle-block position-absolute d-flex flex-column justify-content-between align-items-center">
-                        <div
-                            class="diagnostics-solutions-circle position-relative  d-flex align-items-center justify-content-center">
-                          <span>Digital<br>pathology</span>
-                          <a href="../diagnosis/digital-pathology.html" class="key-card-content-star position-absolute">*</a>
-                        </div>
-                        <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
-                          <span>Advanced<br>Imaging</span>
-                          <a href="../diagnosis/advanced-imaging.html"
-                             class="key-card-content-star position-absolute">*</a>
-                        </div>
-                        <div
-                            class="diagnostics-solutions-circle position-relative d-flex align-items-center justify-content-center">
-                          <span>Diagnostics</span>
-                          <a href="../diagnosis/diagnostics.html" class="key-card-content-star position-absolute">*</a>
-                        </div>
-                        <div class="arrow-diagnostics-solution position-absolute">
-                          <svg id="arrow-to-vertical" class="position-absolute" width="200px" height="280px" top="30%">
-                            <defs>
-                              <marker id="arrow12" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                                <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#abacad;"/>
-                              </marker>
-                            </defs>
-                            <path d="M20,205 L20,30"
-                                  style="stroke:#abacad; stroke-width: 4px; fill: none; marker-end: url(#arrow12);"/>
-                            <path d="M20,203 L50,203" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
-                            <path d="M20,149 L50,149" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
-                            <path d="M20,95 L50,95" style="stroke:#abacad; stroke-width: 4px; fill: none;"/>
-                          </svg>
-                        </div>
+                          class="diagnostics-solutions-analytics diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Advanced<br>analytics</span>
+                        <a href="../enablers/advanced-analytics.html"
+                           class="key-card-content-star font-weight-normal position-absolute">*</a>
+                        <div class="rectangle-block-right"></div>
                       </div>
-                    </div>
-                    <div
-                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
-                      <span class="enable-solution-title">Advanced<br>analytics</span>
-                      <a href="../enablers/advanced-analytics.html"
-                         class="enable-solution-mark key-card-content-star font-weight-normal">*</a>
-                      <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
-                        <defs>
-                          <marker id="arrow11" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
-                          </marker>
-                        </defs>
-                        <path d="M15,15 L40,15"
-                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#arrow11);"/>
-                      </svg>
-                    </div>
-                    <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
-                      <span>Improved patients<br>outcomes</span>
+                      <div
+                          id="diagnostics-solutions-genomic-profiling"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Comprehensive<br/>Genomic Profiling</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-next-generation"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Next-Generation<br/>Sequencing</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-genomics"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Genomics</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-digital-pathology"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Digital<br/>Pathology</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-advanced-imaging"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Advanced<br/>Imaging</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-predictive"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Companion<br/>Complementary<br>Predictive</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
                     </div>
                   </div>
                 </div><!-- Diagnostics Solutions -->
               </div>
+              <div class="connection-description position-absolute d-flex align-items-center justify-content-center">
+                <img src="../../img/connection_description.png">
+              </div>
               <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
                    class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
-                <span>Zoom out</span>
+                <div class="col-lg-6">
+                  Click to see the<br/>Connections in the<br/>PHC Systems Map
+                </div>
+                <div class="col-lg-6">
+                  <img src="../../img/map_Icon.png">
+                </div>
               </div>
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
@@ -620,7 +706,10 @@
           <!-- Modal Content -->
           <div class="modal-content">
             <!-- Modal Header -->
-            <div class="modal-header">
+            <div
+                class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
+              <img src="../../img/connection_icon_yellow.png"/>
+              <p class="font-weight-bold">CONNECTIONS IN THE PHC SYSTEMS MAP</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
             <!-- Modal Body -->
