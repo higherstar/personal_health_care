@@ -198,19 +198,34 @@ const data = [{
   {
     "page": "DIAGNOSIS",
     "url": "../diagnosis/diagnostics.html",
-    "content": "Description Companion diagnostic refers to targeted diagnostics tests that aid in the choice of" +
-      " specific therapies for each patient. Click button below to see: Connections with Other PHC Topics " +
-      "Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left)" +
-      " Improved access & personalized care - Companion Diagnostics help to advance" +
-      " Personalized Healthcare by delivering diagnostic confidence through a broad menu of high medical" +
-      " value predictive assays. Targeted therapies and diagnostic tests that help to improve medical" +
-      " decision making not only offer clinical benefits for patients but are also attractive through" +
-      " health economic benefits to regulatory authorities and payers. Roche and Roche partner examples/initiatives " +
-      "Roche Diagnostics is the global partner of choice for companion diagnostics." +
-      " We identify and develop innovative predictive diagnostics to target patients who are more likely to" +
-      " respond to specific therapies. The VENTANA ALK (D5F3) CDx Assay is an example of a companion diagnostics." +
-      " This assay helps identify ALK+ non-small cell lung cancer (NSCLC) patients for targeted treatment." +
-      " Roche and Roche partner examples/initiatives(Cont.) Key drivers/considerations" //todo:add content
+    "content": "Description Diagnostic tools are used to detect diseases or other conditions, and can be used to " +
+      "monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support " +
+      "precision medicine to identify patients who are likely to benefit from specific treatments or therapies. " +
+      "Why it is important for PHC Smarter and more efficient R&D To support Roche’s PHC efforts, our diagnostics " +
+      "tool offering is evolving as do the diagnostic " +
+      "technology. We are invested in developing PHC-enabling diagnostic tools, such as: Companion diagnostics (CDx) " +
+      "help healthcare professionals determine whether a particular " +
+      "therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks. " +
+      "Complementary diagnostics inform treatment decisions. They help give healthcare professionals" +
+      " a better picture of a patient’s overall prognosis or likelihood to respond to different therapies. " +
+      "Predictive diagnostics provide information about how patients may respond to a specific target or therapy. " +
+      "Improved access & personalized care What it means for patients Roche diagnostic tools support: Selection of the " +
+      "most appropriate patient treatment group Minimization of sides effects Maximization of efficacy. " +
+      "Roche makes these diagnostics available to more patients faster through its commercial " +
+      "expertise and unmatched global reach. What it means for health systems " +
+      "Roche diagnostic tools that help to improve medical decision making may increase the " +
+      "speed and rate of funding for our therapies. Click button below to see: Connections with Other PHC Topics " +
+      "What Roche is doing in this area Roche pioneered the use of CDx with the launch of HER2 for the Roche " +
+      "cancer drug Herceptin. Today, Roche Tissue Diagnostics is the global partner of choice for CDx, " +
+      "collaborating with more than 30 additional pharmaceutical companies  to investigate and develop innovative " +
+      "predictive diagnostics identifying those patients who are more likely to respond to specific therapies. " +
+      "Key drivers/considerations Fast turnaround time for results could be a driver of diagnostics adoption " +
+      "Successful identification of patients candidate to a targeted Roche medication depends on use of " +
+      "appropriate and high-quality testing. Rozlytrek diagnostics strategy is an example of PHC in action. " +
+      "It aims at establishing molecular profiling as part of the standard of care, so that many patients " +
+      "have the chance to benefit from Rozlytrek. [link to press release https://www.roche.com/media/releases/" +
+      "med-cor-2019-08-16.htm and internal hyperlink to page about Rozlytrek.] Level of funding of advanced " +
+      "iagnostics by the healthcare system as diagnostic tool may greatly varies across countries and regions"
   },
   {
     "page": "DIAGNOSIS",
@@ -261,33 +276,47 @@ const data = [{
   {
     "page": "DIAGNOSIS",
     "url": "../diagnosis/genomics.html",
-    "content": "Description According to our PHC engine, genomics is a type of Meaningful Data at Scale (MDAS). Genomic profiling" +
-      " is a broad term that refers to the sequencing and analysis of genomic alterations (base substitutions," +
-      " insertions and deletions, copy number alterations, and rearrangements) and biomarkers that are known to" +
-      " be relevant in a disease. Click here to learn more. [Link to Meaningful Data at Scale," +
-      " Advanced Analytics, and Realizing Value Module in Starter Pack] Genomic profiling is done through the technique" +
-      " of Next-generation Sequencing (NGS), which refers to" +
-      " panel diagnostic tests of >10 genes that capture multiple classes of genomic alterations and biomarkers" +
-      " to provide HCPs with appropriate information to select therapies (may include a report with available" +
-      " treatment and clinical trial information). Comprehensive Genomic Profiling (CGP) is a type of genomic profiling " +
-      "that involves large gene panels" +
-      " that detect all classes of genomic alterations and biomarkers, providing a holistic view to physicians" +
-      " of appropriate treatments (targeted or immunotherapy) and potential clinical trials. Click button below to see:" +
-      " Connections with Other PHC Topics Why it is important & connection to our PHC vision and strategy " +
-      "(see PHC vision & strategy diagram on the left) Smarter & more efficient R&D – Genomics data can also be used " +
-      "to derive novel disease and MoA specific insights to inform drug development and R&D investments." +
-      " Improved access & personalized care – Insights from genomics provide invaluable information to physicians that " +
-      "can help them determine the best possible treatment for each patient, and even map their treatment journey" +
-      " to identify future courses of action should the disease progress." +
-      " Roche and Roche partner examples/initiatives As a member of the Roche Group, Foundation Medicine (FMI) provides " +
-      "comprehensive genomic profiling services to help personalize patients’ treatment plans." +
-      " The CUPISCO trial is an example of the use of CGP in combination with a patient-centric" +
-      " decision-making process by a Molecular Tumor Board to provide a highly-specific treatment decision for" +
-      " each patient.2  Click here to learn more about the CUPISCO trial." +
-      " [Link to CUPISCO case study, Starter Pack] Key drivers/considerations Testing adoption – Level of adoption of " +
-      "NGS tests and CGP in diagnostic practice Advanced diagnostics funding – Level of funding of NGS tests by the " +
-      "healthcare system as diagnostic tool Regulatory perspective - Existence of pathway for the approval of " +
-      "molecularly-informed therapies Payer acceptance – Level of reimbursement of molecularly-informed therapies",
+    "content": "Description Genomic profiling is a broad term that refers to the sequencing and analysis of genomic " +
+      "alterations (base substitutions, insertions and deletions, copy number alterations, and rearrangements) and " +
+      "biomarkers that are known to be relevant in a disease. At the molecular level, the expression of certain genes " +
+      "is used as biomarker to determine the appropriate therapy for cancer patients. Biomarkers are thus a " +
+      "key component of Personalized Healthcare approaches. Appropriate biomarkers are also essential to design " +
+      "clinical studies and to define their intended or expected outcome. Diagnostic methods such as " +
+      "Next-Generation Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) aim at identifying " +
+      "and quantifying disease-relevant biomarkers. At Roche, we are developing our genomic diagnostics capability, " +
+      "including biomarkers, Next-Generation Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) " +
+      "to further enable personalized healthcare (PHC). Roche Sequencing Solutions offers best in-class Next-Generation" +
+      " Sequencing (NGS) products. Clinical NGS can involve one single gene to many genes and provides clinicians " +
+      "with information to assist in treatment selection [internal hyperlink to CDS in Care], " +
+      "thus enabling personalized healthcare (PHC). Advanced reports, such as those FMI deliver, provide " +
+      "information including clinical trials, treatments to avoid and potential resistance gene of relevance. " +
+      "Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene " +
+      "panels that detect all classes of genomic alterations and biomarkers, providing a holistic view to " +
+      "healthcare providers of appropriate treatments [internal hyperlink to CDS page in Care]" +
+      "(targeted or immunotherapy) and potential clinical trials. Why it is important for PHC Roche is leveraging " +
+      "NGS/CGP in several ways to promote PHC. Improved access & personalized care Foundation Medicine (FMI) " +
+      "is leading the understanding and use of CGP in the clinical setting, " +
+      "establishing new standards for advanced diagnostics [Internal hyperlink to diagnosis " +
+      "page-which one TBD] and laying the foundation for pan-tumor targeted therapy, which " +
+      "cannot be delivered with current technology. [External hyperlink to diagnostics module or here TBD] " +
+      "Advanced comprehensive clinical-genomic databases can inform treatment decisions through clinical " +
+      "decision (CDS) systems [link to CDS page under Care] using the power of Meaningful data at scale " +
+      "(MDAS) [internal hyperlink to RWD page under Enablers] and Advanced Analytics [internal " +
+      "hyperlink to advanced analytics] Click button below to see: Connections with Other PHC Topics " +
+      "What Roche is doing in this area Roche is expanding its “Omics and Biomarkers” capabilities. Moreover, " +
+      "the Omics Team collaborate closely with Advanced Analytics [internal hyperlink to Advanced Analytics page], " +
+      "Digital Pathology [internal hyperink to Digital Pathology page], and other teams to derive novel " +
+      "disease and mode of action (MoA) specific insights to inform drug development. The CUPISCO trial is an" +
+      " example of the use of CGP in combination with a patient-centric " +
+      "decision-making process by a Molecular Tumor Board to provide a highly-specific treatment " +
+      "decision for each patient.  Click here to learn more about the CUPISCO trial. [External hyperlink " +
+      "to CUPISCO case study, Starter Pack] Key drivers/considerations The general use of genomics as diagnostics " +
+      "tools along the patient journey depends on: Advanced diagnostics funding – Level of funding of NGS tests " +
+      "by the healthcare system as diagnostic tool Testing adoption - Level of adoption of biomarker and " +
+      "NGS tests and CGP in diagnostic practice Regulatory perspective – Existence of pathway for" +
+      " the approval of molecularly-informed therapies 3  [internal hyperlink to regulatory policy]" +
+      " Payer acceptance – Level of reimbursement of molecularly-informed therapies [internal hyperlink to the " +
+      "Stakeholders page under Enablers]",
   },
   {
     "page": "DIAGNOSIS",

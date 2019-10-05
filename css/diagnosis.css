@@ -292,7 +292,7 @@
 
 .arrow-diagnostics-solution {
   margin-top: -64px;
-  margin-left: -44px;
+  margin-left: 5px;
   left: 0;
 }
 
@@ -377,6 +377,12 @@
   width: 100%;
   color: black;
   font-weight: bold;
+  z-index: 1;
+}
+
+.genomics-rectangle-block .diagnostics-solutions-cds {
+  margin-left: calc(100% - 50px);
+  margin-top: -100px;
 }
 
 .diagnostics-solutions-analytics {
@@ -469,6 +475,12 @@
   top: -30px;
 }
 
+#arrow-genomics-to-analysis {
+  top: -30px;
+  right: 0;
+  margin-right: -67px;
+}
+
 #arrow-to-cds {
   margin-right: -80px;
   right: 0;
@@ -525,7 +537,6 @@
 --------------------------------------------------------------*/
 .genomics-circle {
   margin-top: 9px;
-  height: 70px;
 }
 
 .genomics-rectangle-block {
@@ -534,7 +545,7 @@
 }
 
 .genomics-circle-block {
-  height: 162px;
+  height: 130px;
   margin-top: 85px;
 }
 
@@ -550,17 +561,17 @@
 
 #genomics-arrow-hcps {
   left: 2px;
-  top: 47%;
+  top: calc(45% + 5px);
 }
 
 #genomics-arrow-patients {
   left: 2px;
-  top: 62%;
+  top: 59%;
 }
 
 #genomics-arrow-hospitals {
   left: 2px;
-  top: 79%;
+  top: 77%;
 }
 
 /*--------------------------------------------------------------

@@ -79,6 +79,9 @@
         <div class="mobile-side-bar-submenu-item active">
           <a href="#" aria-expanded="true" class="side-bar-menu-title active">DIAGNOSIS</a>
         </div>
+        <div class="mobile-side-bar-submenu-item active">
+          <a href="../diagnosis/diagnostics.html" class="side-bar-submenu-title active">Diagnostics</a>
+        </div>
         <div class="mobile-side-bar-submenu-item">
           <a href="../diagnosis/genomics.html" class="side-bar-submenu-title">Genomics</a>
         </div>
@@ -88,14 +91,11 @@
         <div class="mobile-side-bar-submenu-item">
           <a href="../diagnosis/digital-pathology.html" class="side-bar-submenu-title">Digital Pathology</a>
         </div>
-        <div class="mobile-side-bar-submenu-item active">
-          <a href="../diagnosis/diagnostics.html" class="side-bar-submenu-title active">Diagnostics</a>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../diagnosis/real-world-data.html" class="side-bar-submenu-title">CDS Systems</a>
         </div>
         <div class="mobile-side-bar-submenu-item">
           <a href="../diagnosis/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
-        </div>
-        <div class="mobile-side-bar-submenu-item">
-          <a href="../diagnosis/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
         </div>
       </div>
       <ul class="list-unstyled side-bar-content">
@@ -374,7 +374,7 @@
             <div
                 class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
               <img src="../../img/connection_icon_black.png"/>
-              <p class="font-weight-bold">Where Diagnostics Solution Fit Within PHC</p>
+              <p class="font-weight-bold">Where Diagnostics Fit Within PHC</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
 
@@ -725,18 +725,23 @@
                     <img src="../../img/toggle_left.png">
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../diagnosis/diagnostics.html">Diagnostics</a>
                     <a class="dropdown-item" href="../diagnosis/genomics.html">Genomics</a>
                     <a class="dropdown-item" href="../diagnosis/advanced-imaging.html">Advanced Imaging</a>
                     <a class="dropdown-item" href="../diagnosis/digital-pathology.html">Digital Pathology</a>
-                    <a class="dropdown-item" href="../diagnosis/diagnostics.html">Diagnostics</a>
+                    <a class="dropdown-item" href="../diagnosis/real-world-data.html">CDS Systems</a>
                     <a class="dropdown-item" href="../diagnosis/digital-health.html">Digital Health</a>
-                    <a class="dropdown-item" href="../diagnosis/real-world-data.html">Real-World Data</a>
                   </div>
                 </div><!-- DIAGNOSIS -->
               </div><!-- Zoom Out map -->
               <div data-dismiss="modal" data-toggle="modal" data-target="#diagnostics-connections"
-                   class="zoom-out-button zoom-in-button position-absolute d-flex align-items-center justify-content-center">
-                <span>Zoom in</span>
+                   class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                  Back to<br/>interconnections
+                </div>
+                <div class="col-lg-6">
+                  <img src="../../img/map_Icon.png">
+                </div>
               </div>
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
