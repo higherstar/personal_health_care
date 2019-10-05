@@ -259,19 +259,26 @@ const data = [{
   {
     "page": "DIAGNOSIS",
     "url": "../diagnosis/digital-pathology.html",
-    "content": "Description Digital pathology is a type of Meaningful Data at Scale (MDAS) as defined in our PHC engine." +
-      " It is the collection, management, sharing, and interpretation of pathology information in a digital" +
-      " environment. Digital slides are created when glass slides are captured with a scanning device to" +
-      " provide a high-resolution digital image that can be viewed and analyzed. Click here to learn more." +
-      " [Link to Meaningful Data at Scale, Advanced Analytics, and Realizing Value Module in Starter Pack]" +
-      " Click button below to see: Connections with Other PHC Topics Why it is important & connection to our PHC vision " +
-      "and strategy (see PHC vision & strategy diagram on the left) Smarter & more efficient R&D - Digital pathology " +
-      "can generate insights with the potential to collate histological features with prognosis, outcomes, disease " +
-      "biology, treatment. Roche and Roche partner examples/initiatives A Pharma-Dia collaboration at Roche is working " +
-      "to curate, analyze and apply advanced analytics to digital pathology images to produce novel insights during " +
-      "the drug development process. Key drivers/considerations Collaboration between Pharma and DIA can combine" +
-      " Roche in-house data and DIA’s technology to produce novel insights. DIA has an interest in generating insights, " +
-      "not just performing clinical analyses.",
+    "content": "Description Digital pathology is the collection, management, sharing, and interpretation " +
+      "of pathology information in a digital environment.1 " +
+      "We have formed a Pharma-Diagnostics partnership to accelerate Digital Pathology for PHC objectives " +
+      "in both divisions through curation, image analysis, and and advanced analytics [internal link to " +
+      "Advanced Analytics page]. We will identify resources for curation and uploading images " +
+      "and data, identify image analysis technology (e.g. deep learning and machine " +
+      "learning) and algorithms, and build a metadata analysis pipeline with genomics " +
+      "and outcomes. Click here to learn more. [Link to Meaningful Data at Scale, " +
+      "Advanced Analytics, and Realizing Value Module in Starter Pack] Click here to see: Connections with Other " +
+      "PHC Topics What Roche is doing in this area A Pharma-Dia collaboration at Roche is working to curate, " +
+      "analyze and apply advanced " +
+      "analytics to digital pathology images to produce novel insights during the drug " +
+      "development process. We have strategic objectives/OKRs to build and enhance the PHC platform: " +
+      "Finalize relevant readouts [TILs quantity and location, location and quantity of PD-L1 " +
+      "scores in tumor cells (both SP263 and SP142) and immune cells (SP142 only)] for the " +
+      "IMpower150 cohort and make them available for further analysis H&E images and algorithm segmentation " +
+      "for tumor infiltrating lymphocytes will be viewable by " +
+      "scientists Roche-wide in the IRISe [external link to PHC portal under advanced analytics " +
+      "capability] digital pathology viewer for the IMpower150 biomarker evaluable population MATLAB segmentation " +
+      "algorithm for tumor stroma complete in lung adenocarcinoma (H&E) and applied to the IMpower150 dataset",
   },
   {
     "page": "DIAGNOSIS",
