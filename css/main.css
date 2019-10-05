@@ -809,6 +809,16 @@ hr {
   margin-top: 5px;
 }
 
+.modal-body .key-card-content .clinical-key-card-content-block {
+  position: relative;
+  padding: 1px 5px 1px 28px;
+  background: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1px;
+}
+
 .modal-body .key-card-content-band {
   width: 7px;
   height: calc(100% - 10px);

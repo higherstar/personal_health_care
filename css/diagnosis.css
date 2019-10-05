@@ -814,3 +814,199 @@
   left: -14px;
   height: 30px !important;
 }
+/*--------------------------------------------------------------
+# Clinical decision support detail modal
+--------------------------------------------------------------*/
+
+.diagnosis-image-modal .modal-dialog {
+  margin-left: 0;
+}
+
+.diagnosis-image-modal .modal-header {
+  height: 0;
+  border: 0;
+}
+
+.diagnosis-image-modal .modal-header button {
+  z-index: 1;
+}
+
+.diagnosis-image-modal .modal-body {
+  padding: 0;
+}
+
+.diagnosis-image-modal .modal-body img {
+  width: 100%;
+}
+
+.text-content-img img {
+  width: 100%;
+}
+
+.diagnosis-roche-use-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#clinical-arrow-hcps {
+  left: 2px;
+  top: 16%;
+}
+
+#clinical-arrow-patients {
+  left: 2px;
+  top: 23%;
+}
+
+#clinical-arrow-hospitals-shape {
+  left: 2px;
+  top: 28%;
+}
+
+#clinical-arrow-hospitals {
+  left: 2px;
+  top: 24%;
+}
+
+#clinical-arrow-regulators {
+  left: 2px;
+  top: 38%;
+}
+
+#clinical-arrow-players {
+  left: 2px;
+  top: 41%;
+}
+
+#clinical-arrow-policy {
+  left: 2px;
+  top: 47%;
+}
+
+#clinical-arrow-policy-shape {
+  left: 2px;
+  top: 57%;
+}
+
+#clinical-arrow-patient-group {
+  left: 2px;
+  top: 62%;
+}
+
+#clinical-arrow-academia {
+  left: 2px;
+  top: 69%;
+}
+
+#clinical-arrow-medical-societies {
+  left: 2px;
+  top: 72%;
+}
+
+#clinical-arrow-medical-tech {
+  left: 2px;
+  top: 72%;
+}
+
+#clinical-arrow-medical-tech-cds {
+  left: 2px;
+  top: 83%;
+}
+
+#clinical-arrow-pharma {
+  left: 2px;
+  top: 76%;
+}
+
+#clinical-arrow-pharma-cds {
+  left: 2px;
+  top: 77%;
+}
+
+#clinical-arrow-curly-brace {
+  left: -36px;
+  top: -43px;
+  position: absolute;
+  transform: scale(0.6, 0.96);
+}
+
+#clinical-arrow-to-analysis {
+  margin-right: -66px;
+  margin-top: 11px;
+  right: 0;
+}
+
+#clinical-arrow-to-patients {
+  margin-right: -66px;
+  margin-top: 11px;
+  right: 0;
+}
+
+#clinical-arrow-toward-cds {
+  top: 0;
+  left: 0;
+  margin-top: -113px;
+  margin-left: 30px;
+}
+
+#clinical-arrow-genomics {
+  margin-top: 63px;
+}
+
+#clinical-arrow-imaging {
+  margin-top: -46px;
+  margin-left: -53px;
+}
+
+#clinical-arrow-health {
+  margin-top: 51px;
+  margin-left: -48px;
+}
+
+#clinical-arrow-rwd {
+  margin-top: -113px;
+}
+
+#clinical-arrow-cds-workflow {
+  top: 21%;
+  right: 14%;
+}
+
+.clinical-rectangle-bottom-imaging {
+  height: 100%;
+  left: 21%;
+}
+
+.clinical-rectangle-bottom-rwd {
+  height: 100%;
+  top: 114%
+}
+
+.clinical-rectangle-bottom-block {
+  top: 0;
+  left: 0;
+  margin-left: 48px;
+  margin-top: 100px;
+  height: 66px;
+  width: 348%;
+}
+
+.clinical-rectangle-top-block {
+  top: 0;
+  left: 0;
+  margin-left: 48px;
+  margin-top: -100px;
+  height: 66px;
+  width: 348%;
+}
+
+.clinical-rectangle-top-genomics {
+  height: 100%;
+  top: -114%
+}
+
+.clinical-rectangle-top-health {
+  height: 100%;
+  left: 21%
+}

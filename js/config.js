@@ -327,7 +327,7 @@ const data = [{
   },
   {
     "page": "DIAGNOSIS",
-    "url": "../diagnosis/real-world-data.html",
+    "url": "../diagnosis/cds-systems.html",
     "content": "Real-World Data (RWD) is a source of Meaningful Data at Scale (MDAS) for our PHC" +
       " engine. It refers to data relating to patient health routinely collected from a variety of sources" +
       " outside of traditional controlled clinical interventional trials, under real-life clinical practice. " +
