@@ -861,7 +861,7 @@
 
 #clinical-arrow-hospitals-shape {
   left: 2px;
-  top: 28%;
+  top: 31%;
 }
 
 #clinical-arrow-hospitals {
@@ -906,22 +906,22 @@
 
 #clinical-arrow-medical-tech {
   left: 2px;
-  top: 72%;
+  top: 69%;
 }
 
 #clinical-arrow-medical-tech-cds {
   left: 2px;
-  top: 83%;
+  top: 80%;
 }
 
 #clinical-arrow-pharma {
   left: 2px;
-  top: 76%;
+  top: calc(75% + 3px);
 }
 
 #clinical-arrow-pharma-cds {
   left: 2px;
-  top: 77%;
+  top: 73%;
 }
 
 #clinical-arrow-curly-brace {
@@ -951,12 +951,14 @@
 }
 
 #clinical-arrow-genomics {
-  margin-top: 63px;
+  top: 0;
+  margin-top: 70px;
 }
 
 #clinical-arrow-imaging {
-  margin-top: -46px;
-  margin-left: -53px;
+  margin-top: -15px;
+  margin-left: -51px;
+  left: 0;
 }
 
 #clinical-arrow-health {
@@ -965,7 +967,9 @@
 }
 
 #clinical-arrow-rwd {
-  margin-top: -113px;
+  right: 0;
+  margin-right: -49%;
+  width: 50%;
 }
 
 #clinical-arrow-cds-workflow {
@@ -973,14 +977,28 @@
   right: 14%;
 }
 
+#clinical-arrow-to-analysis {
+  margin-right: -67px;
+  right: 0;
+  top: 8px;
+}
+
+#clinical-arrow-workflow {
+  top: 0;
+  right: 0;
+  margin-right: -121px;
+  z-index: 1;
+}
+
 .clinical-rectangle-bottom-imaging {
   height: 100%;
   left: 21%;
+  top: -17px;
 }
 
 .clinical-rectangle-bottom-rwd {
-  height: 100%;
-  top: 114%
+  left: -24%;
+  top: -25%;
 }
 
 .clinical-rectangle-bottom-block {
@@ -1003,10 +1021,11 @@
 
 .clinical-rectangle-top-genomics {
   height: 100%;
-  top: -114%
+  top: -114%;
+  left: -20%;
 }
 
 .clinical-rectangle-top-health {
   height: 100%;
-  left: 21%
+  left: -40%;
 }

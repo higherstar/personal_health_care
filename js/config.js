@@ -71,9 +71,12 @@ const data = [{
       " Decision Support (CDS) leverages objective health data and analytics to improve individual patient" +
       " outcomes by enabling more confident clinical decisions in real time at the point of care. Most CDS" +
       " solution are currently in Oncology, followed by Neuroscience and Ophthalmology—all areas of interest" +
-      " for Roche. Click button below to see: Connections with Other PHC Topics Why it is important & connection to our PHC vision and strategy" +
-      " (see PHC vision & strategy diagram on the left) Improved access & personalized care - CDS systems have the " +
-      "potential to improve both healthcare provider and patient experiences. CDS will also impact pharmaceutical " +
+      " for Roche. Click button below to see: Connections with Other PHC Topics Why it is important for PHC " +
+      "Improved access & personalized care CDS systems have the " +
+      "potential to improve both healthcare provider and patient experiences as well as to enable a shared decision " +
+      "making between HCPs and their patients. High quality CDS systems should also act as Patient " +
+      "Decision Support by providing relevant information and including a patient interface. CDS systems will also " +
+      "impact pharmaceutical industries by influencing how products are represented at the time of clinical decision making. " +
       "industries by influencing how products are represented at the time of clinical decision making. Roche and Roche " +
       "partner examples/initiatives At Roche Pharma, our vision is that high-quality CDS improves individual patient outcomes by" +
       " supporting personalized clinical decisions at the point of care. Roche’s Global Pharma CDS strategy was developed " +
