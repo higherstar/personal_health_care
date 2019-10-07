@@ -218,7 +218,10 @@ const data = [{
       "monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support " +
       "precision medicine to identify patients who are likely to benefit from specific treatments or therapies. " +
       "Why it is important for PHC Smarter and more efficient R&D To support Roche’s PHC efforts, our diagnostics " +
-      "tool offering is evolving as do the diagnostic " +
+      "tool offering is evolving as do the diagnostic Roche is a pioneer and leader in diagnostics, including " +
+      "many technologies in common clinical practice today. Ensuring that patients have access to the right " +
+      "diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a " +
+      "core element of the changes we are driving with personalised healthcare (PHC)." +
       "technology. We are invested in developing PHC-enabling diagnostic tools, such as: Companion diagnostics (CDx) " +
       "help healthcare professionals determine whether a particular " +
       "therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks. " +
