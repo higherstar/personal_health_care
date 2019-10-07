@@ -469,6 +469,67 @@ const data = [{
   },
   {
     "page": "MONITORING",
+    "url": "../monitoring/advanced-imaging.html",
+    "content": "Description Advanced imaging is a type of Meaningful Data at Scale (MDAS) as defined in our PHC engine." +
+      " It refers to the use of computer algorithms to analyze digital outputs of X-rays, computed tomography" +
+      " (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used" +
+      " for medical diagnosis. Click here to learn more. [Link to Meaningful Data at Scale, Advanced Analytics," +
+      " and Realizing Value Module in Starter Pack] Click button below to see: Connections with Other PHC Topics " +
+      "Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on" +
+      " the left) Smarter & more efficient R&D - By automating time-consuming & costly processes" +
+      " (e.g., secondary imaging reads & IRFs), this effort will result in significantly faster trials," +
+      " while more accurate quantification of disease burden will enable robust cohort matching for use in" +
+      " synthetic control arm studies. Improved access & personalized care - Development of automated algorithms can provide" +
+      " better and more accurate measurements of disease than currently available to help predict progression" +
+      " and response to therapy Roche and Roche partner examples/initiatives At Roche, we are focusing on curating and analyzing clinical images collected across Ophthalmology,\n" +
+      " Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms for more accurate" +
+      " predictions for disease progression and response to therapy. This automation will result" +
+      " in faster trials, more accurate quantification of disease burden, and more robust cohort matching to" +
+      " synthetic control arm studies. Key drivers/considerations Contracts - When entering into partnerships with commercial companies and academic" +
+      " institutions, be aware of complex IP negotiations. Important to have both Legal and Partnering" +
+      " take a proactive lead to put a contract in place that meets the needs of the project. Data Sharing/Privacy - " +
+      "When sharing images externally with 3rd parties" +
+      " (and even internally), there is a need to take data privacy into consideration. The Data Privacy team" +
+      " can help determine the right level of privacy required before data can be shared. Complex data - The scale of " +
+      "the imaging data requires close collaboration and coordination with IT and imaging science."
+  },
+  {
+    "page": "MONITORING",
+    "url": "../monitoring/diagnostics.html",
+    "content": "Description Diagnostic tools are used to detect diseases or other conditions, and can be used to " +
+      "monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support " +
+      "precision medicine to identify patients who are likely to benefit from specific treatments or therapies. " +
+      "Why it is important for PHC Smarter and more efficient R&D To support Roche’s PHC efforts, our diagnostics " +
+      "tool offering is evolving as do the diagnostic Roche is a pioneer and leader in diagnostics, including " +
+      "many technologies in common clinical practice today. Ensuring that patients have access to the right " +
+      "diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a " +
+      "core element of the changes we are driving with personalised healthcare (PHC)." +
+      "technology. We are invested in developing PHC-enabling diagnostic tools, such as: Companion diagnostics (CDx) " +
+      "help healthcare professionals determine whether a particular " +
+      "therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks. " +
+      "Complementary diagnostics inform treatment decisions. They help give healthcare professionals" +
+      " a better picture of a patient’s overall prognosis or likelihood to respond to different therapies. " +
+      "Predictive diagnostics provide information about how patients may respond to a specific target or therapy. " +
+      "Improved access & personalized care What it means for patients Roche diagnostic tools support: Selection of the " +
+      "most appropriate patient treatment group Minimization of sides effects Maximization of efficacy. " +
+      "Roche makes these diagnostics available to more patients faster through its commercial " +
+      "expertise and unmatched global reach. What it means for health systems " +
+      "Roche diagnostic tools that help to improve medical decision making may increase the " +
+      "speed and rate of funding for our therapies. Click button below to see: Connections with Other PHC Topics " +
+      "What Roche is doing in this area Roche pioneered the use of CDx with the launch of HER2 for the Roche " +
+      "cancer drug Herceptin. Today, Roche Tissue Diagnostics is the global partner of choice for CDx, " +
+      "collaborating with more than 30 additional pharmaceutical companies  to investigate and develop innovative " +
+      "predictive diagnostics identifying those patients who are more likely to respond to specific therapies. " +
+      "Key drivers/considerations Fast turnaround time for results could be a driver of diagnostics adoption " +
+      "Successful identification of patients candidate to a targeted Roche medication depends on use of " +
+      "appropriate and high-quality testing. Rozlytrek diagnostics strategy is an example of PHC in action. " +
+      "It aims at establishing molecular profiling as part of the standard of care, so that many patients " +
+      "have the chance to benefit from Rozlytrek. [link to press release https://www.roche.com/media/releases/" +
+      "med-cor-2019-08-16.htm and internal hyperlink to page about Rozlytrek.] Level of funding of advanced " +
+      "iagnostics by the healthcare system as diagnostic tool may greatly varies across countries and regions"
+  },
+  {
+    "page": "MONITORING",
     "url": "../monitoring/digital-health.html",
     "content": "Description In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is defined" +
       " as clinically grade data from digital devices that inform R&D or clinical care for the Roche" +
@@ -498,7 +559,52 @@ const data = [{
   },
   {
     "page": "MONITORING",
-    "url": "../monitoring/real-world-data.html",
+    "url": "../monitoring/genomics.html",
+    "content": "Description Genomic profiling is a broad term that refers to the sequencing and analysis of genomic " +
+      "alterations (base substitutions, insertions and deletions, copy number alterations, and rearrangements) and " +
+      "biomarkers that are known to be relevant in a disease. At the molecular level, the expression of certain genes " +
+      "is used as biomarker to determine the appropriate therapy for cancer patients. Biomarkers are thus a " +
+      "key component of Personalized Healthcare approaches. Appropriate biomarkers are also essential to design " +
+      "clinical studies and to define their intended or expected outcome. Diagnostic methods such as " +
+      "Next-Generation Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) aim at identifying " +
+      "and quantifying disease-relevant biomarkers. At Roche, we are developing our genomic diagnostics capability, " +
+      "including biomarkers, Next-Generation Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) " +
+      "to further enable personalized healthcare (PHC). Roche Sequencing Solutions offers best in-class Next-Generation" +
+      " Sequencing (NGS) products. Clinical NGS can involve one single gene to many genes and provides clinicians " +
+      "with information to assist in treatment selection [internal hyperlink to CDS in Care], " +
+      "thus enabling personalized healthcare (PHC). Advanced reports, such as those FMI deliver, provide " +
+      "information including clinical trials, treatments to avoid and potential resistance gene of relevance. " +
+      "Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene " +
+      "panels that detect all classes of genomic alterations and biomarkers, providing a holistic view to " +
+      "healthcare providers of appropriate treatments [internal hyperlink to CDS page in Care]" +
+      "(targeted or immunotherapy) and potential clinical trials. Why it is important for PHC Roche is leveraging " +
+      "NGS/CGP in several ways to promote PHC. Improved access & personalized care Foundation Medicine (FMI) " +
+      "is leading the understanding and use of CGP in the clinical setting, " +
+      "establishing new standards for advanced diagnostics [Internal hyperlink to diagnosis " +
+      "page-which one TBD] and laying the foundation for pan-tumor targeted therapy, which " +
+      "cannot be delivered with current technology. [External hyperlink to diagnostics module or here TBD] " +
+      "Advanced comprehensive clinical-genomic databases can inform treatment decisions through clinical " +
+      "decision (CDS) systems [link to CDS page under Care] using the power of Meaningful data at scale " +
+      "(MDAS) [internal hyperlink to RWD page under Enablers] and Advanced Analytics [internal " +
+      "hyperlink to advanced analytics] Click button below to see: Connections with Other PHC Topics " +
+      "What Roche is doing in this area Roche is expanding its “Omics and Biomarkers” capabilities. Moreover, " +
+      "the Omics Team collaborate closely with Advanced Analytics [internal hyperlink to Advanced Analytics page], " +
+      "Digital Pathology [internal hyperink to Digital Pathology page], and other teams to derive novel " +
+      "disease and mode of action (MoA) specific insights to inform drug development. The CUPISCO trial is an" +
+      " example of the use of CGP in combination with a patient-centric " +
+      "decision-making process by a Molecular Tumor Board to provide a highly-specific treatment " +
+      "decision for each patient.  Click here to learn more about the CUPISCO trial. [External hyperlink " +
+      "to CUPISCO case study, Starter Pack] Key drivers/considerations The general use of genomics as diagnostics " +
+      "tools along the patient journey depends on: Advanced diagnostics funding – Level of funding of NGS tests " +
+      "by the healthcare system as diagnostic tool Testing adoption - Level of adoption of biomarker and " +
+      "NGS tests and CGP in diagnostic practice Regulatory perspective – Existence of pathway for" +
+      " the approval of molecularly-informed therapies 3  [internal hyperlink to regulatory policy]" +
+      " Payer acceptance – Level of reimbursement of molecularly-informed therapies [internal hyperlink to the " +
+      "Stakeholders page under Enablers]",
+  },
+  {
+    "page": "MONITORING",
+    "url": "../monitoring/cds-systems.html",
     "content": "Real-World Data (RWD) is a source of Meaningful Data at Scale (MDAS) for our PHC" +
       " engine. It refers to data relating to patient health routinely collected from a variety of sources" +
       " outside of traditional controlled clinical interventional trials, under real-life clinical practice. " +
