@@ -641,37 +641,32 @@ const data = [{
   {
     "page": "STAKEHOLDERS",
     "url": "../stakeholders/stakeholders.html",
-    "content": "Patients and patient communities have asked to be at the table in discussions about using data insights. People are increasingly" +
-      " interested in gaining information on their health and their genetic make- up. 23+me has a database of" +
-      " 5 million patients. 80% have given their consent for their data to be used for research purposes" +
-      " because they recognize the value. Patients and their carers will benefit from greater certainty" +
-      " of outcomes and more informed choices. Healthcare systems see the potential to address healthcare sustainability." +
-      " Some countries are investing government funds. Regulators see ways to increase evidence. Both the FDA and the EMA are open to discussing how we" +
-      " can use Real World Data. Roche and other industry partners are part of a consortium focusing on developing" +
-      " guidance on incorporating real‑world data as evidence for regulatory approval. Payers are engaged in the concept of paying for outcomes and gaining increased budget" +
-      " certainty. FMI recently secured reimbursement from Medicare, the largest payer in the US. In the UK," +
-      " NICE accepted analysis of Flatiron data as basis for reducing discount on Tecentriq." +
-      " Patients and patient communities are increasingly interested in gaining information on" +
-      " their health and their genetic make- up. 23+me has a database of 5 million patients. 80% have given" +
-      " their consent for their data to be used for research purposes because they recognize the value." +
-      " They have asked to be at the table in discussions about using data insights." +
-      " Physicians are increasingly using Electronic Health Records and Decision Support Tools." +
-      " HCPs are in need of reliable tools to assist in their decisions about diagnosis, treatment, and patient" +
-      " management. These tools should seamlessly fit in their daily practice, providing relevant information" +
-      " when needed. Healthcare systems see the potential to address healthcare sustainability." +
-      " Initial efforts by health systems to enable and provide access to PHC solutions and have" +
-      " enhanced the efficiency and quality of healthcare." +
-      " Regulators see ways to increase evidence. Several jurisdictions (the US, EU, China, and" +
-      " Japan) are beginning to establish PHC policies, strategies and initiatives" +
-      " They have begun to lay the groundwork for a PHC future by adopting policies and making investments" +
-      " to strengthen data infrastructure, protect patient privacy, spur innovation and enable the use of" +
-      " real-world evidence(RWE) in healthcare decision-making." +
-      " Roche and other industry partners are part of a consortium focusing on developing" +
-      " guidance on incorporating real‑world data as evidence for regulatory approval." +
-      " Payers are engaged in the concept of paying for outcomes and gaining increased budget certainty." +
-      " Patients and their healthcare providers are already beginning to benefit from improved health outcomes due to " +
-      "access to a new generation of PHC solutions. FMI recently secured reimbursement from Medicare, the largest" +
-      " payer in the US. In the UK, NICE accepted analysis of Flatiron data as basis for reducing discount on Tecentriq."
+    "content": "Patients and caregivers are increasingly interested in gaining information on their health and their " +
+      "genetic make-up. 23+me has a database of 5 million patients. 80% have given their consent for their data to " +
+      "be used for research purposes because they recognize the value. Most importantly, patients and caregivers want " +
+      "the knowledge and tools to be part of the shared decision making about their care. Patients communities and " +
+      "organizations can impact policies and want to be part of the discussions on insights and data sharing. " +
+      "Healthcare providers (HCPs) are increasingly using Electronic Health Records and Decision Support Tools HCPs " +
+      "are in need of reliable tools to assist in their decisions about diagnosis, treatment, and patient management. " +
+      "These tools should seamlessly fit in their daily practice, providing relevant information when needed. " +
+      "Medical and Scientific societies (e.g. ESMO, NCCN, ASCO...) have a key role in driving adoption of " +
+      "new PHC technologies. Hospital administrators and staff are key stakeholders for value-based healthcare (VBHC). " +
+      "Regulators see ways to increase evidence. Several jurisdictions (the US, EU, China, and Japan) are beginning " +
+      "to establish PHC policies, strategies and initiatives. They have begun to lay the groundwork for a PHC " +
+      "future by adopting policies and making investments to strengthen data infrastructure, protect patient " +
+      "privacy, spur innovation and enable the use of real-world evidence (RWE) in healthcare decision-making. " +
+      "Governments and some payers—those willing to move toward PHC—are engaged in the concept of paying for" +
+      " outcomes and gaining increased budget certainty. Patients and their healthcare providers are already " +
+      "beginning to benefit from improved health outcomes due to access to a new generation of PHC solutions. " +
+      "Here are a few examples of PHC-related activities: FMI recently secured reimbursement from Medicare, the " +
+      "largest payer in the US. In the UK, NICE accepted analysis of Flatiron data as basis for reducing discount " +
+      "on Tecentriq (visit our Case Study for more information) " +
+      "Croatia government wants to dramatically decrease its cancer-induced mortality, which is one the worst in EU " +
+      "n China, the 2030 government mission is : 1.To treat locally 90% of the overall cancer in decreasing medical " +
+      "nomadism 2.15% improvement of the overall survival in cancer " +
+      "New PHC paradigm is the only way to achieve those objectives and consequently represents a " +
+      "huge opportunity for Roche. Roche and other industry partners are part of a consortium focusing on developing " +
+      "guidance on incorporating real‑world data as evidence for regulatory approval."
   },
   {
     "page": "VALUE-BASED HEALTHCARE",
