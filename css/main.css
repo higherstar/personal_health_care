@@ -574,7 +574,7 @@ hr {
 }
 
 .show > .btn-light.dropdown-toggle {
-  border-color: #0066cc99 !important;
+  border-color: #0066cc99;
 }
 
 @media (max-width: 750px) {

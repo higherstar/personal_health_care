@@ -139,6 +139,9 @@
   border-color: #cc005299 !important;
 }
 
+.show > .btn-light .red-color {
+  border-color: #cc005299 !important;
+}
 
 .map-dropdown-menu .multi-line-title {
   top: -38px !important;
