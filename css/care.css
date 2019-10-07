@@ -76,7 +76,7 @@
 }
 
 /*--------------------------------------------------------------
-# Dignosis Details
+# Care Details
 --------------------------------------------------------------*/
 
 .clinical-details {
@@ -532,8 +532,11 @@
 # Zoom Out Modal dialog
 --------------------------------------------------------------*/
 #zoomout-modal .modal-header {
-  border: 0;
-  height: 0;
+  background: white;
+}
+
+#zoomout-modal .modal-header p{
+  color: black !important;
 }
 
 #zoomout-modal .modal-header button {
