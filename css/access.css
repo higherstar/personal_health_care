@@ -27,8 +27,8 @@
 
 .access-details-map {
   width: 100%;
-  height: 80%;
-  padding: 50px 30px;
+  height: 100%;
+  padding: 80px 30px;
 }
 
 .access-details-map img {
@@ -54,9 +54,14 @@
   left: 78%;
 }
 
-#real-world-data {
+#diagnostics {
   top: 26%;
   left: 41%;
+}
+
+#cds-systems {
+  top: 50%;
+  left: 70%;
 }
 
 @media (max-width: 750px) {
@@ -186,15 +191,13 @@
 }
 
 .curly-brace-wrap {
-  height: calc(100% - 2em);
+  height: calc(100% - 32px);
   width: calc(100% - 2em);
 }
 
 .arrow-curly-brace {
   height: 100%;
-  transform: scale(1, 1.02);
-  padding-right: 20px;
-
+  padding-right: 10px;
 }
 
 .arrow-curly-brace img {
@@ -202,27 +205,35 @@
   width: 108px;
 }
 
+.arrow-curly-brace-left {
+  height: 100%;
+  width: 12px;
+  background: #b0b0b0;
+}
+
+#arrow-curly-brace-right {
+  top: calc(50% - 25px);
+  left: 9px;
+}
+
+#arrow-curly-brace-diagnostics {
+  right: -125px;
+  top: -179px;
+  z-index: 1;
+}
+
 .diagnostics-solutions {
   font-family: Imago;
-  color: white;
   height: 100%;
 }
 
-.diagnostics-solutions-circle-dot {
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border-radius: 50%;
-  left: 10px;
-}
-
 .diagnostics-solutions-rectangle {
-  background-color: #9572d4;
+  background: #dadada;
   width: 29%;
-  min-height: 10%;
-  border-radius: 9px;
+  min-height: 70px;
   margin-right: 35px;
-  padding: 0 10px;
+  padding-left: 30px;
+  text-align: left;
 }
 
 .diagnostics-solutions-rectangle a:hover {
@@ -230,11 +241,12 @@
 }
 
 .diagnostics-solutions-circle {
-  background-color: #e40046;;
-  height: 44%;
+  background-color: #0066cc;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  width: 77%;
   margin-top: 4px;
+  text-align: center;
 }
 
 .diagnostics-solutions-rectangle-block {
@@ -245,23 +257,23 @@
 .diagnostics-solutions-circle-block {
   top: 0;
   left: 0;
-  height: 225%;
-  width: 75%;
+  height: 175px;
+  width: 50px;
   font-size: 10px;
-  margin-left: 45px;
-  margin-top: 91px;
+  margin-left: -5px;
+  margin-top: 75px;
 }
 
 .arrow-diagnostics-solution {
   margin-top: -64px;
-  margin-left: -44px;
+  margin-left: 5px;
   left: 0;
 }
 
 .key-card-content-star {
   font-size: 49px;
   color: black;
-  top: -12px;
+  top: -9px;
   right: 13px;
   z-index: 3;
 }
@@ -269,7 +281,7 @@
 .diagnostics-solutions-circle-block .key-card-content-star {
   font-size: 33px;
   top: 52%;
-  left: 19%;
+  left: 28%;
 }
 
 .arrow-to-cds {
@@ -285,24 +297,37 @@
 }
 
 .enable-solution-mark {
-  margin-right: -16px;
+  margin-left: 5px;
+  margin-top: -7px;
+}
+
+.connection-description {
+  width: 20%;
+  top: 15px;
+  right: 30px;
+}
+
+.connection-description img {
+  width: 100%;
 }
 
 .zoom-out-button {
+  background: #b5e9fe;
   bottom: 20px;
   right: 30px;
-  border: 2px solid #e40046;
-  color: #e40046;
-  width: 10%;
-  height: 10%;
-  font-size: 23px;
+  border-style: solid;
+  border-color: #01a3f8;
+  border-width: 3px 3px 6px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
   cursor: pointer;
 }
 
 .zoom-out-button:hover {
-  background-color: rgba(228, 0, 70, 0.61);
-  border: 2px solid transparent !important;
-  color: white;
+  background-color: #b5e9fe99;
+  border-color: #01a3f899;
 }
 
 .zoom-in-button {
@@ -315,16 +340,65 @@
 }
 
 .diagnostics-solutions-field {
-  background-color: #e40046;
+  background-color: #ed8b00;
+  color: white;
+  padding-left: 45px;
 }
 
 .diagnostics-solutions-cds {
-  left: 0;
-  top: 0;
-  margin-top: -139px;
-  margin-left: 127px;
+  margin-left: calc(100% + 30px);
+  margin-top: -40%;
   width: 100%;
-  min-height: 100%;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.genomics-rectangle-block .diagnostics-solutions-cds {
+  margin-left: calc(100% - 50px);
+  margin-top: -120px;
+}
+
+.diagnostics-solutions-analytics {
+  margin-top: calc(-40% + 137px) !important;
+}
+
+.diagnostics-solutions-submenu {
+  width: fit-content;
+  min-height: 42px;
+  padding-right: 10px;
+}
+
+#diagnostics-solutions-predictive {
+  top: 360%;
+  margin-left: 0;
+}
+
+#diagnostics-solutions-advanced-imaging {
+  margin-left: 0;
+  top: 280%;
+}
+
+#diagnostics-solutions-digital-pathology {
+  margin-left: 0;
+  top: 200%;
+}
+
+#diagnostics-solutions-genomics {
+  margin-left: 0;
+  top: 10px;
+}
+
+#diagnostics-solutions-next-generation {
+  width: 150px;
+  margin-left: 35px;
+  top: -80%;
+}
+
+#diagnostics-solutions-genomic-profiling {
+  width: 150px;
+  margin-left: 35px;
+  top: -150%;
 }
 
 #arrow-regulators {
@@ -354,7 +428,7 @@
 
 #arrow-hospitals {
   left: 2px;
-  top: 65%;
+  top: 47%;
 }
 
 #arrow-pharma {
@@ -370,9 +444,56 @@
 }
 
 #arrow-to-analysis {
-  margin-right: -66px;
-  margin-top: 11px;
+  margin-right: -100px;
   right: 0;
+  top: -30px;
+}
+
+#arrow-genomics-to-analysis {
+  top: -30px;
+  right: 0;
+  margin-right: -67px;
+}
+
+#arrow-to-cds {
+  margin-right: -80px;
+  right: 0;
+  top: -80px;
+}
+
+#arrow-to-up {
+  left: 0;
+  margin-left: -88px;
+  top: -73px;
+}
+
+#arrow-to-up-submenu {
+  left: 0;
+  margin-left: -53px;
+  top: -153px;
+}
+
+#arrow-to-down {
+  left: 0;
+  margin-left: -88px;
+  top: 38px;
+}
+
+#arrow-to-cds-analytics {
+  bottom: 0;
+  margin-bottom: -50px;
+}
+
+#arrow-to-cds-therapy {
+  left: 0;
+  margin-left: -80px;
+  top: 10px;
+}
+
+#arrow-to-cds-diagnostics {
+  right: 0;
+  margin-right: -130px;
+  top: 10px;
 }
 
 #arrow-to-patients {
