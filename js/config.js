@@ -65,93 +65,7 @@ const data = [{
   },
   {
     "page": "CARE",
-    "url": "../care/clinical-decision-support.html",
-    "content": "Description Increased volumes of healthcare data are now available to both HCPs and patients This" +
-      " overwhelming growth in healthcare data is making clinical decisions more complex. High-quality Clinical" +
-      " Decision Support (CDS) leverages objective health data and analytics to improve individual patient" +
-      " outcomes by enabling more confident clinical decisions in real time at the point of care. Most CDS" +
-      " solution are currently in Oncology, followed by Neuroscience and Ophthalmology—all areas of interest" +
-      " for Roche. Click button below to see: Connections with Other PHC Topics Why it is important for PHC " +
-      "Improved access & personalized care CDS systems have the " +
-      "potential to improve both healthcare provider and patient experiences as well as to enable a shared decision " +
-      "making between HCPs and their patients. High quality CDS systems should also act as Patient " +
-      "Decision Support by providing relevant information and including a patient interface. CDS systems will also " +
-      "impact pharmaceutical industries by influencing how products are represented at the time of clinical decision making. " +
-      "industries by influencing how products are represented at the time of clinical decision making. Roche and Roche " +
-      "partner examples/initiatives At Roche Pharma, our vision is that high-quality CDS improves individual patient outcomes by" +
-      " supporting personalized clinical decisions at the point of care. Roche’s Global Pharma CDS strategy was developed " +
-      "to ensure that CDS systems are high quality and that we are prepared to operate in an environment where CDS has " +
-      "significant influence on clinical care. For example, Navify® Tumor Board is a Clinical Decision Support product from Roche. It is a" +
-      " cloud-based workflow product that securely integrates and displays relevant aggregated" +
-      " data into a single, holistic patient dashboard for oncology care teams to review, align" +
-      " and decide on the optimal treatment for the patient. Key drivers/considerations High-quality CDS: " +
-      "The impact of CDS on patients, healthcare providers and the business is dependent on the quality of CDS." +
-      " Objectivity is essential to preserve the integrity of CDS systems and pharmaceutical credibility."
-  },
-  {
-    "page": "CARE",
-    "url": "../care/digital-health.html",
-    "content": "Description In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, " +
-      "it is defined as clinically grade data from digital devices that inform R&D or clinical care for the Roche " +
-      "Disease Areas of Focus. One example of a Digital Health solution is the FDA-approved mySugr app, " +
-      "which is the most widely used mobile app for diabetes. It provides patients with immediate access " +
-      "to certified diabetes educators when necessary based on algorithmic detection of problematic glucose patterns. " +
-    "At Roche, there are four archetypes of Digital Health, which are as follows: Digital Biomarkers: Community and " +
-      "regulator-accepted endpoints and outcomes that redefine our understanding of the disease. Digital Care Solutio" +
-      "ns: Integrated ecosystem of Digital Health solutions for ongoing disease management in routine care. " +
-      "Digital Therapeutics: Software-based disease treatments and rehabilitations that are prescribed by HCPs. " +
-      "Smart drug delivery systems: Connected drug administration and delivery systems to enhance health outcomes of patients. " +
-      "Why it is important Digital Health solutions can solve unmet medical and patient needs along the patient " +
-      "journey. There are applications of Digital Health solutions at every step of the patient journey, " +
-      "such as at screening and diagnosis; disease management, monitoring and adherence to therapy; " +
-      "and, patient satisfaction, quality of life and survival Digital Health solutions have the potential to enable " +
-      "more efficient research cycles through the refinement of clinical trial eligibility criteria and more " +
-      "sensitive endpoints. Why it is important for PHC Digital Health is a key component of our personalized " +
-      "healthcare strategy. It allows us to learn from real-world patient experiences and data, to speed up medical " +
-      "research, to provide better advice to physicians and patients and to develop new ways of assessing value " +
-      "in healthcare. Ultimately, it accelerates and enhances our ability to understand a patient’s unique " +
-      "disease and individualize treatment to meet their needs. Click here to see: Connections with Other PHC Topics " +
-      "What Roche is doing in this area Oncology: The digital patient monitoring program consists of a modular remote " +
-      "monitoring ecosystem for improving interaction between patients and the care team, and capturing " +
-      "patient-reported outcomes. It also involves a partnership with hospitals and Kaiku Health to " +
-      "unify Real-World Data (RWD) on patients. Ophthalmology: The myVsion Track (mVT® ) app is a home vision " +
-      "monitoring for track vision improvements/worsening in patients with age-related macular degeneration " +
-      "(AMD) and Diabetic Eye Disease. The mVT® Portal for HCPs helps to manage patients. Multiple Sclerosis:  " +
-      "Floodlight aims to allow people with Multiple Sclerosis (MS), physicians, and researchers " +
-      "to monitor MS and health over time using a smartphone, with the ultimate goal of creating " +
-      "practical tools to improve the lives of people living with MS. Key considerations of Digital Health " +
-      "Regulations with respect to Software as a Medical Device (SaMD) Regulations with respect to Software as a" +
-      " Medical Device (SaMD) Any software that is intended to be used for one or more medical purposes will very " +
-      "likely enter the SaMD space. This means that the development, maintenance and operation of the software " +
-      "should be done according to the same specific quality standards, that are higher than other types of software. " +
-      "Adoption of Digital Health Solutions Once a digital health solution has received the appropriate approvals, " +
-      "adopting it in clinical practice can pose certain challenges to healthcare professionals, " +
-      "patients, regulators, industry/R&D and payers. " +
-      "For example, patients may be concerned about data misuse, which can prevent them " +
-      "from using digital health solutions.",
-  },
-  {
-    "page": "CARE",
-    "url": "../care/molecularly-guided.html",
-    "content": "Description In oncology, molecularly-guided therapy (MGT) refers to a treatment approach based on each " +
-      "patient's genomic profile as opposed to the tumor location. Click button below to see: Connections with Other PHC Topics" +
-      " Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left)" +
-      " Smarter & more efficient R&D – Understanding mechanisms of resistance in cancer patients can help to drive " +
-      "faster, smarter and more efficient decision making in cancer immunotherapy development and to enable " +
-      "differentiation and expanded access for our therapies. Improved access & personalized care - Rather than finding " +
-      "the site of tumor origin, which can be costly and time-consuming, it may be more efficient to target gene " +
-      "alteration against which an effective therapy already existed. Giving patients MGT early can potentially " +
-      "prolong survival. Roche and Roche partner examples/initiatives The CUPISCO trial is the first of its kind: It combines Comprehensive Genomic" +
-      " Profiling (CGP) of each patient’s tumor either by tissue or blood with a patient-centric" +
-      " decision-making process by a Molecular Tumor Board for individual cases. Based on these parameters," +
-      " a highly-specific molecularly-guided therapy is designed for each patient. Key drivers/considerations Testing adoption – " +
-      "Level of adoption of NGS tests and CGP in diagnostic practice Advanced diagnostics funding – Level of funding of " +
-      "NGS tests by the healthcare system as diagnostic tool Advanced diagnostics funding – Existence of pathway for the " +
-      "approval of molecularly-guided therapies Payer acceptance – Level of reimbursement of molecularly-guided therapies",
-  },
-  {
-    "page": "CARE",
-    "url": "../care/real-world-data.html",
+    "url": "../care/cds-systems.html",
     "content": "Real-World Data (RWD) is a source of Meaningful Data at Scale (MDAS) for our PHC" +
       " engine. It refers to data relating to patient health routinely collected from a variety of sources" +
       " outside of traditional controlled clinical interventional trials, under real-life clinical practice. " +
@@ -184,6 +98,89 @@ const data = [{
       " cohort study, Nested case-control study, Cross-sectional study. Integration in the Integrated Evidence Plan (iEP)" +
       " RWD is an important source of the evidence that helps build the integrated Evidence Plan (iEP)." +
       " The quality required of the real-world data will depend on use cases."
+  },
+  {
+    "page": "CARE",
+    "url": "../care/digital-health.html",
+    "content": "Description In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is defined" +
+      " as clinically grade data from digital devices that inform R&D or clinical care for the Roche" +
+      " Disease Areas of Focus. Software as medical device  (SaMD) is a software intended to be used for one or more medical purposes" +
+      " that perform these purposes without being part of a hardware medical device. Click here to learn more." +
+      " [Link to Digital Health/SaMD module in Starter Pack] Click button below to see: Connections with Other PHC Topics" +
+      " Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on" +
+      " the left) Smarter & more efficient R&D – Digital Health also has the possibility to transform" +
+      " clinical practice – from an earlier detection of disease progression to a better disease management and" +
+      " even disease treatment.Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram" +
+      " on the left) Improved access & personalized care - The development of novel digital biomarkers" +
+      " based on data from wearable devices and mobile apps from our smartphones offers the unprecedented" +
+      " opportunity for continuous data collection but it also opens the door to build new tools more sensitive" +
+      " to change that the current ones. The adoption of novel biomarkers and other digital health solutions" +
+      " such as Digital Therapeutics (DTx) could lead to faster and cheaper research. Roche and Roche partner examples/initiatives" +
+      " At Roche, we aim to use digital health platforms to help capture Meaningful Data at Scale (MDAS)" +
+      " in areas such as movement, respiration (e.g., pulmonary function, asthma, exacerbations), and sleep." +
+      " Where needed, we seek clinical and regulatory validation of digital health platforms for deployment" +
+      " in late-stage clinical trials. Our expertise is in creating operational capabilities informed by pilots" +
+      " to incorporate digital technologies into late-stage trials. One example of a digital health platform created by Roche is the" +
+      " Floodlight technology. Floodlight aims to allow people with Multiple Sclerosis (MS), physicians, and researchers" +
+      " to monitor MS and health over time using a smartphone, with the ultimate goal of creating practical" +
+      " tools to improve the lives of people living with MS. Key drivers/considerations " +
+      " Identification & validation of new types of endpoints / outcomes that matter to patients Design & integration " +
+      " of digital biomarkers and / or health programs along the patient journey Sources of digital health data and " +
+      " understanding of RWD Regulatory definition and classification of medical device Collaboration model with external stakeholders (e.g., IT companies, hospitals/HCPs and patients",
+  },
+  {
+    "page": "CARE",
+    "url": "../care/molecularly-guided.html",
+    "content": "Description In oncology, molecularly-guided therapy (MGT) refers to a treatment approach based on each " +
+      "patient's genomic profile as opposed to the tumor location. Click button below to see: Connections with Other PHC Topics" +
+      " Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on the left)" +
+      " Smarter & more efficient R&D – Understanding mechanisms of resistance in cancer patients can help to drive " +
+      "faster, smarter and more efficient decision making in cancer immunotherapy development and to enable " +
+      "differentiation and expanded access for our therapies. Improved access & personalized care - Rather than finding " +
+      "the site of tumor origin, which can be costly and time-consuming, it may be more efficient to target gene " +
+      "alteration against which an effective therapy already existed. Giving patients MGT early can potentially " +
+      "prolong survival. Roche and Roche partner examples/initiatives The CUPISCO trial is the first of its kind: It combines Comprehensive Genomic" +
+      " Profiling (CGP) of each patient’s tumor either by tissue or blood with a patient-centric" +
+      " decision-making process by a Molecular Tumor Board for individual cases. Based on these parameters," +
+      " a highly-specific molecularly-guided therapy is designed for each patient. Key drivers/considerations Testing adoption – " +
+      "Level of adoption of NGS tests and CGP in diagnostic practice Advanced diagnostics funding – Level of funding of " +
+      "NGS tests by the healthcare system as diagnostic tool Advanced diagnostics funding – Existence of pathway for the " +
+      "approval of molecularly-guided therapies Payer acceptance – Level of reimbursement of molecularly-guided therapies",
+  },
+  {
+    "page": "CARE",
+    "url": "../care/diagnostics.html",
+    "content": "Description Diagnostic tools are used to detect diseases or other conditions, and can be used to " +
+      "monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support " +
+      "precision medicine to identify patients who are likely to benefit from specific treatments or therapies. " +
+      "Why it is important for PHC Smarter and more efficient R&D To support Roche’s PHC efforts, our diagnostics " +
+      "tool offering is evolving as do the diagnostic Roche is a pioneer and leader in diagnostics, including " +
+      "many technologies in common clinical practice today. Ensuring that patients have access to the right " +
+      "diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a " +
+      "core element of the changes we are driving with personalised healthcare (PHC)." +
+      "technology. We are invested in developing PHC-enabling diagnostic tools, such as: Companion diagnostics (CDx) " +
+      "help healthcare professionals determine whether a particular " +
+      "therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks. " +
+      "Complementary diagnostics inform treatment decisions. They help give healthcare professionals" +
+      " a better picture of a patient’s overall prognosis or likelihood to respond to different therapies. " +
+      "Predictive diagnostics provide information about how patients may respond to a specific target or therapy. " +
+      "Improved access & personalized care What it means for patients Roche diagnostic tools support: Selection of the " +
+      "most appropriate patient treatment group Minimization of sides effects Maximization of efficacy. " +
+      "Roche makes these diagnostics available to more patients faster through its commercial " +
+      "expertise and unmatched global reach. What it means for health systems " +
+      "Roche diagnostic tools that help to improve medical decision making may increase the " +
+      "speed and rate of funding for our therapies. Click button below to see: Connections with Other PHC Topics " +
+      "What Roche is doing in this area Roche pioneered the use of CDx with the launch of HER2 for the Roche " +
+      "cancer drug Herceptin. Today, Roche Tissue Diagnostics is the global partner of choice for CDx, " +
+      "collaborating with more than 30 additional pharmaceutical companies  to investigate and develop innovative " +
+      "predictive diagnostics identifying those patients who are more likely to respond to specific therapies. " +
+      "Key drivers/considerations Fast turnaround time for results could be a driver of diagnostics adoption " +
+      "Successful identification of patients candidate to a targeted Roche medication depends on use of " +
+      "appropriate and high-quality testing. Rozlytrek diagnostics strategy is an example of PHC in action. " +
+      "It aims at establishing molecular profiling as part of the standard of care, so that many patients " +
+      "have the chance to benefit from Rozlytrek. [link to press release https://www.roche.com/media/releases/" +
+      "med-cor-2019-08-16.htm and internal hyperlink to page about Rozlytrek.] Level of funding of advanced " +
+      "iagnostics by the healthcare system as diagnostic tool may greatly varies across countries and regions"
   },
   {
     "page": "DIAGNOSIS",
