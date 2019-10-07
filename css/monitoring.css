@@ -1019,3 +1019,45 @@
   left: -14px;
   height: 30px !important;
 }
+
+/*--------------------------------------------------------------
+# Genomic connection Modal dialog
+--------------------------------------------------------------*/
+.genomics-circle {
+  margin-top: 9px;
+}
+
+.genomics-rectangle-block {
+  height: 12%;
+  font-size: 14px;
+}
+
+.genomics-circle-block {
+  height: 130px;
+  margin-top: 85px;
+}
+
+#genomics-arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#genomics-arrow-players {
+  left: 2px;
+  top: 34%;
+}
+
+#genomics-arrow-hcps {
+  left: 2px;
+  top: calc(45% + 5px);
+}
+
+#genomics-arrow-patients {
+  left: 2px;
+  top: 59%;
+}
+
+#genomics-arrow-hospitals {
+  left: 2px;
+  top: 77%;
+}
