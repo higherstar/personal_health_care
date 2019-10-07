@@ -26,10 +26,45 @@ const data = [{
     " Identification & validation of new types of endpoints / outcomes that matter to patients Design & integration " +
     " of digital biomarkers and / or health programs along the patient journey Sources of digital health data and " +
     " understanding of RWD Regulatory definition and classification of medical device Collaboration model with external stakeholders (e.g., IT companies, hospitals/HCPs and patients",
-},
+  },
   {
     "page": "ACCESS",
-    "url": "../access/real-world-data.html",
+    "url": "../access/diagnostics.html",
+    "content": "Description Diagnostic tools are used to detect diseases or other conditions, and can be used to " +
+      "monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support " +
+      "precision medicine to identify patients who are likely to benefit from specific treatments or therapies. " +
+      "Why it is important for PHC Smarter and more efficient R&D To support Roche’s PHC efforts, our diagnostics " +
+      "tool offering is evolving as do the diagnostic Roche is a pioneer and leader in diagnostics, including " +
+      "many technologies in common clinical practice today. Ensuring that patients have access to the right " +
+      "diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a " +
+      "core element of the changes we are driving with personalised healthcare (PHC)." +
+      "technology. We are invested in developing PHC-enabling diagnostic tools, such as: Companion diagnostics (CDx) " +
+      "help healthcare professionals determine whether a particular " +
+      "therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks. " +
+      "Complementary diagnostics inform treatment decisions. They help give healthcare professionals" +
+      " a better picture of a patient’s overall prognosis or likelihood to respond to different therapies. " +
+      "Predictive diagnostics provide information about how patients may respond to a specific target or therapy. " +
+      "Improved access & personalized care What it means for patients Roche diagnostic tools support: Selection of the " +
+      "most appropriate patient treatment group Minimization of sides effects Maximization of efficacy. " +
+      "Roche makes these diagnostics available to more patients faster through its commercial " +
+      "expertise and unmatched global reach. What it means for health systems " +
+      "Roche diagnostic tools that help to improve medical decision making may increase the " +
+      "speed and rate of funding for our therapies. Click button below to see: Connections with Other PHC Topics " +
+      "What Roche is doing in this area Roche pioneered the use of CDx with the launch of HER2 for the Roche " +
+      "cancer drug Herceptin. Today, Roche Tissue Diagnostics is the global partner of choice for CDx, " +
+      "collaborating with more than 30 additional pharmaceutical companies  to investigate and develop innovative " +
+      "predictive diagnostics identifying those patients who are more likely to respond to specific therapies. " +
+      "Key drivers/considerations Fast turnaround time for results could be a driver of diagnostics adoption " +
+      "Successful identification of patients candidate to a targeted Roche medication depends on use of " +
+      "appropriate and high-quality testing. Rozlytrek diagnostics strategy is an example of PHC in action. " +
+      "It aims at establishing molecular profiling as part of the standard of care, so that many patients " +
+      "have the chance to benefit from Rozlytrek. [link to press release https://www.roche.com/media/releases/" +
+      "med-cor-2019-08-16.htm and internal hyperlink to page about Rozlytrek.] Level of funding of advanced " +
+      "iagnostics by the healthcare system as diagnostic tool may greatly varies across countries and regions"
+  },
+  {
+    "page": "ACCESS",
+    "url": "../access/cds-systems.html",
     "content": "Real-World Data (RWD) is a source of Meaningful Data at Scale (MDAS) for our PHC" +
       " engine. It refers to data relating to patient health routinely collected from a variety of sources" +
       " outside of traditional controlled clinical interventional trials, under real-life clinical practice. " +
