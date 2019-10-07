@@ -531,64 +531,54 @@
   flex-shrink: 0;
   width: calc(277% + 120px);
   height: 100%;
-  margin-left: 123%;
-  color: white;
-  margin-top: 151px;
+  margin-left: 50%;
+  margin-top: 125px;
+  color: black;
+}
+
+#digital-health-diagnostics-connections .diagnostics-solutions-cds {
+  margin-left: calc(45% + 30px);
+  margin-top: -126px;
 }
 
 #digital-health-arrow-regulators {
   left: 2px;
-  top: 16%;
-}
-
-#digital-health-arrow-regulators-proven {
-  left: 2px;
   top: 17%;
 }
 
-#digital-health-arrow-players {
-  left: 2px;
-  top: 24%;
-}
-
-#digital-health-arrow-players-clinical {
-  left: 2px;
-  top: 22%;
-}
-
-#digital-health-arrow-healthcare {
-  left: 2px;
-  top: 26%;
-}
-
 #digital-health-arrow-hcps {
-  left: 2px;
-  top: 29%;
+  top: -60px;
+  right: 0;
+  margin-right: -80px;
 }
 
 #digital-health-arrow-hcps-patient {
-  left: 2px;
-  top: 43.5%;
+  top: -100px;
+  right: 0;
+  margin-right: -82px;
 }
 
 #digital-health-arrow-medical {
-  left: 2px;
-  top: 30%;
+  top: -80px;
+  right: 0;
+  margin-right: -82px;
 }
 
 #digital-health-arrow-patients {
-  left: 2px;
-  top: 40%;;
+  top: -70px;
+  right: 0;
+  margin-right: -82px;
 }
 
 #digital-health-arrow-it {
   left: 2px;
-  top: 87%;
+  top: 83%;
 }
 
 #digital-health-arrow-it-proven {
-  left: 2px;
-  top: 71%;
+  top: 12px;
+  right: 0;
+  margin-right: -82px;
 }
 
 #digital-health-arrow-endpoints {
@@ -596,7 +586,7 @@
 }
 
 #digital-health-arrow-rwd {
-  margin-top: -72px;
+  margin-top: -40px;
   margin-left: -97px;
 }
 
@@ -613,6 +603,31 @@
 #digital-health-arrow-proven {
   top: 69%;
   left: -2px;
+}
+
+#digital-health-arrow-to-analysis {
+  margin-right: -68px;
+  right: 0;
+  top: 21px;
+}
+
+#digital-health-arrow-toward-cds {
+  top: 0;
+  left: 0;
+  margin-top: -113px;
+  margin-left: 23%;
+}
+
+#digital-health-arrow-to-patients {
+  margin-right: -66px;
+  margin-top: 11px;
+  right: 0;
+}
+
+#digital-health-arrow-cds {
+  top: 69px;
+  left: 0;
+  margin-left: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -714,8 +729,11 @@
 # Zoom Out Modal dialog
 --------------------------------------------------------------*/
 #zoomout-modal .modal-header {
-  border: 0;
-  height: 0;
+  background: white;
+}
+
+#zoomout-modal .modal-header p{
+  color: black !important;
 }
 
 #zoomout-modal .modal-header button {

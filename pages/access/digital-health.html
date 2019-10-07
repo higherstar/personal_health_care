@@ -31,7 +31,7 @@
 <div class="content-wrapper">
   <!--==========================
       Header
-    ============================-->
+  ============================-->
   <header id="header" class="header header-hide mobile-header">
     <div id="logo" class="pull-left d-flex">
       <img class="d-md-none d-sm-block menu-button" src="../../img/sidebar-icon.svg">
@@ -46,7 +46,8 @@
       Content
     ============================-->
   <div class="content d-flex">
-    <div class="content-header position-absolute"><p>FULL ACCESS TO OPTIMAL CARE</p></div>
+    <div class="content-header position-absolute"><p>FULL ACCESS TO OPTIMAL CARE INTERVENTION
+    </p></div>
 
     <!--==========================
       Side Bar
@@ -80,11 +81,14 @@
         <div class="mobile-side-bar-submenu-item active">
           <a href="#" class="side-bar-menu-title active">ACCESS</a>
         </div>
-        <div class="mobile-side-bar-submenu-item active">
-          <a href="../access/digital-health.html" class="side-bar-submenu-title active">Digital Health</a>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../access/diagnostics.html" class="side-bar-submenu-title">Diagnostics</a>
         </div>
         <div class="mobile-side-bar-submenu-item">
-          <a href="../access/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
+          <a href="../access/cds-systems.html" class="side-bar-submenu-title">CDS Systems</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item active">
+          <a href="../access/digital-health.html" class="side-bar-submenu-title active">Digital Health</a>
         </div>
       </div>
       <ul class="list-unstyled side-bar-content">
@@ -130,11 +134,14 @@
                 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
           </svg>
           <ul class="collapse list-unstyled submenu-list d-none d-sm-none d-md-block show active" id="access-submenu">
-            <li class="side-bar-submenu active">
-              <a href="../access/digital-health.html" class="side-bar-submenu-title active">Digital Health</a>
+            <li class="side-bar-submenu">
+              <a href="../access/diagnostics.html" class="side-bar-submenu-title">Diagnostics</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="../access/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
+              <a href="../access/cds-systems.html" class="side-bar-submenu-title">CDS Systems</a>
+            </li>
+            <li class="side-bar-submenu active">
+              <a href="../access/digital-health.html" class="side-bar-submenu-title active">Digital Health</a>
             </li>
           </ul>
         </li>
@@ -200,101 +207,148 @@
               </button>
               <p id="digital-health-btn-title" class="custom-expand-btn-title" style="display: block">Digital Health</p>
             </div>
-
-            <div id="real-world-data" class="position-absolute expand-btn-filed">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="real-world-data-btn">
+            <div id="diagnostics" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="diagnostics-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="real-world-data-btn-title" class="custom-expand-btn-title">Real-World Data</p>
+              <p id="diagnostics-btn-title" class="custom-expand-btn-title">Diagnostics</p>
+            </div>
+            <div id="cds-systems" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="cds-systems-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="cds-systems-btn-title" class="custom-expand-btn-title">CDS Systems</p>
             </div>
           </div>
         </div>
 
         <!--==========================
-          Monitoring  Details
+          Care Details
         ============================-->
         <div class="col-lg-6 access-details">
           <!--==========================
             Digital Health
           ============================-->
-          <div id="digital-health-details" class="details-container access-container show">
+          <div id="access-details" class="details-container access-container show">
             <div class="access-right-header d-flex">
-              <img id="digital-health-details-prev" class="details-btn-prev btn details-prev-next"
+              <img id="access-details-prev" class="details-btn-prev btn details-prev-next"
                    src="../../img/toggle_prev.png">
-              <h1 class="digital-health-details-title show">DIGITAL HEALTH</h1>
-              <img id="digital-health-details-next" class="details-btn-next btn details-prev-next"
+              <h1 class="caccess-details-title show">DIGITAL HEALTH</h1>
+              <img id="access-details-next" class="details-btn-next btn details-prev-next"
                    src="../../img/toggle_next.png">
             </div>
             <div class="access-right-border-div"></div>
-            <div class="digital-health-details-content access-right-content show">
+            <div class="access-details-content access-right-content show">
               <h2>Description</h2>
-              <p>In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is defined
-                as clinically grade data from digital devices that inform R&D or clinical care for the Roche
-                Disease Areas of Focus.<sup>3</sup>
+              <span>In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is
+                defined as clinically grade data from digital devices that inform R&D or clinical care
+                for the Roche Disease Areas of Focus.<sup>3</sup>
               <hr>
-              Software as medical device (SaMD) is a software intended to be used for one or more medical purposes
-              that perform these purposes without being part of a hardware medical device.<sup>4</sup> Click here to
-              learn more.
-              [Link to Digital Health/SaMD module in Starter Pack]
+              One example of a Digital Health solution is the FDA-approved mySugr app, which is the most widely
+              used mobile app for diabetes. It provides patients with immediate access to certified diabetes
+              educators when necessary based on algorithmic detection of problematic glucose patterns.
+              <hr>
+              At Roche, there are four archetypes of Digital Health, which are as follows:
+              <li>
+                <strong>Digital Biomarkers: </strong>Community and regulator-accepted endpoints and outcomes
+                that redefine our understanding of the disease.
+              </li>
+              <li>
+                <strong>Digital Care Solutions: </strong>Integrated ecosystem of Digital Health solutions
+                for ongoing disease management in routine care.
+              </li>
+              <li>
+                <strong>Digital Therapeutics: </strong>Software-based disease treatments and rehabilitations
+                that are prescribed by HCPs.
+              </li>
+              <li>
+                <strong>Smart drug delivery systems: </strong>Connected drug administration and delivery
+                systems to enhance health outcomes of patients.
+              </li>
+              </span>
+              <hr>
+              <h2>Why it is important
+              </h2>
+              <li>
+                Digital Health solutions can solve unmet medical and patient needs along the patient journey.
+                There are applications of Digital Health solutions at every step of the patient journey,
+                such as at screening and diagnosis; disease management, monitoring and adherence to therapy;
+                and, patient satisfaction, quality of life and survival.
+              </li>
+              <li>
+                Digital Health solutions have the potential to enable more efficient research cycles through
+                the refinement of clinical trial eligibility criteria and more sensitive endpoints.
+              </li>
+              <hr>
+              <h2>Why it is important for PHC
+              </h2>
+              <p>
+                Digital Health is a key component of our personalized healthcare strategy. It allows us to
+                learn from real-world patient experiences and data, to speed up medical research, to provide
+                better advice to physicians and patients and to develop new ways of assessing value in healthcare.
+                Ultimately, it accelerates and enhances our ability to understand a patient’s unique disease and
+                individualize treatment to meet their needs.
               </p>
-              <strong class="d-none d-sm-none d-md-block">Click button below to see:</strong>
-              <div class="access-red-section connection-button d-none d-sm-none d-md-block"
+              <strong class="d-none d-md-block d-sm-none">Click button below to see:</strong>
+              <div class="access-red-section connection-button d-none d-md-block d-sm-none"
                    data-toggle="modal" data-target="#digital-health-diagnostics-connections">
                 <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
               </div>
               <div class="access-second-section"></div>
-              <h2>Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
-                the left) </h2>
-              <p><strong>Smarter & more efficient R&D – </strong> Digital Health also has the possibility to transform
-                clinical practice – from an earlier detection of disease progression to a better disease management and
-                even disease treatment.
-                <sup>2</sup>
-              </p>
-              <p><strong>Improved access & personalized care - </strong>The development of novel digital biomarkers
-                based on data from wearable devices and mobile apps from our smartphones offers the unprecedented
-                opportunity for continuous data collection but it also opens the door to build new tools more sensitive
-                to change that the current ones. The adoption of novel biomarkers and other digital health solutions
-                such as Digital Therapeutics (DTx) could lead to faster and cheaper research.<sup>1</sup>
-              </p>
               <hr>
-              <h2>Roche and Roche partner examples/initiatives</h2>
-              <p>At Roche, we aim to use digital health platforms to help capture Meaningful Data at Scale (MDAS)
-                in areas such as movement, respiration (e.g., pulmonary function, asthma, exacerbations), and sleep.
-                Where needed, we seek clinical and regulatory validation of digital health platforms for deployment
-                in late-stage clinical trials. Our expertise is in creating operational capabilities informed by pilots
-                to incorporate digital technologies into late-stage trials.<sup>2</sup>
-              </p>
-              <hr>
-              <div class="d-flex">
-                <div class="col-lg-8">
-                  <p>One example of a digital health platform created by Roche is the <strong>Floodlight</strong>
-                    technology. Floodlight aims to allow people with Multiple Sclerosis (MS), physicians, and
-                    researchers
-                    to monitor MS and health over time using a smartphone, with the ultimate goal of creating practical
-                    tools to improve the lives of people living with MS.<sup>3</sup>
-                  </p>
-                </div>
-                <div class="col-lg-4 text-content-img img-floodlight">
-                  <img src="../../img/floodlight.png">
-                </div>
-              </div>
-              <hr>
-              <h2>Key drivers/considerations<sup>1</sup>
+              <h2>What Roche is doing in this area
               </h2>
-              <li>Identification & validation of new types of endpoints / outcomes that matter to patients</li>
-              <li>Design & integration of digital biomarkers and / or health programs along the patient journey</li>
-              <li>Sources of digital health data and understanding of RWD</li>
-              <li>Regulatory definition and classification of medical device</li>
-              <li>Collaboration model with external stakeholders (e.g., IT companies, hospitals/HCPs and patients</li>
+              <li>
+                <strong>Oncology: </strong>The digital patient monitoring program consists of a modular remote
+                monitoring ecosystem for improving interaction between patients and the care team, and capturing
+                patient-reported outcomes. It also involves a partnership with hospitals and Kaiku Health to
+                unify Real-World Data (RWD) on patients.
+              </li>
+              <li>
+                <strong>Ophthalmology: </strong>The myVsion Track (mVT® ) app is a home vision monitoring for
+                track vision improvements/worsening in patients with age-related macular degeneration (AMD)
+                and Diabetic Eye Disease. The mVT® Portal for HCPs helps to manage patients.
+              </li>
+              <li>
+                <strong>Multiple Sclerosis: </strong>Floodlight aims to allow people with Multiple
+                Sclerosis (MS), physicians, and researchers to monitor MS and health over time using a smartphone,
+                with the ultimate goal of creating practical tools to improve the lives of people living with MS.
+              </li>
+              <hr>
+              <h2>Key considerations of Digital Health
+              </h2>
+              <span><strong>Regulations with respect to Software as a Medical Device (SaMD)</strong>
+              <li>Certain digital health solutions run with software intended to be used for medical purposes and
+                that can perform these purposes without being part of a hardware medical device. In this case,
+                this software is called Software as a Medical Device (SaMD)
+              </li>
+              <li>Any software that is intended to be used for one or more medical purposes will very likely enter
+                the SaMD space. This means that the development, maintenance and operation of the software should
+                be done according to the same specific quality standards, that are higher than other types of software.
+              </li>
+                </span>
+              <span>
+                <strong>Adoption of Digital Health Solutions</strong>
+                <li>
+                  Once a digital health solution has received the appropriate approvals, adopting it in clinical
+                  practice can pose certain challenges to healthcare professionals, patients, regulators,
+                  industry/R&D and payers.
+                </li>
+                <li>
+                  For example, patients may be concerned about data misuse, which can prevent them from using
+                  digital health solutions.
+                </li>
+              </span>
             </div>
           </div><!-- Digital Health -->
-        </div><!-- Monitoring Details -->
+        </div><!-- Care Details -->
       </div><!-- Details Map -->
 
-      <!--==========================
+      <!--==================================
           Digital Health Connections Modal
-      ============================-->
+      ===================================-->
       <div class="modal fade" id="digital-health-diagnostics-connections">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
@@ -303,15 +357,15 @@
           <div class="modal-content">
             <!-- Modal Header -->
             <div
-                class="modal-header d-flex align-items-center justify-content-center text-center flex-grow-0 flex-shrink-0">
-              <img src="../../img/connection_icon.png"/>
+                class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
+              <img src="../../img/connection_icon_black.png"/>
               <p class="font-weight-bold">Where Digital Health Fit Within PHC</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
 
             <!-- Modal Body -->
             <div class="modal-body d-flex text-center">
-              <div class="col-lg-6 d-flex justify-content-center ">
+              <div class="col-lg-6 d-flex justify-content-center key-card-wrapper">
                 <!-- Key Stakeholders -->
                 <div class="key-card flex-shrink-0 flex-grow-0 key-stakeholders d-flex flex-column font-weight-normal">
                   <div
@@ -319,26 +373,82 @@
                     <span>Key Stakeholders</span>
                   </div>
                   <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-band position-absolute"></div>
                     <div class="key-card-content-block">
                       Regulators
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       Players
-                    </div>
-                    <div class="key-card-content-block">
-                      Hospitals/<br>Healthcare<br>systems
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
                       HCPs
-                    </div>
-                    <div class="key-card-content-block">
-                      Medical societies
+                      <div class="key-card-content-block-right"></div>
+                      <svg id="digital-health-arrow-hcps-patient" class="position-absolute" width="80px" height="180px"
+                           top="30%">
+                        <defs>
+                          <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
+                                  orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                          </marker>
+                        </defs>
+                        <path d="M0,130 L40,130 L40,10"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                      </svg>
+                      <svg id="digital-health-arrow-hcps" class="position-absolute" width="80px" height="140px"
+                           top="30%">
+                        <defs>
+                          <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
+                                  orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                          </marker>
+                        </defs>
+                        <path d="M2,80 L65,80"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                        <path d="M32,80 L32,140"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                      </svg>
                     </div>
                     <div class="key-card-content-block">
                       Patients
+                      <div class="key-card-content-block-right"></div>
+                      <svg id="digital-health-arrow-patients" class="position-absolute" width="80px" height="100px"
+                           top="30%">
+                        <defs>
+                          <marker id="arrow6" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                          </marker>
+                        </defs>
+                        <path d="M0,75 L40,75 L40,5"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                      </svg>
+                      <svg id="digital-health-arrow-medical" class="position-absolute" width="80px" height="130px"
+                           top="30%">
+                        <defs>
+                          <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
+                                  orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                          </marker>
+                        </defs>
+                        <path d="M0,95 L30,95 L30,50"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                      </svg>
+                      <svg id="digital-health-arrow-it-proven" class="position-absolute" width="80px" height="100px"
+                           top="30%">
+                        <defs>
+                          <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
+                                  orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                          </marker>
+                        </defs>
+                        <path d="M0,12 L65,12"
+                              style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                      </svg>
                     </div>
                     <div class="key-card-content-block">
-                      IT/software<br>development<br>companies
+                      Industry/R&D
+                      <div class="key-card-content-block-right"></div>
                     </div>
                   </div>
                 </div><!-- Key Stakeholders -->
@@ -346,27 +456,36 @@
                 <div class="key-card flex-shrink-0 flex-grow-0 key-drivers d-flex flex-column font-weight-normal">
                   <div
                       class="key-card-header flex-shrink-0 flex-grow-0 d-flex align-items-center justify-content-center">
-                    <span>Key Drivers/<br>Considerations</span>
+                    <span>Key Drivers/<br/>Considerations</span>
                   </div>
                   <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-band position-absolute"></div>
                     <div class="key-card-content-block">
-                      Clinical adoption
+                      Lack of cost-<br/>effectiveness data
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
-                      Patient compliance
+                      Lack of transparency
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block">
-                      Proven clinical<br>efficacy
+                      Changing<br/>relationships
+                      <div class="key-card-content-block-right"></div>
                     </div>
                     <div class="key-card-content-block position-relative">
-                      Sustainable as a<br>business modal
+                      Crowded offerings
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block position-relative">
+                      Regulatory hurdles
+                      <div class="key-card-content-block-right"></div>
                     </div>
                   </div>
                 </div><!-- Key Drivers -->
                 <div class="arrow-lines-wrap position-absolute d-flex justify-content-center">
                   <!-- Arrows Lines-->
                   <div class="arrow-key-card position-relative">
-                    <svg id="digital-health-arrow-regulators" class="position-absolute" width="80px" height="50px"
+                    <svg id="digital-health-arrow-regulators" class="position-absolute" width="80px" height="130px"
                          top="30%">
                       <defs>
                         <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
@@ -374,94 +493,12 @@
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,25 L70,30"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-regulators-proven" class="position-absolute" width="80px"
-                         height="250px" top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,25 L70,210"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-players" class="position-absolute" width="80px" height="250px"
-                         top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,45 L70,200"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-players-clinical" class="position-absolute" width="80px" height="50px"
-                         top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,45 L70,10"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-healthcare" class="position-absolute" width="80px" height="80px"
-                         top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,70 L70,15"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-hcps" class="position-absolute" width="80px" height="160px" top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,140 L70,10"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-hcps-patient" class="position-absolute" width="80px" height="80px"
-                         top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,80 L70,5"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-medical" class="position-absolute" width="80px" height="200px"
-                         top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,170 L70,10"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-patients" class="position-absolute" width="80px" height="200px"
-                         top="30%">
-                      <defs>
-                        <marker id="arrow6" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,170 L70,30"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                      <path d="M0,25 L65,25"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                      <path d="M0,35 L40,35 L40,110 L65,110"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                      <path d="M0,110 L40,110"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
                     </svg>
                     <svg id="digital-health-arrow-it" class="position-absolute" width="80px" height="50px" top="30%">
                       <defs>
@@ -470,59 +507,25 @@
                           <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
                         </marker>
                       </defs>
-                      <path d="M0,25 L70,30"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
-                    </svg>
-                    <svg id="digital-health-arrow-it-proven" class="position-absolute" width="80px" height="100px"
-                         top="30%">
-                      <defs>
-                        <marker id="digital-health-arrow" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                                orient="auto">
-                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
-                        </marker>
-                      </defs>
-                      <path d="M0,90 L70,15"
-                            style="stroke:#00b0ff; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow);"/>
+                      <path d="M0,25 L65,25"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow);"/>
                     </svg>
                   </div><!-- Arrows Lines-->
                 </div>
               </div>
-              <div class="curly-brace-wrap position-absolute d-flex justify-content-center">
+              <div class="curly-brace-wrap position-absolute d-flex justify-content-center align-items-center">
                 <!-- Curly Brace -->
                 <div class="arrow-curly-brace position-relative">
-                  <img src="../../img/arrow-curly-brace.png">
-                  <svg id="digital-health-arrow-clinical" class="position-absolute" width="110px" height="270px"
-                       top="30%">
+                  <div class="arrow-curly-brace-left"></div>
+                  <!--<img src="../../img/arrow-curly-brace.png">-->
+                  <svg id="arrow-curly-brace-right" class="position-absolute" width="80px" height="80px" top="30%">
                     <defs>
-                      <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                              orient="auto">
-                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                      <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#b0b0b0;"/>
                       </marker>
                     </defs>
-                    <path d="M105,260 L10,25"
-                          style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
-                  </svg>
-                  <svg id="digital-health-arrow-patient" class="position-absolute" width="110px" height="250px"
-                       top="30%">
-                    <defs>
-                      <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                              orient="auto">
-                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
-                      </marker>
-                    </defs>
-                    <path d="M105,210 L10,65"
-                          style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
-                  </svg>
-                  <svg id="digital-health-arrow-proven" class="position-absolute" width="110px" height="100px"
-                       top="30%">
-                    <defs>
-                      <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
-                              orient="auto">
-                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
-                      </marker>
-                    </defs>
-                    <path d="M105,60 L10,20"
-                          style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                    <path d="M0,25 L25,25"
+                          style="stroke:#b0b0b0; stroke-width: 10px; fill: none; marker-end: url(#arrow);"/>
                   </svg>
                 </div><!-- Curly Brace -->
               </div>
@@ -532,58 +535,65 @@
                   <!-- Rectangle Block Mid -->
                   <div class="digital-health-rectangle-block diagnostics-solutions-rectangle-block d-flex">
                     <div
-                        class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
+                        class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center">
                       <span>Digital health/<br>SaMD</span>
-                      <div class="diagnostics-solutions-circle-dot position-absolute"></div>
-                      <svg id="arrow-to-analysis" class="position-absolute" width="80px" height="50px" top="30%">
+                      <div
+                          class="rectangle-block-right-band position-absolute d-flex justify-content-center align-items-center">
+                        <div class="rectangle-block-circle-dot position-absolute"></div>
+                      </div>
+                      <svg id="digital-health-arrow-to-analysis" class="position-absolute" width="80px" height="50px"
+                           top="30%">
                         <defs>
                           <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
                                   orient="auto">
                             <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
                           </marker>
                         </defs>
-                        <path d="M15,15 L40,15"
-                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                        <path d="M30,15 L37,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                        <path d="M30,15 L24,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
                       </svg>
-                      <svg id="arrow-toward-cds" class="position-absolute" width="100px" height="120px" top="30%">
+                      <svg id="digital-health-arrow-toward-cds" class="position-absolute" width="100px" height="120px"
+                           top="30%">
                         <defs>
                           <marker id="clinical-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
                                   orient="auto">
                             <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
                           </marker>
                         </defs>
-                        <path d="M10,110 L90,35"
-                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#clinical-arrow-maker);"/>
+                        <path d="M10,110 L10,35 L85,35"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#clinical-arrow-maker);"/>
                       </svg>
                       <div
-                          class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center justify-content-center">
+                          class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
                         <span>CDS</span>
                         <a href="../care/cds-systems.html"
                            class="key-card-content-star position-absolute font-weight-normal">*</a>
+                        <div class="rectangle-block-right"></div>
+                        <svg id="digital-health-arrow-cds" class="position-absolute" width="80px" height="100px"
+                             top="30%">
+                          <defs>
+                            <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2"
+                                    refy="3" orient="auto">
+                              <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                            </marker>
+                          </defs>
+                          <path d="M12,35 L12,15"
+                                style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                          <path d="M12,35 L12,45"
+                                style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                        </svg>
                       </div>
                       <!-- Rectangle Block Bottom -->
                       <div class="digital-health-rectangle-bottom-block d-flex">
                         <div
-                            class="diagnostics-solutions-rectangle position-relative  d-flex align-items-center justify-content-center">
-                          <span>Digital endpoints</span>
-                          <svg id="digital-health-arrow-endpoints" class="position-absolute" width="80px" height="80px"
-                               top="30%">
-                            <defs>
-                              <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2"
-                                      refy="3" orient="auto">
-                                <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
-                              </marker>
-                            </defs>
-                            <path d="M40,5 L40,70"
-                                  style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
-                          </svg>
-                        </div>
-                        <div
-                            class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                            class="diagnostics-solutions-rectangle position-relative d-flex align-items-center">
                           <span class="enable-solution-title">RWD</span>
-                          <a class="enable-solution-mark key-card-content-star font-weight-normal"
-                             href="../access/real-world-data.html">*</a>
-                          <svg id="digital-health-arrow-rwd" class="position-absolute" width="80px" height="80px"
+                          <a class="position-absolute key-card-content-star font-weight-normal"
+                             href="../diagnosis/cds-systems.html">*</a>
+                          <div class="rectangle-block-right"></div>
+                          <svg id="digital-health-arrow-rwd" class="position-absolute" width="80px" height="100px"
                                top="30%">
                             <defs>
                               <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2"
@@ -591,38 +601,63 @@
                                 <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
                               </marker>
                             </defs>
-                            <path d="M10,5 L55,70"
-                                  style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                            <path d="M12,80 L55,80"
+                                  style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                            <path d="M12,83 L12,15"
+                                  style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
                           </svg>
                         </div>
                       </div><!-- Rectangle Block Bottom -->
                     </div>
                     <div
-                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center justify-content-center">
+                        class="diagnostics-solutions-rectangle position-relative d-flex align-items-center">
                       <span class="enable-solution-title">Advanced<br>analytics</span>
                       <a href="../enablers/advanced-analytics.html"
-                         class="enable-solution-mark key-card-content-star font-weight-normal">*</a>
-                      <svg id="arrow-to-patients" class="position-absolute" width="80px" height="50px" top="30%">
+                         class="position-absolute key-card-content-star font-weight-normal">*</a>
+                      <div class="rectangle-block-right"></div>
+                      <svg id="digital-health-arrow-to-patients" class="position-absolute" width="80px" height="50px"
+                           top="30%">
                         <defs>
                           <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2" refy="3"
                                   orient="auto">
                             <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
                           </marker>
                         </defs>
-                        <path d="M48,15 L22,15"
-                              style="stroke:#9572d4; stroke-width: 4px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                        <path d="M48,15 L28,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                      </svg>
+                      <svg id="digital-health-arrow-cds" class="position-absolute" width="80px" height="100px"
+                           top="30%">
+                        <defs>
+                          <marker id="digital-health-arrow-maker" markerWidth="10" markerHeight="10" refx="2"
+                                  refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                          </marker>
+                        </defs>
+                        <path d="M12,35 L12,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
+                        <path d="M12,35 L12,43"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#digital-health-arrow-maker);"/>
                       </svg>
                     </div>
-                    <div class="diagnostics-solutions-rectangle  d-flex align-items-center justify-content-center">
-                      <span>AI &<br>Machine learning</span>
+                    <div class="diagnostics-solutions-rectangle position-relative d-flex align-items-center">
+                      <span>Artificial<br/>intelligence</span>
+                      <div class="rectangle-block-right"></div>
                     </div>
                   </div><!-- Rectangle Block Mid -->
                 </div><!-- Diagnostics Solutions -->
               </div>
-
+              <div class="connection-description position-absolute d-flex align-items-center justify-content-center">
+                <img src="../../img/connection_description.png">
+              </div>
               <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
                    class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
-                <span>Zoom out</span>
+                <div class="col-lg-6">
+                  Click to see the<br/>Connections in the<br/>PHC Systems Map
+                </div>
+                <div class="col-lg-6">
+                  <img src="../../img/map_Icon.png">
+                </div>
               </div>
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
@@ -636,8 +671,9 @@
         <div class="modal-dialog modal-lg">
           <!-- Modal Content -->
           <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
+            <div class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
+              <img src="../../img/connection_icon_yellow.png"/>
+              <p class="font-weight-bold">CONNECTIONS IN THE PHC SYSTEMS MAP</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
             </div><!-- Modal Header -->
             <!-- Modal Body -->
@@ -645,22 +681,28 @@
               <!-- Zoom Out map -->
               <div class="zoom-out-map position-relative">
                 <img src="../../img/access_map-zoomout.png">
-                <!-- Monitoring -->
+                <!-- ACCESS -->
                 <div id="access-dropdown" class="position-absolute map-dropdown-menu">
-                  <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton"
+                  <button id="access-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    ACCESS
+                    Full Access to Optimal<br/>Care Intervention
                     <img src="../../img/toggle_left.png">
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-menu multi-line-title" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../access/diagnostics.html">Diagnostics</a>
+                    <a class="dropdown-item" href="../access/cds-systems.html">CDS Systems</a>
                     <a class="dropdown-item" href="../access/digital-health.html">Digital Health</a>
-                    <a class="dropdown-item" href="../access/real-world-data.html">Real-World Data</a>
                   </div>
-                </div><!-- Monitoring -->
+                </div><!-- ACCESS -->
               </div><!-- Zoom Out map -->
               <div data-dismiss="modal" data-toggle="modal" data-target="#digital-health-diagnostics-connections"
-                   class="zoom-out-button zoom-in-button position-absolute d-flex align-items-center justify-content-center">
-                <span>Zoom in</span>
+                   class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                  Back to<br/>interconnections
+                </div>
+                <div class="col-lg-6">
+                  <img src="../../img/map_Icon.png">
+                </div>
               </div>
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
