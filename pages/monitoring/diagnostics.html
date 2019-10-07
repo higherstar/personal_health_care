@@ -1,10 +1,786 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8">
+  <title>HealthCare System Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!--<link href="img/favicon.png" rel="icon">-->
+
+  <!-- Google Fonts -->
+  <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+      rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="../../css/main.css" rel="stylesheet">
+  <link href="../../css/monitoring.css" rel="stylesheet">
 </head>
+
 <body>
 
+<!--==========================
+  Content Wrapper
+============================-->
+<div class="content-wrapper">
+  <!--==========================
+      Header
+  ============================-->
+  <header id="header" class="header header-hide mobile-header">
+    <div id="logo" class="pull-left d-flex">
+      <img class="d-md-none d-sm-block menu-button" src="../../img/sidebar-icon.svg">
+      <h1 class="d-none d-sm-none d-md-block">PERSONALISED HEALTHCARE SYSTEMS MAP</h1>
+      <h1 class="d-md-none d-sm-block mobile-title">PHC SYSTEMS MAP</h1>
+      <img src="../../img/logo.png">
+    </div>
+    <div class="right-space"></div>
+  </header><!-- Header -->
+
+  <!--==========================
+      Content
+  ============================-->
+  <div class="content d-flex">
+    <div class="content-header position-absolute"><p>CONTINOUS & REMOTE PATIENT MANAGEMENT
+    </p></div>
+
+    <!--==========================
+      Side Bar
+    ============================-->
+    <div class="side-bar mobile-side-bar">
+      <div class="side-bar-splitter position-relative">
+        <div data-toggle="modal" data-target="#search-modal"
+             class="side-bar-search align-items-center justify-content-between position-absolute d-none d-sm-none d-md-flex">
+          <div class="side-bar-search-icon">
+            <img src="../../img/search-icon.png">
+          </div>
+          <span>SEARCH</span>
+        </div>
+
+        <div id="mobile-search"
+             class="side-bar-search d-flex align-items-center justify-content-between position-absolute d-md-none d-sm-block">
+          <div class="side-bar-search-icon">
+            <img src="../../img/search-icon.png">
+          </div>
+          <span style="display: block">SEARCH</span>
+          <input id="mobile-search-input" type="text" placeholder="Search" style="display: none;" autofocus>
+        </div>
+      </div>
+      <div id="mobile-search-result" class="mobile-search-result position-absolute d-md-none d-sm-block fade">
+        <div id="mobile-search-result-content">
+          <div class="modal-search-result-item">
+          </div>
+        </div>
+      </div>
+      <div id="mobile-side-bar-submenu" class="mobile-side-bar-submenu position-absolute d-md-none d-sm-block fade">
+        <div class="mobile-side-bar-submenu-item active">
+          <a href="#" class="side-bar-menu-title active">MONITORING</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item active">
+          <a href="../monitoring/diagnostics.html" class="side-bar-submenu-title active">Diagnostics</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../monitoring/genomics.html" class="side-bar-submenu-title">Genomics</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../monitoring/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../monitoring/cds-systems.html" class="side-bar-submenu-title">CDS Systems</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../monitoring/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+        </div>
+      </div>
+      <ul class="list-unstyled side-bar-content">
+        <li class="side-bar-menu">
+          <a href="../homepage/homepage.html"
+             class="dropdown-toggle side-bar-menu-title">HOME</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../diagnosis/genomics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title">DIAGNOSIS</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../care/diagnostics.html" class="side-bar-menu-title">CARE</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../access/diagnostics.html" class="side-bar-menu-title">ACCESS</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+        <li class="side-bar-menu active">
+          <a href="#" class="side-bar-menu-title active">MONITORING</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block active" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+          <ul class="collapse list-unstyled submenu-list d-none d-md-block d-sm-none show active"
+              id="monitoring-submenu">
+            <li class="side-bar-submenu active">
+              <a href="../monitoring/diagnostics.html" class="side-bar-submenu-title active">Diagnostics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../monitoring/genomics.html" class="side-bar-submenu-title">Genomics</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../monitoring/advanced-imaging.html" class="side-bar-submenu-title">Advanced Imaging</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../monitoring/cds-systems.html" class="side-bar-submenu-title">CDS Systems</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../monitoring/digital-health.html" class="side-bar-submenu-title">Digital Health</a>
+            </li>
+          </ul>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../stakeholders/stakeholders.html" class="side-bar-menu-title">STAKEHOLDERS</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../enablers/data-policy.html" class="side-bar-menu-title">ENABLERS</a>
+          <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+        <li class="side-bar-menu">
+          <a href="../vbhc/value-based-healthcare.html" class="side-bar-menu-title">VALUE-BASED HEALTHCARE</a>
+          <svg class="vbhc-arrow-right side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+               xml:space="preserve">
+            <g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
+          </svg>
+        </li>
+      </ul>
+    </div><!--Side Bar-->
+
+    <!--==========================
+      Main Content
+    ============================-->
+    <div class="main-content">
+      <!--==========================
+        Details Map
+      ============================-->
+      <div class="main-content-map d-flex">
+
+        <div class="col-lg-6 monitoring-map position-relative d-flex justify-content-center">
+          <div class="monitoring-details-map position-absolute">
+            <img src="../../img/monitoring-map.png">
+            <div id="digital-health" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="digital-health-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="digital-health-btn-title" class="custom-expand-btn-title">Digital Health</p>
+            </div>
+
+            <div id="diagnostics" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="diagnostics-btn">
+                <span class="custom-expand-btn-plus" style="display: none">+</span>
+                <span class="custom-expand-btn-minus" style="display: block">-</span>
+              </button>
+              <p id="diagnostics-btn-title" class="custom-expand-btn-title" style="display: block">Diagnostics</p>
+            </div>
+
+            <div id="genomics" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="genomics-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="genomics-btn-title" class="custom-expand-btn-title">Genomics</p>
+            </div>
+
+            <div id="advanced-imaging" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-imaging-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="advanced-imaging-btn-title" class="custom-expand-btn-title">Advanced Imaging</p>
+            </div>
+
+            <div id="cds-systems" class="position-absolute expand-btn-filed">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="cds-systems-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="cds-systems-btn-title" class="custom-expand-btn-title">CDS Systems</p>
+            </div>
+          </div>
+        </div>
+        <!--==========================
+          Monitoring  Details
+        ============================-->
+        <div class="col-lg-6 monitoring-details">
+          <!--==========================
+            Diagnostics
+          ============================-->
+          <div id="monitoring-details" class="details-container monitoring-container show">
+            <div class="monitoring-right-header d-flex">
+              <img id="monitoring-details-prev" class="details-btn-prev btn details-prev-next"
+                   src="../../img/toggle_prev.png">
+              <h1 class="monitoring-details-title show">DIAGNOSTICS
+              </h1>
+              <img id="monitoring-details-next" class="details-btn-next btn details-prev-next"
+                   src="../../img/toggle_next.png">
+            </div>
+            <div class="monitoring-right-border-div"></div>
+            <div class="monitoring-details-content monitoring-right-content show">
+              <h2>Description</h2>
+              <p>Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a
+                person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support
+                precision medicine to identify patients who are likely to benefit from specific treatments or therapies.
+                <br/>
+                Roche is a pioneer and leader in diagnostics, including many technologies in common clinical practice
+                today. Ensuring that patients have access to the right diagnostic at the right time at initial
+                diagnosis, monitoring, and at recurrence or progression is a core element of the changes we are
+                driving with personalised healthcare (PHC).
+              </p>
+              <h2>Why it is important for PHC</h2>
+              <span><strong>Smarter and more efficient R&D</strong><br/>
+                To support Roche’s PHC efforts, our diagnostics tool offering is evolving as do the diagnostic
+                technology. We are invested in developing PHC-enabling diagnostic tools, such as:
+              <li>
+                <strong>Companion diagnostics</strong> (CDx) help healthcare professionals determine whether a
+                particular
+                therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks.
+              </li>
+              <li>
+                <strong>Complementary diagnostics</strong> inform treatment decisions. They help give healthcare
+                professionals
+                a better picture of a patient’s overall prognosis or likelihood to respond to different therapies.
+              </li>
+              <li>
+                <strong>Predictive diagnostics</strong> provide information about how patients may respond to a
+                specific target or therapy.
+              </li>
+              </span>
+              <p><strong>Improved access & personalized care</strong><br/>
+              </p>
+              <span><strong>What it means for patients</strong><br/>
+              Roche diagnostic tools support:
+              <li>
+                Selection of the most appropriate patient treatment group
+              </li>
+              <li>
+                Minimization of sides effects
+              </li>
+              <li>
+                Maximization of efficacy.
+              </li>
+              <span>Roche makes these diagnostics available to more patients faster through its commercial
+                  expertise and unmatched global reach.</span>
+              </span>
+              <p><strong>What it means for health systems</strong><br/>
+                Roche diagnostic tools that help to improve medical decision making may increase the
+                speed and rate of funding for our therapies.
+              </p>
+              <strong class="d-none d-md-block d-sm-none">Click button below to see:</strong>
+              <div class="monitoring-red-section connection-button d-none d-md-block d-sm-none"
+                   data-toggle="modal" data-target="#diagnostics-connections">
+                <img src="../../img/connection_icon.png"/>Connections with Other PHC Topics
+              </div>
+              <div class="access-second-section"></div>
+              <h2>What Roche is doing in this area
+              </h2>
+              <p>Roche pioneered the use of CDx with the launch of HER2 for the Roche cancer drug Herceptin. Today,
+                Roche Tissue Diagnostics is the <strong>global partner of choice for CDx, collaborating with more
+                  than 30 additional pharmaceutical companies</strong> to investigate and develop innovative
+                predictive diagnostics identifying those patients who are more likely to respond to specific therapies.
+              </p>
+              <h2>Key drivers/considerations</h2>
+              <li>Fast turnaround time for results could be a driver of diagnostics adoption
+              </li>
+              <li>Successful identification of patients candidate to a targeted Roche medication depends on use of
+                appropriate and high-quality testing. Rozlytrek diagnostics strategy is an example of PHC in action.
+                It aims at establishing molecular profiling as part of the standard of care, so that many patients
+                have the chance to benefit from Rozlytrek.
+                [link to press release <a href="https://www.roche.com/media/releases/med-cor-2019-08-16.htm ">
+                  https://www.roche.com/media/releases/med-cor-2019-08-16.htm
+                </a> and internal hyperlink to page about Rozlytrek.]
+              </li>
+              <li>
+                Level of funding of advanced diagnostics by the healthcare system as diagnostic tool may greatly
+                varies across countries and regions
+              </li>
+            </div>
+          </div><!-- Diagnostics -->
+        </div><!-- Monitoring Details -->
+      </div><!-- Details Map -->
+
+      <!--==========================
+          Connections Modal
+      ============================-->
+      <div class="modal fade" id="diagnostics-connections">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+                class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
+              <img src="../../img/connection_icon_black.png"/>
+              <p class="font-weight-bold">Where Diagnostics Fit Within PHC</p>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <div class="col-lg-6 d-flex justify-content-center key-card-wrapper">
+                <!-- Key Stakeholders -->
+                <div class="key-card flex-shrink-0 flex-grow-0 key-stakeholders d-flex flex-column font-weight-normal">
+                  <div
+                      class="key-card-header flex-shrink-0 flex-grow-0 d-flex align-items-center justify-content-center">
+                    <span>Key Stakeholders</span>
+                  </div>
+                  <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-band position-absolute"></div>
+                    <div class="key-card-content-block">
+                      Regulators
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Governments<br/>and Payers
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Policy makers
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      HCPs
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Patients and<br/>caregivers
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Hospitals<br>administrators and <br>staff
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Pharma & Tech industry
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                  </div>
+                </div><!-- Key Stakeholders -->
+                <!-- Key Drivers -->
+                <div class="key-card flex-shrink-0 flex-grow-0 key-drivers d-flex flex-column font-weight-normal">
+                  <div
+                      class="key-card-header flex-shrink-0 flex-grow-0 d-flex align-items-center justify-content-center">
+                    <span>Key Drivers/<br>Considerations</span>
+                  </div>
+                  <div class="key-card-content flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="key-card-content-band position-absolute"></div>
+                    <div class="key-card-content-block">
+                      Regulatory pathway<br>for approval
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Access pathway
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block position-relative">
+                      Data policy<br>Collection<br>Usage<br>Privacy<br>Security
+                      <a href="../enablers/data-policy.html" id="data-policy-star"
+                         class="key-card-content-star position-absolute">*</a>
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block">
+                      Clinical adoption
+                      <div class="key-card-content-block-right"></div>
+                    </div>
+                    <div class="key-card-content-block position-relative">
+                      IT infrastructure
+                      <a href="../enablers/it-infrastructure.html" id="it-infrastructure-star"
+                         class="key-card-content-star position-absolute">*</a>
+                      <div class="key-card-content-block-right"></div>
+                      <svg id="arrow-curly-brace-diagnostics" class="position-absolute" width="150px" height="200px"
+                           top="30%">
+                        <defs>
+                          <marker id="arrow-black" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#000000;"/>
+                          </marker>
+                        </defs>
+                        <path d="M28,145 L105,145"
+                              style="stroke:#000000; stroke-width: 6px; fill: none;"/>
+                        <path d="M28,197 L105,197"
+                              style="stroke:#000000; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,200 L108,70"
+                              style="stroke:#000000; stroke-width: 6px; fill: none; marker-end: url(#arrow-black);"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div><!-- Key Drivers -->
+                <div class="arrow-lines-wrap position-absolute d-flex justify-content-center">
+                  <!-- Arrows Lines-->
+                  <div class="arrow-key-card position-relative">
+                    <svg id="arrow-regulators" class="position-absolute" width="80px" height="50px" top="30%">
+                      <defs>
+                        <marker id="arrow1" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,30 L65,30"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow1);"/>
+                    </svg>
+                    <svg id="arrow-players" class="position-absolute" width="80px" height="60px" top="30%">
+                      <defs>
+                        <marker id="arrow2" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,15 L30,15 L30,45 L65,45"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow2);"/>
+                    </svg>
+                    <svg id="arrow-policy" class="position-absolute" width="80px" height="90px" top="30%">
+                      <defs>
+                        <marker id="arrow3" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,15 L40,15 L40,60 L65,60"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow3);"/>
+                    </svg>
+                    <svg id="arrow-hospitals" class="position-absolute" width="80px" height="180px" top="30%">
+                      <defs>
+                        <marker id="arrow6" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,150 L65,150"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow6);"/>
+                      <path d="M0,70 L30,70 L30,150"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                      <path d="M0,15 L30,15 L30,70"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none;"/>
+                    </svg>
+                    <svg id="arrow-pharma" class="position-absolute" width="80px" height="50px" top="30%">
+                      <defs>
+                        <marker id="arrow7" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                          <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#00b0ff;"/>
+                        </marker>
+                      </defs>
+                      <path d="M0,15 L65,15"
+                            style="stroke:#00b0ff; stroke-width: 6px; fill: none; marker-end: url(#arrow7);"/>
+                    </svg>
+                  </div><!-- Arrows Lines-->
+                </div>
+              </div>
+              <div class="curly-brace-wrap position-absolute d-flex justify-content-center align-items-center">
+                <!-- Curly Brace -->
+                <div class="arrow-curly-brace position-relative">
+                  <div class="arrow-curly-brace-left"></div>
+                  <!--<img src="../../img/arrow-curly-brace.png">-->
+                  <svg id="arrow-curly-brace-right" class="position-absolute" width="80px" height="80px" top="30%">
+                    <defs>
+                      <marker id="arrow" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                        <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#b0b0b0;"/>
+                      </marker>
+                    </defs>
+                    <path d="M0,25 L25,25"
+                          style="stroke:#b0b0b0; stroke-width: 10px; fill: none; marker-end: url(#arrow);"/>
+                  </svg>
+                </div><!-- Curly Brace -->
+              </div>
+              <div class="col-lg-6">
+                <!-- Diagnostics Solutions -->
+                <div class="diagnostics-solutions d-flex align-items-center justify-content-center">
+                  <div class="diagnostics-solutions-rectangle-block d-flex">
+                    <div
+                        class="diagnostics-solutions-field diagnostics-solutions-rectangle position-relative  d-flex align-items-center">
+                      <span>Diagnostics<br>solutions</span>
+                      <div
+                          class="rectangle-block-right-band position-absolute d-flex justify-content-center align-items-center">
+                        <div class="rectangle-block-circle-dot position-absolute"></div>
+                      </div>
+                      <svg id="arrow-to-analysis" class="position-absolute" width="100px" height="160px" top="30%">
+                        <defs>
+                          <marker id="arrow10" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                          </marker>
+                        </defs>
+                        <path d="M45,75 L15,75"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                        <path d="M45,75 L45,135"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none;"/>
+                        <path d="M42,135 L62,135"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                        <path d="M45,75 L45,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none;"/>
+                        <path d="M42,15 L62,15"
+                              style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                      </svg>
+                      <svg id="arrow-to-cds" class="position-absolute" width="150px" height="120px" top="30%">
+                        <defs>
+                          <marker id="arrow-black" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#000000;"/>
+                          </marker>
+                        </defs>
+                        <path d="M97,40 L132,40"
+                              style="stroke:#000000; stroke-width: 6px; fill: none; marker-end: url(#arrow-black);"/>
+                        <path d="M100,40 L100,100"
+                              style="stroke:#000000; stroke-width: 6px; fill: none;"/>
+                        <path d="M103,97 L85,97"
+                              style="stroke:#000000; stroke-width: 6px; fill: none; marker-end: url(#arrow-black);"/>
+                      </svg>
+                      <svg id="arrow-to-down" class="position-absolute" width="150px" height="200px" top="30%">
+                        <defs>
+                          <marker id="arrow-grey" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#AFABAB;"/>
+                          </marker>
+                        </defs>
+                        <path d="M105,60 L132,60"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M105,115 L132,115"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M105,182 L132,182"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,185 L108,20"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none; marker-end: url(#arrow-grey);"/>
+                      </svg>
+                      <svg id="arrow-to-up" class="position-absolute" width="150px" height="120px" top="30%">
+                        <defs>
+                          <marker id="arrow-grey" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#AFABAB;"/>
+                          </marker>
+                        </defs>
+                        <path d="M105,40 L132,40"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,40 L108,85"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none; marker-end: url(#arrow-grey);"/>
+                      </svg>
+                      <svg id="arrow-to-up-submenu" class="position-absolute" width="150px" height="120px" top="30%">
+                        <defs>
+                          <marker id="arrow-grey" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                            <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#AFABAB;"/>
+                          </marker>
+                        </defs>
+                        <path d="M105,55 L132,55"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M105,5 L132,5"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none;"/>
+                        <path d="M108,5 L108,85"
+                              style="stroke:#AFABAB; stroke-width: 6px; fill: none; marker-end: url(#arrow-grey);"/>
+                      </svg>
+                      <div
+                          class="diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span>CDS</span>
+                        <a href="../care/cds-systems.html"
+                           class="key-card-content-star position-absolute font-weight-normal">*</a>
+                        <div class="rectangle-block-right"></div>
+                        <svg id="arrow-to-cds-analytics" class="position-absolute" width="150px" height="80px"
+                             top="30%">
+                          <defs>
+                            <marker id="arrow10" markerWidth="10" markerHeight="10" refx="2" refy="3" orient="auto">
+                              <path d="M1,1 L1,5 L4,3 L1,1" style="fill:#9572d4;"/>
+                            </marker>
+                          </defs>
+                          <path d="M45,40 L45,65"
+                                style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                          <path d="M45,40 L45,25"
+                                style="stroke:#9572d4; stroke-width: 6px; fill: none; marker-end: url(#arrow10);"/>
+                        </svg>
+                      </div>
+                      <div
+                          class="diagnostics-solutions-analytics diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Advanced<br>analytics</span>
+                        <a href="../enablers/advanced-analytics.html"
+                           class="key-card-content-star font-weight-normal position-absolute">*</a>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-genomic-profiling"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Comprehensive<br/>Genomic Profiling</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-next-generation"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Next-Generation<br/>Sequencing</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-genomics"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Genomics</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-digital-pathology"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Digital<br/>Pathology</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-advanced-imaging"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Advanced<br/>Imaging</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                      <div
+                          id="diagnostics-solutions-predictive"
+                          class="diagnostics-solutions-submenu diagnostics-solutions-cds diagnostics-solutions-rectangle position-absolute d-flex align-items-center">
+                        <span class="enable-solution-title">Companion<br/>Complementary<br>Predictive</span>
+                        <div class="rectangle-block-right"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Diagnostics Solutions -->
+              </div>
+              <div class="connection-description position-absolute d-flex align-items-center justify-content-center">
+                <img src="../../img/connection_description.png">
+              </div>
+              <div data-dismiss="modal" data-toggle="modal" data-target="#zoomout-modal"
+                   class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                  Click to see the<br/>Connections in the<br/>PHC Systems Map
+                </div>
+                <div class="col-lg-6">
+                  <img src="../../img/map_Icon.png">
+                </div>
+              </div>
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Connections Modal -->
+      <!--==========================
+          Zoom Out Modal
+      ============================-->
+      <div class="modal fade" id="zoomout-modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <div class="modal-header d-flex align-items-center justify-content-md-start text-center flex-grow-0 flex-shrink-0">
+              <img src="../../img/connection_icon_yellow.png"/>
+              <p class="font-weight-bold">CONNECTIONS IN THE PHC SYSTEMS MAP</p>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex justify-content-center align-items-center">
+              <!-- Zoom Out map -->
+              <div class="zoom-out-map position-relative">
+                <img src="../../img/monitoring_map-zoomout.png">
+                <!-- MONITORING -->
+                <div id="monitoring-dropdown" class="position-absolute map-dropdown-menu">
+                  <button id="monitoring-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Continuous & Remote<br/>Patient Management
+                    <img src="../../img/toggle_left.png">
+                  </button>
+                  <div class="dropdown-menu multi-line-title" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../monitoring/diagnostics.html">Diagnostics</a>
+                    <a class="dropdown-item" href="../monitoring/genomics.html">Genomics</a>
+                    <a class="dropdown-item" href="../monitoring/advanced-imaging.html">Advanced Imaging</a>
+                    <a class="dropdown-item" href="../monitoring/cds-systems.html">CDS Systems</a>
+                    <a class="dropdown-item" href="../monitoring/digital-health.html">Digital Health</a>
+                  </div>
+                </div><!-- MONITORING -->
+              </div><!-- Zoom Out map -->
+              <div data-dismiss="modal" data-toggle="modal" data-target="#digital-health-diagnostics-connections"
+                   class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                  Back to<br/>interconnections
+                </div>
+                <div class="col-lg-6">
+                  <img src="../../img/map_Icon.png">
+                </div>
+              </div>
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Zoom Out Modal -->
+      <!--==========================
+        Search Modal
+      ============================-->
+      <div class="modal fade" id="search-modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header d-flex text-center align-items-center justify-content-center">
+              <div class="modal-search-input d-flex align-items-center">
+                <div class="side-bar-search-icon">
+                  <img src="../../img/search-icon-white.png" style="margin-top: 0;">
+                </div>
+                <input id="search-input" type="text" placeholder="Search">
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <h2>Search result for "<span id="search-text"></span>":</h2>
+              <hr>
+              <div id="search-result" class="modal-search-result">
+                <div class="modal-search-result-item">
+                </div>
+              </div>
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Search Modal -->
+    </div><!-- Main Content -->
+  </div><!-- Content -->
+</div><!-- Content Wrapper -->
+
+<!-- JavaScript Libraries -->
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/jquery/jquery-migrate.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Data Config Javascript File -->
+<script src="../../js/config.js"></script>
+<!-- Template Main Javascript File -->
+<script src="../../js/main.js"></script>
 </body>
 </html>
