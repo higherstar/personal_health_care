@@ -456,16 +456,33 @@ const data = [{
   {
     "page": "ENABLERS",
     "url": "../enablers/it-infrastructure.html",
-    "content": "Description & why it is important To enable the development of highly-sophisticated algorithms and " +
-      "support the processing of increasing volumes and types of data, we are building a leading-edge " +
-      "IT infrastructure that will provide faster, and more powerful computing capabilities to store and process our data." +
-      " Connection to our PHC Vision and Strategy The PHC IT/Technology team supports the entire PHC engine through:" +
-      " PHC MDAS management platform PHC Digital Health apps & sensor platform PHC Advanced Analytics platform " +
-      "Dedicated PHC informatics team Roche and Roche partner examples/initiatives Roche Science Infrastructure (RSI) " +
-      "program provides the technological foundation for PHC by" +
-      " providing a dedicated high-speed network for transferring data (Roche Science Network), access to" +
-      " high-performance computing, tiered storage, and access to cloud-based platforms. It allows Roche to" +
-      " easily access, rapidly share, and quickly compute on important datasets."
+    "content": "Description & why it is important for PHC Our goal is to empower R&D and the business with a " +
+      "fit-for-purpose, scalable and sustainable technology ecosystem to deliver on personalized healthcare " +
+      "(PHC)’s mission to bring the right treatment to each patient and to improve Personalized Patient Care & Access. " +
+      "We enable the development of highly-sophisticated algorithms and support the processing of integrated analysis " +
+      "of clinical, genomics, imaging and digital data sets. To support the PHC vision and generate meaningful " +
+      "insights from increasing volumes of internal and external multi-modal data, we are building a leading-edge " +
+      "Advanced Analytics and meaningful data at scale (MDAS) platform (Apollo). Through automation, we enable data " +
+      "scientists to derive insights faster and more efficiently by reducing turnaround time from months to minutes. " +
+      "We are also engaging the entire Roche scientific community, external academics and crowdsourcing innovative " +
+      "ideas via Challenges and Hackathons hosted on the Apollo platform. Apollo implements FAIR principles " +
+      "(findability, accessibility, interoperability, and reusability) enabling Roche scientists and external " +
+      "partners to share data and collaborate on insight generation. We define the technology roadmap and " +
+      "implement the capabilities required to enable our mission to improve Personalized Patient Care & Access. " +
+      "Connection to our PHC Vision and Strategy The PHC IX/Technology team supports the entire PHC strategy " +
+      "with through Apollo: Multi-Modal Real World Data and Global Imaging Platform " +
+      "Data Challenges Platform Collaboration Platforms PHC Portals, Websites, and Dashboards Novel/Retail Ecosystems\n" +
+      "Federated Data Acquisition & Processes " +
+      "Automated Intelligent ETL and Curation " +
+      "PHC Advanced Analytics Platform " +
+      "Digital Health Apps and Sensors Platform " +
+      "Example of initiatives PHC IX/Technology supports " +
+      "The PHC IX/Technology team supports the Shining Towers initiative in several ways: " +
+      "Accelerating the development of PHC ecosystem to make PHC a reality by implementing the required " +
+      "infrastructure, access and funding models, policies, and clinical practice. " +
+      "Implementing Apollo to enable the Croatian Oncology Database " +
+      "Roche Advanced Analytics Network (RAAN): Building RAAN technology capabilities on Apollo and " +
+      "enabling RAAN challenges, analytics capabilities, and data collaboration across Roche."
   },
   {
     "page": "MONITORING",
