@@ -26,9 +26,8 @@
 }
 
 /*--------------------------------------------------------------
-# Dignosis Details
+# Enablers Details
 --------------------------------------------------------------*/
-
 .enablers-details {
   align-self: flex-end;
   margin-bottom: 35px;
@@ -66,7 +65,6 @@
 }
 
 .enablers-right-header h1 {
-  text-align: center;
   font-size: 26px;
   font-weight: bold;
   color: #0066cc;
@@ -80,12 +78,6 @@
   background-color: #0066cc;
 }
 
-.enablers-details-content p span, .enablers-container h2 {
-  font-size: 20px;
-  color: #0066cc;
-  font-weight: bold;
-}
-
 .enablers-container h2 {
   font-size: 20px;
   color: #0066cc;
@@ -97,8 +89,45 @@
   height: 90%;
 }
 
+.enablers-red-section {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+  border: solid 2px red;
+  box-shadow: 1px 1px 4px 1px black;
+  border-radius: 20px 20px 20px 20px;
+  width: fit-content;
+  padding: 0 20px 0 30px;
+  height: 37px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.enablers-red-section img {
+  margin-left: -40px;
+  margin-top: -5px;
+  object-fit: contain;
+  width: 44px;
+}
+
+.enablers-red-section:hover {
+  opacity: 1;
+  background-color: #eeec;
+}
+
+.enablers-red-section:active {
+  opacity: 0.8;
+}
+
 .text-content-img img {
   width: 100%;
+}
+
+.img-floodlight img {
+  margin-top: 30%;
 }
 
 /*--------------------------------------------------------------
@@ -133,5 +162,503 @@
   #data-policy {
     top: 69%;
     left: 61%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Real World Data Connection
+--------------------------------------------------------------*/
+.real-world-data-roche-use-image, .real-world-data-content-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#real-world-data-roche img, #real-world-data-roche-use img {
+  width: 100%;
+  height: 100%;
+}
+
+#real-world-data-roche button, #real-world-data-roche-use button {
+  z-index: 1;
+}
+
+#real-world-data-roche-use .modal-dialog, #real-world-data-roche .modal-dialog {
+  margin-left: 0;
+}
+
+#real-world-data-roche-use .modal-content, #real-world-data-roche .modal-content {
+  border-radius: 0;
+}
+
+#real-world-data-roche-use .modal-header {
+  height: 60px;
+  border-bottom: 0;
+}
+
+#real-world-data-roche .modal-header {
+  border-bottom: 0;
+  height: 0;
+}
+
+#real-world-data-roche-use .modal-body, #real-world-data-roche .modal-body {
+  padding: 0;
+}
+
+#real-world-data-roche-use .modal-body {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+#real-world-data-roche-use .image-description p {
+  font-size: 19px;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.image-description-color-global {
+  background: #2a89ef;
+}
+
+.image-description-color-regional {
+  background: #70b4f7;
+}
+
+.image-description-color-local {
+  background: #87ceeb;
+}
+
+.real-world-data-content .image-description {
+  font-size: 7px;
+  font-family: Imago;
+}
+
+.real-world-data-content .image-description p {
+  margin-top: 16px;
+}
+
+.real-world-data-content .image-description .color-box {
+  width: 25px;
+  height: 25px;
+}
+
+.diagnostics-solutions-circle-block-top {
+  margin-top: -132px;
+  height: 155%;
+}
+
+@media (max-width: 750px) {
+  .real-world-data-content .image-description .color-box {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Zoom Out Modal dialog
+--------------------------------------------------------------*/
+#zoomout-modal .modal-header {
+  background: white;
+}
+
+#zoomout-modal .modal-header p{
+  color: black !important;
+}
+
+#zoomout-modal .modal-header button {
+  z-index: 3;
+}
+
+#zoomout-modal .modal-body {
+  background: url("../img/background.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+}
+
+#zoomout-modal .modal-body .zoom-out-map {
+  height: 100%;
+  width: fit-content;
+}
+
+#zoomout-modal .modal-body .zoom-out-map img {
+  height: 100%;
+}
+
+#zoomout-modal #enablers-dropdown {
+  top: 62%;
+  left: 48.2%;
+}
+
+#zoomout-modal #enablers-dropdown button {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 22px;
+  font-size: 14px;
+}
+
+#zoomout-modal #enablers-dropdown button img {
+  width: 30px;
+  top: -1px;
+  left: -14px;
+  height: 30px !important;
+}
+
+.red-color {
+  color: #cc0052;
+}
+
+.red-color:hover, .red-color:focus, .red-color:active {
+  background: #cc0052 !important;
+  border-color: #cc005299 !important;
+}
+
+.show > .btn-light .red-color {
+  border-color: #cc005299 !important;
+}
+
+/*--------------------------------------------------------------
+# Connection Modal dialog
+--------------------------------------------------------------*/
+.arrow-lines-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-key-card {
+  width: 80px;
+  height: 100%;
+}
+
+.curly-brace-wrap {
+  height: calc(100% - 32px);
+  width: calc(100% - 2em);
+}
+
+.arrow-curly-brace {
+  height: 100%;
+  padding-right: 10px;
+}
+
+.arrow-curly-brace img {
+  height: 100%;
+  width: 108px;
+}
+
+.arrow-curly-brace-left {
+  height: 100%;
+  width: 12px;
+  background: #b0b0b0;
+}
+
+#arrow-curly-brace-right {
+  top: calc(50% - 25px);
+  left: 9px;
+}
+
+#arrow-curly-brace-diagnostics {
+  right: -125px;
+  top: -179px;
+  z-index: 1;
+}
+
+.diagnostics-solutions {
+  font-family: Imago;
+  height: 100%;
+}
+
+.diagnostics-solutions-rectangle {
+  background: #dadada;
+  width: 29%;
+  min-height: 70px;
+  margin-right: 35px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.diagnostics-solutions-rectangle a:hover {
+  text-decoration: none;
+}
+
+.diagnostics-solutions-circle {
+  background-color: #0066cc;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.diagnostics-solutions-rectangle-block {
+  width: calc(100% - 54px);
+  font-size: 14px;
+}
+
+.diagnostics-solutions-circle-block {
+  top: 0;
+  left: 0;
+  height: 175px;
+  width: 50px;
+  font-size: 10px;
+  margin-left: -5px;
+  margin-top: 75px;
+}
+
+.arrow-diagnostics-solution {
+  margin-top: -64px;
+  margin-left: 5px;
+  left: 0;
+}
+
+.key-card-content-star {
+  font-size: 49px;
+  color: black;
+  top: -9px;
+  right: 13px;
+  z-index: 3;
+}
+
+.diagnostics-solutions-circle-block .key-card-content-star {
+  font-size: 33px;
+  top: 52%;
+  left: 28%;
+}
+
+.arrow-to-cds {
+  width: 18%;
+  height: 18%;
+  top: calc(25% - 5px);
+  left: 14%;
+}
+
+.arrow-to-cds img {
+  width: 100%;
+  height: 100%;
+}
+
+.enable-solution-mark {
+  margin-left: 5px;
+  margin-top: -7px;
+}
+
+.connection-description {
+  width: 20%;
+  top: 15px;
+  right: 30px;
+}
+
+.connection-description img {
+  width: 100%;
+}
+
+.zoom-out-button {
+  background: #b5e9fe;
+  bottom: 20px;
+  right: 30px;
+  border-style: solid;
+  border-color: #01a3f8;
+  border-width: 3px 3px 6px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.zoom-out-button:hover {
+  background-color: #b5e9fe99;
+  border-color: #01a3f899;
+}
+
+.zoom-in-button {
+  border: 2px solid #0066cc;
+  color: #0066cc;
+}
+
+.zoom-in-button:hover {
+  background-color: #0066cc99;
+}
+
+.diagnostics-solutions-field {
+  background-color: #ed8b00;
+  color: white;
+  padding-left: 45px;
+}
+
+.diagnostics-solutions-cds {
+  margin-left: calc(100% + 30px);
+  margin-top: -40%;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.genomics-rectangle-block .diagnostics-solutions-cds {
+  margin-left: calc(100% - 50px);
+  margin-top: -120px;
+}
+
+.diagnostics-solutions-analytics {
+  margin-top: calc(-40% + 137px) !important;
+}
+
+.diagnostics-solutions-submenu {
+  width: fit-content;
+  min-height: 42px;
+  padding-right: 10px;
+}
+
+#diagnostics-solutions-predictive {
+  top: 360%;
+  margin-left: 0;
+}
+
+#diagnostics-solutions-advanced-imaging {
+  margin-left: 0;
+  top: 280%;
+}
+
+#diagnostics-solutions-digital-pathology {
+  margin-left: 0;
+  top: 200%;
+}
+
+#diagnostics-solutions-genomics {
+  margin-left: 0;
+  top: 10px;
+}
+
+#diagnostics-solutions-next-generation {
+  width: 150px;
+  margin-left: 35px;
+  top: -80%;
+}
+
+#diagnostics-solutions-genomic-profiling {
+  width: 150px;
+  margin-left: 35px;
+  top: -150%;
+}
+
+#arrow-regulators {
+  left: 2px;
+  top: 16%;
+}
+
+#arrow-players {
+  left: 2px;
+  top: 29%;
+}
+
+#arrow-policy {
+  left: 2px;
+  top: 39%;
+}
+
+#arrow-hcps {
+  left: 2px;
+  top: 47%;
+}
+
+#arrow-patients {
+  left: 2px;
+  top: 54%;
+}
+
+#arrow-hospitals {
+  left: 2px;
+  top: 47%;
+}
+
+#arrow-pharma {
+  left: 2px;
+  top: 87%;
+}
+
+#arrow-curly-brace {
+  left: -36px;
+  top: -43px;
+  position: absolute;
+  transform: scale(0.6, 0.96);
+}
+
+#arrow-to-analysis {
+  margin-right: -100px;
+  right: 0;
+  top: -30px;
+}
+
+#arrow-genomics-to-analysis {
+  top: -30px;
+  right: 0;
+  margin-right: -67px;
+}
+
+#arrow-to-cds {
+  margin-right: -80px;
+  right: 0;
+  top: -80px;
+}
+
+#arrow-to-up {
+  left: 0;
+  margin-left: -88px;
+  top: -73px;
+}
+
+#arrow-to-up-submenu {
+  left: 0;
+  margin-left: -53px;
+  top: -153px;
+}
+
+#arrow-to-down {
+  left: 0;
+  margin-left: -88px;
+  top: 38px;
+}
+
+#arrow-to-cds-analytics {
+  bottom: 0;
+  margin-bottom: -50px;
+}
+
+#arrow-to-cds-therapy {
+  left: 0;
+  margin-left: -80px;
+  top: 10px;
+}
+
+#arrow-to-cds-diagnostics {
+  right: 0;
+  margin-right: -130px;
+  top: 10px;
+}
+
+#arrow-to-patients {
+  margin-right: -66px;
+  margin-top: 11px;
+  right: 0;
+}
+
+#arrow-toward-cds {
+  top: 0;
+  left: 0;
+  margin-top: -113px;
+  margin-left: 30px;
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    margin-top: 8%;
+    max-width: 80%;
+    height: 75%;
+    min-height: 520px;
   }
 }
