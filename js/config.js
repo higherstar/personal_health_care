@@ -442,16 +442,21 @@ const data = [{
   {
     "page": "ENABLERS",
     "url": "../enablers/data-policy.html",
-    "content": "Description Legal frameworks around the collection, processing & sharing of data is an important enable for PHC." +
-      " Stakeholders such as patients, HCPs, regulators and policy makers, may be involved." +
-      " Why it is important & connection to our PHC Vision and Strategy It is important to identify, understand and " +
+    "content": "Legal frameworks around the collection, processing & sharing of data is an important enabler for PHC. " +
+      "Stakeholders such as patients, healthcare providers (HCPs), regulators and policy makers, may be involved." +
+      " Why it is important in PHC It is important to identify, understand and " +
       "address key barriers to building and gaining access to Meaningful Data at Scale (MDAS). Initial barriers to " +
       "considered are: Cost Scale (breadth and depth) Data privacy laws and regulations Patient cultural perspectives" +
       " Infrastructure Data quality and completeness Access mode Unstructured nature of data Intellectual property" +
-      " Key drivers/considerations Data privacy is a key area where much is unknown and requirements vary across geographies." +
-      " As data becomes more “meaningful”, de-identification/anonymization can be challenging." +
-      " The Roche MDAS Working Group will connect with the newly formed Data Privacy Advisory Group to" +
-      " obtain advice on data privacy matters including data anonymization requirements for all data types."
+      " Key drivers/considerations Key drivers/considerations " +
+      "Data Privacy is a key area where adoption of legislation is emerging and requirements " +
+      "vary across geographies. Some of this emerging legislation is due to actions from other " +
+      "industries with little consideration for the impact on health data specifically. " +
+      "How Roche and those we share data with collect, manage and analyze data including de-identification, " +
+      "anonymization should be transparent to reinforce our commitment to data privacy. Roche needs access " +
+      "to high-quality, interoperable data to realize PHC. Policy that enables access to and sharing of data is " +
+      "key, as well as policy that supports implementation of data quality and interoperability standards. " +
+      "You can address your questions about data privacy to global.privacy@roche.com. "
   },
   {
     "page": "ENABLERS",
@@ -471,7 +476,7 @@ const data = [{
       "implement the capabilities required to enable our mission to improve Personalized Patient Care & Access. " +
       "Connection to our PHC Vision and Strategy The PHC IX/Technology team supports the entire PHC strategy " +
       "with through Apollo: Multi-Modal Real World Data and Global Imaging Platform " +
-      "Data Challenges Platform Collaboration Platforms PHC Portals, Websites, and Dashboards Novel/Retail Ecosystems\n" +
+      "Data Challenges Platform Collaboration Platforms PHC Portals, Websites, and Dashboards Novel/Retail Ecosystems " +
       "Federated Data Acquisition & Processes " +
       "Automated Intelligent ETL and Curation " +
       "PHC Advanced Analytics Platform " +
@@ -487,7 +492,7 @@ const data = [{
   {
     "page": "ENABLERS",
     "url": "../enablers/real-world-data.html",
-    "content": "Description\n" +
+    "content": "Description " +
       "Real-World Data (RWD) is defined as data relating to patient health routinely collected from a variety of " +
       "sources outside of traditional controlled clinical interventional trials, under real-life clinical practice. " +
       "The evidence derived from the analysis and/or synthesis of RWD is called Real-World Evidence (RWE)." +

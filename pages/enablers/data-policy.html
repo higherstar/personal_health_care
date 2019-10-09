@@ -59,7 +59,6 @@
           </div>
           <span>SEARCH</span>
         </div>
-
         <div id="mobile-search"
              class="side-bar-search d-flex align-items-center justify-content-between position-absolute d-md-none d-sm-block">
           <div class="side-bar-search-icon">
@@ -79,6 +78,9 @@
         <div class="mobile-side-bar-submenu-item active">
           <a href="#" class="side-bar-menu-title active">ENABLERS</a>
         </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../enablers/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
+        </div>
         <div class="mobile-side-bar-submenu-item active">
           <a href="../enablers/data-policy.html" class="side-bar-submenu-title active">Data Policy</a>
         </div>
@@ -86,7 +88,10 @@
           <a href="../enablers/advanced-analytics.html" class="side-bar-submenu-title">Advanced Analytics</a>
         </div>
         <div class="mobile-side-bar-submenu-item">
-          <a href="../enablers/it-infrastructure.html" class="side-bar-submenu-title">IT Infrastructure</a>
+          <a href="../enablers/phc-it.html" class="side-bar-submenu-title">PHC IX/Technology</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../enablers/patient-partnerships.html" class="side-bar-submenu-title">Patient Partnerships</a>
         </div>
       </div>
       <ul class="list-unstyled side-bar-content">
@@ -162,6 +167,9 @@
                 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></g>
           </svg>
           <ul class="collapse list-unstyled submenu-list d-none d-md-block d-sm-none active show" id="enablers-submenu">
+            <li class="side-bar-submenu">
+              <a href="../enablers/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
+            </li>
             <li class="side-bar-submenu active">
               <a href="../enablers/data-policy.html" class="side-bar-submenu-title active">Data Policy</a>
             </li>
@@ -169,7 +177,10 @@
               <a href="../enablers/advanced-analytics.html" class="side-bar-submenu-title">Advanced Analytics</a>
             </li>
             <li class="side-bar-submenu">
-              <a href="../enablers/it-infrastructure.html" class="side-bar-submenu-title">IT Infrastructure</a>
+              <a href="../enablers/phc-it.html" class="side-bar-submenu-title">PHC IX/Technology</a>
+            </li>
+            <li class="side-bar-submenu">
+              <a href="../enablers/patient-partnerships.html" class="side-bar-submenu-title">Patient Partnerships</a>
             </li>
           </ul>
         </li>
@@ -198,6 +209,13 @@
         <div class="col-lg-6 enablers-map position-relative d-flex justify-content-center">
           <div class="enablers-details-map position-absolute">
             <img src="../../img/enablers-map.png">
+            <div id="real-world-data" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="real-world-data-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="real-world-data-btn-title" class="custom-expand-btn-title">Real-World Data</p>
+            </div>
             <div id="data-policy" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="data-policy-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
@@ -205,7 +223,6 @@
               </button>
               <p id="data-policy-btn-title" class="custom-expand-btn-title" style="display: block">Data Policy</p>
             </div>
-
             <div id="advanced-analytics" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-analytics-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
@@ -213,13 +230,19 @@
               </button>
               <p id="advanced-analytics-btn-title" class="custom-expand-btn-title">Advanced Analytics</p>
             </div>
-
-            <div id="it-infrastructure" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="it-infrastructure-btn">
+            <div id="phc-it" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="phc-it-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
                 <span class="custom-expand-btn-minus" style="display: none">-</span>
               </button>
-              <p id="it-infrastructure-btn-title" class="custom-expand-btn-title">IT Infrastructure</p>
+              <p id="phc-it-btn-title" class="custom-expand-btn-title">PHC IX/Technology</p>
+            </div>
+            <div id="patient-partnerships" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="patient-partnerships-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="patient-partnerships-btn-title" class="custom-expand-btn-title">Patient Partnerships</p>
             </div>
           </div>
         </div>
@@ -234,17 +257,18 @@
             <div class="enablers-right-header d-flex">
               <img id="enablers-details-prev" class="details-btn-prev btn details-prev-next"
                    src="../../img/toggle_prev.png">
-              <h1 class="enablers-details-title show">Data Policy</h1>
+              <h1 class="enablers-details-title show">Policy</h1>
               <img id="enablers-details-next" class="details-btn-next btn details-prev-next"
                    src="../../img/toggle_next.png">
             </div>
             <div class="enablers-right-border-div"></div>
             <div class="enablers-details-content enablers-right-content show">
               <h2>Description</h2>
-              <p>Legal frameworks around the collection, processing & sharing of data is an important enable for PHC.
-                <sup>2</sup> Stakeholders such as patients, HCPs, regulators and policy makers, may be involved.
+              <p>Legal frameworks around the collection, processing & sharing of data is an important enabler
+                for PHC.  Stakeholders such as patients, healthcare providers (HCPs), regulators and policy
+                makers, may be involved.
               </p>
-              <h2>Why it is important & connection to our PHC Vision and Strategy
+              <h2>Why it is important in PHC
               </h2>
               <span>It is important to identify, understand and address key barriers to building and gaining access to
                 Meaningful Data at Scale (MDAS). Initial barriers to considered are:<sup>1</sup>
@@ -260,11 +284,22 @@
               </span>
               <hr>
               <h2>Key drivers/considerations</h2>
-              <p>Data privacy is a key area where much is unknown and requirements vary across geographies.<sup>3</sup>
-                As data becomes more “meaningful”, de-identification/anonymization can be challenging.
-                The Roche MDAS Working Group will connect with the newly formed Data Privacy Advisory Group to
-                obtain advice on data privacy matters including data anonymization requirements for all data types.
+              <p>Data Privacy is a key area where adoption of legislation is emerging and requirements vary across
+                geographies. Some of this emerging legislation is due to actions from other industries with little
+                consideration for the impact on health data specifically.
               </p>
+              <p>
+                How <strong>Roche</strong> and those we share data with collect, manage and analyze data including
+                de-identification,
+                anonymization should be transparent to reinforce our commitment to data privacy. Roche needs access
+                to high-quality, interoperable data to realize PHC. Policy that enables access to and sharing of
+                data is key, as well as policy that supports implementation of data quality and interoperability
+                standards.
+              </p>
+              <span>
+                You can address your questions about data privacy to<br/>
+                <a href="https://global.privacy@roche.com">global.privacy@roche.com</a>.
+              </span>
             </div>
           </div><!-- Data Policy -->
         </div><!-- Data Policy Details -->
