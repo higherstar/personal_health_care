@@ -425,9 +425,23 @@ const data = [{
       " create value for R&D and patient care and access. Roche and Roche partner examples/initiatives " +
       "Enhanced Data and Insight Sharing (EDIS) - EDIS is a project at Roche that aims to" +
       " make our internal data Findable, Accessible, Interoperable, and Reusable (F.A.I.R.)." +
-      " This will facilitate data management and sharing. Roche Advanced Analytics Network (RAAN) was launched in " +
-      "mid-2017 (with 300+ members) to connect advanced analytics experts across Roche. It established the RAAN" +
-      " Advisory Group and sponsored the RAAD Challenge (130+ teams participating). Key drivers/considerations" +
+      " This will facilitate data management and sharing. " +
+      "Roche Advanced Analytics Network (RAAN) was launched in mid-2017 (with 300+ members) to connect advanced " +
+      "analytics experts across Roche. It established the RAAN Advisory Group and sponsored the RAAD " +
+      "Challenge (130+ teams participating). Its objectives are: " +
+      "To foster knowledge sharing and further strengthen our advanced analytics expertise across the organization " +
+      "To identify ad address business questions that can be solved using advanced analytics " +
+      "Advanced Analytics Academic Collaborations will become a Fit-for-Purpose Academic Outreach Model, " +
+      "matching the complexity of Roche’s business needs with the right level of engagement " +
+      "and specific technical expertise. " +
+      "PHC IX Data and Analytics is an extensible cloud platform solution built to acquire, " +
+      "confirm, curate, process, and expose various data sources in a controlled, secure, reliable, and " +
+      "globally accessible location for advanced analytics purposes. The combination of getting the right " +
+      "data and analytics tools together in one platform will allow us to take a significant step forward " +
+      "putting Roche at the forefront of our drive to deliver PHC toe very patient. " +
+      "The Challenges Platform provides challenge-specific infrastructure and guidance for " +
+      "communities wanting to run data challenges. " +
+      "Key drivers/considerations" +
       " Key Learnings Roche has strong existing AA capabilities, however they are fragmented Lots of enthusiasm & " +
       "interest in AA across the organization We can better leverage this expertise to help answer business questions," +
       " establish external connections and evaluate opportunities Roche is well positioned to build academic " +
