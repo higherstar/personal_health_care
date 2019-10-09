@@ -485,6 +485,54 @@ const data = [{
       "enabling RAAN challenges, analytics capabilities, and data collaboration across Roche."
   },
   {
+    "page": "ENABLERS",
+    "url": "../enablers/real-world-data.html",
+    "content": "Description\n" +
+      "Real-World Data (RWD) is defined as data relating to patient health routinely collected from a variety of " +
+      "sources outside of traditional controlled clinical interventional trials, under real-life clinical practice. " +
+      "The evidence derived from the analysis and/or synthesis of RWD is called Real-World Evidence (RWE)." +
+      " RWD can be collected from various sources such as electronic/medical health records, Digital Health " +
+      "solutions, pharmacy claims, insurance claims, disease and product registries, diagnostics/omics" +
+      " databases, hospitals/outpatient visits, health surveys and patient-reported outcomes (PROs)," +
+      " non-investigational studies, social media, etc." +
+      "Why it is important for PHC " +
+      "Bridge evidence gaps of randomized control trials (RCTs)- The discovery of smaller and smaller " +
+      "patient sub-populations (e.g., rare cancer-driving genomic alterations) is making it unfeasible " +
+      "to run RCTs. Supplementary data sources, such as RWD, are needed to understand patient characteristics and" +
+      " treatment effectiveness. The heterogeneity of patient populations means that RCT data have low " +
+      "generalizability. This also leads to evidence gaps in treatments and patient outcomes in the real-world " +
+      "setting. However, RWD provides a much larger and more heterogeneous patient pool. RCTs are costly " +
+      "and time-consuming as compared to RWD." +
+      " Smarter & more efficient R&D – Insights from RWD can provide learnings, " +
+      "such as treatment decisions in the real-world setting and molecularly-guided " +
+      "treatment options (MGTO). This can potentially fuel new research questions " +
+      "that can lead to smarter and more efficient R&D. " +
+      "RWD is a key component of our PHC vision and strategy because: " +
+      "RWD is a source of Meaningful Data at Scale (MDAS). MDAS combines high quality, high volume of data per " +
+      "patient with the number of patients covered. In other words, MDAS is comprised of deep, longitudinal " +
+      "data from broad patient populations. " +
+      "RWD fuels the PHC engine with continuous learning from every patient's " +
+      "experience to create both a high-resolution view of each patient and treatments " +
+      "personalized to each patient's needs. " +
+      "Downstream use of RWE in regulatory / Health Technology Assessment (HTA) / payer " +
+      "decision-making can also facilitate and support the approvals of novel PHC solutions. " +
+      "What Roche is doing in this area " +
+      "Roche’s RWD assets span sources including platforms, registries, and genomic databases. Roche is using RWD to " +
+      "advance Research, Regulatory, Access, Medical and Commercial objectives. " +
+      "Key considerations of using RWD " +
+      "Harmonizing data from multiple sources while retaining data comprehensiveness " +
+      "Ensuring similar data quality and compatibility " +
+      "Extracting meaningful information from unstructured data (e.g., physician notes or genomic testing reports) " +
+      "Validating RWD endpoints " +
+      "Identifying and accounting for biases " +
+      "Guaranteeing consent, patient privacy and confidentiality " +
+      "Securing needed resources for planning, educating, collecting / upkeeping data, quality control, etc. " +
+      "Taking into consideration the lack of sources of high-quality RWD in ex-US markets " +
+      "Taking into consideration that the market for structured / curated data is nascent " +
+      "Taking into consideration the possibility of immature consensus of defining regulatory-grade " +
+      "RWD and levels of quality that are fit-for-purpose"
+  },
+  {
     "page": "MONITORING",
     "url": "../monitoring/advanced-imaging.html",
     "content": "Description Advanced imaging is a type of Meaningful Data at Scale (MDAS) as defined in our PHC engine." +
