@@ -105,35 +105,45 @@
 /*--------------------------------------------------------------
 #   Expand buttons
 --------------------------------------------------------------*/
-#value-based-healthcare {
+#context {
   top: 56%;
-  left: 58%;
+  left: 22%;
 }
 
-#roche-initiatives {
+#showcases {
   top: 27%;
   left: 38%;
 }
 
-#roche-examples {
+#shining-towers {
   top: 40%;
   left: 70%;
 }
 
+#rozlytrek {
+  top: 56%;
+  left: 70%;
+}
+
 @media (max-width: 750px) {
-  #value-based-healthcare {
+  #context {
     top: 61%;
-    left: 37%;
+    left: 15%;
   }
 
-  #roche-examples {
+  #showcases {
     top: 40%;
     left: 62%;
   }
 
-  #roche-initiatives {
+  #shining-towers {
     top: 20%;
     left: 38%;
+  }
+
+  #rozlytrek {
+    top: 56%;
+    left: 70%;
   }
 }
 

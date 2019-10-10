@@ -887,5 +887,99 @@ const data = [{
       "segment data effectively and responsibly. Our VBHC@Roche framework " +
       "Our program is structured to generate insights across key dimensions of our VBHC framework. " +
       "To learn more about VBHC, please go to the VBHC webpage"
-  }
+  },
+  {
+    "page": "ROCHE INITIATIVES",
+    "url": "../roche/context.html",
+    "content": "Achieving a fully enabled PHC engine " +
+      "We recognize that fully embedded PHC capabilities won’t happen instantaneously. Instead, we see " +
+      "this transformation towards a fully enabled PHC engine, as shown below:"
+  },
+  {
+    "page": "ROCHE INITIATIVES",
+    "url": "../roche/showcases.html",
+    "content": "Showcases are examples of PHC initiatives in R&D. " +
+      "Neuroscience showcase – Striving to understand Multiple Sclerosis (MS) disease progression will " +
+      "enable everyone to deliver better care, improve patient outcomes and accelerate the next generation " +
+      "of MS therapies. By building real-world, large and deep datasets that integrate clinical, digital, " +
+      "imaging and genomic data, and applying advanced analytics, we aim to find clinically meaningful new " +
+      "perspectives into the disease. From this we will develop new tools to better measure and manage MS. " +
+      "Ophthalmology showcase – To predict and prevent disease progression and vision loss in patients with " +
+      "age-related macular degeneration and diabetic retinopathy, we are building MDAS by curating imaging, " +
+      "genetics, and clinical data to better predict treatment responses, dosing, and progression to advanced " +
+      "disease. We are also leveraging recent advances in machine learning to analyze these datasets and " +
+      "develop algorithms for both disease detection and progression. " +
+      "Oncology showcase – We are leveraging MDAS and advanced analytics in cancer " +
+      "immunotherapy to identify early predictors of treatment benefit and toxicity, " +
+      "develop alternative endpoints, and understand the mechanisms of resistance/escape. " +
+      "We are also integrating and harmonizing data sets from multiple clinical trials through " +
+      "efforts such as EDIS. Full genomic analysis and advanced imaging with these data sets is " +
+      "generating insights that inform initial pilot studies, such as development of novel combination therapies."
+  },
+  {
+    "page": "ROCHE INITIATIVES",
+    "url": "../roche/shining-towers.html",
+    "content": "Description " +
+      "Shining Towers are initiatives that will help accelerate the development of a full PHC clinical ecosystem. " +
+      "We are building local PHC cases to speed up access to advanced diagnostics and treatment.2 We are " +
+      "leveraging RWE to enable innovative reimbursement models. To do so, we need to: " +
+      "Increase use of genomic profiling " +
+      "Increase availability of molecularly-guided therapy option (MGTO) " +
+      "Design trials adapted to PHC " +
+      "Foster discussion among all relevant stakeholders " +
+      "We need to establish minimal viable product (MVP) infrastructures before integrating Roche PHC solutions. " +
+      "1-Achieve partner agreements to implement MVP components (Roche PHC assets not mandatory): " +
+      "CGP adoption " +
+      "MTB/CDS " +
+      "RWD capture " +
+      "Access to therapy " +
+      "2-Through co-creation, identify opportunities to augment and expand with Roche assets: " +
+      "Digital pathology " +
+      "FMI/Avenio + other tests " +
+      "Enhanced Navify engagement " +
+      "Imaging " +
+      "Preferred RWD partner solutions " +
+      "3-Execute and implement integrated PHC solutions by:1 " +
+      "Developing guidance for solution integration " +
+      "Creating playbooks for PHC market development " +
+      "Tailoring PHC solutions to market needs " +
+      "Cycling insights back to the organization for continual development " +
+      "Shining Towers in the PHC strategy " +
+      "Shining Towers aim at demonstrating the usefulness PHC integrated solutions. " +
+      "Current business of Diagnostic solutions & medicines " +
+      "Leveraging MDAS to enhance current business " +
+      "Establishing integrated PHC solutions " +
+      "Shining Tower initiativeslaunched in 10 countries around the World will enable critical business " +
+      "drivers. Each initiative aim at demonstrating the feasibility of PHC and integrates PHC " +
+      "solutions.[Potential visual: World map with hotspots to reveal which initiative is " +
+      "ongoing in a particular country/region]"
+  },
+  {
+    "page": "ROCHE INITIATIVES",
+    "url": "../roche/rozlytrek.html",
+    "content": "Rozlytrek (entrectinib) " +
+      "Quote from Head of Roche Pharma, Bill Anderson, on Rozlytrek: " +
+      "“Rozlytrek represents everything that we stand for when it comes to personalised healthcare (PHC). " +
+      "In fact it's a medicine that is impossible without PHC! Here’s why: " +
+      "In the past we worked to treat a specific tumor type, for example lung cancer or breast " +
+      "cancer, and where possible added a companion diagnostic. With Rozlytrek we have a medicine " +
+      "that is tumor agnostic, meaning we focus on a cancer’s genomic alterations rather than in " +
+      "which organ the cancer started in the body. In the case of Rozlytrek we are targeting tumors " +
+      "with mutations in ROS1 or NTRK genes. " +
+      "Because these rare mutations occur in numerous tumor types, molecular profiling and next-generation " +
+      "sequencing play an essential role in identifying individuals who can benefit, and this has implications " +
+      "for how we work with healthcare systems to bring this medicine to market. Unless we establish molecular " +
+      "profiling as part of the standard of care, many patients will never have the chance to benefit from Rozlytrek." +
+      " And having seen remarkable response rates, particularly in patients whose cancer has spread to the brain, " +
+      "we are compelled to see this through. " +
+      "PHC, in the form of real-world data, was also essential to the Rozlytrek clinical development approach. " +
+      "In one of our studies it was not feasible to include a comparator arm due to the rarity of the patient " +
+      "group we were studying — so we developed an external control arm using Flatiron data to compare the " +
+      "Rozlytrek treated patients against a real-world cohort treated with the standard of care. This comparative " +
+      "real-word data have been submitted to authorities with our filings in the US, Japan and Europe and are " +
+      "a great example of making research more efficient and providing a better option for participants; since " +
+      "all received Rozlytrek, none received placebo. " +
+      "Check out the media release of FDA’s approval Roche’s Rozlytrek (entrectinib) for people " +
+      "with ROS1-positive, metastatic non-small cell lung cancer and NTRK gene fusion-positive solid tumours."
+  },
 ];
