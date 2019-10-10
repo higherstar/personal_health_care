@@ -107,6 +107,16 @@
   padding: 20px;
 }
 
+.phc-right-content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #cdcdcd;
+  width: 30%;
+}
+
 .text-content-img img {
   width: 100%;
 }
@@ -128,5 +138,9 @@
   }
   .phc-right-content {
     height: 79%;
+    flex-direction: column;
+  }
+  .phc-right-content p {
+    width: 100%;
   }
 }
