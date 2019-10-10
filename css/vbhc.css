@@ -170,6 +170,11 @@
   padding: 0;
 }
 
+#roche-framework img {
+  width: auto;
+  height: 100%;
+}
+
 @media (min-width: 992px) {
   .modal-lg {
     margin-top: 8%;

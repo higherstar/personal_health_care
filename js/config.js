@@ -874,6 +874,18 @@ const data = [{
       " Value-Based HealthCare is an important transition in healthcare where we can realize our PHC vision. " +
       "By partnering and co-creating with our internal and external stakeholders, we can contribute to " +
       "building sustainable healthcare systems." +
-      " Roche approach to VBHC Roche contributes to change healthcare systems."
+      " Roche approach to VBHC Roche contributes to change healthcare systems. " +
+      "Key drivers/considerations " +
+      "IT platform, Meaningful Data at Scale (MDAS), and policy all play a key role in enabling our success " +
+      "for implementing Value-Based HealthCare. " +
+      "We require a robust IT infrastructure that enables patient data to be shared " +
+      "optimally, across borders and services. " +
+      "Our IT platform must be able to collect MDAS to inform our analyses and algorithms. " +
+      "A rigorous approach to data analysis is essential to implementing VBHC. " +
+      "Well-designed, clear policies are another crucial component of rolling out our VBHC. We need " +
+      "to minimize regulatory hurdles and ensure that we are able to analyze patients and " +
+      "segment data effectively and responsibly. Our VBHC@Roche framework " +
+      "Our program is structured to generate insights across key dimensions of our VBHC framework. " +
+      "To learn more about VBHC, please go to the VBHC webpage"
   }
 ];
