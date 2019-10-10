@@ -150,7 +150,7 @@
 
 #phc-it {
   top: 35%;
-  left: 54%;
+  left: 52%;
 }
 
 #patient-partnerships {
@@ -162,6 +162,18 @@
   #data-policy {
     top: 69%;
     left: 61%;
+  }
+  #real-world-data {
+    top: 33%;
+    left: 8%;
+  }
+  #patient-partnerships {
+    top: 56%;
+    left: 33%;
+  }
+  #phc-it {
+    top: 35%;
+    left: 50%;
   }
 }
 

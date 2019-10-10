@@ -9,6 +9,9 @@
   .mobile-side-bar-submenu {
     padding-top: 85% !important;
   }
+  .side-bar-search-icon img {
+    margin-top: 0 !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -83,6 +86,11 @@
   #real-world-data {
     top: 26%;
     left: 40%;
+  }
+
+  #genomics {
+    top: 61%;
+    left: 64%;
   }
 }
 
