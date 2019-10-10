@@ -982,4 +982,31 @@ const data = [{
       "Check out the media release of FDA’s approval Roche’s Rozlytrek (entrectinib) for people " +
       "with ROS1-positive, metastatic non-small cell lung cancer and NTRK gene fusion-positive solid tumours."
   },
+  {
+    "page": "ABBREVIATION LIST",
+    "url": "../reference/abbreviation-list.html",
+    "content": "Abbreviation List " +
+      "NGS: Next-generation sequencing PHC: Personalised Healthcare RWD: Real-world data NGS: Next-generation " +
+      "sequencing PHC: Personalised Healthcare RWD: Real-world data NGS: Next-generation sequencing PHC: Personalised " +
+      "Healthcare RWD: Real-world data NGS: Next-generation sequencing PHC: Personalised Healthcare RWD: " +
+      "Real-world data PHC: Personalised Healthcare " +
+      "NGS: Next-generation sequencing PHC: Personalised Healthcare RWD: Real-world data NGS: Next-generation " +
+      "sequencing PHC: Personalised Healthcare RWD: Real-world data NGS: Next-generation sequencing PHC: " +
+      "Personalised Healthcare RWD: Real-world data NGS: Next-generation sequencing PHC: Personalised Healthcare " +
+      "RWD: Real-world data PHC: Personalised Healthcare " +
+      "NGS: Next-generation sequencing PHC: Personalised Healthcare RWD: Real-world data NGS: Next-generation " +
+      "sequencing PHC: Personalised Healthcare RWD: Real-world data NGS: Next-generation sequencing PHC: " +
+      "Personalised Healthcare RWD: Real-world data NGS: Next-generation sequencing PHC: Personalised Healthcare " +
+      "RWD: Real-world data PHC: Personalised Healthcare"
+  },
+  {
+    "page": "ACKNOWLEDGMENTS",
+    "url": "../reference/acknowledgments.html",
+    "content": "Acknowledgments " +
+      "We acknowledge our colleagues for their contribution to this systems map: " +
+      "John Doe. PHC CoE Jane Doe. PDMA John Doe, PHC CoE Jane Doe. PDMA John Doe, PHC CoE Jane Doe. PDMA John Doe, " +
+      "PHC CoE Jane Doe. PDMA John Doe, PHC CoE Jane Doe. PDMA John Doe, PHC CoE Jane Doe. PDMA " +
+      "John Doe. PHC CoE Jane Doe, PDMA John Doe, PHC CoE Jane Doe. PDMA John Doe, PHC CoE Jane Doe. " +
+      "PDMA John Doe, PHC CoE Jane Doe. PDMA John Doe, PHC CoE Jane Doe, PDMA John Doe, PHC CoE Jane Doe, PDMA"
+  },
 ];

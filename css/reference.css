@@ -96,9 +96,10 @@
 }
 
 .phc-container h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: #0066cc;
   font-weight: bold;
+  padding-left: 20px;
 }
 
 .phc-right-content {
@@ -115,6 +116,10 @@
   padding-top: 10px;
   border-bottom: 1px solid #cdcdcd;
   width: 30%;
+}
+
+.acknowledgments {
+  height: 80% !important;
 }
 
 .text-content-img img {
