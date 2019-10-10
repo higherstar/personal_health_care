@@ -26,7 +26,7 @@ const data = [{
     " Identification & validation of new types of endpoints / outcomes that matter to patients Design & integration " +
     " of digital biomarkers and / or health programs along the patient journey Sources of digital health data and " +
     " understanding of RWD Regulatory definition and classification of medical device Collaboration model with external stakeholders (e.g., IT companies, hospitals/HCPs and patients",
-  },
+},
   {
     "page": "ACCESS",
     "url": "../access/diagnostics.html",

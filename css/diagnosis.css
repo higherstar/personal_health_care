@@ -685,6 +685,7 @@
   left: 0;
   margin-left: 50px;
 }
+
 /*--------------------------------------------------------------
 # Real World Data Connection
 --------------------------------------------------------------*/
@@ -787,7 +788,7 @@
   background: white;
 }
 
-#zoomout-modal .modal-header p{
+#zoomout-modal .modal-header p {
   color: black !important;
 }
 
@@ -828,6 +829,7 @@
   left: -14px;
   height: 30px !important;
 }
+
 /*--------------------------------------------------------------
 # Clinical decision support detail modal
 --------------------------------------------------------------*/
