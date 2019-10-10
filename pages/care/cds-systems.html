@@ -840,23 +840,21 @@
             <div class="modal-body d-flex justify-content-center align-items-center">
               <!-- Zoom Out map -->
               <div class="zoom-out-map position-relative">
-                <img src="../../img/diagnosis_map-zoomout.png">
-                <!-- DIAGNOSIS -->
-                <div id="diagnosis-dropdown" class="position-absolute map-dropdown-menu">
-                  <button class="btn btn-light dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton"
+                <img src="../../img/care_map-zoomout.png">
+                <!-- CARE -->
+                <div id="care-dropdown" class="position-absolute map-dropdown-menu">
+                  <button id="care-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown" type="button"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    DIAGNOSIS
+                    Personalized<br/>Care Plan
                     <img src="../../img/toggle_left.png">
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="../diagnosis/diagnostics.html">Diagnostics</a>
-                    <a class="dropdown-item" href="../diagnosis/genomics.html">Genomics</a>
-                    <a class="dropdown-item" href="../diagnosis/advanced-imaging.html">Advanced Imaging</a>
-                    <a class="dropdown-item" href="../diagnosis/digital-pathology.html">Digital Pathology</a>
-                    <a class="dropdown-item" href="../diagnosis/cds-systems.html">CDS Systems</a>
-                    <a class="dropdown-item" href="../diagnosis/digital-health.html">Digital Health</a>
+                  <div class="dropdown-menu multi-line-title" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../care/diagnostics.html">Diagnostics</a>
+                    <a class="dropdown-item" href="../care/cds-systems.html">CDS Systems</a>
+                    <a class="dropdown-item" href="../care/molecularly-guided.html">Molecularly-Guided Therapy</a>
+                    <a class="dropdown-item" href="../care/digital-health.html">Digital Health</a>
                   </div>
-                </div><!-- DIAGNOSIS -->
+                </div><!-- CARE -->
               </div><!-- Zoom Out map -->
               <div data-dismiss="modal" data-toggle="modal" data-target="#diagnosis-connections"
                    class="zoom-out-button position-absolute d-flex align-items-center justify-content-center">
@@ -864,7 +862,7 @@
                   Back to<br/>interconnections
                 </div>
                 <div class="col-lg-6">
-                  <img src="../../img/map_Icon.png">
+                  <img src="../../img/zoom-in-icon.png">
                 </div>
               </div>
             </div><!-- Modal Body -->
