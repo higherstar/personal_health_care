@@ -59,7 +59,6 @@
           </div>
           <span>SEARCH</span>
         </div>
-
         <div id="mobile-search"
              class="side-bar-search d-flex align-items-center justify-content-between position-absolute d-md-none d-sm-block">
           <div class="side-bar-search-icon">
@@ -80,13 +79,19 @@
           <a href="#" class="side-bar-menu-title active">ENABLERS</a>
         </div>
         <div class="mobile-side-bar-submenu-item">
+          <a href="../enablers/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
           <a href="../enablers/data-policy.html" class="side-bar-submenu-title">Data Policy</a>
         </div>
         <div class="mobile-side-bar-submenu-item">
           <a href="../enablers/advanced-analytics.html" class="side-bar-submenu-title">Advanced Analytics</a>
         </div>
-        <div class="mobile-side-bar-submenu-item active">
-          <a href="../enablers/it-infrastructure.html" class="side-bar-submenu-title active">IT Infrastructure</a>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../enablers/phc-it.html" class="side-bar-submenu-title active">PHC IX/Technology</a>
+        </div>
+        <div class="mobile-side-bar-submenu-item">
+          <a href="../enablers/patient-partnerships.html" class="side-bar-submenu-title active">Patient Partnerships</a>
         </div>
       </div>
       <ul class="list-unstyled side-bar-content">
@@ -103,7 +108,8 @@
           </svg>
         </li>
         <li class="side-bar-menu">
-          <a href="../diagnosis/diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <a href="../diagnosis/diagnostics.html" aria-expanded="true"
+             class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
           <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
                xml:space="preserve">
@@ -163,13 +169,20 @@
           </svg>
           <ul class="collapse list-unstyled submenu-list d-none d-md-block d-sm-none active show" id="enablers-submenu">
             <li class="side-bar-submenu">
+              <a href="../enablers/real-world-data.html" class="side-bar-submenu-title">Real-World Data</a>
+            </li>
+            <li class="side-bar-submenu">
               <a href="../enablers/data-policy.html" class="side-bar-submenu-title">Data Policy</a>
             </li>
             <li class="side-bar-submenu">
               <a href="../enablers/advanced-analytics.html" class="side-bar-submenu-title">Advanced Analytics</a>
             </li>
+            <li class="side-bar-submenu">
+              <a href="../enablers/phc-it.html" class="side-bar-submenu-title">PHC IX/Technology</a>
+            </li>
             <li class="side-bar-submenu active">
-              <a href="../enablers/it-infrastructure.html" class="side-bar-submenu-title active">IT Infrastructure</a>
+              <a href="../enablers/patient-partnerships.html" class="side-bar-submenu-title active">Patient
+                Partnerships</a>
             </li>
           </ul>
         </li>
@@ -198,6 +211,13 @@
         <div class="col-lg-6 enablers-map position-relative d-flex justify-content-center">
           <div class="enablers-details-map position-absolute">
             <img src="../../img/enablers-map.png">
+            <div id="real-world-data" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="real-world-data-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="real-world-data-btn-title" class="custom-expand-btn-title">Real-World Data</p>
+            </div>
             <div id="data-policy" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="data-policy-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
@@ -205,7 +225,6 @@
               </button>
               <p id="data-policy-btn-title" class="custom-expand-btn-title">Data Policy</p>
             </div>
-
             <div id="advanced-analytics" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="advanced-analytics-btn">
                 <span class="custom-expand-btn-plus" style="display: block">+</span>
@@ -213,14 +232,20 @@
               </button>
               <p id="advanced-analytics-btn-title" class="custom-expand-btn-title">Advanced Analytics</p>
             </div>
-
-            <div id="it-infrastructure" class="position-absolute expand-btn-field">
-              <button type="button" class="btn btn-primary custom-expand-btn" id="it-infrastructure-btn">
+            <div id="phc-it" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="phc-it-btn">
+                <span class="custom-expand-btn-plus" style="display: block">+</span>
+                <span class="custom-expand-btn-minus" style="display: none">-</span>
+              </button>
+              <p id="phc-it-btn-title" class="custom-expand-btn-title">PHC IX/Technology</p>
+            </div>
+            <div id="patient-partnerships" class="position-absolute expand-btn-field">
+              <button type="button" class="btn btn-primary custom-expand-btn" id="patient-partnerships-btn">
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="it-infrastructure-btn-title" class="custom-expand-btn-title" style="display: block">IT
-                Infrastructure</p>
+              <p id="patient-partnerships-btn-title" class="custom-expand-btn-title" style="display: block">Patient
+                Partnerships</p>
             </div>
           </div>
         </div>
@@ -235,35 +260,156 @@
             <div class="enablers-right-header d-flex">
               <img id="enablers-details-prev" class="details-btn-prev btn details-prev-next"
                    src="../../img/toggle_prev.png">
-              <h1 class="enablers-details-title show">IT Infrastructure</h1>
+              <h1 class="enablers-details-title show">Patient Partnerships</h1>
               <img id="enablers-details-next" class="details-btn-next btn details-prev-next"
                    src="../../img/toggle_next.png">
             </div>
             <div class="enablers-right-border-div"></div>
             <div class="enablers-details-content enablers-right-content show">
-              <h2>Description & why it is important</h2>
-              <p>To enable the development of highly-sophisticated algorithms and support the processing of increasing
-                volumes and types of data, we are building a leading-edge IT infrastructure that will provide faster,
-                and more powerful computing capabilities to store and process our data.<sup>1</sup>
+              <h2>Description</h2>
+              <p>Our goal is to amplify patients’ voice in shaping the future of personalized healthcare by
+                orchestrating Roche patient partnerships, both internally and externally.
               </p>
-              <h2>Connection to our PHC Vision and Strategy</h2>
-              <span>The PHC IT/Technology team supports the entire PHC engine through:<sup>3</sup>
-                <li>PHC MDAS management platform</li>
-                <li>PHC Digital Health apps & sensor platform</li>
-                <li>PHC Advanced Analytics platform</li>
-                <li>Dedicated PHC informatics team</li>
-              </span>
+              <img data-toggle="modal" data-target="#patient-partnerships-description"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
+                   src="../../img/patient-partnerships-description.png">
+              <img class="image-description-modal-content d-sm-block d-md-none"
+                   src="../../img/patient-partnerships-description.png">
+              <h2>Patient Partnership in PHC
+              </h2>
+              <p>PHC is important because of its potential to improve the health and wellbeing of people
+                living with different conditions. Key benefits for patients include better prediction of
+                those who are at risk of disease, earlier diagnosis, more targeted treatment and care,
+                earlier detection and management of side effects, improved quality of life and enhanced
+                health and wellbeing.
+              </p>
+              <p>
+                Despite advances that have been made to date, much work is needed to ensure that patients have access
+                to the potentially transformative benefits of PHC, Patient communities have an important role to play
+                in advancing the PHC agenda.
+              </p>
+              <h2>Strategic Pillars (2019 – 2021)
+              </h2>
+              <img data-toggle="modal" data-target="#strategic-pillars"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
+                   src="../../img/strategic-pillars.png">
+              <img class="image-description-modal-content d-sm-block d-md-none"
+                   src="../../img/strategic-pillars.png">
               <hr>
-              <h2>Roche and Roche partner examples/initiatives<sup>2</sup></h2>
-              <p>Roche Science Infrastructure (RSI) program provides the technological foundation for PHC by
-                providing a dedicated high-speed network for transferring data (Roche Science Network), access to
-                high-performance computing, tiered storage, and access to cloud-based platforms. It allows Roche to
-                easily access, rapidly share, and quickly compute on important datasets.
+              <h2>Tactics Overview (2019 – 2021)
+              </h2>
+              <img data-toggle="modal" data-target="#tactics-overview"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
+                   src="../../img/tactics-overview.png">
+              <img class="image-description-modal-content d-sm-block d-md-none"
+                   src="../../img/tactics-overview.png">
+              <hr>
+              <h2>Patient Partnership along the molecule lifecycle
+              </h2>
+              <p>Patient partnerships play a pivotal role to inform, optimize and improve the outcomes of our
+                programs across the value chain. Different partnership activities alongside other stakeholders
+                can achieve differing goals along the value chain.
               </p>
+              <p>
+                <strong>Goals of patient partnership across the value chain:
+                </strong><br/>
+                Along the product life cycle, Patient Partnership leads and supports cross-functional
+                teams & activities.
+              </p>
+              <img data-toggle="modal" data-target="#product-lifecycle"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
+                   src="../../img/product-lifecycle.png">
+              <img class="image-description-modal-content d-sm-block d-md-none"
+                   src="../../img/product-lifecycle.png">
+              <span>
+                To learn more, check out the Integrated Patient Partnership (iPP)
+                Community: <a href="https://sites.google.com/roche.com/patient-partnership/home">
+                https://sites.google.com/roche.com/patient-partnership/home</a>
+              </span>
             </div>
           </div><!-- IT Infrastructure -->
         </div><!-- IT Infrastructure Details -->
       </div><!-- Details Map -->
+      <!--=========================================
+          Patient Partnerships Description Modal
+      ==========================================-->
+      <div class="modal fade image-description-modal" id="patient-partnerships-description">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/patient-partnerships-description.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Patient Partnerships Description Modal -->
+      <!--=========================================
+          Strategic Pillars Modal
+      ==========================================-->
+      <div class="modal fade image-description-modal" id="strategic-pillars">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/strategic-pillars.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Strategic Pillars Modal -->
+      <!--=========================================
+          Tactics Overview Modal
+      ==========================================-->
+      <div class="modal fade image-description-modal" id="tactics-overview">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/tactics-overview.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Tactics Overview Modal -->
+      <!--=========================================
+          Product Lifecycle Modal
+      ==========================================-->
+      <div class="modal fade image-description-modal" id="product-lifecycle">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog modal-lg">
+
+          <!-- Modal Content -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><span>&times;</span></button>
+            </div><!-- Modal Header -->
+            <!-- Modal Body -->
+            <div class="modal-body d-flex text-center">
+              <img src="../../img/product-lifecycle.png">
+            </div><!-- Modal Body -->
+          </div><!-- Modal Content -->
+        </div><!-- Modal Dialog -->
+      </div><!-- Product Lifecycle Modal -->
       <!--==========================
         Search Modal
       ============================-->

@@ -474,7 +474,7 @@ const data = [{
   },
   {
     "page": "ENABLERS",
-    "url": "../enablers/it-infrastructure.html",
+    "url": "../enablers/phc-it.html",
     "content": "Description & why it is important for PHC Our goal is to empower R&D and the business with a " +
       "fit-for-purpose, scalable and sustainable technology ecosystem to deliver on personalized healthcare " +
       "(PHC)’s mission to bring the right treatment to each patient and to improve Personalized Patient Care & Access. " +
@@ -550,6 +550,29 @@ const data = [{
       "Taking into consideration that the market for structured / curated data is nascent " +
       "Taking into consideration the possibility of immature consensus of defining regulatory-grade " +
       "RWD and levels of quality that are fit-for-purpose"
+  },
+  {
+    "page": "ENABLERS",
+    "url": "../enablers/patient-partnerships.html",
+    "content": "Description " +
+      "Our goal is to amplify patients’ voice in shaping the future of personalized healthcare by orchestrating " +
+      "Roche patient partnerships, both internally and externally. " +
+      "Patient Partnership in PHC " +
+      "PHC is important because of its potential to improve the health and wellbeing of people living with different " +
+      "conditions. Key benefits for patients include better prediction of those who are at risk of disease, " +
+      "earlier diagnosis, more targeted treatment and care, earlier detection and management of side effects, " +
+      "improved quality of life and enhanced health and wellbeing. " +
+      "Despite advances that have been made to date, much work is needed to ensure that patients have " +
+      "access to the potentially transformative benefits of PHC, Patient communities have an important " +
+      "role to play in advancing the PHC agenda. " +
+      "Strategic Pillars (2019 – 2021) Tactics Overview (2019 – 2021) Patient Partnership along the molecule lifecycle " +
+      "Patient partnerships play a pivotal role to inform, optimize and improve the outcomes of our programs " +
+      "across the value chain. Different partnership activities alongside other stakeholders can " +
+      "achieve differing goals along the value chain. " +
+      "Goals of patient partnership across the value chain: " +
+      "Along the product life cycle, Patient Partnership leads and supports cross-functional teams & activities. " +
+      "To learn more, check out the Integrated Patient Partnership (iPP) Community: " +
+      "https://sites.google.com/roche.com/patient-partnership/home"
   },
   {
     "page": "MONITORING",

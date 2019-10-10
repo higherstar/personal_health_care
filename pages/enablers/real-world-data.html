@@ -109,7 +109,8 @@
           </svg>
         </li>
         <li class="side-bar-menu">
-          <a href="../diagnosis/diagnostics.html" aria-expanded="true" class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
+          <a href="../diagnosis/diagnostics.html" aria-expanded="true"
+             class="dropdown-toggle side-bar-menu-title active">DIAGNOSIS</a>
           <svg class="side-bar-menu-arrow-right d-md-none d-sm-block" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="25px" height="25px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
                xml:space="preserve">
@@ -215,7 +216,8 @@
                 <span class="custom-expand-btn-plus" style="display: none">+</span>
                 <span class="custom-expand-btn-minus" style="display: block">-</span>
               </button>
-              <p id="real-world-data-btn-title" class="custom-expand-btn-title" style="display: block">Real-World Data</p>
+              <p id="real-world-data-btn-title" class="custom-expand-btn-title" style="display: block">Real-World
+                Data</p>
             </div>
             <div id="data-policy" class="position-absolute expand-btn-field">
               <button type="button" class="btn btn-primary custom-expand-btn" id="data-policy-btn">
@@ -297,9 +299,9 @@
               </p>
               <img data-toggle="modal"
                    data-target="#real-world-data-benefit"
-                   class="real-world-data-content-image d-none d-sm-none d-md-block"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
                    src="../../img/rwd-benefit.png">
-              <img class="real-world-data-content-image d-sm-block d-md-none"
+              <img class="image-description-modal-content d-sm-block d-md-none"
                    src="../../img/rwd-benefit.png">
               <span>RWD is a key component of our PHC vision and strategy because:
                 <li>
@@ -323,9 +325,9 @@
               </p>
               <img data-toggle="modal"
                    data-target="#real-world-data-roche"
-                   class="real-world-data-content-image d-none d-sm-none d-md-block"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
                    src="../../img/real-world-roche.png">
-              <img class="real-world-data-content-image d-sm-block d-md-none"
+              <img class="image-description-modal-content d-sm-block d-md-none"
                    src="../../img/real-world-roche.png">
               <p>Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
                 <sup>5</sup>
@@ -345,9 +347,9 @@
                 </div>
               </div>
               <img data-toggle="modal" data-target="#real-world-data-roche-use"
-                   class="real-world-data-roche-use-image d-none d-sm-none d-md-block"
+                   class="image-description-modal-content d-none d-sm-none d-md-block"
                    src="../../img/real-world-roche-use.png">
-              <img class="real-world-data-roche-use-image d-sm-block d-md-none"
+              <img class="image-description-modal-content d-sm-block d-md-none"
                    src="../../img/real-world-roche-use.png">
               <hr>
               <strong class="d-none d-sm-none d-md-block">Click button below to see:</strong>
@@ -505,7 +507,7 @@
                     </div>
                     <div class="key-card-content-block position-relative">
                       IT infrastructure
-                      <a href="../enablers/it-infrastructure.html" id="it-infrastructure-star"
+                      <a href="patient-partnerships.html" id="it-infrastructure-star"
                          class="key-card-content-star position-absolute">*</a>
                       <div class="key-card-content-block-right"></div>
                     </div>
@@ -704,7 +706,7 @@
       <!--===================================
           Real World Data benefit Modal
       =====================================-->
-      <div class="modal fade" id="real-world-data-benefit">
+      <div class="modal fade image-description-modal" id="real-world-data-benefit">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -720,11 +722,11 @@
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
-      </div><!-- Real World Data Connections Modal -->
+      </div><!-- Real World Data benefit Modal -->
       <!--===================================
           Real World Data Roche Modal
       =====================================-->
-      <div class="modal fade" id="real-world-data-roche">
+      <div class="modal fade image-description-modal" id="real-world-data-roche">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -740,11 +742,11 @@
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
-      </div><!-- Real World Data Connections Modal -->
+      </div><!-- Real World Data Roche Modal -->
       <!--===================================
-            Real World Data Roche Modal
-        =====================================-->
-      <div class="modal fade" id="real-world-data-roche-use">
+          Real World Data Roche use Modal
+      =====================================-->
+      <div class="modal fade image-description-modal" id="real-world-data-roche-use">
         <!-- Modal Dialog -->
         <div class="modal-dialog modal-lg">
 
@@ -774,7 +776,7 @@
             </div><!-- Modal Body -->
           </div><!-- Modal Content -->
         </div><!-- Modal Dialog -->
-      </div><!-- Real World Data Connections Modal -->
+      </div><!-- Real World Data use Modal -->
       <!--==========================
           Zoom Out Modal
       ============================-->
@@ -797,7 +799,8 @@
                 <img src="../../img/diagnosis_map-zoomout.png">
                 <!-- ENABLERS -->
                 <div id="enablers-dropdown" class="position-absolute map-dropdown-menu">
-                  <button id="enablers-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown red-color" type="button"
+                  <button id="enablers-drop-btn" class="btn btn-light dropdown-toggle custom-dropdown red-color"
+                          type="button"
                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Enablers
                     <img src="../../img/toggle_left_red.png">
@@ -807,7 +810,7 @@
                     <a class="dropdown-item" href="../enablers/data-policy.html">Data Policy</a>
                     <a class="dropdown-item" href="../enablers/advanced-analytics.html">Advanced Analytics</a>
                     <a class="dropdown-item" href="../enablers/phc-it.html">PHC IX/Technology</a>
-                    <a class="dropdown-item" href="../enablers/parent-partnerships.html">Parent Partnerships</a>
+                    <a class="dropdown-item" href="../enablers/patient-partnerships.html">Parent Partnerships</a>
                   </div>
                 </div><!-- ENABLERS -->
               </div><!-- Zoom Out map -->
