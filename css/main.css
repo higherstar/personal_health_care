@@ -581,6 +581,12 @@ hr {
   border-color: #0066cc99;
 }
 
+.zoom-out-map-dropdown:focus, .zoom-out-map-dropdown:hover {
+  background: #f09922 !important;
+  color: white !important;
+  border-color: #f0992299 !important;
+}
+
 @media (max-width: 750px) {
   .map-dropdown-menu .dropdown-menu {
     top: -15px !important;
