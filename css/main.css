@@ -161,7 +161,7 @@ hr {
 }
 
 .side-bar-content {
-  padding-top: 60%;
+  padding-top: 50%;
   height: 100%;
   width: 100%;
 }
@@ -175,7 +175,7 @@ hr {
 }
 
 .side-bar-menu {
-  padding-bottom: 6px;
+  padding-bottom: 3px;
   padding-left: calc(23vw + 21px);
   margin-left: -23vw;
   position: relative;
@@ -242,7 +242,7 @@ hr {
   background-color: #71c6ff;
   right: 0;
   top: 0;
-  margin-top: calc(150% + 30px);
+  margin-top: 70px;
   margin-right: -143px;
   width: 160px;
   height: fit-content;
@@ -276,6 +276,10 @@ hr {
 }
 
 @media (max-width: 750px) {
+  .side-bar-menu-title {
+    font-size: 15px;
+  }
+
   .side-bar-wrapper {
     width: 100%
   }

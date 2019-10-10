@@ -106,6 +106,15 @@
   font-weight: bold;
 }
 
+#welcome-modal .modal-header {
+  background: #efefef;
+  padding: 0 20px;
+}
+
+#welcome-modal .modal-header p {
+  color: black !important;
+}
+
 @media (min-width: 992px) {
   #welcome-modal .modal-lg {
     max-width: 710px;
