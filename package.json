@@ -22,7 +22,7 @@
     "routes": "^2.1.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/scss/index.scss src/index.css --watch",
+    "build-css": "node-sass-chokidar src/sass/index.scss src/index.css --watch",
     "app": "set port=3001 && npm-run-all -p build-css start",
     "start": "react-scripts start",
     "build": "react-scripts build && echo '/*    /index.html   200' > build/_redirects",

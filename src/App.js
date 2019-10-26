@@ -5,13 +5,17 @@ import {
 
 import PublicRoute from './routes/publicRoutes';
 import HomePage from './pages/home';
+import Header from './components/header';
 
 function App(props) {
   return (
-    <Switch>
-      <Redirect exact from="/" to="/phc/homepage" />
-      <PublicRoute exact path="/phc/homepage" component={HomePage} props={props} />
-    </Switch>
+    <>
+      <Header />
+      <Switch>
+        <Redirect exact from="/" to="/phc/homepage" />
+        <PublicRoute exact path="/phc/homepage" component={HomePage} props={props} />
+      </Switch>
+    </>
   );
 }
 
