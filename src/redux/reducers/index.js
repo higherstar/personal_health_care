@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import main from './sidebar';
+import sideBar from './sidebar';
 
 export default combineReducers({
-  main,
+  sideBar,
 });

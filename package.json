@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.1.0",
     "antd": "^3.19.3",
     "bootstrap": "^4.3.1",
     "material-icons": "^0.3.1",
@@ -19,7 +18,8 @@
     "react-scroll-to-component": "^1.0.2",
     "react-slick": "^0.15.4",
     "redux": "^4.0.1",
-    "routes": "^2.1.0"
+    "routes": "^2.1.0",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/sass/index.scss src/index.css --watch",

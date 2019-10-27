@@ -1,14 +1,13 @@
 import React from 'react';
-import TopBar from '../../components/topbar';
+import PageContainer from '../../components/pagecontainer';
+
+const content = (
+  <h1>Homepage</h1>
+);
 
 function HomePage() {
   return (
-    <>
-      <TopBar title="WELCOME" color="blue" />
-      <div className="home-page">
-        <h1>HomePage</h1>
-      </div>
-    </>
+    <PageContainer page={content} />
   );
 }
 
