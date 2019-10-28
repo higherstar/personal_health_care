@@ -20,7 +20,9 @@ const backgroundColor = (color) => {
 };
 
 function TopBar(props) {
-  const { title, color, setCollapsed } = props;
+  const {
+    title, color, collapsed, setCollapsed,
+  } = props;
 
   const handleCollapse = (collapse) => {
     setCollapsed(collapse);
@@ -36,11 +38,12 @@ function TopBar(props) {
           handleChange={handleCollapse}
           className="collapse-button"
           color="white"
-          from={arrowRight}
-          to={arrowLeft}
+          from={arrowLeft}
+          to={arrowRight}
           border
         />
-        <span>Collapse the Navigation</span>
+        {!collapsed ? (<span>Collapse the Navigation</span>)
+          : (<span>Open the Navigation</span>)}
       </div>
       <span>{title}</span>
     </div>
@@ -50,14 +53,19 @@ function TopBar(props) {
 TopBar.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  collapsed: PropTypes.bool.isRequired,
   setCollapsed: PropTypes.func.isRequired,
 };
+
+const mapStateToProps = (store) => ({
+  collapsed: store.sideBar.collapsed,
+});
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   setCollapsed,
 }, dispatch);
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps,
 )(TopBar);

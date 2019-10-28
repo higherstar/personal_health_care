@@ -44,7 +44,7 @@ function ToggleButton(props) {
   };
 
   return (
-    <Button onClick={onClick} className={className}>
+    <Button onClick={onClick} className={`custom-button ${className}`}>
       <img src={state ? from : to} alt="toggle from" style={imageStyle} />
     </Button>
   );

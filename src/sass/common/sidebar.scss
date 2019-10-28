@@ -1,10 +1,10 @@
 .side-bar {
   height: calc(100vh - 112px);
-  background: #FFFFFFAD;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transition: 0.4s all ease;
 
   .side-bar-left-band {
     width: 5px;
@@ -33,5 +33,12 @@
   .side-bar-content {
     width: 100%;
     height: calc(100% - 147px);
+    position: relative;
+
+    .search-button {
+      position: absolute;
+      left: 28px;
+      top: 20px;
+    }
   }
 }
