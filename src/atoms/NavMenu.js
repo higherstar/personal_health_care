@@ -4,44 +4,12 @@ import PropTypes from 'prop-types';
 import connect from 'react-redux/es/connect/connect';
 import searchIcon from '../assets/atoms/search-icon.svg';
 
-const buttonStyle = {
-  width: '32px',
-  height: '32px',
-  background: 'white',
-  borderRadius: '16px',
-  cursor: 'pointer',
-  marginLeft: '4px',
-  position: 'absolute',
-};
-
-const inputStyle = {
-  width: 'calc(100% - 42px)',
-  border: '0',
-  borderRadius: '20px',
-  padding: '0 15px',
-  marginLeft: '38px',
-  marginRight: '4px',
-  fontSize: '20px',
-};
-
-const labelStyle = {
-  width: '100%',
-  fontSize: '20px',
-  color: 'white',
-  marginLeft: '48px',
-};
-
-const imageStyle = {
-  width: '23px',
-  marginRight: '2px',
-  marginLeft: '1px',
-};
-
-function SearchButton(props) {
+function NavMenu(props) {
   const {
     className,
     collapsed,
   } = props;
+
 
   const [state, setState] = useState(true);
   const onClick = () => {
@@ -53,6 +21,13 @@ function SearchButton(props) {
     setState(true);
   }, [collapsed]);
 
+
+  const imageStyle = {
+    width: '23px',
+    marginRight: '2px',
+    marginLeft: '1px',
+  };
+
   const contentStyle = {
     width: collapsed ? '40px' : '280px',
     height: '40px',
@@ -62,32 +37,36 @@ function SearchButton(props) {
     cursor: 'pointer',
   };
 
+  const labelStyle = {
+    width: '100%',
+    fontSize: '20px',
+    color: 'white',
+    marginLeft: '48px',
+  };
+
+
   return (
     <div className={`d-flex align-items-center ${className}`} style={contentStyle}>
-      <div
-        onClick={onClick}
-        className="custom-button d-flex align-items-center justify-content-center"
-        style={buttonStyle}
-      >
+      <Button onClick={onClick} className="custom-button">
         <img src={searchIcon} alt="search icon" style={imageStyle} />
-      </div>
+      </Button>
       { !collapsed && (
         <>
           {state ? (
             <span onClick={onClick} style={labelStyle}>SEARCH</span>
-          ) : (<input className="custom-input" type="text" placeholder="Search" style={inputStyle} />)}
+          ) : (<Input className="custom-input" type="text" placeholder="Search" />)}
         </>
       )}
     </div>
   );
 }
 
-SearchButton.propTypes = {
+NavMenu.propTypes = {
   className: PropTypes.string,
   collapsed: PropTypes.bool.isRequired,
 };
 
-SearchButton.defaultProps = {
+NavMenu.defaultProps = {
   className: 'search-button',
 };
 
@@ -97,4 +76,4 @@ const mapStateToProps = (store) => ({
 
 export default connect(
   mapStateToProps,
-)(SearchButton);
+)(NavMenu);

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 const backgroundColor = (color) => {
   switch (color) {
@@ -20,22 +19,19 @@ function ToggleButton(props) {
     color, border, from, to, className, handleChange,
   } = props;
 
-  const Button = styled.div`
-  width: 36px;
-  height: 36px;
-  background: ${backgroundColor(color)};
-  ${border && 'border: 4px solid #71C6FF;'}
-  border-radius: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  `;
-
   const [state, setState] = useState(true);
   const onClick = () => {
     setState(!state);
     handleChange(state);
+  };
+
+  const buttonStyle = {
+    width: '36px',
+    height: '36px',
+    background: `${backgroundColor(color)}`,
+    border: border && '4px solid #71C6FF',
+    borderRadius: '20px',
+    cursor: 'pointer',
   };
 
   const imageStyle = {
@@ -45,9 +41,13 @@ function ToggleButton(props) {
   };
 
   return (
-    <Button onClick={onClick} className={`custom-button ${className}`}>
+    <div
+      onClick={onClick}
+      className={`d-flex align-items-center justify-content-center custom-button ${className}`}
+      style={buttonStyle}
+    >
       <img src={state ? from : to} alt="toggle from" style={imageStyle} />
-    </Button>
+    </div>
   );
 }
 

@@ -22,8 +22,7 @@
     "react-slick": "^0.15.4",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "routes": "^2.1.0",
-    "styled-components": "^4.4.0"
+    "routes": "^2.1.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/sass/index.scss src/index.css --watch",
