@@ -32,15 +32,16 @@ function ToggleButton(props) {
   align-items: center;
   `;
 
-  const imageStyle = {
-    width: '9px',
-    position: 'absolute',
-  };
-
   const [state, setState] = useState(true);
   const onClick = () => {
     setState(!state);
     handleChange(state);
+  };
+
+  const imageStyle = {
+    width: '10px',
+    position: 'absolute',
+    marginLeft: state ? '-1px' : '1px',
   };
 
   return (

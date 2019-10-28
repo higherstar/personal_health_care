@@ -12,6 +12,11 @@ function SideBar(props) {
     background: collapsed ? 'white' : '#FFFFFFAD',
   };
 
+  const footerStyle = {
+    height: collapsed ? '0' : '95px',
+    borderTop: collapsed ? 'none' : '5px solid #71C6FF',
+  };
+
   return (
     <div className="side-bar" style={sideBarStyle}>
       <div className="side-bar-left-band" />
@@ -19,7 +24,7 @@ function SideBar(props) {
       <div className="side-bar-content">
         <SearchButton className="search-button" />
       </div>
-      {!collapsed && (<div className="side-bar-footer" />)}
+      <div className="side-bar-footer" style={footerStyle} />
     </div>
   );
 }
