@@ -17,10 +17,10 @@ const backgroundColor = (color) => {
 
 function ToggleButton(props) {
   const {
-    color, border, from, to,
+    color, border, from, to, className, handleChange,
   } = props;
 
-  const Button = styled.button`
+  const Button = styled.div`
   width: 36px;
   height: 36px;
   background: ${backgroundColor(color)};
@@ -34,15 +34,17 @@ function ToggleButton(props) {
 
   const imageStyle = {
     width: '9px',
+    position: 'absolute',
   };
 
   const [state, setState] = useState(true);
   const onClick = () => {
     setState(!state);
+    handleChange(state);
   };
 
   return (
-    <Button onClick={onClick}>
+    <Button onClick={onClick} className={className}>
       <img src={state ? from : to} alt="toggle from" style={imageStyle} />
     </Button>
   );
@@ -53,6 +55,8 @@ ToggleButton.propTypes = {
   border: PropTypes.bool,
   from: PropTypes.node.isRequired,
   to: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 ToggleButton.defaultProps = {

@@ -1,7 +1,7 @@
 import actionTypes from '../actionTypes';
 
 const INITIAL_STATE = {
-  collapsed: true,
+  collapsed: false,
 };
 
 export default (state = INITIAL_STATE, action) => {

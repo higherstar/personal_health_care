@@ -6,9 +6,9 @@
   left: 0;
   z-index: 1;
 
-  .left-band {
+  .side-bar-left-band {
     width: 5px;
-    height: calc(100% - 95px);
+    height: 100%;
     background: #71C6FF;
     position: absolute;
     top: 0;
@@ -26,9 +26,11 @@
     height: 95px;
     background: #D8D8D8;
     border-top: 5px solid #71C6FF;
+    position: absolute;
+    bottom: 0;
   }
 
-  .content {
+  .side-bar-content {
     width: 100%;
     height: calc(100% - 147px);
   }

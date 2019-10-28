@@ -13,4 +13,27 @@
     color: white;
     margin-bottom: 0;
   }
+
+  .side-bar-header {
+    height: 52px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    .collapse-button {
+      margin-left: 28px;
+      z-index: 1;
+    }
+
+    .collapse-button:active {
+      background: #8DD1FF;
+    }
+
+    span {
+      font-size: 20px;
+      color: white;
+      margin-left: 10px;
+    }
+  }
 }

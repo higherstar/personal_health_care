@@ -1,19 +1,32 @@
 import React from 'react';
-import ToggleButton from '../../atoms/ToggleButton';
-import arrowRight from '../../assets/atoms/arrow-right.svg';
-import arrowLeft from '../../assets/atoms/arrow-left.svg';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-function SideBar() {
+function SideBar(props) {
+  const { collapsed } = props;
+
   return (
-    <div className="side-bar" style={{ width: '318px' }}>
-      <div className="left-band" />
-      <div className="side-bar-header">
-        <ToggleButton color="white" from={arrowRight} to={arrowLeft} border />
-      </div>
-      <div className="content" />
-      <div className="side-bar-footer" />
+    <div className="side-bar" style={{ width: collapsed ? '93px' : '318px' }}>
+      <div className="side-bar-left-band" />
+      <div className="side-bar-header" />
+      <div className="side-bar-content" />
+      {!collapsed && (<div className="side-bar-footer" />)}
     </div>
   );
 }
 
-export default SideBar;
+SideBar.propTypes = {
+  collapsed: PropTypes.bool,
+};
+
+SideBar.defaultProps = {
+  collapsed: false,
+};
+
+const mapStateToProps = (store) => ({
+  collapsed: store.sideBar.collapsed,
+});
+
+export default connect(
+  mapStateToProps,
+)(SideBar);
