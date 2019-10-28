@@ -14,23 +14,6 @@ const buttonStyle = {
   position: 'absolute',
 };
 
-const inputStyle = {
-  width: 'calc(100% - 42px)',
-  border: '0',
-  borderRadius: '20px',
-  padding: '0 15px',
-  marginLeft: '38px',
-  marginRight: '4px',
-  fontSize: '20px',
-};
-
-const labelStyle = {
-  width: '100%',
-  fontSize: '20px',
-  color: 'white',
-  marginLeft: '48px',
-};
-
 const imageStyle = {
   width: '23px',
   marginRight: '2px',
@@ -58,8 +41,27 @@ function SearchButton(props) {
     height: '40px',
     background: '#71C6FF',
     borderRadius: '20px',
-    transition: '0.4s all ease',
     cursor: 'pointer',
+    transition: '0.4s all ease',
+  };
+
+  const labelStyle = {
+    width: '100%',
+    fontSize: collapsed ? 0 : '20px',
+    color: 'white',
+    marginLeft: '48px',
+    transition: '0.4s all ease',
+  };
+
+  const inputStyle = {
+    width: 'calc(100% - 42px)',
+    border: '0',
+    borderRadius: '20px',
+    padding: '0 15px',
+    marginLeft: '38px',
+    marginRight: '4px',
+    fontSize: '20px',
+    display: collapsed ? 'none' : 'block',
   };
 
   return (
@@ -71,13 +73,9 @@ function SearchButton(props) {
       >
         <img src={searchIcon} alt="search icon" style={imageStyle} />
       </div>
-      { !collapsed && (
-        <>
-          {state ? (
-            <span onClick={onClick} style={labelStyle}>SEARCH</span>
-          ) : (<input className="custom-input" type="text" placeholder="Search" style={inputStyle} />)}
-        </>
-      )}
+      {state ? (
+        <span onClick={onClick} style={labelStyle}>SEARCH</span>
+      ) : (<input className="custom-input" type="text" placeholder="Search" style={inputStyle} />)}
     </div>
   );
 }

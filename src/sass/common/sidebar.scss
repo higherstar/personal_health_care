@@ -13,6 +13,7 @@
     position: absolute;
     top: 0;
     left: 44px;
+    z-index: 1;
   }
 
   .side-bar-header {
@@ -26,6 +27,7 @@
     background: #D8D8D8;
     position: absolute;
     bottom: 0;
+    z-index: 2;
     transition: 0.4s all ease;
   }
 
@@ -38,6 +40,7 @@
       position: absolute;
       left: 25px;
       top: 20px;
+      z-index: 2;
     }
   }
 }

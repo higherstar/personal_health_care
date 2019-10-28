@@ -1,5 +1,5 @@
 .custom-button:active {
-  background: #8DD1FF; }
+  background: #8DD1FF !important; }
 
 .custom-input:focus {
   outline: none; }
@@ -60,7 +60,8 @@
     background: #71C6FF;
     position: absolute;
     top: 0;
-    left: 44px; }
+    left: 44px;
+    z-index: 1; }
   .side-bar .side-bar-header {
     width: 100%;
     height: 52px;
@@ -70,6 +71,7 @@
     background: #D8D8D8;
     position: absolute;
     bottom: 0;
+    z-index: 2;
     transition: 0.4s all ease; }
   .side-bar .side-bar-content {
     width: 100%;
@@ -78,7 +80,8 @@
     .side-bar .side-bar-content .search-button {
       position: absolute;
       left: 25px;
-      top: 20px; }
+      top: 20px;
+      z-index: 2; }
 
 .page-container {
   width: 100vw;
