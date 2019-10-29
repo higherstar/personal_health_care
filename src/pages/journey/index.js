@@ -16,7 +16,13 @@ const navOptions = [
     title: 'FUTURE PATIENT JOURNEY',
     top: 140,
     active: true,
-    subMenus: [],
+    subMenus: [
+      'Early Personalised Diagnosis',
+      'Personalised Care Plan',
+      'Rapid Access to Personalised Interventions',
+      'Personalised Remote Monitoring & Care',
+      'Data & Insights',
+    ],
   },
   {
     id: 2,

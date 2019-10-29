@@ -9,6 +9,7 @@ function NavMenu(props) {
     className,
     title,
     subMenus,
+    navOptions,
     active,
     collapsed,
     handleMenuClick,
@@ -22,7 +23,7 @@ function NavMenu(props) {
 
   const contentStyle = {
     width: '100%',
-    height: expanded ? `${subMenus.length * 40 + 40}px` : '40px',
+    height: `${subMenus.length * 50 + 40}px`,
     background: active ? 'white' : 'transparent',
     paddingLeft: '70px',
   };
@@ -38,26 +39,27 @@ function NavMenu(props) {
     textDecoration: 'none',
   };
 
-  const subMenuStyle = {
+  const subMenuStyle = (index) => ({
+    height: '50px',
+    padding: '10px',
     fontSize: collapsed ? 0 : '18px',
     cursor: 'pointer',
+    borderBottom: index === subMenus.length - 1 ? 0 : '1px solid #EEEEEE',
     transition: '0.4s all ease',
-  };
+  });
 
   return (
     <div className={`${className}`} style={contentStyle} key={`menu_${index}`}>
       <Link to={link} className="d-flex align-items-center" style={listTitleStyle} onClick={handleTitleClick}>
         <span>{title}</span>
       </Link>
-      {expanded && (
-        <div>
-          {subMenus.map((subMenu) => (
-            <div key={subMenu.replace(/\s/g, '')}>
-              <span style={subMenuStyle}>{subMenu}</span>
-            </div>
-          ))}
-        </div>
-      )}
+      <div>
+        {subMenus.map((subMenu, index) => (
+          <div key={subMenu.replace(/\s/g, '')} style={subMenuStyle(index)} className="d-flex align-items-center">
+            <span style={{ width: '210px', lineHeight: '18px' }}>{subMenu}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -68,6 +70,7 @@ NavMenu.propTypes = {
   className: PropTypes.string,
   title: PropTypes.string.isRequired,
   subMenus: PropTypes.array.isRequired,
+  navOptions: PropTypes.array.isRequired,
   active: PropTypes.bool.isRequired,
   collapsed: PropTypes.bool.isRequired,
   handleMenuClick: PropTypes.func.isRequired,

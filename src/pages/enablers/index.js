@@ -24,7 +24,11 @@ const navOptions = [
     title: 'SYSTEMS ENABLERS',
     top: 180,
     active: true,
-    subMenus: [],
+    subMenus: [
+      'Partners',
+      'Value-based Healthcare',
+      'Roche Initiatives',
+    ],
   },
   {
     id: 3,
