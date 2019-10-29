@@ -4,7 +4,7 @@ import PageContainer from '../../components/pagecontainer';
 const navOptions = [
   {
     id: 0,
-    level: 1,
+    level: 2,
     link: '/phc/homepage',
     title: 'WELCOME',
     top: 100,
@@ -13,7 +13,7 @@ const navOptions = [
   },
   {
     id: 1,
-    level: 1,
+    level: 2,
     link: '/phc/future-patient-journey',
     title: 'FUTURE PATIENT JOURNEY',
     top: 140,
@@ -22,25 +22,30 @@ const navOptions = [
   },
   {
     id: 2,
-    level: 1,
+    level: 2,
     link: '/phc/systems-enablers',
     title: 'SYSTEMS ENABLERS',
     top: 180,
+    active: true,
+    activeSubMenu: 2,
+    subMenus: [
+      'Partners',
+      'Value-based Healthcare',
+      'Roche Initiatives',
+    ],
+  },
+  {
+    id: 3,
+    level: 2,
+    link: '/phc/abbreviation',
+    title: 'ABBREVIATION LIST',
+    top: 220,
     active: false,
     subMenus: [],
   },
   {
-    id: 3,
-    level: 1,
-    link: '/phc/abbreviation',
-    title: 'ABBREVIATION LIST',
-    top: 220,
-    active: true,
-    subMenus: [],
-  },
-  {
     id: 4,
-    level: 1,
+    level: 2,
     link: '/phc/acknowledgements',
     title: 'ACKNOWLEDGEMENTS',
     top: 260,
@@ -49,9 +54,9 @@ const navOptions = [
   },
 ];
 
-function Abbreviation() {
+function RochesInitiatives() {
   const content = (
-    <h1>Abbreviation</h1>
+    <h1>Roches Initiatives</h1>
   );
 
   return (
@@ -59,4 +64,4 @@ function Abbreviation() {
   );
 }
 
-export default Abbreviation;
+export default RochesInitiatives;

@@ -4,6 +4,7 @@ import PageContainer from '../../components/pagecontainer';
 const navOptions = [
   {
     id: 0,
+    level: 1,
     link: '/phc/homepage',
     title: 'WELCOME',
     top: 100,
@@ -12,6 +13,7 @@ const navOptions = [
   },
   {
     id: 1,
+    level: 1,
     link: '/phc/future-patient-journey',
     title: 'FUTURE PATIENT JOURNEY',
     top: 140,
@@ -26,6 +28,7 @@ const navOptions = [
   },
   {
     id: 2,
+    level: 1,
     link: '/phc/systems-enablers',
     title: 'SYSTEMS ENABLERS',
     top: 180,
@@ -34,6 +37,7 @@ const navOptions = [
   },
   {
     id: 3,
+    level: 1,
     link: '/phc/abbreviation',
     title: 'ABBREVIATION LIST',
     top: 220,
@@ -42,6 +46,7 @@ const navOptions = [
   },
   {
     id: 4,
+    level: 1,
     link: '/phc/acknowledgements',
     title: 'ACKNOWLEDGEMENTS',
     top: 260,
