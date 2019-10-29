@@ -5,23 +5,17 @@
   "dependencies": {
     "antd": "^3.19.3",
     "bootstrap": "^4.3.1",
-    "connected-react-router": "^6.5.2",
-    "history": "latest",
     "material-icons": "^0.3.1",
     "netlify-cli": "^2.11.22",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-pose": "^4.0.8",
-    "react-redux": "^7.0.2",
     "react-router-dom": "^5.0.0",
-    "react-router-redux": "^4.0.8",
     "react-scripts": "3.2.0",
     "react-scroll": "^1.7.11",
     "react-scroll-to-component": "^1.0.2",
     "react-slick": "^0.15.4",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
     "routes": "^2.1.0"
   },
   "scripts": {

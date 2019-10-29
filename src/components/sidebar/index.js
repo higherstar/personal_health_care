@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
 import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
 
 function SideBar(props) {
-  const { collapsed } = props;
+  const { collapsed, navOptions } = props;
 
   const sideBarStyle = {
     width: collapsed ? '93px' : '318px',
@@ -17,34 +16,6 @@ function SideBar(props) {
     height: collapsed ? '0' : '95px',
     borderTop: collapsed ? 'none' : '5px solid #71C6FF',
   };
-
-  const navOptions = [
-    {
-      title: 'WELCOME',
-      top: 100,
-      active: true,
-    },
-    {
-      title: 'FUTURE PATIENT JOURNEY',
-      top: 140,
-      active: false,
-    },
-    {
-      title: 'SYSTEMS ENABLERS',
-      top: 180,
-      active: false,
-    },
-    {
-      title: 'ABBREVIATION LIST',
-      top: 220,
-      active: false,
-    },
-    {
-      title: 'ACKNOWLEDGEMENTS',
-      top: 260,
-      active: false,
-    },
-  ];
 
   const dotStyle = {
     width: '20px',
@@ -61,23 +32,34 @@ function SideBar(props) {
     position: 'absolute',
   };
 
+  const handleMenuClick = (key) => {
+    console.log(key);
+  };
+
   return (
     <div className="side-bar" style={sideBarStyle}>
       <div className="side-bar-left-band" />
       <div className="side-bar-header" />
       <div className="side-bar-content">
-        <SearchButton className="search-button" />
+        <SearchButton className="search-button" collapsed={collapsed} />
         <div className="side-bar-nav-dots">
           {navOptions.map((option) => (
-            <>
+            <div key={`nav_${option.id}`}>
               <div
                 className="nav-dot"
                 style={{ ...dotStyle, top: `${option.top}px`, background: option.active ? '#0066CC' : '#71C6FF' }}
               />
               <div className="nav-menu" style={{ ...navMenuStyle, top: `${option.top - 10}px` }}>
-                <NavMenu active={option.active} title={option.title} />
+                <NavMenu
+                  active={option.active}
+                  title={option.title}
+                  subMenus={option.subMenus}
+                  handleMenuClick={handleMenuClick}
+                  index={option.id}
+                  collapsed={collapsed}
+                />
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
@@ -88,16 +70,11 @@ function SideBar(props) {
 
 SideBar.propTypes = {
   collapsed: PropTypes.bool,
+  navOptions: PropTypes.array.isRequired,
 };
 
 SideBar.defaultProps = {
   collapsed: false,
 };
 
-const mapStateToProps = (store) => ({
-  collapsed: store.sideBar.collapsed,
-});
-
-export default connect(
-  mapStateToProps,
-)(SideBar);
+export default SideBar;

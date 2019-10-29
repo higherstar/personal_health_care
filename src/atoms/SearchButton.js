@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import connect from 'react-redux/es/connect/connect';
 import searchIcon from '../assets/atoms/search-icon.svg';
 
 const buttonStyle = {
@@ -89,10 +88,4 @@ SearchButton.defaultProps = {
   className: 'search-button',
 };
 
-const mapStateToProps = (store) => ({
-  collapsed: store.sideBar.collapsed,
-});
-
-export default connect(
-  mapStateToProps,
-)(SearchButton);
+export default SearchButton;

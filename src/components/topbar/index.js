@@ -1,9 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
-import { setCollapsed } from '../../redux/actions/sidebar';
 import ToggleButton from '../../atoms/ToggleButton';
 import arrowRight from '../../assets/atoms/arrow-right.svg';
 import arrowLeft from '../../assets/atoms/arrow-left.svg';
@@ -57,15 +54,4 @@ TopBar.propTypes = {
   setCollapsed: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (store) => ({
-  collapsed: store.sideBar.collapsed,
-});
-
-const mapDispatchToProps = (dispatch) => bindActionCreators({
-  setCollapsed,
-}, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(TopBar);
+export default TopBar;

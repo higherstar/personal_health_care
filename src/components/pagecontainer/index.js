@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import connect from 'react-redux/es/connect/connect';
 
 import TopBar from '../topbar';
 import SideBar from '../sidebar';
 import backgroundImage from '../../assets/common/background.png';
 
 function PageContainer(props) {
-  const { page, collapsed } = props;
+  const { navOptions, page } = props;
+
+  const [collapsed, setCollapsed] = useState(false);
+  const collapseSideBar = () => {
+    setCollapsed(!collapsed);
+  };
 
   const pageContentStyle = {
     width: collapsed ? 'calc(100vw - 93px)' : 'calc(100vw - 318px)',
@@ -20,9 +24,9 @@ function PageContainer(props) {
         <div className="background-image">
           <img src={backgroundImage} alt="background" />
         </div>
-        <TopBar title="WELCOME" color="blue" />
+        <TopBar title="WELCOME" color="blue" collapsed={collapsed} setCollapsed={collapseSideBar} />
         <div className="side-bar-wrapper">
-          <SideBar />
+          <SideBar navOptions={navOptions} collapsed={collapsed} />
         </div>
         <div className="page-content" style={pageContentStyle}>
           {page}
@@ -33,14 +37,8 @@ function PageContainer(props) {
 }
 
 PageContainer.propTypes = {
+  navOptions: PropTypes.array.isRequired,
   page: PropTypes.node.isRequired,
-  collapsed: PropTypes.bool.isRequired,
 };
 
-const mapStateToProps = (store) => ({
-  collapsed: store.sideBar.collapsed,
-});
-
-export default connect(
-  mapStateToProps,
-)(PageContainer);
+export default PageContainer;
