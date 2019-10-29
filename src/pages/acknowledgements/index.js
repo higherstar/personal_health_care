@@ -7,7 +7,7 @@ const navOptions = [
     link: '/phc/homepage',
     title: 'WELCOME',
     top: 100,
-    active: true,
+    active: false,
     subMenus: [],
   },
   {
@@ -39,14 +39,14 @@ const navOptions = [
     link: '/phc/acknowledgements',
     title: 'ACKNOWLEDGEMENTS',
     top: 260,
-    active: false,
+    active: true,
     subMenus: [],
   },
 ];
 
-function HomePage() {
+function Acknowledgements() {
   const content = (
-    <h1>Homepage</h1>
+    <h1>Acknowledgements</h1>
   );
 
   return (
@@ -54,4 +54,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Acknowledgements;

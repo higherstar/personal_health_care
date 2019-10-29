@@ -7,7 +7,7 @@ const navOptions = [
     link: '/phc/homepage',
     title: 'WELCOME',
     top: 100,
-    active: true,
+    active: false,
     subMenus: [],
   },
   {
@@ -15,7 +15,7 @@ const navOptions = [
     link: '/phc/future-patient-journey',
     title: 'FUTURE PATIENT JOURNEY',
     top: 140,
-    active: false,
+    active: true,
     subMenus: [],
   },
   {
@@ -44,9 +44,9 @@ const navOptions = [
   },
 ];
 
-function HomePage() {
+function Journey() {
   const content = (
-    <h1>Homepage</h1>
+    <h1>Journey</h1>
   );
 
   return (
@@ -54,4 +54,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Journey;

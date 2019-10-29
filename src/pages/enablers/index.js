@@ -7,7 +7,7 @@ const navOptions = [
     link: '/phc/homepage',
     title: 'WELCOME',
     top: 100,
-    active: true,
+    active: false,
     subMenus: [],
   },
   {
@@ -23,7 +23,7 @@ const navOptions = [
     link: '/phc/systems-enablers',
     title: 'SYSTEMS ENABLERS',
     top: 180,
-    active: false,
+    active: true,
     subMenus: [],
   },
   {
@@ -44,9 +44,9 @@ const navOptions = [
   },
 ];
 
-function HomePage() {
+function Enablers() {
   const content = (
-    <h1>Homepage</h1>
+    <h1>Enablers</h1>
   );
 
   return (
@@ -54,4 +54,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Enablers;

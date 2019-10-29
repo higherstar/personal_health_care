@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function NavMenu(props) {
   const {
+    link,
     index,
     className,
     title,
@@ -32,6 +34,8 @@ function NavMenu(props) {
     fontWeight: active ? 'bold' : 'normal',
     cursor: 'pointer',
     transition: '0.4s all ease',
+    color: 'black',
+    textDecoration: 'none',
   };
 
   const subMenuStyle = {
@@ -42,9 +46,9 @@ function NavMenu(props) {
 
   return (
     <div className={`${className}`} style={contentStyle} key={`menu_${index}`}>
-      <div className="d-flex align-items-center" style={listTitleStyle} onClick={handleTitleClick}>
+      <Link to={link} className="d-flex align-items-center" style={listTitleStyle} onClick={handleTitleClick}>
         <span>{title}</span>
-      </div>
+      </Link>
       {expanded && (
         <div>
           {subMenus.map((subMenu) => (
@@ -59,6 +63,7 @@ function NavMenu(props) {
 }
 
 NavMenu.propTypes = {
+  link: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
   className: PropTypes.string,
   title: PropTypes.string.isRequired,

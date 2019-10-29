@@ -7,7 +7,7 @@ const navOptions = [
     link: '/phc/homepage',
     title: 'WELCOME',
     top: 100,
-    active: true,
+    active: false,
     subMenus: [],
   },
   {
@@ -31,7 +31,7 @@ const navOptions = [
     link: '/phc/abbreviation',
     title: 'ABBREVIATION LIST',
     top: 220,
-    active: false,
+    active: true,
     subMenus: [],
   },
   {
@@ -44,9 +44,9 @@ const navOptions = [
   },
 ];
 
-function HomePage() {
+function Abbreviation() {
   const content = (
-    <h1>Homepage</h1>
+    <h1>Abbreviation</h1>
   );
 
   return (
@@ -54,4 +54,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Abbreviation;

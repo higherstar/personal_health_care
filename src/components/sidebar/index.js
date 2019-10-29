@@ -51,6 +51,7 @@ function SideBar(props) {
               />
               <div className="nav-menu" style={{ ...navMenuStyle, top: `${option.top - 10}px` }}>
                 <NavMenu
+                  link={option.link}
                   active={option.active}
                   title={option.title}
                   subMenus={option.subMenus}
