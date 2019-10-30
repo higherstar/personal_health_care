@@ -20,15 +20,23 @@ function SideBar(props) {
   };
 
   const defaultTop = [100, 140, 180, 220, 260, 300];
+  const defaultDotStyle = (top, index) => ({
+    width: '20px',
+    height: '20px',
+    background: activeMenu === index ? '#0066CC' : '#71C6FF',
+    position: 'absolute',
+    top: `${top}px`,
+    left: '36px',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    zIndex: 2,
+    transition: '0.4s all ease',
+  });
   const dotStyle = (option) => {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let { top } = option;
-    if (navOptions[0].level !== 3 && option.id > activeIndex) {
+    if (!collapsed && option.id > activeIndex) {
       top += navOptions[activeIndex].subMenus.length * 50;
-    }
-
-    if (navOptions[0].level === 3) {
-      top = defaultTop[option.id];
     }
 
     return {
@@ -41,6 +49,7 @@ function SideBar(props) {
       borderRadius: '10px',
       cursor: 'pointer',
       zIndex: 2,
+      transition: '0.4s all ease',
     };
   };
 
@@ -78,6 +87,17 @@ function SideBar(props) {
       <div className="side-bar-content">
         <SearchButton className="search-button" collapsed={collapsed} />
         <div className="side-bar-nav">
+          {navOptions[0].level === 3 && (
+            <>
+              {defaultTop.map((top, index) => (
+                <div
+                  key={`dot_top_${top}`}
+                  className="nav-dot"
+                  style={defaultDotStyle(top, index)}
+                />
+              ))}
+            </>
+          )}
           {navOptions.map((option) => (
             <div key={`nav_${option.id}`}>
               {navOptions[0].level !== 3 ? (

@@ -24,9 +24,10 @@ function NavMenu(props) {
 
   const contentStyle = {
     width: '100%',
-    height: `${subMenus.length * 50 + 40}px`,
+    height: collapsed ? 0 : `${subMenus.length * 50 + 40}px`,
     background: active ? 'white' : 'transparent',
     paddingLeft: '70px',
+    transition: '0.4s all ease',
   };
 
   const listTitleStyle = {
@@ -41,10 +42,11 @@ function NavMenu(props) {
   };
 
   const subMenuStyle = (index) => ({
-    height: '50px',
+    height: collapsed ? 0 : '50px',
     padding: '10px',
     fontSize: collapsed ? 0 : '18px',
     cursor: 'pointer',
+    border: collapsed && 0,
     borderBottom: index === subMenus.length - 1 ? 0 : '1px solid #EEEEEE',
     transition: '0.4s all ease',
     fontWeight: activeSubMenu === index ? 'bold' : 'normal',
@@ -79,7 +81,7 @@ NavMenu.propTypes = {
   className: PropTypes.string,
   title: PropTypes.string.isRequired,
   subMenus: PropTypes.array.isRequired,
-  subMenuLinks: PropTypes.array.isRequired,
+  subMenuLinks: PropTypes.array,
   active: PropTypes.bool.isRequired,
   activeSubMenu: PropTypes.number.isRequired,
   collapsed: PropTypes.bool.isRequired,
@@ -88,6 +90,7 @@ NavMenu.propTypes = {
 
 NavMenu.defaultProps = {
   className: 'nav-menu',
+  subMenuLinks: [],
 };
 
 export default NavMenu;
