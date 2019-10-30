@@ -83,7 +83,7 @@ NavMenu.propTypes = {
   subMenus: PropTypes.array.isRequired,
   subMenuLinks: PropTypes.array,
   active: PropTypes.bool.isRequired,
-  activeSubMenu: PropTypes.number.isRequired,
+  activeSubMenu: PropTypes.number,
   collapsed: PropTypes.bool.isRequired,
   handleMenuClick: PropTypes.func.isRequired,
 };
@@ -91,6 +91,7 @@ NavMenu.propTypes = {
 NavMenu.defaultProps = {
   className: 'nav-menu',
   subMenuLinks: [],
+  activeSubMenu: -1,
 };
 
 export default NavMenu;

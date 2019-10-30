@@ -36,6 +36,18 @@
     height: calc(100% - 147px);
     position: relative;
 
+    .side-bar-submenu {
+      padding: 90px 10px;
+
+      .side-bar-submenu-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #D8D8D8;
+      }
+    }
+
     .search-button {
       position: absolute;
       left: 25px;

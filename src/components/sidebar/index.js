@@ -5,7 +5,7 @@ import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
 
 function SideBar(props) {
-  const { collapsed, navOptions, activeMenu } = props;
+  const { collapsed, navOptions } = props;
 
   const sideBarBackground = navOptions[0].level === 3 ? '#D8D8D8' : '#FFFFFFAD';
   const sideBarStyle = {
@@ -23,7 +23,7 @@ function SideBar(props) {
   const defaultDotStyle = (top, index) => ({
     width: '20px',
     height: '20px',
-    background: activeMenu === index ? '#0066CC' : '#71C6FF',
+    background: navOptions[0].activeMenu === index ? '#0066CC' : '#71C6FF',
     position: 'absolute',
     top: `${top}px`,
     left: '36px',
@@ -68,10 +68,11 @@ function SideBar(props) {
   };
 
   const subMenuStyle = {
-    width: '220px',
+    width: collapsed ? 0 : '230px',
     height: '100%',
     background: '#FFFFFFAD',
     position: 'absolute',
+    fontSize: collapsed ? 0 : '18px',
     top: 0,
     right: 0,
   };
@@ -89,6 +90,9 @@ function SideBar(props) {
         <div className="side-bar-nav">
           {navOptions[0].level === 3 && (
             <>
+              <div className="side-bar-submenu" style={subMenuStyle}>
+                <div className="side-bar-submenu-title">{navOptions[0].parentTitle}</div>
+              </div>
               {defaultTop.map((top, index) => (
                 <div
                   key={`dot_top_${top}`}
@@ -98,9 +102,10 @@ function SideBar(props) {
               ))}
             </>
           )}
+
           {navOptions.map((option) => (
             <div key={`nav_${option.id}`}>
-              {navOptions[0].level !== 3 ? (
+              {navOptions[0].level !== 3 && (
                 <>
                   <div
                     className="nav-dot"
@@ -121,8 +126,6 @@ function SideBar(props) {
                     />
                   </div>
                 </>
-              ) : (
-                <div className="side-bar-submenu" style={subMenuStyle} />
               )}
             </div>
           ))}
@@ -143,7 +146,6 @@ function SideBar(props) {
 
 SideBar.propTypes = {
   collapsed: PropTypes.bool,
-  activeMenu: PropTypes.number.isRequired,
   navOptions: PropTypes.array.isRequired,
 };
 
