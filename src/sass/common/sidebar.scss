@@ -36,6 +36,15 @@
     height: calc(100% - 147px);
     position: relative;
 
+    .side-bar-submenu-left {
+      width: 88px;
+      height: 100%;
+      background: #D8D8D8;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
     .side-bar-submenu {
       padding: 90px 0;
 
@@ -51,9 +60,9 @@
       }
 
       .side-bar-submenu-title-wrapper {
-        margin-bottom: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #D8D8D8;
+        border-bottom: 1px solid white;
+        margin: 10px;
 
         .side-bar-submenu-title {
           font-weight: bold;

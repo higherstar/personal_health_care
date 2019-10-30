@@ -8,7 +8,7 @@ import NavMenu from '../../atoms/NavMenu';
 function SideBar(props) {
   const { collapsed, navOptions } = props;
 
-  const sideBarBackground = navOptions[0].level === 3 ? '#D8D8D8' : '#FFFFFFAD';
+  const sideBarBackground = navOptions[0].level === 3 ? 'transparent' : '#FFFFFFAD';
   const sideBarStyle = {
     width: collapsed ? '93px' : '318px',
     background: collapsed ? 'white' : sideBarBackground,
@@ -96,6 +96,7 @@ function SideBar(props) {
         <div className="side-bar-nav">
           {navOptions[0].level === 3 && (
             <>
+              {!collapsed && (<div className="side-bar-submenu-left" />)}
               <div className="side-bar-submenu" style={subMenuStyle}>
                 <div className="d-flex align-items-center flex-column side-bar-submenu-title-wrapper">
                   <Link
