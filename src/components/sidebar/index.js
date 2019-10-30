@@ -13,8 +13,9 @@ function SideBar(props) {
   };
 
   const footerStyle = {
-    height: collapsed ? '0' : '95px',
+    height: collapsed ? 0 : '95px',
     borderTop: collapsed ? 'none' : '5px solid #71C6FF',
+    fontSize: collapsed ? 0 : '13px',
   };
 
   const dotStyle = (option) => {
@@ -62,7 +63,7 @@ function SideBar(props) {
       <div className="side-bar-content">
         <SearchButton className="search-button" collapsed={collapsed} />
         <div className="side-bar-nav-dots">
-          {navOptions.map((option) => (
+          {navOptions[0].level === 1 && navOptions.map((option) => (
             <div key={`nav_${option.id}`}>
               <div
                 className="nav-dot"
@@ -84,7 +85,15 @@ function SideBar(props) {
           ))}
         </div>
       </div>
-      <div className="side-bar-footer" style={footerStyle} />
+      <div className="side-bar-footer d-flex align-items-center justify-content-center" style={footerStyle}>
+        <span>
+          For Internal Use Only
+          <br />
+          &copy;2019 F.Hoffmann-La Roche Ltd
+          <br />
+          Last Updated October 2019
+        </span>
+      </div>
     </div>
   );
 }

@@ -18,6 +18,10 @@ const navOptions = [
     title: 'CHANGING JOURNEY',
     top: 140,
     active: true,
+    subMenuLinks: [
+      '/phc/changing-journey/past-patient-journey',
+      '/phc/changing-journey/future-patient-journey',
+    ],
     subMenus: [
       'Past Patient Journey',
       'Future Patient Journey',

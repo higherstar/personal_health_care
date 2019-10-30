@@ -9,8 +9,12 @@ const navOptions = [
     title: 'INTRODUCTION',
     top: 100,
     active: true,
+    subMenuLinks: [
+      '/phc/introduction/roche-strategy',
+      '/phc/introduction/purpose-of-this-website',
+    ],
     subMenus: [
-      'Roches Vision & Strategy',
+      'Roche\'s Vision & Strategy',
       'Purpose of this Website',
     ],
   },

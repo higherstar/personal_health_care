@@ -27,6 +27,13 @@ const navOptions = [
     title: 'FUTURE PATIENT JOURNEY',
     top: 180,
     active: true,
+    subMenuLinks: [
+      '/phc/future-patient-journey/diagnostics',
+      '/phc/future-patient-journey/care',
+      '/phc/future-patient-journey/access',
+      '/phc/future-patient-journey/monitoring',
+      '/phc/future-patient-journey/data',
+    ],
     subMenus: [
       'Early Personalised Diagnosis',
       'Personalised Care Plan',

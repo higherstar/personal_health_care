@@ -28,6 +28,11 @@ const navOptions = [
     top: 180,
     active: true,
     activeSubMenu: 2,
+    subMenuLinks: [
+      '/phc/systems-enablers/partners',
+      '/phc/systems-enablers/value-based-healthcare',
+      '/phc/systems-enablers/roche-initiatives',
+    ],
     subMenus: [
       'Partners',
       'Value-based Healthcare',
