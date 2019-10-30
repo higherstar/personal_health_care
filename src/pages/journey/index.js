@@ -28,7 +28,7 @@ const navOptions = [
     top: 180,
     active: true,
     subMenuLinks: [
-      '/phc/future-patient-journey/diagnostics',
+      '/phc/future-patient-journey/diagnosis',
       '/phc/future-patient-journey/care',
       '/phc/future-patient-journey/access',
       '/phc/future-patient-journey/monitoring',

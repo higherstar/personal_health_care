@@ -12,7 +12,7 @@ const navOptions = [
     activeSubMenu: 1,
     subMenuLinks: [
       '/phc/introduction/roche-strategy',
-      '/phc/introduction/purpose-of-this-website',
+      '/phc/introduction/purpose',
     ],
     subMenus: [
       'Roche\'s Vision & Strategy',

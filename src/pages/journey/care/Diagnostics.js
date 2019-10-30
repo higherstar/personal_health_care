@@ -39,7 +39,7 @@ const navOptions = [
   },
 ];
 
-function CareDiagnositcs() {
+function CareDiagnostics() {
   const content = (
     <h1>Diagnositcs</h1>
   );
@@ -49,4 +49,4 @@ function CareDiagnositcs() {
   );
 }
 
-export default CareDiagnositcs;
+export default CareDiagnostics;

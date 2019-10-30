@@ -7,9 +7,10 @@ import NavMenu from '../../atoms/NavMenu';
 function SideBar(props) {
   const { collapsed, navOptions } = props;
 
+  const sideBarBackground = navOptions[0].level === 3 ? '#D8D8D8' : '#FFFFFFAD';
   const sideBarStyle = {
     width: collapsed ? '93px' : '318px',
-    background: collapsed ? 'white' : '#FFFFFFAD',
+    background: collapsed ? 'white' : sideBarBackground,
   };
 
   const footerStyle = {
@@ -19,10 +20,15 @@ function SideBar(props) {
   };
 
   const dotStyle = (option) => {
+    const defaultTop = [100, 140, 180, 220, 260, 300];
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let { top } = option;
-    if (option.id > activeIndex) {
+    if (navOptions[0].level !== 3 && option.id > activeIndex) {
       top += navOptions[activeIndex].subMenus.length * 50;
+    }
+
+    if (navOptions[0].level === 3) {
+      top = defaultTop[option.id];
     }
 
     return {
@@ -52,6 +58,15 @@ function SideBar(props) {
     };
   };
 
+  const subMenuStyle = {
+    width: '200px',
+    height: '100%',
+    background: '#FFFFFFAD',
+    position: 'absolute',
+    top: 0,
+    right: 0,
+  };
+
   const handleMenuClick = (key) => {
     console.log(key);
   };
@@ -62,25 +77,30 @@ function SideBar(props) {
       <div className="side-bar-header" />
       <div className="side-bar-content">
         <SearchButton className="search-button" collapsed={collapsed} />
-        <div className="side-bar-nav-dots">
-          {navOptions[0].level === 1 && navOptions.map((option) => (
+        <div className="side-bar-nav">
+          {navOptions.map((option) => (
             <div key={`nav_${option.id}`}>
               <div
                 className="nav-dot"
                 style={dotStyle(option)}
               />
-              <div className="nav-menu" style={navMenuStyle(option)}>
-                <NavMenu
-                  link={option.link}
-                  active={option.active}
-                  title={option.title}
-                  subMenus={option.subMenus}
-                  navOptions={navOptions}
-                  handleMenuClick={handleMenuClick}
-                  index={option.id}
-                  collapsed={collapsed}
-                />
-              </div>
+              {navOptions[0].level !== 3 ? (
+                <div className="nav-menu" style={navMenuStyle(option)}>
+                  <NavMenu
+                    link={option.link}
+                    active={option.active}
+                    activeSubMenu={option.activeSubMenu || -1}
+                    title={option.title}
+                    subMenus={option.subMenus}
+                    navOptions={navOptions}
+                    handleMenuClick={handleMenuClick}
+                    index={option.id}
+                    collapsed={collapsed}
+                  />
+                </div>
+              ) : (
+                <div className="side-bar-submenu" style={subMenuStyle} />
+              )}
             </div>
           ))}
         </div>

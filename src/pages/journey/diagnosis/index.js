@@ -53,7 +53,7 @@ const navOptions = [
   },
 ];
 
-function Introduction() {
+function Diagnosis() {
   const content = (
     <h1>Early Personalised Diagnosis</h1>
   );
@@ -63,4 +63,4 @@ function Introduction() {
   );
 }
 
-export default Introduction;
+export default Diagnosis;

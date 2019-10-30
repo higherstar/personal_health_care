@@ -1,5 +1,5 @@
 import React from 'react';
-import PageContainer from '../../components/pagecontainer';
+import PageContainer from '../../../components/pagecontainer';
 
 const navOptions = [
   {
@@ -59,7 +59,7 @@ const navOptions = [
   },
 ];
 
-function RochesInitiatives() {
+function ValueBasedHealthCare() {
   const content = (
     <h1>Roches Initiatives</h1>
   );
@@ -69,4 +69,4 @@ function RochesInitiatives() {
   );
 }
 
-export default RochesInitiatives;
+export default ValueBasedHealthCare;

@@ -10,6 +10,7 @@ function NavMenu(props) {
     title,
     subMenus,
     active,
+    activeSubMenu,
     collapsed,
     handleMenuClick,
   } = props;
@@ -45,6 +46,7 @@ function NavMenu(props) {
     cursor: 'pointer',
     borderBottom: index === subMenus.length - 1 ? 0 : '1px solid #EEEEEE',
     transition: '0.4s all ease',
+    fontWeight: activeSubMenu === index ? 'bold' : 'normal',
   });
 
   return (
@@ -70,6 +72,7 @@ NavMenu.propTypes = {
   title: PropTypes.string.isRequired,
   subMenus: PropTypes.array.isRequired,
   active: PropTypes.bool.isRequired,
+  activeSubMenu: PropTypes.number.isRequired,
   collapsed: PropTypes.bool.isRequired,
   handleMenuClick: PropTypes.func.isRequired,
 };
