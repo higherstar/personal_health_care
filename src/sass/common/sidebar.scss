@@ -37,9 +37,21 @@
     position: relative;
 
     .side-bar-submenu {
-      padding: 90px 10px;
+      padding: 90px 0;
+
+      .submenu-item-wrapper {
+        height: 40px;
+
+        .submenu-item {
+          width: 200px;
+          padding-left: 15px;
+          color: black;
+          text-decoration: none;
+        }
+      }
 
       .side-bar-submenu-title-wrapper {
+        margin-bottom: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid #D8D8D8;
 

@@ -70,7 +70,7 @@ const navOptions = [
 
 function ValueBasedHealthCare() {
   const content = (
-    <h1>Roches Initiatives</h1>
+    <h1>Value-based Healthcare</h1>
   );
 
   return (

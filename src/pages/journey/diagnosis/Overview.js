@@ -9,7 +9,7 @@ const navOptions = [
     activeMenu: 2,
     parentTitle: 'Early Personalised Diagnosis',
     parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journeys/diagnosis/overview',
+    link: '/phc/future-patient-journey/diagnosis/overview',
     active: true,
   },
   {

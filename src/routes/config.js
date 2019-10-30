@@ -285,38 +285,38 @@ const Routes = (props) => [
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/roche-initiatives"
+    path="/phc/systems-enablers/roches-initiatives"
     component={RocheInitiatives}
     props={props}
-    key="systems-enablers-roche-initiatives"
+    key="systems-enablers-roches-initiatives"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/roche-initiatives/context"
+    path="/phc/systems-enablers/roches-initiatives/context"
     component={Context}
     props={props}
-    key="systems-enablers-roche-initiatives-context"
+    key="systems-enablers-roches-initiatives-context"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/roche-initiatives/rozlytrek"
+    path="/phc/systems-enablers/roches-initiatives/rozlytrek"
     component={Rozlytrek}
     props={props}
-    key="systems-enablers-roche-initiatives-rozlytrek"
+    key="systems-enablers-roches-initiatives-rozlytrek"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/roche-initiatives/shining-towers"
+    path="/phc/systems-enablers/roches-initiatives/shining-towers"
     component={ShiningTowers}
     props={props}
-    key="systems-enablers-roche-initiatives-shining-towers"
+    key="systems-enablers-roches-initiatives-shining-towers"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/roche-initiatives/showcases"
+    path="/phc/systems-enablers/roches-initiatives/showcases"
     component={Showcases}
     props={props}
-    key="systems-enablers-roche-initiatives-showcases"
+    key="systems-enablers-roches-initiatives-showcases"
   />,
   <PublicRoute
     exact
@@ -327,31 +327,31 @@ const Routes = (props) => [
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/partners/patient-partnership"
+    path="/phc/systems-enablers/partner/patient-partnership"
     component={PatientPartnership}
     props={props}
-    key="systems-enablers-roche-initiatives-patient-partnership"
+    key="systems-enablers-patient-partnership"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/partners/policy"
+    path="/phc/systems-enablers/partner/policy"
     component={Policy}
     props={props}
-    key="systems-enablers-roche-initiatives-policy"
+    key="systems-enablers-policy"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/partners/stakeholders"
+    path="/phc/systems-enablers/partner/stakeholders"
     component={StakeHolders}
     props={props}
-    key="systems-enablers-roche-initiatives-stakeholders"
+    key="systems-enablers-stakeholders"
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/partners/phc-it"
+    path="/phc/systems-enablers/partner/phc-it"
     component={Technology}
     props={props}
-    key="systems-enablers-roche-initiatives-phc-it"
+    key="systems-enablers-phc-it"
   />,
   <PublicRoute exact path="/phc/abbreviation" component={Abbreviation} props={props} key="abbreviation" />,
   <PublicRoute exact path="/phc/acknowledgements" component={Acknowledgements} props={props} key="acknowledgements" />,

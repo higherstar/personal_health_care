@@ -23,5 +23,10 @@
     position: absolute;
     top: 52px;
     transition: 0.4s all ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
 }

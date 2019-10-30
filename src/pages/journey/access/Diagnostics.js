@@ -9,7 +9,7 @@ const navOptions = [
     activeMenu: 2,
     parentTitle: 'Rapid Access to Personalised Interventions',
     parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journeys/access/overview',
+    link: '/phc/future-patient-journey/access/overview',
     active: false,
   },
   {

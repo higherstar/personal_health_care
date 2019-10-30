@@ -9,7 +9,7 @@ const navOptions = [
     activeMenu: 2,
     parentTitle: 'Early Personalised Diagnosis',
     parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journeys/diagnosis/roches-initiatives/overview',
+    link: '/phc/future-patient-journey/diagnosis/roches-initiatives/overview',
     active: false,
   },
   {

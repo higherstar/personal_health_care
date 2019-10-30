@@ -9,7 +9,7 @@ const navOptions = [
     activeMenu: 2,
     parentTitle: 'Personalised Remote Monitoring & Care',
     parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journeys/monitoring/overview',
+    link: '/phc/future-patient-journey/monitoring/overview',
     active: false,
   },
   {

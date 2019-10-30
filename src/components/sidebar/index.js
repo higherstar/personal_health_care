@@ -78,6 +78,11 @@ function SideBar(props) {
     right: 0,
   };
 
+  const subMenuItemStyle = (option) => ({
+    background: option.active && 'white',
+    fontWeight: option.active && 'bold',
+  });
+
   const handleMenuClick = (key) => {
     console.log(key);
   };
@@ -92,7 +97,7 @@ function SideBar(props) {
           {navOptions[0].level === 3 && (
             <>
               <div className="side-bar-submenu" style={subMenuStyle}>
-                <div className="d-flex align-items-center justify-content-center side-bar-submenu-title-wrapper">
+                <div className="d-flex align-items-center flex-column side-bar-submenu-title-wrapper">
                   <Link
                     to={navOptions[0].parentLink}
                     className="side-bar-submenu-title"
@@ -100,6 +105,13 @@ function SideBar(props) {
                     {navOptions[0].parentTitle}
                   </Link>
                 </div>
+                {navOptions.map((option) => (
+                  <div className="d-flex align-items-center submenu-item-wrapper" style={subMenuItemStyle(option)}>
+                    <Link to={option.link} className="submenu-item">
+                      {option.title}
+                    </Link>
+                  </div>
+                ))}
               </div>
               {defaultTop.map((top, index) => (
                 <div

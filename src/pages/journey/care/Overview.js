@@ -9,7 +9,7 @@ const navOptions = [
     activeMenu: 2,
     parentTitle: 'Personalised Care Plan',
     parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journeys/care/overview',
+    link: '/phc/future-patient-journey/care/overview',
     active: true,
   },
   {

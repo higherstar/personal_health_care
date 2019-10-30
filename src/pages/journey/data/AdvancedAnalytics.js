@@ -9,7 +9,7 @@ const navOptions = [
     activeMenu: 2,
     parentTitle: 'Data & Insights',
     parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journeys/data/real-world-data',
+    link: '/phc/future-patient-journey/data/real-world-data',
     active: false,
   },
   {
