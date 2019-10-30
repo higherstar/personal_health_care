@@ -53,7 +53,7 @@ const navOptions = [
   },
 ];
 
-function DigitalHealth() {
+function DiagnosisDigitalHealth() {
   const content = (
     <h1>Digital Health</h1>
   );
@@ -63,4 +63,4 @@ function DigitalHealth() {
   );
 }
 
-export default DigitalHealth;
+export default DiagnosisDigitalHealth;

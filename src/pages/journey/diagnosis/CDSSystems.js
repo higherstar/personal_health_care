@@ -53,7 +53,7 @@ const navOptions = [
   },
 ];
 
-function CDSSystems() {
+function DiagnosisCDSSystems() {
   const content = (
     <h1>CDS Systems</h1>
   );
@@ -63,4 +63,4 @@ function CDSSystems() {
   );
 }
 
-export default CDSSystems;
+export default DiagnosisCDSSystems;

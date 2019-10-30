@@ -53,7 +53,7 @@ const navOptions = [
   },
 ];
 
-function Diagnositcs() {
+function DiagnosisDiagnositcs() {
   const content = (
     <h1>Diagnositcs</h1>
   );
@@ -63,4 +63,4 @@ function Diagnositcs() {
   );
 }
 
-export default Diagnositcs;
+export default DiagnosisDiagnositcs;

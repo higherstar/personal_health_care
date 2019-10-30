@@ -53,7 +53,7 @@ const navOptions = [
   },
 ];
 
-function Overview() {
+function DiagnosisOverview() {
   const content = (
     <h1>Overview</h1>
   );
@@ -63,4 +63,4 @@ function Overview() {
   );
 }
 
-export default Overview;
+export default DiagnosisOverview;

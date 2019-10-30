@@ -6,56 +6,49 @@ const navOptions = [
     id: 0,
     level: 3,
     title: 'Overview',
-    link: '/phc/future-patient-journeys/diagnosis/overview',
+    link: '/phc/future-patient-journeys/monitoring/overview',
     active: false,
   },
   {
     id: 1,
     level: 3,
     title: 'Diagnostics',
-    link: '/phc/future-patient-journey/diagnosis/diagnostics',
+    link: '/phc/future-patient-journey/monitoring/diagnostics',
     active: false,
   },
   {
     id: 2,
     level: 3,
     title: 'Genomics',
-    link: '/phc/future-patient-journey/diagnosis/genomics',
+    link: '/phc/future-patient-journey/monitoring/genomics',
     active: false,
   },
   {
     id: 3,
     level: 3,
     title: 'Advanced Imaging',
-    link: '/phc/future-patient-journey/diagnosis/advanced-imaging',
-    active: false,
+    link: '/phc/future-patient-journey/monitoring/advanced-imaging',
+    active: true,
   },
   {
     id: 4,
     level: 3,
-    title: 'Digital Pathology',
-    link: '/phc/future-patient-journey/diagnosis/digital-pathology',
-    active: true,
+    title: 'CDS Systems',
+    link: '/phc/future-patient-journey/monitoring/cds-systems',
+    active: false,
   },
   {
     id: 5,
     level: 3,
-    title: 'CDS Systems',
-    link: '/phc/future-patient-journey/diagnosis/cds-systems',
-    active: false,
-  },
-  {
-    id: 6,
-    level: 3,
     title: 'Digital Health(SaMD)',
-    link: '/phc/future-patient-journey/diagnosis/digital-health',
+    link: '/phc/future-patient-journey/monitoring/digital-health',
     active: false,
   },
 ];
 
-function DiagnosisDigitalPathology() {
+function MonitoringAdvancedImaging() {
   const content = (
-    <h1>Digital Pathology</h1>
+    <h1>Advanced Imaging</h1>
   );
 
   return (
@@ -63,4 +56,4 @@ function DiagnosisDigitalPathology() {
   );
 }
 
-export default DiagnosisDigitalPathology;
+export default MonitoringAdvancedImaging;

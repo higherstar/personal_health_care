@@ -53,7 +53,7 @@ const navOptions = [
   },
 ];
 
-function AdvancedImaging() {
+function DiagnosisAdvancedImaging() {
   const content = (
     <h1>Advanced Imaging</h1>
   );
@@ -63,4 +63,4 @@ function AdvancedImaging() {
   );
 }
 
-export default AdvancedImaging;
+export default DiagnosisAdvancedImaging;
