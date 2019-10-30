@@ -9,6 +9,7 @@ function NavMenu(props) {
     className,
     title,
     subMenus,
+    subMenuLinks,
     active,
     activeSubMenu,
     collapsed,
@@ -47,6 +48,8 @@ function NavMenu(props) {
     borderBottom: index === subMenus.length - 1 ? 0 : '1px solid #EEEEEE',
     transition: '0.4s all ease',
     fontWeight: activeSubMenu === index ? 'bold' : 'normal',
+    color: 'black',
+    textDecoration: 'none',
   });
 
   return (
@@ -56,9 +59,14 @@ function NavMenu(props) {
       </Link>
       <div>
         {subMenus.map((subMenu, index) => (
-          <div key={subMenu.replace(/\s/g, '')} style={subMenuStyle(index)} className="d-flex align-items-center">
-            <span style={{ width: '210px', lineHeight: '18px' }}>{subMenu}</span>
-          </div>
+          <Link
+            to={subMenuLinks[index]}
+            key={subMenu.replace(/\s/g, '')}
+            style={subMenuStyle(index)}
+            className="d-flex align-items-center"
+          >
+            <span style={{ width: '220px', lineHeight: '18px' }}>{subMenu}</span>
+          </Link>
         ))}
       </div>
     </div>
@@ -71,6 +79,7 @@ NavMenu.propTypes = {
   className: PropTypes.string,
   title: PropTypes.string.isRequired,
   subMenus: PropTypes.array.isRequired,
+  subMenuLinks: PropTypes.array.isRequired,
   active: PropTypes.bool.isRequired,
   activeSubMenu: PropTypes.number.isRequired,
   collapsed: PropTypes.bool.isRequired,

@@ -54,7 +54,7 @@ import Technology from '../pages/enablers/partners/Technology';
 
 const Routes = (props) => [
   <PublicRoute exact path="/phc/introduction" component={HomePage} props={props} key="homepage" />,
-  <PublicRoute exact path="/phc/introduction/strategy" component={Strategy} props={props} key="strategy" />,
+  <PublicRoute exact path="/phc/introduction/roche-strategy" component={Strategy} props={props} key="strategy" />,
   <PublicRoute exact path="/phc/introduction/purpose" component={Purpose} props={props} key="purpose" />,
   <PublicRoute exact path="/phc/changing-journey" component={ChangingJourney} props={props} key="changing-journey" />,
   <PublicRoute
@@ -81,196 +81,196 @@ const Routes = (props) => [
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/overview"
+    path="/phc/future-patient-journey/diagnosis/overview"
     component={DiagnosisOverview}
     props={props}
     key="diagnosis-overview"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/diagnostics"
+    path="/phc/future-patient-journey/diagnosis/diagnostics"
     component={DiagnosisDiagnostics}
     props={props}
     key="diagnosis-diagnostics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/genomics"
+    path="/phc/future-patient-journey/diagnosis/genomics"
     component={DiagnosisGenomics}
     props={props}
     key="diagnosis-genomics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/advanced-imaging"
+    path="/phc/future-patient-journey/diagnosis/advanced-imaging"
     component={DiagnosisAdvancedImaging}
     props={props}
     key="diagnosis-advanced-imaging"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/digital-pathology"
+    path="/phc/future-patient-journey/diagnosis/digital-pathology"
     component={DiagnosisDigitalPathology}
     props={props}
     key="diagnosis-digital-pathology"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/cds-systems"
+    path="/phc/future-patient-journey/diagnosis/cds-systems"
     component={DiagnosisCDSSystems}
     props={props}
     key="diagnosis-cds-systems"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/diagnosis/digital-health"
+    path="/phc/future-patient-journey/diagnosis/digital-health"
     component={DiagnosisDigitalHealth}
     props={props}
     key="diagnosis-digital-health"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring"
+    path="/phc/future-patient-journey/monitoring"
     component={Monitoring}
     props={props}
     key="monitoring"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring/digital-health"
+    path="/phc/future-patient-journey/monitoring/digital-health"
     component={MonitoringDigitalHealth}
     props={props}
     key="monitoring-digital-health"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring/advanced-imaging"
+    path="/phc/future-patient-journey/monitoring/advanced-imaging"
     component={MonitoringAdvancedImaging}
     props={props}
     key="monitoring-advanced-imaging"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring/cds-systems"
+    path="/phc/future-patient-journey/monitoring/cds-systems"
     component={MonitoringCDSSystems}
     props={props}
     key="monitoring-cds-systems"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring/diagnostics"
+    path="/phc/future-patient-journey/monitoring/diagnostics"
     component={MonitoringDiagnostics}
     props={props}
     key="monitoring-diagnostics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring/genomics"
+    path="/phc/future-patient-journey/monitoring/genomics"
     component={MonitoringGenomics}
     props={props}
     key="monitoring-genomics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/monitoring/overview"
+    path="/phc/future-patient-journey/monitoring/overview"
     component={MonitoringOverview}
     props={props}
     key="monitoring-overview"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/data"
+    path="/phc/future-patient-journey/data"
     component={DataInsights}
     props={props}
     key="data-insights"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/data/advanced-analytics"
+    path="/phc/future-patient-journey/data/advanced-analytics"
     component={AdvancedAnalytics}
     props={props}
     key="advanced-analytics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/data/real-world-data"
+    path="/phc/future-patient-journey/data/real-world-data"
     component={RealWorldData}
     props={props}
     key="real-world-data"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/care"
+    path="/phc/future-patient-journey/care"
     component={CarePlan}
     props={props}
     key="care"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/care/digital-health"
+    path="/phc/future-patient-journey/care/digital-health"
     component={CareDigitalHealth}
     props={props}
     key="care-digital-health"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/care/cds-systems"
+    path="/phc/future-patient-journey/care/cds-systems"
     component={CareCDSSystems}
     props={props}
     key="care-cds-systems"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/care/diagnostics"
+    path="/phc/future-patient-journey/care/diagnostics"
     component={CareDiagnostics}
     props={props}
     key="care-diagnostics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/care/mgtos"
+    path="/phc/future-patient-journey/care/mgtos"
     component={MGTOs}
     props={props}
     key="care-mgtos"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/care/overview"
+    path="/phc/future-patient-journey/care/overview"
     component={CareOverview}
     props={props}
     key="care-overview"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/access"
+    path="/phc/future-patient-journey/access"
     component={Access}
     props={props}
     key="access"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/access/cds-systems"
+    path="/phc/future-patient-journey/access/cds-systems"
     component={AccessCDSSystems}
     props={props}
     key="access-cds-systems"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/access/diagnostics"
+    path="/phc/future-patient-journey/access/diagnostics"
     component={AccessDiagnostics}
     props={props}
     key="access-diagnostics"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/access/digital-health"
+    path="/phc/future-patient-journey/access/digital-health"
     component={AccessDigitalHealth}
     props={props}
     key="access-digital-health"
   />,
   <PublicRoute
     exact
-    path="/phc/future-patient-journeys/access/overview"
+    path="/phc/future-patient-journey/access/overview"
     component={AccessOverview}
     props={props}
     key="access-overview"

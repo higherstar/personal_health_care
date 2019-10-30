@@ -5,7 +5,7 @@ import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
 
 function SideBar(props) {
-  const { collapsed, navOptions } = props;
+  const { collapsed, navOptions, activeMenu } = props;
 
   const sideBarBackground = navOptions[0].level === 3 ? '#D8D8D8' : '#FFFFFFAD';
   const sideBarStyle = {
@@ -19,8 +19,8 @@ function SideBar(props) {
     fontSize: collapsed ? 0 : '13px',
   };
 
+  const defaultTop = [100, 140, 180, 220, 260, 300];
   const dotStyle = (option) => {
-    const defaultTop = [100, 140, 180, 220, 260, 300];
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let { top } = option;
     if (navOptions[0].level !== 3 && option.id > activeIndex) {
@@ -59,7 +59,7 @@ function SideBar(props) {
   };
 
   const subMenuStyle = {
-    width: '200px',
+    width: '220px',
     height: '100%',
     background: '#FFFFFFAD',
     position: 'absolute',
@@ -80,24 +80,27 @@ function SideBar(props) {
         <div className="side-bar-nav">
           {navOptions.map((option) => (
             <div key={`nav_${option.id}`}>
-              <div
-                className="nav-dot"
-                style={dotStyle(option)}
-              />
               {navOptions[0].level !== 3 ? (
-                <div className="nav-menu" style={navMenuStyle(option)}>
-                  <NavMenu
-                    link={option.link}
-                    active={option.active}
-                    activeSubMenu={option.activeSubMenu || -1}
-                    title={option.title}
-                    subMenus={option.subMenus}
-                    navOptions={navOptions}
-                    handleMenuClick={handleMenuClick}
-                    index={option.id}
-                    collapsed={collapsed}
+                <>
+                  <div
+                    className="nav-dot"
+                    style={dotStyle(option)}
                   />
-                </div>
+                  <div className="nav-menu" style={navMenuStyle(option)}>
+                    <NavMenu
+                      link={option.link}
+                      active={option.active}
+                      activeSubMenu={option.activeSubMenu}
+                      title={option.title}
+                      subMenus={option.subMenus}
+                      subMenuLinks={option.subMenuLinks}
+                      navOptions={navOptions}
+                      handleMenuClick={handleMenuClick}
+                      index={option.id}
+                      collapsed={collapsed}
+                    />
+                  </div>
+                </>
               ) : (
                 <div className="side-bar-submenu" style={subMenuStyle} />
               )}
@@ -120,6 +123,7 @@ function SideBar(props) {
 
 SideBar.propTypes = {
   collapsed: PropTypes.bool,
+  activeMenu: PropTypes.number.isRequired,
   navOptions: PropTypes.array.isRequired,
 };
 
