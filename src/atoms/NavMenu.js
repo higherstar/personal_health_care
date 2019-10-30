@@ -56,7 +56,12 @@ function NavMenu(props) {
 
   return (
     <div className={`${className}`} style={contentStyle} key={`menu_${index}`}>
-      <Link to={link} className="d-flex align-items-center" style={listTitleStyle} onClick={handleTitleClick}>
+      <Link
+        to={link}
+        className="d-flex align-items-center nav-menu-title"
+        style={listTitleStyle}
+        onClick={handleTitleClick}
+      >
         <span>{title}</span>
       </Link>
       <div>
@@ -65,7 +70,7 @@ function NavMenu(props) {
             to={subMenuLinks[index]}
             key={subMenu.replace(/\s/g, '')}
             style={subMenuStyle(index)}
-            className="d-flex align-items-center"
+            className="d-flex align-items-center nav-submenu"
           >
             <span style={{ width: '220px', lineHeight: '18px' }}>{subMenu}</span>
           </Link>
