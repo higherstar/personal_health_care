@@ -79,12 +79,16 @@
     position: relative; }
     .side-bar .side-bar-content .side-bar-submenu {
       padding: 90px 10px; }
-      .side-bar .side-bar-content .side-bar-submenu .side-bar-submenu-title {
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
+      .side-bar .side-bar-content .side-bar-submenu .side-bar-submenu-title-wrapper {
         padding-bottom: 10px;
         border-bottom: 1px solid #D8D8D8; }
+        .side-bar .side-bar-content .side-bar-submenu .side-bar-submenu-title-wrapper .side-bar-submenu-title {
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          cursor: pointer; }
     .side-bar .side-bar-content .search-button {
       position: absolute;
       left: 25px;

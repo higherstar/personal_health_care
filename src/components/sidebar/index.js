@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
@@ -91,7 +92,14 @@ function SideBar(props) {
           {navOptions[0].level === 3 && (
             <>
               <div className="side-bar-submenu" style={subMenuStyle}>
-                <div className="side-bar-submenu-title">{navOptions[0].parentTitle}</div>
+                <div className="d-flex align-items-center justify-content-center side-bar-submenu-title-wrapper">
+                  <Link
+                    to={navOptions[0].parentLink}
+                    className="side-bar-submenu-title"
+                  >
+                    {navOptions[0].parentTitle}
+                  </Link>
+                </div>
               </div>
               {defaultTop.map((top, index) => (
                 <div
