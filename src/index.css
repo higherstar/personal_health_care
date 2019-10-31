@@ -59,7 +59,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  transition: 0.4s all ease; }
+  transition: 0.3s all ease; }
   .side-bar .side-bar-left-band {
     width: 5px;
     height: 100%;
@@ -78,7 +78,7 @@
     position: absolute;
     bottom: 0;
     z-index: 2;
-    transition: 0.4s all ease; }
+    transition: 0.3s all ease; }
   .side-bar .side-bar-content {
     width: 100%;
     height: calc(100% - 147px);
@@ -123,7 +123,8 @@
 .page-container {
   width: 100vw;
   height: calc(100vh - 112px);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .page-container .background-image {
     width: 100%;
     height: 100%; }
@@ -135,15 +136,128 @@
     height: calc(100vh - 164px);
     position: absolute;
     top: 52px;
-    transition: 0.4s all ease;
+    transition: 0.3s all ease;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white; }
 
+.custom-modal-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #0066cc9e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: black; }
+  .custom-modal-wrapper h3 {
+    font-size: 20px;
+    color: #0066cc;
+    margin: 15px 0; }
+  .custom-modal-wrapper p {
+    font-size: 16px; }
+  .custom-modal-wrapper .custom-modal-container {
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0;
+    padding: 15px 20px;
+    position: absolute;
+    top: 5%;
+    left: 5%; }
+  .custom-modal-wrapper .custom-modal-header {
+    width: 100%; }
+    .custom-modal-wrapper .custom-modal-header .close-button {
+      width: 45px;
+      height: 45px;
+      border-radius: 25px;
+      border: 4px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      font-size: 35px;
+      position: absolute;
+      right: -22px;
+      top: -22px; }
+      .custom-modal-wrapper .custom-modal-header .close-button:active, .custom-modal-wrapper .custom-modal-header .close-button:focus {
+        box-shadow: none; }
+      .custom-modal-wrapper .custom-modal-header .close-button span {
+        line-height: 29px;
+        margin-top: -7px; }
+  .custom-modal-wrapper .custom-modal-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto; }
+  .custom-modal-wrapper .custom-modal-footer {
+    width: 100%; }
+
+.welcome-modal {
+  width: 100%; }
+  .welcome-modal h3 {
+    text-align: center; }
+  .welcome-modal .welcome-videos {
+    width: 50%;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
+    .welcome-modal .welcome-videos .slick-prev:hover, .welcome-modal .welcome-videos .slick-next:hover {
+      color: #D8D8D8; }
+    .welcome-modal .welcome-videos .slick-prev:before, .welcome-modal .welcome-videos .slick-next:before {
+      color: #565B59; }
+  .welcome-modal .explore-button {
+    width: 40%;
+    height: 50px;
+    min-width: 500px;
+    background: #0066cc;
+    border-radius: 30px;
+    margin: 40px auto;
+    cursor: pointer; }
+    .welcome-modal .explore-button:active {
+      opacity: 0.8; }
+    .welcome-modal .explore-button span {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center; }
+
+.background-map {
+  height: 100%;
+  position: absolute; }
+  .background-map img {
+    height: 100%; }
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 @font-face {
   font-family: 'Imago';
   src: url("/fonts/Berthold_Imago_Book.ttf"); }
 
 body {
   margin: 0; }
+
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 13px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0066CC;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #007bff; }

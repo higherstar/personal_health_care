@@ -2,6 +2,7 @@
   width: 100vw;
   height: calc(100vh - 112px);
   position: relative;
+  overflow: hidden;
 
   .background-image {
     width: 100%;
@@ -22,7 +23,7 @@
     height: calc(100vh - 164px);
     position: absolute;
     top: 52px;
-    transition: 0.4s all ease;
+    transition: 0.3s all ease;
 
     display: flex;
     align-items: center;

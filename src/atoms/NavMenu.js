@@ -27,7 +27,7 @@ function NavMenu(props) {
     height: collapsed ? 0 : `${subMenus.length * 50 + 40}px`,
     background: active ? 'white' : 'transparent',
     paddingLeft: '70px',
-    transition: '0.4s all ease',
+    transition: '0.3s all ease',
   };
 
   const listTitleStyle = {
@@ -36,7 +36,7 @@ function NavMenu(props) {
     fontFamily: 'Imago',
     fontWeight: active ? 'bold' : 'normal',
     cursor: 'pointer',
-    transition: '0.4s all ease',
+    transition: '0.3s all ease',
     color: 'black',
     textDecoration: 'none',
   };
@@ -48,7 +48,7 @@ function NavMenu(props) {
     cursor: 'pointer',
     border: collapsed && 0,
     borderBottom: index === subMenus.length - 1 ? 0 : '1px solid #EEEEEE',
-    transition: '0.4s all ease',
+    transition: '0.3s all ease',
     fontWeight: activeSubMenu === index ? 'bold' : 'normal',
     color: 'black',
     textDecoration: 'none',

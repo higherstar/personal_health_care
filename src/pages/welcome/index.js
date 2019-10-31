@@ -1,5 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import PageContainer from '../../components/pagecontainer';
+import mapImage from '../../assets/maps/map-background.png';
+import CustomModal from '../../components/modals/CustomModal';
+import videoImage1 from '../../assets/pages/welcome/videoImage1.png';
+import videoImage2 from '../../assets/pages/welcome/videoImage2.png';
+import videoImage3 from '../../assets/pages/welcome/videoImage3.png';
 
 const navOptions = [
   {
@@ -67,9 +77,69 @@ const navOptions = [
   },
 ];
 
+const videos = [videoImage1, videoImage2, videoImage3];
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
+
 function Welcome() {
+  const [toIntroduction, setToIntroduction] = useState(false);
+
+  const handleCloseClick = () => {
+    setToIntroduction(true);
+  };
+
+  if (toIntroduction) {
+    return <Redirect to="/phc/introduction" />;
+  }
+
+  const modalContent = (
+    <div className="welcome-modal">
+      <h3>Welcome to The Personalised Healthcare Systems Map</h3>
+      <p>
+        The complexity of Personalised Healthcare (PHC) calls for us to be systems thinkers with the ability
+        to think and act from a whole system perspective and make decisions in light of the long-term health
+        of the whole system. This map will provide a broad picture view and exploration of components of
+        the PHC ecosystem, the interconnectedness of the system at play, and how you can engage with PHC.
+      </p>
+      <h3>Personalised Healthcare at Roche</h3>
+      <p>
+        Before diving into the PHC systems map, learn about why PHC is important and Roche’s PHC vision and
+        strategy on the PHC portal.
+      </p>
+      <h3>How we built the PHC Systems Map</h3>
+      <p>
+        The PHC systems map is built around the
+        {' '}
+        <strong>future patient journey that is fully personalized.</strong>
+        It includes key PHC concepts that are relevant for each step of a patient’ care as well as key system enablers
+        that are important to keep in mind. Check out the video below to learn about how we envision the
+        future patient journey to be different from the existing one and how we built the PHC systems map.
+      </p>
+      <div className="welcome-videos">
+        <Slider {...settings}>
+          {videos.map((video, index) => (
+            <img src={video} alt="video" key={`video_${index}`} />
+          ))}
+        </Slider>
+      </div>
+      <div className="explore-button d-flex align-items-center justify-content-center" onClick={handleCloseClick}>
+        <span>EXPLORE THE PHC SYSTEMS MAP</span>
+      </div>
+    </div>
+  );
+
   const content = (
-    <h1>Welcome</h1>
+    <div className="welcome d-flex align-items-center justify-content-center">
+      <div className="background-map">
+        <img src={mapImage} alt="background map" />
+      </div>
+      <CustomModal open content={modalContent} handleCloseClick={handleCloseClick} />
+    </div>
   );
 
   return (

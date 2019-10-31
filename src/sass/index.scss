@@ -1,8 +1,9 @@
-@import "common/atoms";
-@import "common/header";
-@import "common/topbar";
-@import "common/sidebar";
-@import "common/pagecontainer";
+@import "common/index";
+@import "pages/main";
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 
 @font-face {
   font-family: 'Imago';
@@ -11,4 +12,32 @@
 
 body {
   margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0066CC;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #007bff;
 }

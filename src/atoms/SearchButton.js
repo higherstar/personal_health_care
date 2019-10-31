@@ -41,7 +41,7 @@ function SearchButton(props) {
     background: '#71C6FF',
     borderRadius: '20px',
     cursor: 'pointer',
-    transition: '0.4s all ease',
+    transition: '0.3s all ease',
   };
 
   const labelStyle = {
@@ -49,7 +49,7 @@ function SearchButton(props) {
     fontSize: collapsed ? 0 : '20px',
     color: 'white',
     marginLeft: '48px',
-    transition: '0.4s all ease',
+    transition: '0.3s all ease',
   };
 
   const inputStyle = {

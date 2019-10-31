@@ -31,7 +31,7 @@ function SideBar(props) {
     borderRadius: '10px',
     cursor: 'pointer',
     zIndex: 2,
-    transition: '0.4s all ease',
+    transition: '0.3s all ease',
   });
   const dotStyle = (option) => {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
@@ -50,7 +50,7 @@ function SideBar(props) {
       borderRadius: '10px',
       cursor: 'pointer',
       zIndex: 2,
-      transition: '0.4s all ease',
+      transition: '0.3s all ease',
     };
   };
 
