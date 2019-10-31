@@ -1,5 +1,8 @@
 import React from 'react';
+
 import PageContainer from '../../components/pagecontainer';
+import CustomModal from '../../components/modals/CustomModal';
+import mapImage from '../../assets/maps/map-background.png';
 
 const navOptions = [
   {
@@ -67,13 +70,70 @@ const navOptions = [
   },
 ];
 
+const modalHeader = (
+  <div className="reference-title">
+    Abbreviation List
+  </div>
+);
+
+const modalContent = (
+  <div className="abbreviation-content">
+    <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare,</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+    </div>
+  </div>
+);
+
 function Abbreviation() {
   const content = (
-    <h1>Abbreviation</h1>
+    <div className="abbreviation d-flex align-items-center justify-content-center">
+      <div className="background-map">
+        <img src={mapImage} alt="background map" />
+      </div>
+      <CustomModal open content={modalContent} closeButton={false} header={modalHeader} />
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Introduction" color="blue" />
   );
 }
 

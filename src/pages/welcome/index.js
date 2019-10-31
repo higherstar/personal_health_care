@@ -111,6 +111,7 @@ function Welcome() {
         The PHC systems map is built around the
         {' '}
         <strong>future patient journey that is fully personalized.</strong>
+        {' '}
         It includes key PHC concepts that are relevant for each step of a patient’ care as well as key system enablers
         that are important to keep in mind. Check out the video below to learn about how we envision the
         future patient journey to be different from the existing one and how we built the PHC systems map.

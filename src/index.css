@@ -225,6 +225,64 @@
       font-weight: bold;
       text-align: center; }
 
+.abbreviation .custom-modal-container {
+  padding: 0; }
+  .abbreviation .custom-modal-container .custom-modal-header {
+    height: 70px;
+    background: #0066CC;
+    border-radius: 8px 8px 0 0;
+    padding-left: 25px;
+    color: white;
+    font-size: 30px; }
+  .abbreviation .custom-modal-container .custom-modal-content {
+    height: calc(100% - 70px);
+    overflow: hidden; }
+
+.abbreviation .abbreviation-content {
+  height: 100%;
+  padding: 25px; }
+  .abbreviation .abbreviation-content .reference-content {
+    padding: 10px;
+    height: 100%;
+    overflow: auto; }
+    .abbreviation .abbreviation-content .reference-content p {
+      width: 30%;
+      height: 40px;
+      border-bottom: 1px solid #D8D8D8;
+      font-size: 18px; }
+      .abbreviation .abbreviation-content .reference-content p span {
+        color: #0066CC;
+        font-weight: bold; }
+
+.acknowledgements .custom-modal-container {
+  padding: 0; }
+  .acknowledgements .custom-modal-container .custom-modal-header {
+    height: 70px;
+    background: #0066CC;
+    border-radius: 8px 8px 0 0;
+    padding-left: 25px;
+    color: white;
+    font-size: 30px; }
+  .acknowledgements .custom-modal-container .custom-modal-content {
+    height: calc(100% - 70px);
+    overflow: hidden; }
+
+.acknowledgements .acknowledgements-content {
+  height: 100%;
+  padding: 25px; }
+  .acknowledgements .acknowledgements-content .reference-content {
+    padding: 10px;
+    height: calc(100% - 40px);
+    overflow: auto; }
+    .acknowledgements .acknowledgements-content .reference-content p {
+      width: 30%;
+      height: 40px;
+      border-bottom: 1px solid #D8D8D8;
+      font-size: 18px; }
+      .acknowledgements .acknowledgements-content .reference-content p span {
+        color: #0066CC;
+        font-weight: bold; }
+
 .page-wrapper {
   width: 100%; }
 

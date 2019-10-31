@@ -1,0 +1,42 @@
+.acknowledgements {
+  .custom-modal-container {
+    padding: 0;
+
+    .custom-modal-header {
+      height: 70px;
+      background: #0066CC;
+      border-radius: 8px 8px 0 0;
+      padding-left: 25px;
+      color: white;
+      font-size: 30px;
+    }
+
+    .custom-modal-content {
+      height: calc(100% - 70px);
+      overflow: hidden;
+    }
+  }
+
+  .acknowledgements-content {
+    height: 100%;
+    padding: 25px;
+
+    .reference-content {
+      padding: 10px;
+      height: calc(100% - 40px);
+      overflow: auto;
+
+      p {
+        width: 30%;
+        height: 40px;
+        border-bottom: 1px solid #D8D8D8;
+        font-size: 18px;
+
+        span {
+          color: #0066CC;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,8 @@
 import React from 'react';
+
 import PageContainer from '../../components/pagecontainer';
+import CustomModal from '../../components/modals/CustomModal';
+import mapImage from '../../assets/maps/map-background.png';
 
 const navOptions = [
   {
@@ -67,13 +70,70 @@ const navOptions = [
   },
 ];
 
+const modalHeader = (
+  <div className="reference-title">
+    Acknowledgements List
+  </div>
+);
+
+const modalContent = (
+  <div className="acknowledgements-content">
+    <h3 className="d-md-block d-sm-none d-none">
+      We acknowledge our colleagues for their contribution to this systems map:
+    </h3>
+    <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p><strong>John Doe,</strong> PHC CoE</p>
+      <p><strong>Jane Doe,</strong> PDMA</p>
+    </div>
+  </div>
+);
+
 function Acknowledgements() {
   const content = (
-    <h1>Acknowledgements</h1>
+    <div className="acknowledgements d-flex align-items-center justify-content-center">
+      <div className="background-map">
+        <img src={mapImage} alt="background map" />
+      </div>
+      <CustomModal open content={modalContent} header={modalHeader} closeButton={false} />
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Introduction" color="blue" />
   );
 }
 
