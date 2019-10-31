@@ -1,5 +1,6 @@
 import React from 'react';
 import PageContainer from '../../../components/pagecontainer';
+import mapImage from '../../../assets/common/roche.png';
 
 const navOptions = [
   {
@@ -46,11 +47,15 @@ const navOptions = [
 
 function Rozlytrek() {
   const content = (
-    <h1>Rozlytrek</h1>
+    <div className="roche-rozlytrek d-flex align-items-center justify-content-center">
+      <div className="detail-map">
+        <img src={mapImage} alt="detail map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Roche initiatives" color="yellow" />
   );
 }
 

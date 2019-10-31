@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../../components/pagecontainer';
+import mapImage from '../../../assets/common/enablers.png';
 
 const navOptions = [
   {
@@ -49,7 +51,7 @@ const navOptions = [
     subMenuLinks: [
       '/phc/systems-enablers/partners',
       '/phc/systems-enablers/value-based-healthcare',
-      '/phc/systems-enablers/roche-initiatives',
+      '/phc/systems-enablers/roches-initiatives',
     ],
     subMenus: [
       'Partners',
@@ -79,11 +81,15 @@ const navOptions = [
 
 function ValueBasedHealthCare() {
   const content = (
-    <h1>Value-based Healthcare</h1>
+    <div className="enablers-vbhc d-flex align-items-center justify-content-center">
+      <div className="detail-map">
+        <img src={mapImage} alt="detail map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Value-based healthcare" color="yellow" />
   );
 }
 

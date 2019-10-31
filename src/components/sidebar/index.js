@@ -6,7 +6,7 @@ import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
 
 function SideBar(props) {
-  const { collapsed, navOptions } = props;
+  const { collapsed, navOptions, color } = props;
 
   const sideBarBackground = navOptions[0].level === 3 ? 'transparent' : '#FFFFFFAD';
   const sideBarStyle = {
@@ -78,6 +78,17 @@ function SideBar(props) {
     right: 0,
   };
 
+  const backgroundColor = (color) => {
+    switch (color) {
+      case 'blue':
+        return '#0066CC';
+      case 'yellow':
+        return '#ED8B00';
+      default:
+        return '#0066CC';
+    }
+  };
+
   const subMenuItemStyle = (option) => ({
     background: option.active && 'white',
     fontWeight: option.active && 'bold',
@@ -90,7 +101,7 @@ function SideBar(props) {
   return (
     <div className="side-bar" style={sideBarStyle}>
       <div className="side-bar-left-band" />
-      <div className="side-bar-header" />
+      <div className="side-bar-header" style={{ background: backgroundColor(color) }} />
       <div className="side-bar-content">
         <SearchButton className="search-button" collapsed={collapsed} />
         <div className="side-bar-nav">
@@ -172,10 +183,12 @@ function SideBar(props) {
 SideBar.propTypes = {
   collapsed: PropTypes.bool,
   navOptions: PropTypes.array.isRequired,
+  color: PropTypes.string,
 };
 
 SideBar.defaultProps = {
   collapsed: false,
+  color: '',
 };
 
 export default SideBar;

@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../components/pagecontainer';
+import mapImage from '../../assets/maps/map-enablers.png';
 
 const navOptions = [
   {
@@ -78,11 +80,15 @@ const navOptions = [
 
 function Enablers() {
   const content = (
-    <h1>Enablers</h1>
+    <div className="system-enablers d-flex align-items-center justify-content-center">
+      <div className="background-map">
+        <img src={mapImage} alt="background map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Enablers" color="yellow" />
   );
 }
 

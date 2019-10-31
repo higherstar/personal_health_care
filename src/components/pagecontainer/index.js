@@ -28,7 +28,7 @@ function PageContainer(props) {
         </div>
         <TopBar title={title} color={color} collapsed={collapsed} setCollapsed={collapseSideBar} />
         <div className="side-bar-wrapper">
-          <SideBar navOptions={navOptions} collapsed={collapsed} />
+          <SideBar navOptions={navOptions} collapsed={collapsed} color={color} />
         </div>
         <div className="page-content" style={pageContentStyle}>
           {page}

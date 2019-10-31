@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../../components/pagecontainer';
+import mapImage from '../../../assets/common/partners.png';
 
 const navOptions = [
   {
@@ -46,11 +48,15 @@ const navOptions = [
 
 function PatientPartnership() {
   const content = (
-    <h1>Patient Partnership</h1>
+    <div className="partners-patient-partnerships d-flex align-items-center justify-content-center">
+      <div className="detail-map">
+        <img src={mapImage} alt="detail map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Partners" color="yellow" />
   );
 }
 
