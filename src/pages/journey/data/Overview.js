@@ -10,7 +10,7 @@ const navOptions = [
     parentTitle: 'Data & Insights',
     parentLink: '/phc/future-patient-journey',
     link: '/phc/future-patient-journey/data/overview',
-    active: false,
+    active: true,
   },
   {
     id: 1,
@@ -20,7 +20,7 @@ const navOptions = [
     parentTitle: 'Data & Insights',
     parentLink: '/phc/future-patient-journey',
     link: '/phc/future-patient-journey/data/real-world-data',
-    active: true,
+    active: false,
   },
   {
     id: 2,
@@ -34,9 +34,9 @@ const navOptions = [
   },
 ];
 
-function RealWorldData() {
+function DataOverview() {
   const content = (
-    <h1>Real-World Data</h1>
+    <h1>Overview</h1>
   );
 
   return (
@@ -44,4 +44,4 @@ function RealWorldData() {
   );
 }
 
-export default RealWorldData;
+export default DataOverview;

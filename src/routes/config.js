@@ -27,6 +27,7 @@ import MonitoringDiagnostics from '../pages/journey/monitoring/Diagnostics';
 import MonitoringGenomics from '../pages/journey/monitoring/Genomics';
 import MonitoringOverview from '../pages/journey/monitoring/Overview';
 import DataInsights from '../pages/journey/data';
+import DataOverview from '../pages/journey/data/Overview';
 import AdvancedAnalytics from '../pages/journey/data/AdvancedAnalytics';
 import RealWorldData from '../pages/journey/data/RealWorldData';
 import Monitoring from '../pages/journey/monitoring';
@@ -185,6 +186,13 @@ const Routes = (props) => [
     component={DataInsights}
     props={props}
     key="data-insights"
+  />,
+  <PublicRoute
+    exact
+    path="/phc/future-patient-journey/data/overview"
+    component={DataOverview}
+    props={props}
+    key="data-overview"
   />,
   <PublicRoute
     exact

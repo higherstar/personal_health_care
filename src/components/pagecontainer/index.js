@@ -6,7 +6,9 @@ import SideBar from '../sidebar';
 import backgroundImage from '../../assets/common/background.png';
 
 function PageContainer(props) {
-  const { navOptions, page } = props;
+  const {
+    navOptions, page, title, color,
+  } = props;
 
   const [collapsed, setCollapsed] = useState(false);
   const collapseSideBar = () => {
@@ -24,7 +26,7 @@ function PageContainer(props) {
         <div className="background-image">
           <img src={backgroundImage} alt="background" />
         </div>
-        <TopBar title="WELCOME" color="blue" collapsed={collapsed} setCollapsed={collapseSideBar} />
+        <TopBar title={title} color={color} collapsed={collapsed} setCollapsed={collapseSideBar} />
         <div className="side-bar-wrapper">
           <SideBar navOptions={navOptions} collapsed={collapsed} />
         </div>
@@ -39,6 +41,13 @@ function PageContainer(props) {
 PageContainer.propTypes = {
   navOptions: PropTypes.array.isRequired,
   page: PropTypes.node.isRequired,
+  title: PropTypes.string,
+  color: PropTypes.string,
+};
+
+PageContainer.defaultProps = {
+  title: '',
+  color: '',
 };
 
 export default PageContainer;

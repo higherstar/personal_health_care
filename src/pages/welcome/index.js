@@ -138,12 +138,12 @@ function Welcome() {
       <div className="background-map">
         <img src={mapImage} alt="background map" />
       </div>
-      <CustomModal open content={modalContent} handleCloseClick={handleCloseClick} />
+      <CustomModal open content={modalContent} />
     </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Welcome" color="blue" />
   );
 }
 

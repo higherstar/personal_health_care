@@ -80,7 +80,7 @@ function Introduction() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Introduction" color="blue" />
   );
 }
 

@@ -5,6 +5,16 @@ const navOptions = [
   {
     id: 0,
     level: 3,
+    title: 'Overview',
+    activeMenu: 2,
+    parentTitle: 'Data & Insights',
+    parentLink: '/phc/future-patient-journey',
+    link: '/phc/future-patient-journey/data/overview',
+    active: false,
+  },
+  {
+    id: 1,
+    level: 3,
     title: 'Real-World Data',
     activeMenu: 2,
     parentTitle: 'Data & Insights',
@@ -13,7 +23,7 @@ const navOptions = [
     active: false,
   },
   {
-    id: 1,
+    id: 2,
     level: 3,
     title: 'Advanced Analytics',
     activeMenu: 2,

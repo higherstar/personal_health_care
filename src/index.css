@@ -38,7 +38,8 @@
     font-size: 28px;
     font-weight: bold;
     color: white;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-transform: uppercase; }
   .top-bar .side-bar-header {
     height: 52px;
     position: absolute;
@@ -51,7 +52,8 @@
     .top-bar .side-bar-header span {
       font-size: 20px;
       color: white;
-      margin-left: 10px; }
+      margin-left: 10px;
+      text-transform: none; }
 
 .side-bar {
   height: calc(100vh - 112px);
