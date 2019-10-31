@@ -133,7 +133,7 @@ function Abbreviation() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Introduction" color="blue" />
+    <PageContainer page={content} navOptions={navOptions} title="Abbreviation" color="blue" />
   );
 }
 
