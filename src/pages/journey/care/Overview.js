@@ -1,8 +1,8 @@
 import React from 'react';
 
 import PageContainer from '../../../components/pagecontainer/index';
-import mapImage from '../../../assets/common/care.png';
 import MainContent from '../../../components/maincontent';
+import mapImage from '../../../assets/common/care.png';
 
 const navOptions = [
   {
