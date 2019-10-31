@@ -1,8 +1,23 @@
 @import "./welcome";
+@import "./journey/index";
+
+.page-wrapper {
+  width: 100%;
+}
 
 .background-map {
   height: 100%;
   position: absolute;
+
+  img {
+    height: 100%;
+  }
+}
+
+.detail-map {
+  height: 80%;
+  position: absolute;
+  right: 50%;
 
   img {
     height: 100%;

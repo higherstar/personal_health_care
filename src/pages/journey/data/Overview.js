@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../../components/pagecontainer/index';
+import mapImage from '../../../assets/common/data.png';
 
 const navOptions = [
   {
@@ -36,11 +38,20 @@ const navOptions = [
 
 function DataOverview() {
   const content = (
-    <h1>Overview</h1>
+    <div className="data-overview page-wrapper d-flex align-items-center justify-content-center">
+      <div className="detail-map">
+        <img src={mapImage} alt="detail map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      title="Data & Insights"
+      color="blue"
+    />
   );
 }
 

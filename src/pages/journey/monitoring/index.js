@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../../components/pagecontainer/index';
+import mapImage from '../../../assets/common/monitoring.png';
 
 const navOptions = [
   {
@@ -66,11 +68,20 @@ const navOptions = [
 
 function Monitoring() {
   const content = (
-    <h1>Monitoring</h1>
+    <div className="monitoring page-wrapper d-flex align-items-center justify-content-center">
+      <div className="detail-map">
+        <img src={mapImage} alt="detail map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      title="Continuous & remote patient management"
+      color="blue"
+    />
   );
 }
 

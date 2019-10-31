@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../../components/pagecontainer/index';
+import mapImage from '../../../assets/common/access.png';
 
 const navOptions = [
   {
@@ -46,11 +48,20 @@ const navOptions = [
 
 function AccessDiagnostics() {
   const content = (
-    <h1>Diagnostics</h1>
+    <div className="access-diagnostics page-wrapper d-flex align-items-center justify-content-center">
+      <div className="detail-map">
+        <img src={mapImage} alt="detail map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      title="Full access to optimal care intervention"
+      color="blue"
+    />
   );
 }
 

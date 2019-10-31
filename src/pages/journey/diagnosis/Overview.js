@@ -77,7 +77,7 @@ const navOptions = [
 
 function DiagnosisOverview() {
   const content = (
-    <div className="future-journey d-flex align-items-center justify-content-center">
+    <div className="journey-overview page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>

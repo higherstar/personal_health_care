@@ -225,10 +225,20 @@
       font-weight: bold;
       text-align: center; }
 
+.page-wrapper {
+  width: 100%; }
+
 .background-map {
   height: 100%;
   position: absolute; }
   .background-map img {
+    height: 100%; }
+
+.detail-map {
+  height: 80%;
+  position: absolute;
+  right: 50%; }
+  .detail-map img {
     height: 100%; }
 
 /*--------------------------------------------------------------

@@ -129,7 +129,7 @@ function Welcome() {
   );
 
   const content = (
-    <div className="welcome d-flex align-items-center justify-content-center">
+    <div className="welcome page-wrapper d-flex align-items-center justify-content-center">
       <div className="background-map">
         <img src={mapImage} alt="background map" />
       </div>
