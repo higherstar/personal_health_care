@@ -1,12 +1,12 @@
 import React from 'react';
-import PageContainer from '../../../components/pagecontainer/index';
+import PageContainer from '../../components/pagecontainer/index';
 
 const navOptions = [
   {
     id: 0,
-    level: 2,
-    link: '/phc/introduction',
-    title: 'INTRODUCTION',
+    level: 1,
+    link: '/phc/welcome',
+    title: 'WELCOME',
     top: 100,
     active: false,
     subMenus: [],
@@ -14,9 +14,18 @@ const navOptions = [
   {
     id: 1,
     level: 2,
+    link: '/phc/introduction',
+    title: 'INTRODUCTION',
+    top: 140,
+    active: false,
+    subMenus: [],
+  },
+  {
+    id: 2,
+    level: 2,
     link: '/phc/changing-journey',
     title: 'CHANGING JOURNEY',
-    top: 140,
+    top: 180,
     active: true,
     activeSubMenu: 1,
     subMenuLinks: [
@@ -29,19 +38,10 @@ const navOptions = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     level: 2,
     link: '/phc/future-patient-journey',
     title: 'FUTURE PATIENT JOURNEY',
-    top: 180,
-    active: false,
-    subMenus: [],
-  },
-  {
-    id: 3,
-    level: 2,
-    link: '/phc/systems-enablers',
-    title: 'SYSTEMS ENABLERS',
     top: 220,
     active: false,
     subMenus: [],
@@ -49,8 +49,8 @@ const navOptions = [
   {
     id: 4,
     level: 2,
-    link: '/phc/abbreviation',
-    title: 'ABBREVIATION LIST',
+    link: '/phc/systems-enablers',
+    title: 'SYSTEMS ENABLERS',
     top: 260,
     active: false,
     subMenus: [],
@@ -58,9 +58,18 @@ const navOptions = [
   {
     id: 5,
     level: 2,
+    link: '/phc/abbreviation',
+    title: 'ABBREVIATION LIST',
+    top: 300,
+    active: false,
+    subMenus: [],
+  },
+  {
+    id: 6,
+    level: 2,
     link: '/phc/acknowledgements',
     title: 'ACKNOWLEDGEMENTS',
-    top: 300,
+    top: 340,
     active: false,
     subMenus: [],
   },

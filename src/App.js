@@ -11,7 +11,7 @@ function App(props) {
     <>
       <Header />
       <Switch>
-        <Redirect exact from="/" to="/phc/introduction" />
+        <Redirect exact from="/" to="/phc/welcome" />
         {Routes(props)}
       </Switch>
     </>
