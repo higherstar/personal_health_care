@@ -87,7 +87,7 @@ function SideBar(props) {
     height: '100%',
     background: '#FFFFFFAD',
     position: 'absolute',
-    fontSize: collapsed ? 0 : '18px',
+    fontSize: collapsed ? 0 : '17px',
     top: 0,
     right: 0,
   };
