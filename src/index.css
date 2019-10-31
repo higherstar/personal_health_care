@@ -221,7 +221,9 @@
       font-size: 26px;
       font-weight: bold;
       text-transform: uppercase;
-      color: #0066cc; }
+      color: #0066cc;
+      margin-left: auto;
+      margin-right: auto; }
   .main-content .main-content-body {
     height: calc(100% - 70px);
     padding-bottom: 10px;

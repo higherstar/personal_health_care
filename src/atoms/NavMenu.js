@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import navIcon from '../assets/atoms/nav-icon.svg';
 
 function NavMenu(props) {
   const {
@@ -52,6 +53,26 @@ function NavMenu(props) {
     textDecoration: 'none',
   });
 
+
+  const navIconStyle = (link) => {
+    let isExpandable = false;
+    if (link.includes('/phc/future-patient-journey') || link.includes('/phc/systems-enablers')) {
+      isExpandable = true;
+    }
+    if (link.includes('value-based-healthcare')) {
+      isExpandable = false;
+    }
+
+    return {
+      display: !isExpandable && 'none',
+      width: '22px',
+      height: '22px',
+      position: 'absolute',
+      right: '5px',
+      cursor: 'pointer',
+    };
+  };
+
   return (
     <div className={`${className}`} style={contentStyle} key={`menu_${index}`}>
       <Link
@@ -71,6 +92,7 @@ function NavMenu(props) {
             className="d-flex align-items-center nav-submenu"
           >
             <span style={{ width: '220px', lineHeight: '18px' }}>{subMenu}</span>
+            <img src={navIcon} alt="nav icon" style={navIconStyle(subMenuLinks[index])} />
           </Link>
         ))}
       </div>

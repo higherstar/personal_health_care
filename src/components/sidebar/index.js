@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
+import navIcon from '../../assets/atoms/arrow-right-blue.svg';
 
 function SideBar(props) {
   const { collapsed, navOptions, color } = props;
@@ -33,6 +34,19 @@ function SideBar(props) {
     zIndex: 2,
     transition: '0.3s all ease',
   });
+
+  const navIconStyle = (top, index) => ({
+    display: navOptions[0].activeMenu === index ? 'block' : 'none',
+    width: '26px',
+    height: '26px',
+    position: 'absolute',
+    top: `${top - 3}px`,
+    left: '55px',
+    cursor: 'pointer',
+    zIndex: 2,
+    transition: '0.3s all ease',
+  });
+
   const dotStyle = (option) => {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let { top } = option;
@@ -101,7 +115,7 @@ function SideBar(props) {
       <div className="side-bar-content">
         <SearchButton className="search-button" collapsed={collapsed} />
         <div className="side-bar-nav">
-          {navOptions[0].level === 3 && (
+          {navOptions[0].level === 3 ? (
             <>
               {!collapsed && (<div className="side-bar-submenu-left" />)}
               <div className="side-bar-submenu" style={subMenuStyle}>
@@ -126,19 +140,19 @@ function SideBar(props) {
                 ))}
               </div>
               {defaultTop.map((top, index) => (
-                <div
-                  key={`dot_top_${top}`}
-                  className="nav-dot"
-                  style={defaultDotStyle(top, index)}
-                />
+                <div key={`dot_top_${top}`}>
+                  <div
+                    className="nav-dot"
+                    style={defaultDotStyle(top, index)}
+                  />
+                  <img src={navIcon} alt="nav icon" style={navIconStyle(top, index)} />
+                </div>
               ))}
             </>
-          )}
-
-          {navOptions.map((option) => (
-            <div key={`nav_${option.id}`}>
-              {navOptions[0].level !== 3 && (
-                <>
+          ) : (
+            <>
+              {navOptions.map((option) => (
+                <div key={`nav_${option.id}`}>
                   <div
                     className="nav-dot"
                     style={dotStyle(option)}
@@ -156,10 +170,10 @@ function SideBar(props) {
                       collapsed={collapsed}
                     />
                   </div>
-                </>
-              )}
-            </div>
-          ))}
+                </div>
+              ))}
+            </>
+          )}
         </div>
       </div>
       <div className="side-bar-footer d-flex align-items-center justify-content-center" style={footerStyle}>
