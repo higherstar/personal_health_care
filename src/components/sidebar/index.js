@@ -106,8 +106,12 @@ function SideBar(props) {
                     {navOptions[0].parentTitle}
                   </Link>
                 </div>
-                {navOptions.map((option) => (
-                  <div className="d-flex align-items-center submenu-item-wrapper" style={subMenuItemStyle(option)}>
+                {navOptions.map((option, index) => (
+                  <div
+                    key={`submenu_level_3_${index}`}
+                    className="d-flex align-items-center submenu-item-wrapper"
+                    style={subMenuItemStyle(option)}
+                  >
                     <Link to={option.link} className="submenu-item">
                       {option.title}
                     </Link>

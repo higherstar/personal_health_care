@@ -1,5 +1,6 @@
 import React from 'react';
 import PageContainer from '../../components/pagecontainer';
+import mapImage from '../../assets/maps/map-journey.png';
 
 const navOptions = [
   {
@@ -82,11 +83,15 @@ const navOptions = [
 
 function Journey() {
   const content = (
-    <h1>Journey</h1>
+    <div className="future-journey d-flex align-items-center justify-content-center">
+      <div className="background-map">
+        <img src={mapImage} alt="background map" />
+      </div>
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Future patient journey" color="blue" />
   );
 }
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function CustomModal(props) {
   const {
-    open, header, content, handleCloseClick,
+    open, header, content, closeButton, handleCloseClick,
   } = props;
 
   const [closed, setClosed] = useState(!open);
@@ -13,7 +13,7 @@ function CustomModal(props) {
   };
 
   const modalStyle = {
-    display: closed ? 'none' : 'block',
+    display: !open || closed ? 'none' : 'block',
   };
 
   return (
@@ -21,9 +21,11 @@ function CustomModal(props) {
       <div className="custom-modal-container phc-container">
         <div className="custom-modal-header d-flex align-items-center justify-content-start">
           {header}
-          <button type="button" className="btn btn-primary close-button" onClick={handleClose}>
-            <span>&times;</span>
-          </button>
+          {closeButton && (
+            <button type="button" className="btn btn-primary close-button" onClick={handleClose}>
+              <span>&times;</span>
+            </button>
+          )}
         </div>
         <div className="custom-modal-content d-flex justify-content-between align-items-start flex-md-wrap">
           {content}
@@ -37,12 +39,14 @@ CustomModal.propTypes = {
   open: PropTypes.bool.isRequired,
   content: PropTypes.node,
   header: PropTypes.node,
+  closeButton: PropTypes.bool,
   handleCloseClick: PropTypes.func,
 };
 
 CustomModal.defaultProps = {
   content: '',
   header: '',
+  closeButton: true,
   handleCloseClick: () => null,
 };
 

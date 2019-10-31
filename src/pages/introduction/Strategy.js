@@ -1,5 +1,8 @@
 import React from 'react';
+
 import PageContainer from '../../components/pagecontainer/index';
+import mapImage from '../../assets/maps/map-background.png';
+import CustomModal from '../../components/modals/CustomModal';
 
 const navOptions = [
   {
@@ -75,13 +78,22 @@ const navOptions = [
   },
 ];
 
+const modalContent = (
+  <div />
+);
+
 function Strategy() {
   const content = (
-    <h1>{'Roche\'s Vision & Strategy'}</h1>
+    <div className="introduction-strategy d-flex align-items-center justify-content-center">
+      <div className="background-map">
+        <img src={mapImage} alt="background map" />
+      </div>
+      <CustomModal open content={modalContent} closeButton={false} />
+    </div>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer page={content} navOptions={navOptions} title="Introduction" color="blue" />
   );
 }
 

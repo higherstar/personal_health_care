@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -87,15 +86,11 @@ const settings = {
 };
 
 function Welcome() {
-  const [toIntroduction, setToIntroduction] = useState(false);
+  const [modalOpen, setModalOpen] = useState(true);
 
   const handleCloseClick = () => {
-    setToIntroduction(true);
+    setModalOpen(false);
   };
-
-  if (toIntroduction) {
-    return <Redirect to="/phc/introduction" />;
-  }
 
   const modalContent = (
     <div className="welcome-modal">
@@ -138,7 +133,7 @@ function Welcome() {
       <div className="background-map">
         <img src={mapImage} alt="background map" />
       </div>
-      <CustomModal open content={modalContent} />
+      <CustomModal open={modalOpen} content={modalContent} />
     </div>
   );
 
