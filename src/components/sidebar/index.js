@@ -94,10 +94,6 @@ function SideBar(props) {
     fontWeight: option.active && 'bold',
   });
 
-  const handleMenuClick = (key) => {
-    console.log(key);
-  };
-
   return (
     <div className="side-bar" style={sideBarStyle}>
       <div className="side-bar-left-band" />
@@ -156,7 +152,6 @@ function SideBar(props) {
                       subMenus={option.subMenus}
                       subMenuLinks={option.subMenuLinks}
                       navOptions={navOptions}
-                      handleMenuClick={handleMenuClick}
                       index={option.id}
                       collapsed={collapsed}
                     />

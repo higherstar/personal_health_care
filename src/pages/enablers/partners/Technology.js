@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageContainer from '../../../components/pagecontainer';
+import MainContent from '../../../components/maincontent';
 import mapImage from '../../../assets/common/partners.png';
 
 const navOptions = [
@@ -52,6 +53,7 @@ function Technology() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
+      <MainContent />
     </div>
   );
 

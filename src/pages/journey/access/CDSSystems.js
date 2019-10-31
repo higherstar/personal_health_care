@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageContainer from '../../../components/pagecontainer/index';
+import MainContent from '../../../components/maincontent';
 import mapImage from '../../../assets/common/access.png';
 
 const navOptions = [
@@ -52,6 +53,7 @@ function AccessCDSSystems() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
+      <MainContent />
     </div>
   );
 

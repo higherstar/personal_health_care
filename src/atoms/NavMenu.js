@@ -13,13 +13,11 @@ function NavMenu(props) {
     active,
     activeSubMenu,
     collapsed,
-    handleMenuClick,
   } = props;
 
   const [expanded, setExpanded] = useState(false);
   const handleTitleClick = () => {
     setExpanded(!expanded);
-    handleMenuClick(index);
   };
 
   const contentStyle = {
@@ -90,7 +88,6 @@ NavMenu.propTypes = {
   active: PropTypes.bool.isRequired,
   activeSubMenu: PropTypes.number,
   collapsed: PropTypes.bool.isRequired,
-  handleMenuClick: PropTypes.func.isRequired,
 };
 
 NavMenu.defaultProps = {

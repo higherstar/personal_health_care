@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageContainer from '../../../components/pagecontainer/index';
+import MainContent from '../../../components/maincontent';
 import mapImage from '../../../assets/common/care.png';
 
 const navOptions = [
@@ -62,6 +63,7 @@ function CareDiagnostics() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
+      <MainContent />
     </div>
   );
 

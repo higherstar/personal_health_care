@@ -1,6 +1,7 @@
 import React from 'react';
 import PageContainer from '../../../components/pagecontainer/index';
 import mapImage from '../../../assets/common/data.png';
+import MainContent from '../../../components/maincontent';
 
 const navOptions = [
   {
@@ -31,6 +32,7 @@ function DataInsights() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
+      <MainContent />
     </div>
   );
 

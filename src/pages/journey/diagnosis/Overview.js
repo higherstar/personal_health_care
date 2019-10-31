@@ -1,6 +1,7 @@
 import React from 'react';
 import PageContainer from '../../../components/pagecontainer/index';
 import mapImage from '../../../assets/common/diagnosis.png';
+import MainContent from "../../../components/maincontent";
 
 const navOptions = [
   {
@@ -75,12 +76,17 @@ const navOptions = [
   },
 ];
 
+const mainContent = (
+  <h2>Here Content</h2>
+);
+
 function DiagnosisOverview() {
   const content = (
     <div className="journey-overview page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
+      <MainContent content={mainContent} />
     </div>
   );
 
