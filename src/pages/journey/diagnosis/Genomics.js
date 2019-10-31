@@ -83,7 +83,7 @@ function DiagnosisGenomics() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <MainContent />
+      <MainContent navOptions={navOptions} />
     </div>
   );
 

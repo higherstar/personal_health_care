@@ -6,7 +6,7 @@ import nextIcon from '../../assets/atoms/arrow-right-wide.svg';
 
 function MainContent(props) {
   const {
-    content,
+    content, navOptions,
   } = props;
 
   const handlePrevClick = () => {
@@ -17,13 +17,15 @@ function MainContent(props) {
     console.log('next clicked');
   };
 
+  const { title } = navOptions.find((option) => option.active === true);
+
   return (
     <div className="main-content">
       <div className="main-content-header d-flex align-items-center justify-content-between">
         <button type="button" className="btn btn-primary nav-button" onClick={handlePrevClick}>
           <img src={prevIcon} alt="prev icon" />
         </button>
-        <div className="main-content-title">Main Content</div>
+        <div className="main-content-title">{title}</div>
         <button type="button" className="btn btn-primary nav-button" onClick={handleNextClick}>
           <img src={nextIcon} alt="next icon" />
         </button>
@@ -37,6 +39,7 @@ function MainContent(props) {
 
 MainContent.propTypes = {
   content: PropTypes.node,
+  navOptions: PropTypes.array.isRequired,
 };
 
 MainContent.defaultProps = {

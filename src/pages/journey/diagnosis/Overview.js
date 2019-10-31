@@ -86,7 +86,7 @@ function DiagnosisOverview() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <MainContent content={mainContent} />
+      <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );
 
