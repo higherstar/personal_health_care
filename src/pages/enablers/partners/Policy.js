@@ -48,9 +48,56 @@ const navOptions = [
 ];
 
 const mainContent = (
-  <div className="d-flex justify-content-center">
-    <h1>Coming soon</h1>
-  </div>
+  <>
+    <h2>Description</h2>
+    <p>
+Legal frameworks around the collection, processing & sharing of data is an important enabler
+      for PHC. Stakeholders such as patients, healthcare providers (HCPs), regulators and policy
+      makers, may be involved.
+    </p>
+    <h2>
+Why it is important in PHC
+    </h2>
+    <span>
+It is important to identify, understand and address key barriers to building and gaining access to
+                Meaningful Data at Scale (MDAS). Initial barriers to considered are:
+      <sup>1</sup>
+      <li>Cost</li>
+      <li>Scale (breadth and depth)</li>
+      <li>Data privacy laws and regulations</li>
+      <li>Patient cultural perspectives</li>
+      <li>Infrastructure</li>
+      <li>Data quality and completeness</li>
+      <li>Access mode</li>
+      <li>Unstructured nature of data</li>
+      <li>Intellectual property</li>
+    </span>
+    <br />
+    <h2>Key drivers/considerations</h2>
+    <p>
+Data Privacy is a key area where adoption of legislation is emerging and requirements vary across
+        geographies. Some of this emerging legislation is due to actions from other industries with little
+        consideration for the impact on health data specifically.
+    </p>
+    <p>
+        How
+      {' '}
+      <strong>Roche</strong>
+      {' '}
+and those we share data with collect, manage and analyze data including
+        de-identification,
+        anonymization should be transparent to reinforce our commitment to data privacy. Roche needs access
+        to high-quality, interoperable data to realize PHC. Policy that enables access to and sharing of
+        data is key, as well as policy that supports implementation of data quality and interoperability
+        standards.
+    </p>
+    <span>
+                You can address your questions about data privacy to
+      <br />
+      <a href="https://global.privacy@roche.com">global.privacy@roche.com</a>
+.
+    </span>
+  </>
 );
 
 function Policy() {

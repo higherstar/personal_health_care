@@ -19,7 +19,6 @@ function MainContent(props) {
       setLink(navOptions[activeIndex - 1].link);
       setState(true);
     }
-    console.log('prev clicked');
   };
 
   const handleNextClick = () => {
@@ -28,7 +27,6 @@ function MainContent(props) {
       setLink(navOptions[activeIndex + 1].link);
       setState(true);
     }
-    console.log('next clicked');
   };
 
   if (state) {

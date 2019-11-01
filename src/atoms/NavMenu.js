@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+
 import navIcon from '../assets/atoms/nav-icon.svg';
 
 function NavMenu(props) {

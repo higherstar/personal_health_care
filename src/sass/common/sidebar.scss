@@ -6,6 +6,11 @@
   z-index: 1;
   transition: 0.3s all ease;
 
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px !important;
+  }
+
   .side-bar-left-band {
     width: 5px;
     height: 100%;
@@ -35,6 +40,7 @@
     width: 100%;
     height: calc(100% - 147px);
     position: relative;
+    overflow: auto;
 
     .side-bar-submenu-left {
       width: 88px;

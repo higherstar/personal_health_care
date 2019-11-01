@@ -6,6 +6,17 @@ import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
 import navIcon from '../../assets/atoms/arrow-right-blue.svg';
 
+const backgroundColor = (color) => {
+  switch (color) {
+    case 'blue':
+      return '#0066CC';
+    case 'yellow':
+      return '#ED8B00';
+    default:
+      return '#0066CC';
+  }
+};
+
 function SideBar(props) {
   const { collapsed, navOptions, color } = props;
 
@@ -90,17 +101,6 @@ function SideBar(props) {
     fontSize: collapsed ? 0 : '17px',
     top: 0,
     right: 0,
-  };
-
-  const backgroundColor = (color) => {
-    switch (color) {
-      case 'blue':
-        return '#0066CC';
-      case 'yellow':
-        return '#ED8B00';
-      default:
-        return '#0066CC';
-    }
   };
 
   const subMenuItemStyle = (option) => ({

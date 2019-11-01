@@ -3,6 +3,13 @@
 @import "./abbreviation";
 @import "./acknowledgements";
 
+p {
+  span {
+    color: #0066CC;
+    font-weight: bold;
+  }
+}
+
 .page-wrapper {
   width: 100%;
 }
