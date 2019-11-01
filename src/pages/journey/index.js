@@ -1,5 +1,7 @@
 import React from 'react';
+
 import PageContainer from '../../components/pagecontainer';
+import DropDown from '../../atoms/DropDown';
 import mapImage from '../../assets/maps/map-journey.png';
 
 const navOptions = [
@@ -81,11 +83,108 @@ const navOptions = [
   },
 ];
 
+const diagnosisOptions = [
+  {
+    className: 'diagnosis-dropdown',
+    title: 'Early Personalised Diagnosis',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'Genomics',
+      'Advanced Imaging',
+      'Digital Pathology',
+      'CDS Systems',
+      'Digital Health(SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/diagnosis/overview',
+      '/phc/future-patient-journey/diagnosis/diagnostics',
+      '/phc/future-patient-journey/diagnosis/genomics',
+      '/phc/future-patient-journey/diagnosis/advanced-imaging',
+      '/phc/future-patient-journey/diagnosis/digital-pathology',
+      '/phc/future-patient-journey/diagnosis/cds-systems',
+      '/phc/future-patient-journey/diagnosis/digital-health',
+    ],
+  },
+  {
+    className: 'monitoring-dropdown',
+    title: 'Personalised Remote Monitoring & Care',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'Genomics',
+      'Advanced Imaging',
+      'CDS Systems',
+      'Digital Health(SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/monitoring/overview',
+      '/phc/future-patient-journey/monitoring/diagnostics',
+      '/phc/future-patient-journey/monitoring/genomics',
+      '/phc/future-patient-journey/monitoring/advanced-imaging',
+      '/phc/future-patient-journey/monitoring/cds-systems',
+      '/phc/future-patient-journey/monitoring/digital-health',
+    ],
+  },
+  {
+    className: 'data-dropdown',
+    title: 'Data & Insights',
+    subMenus: [
+      'Overview',
+      'Real-World Data',
+      'Advanced Analytics',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/data/overview',
+      '/phc/future-patient-journey/data/real-world-data',
+      '/phc/future-patient-journey/data/advanced-analytics',
+    ],
+  },
+  {
+    className: 'care-dropdown',
+    title: 'Personalised Care Plan',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'CDS Systems',
+      'MGTOs',
+      'Digital Health(SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/care/overview',
+      '/phc/future-patient-journey/care/diagnostics',
+      '/phc/future-patient-journey/care/cds-systems',
+      '/phc/future-patient-journey/care/mgtos',
+      '/phc/future-patient-journey/care/digital-health',
+    ],
+  },
+  {
+    className: 'access-dropdown',
+    title: 'Rapid Access to Personalised Interventions',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'CDS Systems',
+      'Digital Health(SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/access/overview',
+      '/phc/future-patient-journey/access/diagnostics',
+      '/phc/future-patient-journey/access/cds-systems',
+      '/phc/future-patient-journey/access/digital-health',
+    ],
+  },
+];
+
 function Journey() {
   const content = (
     <div className="future-journey d-flex align-items-center justify-content-center">
       <div className="background-map">
         <img src={mapImage} alt="background map" />
+        <DropDown
+          color="blue"
+          options={diagnosisOptions}
+        />
       </div>
     </div>
   );

@@ -10,6 +10,40 @@
 .nav-menu-title:hover {
   font-weight: bold !important; }
 
+.custom-dropdown .drop-button:active {
+  background: #1189DA !important; }
+
+.custom-dropdown .drop-button .dropdown {
+  background: #1189DA !important; }
+
+.custom-dropdown .dropdown-title {
+  width: 70%;
+  height: 50px;
+  background: white;
+  border-radius: 0 25px 25px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  cursor: pointer; }
+  .custom-dropdown .dropdown-title:hover {
+    background: #0066CC;
+    color: white !important; }
+
+.custom-dropdown .custom-dropdown-list {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff99;
+  border-radius: 5px;
+  padding: 10px;
+  top: 50px; }
+  .custom-dropdown .custom-dropdown-list a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Imago'; }
+
 .header {
   width: 100%;
   height: 112px; }
@@ -261,6 +295,11 @@
       font-size: 25px;
       font-weight: bold;
       text-align: center; }
+
+.access-dropdown {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .abbreviation .custom-modal-container {
   padding: 0; }

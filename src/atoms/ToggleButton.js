@@ -37,7 +37,6 @@ function ToggleButton(props) {
   const imageStyle = {
     width: '10px',
     position: 'absolute',
-    marginLeft: state ? '-1px' : '1px',
   };
 
   return (
@@ -56,12 +55,13 @@ ToggleButton.propTypes = {
   border: PropTypes.bool,
   from: PropTypes.node.isRequired,
   to: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   handleChange: PropTypes.func.isRequired,
 };
 
 ToggleButton.defaultProps = {
   border: false,
+  className: '',
 };
 
 export default ToggleButton;
