@@ -27,7 +27,7 @@ function CustomModal(props) {
             </button>
           )}
         </div>
-        <div className="custom-modal-content d-flex justify-content-between align-items-start flex-md-wrap">
+        <div className="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap">
           {content}
         </div>
       </div>

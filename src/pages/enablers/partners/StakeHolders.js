@@ -47,13 +47,19 @@ const navOptions = [
   },
 ];
 
+const mainContent = (
+  <div className="d-flex justify-content-center">
+    <h1>Coming soon</h1>
+  </div>
+);
+
 function StakeHolders() {
   const content = (
     <div className="partners-stakeholders d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <MainContent navOptions={navOptions} />
+      <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );
 

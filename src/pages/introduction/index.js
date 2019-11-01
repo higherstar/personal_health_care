@@ -76,7 +76,9 @@ const navOptions = [
 
 function Introduction() {
   const content = (
-    <h1>Introduction</h1>
+    <div className="d-flex justify-content-center">
+      <h1>Coming soon</h1>
+    </div>
   );
 
   return (

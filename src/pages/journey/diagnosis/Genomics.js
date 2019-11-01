@@ -83,124 +83,124 @@ const mainContent = (
   <>
     <h2>Description</h2>
     <p>
-Advanced imaging refers to the use of computer algorithms to analyze digital outputs of X-rays,
-    computed tomography
-    (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used
-    for medical diagnosis.
-      <sup>1</sup>
-      {' '}
-Click
-      <Link to="/phc/future-patient-journey/data/advanced-analytics">here</Link>
-      {' '}
-to learn more.
+      Genomic profiling is a broad term that refers to the sequencing and analysis of genomic alterations
+      (base substitutions, insertions and deletions, copy number alterations, and rearrangements) and
+      biomarkers that are known to be relevant in a disease.
+      <br />
+      <br />
+        At the molecular level, the expression of certain genes is used as biomarker to determine the
+        appropriate therapy for cancer patients. Biomarkers are thus a key component of Personalized
+        Healthcare approaches. Appropriate biomarkers are also essential to design clinical studies and
+        to define their intended or expected outcome. Diagnostic methods such as Next-Generation Sequencing
+        (NGS) and Comprehensive Genomic Profiling (CGP) aim at identifying and quantifying disease-relevant
+        biomarkers.
+      <br />
+      <br />
+          At Roche, we are developing our genomic diagnostics capability, including biomarkers, Next-Generation
+          Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) to further enable personalized
+          healthcare (PHC).
+      <br />
+      <br />
+            Roche Sequencing Solutions offers best in-class Next-Generation Sequencing (NGS) products.
+            Clinical NGS can involve one single gene to many genes and provides clinicians with information
+            to assist in treatment selection [internal hyperlink to CDS in Care], thus enabling personalized
+            healthcare (PHC). Advanced reports, such as those FMI deliver, provide information including
+            clinical trials, treatments to avoid and potential resistance gene of relevance.
+      <br />
+      <br />
+              Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene
+              panels that detect all classes of genomic alterations and biomarkers, providing a holistic view to
+              healthcare providers of appropriate treatments [internal hyperlink to CDS page in Care]
+              (targeted or immunotherapy) and potential clinical trials.
     </p>
     <h2>
-Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
-the left)
+Why it is important for PHC
     </h2>
     <p>
-      <strong>Smarter & more efficient R&D - </strong>
-By automating time-consuming & costly processes
-  (e.g., secondary imaging reads & IRFs), this effort will result in significantly faster trials,
-  while more accurate quantification of disease burden will enable robust cohort matching for use in
-  synthetic control arm studies.
-      <sup>2</sup>
+Roche is leveraging NGS/CGP in several ways to promote PHC.
     </p>
     <p>
-      <strong>Improved access & personalized care - </strong>
-Development of automated algorithms can provide
-better and more accurate measurements of disease than currently available to help predict progression
-and response to therapy.
-      <sup>2</sup>
+      <strong>
+Improved access & personalized care
+      </strong>
+      Foundation Medicine (FMI) is leading the understanding and use of CGP in the clinical setting,
+      establishing new standards for
+      {' '}
+      <Link to="/phc/future-patient-journey/diagnosis/diagnostics">advanced diagnostics</Link>
+      {' '}
+and laying the
+      foundation for pan-tumor targeted therapy, which
+      cannot be delivered with current technology.
       <br />
-These could deliver significant savings to health systems, or allow emerging health
-systems to deliver advanced care with a lower investment in infrastructure and other system resources.
+        Advanced comprehensive clinical-genomic databases can inform treatment decisions through clinical
+        decision (CDS) systems [link to CDS page under Care] using the power
+        of
+      {' '}
+      <Link to="/phc/systems-enablers/value-based-healthcare">Meaningful data at scale (MDAS)</Link>
+      {' '}
+and
+      {' '}
+      <Link
+        to="/phc/future-patient-journey/data/advanced-analytics"
+      >
+        Advanced Analytics
+      </Link>
     </p>
-    <br />
     <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
     <div className="connection-button d-flex align-items-center">
       <img src={connectionIcon} alt="connection icon" />
       Connections with Other PHC Topics
     </div>
-    <span>
-                At Roche, we are focusing on curating and analyzing clinical images collected across the three
-      {' '}
-      <Link
-        to="/phc/systems-enablers/roches-initiatives/showcases"
-      >
-                showcases
-      </Link>
-      {' '}
-Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms
-                for more accurate predictions for disease
-                progression and response to therapy. This automation will result in:
-      <li>
-                  Faster trials
-      </li>
-      <li>
-                  More accurate quantification of disease burden
-      </li>
-      <li>
-                  More robust cohort matching to synthetic control arm studies
-      </li>
-                We are also developing imaging-based biomarkers. This include:
-      <li>
-                  Full automation of existing endpoints that are used to assess efficacy in clinical trials
-      </li>
-      <li>
-                  Novel prognostics and predictive imaging-based
-        {' '}
-        <Link to="/phc/future-patient-journey/diagnosis/genomics">biomarkers</Link>
-      </li>
-    </span>
+    <br />
+    <h2>
+What Roche is doing in this area
+    </h2>
     <p>
-      The multi-functional PHC IX Imaging team is developing and implementing a Global Imaging Platform
-      with tools for scientists and others to store, curate and analyze imaging data. The team is currently
-      leading a pilot program to deploy and drive adoption within Roche of a production-ready system.
+Roche is expanding its “Omics and Biomarkers” capabilities. Moreover, the Omics Team
+        collaborate closely
+      with
+      {' '}
+      <Link to="a/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics</Link>
+, and other teams to
+        derive novel
+        disease and mode of action (MoA) specific insights to inform drug development.
+      <br />
+          The CUPISCO trial is an example of the use of CGP in combination with a patient-centric
+          decision-making process by a Molecular Tumor Board to provide a highly-specific treatment
+          decision for each patient.2 Click here to learn more about the
+      {' '}
+      <a href="cupisco.html">CUPISCO trial.</a>
     </p>
     <br />
-    <h2>Key drivers/considerations</h2>
-    <p>
-      <strong>Data Sharing/Privacy - </strong>
-When sharing images externally with 3rd parties
-        (and even internally), there is a need to take data privacy into consideration. It matters to
-        consider privacy, security, transparency, and patients control to opt out of any aspect at any
-        time. The
-      {' '}
-      <Link to="/phc/systems-enablers/partner/policy">Data Privacy team</Link>
-      {' '}
-can help determine the
-        right level of privacy required before data can be shared.
-    </p>
-    <p>
-      <strong>Data policy development – </strong>
-Regulation and guidance are needed to ensure
-        collection of
-      {' '}
-      <Link to="/phc/future-patient-journey/data/real-world-data">high-quality data and interoperability</Link>
-      {' '}
-of
-        systems to facilitate sharing, all the while protecting patient privacy.
-    </p>
-    <p>
-      <strong>Contracts - </strong>
-When entering into partnerships with commercial companies and academic
-        institutions, be aware of complex intellectual property(IP) negotiations. Important to have both
-        Legal and Partnering take a proactive lead to put a contract in place that meets the needs
-        of the project.
-    </p>
-    <p>
-      <strong>Complex data - </strong>
-The scale of the imaging data requires close collaboration and
-        coordination with The multi-functional
-      {' '}
-      <Link to="/phc/systems-enablers/partner/patient-partnership">
-PHC
-          IX/Technology
-      </Link>
-      {' '}
-and imaging science.
-    </p>
+    <h2>
+Key drivers/considerations
+    </h2>
+    <span>
+The general use of genomics as diagnostics tools along the patient journey depends on:
+      <strong>Advanced diagnostics funding – </strong>
+Level of funding of NGS tests by the healthcare system
+                as diagnostic tool
+      <li>
+        <strong>Testing adoption - </strong>
+Level of adoption of biomarker and NGS tests and CGP in
+                  diagnostic practice
+      </li>
+      <li>
+        <strong>Advanced diagnostics funding – </strong>
+Level of funding of biomarker and NGS tests by the
+                  healthcare system as diagnostic tool
+      </li>
+      <li>
+        <strong>Regulatory perspective – </strong>
+Existence of pathway for the approval of
+                  molecularly-informed therapies 3  [internal hyperlink to regulatory policy]
+      </li>
+      <li>
+        <strong>Payer acceptance – </strong>
+Level of reimbursement of molecularly-informed therapies
+                  [internal hyperlink to the Stakeholders page under Enablers]
+      </li>
+    </span>
   </>
 );
 

@@ -78,7 +78,9 @@ const navOptions = [
 ];
 
 const modalContent = (
-  <div />
+  <div className="d-flex justify-content-center">
+    <h1>Coming soon</h1>
+  </div>
 );
 
 function Purpose() {

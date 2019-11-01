@@ -76,7 +76,9 @@ const navOptions = [
 
 function ChangingJourney() {
   const content = (
-    <h1>Changing the Patient Journey through PHC</h1>
+    <div className="d-flex justify-content-center">
+      <h1>Coming soon</h1>
+    </div>
   );
 
   return (
