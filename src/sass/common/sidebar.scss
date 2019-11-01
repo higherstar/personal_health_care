@@ -11,6 +11,10 @@
     width: 3px !important;
   }
 
+  .nav-dot:active {
+    background: #2a89ef !important;
+  }
+
   .side-bar-left-band {
     width: 5px;
     height: 100%;
@@ -53,6 +57,7 @@
 
     .side-bar-submenu {
       padding: 80px 0;
+      overflow: auto;
 
       .submenu-item-wrapper {
         height: 40px;

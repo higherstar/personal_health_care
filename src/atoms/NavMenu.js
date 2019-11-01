@@ -15,6 +15,7 @@ function NavMenu(props) {
     active,
     activeSubMenu,
     collapsed,
+    expand,
   } = props;
 
   const [expanded, setExpanded] = useState(false);
@@ -24,7 +25,7 @@ function NavMenu(props) {
 
   const contentStyle = {
     width: '100%',
-    height: collapsed ? 0 : `${subMenus.length * 50 + 40}px`,
+    height: collapsed ? 0 : `${(expand ? subMenus.length : 0) * 50 + 40}px`,
     background: active ? 'white' : 'transparent',
     paddingLeft: '70px',
     transition: '0.3s all ease',
@@ -85,7 +86,7 @@ function NavMenu(props) {
         <span>{title}</span>
       </Link>
       <div>
-        {subMenus.map((subMenu, index) => (
+        {expand && subMenus.map((subMenu, index) => (
           <Link
             to={subMenuLinks[index]}
             key={subMenu.replace(/\s/g, '')}
@@ -111,6 +112,7 @@ NavMenu.propTypes = {
   active: PropTypes.bool.isRequired,
   activeSubMenu: PropTypes.number,
   collapsed: PropTypes.bool.isRequired,
+  expand: PropTypes.bool.isRequired,
 };
 
 NavMenu.defaultProps = {

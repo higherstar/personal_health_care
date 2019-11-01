@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
@@ -19,6 +19,24 @@ const backgroundColor = (color) => {
 
 function SideBar(props) {
   const { collapsed, navOptions, color } = props;
+
+  const [state, setState] = useState(false);
+  const [link, setLink] = useState('');
+  const [expand, setExpand] = useState(true);
+
+  const handleDotClick = (option) => {
+    if (option.active) {
+      setExpand(!expand);
+      return;
+    }
+
+    setLink(option.link);
+    setState(true);
+  };
+
+  if (state) {
+    return <Redirect exact to={link} />;
+  }
 
   const sideBarBackground = navOptions[0].level === 3 ? 'transparent' : '#FFFFFFAD';
   const sideBarStyle = {
@@ -61,7 +79,7 @@ function SideBar(props) {
   const dotStyle = (option) => {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let { top } = option;
-    if (!collapsed && option.id > activeIndex) {
+    if (expand && !collapsed && option.id > activeIndex) {
       top += navOptions[activeIndex].subMenus.length * 50;
     }
 
@@ -82,7 +100,7 @@ function SideBar(props) {
   const navMenuStyle = (option) => {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let top = option.top - 10;
-    if (option.id > activeIndex) {
+    if (expand && option.id > activeIndex) {
       top += navOptions[activeIndex].subMenus.length * 50;
     }
 
@@ -90,6 +108,7 @@ function SideBar(props) {
       width: '100%',
       position: 'absolute',
       top: `${top}px`,
+      transition: '0.3s all ease',
     };
   };
 
@@ -156,6 +175,7 @@ function SideBar(props) {
                   <div
                     className="nav-dot"
                     style={dotStyle(option)}
+                    onClick={() => handleDotClick(option)}
                   />
                   <div className="nav-menu" style={navMenuStyle(option)}>
                     <NavMenu
@@ -168,6 +188,7 @@ function SideBar(props) {
                       navOptions={navOptions}
                       index={option.id}
                       collapsed={collapsed}
+                      expand={expand}
                     />
                   </div>
                 </div>
