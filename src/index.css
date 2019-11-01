@@ -17,13 +17,12 @@
   background: #1189DA !important; }
 
 .custom-dropdown .dropdown-title {
-  width: 70%;
+  width: 75%;
   height: 50px;
   background: white;
   border-radius: 0 25px 25px 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 3px;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
@@ -35,14 +34,18 @@
 .custom-dropdown .custom-dropdown-list {
   display: flex;
   flex-direction: column;
-  background: #ffffff99;
+  background: #ffffffbd;
   border-radius: 5px;
   padding: 10px;
   top: 50px; }
   .custom-dropdown .custom-dropdown-list a {
+    width: 100%;
     text-decoration: none;
     color: black;
-    font-family: 'Imago'; }
+    font-family: 'Imago';
+    padding: 0 5px; }
+    .custom-dropdown .custom-dropdown-list a:hover {
+      background: #ffffffdd; }
 
 .header {
   width: 100%;
@@ -296,11 +299,6 @@
       font-weight: bold;
       text-align: center; }
 
-.access-dropdown {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
 .abbreviation .custom-modal-container {
   padding: 0; }
   .abbreviation .custom-modal-container .custom-modal-header {
@@ -374,6 +372,53 @@
   right: 50%; }
   .detail-map img {
     height: 100%; }
+
+.access-dropdown {
+  position: absolute;
+  top: 71%;
+  left: 47%; }
+
+.care-dropdown {
+  position: absolute;
+  top: 38%;
+  left: 61%; }
+
+.diagnosis-dropdown {
+  position: absolute;
+  top: 10%;
+  left: 29%; }
+
+.data-dropdown {
+  position: absolute;
+  top: 43%;
+  left: 48%; }
+
+.monitoring-dropdown {
+  position: absolute;
+  top: 32%;
+  left: 5%; }
+
+.roche-dropdown {
+  position: absolute;
+  top: 2%;
+  left: 84%; }
+  .roche-dropdown .dropdown-title:hover {
+    background: #ED8B00; }
+
+.partners-dropdown {
+  width: 135px;
+  position: absolute;
+  top: 2%;
+  left: 58%; }
+  .partners-dropdown .dropdown-title:hover {
+    background: #ED8B00; }
+
+.vbhc-dropdown {
+  position: absolute;
+  top: 1%;
+  left: 69%; }
+  .vbhc-dropdown .dropdown-title:hover {
+    background: #ED8B00; }
 
 /*--------------------------------------------------------------
 # General

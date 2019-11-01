@@ -25,3 +25,64 @@
     height: 100%;
   }
 }
+
+.access-dropdown {
+  position: absolute;
+  top: 71%;
+  left: 47%;
+}
+
+.care-dropdown {
+  position: absolute;
+  top: 38%;
+  left: 61%;
+}
+
+.diagnosis-dropdown {
+  position: absolute;
+  top: 10%;
+  left: 29%;
+}
+
+.data-dropdown {
+  position: absolute;
+  top: 43%;
+  left: 48%;
+}
+
+.monitoring-dropdown {
+  position: absolute;
+  top: 32%;
+  left: 5%;
+}
+
+.roche-dropdown {
+  position: absolute;
+  top: 2%;
+  left: 84%;
+
+  .dropdown-title:hover {
+    background: #ED8B00;
+  }
+}
+
+.partners-dropdown {
+  width: 135px;
+  position: absolute;
+  top: 2%;
+  left: 58%;
+
+  .dropdown-title:hover {
+    background: #ED8B00;
+  }
+}
+
+.vbhc-dropdown {
+  position: absolute;
+  top: 1%;
+  left: 69%;
+
+  .dropdown-title:hover {
+    background: #ED8B00;
+  }
+}

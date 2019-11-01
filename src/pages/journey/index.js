@@ -83,7 +83,7 @@ const navOptions = [
   },
 ];
 
-const diagnosisOptions = [
+const dropdownOptions = [
   {
     className: 'diagnosis-dropdown',
     title: 'Early Personalised Diagnosis',
@@ -183,7 +183,7 @@ function Journey() {
         <img src={mapImage} alt="background map" />
         <DropDown
           color="blue"
-          options={diagnosisOptions}
+          options={dropdownOptions}
         />
       </div>
     </div>

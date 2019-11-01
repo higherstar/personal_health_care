@@ -25,13 +25,12 @@
   }
 
   .dropdown-title {
-    width: 70%;
+    width: 75%;
     height: 50px;
     background: white;
     border-radius: 0 25px 25px 0;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 3px;
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
@@ -46,15 +45,21 @@
   .custom-dropdown-list {
     display: flex;
     flex-direction: column;
-    background: #ffffff99;
+    background: #ffffffbd;
     border-radius: 5px;
     padding: 10px;
     top: 50px;
 
     a {
+      width: 100%;
       text-decoration: none;
       color: black;
       font-family: 'Imago';
+      padding: 0 5px;
+
+      &:hover {
+        background: #ffffffdd;
+      }
     }
   }
 }

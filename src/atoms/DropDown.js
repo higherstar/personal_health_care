@@ -49,26 +49,22 @@ function DropDown(props) {
     left: '-18px',
   };
 
-  const imageStyle = (option) => {
-    return {
-      width: '13px',
-      position: 'absolute',
-      marginLeft: isCollapsed(option) && '1px',
-      marginTop: !isCollapsed(option) && '1px',
-      transform: !isCollapsed(option) && 'rotate(90deg)',
-    };
-  };
+  const imageStyle = (option) => ({
+    width: '13px',
+    position: 'absolute',
+    marginLeft: isCollapsed(option) && '1px',
+    marginTop: !isCollapsed(option) && '1px',
+    transform: !isCollapsed(option) && 'rotate(90deg)',
+  });
 
   const titleStyle = {
     border: `3px solid ${backgroundColor(color)}`,
     color: backgroundColor(color),
   };
 
-  const listStyle = (option) => {
-    return {
-      display: isCollapsed(option) && 'none',
-    };
-  };
+  const listStyle = (option) => ({
+    display: isCollapsed(option) && 'none',
+  });
 
   return (
     <>
@@ -81,8 +77,8 @@ function DropDown(props) {
           >
             <img src={arrowRight} alt="dropdown icon" style={imageStyle(option)} />
           </div>
-          <div className="dropdown-title" style={titleStyle} onClick={() => onClick(option)}>
-            {option.title}
+          <div className="dropdown-title d-flex align-items-center" style={titleStyle} onClick={() => onClick(option)}>
+            <span>{option.title}</span>
           </div>
           <div className="custom-dropdown-list position-absolute" style={listStyle(option)}>
             {option.subMenus.map((subMenu, index) => (

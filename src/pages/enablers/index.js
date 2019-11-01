@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageContainer from '../../components/pagecontainer';
+import DropDown from '../../atoms/DropDown';
 import mapImage from '../../assets/maps/map-enablers.png';
 
 const navOptions = [
@@ -78,11 +79,53 @@ const navOptions = [
   },
 ];
 
+const dropdownOptions = [
+  {
+    className: 'vbhc-dropdown',
+    title: 'Value-based Healthcare',
+    subMenus: [],
+    subMenuLinks: [],
+  },
+  {
+    className: 'roche-dropdown',
+    title: 'Roche Initiatives',
+    subMenus: [
+      'Context',
+      'Showcases',
+      'Shining Towers',
+      'ROZLYTREK',
+    ],
+    subMenuLinks: [
+      '/phc/systems-enablers/roches-initiatives/context',
+      '/phc/systems-enablers/roches-initiatives/showcases',
+      '/phc/systems-enablers/roches-initiatives/shining-towers',
+      '/phc/systems-enablers/roches-initiatives/rozlytrek',
+    ],
+  },
+  {
+    className: 'partners-dropdown',
+    title: 'Partners',
+    subMenus: [
+      'Stakeholders',
+      'Policy',
+      'PHC IX/Technology',
+      'Patient Partnership',
+    ],
+    subMenuLinks: [
+      '/phc/systems-enablers/partner/stakeholders',
+      '/phc/systems-enablers/partner/policy',
+      '/phc/systems-enablers/partner/phc-it',
+      '/phc/systems-enablers/partner/patient-partnership',
+    ],
+  },
+];
+
 function Enablers() {
   const content = (
     <div className="system-enablers d-flex align-items-center justify-content-center">
       <div className="background-map">
         <img src={mapImage} alt="background map" />
+        <DropDown options={dropdownOptions} color="yellow" />
       </div>
     </div>
   );
