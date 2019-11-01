@@ -2,16 +2,16 @@ import React from 'react';
 
 import PublicRoute from './publicRoutes';
 import Welcome from '../pages/welcome';
-import Introduction from '../pages/introduction';
 import Journey from '../pages/journey';
 import Enablers from '../pages/enablers';
 import Abbreviation from '../pages/abbreviation';
 import Acknowledgements from '../pages/acknowledgements';
-import ChangingJourney from '../pages/change/index';
-import Strategy from '../pages/introduction/Strategy';
-import Purpose from '../pages/introduction/Purpose';
-import PastJourney from '../pages/change/PastJourney';
-import FutureJourney from '../pages/change/FutureJourney';
+// import Introduction from '../pages/introduction';
+// import ChangingJourney from '../pages/change/index';
+// import Strategy from '../pages/introduction/Strategy';
+// import Purpose from '../pages/introduction/Purpose';
+// import PastJourney from '../pages/change/PastJourney';
+// import FutureJourney from '../pages/change/FutureJourney';
 import Diagnosis from '../pages/journey/diagnosis';
 import DiagnosisOverview from '../pages/journey/diagnosis/Overview';
 import DiagnosisDiagnostics from '../pages/journey/diagnosis/Diagnostics';
@@ -56,24 +56,30 @@ import Technology from '../pages/enablers/partners/Technology';
 
 const Routes = (props) => [
   <PublicRoute exact path="/phc/welcome" component={Welcome} props={props} key="welcome" />,
-  <PublicRoute exact path="/phc/introduction" component={Introduction} props={props} key="introduction" />,
-  <PublicRoute exact path="/phc/introduction/roche-strategy" component={Strategy} props={props} key="strategy" />,
-  <PublicRoute exact path="/phc/introduction/purpose" component={Purpose} props={props} key="purpose" />,
-  <PublicRoute exact path="/phc/changing-journey" component={ChangingJourney} props={props} key="changing-journey" />,
-  <PublicRoute
-    exact
-    path="/phc/changing-journey/past-patient-journey"
-    component={PastJourney}
-    props={props}
-    key="past-journey"
-  />,
-  <PublicRoute
-    exact
-    path="/phc/changing-journey/future-patient-journey"
-    component={FutureJourney}
-    props={props}
-    key="future-journey"
-  />,
+  // <PublicRoute exact path="/phc/introduction" component={Introduction} props={props} key="introduction" />,
+  // <PublicRoute exact path="/phc/introduction/roche-strategy" component={Strategy} props={props} key="strategy" />,
+  // <PublicRoute exact path="/phc/introduction/purpose" component={Purpose} props={props} key="purpose" />,
+  // <PublicRoute
+  //   exact
+  //   path="/phc/changing-journey"
+  //   component={ChangingJourney}
+  //   props={props}
+  //   key="changing-journey"
+  // >,
+  // <PublicRoute
+  //   exact
+  //   path="/phc/changing-journey/past-patient-journey"
+  //   component={PastJourney}
+  //   props={props}
+  //   key="past-journey"
+  // />,
+  // <PublicRoute
+  //   exact
+  //   path="/phc/changing-journey/future-patient-journey"
+  //   component={FutureJourney}
+  //   props={props}
+  //   key="future-journey"
+  // />,
   <PublicRoute exact path="/phc/future-patient-journey" component={Journey} props={props} key="future-journey" />,
   <PublicRoute
     exact

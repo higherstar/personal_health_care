@@ -32,7 +32,7 @@ function SideBar(props) {
     fontSize: collapsed ? 0 : '13px',
   };
 
-  const defaultTop = [100, 140, 180, 220, 260, 300, 340];
+  const defaultTop = [100, 140, 180, 220, 260];
   const defaultDotStyle = (top, index) => ({
     width: '20px',
     height: '20px',
