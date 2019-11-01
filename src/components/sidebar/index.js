@@ -36,7 +36,7 @@ function SideBar(props) {
   });
 
   const navIconStyle = (top, index) => ({
-    display: navOptions[0].activeMenu === index ? 'block' : 'none',
+    display: navOptions[0].activeMenu === index && !collapsed ? 'block' : 'none',
     width: '26px',
     height: '26px',
     position: 'absolute',

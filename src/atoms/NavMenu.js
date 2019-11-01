@@ -64,7 +64,7 @@ function NavMenu(props) {
     }
 
     return {
-      display: !isExpandable && 'none',
+      display: (!isExpandable || collapsed) && 'none',
       width: '22px',
       height: '22px',
       position: 'absolute',
