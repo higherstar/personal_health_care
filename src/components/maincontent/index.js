@@ -45,7 +45,7 @@ function MainContent(props) {
     display: navOptions.find((option) => option.active === true).level === 2 && 'none',
   };
 
-  const exceptionCases = title.includes('Digital Health') || title.includes('MOLECULARLY-GUIDED');
+  const exceptionCases = title.includes('DIGITAL HEALTH') || title.includes('MOLECULARLY-GUIDED');
   const titleStyle = {
     textTransform: !exceptionCases && 'uppercase',
   };
