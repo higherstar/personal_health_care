@@ -178,7 +178,9 @@ function SideBar(props) {
       </div>
       <div className="side-bar-footer d-flex align-items-center justify-content-center" style={footerStyle}>
         <span>
-          For Internal Use Only
+          Roche Confidential & Proprietary.
+          <br />
+          For Internal Use Only.
           <br />
           &copy;2019 F.Hoffmann-La Roche Ltd
           <br />

@@ -343,7 +343,7 @@ const Routes = (props) => [
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/partner/patient-partnership"
+    path="/phc/systems-enablers/partner/patient-partnerships"
     component={PatientPartnership}
     props={props}
     key="systems-enablers-patient-partnership"

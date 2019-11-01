@@ -187,7 +187,7 @@ Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis to develop automated
       The scale of the imaging data requires close collaboration and
       coordination with The multi-functional
       {' '}
-      <Link to="/phc/systems-enablers/partner/patient-partnership">
+      <Link to="/phc/systems-enablers/partner/patient-partnerships">
         PHC
         IX/Technology
       </Link>

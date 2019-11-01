@@ -109,13 +109,13 @@ const dropdownOptions = [
       'Stakeholders',
       'Policy',
       'PHC IX/Technology',
-      'Patient Partnership',
+      'Patient Partnerships',
     ],
     subMenuLinks: [
       '/phc/systems-enablers/partner/stakeholders',
       '/phc/systems-enablers/partner/policy',
       '/phc/systems-enablers/partner/phc-it',
-      '/phc/systems-enablers/partner/patient-partnership',
+      '/phc/systems-enablers/partner/patient-partnerships',
     ],
   },
 ];

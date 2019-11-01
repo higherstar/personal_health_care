@@ -200,13 +200,13 @@ const enablersOptions = [
       'Stakeholders',
       'Policy',
       'PHC IX/Technology',
-      'Patient Partnership',
+      'Patient Partnerships',
     ],
     subMenuLinks: [
       '/phc/systems-enablers/partner/stakeholders',
       '/phc/systems-enablers/partner/policy',
       '/phc/systems-enablers/partner/phc-it',
-      '/phc/systems-enablers/partner/patient-partnership',
+      '/phc/systems-enablers/partner/patient-partnerships',
     ],
   },
 ];
@@ -259,7 +259,7 @@ function Welcome() {
         </Slider>
       </div>
       <div className="explore-button d-flex align-items-center justify-content-center" onClick={handleCloseClick}>
-        <span>EXPLORE THE PHC SYSTEMS MAP</span>
+        <span>Explore the PHC-Enabled Patient Journey</span>
       </div>
     </div>
   );

@@ -72,7 +72,7 @@ const navOptions = [
 
 const modalHeader = (
   <div className="reference-title">
-    Abbreviation List
+    Coming Soon
   </div>
 );
 

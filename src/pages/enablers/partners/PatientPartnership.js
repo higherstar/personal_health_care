@@ -42,11 +42,11 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'Patient Partnership',
+    title: 'Patient Partnerships',
     activeMenu: 3,
     parentTitle: 'Partners',
     parentLink: '/phc/systems-enablers',
-    link: '/phc/systems-enablers/partner/patient-partnership',
+    link: '/phc/systems-enablers/partner/patient-partnerships',
     active: true,
   },
 ];

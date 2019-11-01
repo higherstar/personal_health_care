@@ -72,7 +72,7 @@ const navOptions = [
 
 const modalHeader = (
   <div className="reference-title">
-    Acknowledgements List
+    Coming Soon
   </div>
 );
 
@@ -133,7 +133,7 @@ function Acknowledgements() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Acknowledgements" color="blue" />
+    <PageContainer page={content} navOptions={navOptions} title="Coming Soon" color="blue" />
   );
 }
 

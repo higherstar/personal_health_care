@@ -33,10 +33,21 @@ function MainContent(props) {
     return <Redirect exact to={link} />;
   }
 
-  const { title } = navOptions.find((option) => option.active === true);
+  let { title } = navOptions.find((option) => option.active === true);
+  if (title.includes('Digital Health')) {
+    title = 'DIGITAL HEALTH(SaMD)';
+  }
+  if (title.includes('MGTOs')) {
+    title = 'MOLECULARLY-GUIDED THERAPY OPTIONS (MGTOs)';
+  }
 
   const navButtonStyle = {
     display: navOptions.find((option) => option.active === true).level === 2 && 'none',
+  };
+
+  const exceptionCases = title.includes('Digital Health') || title.includes('MOLECULARLY-GUIDED');
+  const titleStyle = {
+    textTransform: !exceptionCases && 'uppercase',
   };
 
   return (
@@ -45,7 +56,7 @@ function MainContent(props) {
         <button type="button" className="btn btn-primary nav-button" onClick={handlePrevClick} style={navButtonStyle}>
           <img src={prevIcon} alt="prev icon" />
         </button>
-        <div className="main-content-title">{title}</div>
+        <div className="main-content-title" style={titleStyle}>{title}</div>
         <button type="button" className="btn btn-primary nav-button" onClick={handleNextClick} style={navButtonStyle}>
           <img src={nextIcon} alt="next icon" />
         </button>
