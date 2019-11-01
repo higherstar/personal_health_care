@@ -43,13 +43,13 @@ function NavMenu(props) {
   };
 
   const subMenuStyle = (index) => ({
-    height: collapsed ? 0 : '50px',
+    height: !expand || collapsed ? 0 : '50px',
     padding: '10px',
-    fontSize: collapsed ? 0 : '18px',
+    fontSize: !expand || collapsed ? 0 : '18px',
     cursor: 'pointer',
-    border: collapsed && 0,
+    border: (!expand || collapsed) && 0,
     borderBottom: index === subMenus.length - 1 ? 0 : '1px solid #EEEEEE',
-    transition: '0.3s all ease',
+    transition: '0.2s all ease',
     fontWeight: activeSubMenu === index ? 'bold' : 'normal',
     color: 'black',
     textDecoration: 'none',
@@ -67,11 +67,12 @@ function NavMenu(props) {
 
     return {
       display: (!isExpandable || collapsed) && 'none',
-      width: '22px',
-      height: '22px',
+      width: expand ? '22px' : 0,
+      height: expand ? '22px' : 0,
       position: 'absolute',
       right: '5px',
       cursor: 'pointer',
+      transition: '0.2s all ease',
     };
   };
 
@@ -86,7 +87,7 @@ function NavMenu(props) {
         <span>{title}</span>
       </Link>
       <div>
-        {expand && subMenus.map((subMenu, index) => (
+        {subMenus.map((subMenu, index) => (
           <Link
             to={subMenuLinks[index]}
             key={subMenu.replace(/\s/g, '')}
