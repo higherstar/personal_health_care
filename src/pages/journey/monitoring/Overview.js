@@ -67,13 +67,47 @@ const navOptions = [
   },
 ];
 
+const mainContent = (
+  <>
+    <p>
+    Patients are effectively triaged and managed in a more efficient and timely
+    manner through the application of
+      {' '}
+      <strong>
+data-driven early and continuous monitoring
+    outside of the specialist’s office.
+      </strong>
+    </p>
+    <li>
+      Assess patient function and disease progression
+    </li>
+    <li>
+      Measure response to treatment
+    </li>
+    <li>
+      Optimize adverse event management to trigger earlier intervention when meaningful change occurs
+    </li>
+    <p>
+      This
+      {' '}
+      <strong>minimises patient burden and cost of ongoing treatment</strong>
+, and
+      {' '}
+      <strong>
+optimises
+      outcomes through timelier intervention.
+      </strong>
+    </p>
+  </>
+);
+
 function MonitoringOverview() {
   const content = (
     <div className="monitoring-overview page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <MainContent navOptions={navOptions} />
+      <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );
 

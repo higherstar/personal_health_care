@@ -57,13 +57,63 @@ const navOptions = [
   },
 ];
 
+const mainContent = (
+  <>
+    <h2>
+      “[The average oncologist] would have to read 29 hours each work day to stay abreast of new insights…”
+    </h2>
+    <p>
+      <strong>Individual treatment selection becomes more challenging </strong>
+      as the volume, variety,
+      and depth of health data increases and advances in diagnostics and imaging provide deeper
+      insights into patients and their disease.
+    </p>
+    <span>
+      <strong>
+        Clinical Decision Support (CDS) systems empower the healthcare provider
+        (HCP) and patient to make an informed and confident decision
+      </strong>
+      {' '}
+      Clinical Decision
+      Support (CDS) systems empower the healthcare provider
+      (HCP) and patient to make an informed and confident decision
+      <li>
+        An integrated and customized view of a patient’s clinical profile (including for tumor boards)
+      </li>
+      <li>
+        Guideline and pathway recommendations,
+      </li>
+      <li>
+        Relevant clinical trials and publications,
+      </li>
+      <li>
+        Relevant coverage and reimbursement information.
+      </li>
+    </span>
+    <p>
+      Moreover, CDS Systems are increasingly evolving to provide information on pools
+      of relevant patients with similar profiles, their treatment plan and outcomes.
+    </p>
+    <p>
+      <strong>Artificial Intelligence and Machine Learning tools</strong>
+      {' '}
+      can further assist the
+      HCP in
+      <strong>selecting personalized care plans through CDS systems</strong>
+      {' '}
+      as the volume
+      and quality of real-world data (RWD) increases.
+    </p>
+  </>
+);
+
 function CareOverview() {
   const content = (
     <div className="care-overview page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <MainContent navOptions={navOptions} />
+      <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );
 

@@ -47,13 +47,40 @@ const navOptions = [
   },
 ];
 
+const mainContent = (
+  <>
+    <p>
+      With rapid access to personalized interventions, patients and healthcare
+      providers have access to the
+      {' '}
+      <strong>treatment options as recommended in the personalised care plan.</strong>
+    </p>
+    <p>
+      Markets no longer feel compelled to add hurdles to limit the prescription
+      of high-cost therapeutics because of
+      {' '}
+      <strong>novel, data-enabled payment models.</strong>
+    </p>
+    <p>
+      Payers recognise the
+      {' '}
+      <strong>value driven by the intervention</strong>
+      {' '}
+due to the increasing application
+      of full
+      {' '}
+      <strong>outcomes-based and value-based access models.</strong>
+    </p>
+  </>
+);
+
 function AccessOverview() {
   const content = (
     <div className="access-overview page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <MainContent navOptions={navOptions} />
+      <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );
 
