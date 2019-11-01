@@ -47,6 +47,27 @@
     .custom-dropdown .custom-dropdown-list a:hover {
       background: #ffffffdd; }
 
+.connection-button {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 6px;
+  color: red;
+  border: solid 2px red;
+  box-shadow: 1px 1px 4px 1px black;
+  border-radius: 20px 20px 20px 20px;
+  width: fit-content;
+  padding: 0 20px 0 30px;
+  height: 37px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.85; }
+  .connection-button:active {
+    opacity: 1; }
+  .connection-button img {
+    height: 46px;
+    margin-left: -42px; }
+
 .header {
   width: 100%;
   height: 112px; }
@@ -192,6 +213,7 @@
   color: black; }
   .custom-modal-wrapper h3 {
     font-size: 20px;
+    font-weight: bold;
     color: #0066cc;
     margin: 15px 0; }
   .custom-modal-wrapper p {
@@ -246,6 +268,8 @@
   right: 5%;
   color: black;
   overflow: hidden; }
+  .main-content .main-content-image {
+    width: 100%; }
   .main-content .main-content-header {
     width: 100%;
     height: 70px;
@@ -263,7 +287,7 @@
       margin-right: auto; }
   .main-content .main-content-body {
     height: calc(100% - 70px);
-    padding-bottom: 10px;
+    padding: 20px 0;
     overflow: auto; }
     .main-content .main-content-body h2 {
       font-size: 20px;

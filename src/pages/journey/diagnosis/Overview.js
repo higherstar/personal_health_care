@@ -77,7 +77,42 @@ const navOptions = [
 ];
 
 const mainContent = (
-  <h2>Here Content</h2>
+  <>
+    <p>
+      The goal of early and personalized diagnosis is to
+      {' '}
+      <strong>reduce</strong>
+      {' '}
+and
+      eventually
+      {' '}
+      <strong>eliminate misdiagnosis and delayed diagnosis.</strong>
+      {' '}
+Clinicians in partnership with patients
+      are able to select the
+      {' '}
+      <strong>most appropriate</strong>
+      {' '}
+(based on disease presentation and activity)
+      and
+      {' '}
+      <strong>complete diagnostic work-up leveraging diagnostic guidance tools.</strong>
+    </p>
+    <br />
+    <span>
+      The right diagnostic tools are easily available and reimbursed quickly to ensure
+      timely testing. This includes the use of:
+      <li>
+        Existing and newer “omics” tools in oncology
+      </li>
+      <li>
+        Emerging digital technologies in other diseases
+      </li>
+      <li>
+        An earlier diagnosis to catch disease when it is more treatable or curable.
+      </li>
+    </span>
+  </>
 );
 
 function DiagnosisOverview() {

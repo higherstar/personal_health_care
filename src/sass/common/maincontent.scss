@@ -12,6 +12,10 @@
   color: black;
   overflow: hidden;
 
+  .main-content-image {
+    width: 100%;
+  }
+
   .main-content-header {
     width: 100%;
     height: 70px;
@@ -35,7 +39,7 @@
 
   .main-content-body {
     height: calc(100% - 70px);
-    padding-bottom: 10px;
+    padding: 20px 0;
     overflow: auto;
 
     h2 {
