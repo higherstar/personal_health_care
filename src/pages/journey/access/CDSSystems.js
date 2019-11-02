@@ -43,7 +43,7 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'Digital Health(SaMD)',
+    title: 'Digital Health (SaMD)',
     activeMenu: 2,
     parentTitle: 'Rapid Access to Personalised Interventions',
     parentLink: '/phc/future-patient-journey',

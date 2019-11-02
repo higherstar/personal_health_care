@@ -48,7 +48,7 @@ const navOptions = [
   {
     id: 4,
     level: 3,
-    title: 'Digital Health(SaMD)',
+    title: 'Digital Health (SaMD)',
     activeMenu: 2,
     parentTitle: 'Personalised Care Plan',
     parentLink: '/phc/future-patient-journey',
@@ -62,6 +62,7 @@ const mainContent = (
     <h2>
       “[The average oncologist] would have to read 29 hours each work day to stay abreast of new insights…”
     </h2>
+    <p className="text-right text-uppercase mr-2">- ASCO 2018</p>
     <p>
       <strong>Individual treatment selection becomes more challenging </strong>
       as the volume, variety,

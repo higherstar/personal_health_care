@@ -88,7 +88,7 @@ const journeyOptions = [
       'Advanced Imaging',
       'Digital Pathology',
       'CDS Systems',
-      'Digital Health(SaMD)',
+      'Digital Health (SaMD)',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/diagnosis/overview',
@@ -109,7 +109,7 @@ const journeyOptions = [
       'Genomics',
       'Advanced Imaging',
       'CDS Systems',
-      'Digital Health(SaMD)',
+      'Digital Health (SaMD)',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/monitoring/overview',
@@ -142,7 +142,7 @@ const journeyOptions = [
       'Diagnostics',
       'CDS Systems',
       'MGTOs',
-      'Digital Health(SaMD)',
+      'Digital Health (SaMD)',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/care/overview',
@@ -159,7 +159,7 @@ const journeyOptions = [
       'Overview',
       'Diagnostics',
       'CDS Systems',
-      'Digital Health(SaMD)',
+      'Digital Health (SaMD)',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/access/overview',

@@ -133,7 +133,7 @@ function Acknowledgements() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Coming Soon" color="blue" />
+    <PageContainer page={content} navOptions={navOptions} title="Acknowledgments" color="blue" />
   );
 }
 

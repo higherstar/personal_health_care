@@ -35,17 +35,22 @@ function MainContent(props) {
 
   let { title } = navOptions.find((option) => option.active === true);
   if (title.includes('Digital Health')) {
-    title = 'DIGITAL HEALTH(SaMD)';
+    title = 'DIGITAL HEALTH (SaMD)';
   }
   if (title.includes('MGTOs')) {
     title = 'MOLECULARLY-GUIDED THERAPY OPTIONS (MGTOs)';
+  }
+  if (title.includes('CDS')) {
+    title = 'Clinical Decision Support (CDS) Systems';
   }
 
   const navButtonStyle = {
     display: navOptions.find((option) => option.active === true).level === 2 && 'none',
   };
 
-  const exceptionCases = title.includes('DIGITAL HEALTH') || title.includes('MOLECULARLY-GUIDED');
+  const exceptionCases = title.includes('DIGITAL HEALTH')
+    || title.includes('MOLECULARLY-GUIDED')
+    || title.includes('CDS');
   const titleStyle = {
     textTransform: !exceptionCases && 'uppercase',
   };
