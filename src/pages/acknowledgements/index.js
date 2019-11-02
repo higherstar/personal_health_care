@@ -77,50 +77,55 @@ const modalHeader = (
 );
 
 const modalContent = (
-  <div className="acknowledgements-content">
-    <h3 className="d-md-block d-sm-none d-none">
-      We acknowledge our colleagues for their contribution to this systems map:
-    </h3>
-    <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-    </div>
-  </div>
+  <h1>
+    Content Coming Soon
+  </h1>
 );
+// const modalContent = (
+//   <div className="acknowledgements-content">
+//     <h3 className="d-md-block d-sm-none d-none">
+//       We acknowledge our colleagues for their contribution to this systems map:
+//     </h3>
+//     <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//       <p><strong>John Doe,</strong> PHC CoE</p>
+//       <p><strong>Jane Doe,</strong> PDMA</p>
+//     </div>
+//   </div>
+// );
 
 function Acknowledgements() {
   const content = (
@@ -133,7 +138,7 @@ function Acknowledgements() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Acknowledgments" color="blue" />
+    <PageContainer page={content} navOptions={navOptions} title="Acknowledgments (Coming soon)" color="blue" />
   );
 }
 
