@@ -3,13 +3,17 @@ import React, { useState } from 'react';
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
 import ImageModal from '../../../components/modals/ImageModal';
+import ConnectionModal from '../../../components/modals/ConnectionModal';
 import mapImage from '../../../assets/common/diagnosis.png';
 import cdsDescImage from '../../../assets/pages/journey/cds-desc.png';
 import businessImage from '../../../assets/pages/journey/business-impact.png';
 import navifyImage from '../../../assets/pages/journey/navify-btn.png';
 import customerImage from '../../../assets/pages/journey/customer-impact.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
-import ConnectionModal from '../../../components/modals/ConnectionModal';
+import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
+import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
+import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
 
 const navOptions = [
   {
@@ -101,6 +105,12 @@ function DiagnosisCDSSystems() {
   const handleCloseClick = () => {
     setImageOpen(false);
     setConnectionOpen(false);
+  };
+
+  const [zoomOut, setZoomOut] = useState(true);
+  const handleZoomClick = () => {
+    console.log('>>>>>>>>>>>>>>');
+    setZoomOut(!zoomOut);
   };
 
   const mainContent = (
@@ -238,12 +248,73 @@ function DiagnosisCDSSystems() {
     </>
   );
 
+  // const connectionHeader = (
+  //   <>
+  //     <img src={connectionIcon} alt="connection icon" />
+  //     <div className="connection-title">
+  //       <h2>Where CDS Fit Within PHC</h2>
+  //       <span>
+  //         The following diagram highlights the inter-connections of CDS systems in the context of the dynamic
+  //         and complex PHC ecosystem. Not intended as a definitive view this diagram aims to
+  //         provide a starting point for how you can identify leverage points and effect positive
+  //         change within the PHC ecosystem.
+  //       </span>
+  //     </div>
+  //   </>
+  // );
+
+  const connectionContent = (
+    <>
+      {zoomOut ? (
+        <>
+          <img src={cdsConnection} alt="cds connection" />
+          <div
+            className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
+            onClick={() => handleZoomClick()}
+          >
+            <div className="col-lg-6">
+              Click to see the
+              <br />
+              Connections in the
+              <br />
+              PHC Systems Map
+            </div>
+            <div className="col-lg-6">
+              <img src={zoomOutIcon} alt="zoom out" />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <img src={journeyConnection} alt="cds connection zoomout" />
+          <div
+            className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
+            onClick={() => handleZoomClick()}
+          >
+            <div className="col-lg-6">
+              Back to
+              <br />
+interconnections
+            </div>
+            <div className="col-lg-6">
+              <img src={zoomInIcon} alt="zoom in" />
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+
   const content = (
     <div className="journey-cds-systems page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <ConnectionModal open={connectionOpen} handleCloseClick={handleCloseClick} />
+      <ConnectionModal
+        content={connectionContent}
+        open={connectionOpen}
+        handleCloseClick={handleCloseClick}
+      />
       <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>

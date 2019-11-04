@@ -289,6 +289,39 @@
   width: 100%;
   height: 100%; }
 
+.connection-modal .custom-modal-container {
+  padding: 0; }
+  .connection-modal .custom-modal-container .custom-modal-header img {
+    width: 40px; }
+  .connection-modal .custom-modal-container .custom-modal-content img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%; }
+
+.connection-modal .zoom-out-button {
+  background: #b5e9fe;
+  bottom: 20px;
+  right: 30px;
+  border-style: solid;
+  border-color: #01a3f8;
+  border-width: 3px 3px 6px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
+  cursor: pointer; }
+
+.connection-modal .zoom-out-button:hover {
+  background-color: #b5e9fe99;
+  border-color: #01a3f899; }
+
+.connection-modal .zoom-in-button {
+  border: 2px solid #0066cc;
+  color: #0066cc; }
+
+.connection-modal .zoom-in-button:hover {
+  background-color: #0066cc99; }
+
 .main-content {
   width: 47%;
   height: 90%;
