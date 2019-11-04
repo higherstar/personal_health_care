@@ -9,6 +9,10 @@ import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import benefitImage from '../../../assets/pages/journey/rwd-benefit.png';
 import rocheImage from '../../../assets/pages/journey/real-world-roche.png';
 import rocheUseImage from '../../../assets/pages/journey/real-world-roche-use.png';
+import rwdConnection from '../../../assets/pages/journey/rwd-connection.png';
+import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
+import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
 
 const navOptions = [
   {
@@ -223,12 +227,59 @@ RWD is a key component of our PHC vision and strategy because:
     </>
   );
 
+  const [zoomOut, setZoomOut] = useState(true);
+  const handleZoomClick = () => {
+    setZoomOut(!zoomOut);
+  };
+
+  const connectionContent = (
+    <>
+      {zoomOut ? (
+        <>
+          <img src={rwdConnection} alt="cds connection" />
+          <div
+            className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
+            onClick={() => handleZoomClick()}
+          >
+            <div className="col-lg-6">
+              Click to see the
+              <br />
+              Connections in the
+              <br />
+              PHC Systems Map
+            </div>
+            <div className="col-lg-6">
+              <img src={zoomOutIcon} alt="zoom out" />
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <img src={journeyConnection} alt="cds connection zoomout" />
+          <div
+            className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
+            onClick={() => handleZoomClick()}
+          >
+            <div className="col-lg-6">
+              Back to
+              <br />
+              interconnections
+            </div>
+            <div className="col-lg-6">
+              <img src={zoomInIcon} alt="zoom in" />
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+
   const content = (
     <div className="data-real-world-data page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <ConnectionModal open={connectionOpen} handleCloseClick={handleCloseClick} />
+      <ConnectionModal content={connectionContent} open={connectionOpen} handleCloseClick={handleCloseClick} />
       <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>

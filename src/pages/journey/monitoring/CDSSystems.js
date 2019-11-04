@@ -10,10 +10,10 @@ import customerImage from '../../../assets/pages/journey/customer-impact.png';
 import businessImage from '../../../assets/pages/journey/business-impact.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import navifyImage from '../../../assets/pages/journey/navify-btn.png';
-import cdsConnection from "../../../assets/pages/journey/cds-connection-content.png";
-import zoomOutIcon from "../../../assets/pages/journey/journey-zoom-out.png";
-import journeyConnection from "../../../assets/pages/journey/journey-connection-map.png";
-import zoomInIcon from "../../../assets/pages/journey/journey-zoom-in.png";
+import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
+import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
+import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
 
 const navOptions = [
   {
@@ -234,7 +234,6 @@ function MonitoringCDSSystems() {
 
   const [zoomOut, setZoomOut] = useState(true);
   const handleZoomClick = () => {
-    console.log('>>>>>>>>>>>>>>');
     setZoomOut(!zoomOut);
   };
 

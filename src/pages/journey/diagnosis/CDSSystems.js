@@ -109,7 +109,6 @@ function DiagnosisCDSSystems() {
 
   const [zoomOut, setZoomOut] = useState(true);
   const handleZoomClick = () => {
-    console.log('>>>>>>>>>>>>>>');
     setZoomOut(!zoomOut);
   };
 
