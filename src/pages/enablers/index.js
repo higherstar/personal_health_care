@@ -131,7 +131,7 @@ function Enablers() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Enablers" color="yellow" />
+    <PageContainer page={content} navOptions={navOptions} title="SYSTEMS ENABLERS" color="yellow" />
   );
 }
 

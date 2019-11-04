@@ -49,7 +49,7 @@ const navOptions = [
     id: 4,
     level: 2,
     link: '/phc/systems-enablers',
-    title: 'SYSTEMS ENABLERS',
+    title: 'VALUE-BASED HEALTHCARE',
     top: 260,
     active: true,
     activeSubMenu: 1,
@@ -197,7 +197,7 @@ function ValueBasedHealthCare() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      {/*<ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />*/}
+      {/* <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} /> */}
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );

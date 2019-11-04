@@ -81,7 +81,7 @@ function Monitoring() {
     <PageContainer
       page={content}
       navOptions={navOptions}
-      title="Continuous & remote patient management"
+      title="PERSONALISED REMOTE MONITORING & CARE"
       color="blue"
     />
   );
