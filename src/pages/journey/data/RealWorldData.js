@@ -13,7 +13,6 @@ import rwdConnection from '../../../assets/pages/journey/rwd-connection.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
-import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
 import DropDown from '../../../atoms/DropDown';
 
 const navOptions = [
@@ -332,7 +331,7 @@ RWD is a key component of our PHC vision and strategy because:
     <>
       {zoomOut ? (
         <>
-          <img src={cdsConnection} alt="cds connection" />
+          <img src={rwdConnection} alt="cds connection" />
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
@@ -378,20 +377,7 @@ RWD is a key component of our PHC vision and strategy because:
 
   const connectionHeader = (
     <>
-      {zoomOut ? (
-        <>
-          <img src={connectionIcon} alt="connection icon" />
-          <div className="connection-title">
-            <h2>Where Real-World Data Fit Within PHC</h2>
-            <div>
-              The following diagram highlights the inter-connections of RWD m the context
-              of the dynamic and complex PHC ecosystem. Not intended as a definitive view,
-              this diagram aims to provide a starting point for how you can identify leverage
-              points and effect positive change within the PHC ecosystem
-            </div>
-          </div>
-        </>
-      ) : (
+      {!zoomOut && (
         <>
           <img src={connectionIcon} alt="connection icon" className="zoom-in-icon" />
           <div className="connection-title zoom-out">

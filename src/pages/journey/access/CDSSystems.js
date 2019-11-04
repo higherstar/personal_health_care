@@ -314,20 +314,7 @@ function AccessCDSSystems() {
 
   const connectionHeader = (
     <>
-      {zoomOut ? (
-        <>
-          <img src={connectionIcon} alt="connection icon" />
-          <div className="connection-title">
-            <h2>Where CDS Fit Within PHC</h2>
-            <div>
-              The following diagram highlights the inter-connections of CDS systems in the context of the dynamic
-              and complex PHC ecosystem. Not intended as a definitive view this diagram aims to
-              provide a starting point for how you can identify leverage points and effect positive
-              change within the PHC ecosystem.
-            </div>
-          </div>
-        </>
-      ) : (
+      {!zoomOut && (
         <>
           <img src={connectionIcon} alt="connection icon" className="zoom-in-icon" />
           <div className="connection-title zoom-out">
