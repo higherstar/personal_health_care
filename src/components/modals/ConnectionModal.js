@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ConnectionModal(props) {
   const {
-    open, header, content, handleCloseClick,
+    open, header, content, className, handleCloseClick,
   } = props;
 
   const handleClose = () => {
@@ -15,7 +15,7 @@ function ConnectionModal(props) {
   };
 
   return (
-    <div className="connection-modal custom-modal-wrapper" style={modalStyle}>
+    <div className={`connection-modal custom-modal-wrapper ${className}`} style={modalStyle}>
       <div className="custom-modal-container phc-container">
         <div className="custom-modal-header d-flex align-items-center justify-content-start">
           {header}
@@ -35,12 +35,14 @@ ConnectionModal.propTypes = {
   open: PropTypes.bool.isRequired,
   content: PropTypes.node,
   header: PropTypes.node,
+  className: PropTypes.string,
   handleCloseClick: PropTypes.func,
 };
 
 ConnectionModal.defaultProps = {
   content: '',
   header: '',
+  className: '',
   handleCloseClick: () => null,
 };
 

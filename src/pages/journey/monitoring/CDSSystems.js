@@ -14,6 +14,7 @@ import cdsConnection from '../../../assets/pages/journey/cds-connection-content.
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
+import DropDown from "../../../atoms/DropDown";
 
 const navOptions = [
   {
@@ -75,6 +76,99 @@ const navOptions = [
     parentLink: '/phc/future-patient-journey',
     link: '/phc/future-patient-journey/monitoring/digital-health',
     active: false,
+  },
+];
+
+const dropdownOptions = [
+  {
+    className: 'diagnosis-dropdown',
+    title: 'Early Personalised Diagnosis',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'Genomics',
+      'Advanced Imaging',
+      'Digital Pathology',
+      'CDS Systems',
+      'Digital Health (SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/diagnosis/overview',
+      '/phc/future-patient-journey/diagnosis/diagnostics',
+      '/phc/future-patient-journey/diagnosis/genomics',
+      '/phc/future-patient-journey/diagnosis/advanced-imaging',
+      '/phc/future-patient-journey/diagnosis/digital-pathology',
+      '/phc/future-patient-journey/diagnosis/cds-systems',
+      '/phc/future-patient-journey/diagnosis/digital-health',
+    ],
+  },
+  {
+    className: 'monitoring-dropdown',
+    title: 'Personalised Remote Monitoring & Care',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'Genomics',
+      'Advanced Imaging',
+      'CDS Systems',
+      'Digital Health (SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/monitoring/overview',
+      '/phc/future-patient-journey/monitoring/diagnostics',
+      '/phc/future-patient-journey/monitoring/genomics',
+      '/phc/future-patient-journey/monitoring/advanced-imaging',
+      '/phc/future-patient-journey/monitoring/cds-systems',
+      '/phc/future-patient-journey/monitoring/digital-health',
+    ],
+  },
+  {
+    className: 'data-dropdown',
+    title: 'Data & Insights',
+    subMenus: [
+      'Overview',
+      'Real-World Data',
+      'Advanced Analytics',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/data/overview',
+      '/phc/future-patient-journey/data/real-world-data',
+      '/phc/future-patient-journey/data/advanced-analytics',
+    ],
+  },
+  {
+    className: 'care-dropdown',
+    title: 'Personalised Care Plan',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'CDS Systems',
+      'MGTOs',
+      'Digital Health (SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/care/overview',
+      '/phc/future-patient-journey/care/diagnostics',
+      '/phc/future-patient-journey/care/cds-systems',
+      '/phc/future-patient-journey/care/mgtos',
+      '/phc/future-patient-journey/care/digital-health',
+    ],
+  },
+  {
+    className: 'access-dropdown',
+    title: 'Rapid Access to Personalised Interventions',
+    subMenus: [
+      'Overview',
+      'Diagnostics',
+      'CDS Systems',
+      'Digital Health (SaMD)',
+    ],
+    subMenuLinks: [
+      '/phc/future-patient-journey/access/overview',
+      '/phc/future-patient-journey/access/diagnostics',
+      '/phc/future-patient-journey/access/cds-systems',
+      '/phc/future-patient-journey/access/digital-health',
+    ],
   },
 ];
 
@@ -232,10 +326,37 @@ function MonitoringCDSSystems() {
     </>
   );
 
+
   const [zoomOut, setZoomOut] = useState(true);
   const handleZoomClick = () => {
     setZoomOut(!zoomOut);
   };
+
+  const connectionHeader = (
+    <>
+      {zoomOut ? (
+        <>
+          <img src={connectionIcon} alt="connection icon" />
+          <div className="connection-title">
+            <h2>Where CDS Fit Within PHC</h2>
+            <div>
+              The following diagram highlights the inter-connections of CDS systems in the context of the dynamic
+              and complex PHC ecosystem. Not intended as a definitive view this diagram aims to
+              provide a starting point for how you can identify leverage points and effect positive
+              change within the PHC ecosystem.
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <img src={connectionIcon} alt="connection icon" className="zoom-in-icon" />
+          <div className="connection-title zoom-out">
+            <h2>Connections to the Systems Map</h2>
+          </div>
+        </>
+      )}
+    </>
+  );
 
   const connectionContent = (
     <>
@@ -260,7 +381,13 @@ function MonitoringCDSSystems() {
         </>
       ) : (
         <>
-          <img src={journeyConnection} alt="cds connection zoomout" />
+          <div className="zoom-in-map position-relative">
+            <DropDown
+              color="blue"
+              options={dropdownOptions}
+            />
+            <img src={journeyConnection} alt="cds connection zoom out" />
+          </div>
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
@@ -284,7 +411,13 @@ function MonitoringCDSSystems() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <ConnectionModal content={connectionContent} open={connectionOpen} handleCloseClick={handleCloseClick} />
+      <ConnectionModal
+        header={connectionHeader}
+        content={connectionContent}
+        className={zoomOut ? 'zoom-out' : 'zoom-in'}
+        open={connectionOpen}
+        handleCloseClick={handleCloseClick}
+      />
       <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
