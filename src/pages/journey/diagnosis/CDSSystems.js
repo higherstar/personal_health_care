@@ -12,7 +12,7 @@ import navifyImage from '../../../assets/pages/journey/navify-btn.png';
 import customerImage from '../../../assets/pages/journey/customer-impact.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
-import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
 
@@ -381,7 +381,8 @@ function DiagnosisCDSSystems() {
         <>
           <div className="zoom-in-map position-relative">
             <DropDown
-              color="blue"
+              color="red"
+              type="journey"
               options={dropdownOptions}
             />
             <img src={journeyConnection} alt="cds connection zoom out" />

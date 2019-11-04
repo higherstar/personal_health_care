@@ -4,6 +4,7 @@ import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
 import ConnectionModal from '../../../components/modals/ConnectionModal';
 import ImageModal from '../../../components/modals/ImageModal';
+import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/monitoring.png';
 import cdsDescImage from '../../../assets/pages/journey/cds-desc.png';
 import customerImage from '../../../assets/pages/journey/customer-impact.png';
@@ -12,9 +13,8 @@ import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import navifyImage from '../../../assets/pages/journey/navify-btn.png';
 import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
-import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
-import DropDown from "../../../atoms/DropDown";
 
 const navOptions = [
   {
@@ -370,7 +370,8 @@ function MonitoringCDSSystems() {
         <>
           <div className="zoom-in-map position-relative">
             <DropDown
-              color="blue"
+              color="red"
+              type="journey"
               options={dropdownOptions}
             />
             <img src={journeyConnection} alt="cds connection zoom out" />

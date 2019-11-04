@@ -10,6 +10,8 @@ const backgroundColor = (color) => {
       return '#0066CC';
     case 'yellow':
       return '#ED8B00';
+    case 'red':
+      return '#E40046';
     default:
       return '#FFFFFF';
   }
@@ -18,6 +20,7 @@ const backgroundColor = (color) => {
 function DropDown(props) {
   const {
     color,
+    type,
     options,
   } = props;
 
@@ -38,15 +41,22 @@ function DropDown(props) {
     ]);
   };
 
-  const buttonStyle = {
-    width: '36px',
-    height: '36px',
-    background: `${backgroundColor(color)}`,
-    borderRadius: '20px',
-    boxShadow: '0 0 3px 0 black',
-    cursor: 'pointer',
-    position: 'absolute',
-    left: '-18px',
+  const buttonStyle = (option) => {
+    const isDataInsights = type === 'journey' && option.className === 'data-dropdown';
+    const background = isDataInsights && color === 'blue'
+      ? `${backgroundColor('red')}`
+      : `${backgroundColor(color)}`;
+
+    return {
+      width: '36px',
+      height: '36px',
+      background: isDataInsights && color === 'red' ? `${backgroundColor('blue')}` : background,
+      borderRadius: '20px',
+      boxShadow: '0 0 3px 0 black',
+      cursor: 'pointer',
+      position: 'absolute',
+      left: '-18px',
+    };
   };
 
   const imageStyle = (option) => ({
@@ -57,9 +67,18 @@ function DropDown(props) {
     transform: !isCollapsed(option) && 'rotate(90deg)',
   });
 
-  const titleStyle = {
-    border: `3px solid ${backgroundColor(color)}`,
-    color: backgroundColor(color),
+  const titleStyle = (option) => {
+    const isDataInsights = type === 'journey' && option.className === 'data-dropdown';
+    const borderColor = isDataInsights && color === 'blue'
+      ? `3px solid ${backgroundColor('red')}`
+      : `3px solid ${backgroundColor(color)}`;
+
+    return {
+      border: isDataInsights && color === 'red'
+        ? `3px solid ${backgroundColor('blue')}`
+        : borderColor,
+      color: color === 'red' ? backgroundColor('blue') : backgroundColor(color),
+    };
   };
 
   const listStyle = (option) => ({
@@ -73,11 +92,15 @@ function DropDown(props) {
           <div
             onClick={() => onClick(option)}
             className="d-flex align-items-center justify-content-center drop-button"
-            style={buttonStyle}
+            style={buttonStyle(option)}
           >
             <img src={arrowRight} alt="dropdown icon" style={imageStyle(option)} />
           </div>
-          <div className="dropdown-title d-flex align-items-center" style={titleStyle} onClick={() => onClick(option)}>
+          <div
+            className="dropdown-title d-flex align-items-center"
+            style={titleStyle(option)}
+            onClick={() => onClick(option)}
+          >
             <span>{option.title}</span>
           </div>
           <div className="custom-dropdown-list position-absolute" style={listStyle(option)}>
@@ -95,11 +118,13 @@ function DropDown(props) {
 
 DropDown.propTypes = {
   color: PropTypes.string,
+  type: PropTypes.string,
   options: PropTypes.array,
 };
 
 DropDown.defaultProps = {
   color: '',
+  type: '',
   options: [],
 };
 

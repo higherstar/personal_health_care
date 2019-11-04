@@ -13,7 +13,7 @@ import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import navifyImage from '../../../assets/pages/journey/navify-btn.png';
 import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
-import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
 
 const navOptions = [
@@ -350,7 +350,8 @@ function AccessCDSSystems() {
         <>
           <div className="zoom-in-map position-relative">
             <DropDown
-              color="blue"
+              color="red"
+              type="journey"
               options={dropdownOptions}
             />
             <img src={journeyConnection} alt="cds connection zoom out" />

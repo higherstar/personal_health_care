@@ -4,6 +4,7 @@ import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
 import ConnectionModal from '../../../components/modals/ConnectionModal';
 import ImageModal from '../../../components/modals/ImageModal';
+import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/data.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import benefitImage from '../../../assets/pages/journey/rwd-benefit.png';
@@ -11,9 +12,8 @@ import rocheImage from '../../../assets/pages/journey/real-world-roche.png';
 import rocheUseImage from '../../../assets/pages/journey/real-world-roche-use.png';
 import rwdConnection from '../../../assets/pages/journey/rwd-connection.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
-import journeyConnection from '../../../assets/pages/journey/journey-connection-map.png';
+import journeyConnection from '../../../assets/pages/journey/data-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
-import DropDown from '../../../atoms/DropDown';
 
 const navOptions = [
   {
@@ -353,6 +353,7 @@ RWD is a key component of our PHC vision and strategy because:
           <div className="zoom-in-map position-relative">
             <DropDown
               color="blue"
+              type="journey"
               options={dropdownOptions}
             />
             <img src={journeyConnection} alt="cds connection zoom out" />
