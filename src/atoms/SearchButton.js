@@ -74,7 +74,7 @@ function SearchButton(props) {
       </div>
       {state ? (
         <span onClick={onClick} style={labelStyle}>SEARCH</span>
-      ) : (<input className="custom-input" type="text" placeholder="Search" style={inputStyle} />)}
+      ) : (<input className="custom-input" type="text" placeholder="SEARCH" style={inputStyle} />)}
     </div>
   );
 }

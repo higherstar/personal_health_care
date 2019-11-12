@@ -20,12 +20,12 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 13px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  background: #DADADA;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;

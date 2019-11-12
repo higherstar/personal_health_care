@@ -24,7 +24,7 @@ function SideBar(props) {
   const [link, setLink] = useState('');
   const [expand, setExpand] = useState(true);
 
-  const handleDotClick = (option) => {
+  const handleDotClick = (option) => () => {
     if (option.active) {
       setExpand(!expand);
       return;
@@ -37,6 +37,11 @@ function SideBar(props) {
   if (state) {
     return <Redirect exact to={link} />;
   }
+
+  const goBackToMenu = (link) => () => {
+    setLink(link);
+    setState(true);
+  };
 
   const sideBarBackground = navOptions[0].level === 3 ? 'transparent' : '#FFFFFFAD';
   const sideBarStyle = {
@@ -54,7 +59,7 @@ function SideBar(props) {
   const defaultDotStyle = (top, index) => ({
     width: '20px',
     height: '20px',
-    background: navOptions[0].activeMenu === index ? '#0066CC' : '#71C6FF',
+    background: navOptions[0].activeMenu - 1 === index ? '#0066CC' : '#71C6FF',
     position: 'absolute',
     top: `${top}px`,
     left: '36px',
@@ -65,7 +70,7 @@ function SideBar(props) {
   });
 
   const navIconStyle = (top, index) => ({
-    display: navOptions[0].activeMenu === index && !collapsed ? 'block' : 'none',
+    display: navOptions[0].activeMenu - 1 === index && !collapsed ? 'block' : 'none',
     width: '26px',
     height: '26px',
     position: 'absolute',
@@ -80,7 +85,7 @@ function SideBar(props) {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let { top } = option;
     if (expand && !collapsed && option.id > activeIndex) {
-      top += navOptions[activeIndex].subMenus.length * 50;
+      top += navOptions[activeIndex].subMenus.length * 70;
     }
 
     return {
@@ -101,7 +106,7 @@ function SideBar(props) {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     let top = option.top - 10;
     if (expand && option.id > activeIndex) {
-      top += navOptions[activeIndex].subMenus.length * 50;
+      top += navOptions[activeIndex].subMenus.length * 70;
     }
 
     return {
@@ -136,7 +141,12 @@ function SideBar(props) {
         <div className="side-bar-nav">
           {navOptions[0].level === 3 ? (
             <>
-              {!collapsed && (<div className="side-bar-submenu-left" />)}
+              {!collapsed && (
+                <div
+                  className="side-bar-submenu-left"
+                  onClick={goBackToMenu(navOptions[0].parentLink)}
+                />
+              )}
               <div className="side-bar-submenu" style={subMenuStyle}>
                 <div className="d-flex align-items-center flex-column side-bar-submenu-title-wrapper">
                   <Link
@@ -163,6 +173,7 @@ function SideBar(props) {
                   <div
                     className="nav-dot"
                     style={defaultDotStyle(top, index)}
+                    onClick={goBackToMenu(navOptions[0].parentLink)}
                   />
                   <img src={navIcon} alt="nav icon" style={navIconStyle(top, index)} />
                 </div>
@@ -175,7 +186,7 @@ function SideBar(props) {
                   <div
                     className="nav-dot"
                     style={dotStyle(option)}
-                    onClick={() => handleDotClick(option)}
+                    onClick={handleDotClick(option)}
                   />
                   <div className="nav-menu" style={navMenuStyle(option)}>
                     <NavMenu

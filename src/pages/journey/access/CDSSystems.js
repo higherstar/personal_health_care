@@ -395,7 +395,7 @@ function AccessCDSSystems() {
     <PageContainer
       page={content}
       navOptions={navOptions}
-      title="Full access to optimal care intervention"
+      title="Rapid Access to Personalised Interventions"
       color="blue"
     />
   );

@@ -51,12 +51,11 @@
   font-size: 20px;
   font-weight: bold;
   margin-left: 6px;
-  color: red;
-  border: solid 2px red;
-  box-shadow: 1px 1px 4px 1px black;
+  color: #E40046;
+  border: solid 2px #E40046;
   border-radius: 20px 20px 20px 20px;
   width: fit-content;
-  padding: 0 20px 0 30px;
+  padding: 0 20px 2px 30px;
   height: 37px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -65,8 +64,9 @@
   .connection-button:active {
     opacity: 1; }
   .connection-button img {
-    height: 46px;
-    margin-left: -42px; }
+    height: 47px;
+    margin-left: -42px;
+    margin-top: 2px; }
 
 .header {
   width: 100%;
@@ -74,7 +74,7 @@
   .header span {
     width: fit-content;
     height: fit-content;
-    font-size: 42px;
+    font-size: 36px;
     font-family: WinSoft Pro;
     font-weight: bold;
     color: #0066cc;
@@ -112,8 +112,7 @@
     .top-bar .side-bar-header span {
       font-size: 20px;
       color: white;
-      margin-left: 10px;
-      text-transform: none; }
+      margin-left: 10px; }
 
 .side-bar {
   height: calc(100vh - 112px);
@@ -175,9 +174,10 @@
         border-bottom: 1px solid white;
         margin: 10px; }
         .side-bar .side-bar-content .side-bar-submenu .side-bar-submenu-title-wrapper .side-bar-submenu-title {
+          width: 100%;
           font-weight: bold;
           text-transform: uppercase;
-          text-align: center;
+          text-align: left;
           text-decoration: none;
           color: black;
           cursor: pointer; }
@@ -231,7 +231,7 @@
     width: 90%;
     height: 90%;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 6px 0;
     padding: 15px 20px;
     position: absolute;
@@ -285,12 +285,13 @@
     top: 10%;
     left: 15%; }
 
-.image-modal .custom-modal-content img {
-  width: 100%;
-  height: 100%; }
+.image-modal .custom-modal-content {
+  padding: 10px; }
+  .image-modal .custom-modal-content img {
+    width: 100%;
+    height: 100%; }
 
 .connection-modal .custom-modal-container {
-  border-radius: 0;
   padding: 0; }
   .connection-modal .custom-modal-container .custom-modal-header {
     padding-left: 40px; }
@@ -307,7 +308,8 @@
       .connection-modal .custom-modal-container .custom-modal-header .connection-title div {
         font-size: 12px; }
   .connection-modal .custom-modal-container .custom-modal-content {
-    height: 100%; }
+    height: 100%;
+    padding: 15px; }
     .connection-modal .custom-modal-container .custom-modal-content img {
       width: 100%;
       height: 100%; }
@@ -409,7 +411,7 @@
       text-align: center; }
   .main-content .main-content-body {
     height: calc(100% - 70px);
-    padding: 20px 0;
+    padding: 20px;
     overflow: auto; }
     .main-content .main-content-body h2 {
       font-size: 20px;
@@ -417,7 +419,8 @@
       color: #0066cc; }
 
 .welcome-modal {
-  width: 100%; }
+  width: 100%;
+  padding: 0 10px; }
   .welcome-modal h3 {
     text-align: center; }
   .welcome-modal .welcome-videos {
@@ -441,7 +444,7 @@
       opacity: 0.8; }
     .welcome-modal .explore-button span {
       color: white;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: bold;
       text-align: center; }
 
@@ -607,11 +610,11 @@ body {
 --------------------------------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
-  width: 13px; }
+  width: 10px; }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  background: #DADADA;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px; }

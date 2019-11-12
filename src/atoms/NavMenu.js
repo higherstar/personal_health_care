@@ -25,7 +25,7 @@ function NavMenu(props) {
 
   const contentStyle = {
     width: '100%',
-    height: collapsed ? 0 : `${(expand ? subMenus.length : 0) * 50 + 40}px`,
+    height: collapsed ? 0 : `${(expand ? subMenus.length : 0) * 70 + 40}px`,
     background: active ? 'white' : 'transparent',
     paddingLeft: '70px',
     transition: '0.3s all ease',
@@ -43,7 +43,7 @@ function NavMenu(props) {
   };
 
   const subMenuStyle = (index) => ({
-    height: !expand || collapsed ? 0 : '50px',
+    height: !expand || collapsed ? 0 : '70px',
     padding: '10px',
     fontSize: !expand || collapsed ? 0 : '18px',
     cursor: 'pointer',
@@ -94,7 +94,7 @@ function NavMenu(props) {
             style={subMenuStyle(index)}
             className="d-flex align-items-center nav-submenu"
           >
-            <span style={{ width: '220px', lineHeight: '18px' }}>{subMenu}</span>
+            <span style={{ width: '220px' }}>{subMenu}</span>
             <img src={navIcon} alt="nav icon" style={navIconStyle(subMenuLinks[index])} />
           </Link>
         ))}
