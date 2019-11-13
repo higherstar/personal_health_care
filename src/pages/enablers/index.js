@@ -82,7 +82,7 @@ const dropdownOptions = [
     className: 'vbhc-dropdown',
     title: 'Value-based Healthcare',
     subMenus: ['Value-based Healthcare'],
-    subMenuLinks: ['/phc/systems-enablers/value-based-healthcare'],
+    subMenuLinks: ['/phc/future-patient-journey/access/value-based-healthcare'],
   },
   {
     className: 'roche-dropdown',

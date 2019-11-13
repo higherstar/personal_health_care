@@ -160,12 +160,14 @@ const journeyOptions = [
       'Diagnostics',
       'CDS Systems',
       'Digital Health (SaMD)',
+      'Value-based Healthcare',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/access/overview',
       '/phc/future-patient-journey/access/diagnostics',
       '/phc/future-patient-journey/access/cds-systems',
       '/phc/future-patient-journey/access/digital-health',
+      '/phc/future-patient-journey/access/value-based-healthcare',
     ],
   },
 ];
@@ -175,7 +177,7 @@ const enablersOptions = [
     className: 'vbhc-dropdown',
     title: 'Value-based Healthcare',
     subMenus: ['Value-based Healthcare'],
-    subMenuLinks: ['/phc/systems-enablers/value-based-healthcare'],
+    subMenuLinks: ['/phc/future-patient-journey/access/value-based-healthcare'],
   },
   {
     className: 'roche-dropdown',

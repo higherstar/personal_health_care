@@ -162,12 +162,14 @@ const dropdownOptions = [
       'Diagnostics',
       'CDS Systems',
       'Digital Health (SaMD)',
+      'Value-based Healthcare',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/access/overview',
       '/phc/future-patient-journey/access/diagnostics',
       '/phc/future-patient-journey/access/cds-systems',
       '/phc/future-patient-journey/access/digital-health',
+      '/phc/future-patient-journey/access/value-based-healthcare',
     ],
   },
 ];
