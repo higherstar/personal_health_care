@@ -57,6 +57,16 @@ const navOptions = [
     link: '/phc/future-patient-journey/access/digital-health',
     active: false,
   },
+  {
+    id: 4,
+    level: 3,
+    title: 'Value-based Healthcare',
+    activeMenu: 2,
+    parentTitle: 'Rapid Access to Personalised Interventions',
+    parentLink: '/phc/future-patient-journey',
+    link: '/phc/future-patient-journey/access/value-based-healthcare',
+    active: false,
+  },
 ];
 
 const dropdownOptions = [

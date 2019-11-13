@@ -41,9 +41,9 @@ import Access from '../pages/journey/access';
 import AccessCDSSystems from '../pages/journey/access/CDSSystems';
 import AccessDiagnostics from '../pages/journey/access/Diagnostics';
 import AccessDigitalHealth from '../pages/journey/access/DigitalHealth';
+import ValueBasedHealthCare from '../pages/journey/access/vbhc';
 import AccessOverview from '../pages/journey/access/Overview';
 import Partners from '../pages/enablers/partners';
-import ValueBasedHealthCare from '../pages/enablers/vbhc';
 import RocheInitiatives from '../pages/enablers/roche';
 import Context from '../pages/enablers/roche/Context';
 import Rozlytrek from '../pages/enablers/roche/Rozlytrek';
@@ -291,14 +291,14 @@ const Routes = (props) => [
     props={props}
     key="access-overview"
   />,
-  <PublicRoute exact path="/phc/systems-enablers" component={Enablers} props={props} key="systems-enablers" />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/value-based-healthcare"
+    path="/phc/future-patient-journey/access/value-based-healthcare"
     component={ValueBasedHealthCare}
     props={props}
-    key="systems-enablers-value-based-healthcare"
+    key="access-overview"
   />,
+  <PublicRoute exact path="/phc/systems-enablers" component={Enablers} props={props} key="systems-enablers" />,
   <PublicRoute
     exact
     path="/phc/systems-enablers/roches-initiatives"

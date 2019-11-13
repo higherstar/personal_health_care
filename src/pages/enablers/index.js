@@ -50,12 +50,10 @@ const navOptions = [
     active: true,
     subMenuLinks: [
       '/phc/systems-enablers/partners',
-      '/phc/systems-enablers/value-based-healthcare',
       '/phc/systems-enablers/roches-initiatives',
     ],
     subMenus: [
       'Partners',
-      'Value-based Healthcare',
       'Roche Initiatives',
     ],
   },
