@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import searchIcon from '../assets/atoms/search-icon.svg';
@@ -21,19 +21,16 @@ const imageStyle = {
 
 function SearchButton(props) {
   const {
+    open,
     className,
     collapsed,
+    handleClick,
+    handleChange,
   } = props;
 
-  const [state, setState] = useState(true);
   const onClick = () => {
-    setState(!state);
-    // handleChange(state);
+    handleClick(!open);
   };
-
-  useEffect(() => {
-    setState(true);
-  }, [collapsed]);
 
   const contentStyle = {
     width: collapsed ? '40px' : '280px',
@@ -72,20 +69,34 @@ function SearchButton(props) {
       >
         <img src={searchIcon} alt="search icon" style={imageStyle} />
       </div>
-      {state ? (
+      {!open ? (
         <span onClick={onClick} style={labelStyle}>SEARCH</span>
-      ) : (<input className="custom-input" type="text" placeholder="SEARCH" style={inputStyle} />)}
+      ) : (
+        <input
+          className="custom-input"
+          type="text"
+          placeholder="SEARCH"
+          style={inputStyle}
+          onChange={handleChange}
+        />
+      )}
     </div>
   );
 }
 
 SearchButton.propTypes = {
+  open: PropTypes.bool,
   className: PropTypes.string,
   collapsed: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func,
+  handleChange: PropTypes.func,
 };
 
 SearchButton.defaultProps = {
+  open: false,
   className: 'search-button',
+  handleClick: null,
+  handleChange: null,
 };
 
 export default SearchButton;

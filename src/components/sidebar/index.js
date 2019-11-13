@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
@@ -5,6 +6,8 @@ import { Link, Redirect } from 'react-router-dom';
 import SearchButton from '../../atoms/SearchButton';
 import NavMenu from '../../atoms/NavMenu';
 import navIcon from '../../assets/atoms/arrow-right-blue.svg';
+import SearchResult from './SearchResult';
+import searchData from './search';
 
 const backgroundColor = (color) => {
   switch (color) {
@@ -23,6 +26,8 @@ function SideBar(props) {
   const [state, setState] = useState(false);
   const [link, setLink] = useState('');
   const [expand, setExpand] = useState(true);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchResult, setSearchResult] = useState([]);
 
   const handleDotClick = (option) => () => {
     if (option.active) {
@@ -132,12 +137,68 @@ function SideBar(props) {
     fontWeight: option.active && 'bold',
   });
 
+  const handleSearchButton = (event) => {
+    setSearchOpen(event);
+  };
+
+  const handleSearchClose = () => {
+    setSearchOpen(false);
+  };
+
+  const handleSearch = (event) => {
+    const resultContent = [];
+    const keyword = event.target.value;
+    searchData.forEach((data) => {
+      let after = null;
+      let before = null;
+
+      if (keyword) {
+        const keyIndexList = [];
+        let result;
+        const regex = new RegExp(keyword, 'gi');
+        /* eslint-disable-next-line no-cond-assign */
+        while ((result = regex.exec(data.content))) {
+          keyIndexList.push(result.index);
+        }
+        keyIndexList.forEach((keywordIndex) => {
+          if (keywordIndex > 30) {
+            before = data.content.slice(keywordIndex - 30, keywordIndex);
+            after = data.content.slice(keywordIndex + keyword.length, keywordIndex + keyword.length + 30);
+          } else {
+            before = data.content.slice(0, keywordIndex);
+            after = data.content.slice(keywordIndex + keyword.length, 60);
+          }
+
+          resultContent.push({
+            link: data.link,
+            keyword,
+            after,
+            before,
+          });
+        });
+      }
+    });
+    setSearchResult(resultContent);
+  };
+
   return (
     <div className="side-bar" style={sideBarStyle}>
       <div className="side-bar-left-band" />
       <div className="side-bar-header" style={{ background: backgroundColor(color) }} />
       <div className="side-bar-content">
-        <SearchButton className="search-button" collapsed={collapsed} />
+        <SearchButton
+          open={searchOpen}
+          className="search-button"
+          collapsed={collapsed}
+          handleClick={handleSearchButton}
+          handleChange={handleSearch}
+        />
+        <SearchResult
+          searchResult={searchResult}
+          open={searchOpen}
+          handleClose={handleSearchClose}
+          collapsed={collapsed}
+        />
         <div className="side-bar-nav">
           {navOptions[0].level === 3 ? (
             <>

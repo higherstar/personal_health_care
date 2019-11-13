@@ -46,6 +46,36 @@
     position: relative;
     overflow: auto;
 
+    .search-result {
+      width: 258px;
+      height: 100%;
+      padding: 80px 5px 5px 10px;
+      background: #F1F1F1;
+      position: absolute;
+      z-index: 3;
+      transition: 0.3s all ease;
+
+      .results-container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-top: 2px solid #E2E2E2;
+        border-bottom: 2px solid #E2E2E2;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .search-result-item {
+          border-bottom: 1px solid #E2E2E2;
+          padding: 10px 0;
+          font-family: Imago;
+
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+
     .side-bar-submenu-left {
       width: 88px;
       height: 100%;
@@ -99,7 +129,7 @@
       position: absolute;
       left: 25px;
       top: 20px;
-      z-index: 2;
+      z-index: 4;
     }
   }
 }
