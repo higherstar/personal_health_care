@@ -2,7 +2,7 @@ import React from 'react';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
-import mapImage from '../../../assets/common/enablers.png';
+import mapImage from '../../../assets/common/access.png';
 // import frameImage from '../../../assets/pages/enablers/roche-framework.png';
 // import frameDescImage from '../../../assets/pages/enablers/roche-framework-description.png';
 // import vbhcImage from '../../../assets/pages/enablers/vbhc-description.png';
