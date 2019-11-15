@@ -239,13 +239,20 @@ function Welcome() {
         the PHC ecosystem, the interconnectedness of the system at play, and how you can engage with PHC.
       </p>
       <h3>Personalised Healthcare at Roche</h3>
-      <p>
+      <span>
         Before diving into the PHC systems map, learn about why PHC is important and Roche’s PHC vision and
-        strategy on the PHC portal.
-      </p>
+        strategy on the
+        {' '}
+        <a href="http://we.intranet.roche.com/sites/bio/services/fast
+        /FASTApps/Pages/Personalised-Healthcare-Pharma-Starter-Pack-.aspx"
+        >
+        PHC portal
+        </a>
+.
+      </span>
       <h3>How we built the PHC Systems Map</h3>
       <p>
-        The PHC systems map is built around the
+        This site is built around the
         {' '}
         <strong>future patient journey that is fully personalized.</strong>
         {' '}
@@ -262,6 +269,13 @@ function Welcome() {
       </div>
       <div className="explore-button d-flex align-items-center justify-content-center" onClick={handleCloseClick}>
         <span>Explore the PHC-Enabled Patient Journey</span>
+      </div>
+      <div className="disclaimer">
+        <span>
+          THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL
+          UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY
+          PARTNERS OF THE LOCAL AFFILIATE.
+        </span>
       </div>
     </div>
   );

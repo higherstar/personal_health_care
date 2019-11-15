@@ -8,7 +8,7 @@ const searchData = [
       + 'PHC ecosystem, the interconnectedness of the system at play, and how you can engage with PHC. Personalised '
       + 'Healthcare at Roche Before diving into the PHC systems map, learn about why PHC is important and '
       + 'Roche’s PHC vision and strategy on the PHC portal. How we built the PHC Systems Map '
-      + 'The PHC systems map is built around the future patient journey that is fully personalized. '
+      + 'This site is built around the future patient journey that is fully personalized. '
       + 'It includes key PHC concepts that are relevant for each step of a patient’ care as well as'
       + ' key system enablers that are important to keep in mind. Check out the video below to learn '
       + 'about how we envision the future patient journey to be different from the existing one and how '

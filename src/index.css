@@ -440,21 +440,24 @@
       font-weight: bold;
       color: #0066cc; }
 
-.welcome-modal {
+.welcome .custom-modal-content {
+  height: calc(100% - 50px); }
+
+.welcome .welcome-modal {
   width: 100%;
   padding: 0 10px; }
-  .welcome-modal h3 {
+  .welcome .welcome-modal h3 {
     text-align: center; }
-  .welcome-modal .welcome-videos {
+  .welcome .welcome-modal .welcome-videos {
     width: 50%;
     min-width: 500px;
     margin-left: auto;
     margin-right: auto; }
-    .welcome-modal .welcome-videos .slick-prev:hover, .welcome-modal .welcome-videos .slick-next:hover {
+    .welcome .welcome-modal .welcome-videos .slick-prev:hover, .welcome .welcome-modal .welcome-videos .slick-next:hover {
       color: #D8D8D8; }
-    .welcome-modal .welcome-videos .slick-prev:before, .welcome-modal .welcome-videos .slick-next:before {
+    .welcome .welcome-modal .welcome-videos .slick-prev:before, .welcome .welcome-modal .welcome-videos .slick-next:before {
       color: #565B59; }
-  .welcome-modal .explore-button {
+  .welcome .welcome-modal .explore-button {
     width: 40%;
     height: 50px;
     min-width: 500px;
@@ -462,13 +465,22 @@
     border-radius: 30px;
     margin: 40px auto;
     cursor: pointer; }
-    .welcome-modal .explore-button:active {
+    .welcome .welcome-modal .explore-button:active {
       opacity: 0.8; }
-    .welcome-modal .explore-button span {
+    .welcome .welcome-modal .explore-button span {
       color: white;
       font-size: 20px;
       font-weight: bold;
       text-align: center; }
+  .welcome .welcome-modal .disclaimer {
+    background: #eeeeee;
+    width: 100%;
+    text-align: center;
+    padding: 0 25px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 .abbreviation .custom-modal-container {
   padding: 0; }

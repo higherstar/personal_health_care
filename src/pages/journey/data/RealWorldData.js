@@ -48,7 +48,6 @@ const navOptions = [
   },
 ];
 
-
 const dropdownOptions = [
   {
     className: 'diagnosis-dropdown',

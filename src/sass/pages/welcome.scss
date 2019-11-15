@@ -1,44 +1,60 @@
-.welcome-modal {
-  width: 100%;
-  padding: 0 10px;
-
-  h3 {
-    text-align: center;
+.welcome {
+  .custom-modal-content {
+    height: calc(100% - 50px);
   }
+  .welcome-modal {
+    width: 100%;
+    padding: 0 10px;
 
-  .welcome-videos {
-    width: 50%;
-    min-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-
-    .slick-prev:hover, .slick-next:hover {
-      color: #D8D8D8;
-    }
-
-    .slick-prev:before, .slick-next:before {
-      color: #565B59;
-    }
-  }
-
-  .explore-button {
-    width: 40%;
-    height: 50px;
-    min-width: 500px;
-    background: #0066cc;
-    border-radius: 30px;
-    margin: 40px auto;
-    cursor: pointer;
-
-    &:active {
-      opacity: 0.8;
-    }
-
-    span {
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
+    h3 {
       text-align: center;
+    }
+
+    .welcome-videos {
+      width: 50%;
+      min-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .slick-prev:hover, .slick-next:hover {
+        color: #D8D8D8;
+      }
+
+      .slick-prev:before, .slick-next:before {
+        color: #565B59;
+      }
+    }
+
+    .explore-button {
+      width: 40%;
+      height: 50px;
+      min-width: 500px;
+      background: #0066cc;
+      border-radius: 30px;
+      margin: 40px auto;
+      cursor: pointer;
+
+      &:active {
+        opacity: 0.8;
+      }
+
+      span {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+
+    .disclaimer {
+      background: #eeeeee;
+      width: 100%;
+      text-align: center;
+      padding: 0 25px;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }
