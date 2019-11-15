@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
-// import ImageModal from '../../../components/modals/ImageModal';
+import ImageModal from '../../../components/modals/ImageModal';
 import mapImage from '../../../assets/common/roche.png';
-// import engineImage from '../../../assets/pages/enablers/phc-engine.png';
-// import acceleratingImage from '../../../assets/pages/enablers/phc-accelerating.png';
+import engineImage from '../../../assets/pages/enablers/phc-engine.png';
+import acceleratingImage from '../../../assets/pages/enablers/phc-accelerating.png';
 
 const navOptions = [
   {
@@ -51,53 +51,47 @@ const navOptions = [
 ];
 
 function Context() {
-  // const [image, setImage] = useState('');
-  // const [imageOpen, setImageOpen] = useState(false);
-  //
-  // const openImageModal = (image) => {
-  //   setImage(image);
-  //   setImageOpen(true);
-  // };
-  //
-  // const handleCloseClick = () => {
-  //   setImageOpen(false);
-  // };
-  //
-  // const mainContent = (
-  //   <>
-  //     <h2>Achieving a fully enabled PHC engine</h2>
-  //     <p>
-  //       We recognize that fully embedded PHC capabilities won’t happen instantaneously.
-  //       Instead, we see
-  //       this
-  //       {' '}
-  //       <strong>transformation towards a fully enabled PHC engine</strong>
-  //       , as shown below:
-  //     </p>
-  //     <img
-  //       className="main-content-image d-none d-sm-none d-md-block"
-  //       src={engineImage}
-  //       onClick={() => openImageModal(engineImage)}
-  //       alt="engine"
-  //     />
-  //     <br />
-  //     <h2>
-  //       Accelerating Personalised Healthcare Internally and Externally
-  //     </h2>
-  //     <br />
-  //     <img
-  //       className="main-content-image d-none d-sm-none d-md-block"
-  //       src={acceleratingImage}
-  //       onClick={() => openImageModal(acceleratingImage)}
-  //       alt="accelerating"
-  //     />
-  //   </>
-  // );
+  const [image, setImage] = useState('');
+  const [imageOpen, setImageOpen] = useState(false);
+
+  const openImageModal = (image) => {
+    setImage(image);
+    setImageOpen(true);
+  };
+
+  const handleCloseClick = () => {
+    setImageOpen(false);
+  };
 
   const mainContent = (
-    <h1 className="text-center">
-      Content Coming Soon
-    </h1>
+    <>
+      <h2>Achieving a fully enabled PHC engine</h2>
+      <p>
+        We recognize that fully embedded PHC capabilities won’t happen instantaneously.
+        Instead, we see
+        this
+        {' '}
+        <strong>transformation towards a fully enabled PHC engine</strong>
+        , as shown below:
+      </p>
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={engineImage}
+        onClick={() => openImageModal(engineImage)}
+        alt="engine"
+      />
+      <br />
+      <h2>
+        Accelerating Personalised Healthcare Internally and Externally
+      </h2>
+      <br />
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={acceleratingImage}
+        onClick={() => openImageModal(acceleratingImage)}
+        alt="accelerating"
+      />
+    </>
   );
 
   const content = (
@@ -105,7 +99,7 @@ function Context() {
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      {/* <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} /> */}
+      <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );

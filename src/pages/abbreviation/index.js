@@ -72,59 +72,55 @@ const navOptions = [
 
 const modalHeader = (
   <div className="reference-title">
-    Coming Soon
+    Abbreviation List
   </div>
 );
+
 const modalContent = (
-  <h1>
-    Content Coming Soon
-  </h1>
+  <div className="abbreviation-content">
+    <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare,</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>NGS: </span>Next-generation sequencing</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p><span>RWD: </span>Real-world data</p>
+      <p><span>PHC: </span>Personalised Healthcare</p>
+    </div>
+  </div>
 );
-// const modalContent = (
-//   <div className="abbreviation-content">
-//     <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare,</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>NGS: </span>Next-generation sequencing</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//       <p><span>RWD: </span>Real-world data</p>
-//       <p><span>PHC: </span>Personalised Healthcare</p>
-//     </div>
-//   </div>
-// );
 
 function Abbreviation() {
   const content = (
