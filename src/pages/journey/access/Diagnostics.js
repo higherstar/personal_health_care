@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -6,10 +7,10 @@ import ConnectionModal from '../../../components/modals/ConnectionModal';
 import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/access.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
-import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
+import connection from '../../../assets/pages/journey/connections/diagnostics.png';
 
 const navOptions = [
   {
@@ -45,7 +46,7 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'Digital Health (SaMD)',
+    title: 'Digital Health and SaMD',
     activeMenu: 2,
     parentTitle: 'Rapid Access to Personalised Interventions',
     parentLink: '/phc/future-patient-journey',
@@ -75,7 +76,7 @@ const dropdownOptions = [
       'Advanced Imaging',
       'Digital Pathology',
       'CDS Systems',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/diagnosis/overview',
@@ -96,7 +97,7 @@ const dropdownOptions = [
       'Genomics',
       'Advanced Imaging',
       'CDS Systems',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/monitoring/overview',
@@ -129,7 +130,7 @@ const dropdownOptions = [
       'Diagnostics',
       'CDS Systems',
       'MGTOs',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/care/overview',
@@ -146,7 +147,7 @@ const dropdownOptions = [
       'Overview',
       'Diagnostics',
       'CDS Systems',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
       'Value-based Healthcare',
     ],
     subMenuLinks: [
@@ -190,34 +191,27 @@ function AccessDiagnostics() {
                 To support Roche’s PHC efforts, our diagnostics tool offering is evolving as do the diagnostic
                 technology. We are invested in developing PHC-enabling diagnostic tools, such as:
         <li>
-          <strong>Companion diagnostics</strong>
+          <strong>Next generation sequencing</strong>
           {' '}
-          (CDx) help healthcare professionals determine whether a
-                particular
-                therapeutic product’s benefits to patients will outweigh any potential serious side effects or risks.
+          (NGS) based solutions such as ctDNA-based platforms (liquid biopsy) that may help
+          to support earlier identification of at-risk patients and treatment or disease monitoring
         </li>
         <li>
-          <strong>Complementary diagnostics</strong>
+          <strong>Digital pathology</strong>
           {' '}
-          inform treatment decisions. They help give healthcare
-                professionals
-                a better picture of a patient’s overall prognosis or likelihood to respond to different therapies.
-        </li>
-        <li>
-          <strong>Predictive diagnostics</strong>
-          {' '}
-          provide information about how patients may respond to a
-                specific target or therapy.
+          solutions that may support novel ways to augment current diagnostic algorithms and leverage
+          machine learning to develop novel ways of identifying which patients may respond to certain treatment
         </li>
       </span>
       <p>
+        <br />
         <strong>Improved access & personalized care</strong>
         <br />
       </p>
       <span>
         <strong>What it means for patients</strong>
         <br />
-              Roche diagnostic tools support:
+              Utilization of the right diagnostic tools may support:
         <li>
                 Selection of the most appropriate patient treatment group
         </li>
@@ -235,8 +229,21 @@ Roche makes these diagnostics available to more patients faster through its comm
       <p>
         <strong>What it means for health systems</strong>
         <br />
-        Roche diagnostic tools that help to improve medical decision making may increase the
-        speed and rate of funding for our therapies.
+        Diagnostic tools are critical to supporting personalised care and access. Diagnostic
+        tools provide information and data that:
+      </p>
+      <p>
+        <strong>1. Companion diagnostics </strong>
+        (CDx): May be predictive of patient response to a
+        specific treatment and are required by the drug label for the safe and effective use of a therapy.
+      </p>
+      <p>
+        <strong>2. Complementary diagnostics  </strong>
+        (CoDx): Not required by a drug label, but support
+        treatment decision making by providing useful information about a patient
+        {'\''}
+        s prognosis or
+        likelihood of responding to certain therapies
       </p>
       <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
@@ -260,27 +267,48 @@ Roche makes these diagnostics available to more patients faster through its comm
         to investigate and develop innovative
         predictive diagnostics identifying those patients who are more likely to respond to specific therapies.
       </p>
-      <h2>Key drivers/considerations</h2>
-      <li>
-        Fast turnaround time for results could be a driver of diagnostics adoption
-      </li>
-      <li>
-        Successful identification of patients candidate to a targeted Roche medication depends on use of
-        appropriate and high-quality testing. Rozlytrek diagnostics strategy is an example of PHC in action.
-        It aims at establishing molecular profiling as part of the standard of care, so that many patients
-        have the chance to benefit from Rozlytrek.
-        [link to press release
-        press release
+      <span>
+        To learn more, check out the
         {' '}
-        <a href="https://www.roche.com/media/releases/med-cor-2019-08-16.htm ">
-          https://www.roche.com/media/releases/med-cor-2019-08-16.htm
+        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/
+        f4373aea-146c-47fc-8d5c-b8ede371e1d6"
+        >
+“Diagnostics in Personalised Healthcare”
         </a>
         {' '}
-        and internal hyperlink to page about Rozlytrek.]
+        module
+        from the PHC Pharma Starter Pack.
+      </span>
+      <h2>Key drivers/considerations</h2>
+      <li>
+        <strong>Fast turnaround time for results</strong>
+        {' '}
+        from ordering a diagnostic to obtaining results is
+        a key consideration in use to support timely decision making for patients
       </li>
       <li>
-        Level of funding of advanced diagnostics by the healthcare system as diagnostic tool may greatly
-        varies across countries and regions
+        <strong>Actionability of results </strong>
+        {' '}
+        is critical to uptake of diagnostic testing
+        - i.e. the information provided by test results should impact treatment decision making
+      </li>
+      <li>
+        <strong>Broad access to quality testing </strong>
+        {' '}
+        is imperative to ensure patients can be identified for
+        appropriate treatment. This is especially important where alternatives do not exist and/or markers
+        being tested for are very rare, such as with NTRK testing for
+        <Link to="/phc/systems-enablers/
+        roches-initiatives/rozlytrek"
+        >
+          Rozlytrek.
+        </Link>
+      </li>
+      <li>
+        <strong>Level of funding </strong>
+        {' '}
+        of advanced diagnostics by healthcare systems
+        is a key consideration as it may greatly vary across countries and regions
       </li>
     </>
   );
@@ -307,7 +335,7 @@ Roche makes these diagnostics available to more patients faster through its comm
     <>
       {zoomOut ? (
         <>
-          <img src={cdsConnection} alt="cds connection" />
+          <img src={connection} alt="cds connection" />
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}

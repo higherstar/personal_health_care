@@ -35,7 +35,7 @@ function MainContent(props) {
 
   let { title } = navOptions.find((option) => option.active === true);
   if (title.includes('Digital Health')) {
-    title = 'DIGITAL HEALTH (SaMD)';
+    title = 'DIGITAL HEALTH and SaMD';
   }
   if (title.includes('MGTOs')) {
     title = 'MOLECULARLY-GUIDED THERAPY OPTIONS (MGTOs)';

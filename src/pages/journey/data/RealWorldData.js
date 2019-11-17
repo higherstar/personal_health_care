@@ -59,7 +59,7 @@ const dropdownOptions = [
       'Advanced Imaging',
       'Digital Pathology',
       'CDS Systems',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/diagnosis/overview',
@@ -80,7 +80,7 @@ const dropdownOptions = [
       'Genomics',
       'Advanced Imaging',
       'CDS Systems',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/monitoring/overview',
@@ -113,7 +113,7 @@ const dropdownOptions = [
       'Diagnostics',
       'CDS Systems',
       'MGTOs',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
     ],
     subMenuLinks: [
       '/phc/future-patient-journey/care/overview',
@@ -130,7 +130,7 @@ const dropdownOptions = [
       'Overview',
       'Diagnostics',
       'CDS Systems',
-      'Digital Health (SaMD)',
+      'Digital Health and SaMD',
       'Value-based Healthcare',
     ],
     subMenuLinks: [

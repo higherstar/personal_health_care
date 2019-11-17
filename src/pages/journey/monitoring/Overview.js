@@ -58,7 +58,7 @@ const navOptions = [
   {
     id: 5,
     level: 3,
-    title: 'Digital Health (SaMD)',
+    title: 'Digital Health and SaMD',
     activeMenu: 2,
     parentTitle: 'Personalised Remote Monitoring & Care',
     parentLink: '/phc/future-patient-journey',
