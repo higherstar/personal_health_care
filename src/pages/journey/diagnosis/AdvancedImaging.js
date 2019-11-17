@@ -7,7 +7,7 @@ import ConnectionModal from '../../../components/modals/ConnectionModal';
 import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/diagnosis.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
-import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
+import connection from '../../../assets/pages/journey/connections/advanced-imaging.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
@@ -199,31 +199,32 @@ function DiagnosisAdvancedImaging() {
         computed tomography
         (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used
         for medical diagnosis.
-        <sup>1</sup>
+        To learn more, check out the
         {' '}
-        Click
-        <Link to="/phc/future-patient-journey/data/advanced-analytics">here</Link>
+        <a href="https://roche.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=017b1e6b-56a4-48b4-a67c-64c69ad38ac2#t=1">
+          “Meaningful Data at Scale, Advanced Analytics, and Realizing Value”
+        </a>
         {' '}
-        to learn more.
+        module from the PHC Pharma Starter Pack.
       </p>
       <h2>
-        Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
-        the left)
+        Why it is important in PHC
       </h2>
+      <p>
+        How Roche is leveraging advances in imaging:
+      </p>
       <p>
         <strong>Smarter & more efficient R&D - </strong>
         By automating time-consuming & costly processes
         (e.g., secondary imaging reads & IRFs), this effort will result in significantly faster trials,
         while more accurate quantification of disease burden will enable robust cohort matching for use in
         synthetic control arm studies.
-        <sup>2</sup>
       </p>
       <p>
         <strong>Improved access & personalized care - </strong>
         Development of automated algorithms can provide
         better and more accurate measurements of disease than currently available to help predict progression
         and response to therapy.
-        <sup>2</sup>
         <br />
         These could deliver significant savings to health systems, or allow emerging health
         systems to deliver advanced care with a lower investment in infrastructure and other system resources.
@@ -239,6 +240,8 @@ function DiagnosisAdvancedImaging() {
         What Roche is doing in this area
       </h2>
       <span>
+        <strong>Imaging</strong>
+        <br />
                 At Roche, we are focusing on curating and analyzing clinical images collected across the three
         {' '}
         <Link
@@ -246,7 +249,7 @@ function DiagnosisAdvancedImaging() {
         >
                 showcases
         </Link>
-Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis to develop automated algorithms
+(Ophthalmology, Cancer Immunotherapy), and Multiple Sclerosis to develop automated algorithms
                 for more accurate predictions for disease
                 progression and response to therapy. This automation will result in:
         <li>
@@ -269,9 +272,21 @@ Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis to develop automated
         </li>
       </span>
       <p>
-        The multi-functional PHC IX Imaging team is developing and implementing a Global Imaging Platform
-        with tools for scientists and others to store, curate and analyze imaging data. The team is currently
-        leading a pilot program to deploy and drive adoption within Roche of a production-ready system.
+        Efforts are underway to obtain Real-World Data (RWD) to expand the utility of some of these endpoints
+        beyond standard clinical trials.
+      </p>
+      <strong>Global Imaging Platform</strong>
+      <p>
+        Develop and implement a global imaging platform with tools for scientists and other to store,
+      curate and analyze imaging data.
+      </p>
+      <p>
+        PHC IX Imaging is a multi-functional team driving the design and launch of a cross-pharma,
+        cross-TA at-scale image acquisition, storage and exchange platform. The team successfully
+        completed a Proof of Concept in June 2019 and is currently leading a Pilot program to deploy
+        and drive adoption within Roche of a production-ready system. The Pilot will demonstrate
+        ingestions of multiple large data sets from across pharmaceutical areas and includes
+        stakeholder participation from across the company.
       </p>
       <br />
       <h2>Key drivers/considerations</h2>
@@ -341,7 +356,7 @@ Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis to develop automated
     <>
       {zoomOut ? (
         <>
-          <img src={cdsConnection} alt="cds connection" />
+          <img src={connection} alt="cds connection" />
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
