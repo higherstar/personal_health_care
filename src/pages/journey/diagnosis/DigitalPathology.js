@@ -7,7 +7,7 @@ import ConnectionModal from '../../../components/modals/ConnectionModal';
 import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/diagnosis.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
-import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
+import connection from '../../../assets/pages/journey/connections/digital-pathology.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
@@ -197,31 +197,40 @@ function DiagnosisDigitalPathology() {
       <p>
         Digital pathology is the collection, management, sharing, and interpretation of pathology
         information in a digital environment.
-        <sup>1</sup>
-        We have formed a Pharma-Diagnostics partnership to accelerate Digital Pathology for PHC objectives
-        in both divisions through curation, image analysis, and
-        {' '}
-        <Link to="/phc/future-patient-journey/data/advanced-analytics">
-          advanced
-          analytics
-        </Link>
-        . We will identify resources for curation and uploading images
-        and data, identify image analysis technology (e.g. deep learning and machine
-        learning) and algorithms, and build a metadata analysis pipeline with genomics
-        and outcomes. Click
-        {' '}
-        <Link to="/phc/future-patient-journey/data/advanced-analytics">here</Link>
-        {' '}
-        to learn more.
       </p>
       <h2>
         Why it is important for PHC
       </h2>
-      <p>
+      <span>
         <strong>Smarter & more efficient R&D – </strong>
-        Digital pathology can generate insights with
-        the potential to collate histological features with prognosis, outcomes, disease biology, treatment.
-      </p>
+        <br />
+        Digital pathology has the potential to transform R&D through the discovery, development, and
+        application of Digital Pathology-derived algorithms that can support:
+        <li>
+          Patient risk stratification
+        </li>
+        <li>
+          Identification of new response or resistance markers
+        </li>
+        <li>
+          Advanced understanding of disease through novel biological feature detection unable
+          to be detected in pathology today
+        </li>
+      </span>
+      <span>
+        <strong>Improved access & personalized care</strong>
+        <br />
+        Digital pathology can generate insights with the potential to collate histological
+        features with prognosis, outcomes, disease biology, and treatment.
+      </span>
+      <span>
+        <strong>Why is it important for patients</strong>
+        <br />
+        Applications of digital pathology today are limited to supporting pathology workflow, and
+        are relatively underdeveloped. With advances in artificial intelligence and machine learning,
+        it holds the promise to impact clinical and patient care in the future by augmenting current
+        diagnostic algorithms and supporting more rapid diagnostic insights.
+      </span>
 
       <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
@@ -234,10 +243,23 @@ function DiagnosisDigitalPathology() {
         What Roche is doing in this area
       </h2>
       <span>
-A Pharma-Dia collaboration at Roche is working to curate, analyze and apply advanced
-                analytics to digital pathology images to produce novel insights during the drug
-                development process.
-        <sup>1</sup>
+We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital Pathology for PHC
+        objectives in both divisions through curation, image analysis,
+        and
+        {' '}
+        <Link to="/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics</Link>
+.
+        We will identify resources for curation and uploading images and data, identify image analysis
+        technology (e.g. deep learning and machine learning) and algorithms, and build a metadata analysis
+        pipeline with genomics and outcomes. To learn more, check out
+        the
+        {' '}
+        <a href="https://roche.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=f1899993-7bb7-4b06-a10b-fd42d1fa3a7f#t=1">
+        “Meaningful Data at Scale,
+        Advanced Analytics, and Realizing Value”
+        </a>
+        {' '}
+module from the PHC Pharma Starter Pack.
         <br />
                 We have strategic objectives/OKRs to build and enhance the PHC platform:
         <li>
@@ -295,7 +317,7 @@ A Pharma-Dia collaboration at Roche is working to curate, analyze and apply adva
     <>
       {zoomOut ? (
         <>
-          <img src={cdsConnection} alt="cds connection" />
+          <img src={connection} alt="cds connection" />
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
