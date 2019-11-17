@@ -7,7 +7,7 @@ import ConnectionModal from '../../../components/modals/ConnectionModal';
 import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/diagnosis.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
-import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
+import connection from '../../../assets/pages/journey/connections/genomics.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
@@ -235,6 +235,7 @@ function DiagnosisGenomics() {
         <strong>
           Improved access & personalized care
         </strong>
+        {' '}
         Foundation Medicine (FMI) is leading the understanding and use of CGP in the clinical setting,
         establishing new standards for
         {' '}
@@ -257,6 +258,18 @@ function DiagnosisGenomics() {
         >
           Advanced Analytics
         </Link>
+      </p>
+      <p>
+        <strong>
+          Smarter & more efficient R&D
+        </strong>
+        {' '}
+Leveraging MDAS to accelerate and improve our pipeline, our R&D efforts combine
+        deep genomic data with other data to better understand diseases and to detect biomarkers
+        of responses or resistance to treatment during the product development phase.
+        <br />
+        In the future, development of synthetic control arms may allow the elimination or reduction of the need
+        for control arms, delivering faster, more effective trials and more rapid benefit to patients.
       </p>
       <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
@@ -281,7 +294,11 @@ function DiagnosisGenomics() {
         decision-making process by a Molecular Tumor Board to provide a highly-specific treatment
         decision for each patient.2 Click here to learn more about the
         {' '}
-        <a href="cupisco.html">CUPISCO trial.</a>
+        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/287dbea0-41e0-4d2c-bdaa-025c5fecd987">
+          CUPISCO Case Study
+        </a>
+        {' '}
+from the PHC Pharma Starter Pack.
       </p>
       <br />
       <h2>
@@ -289,11 +306,8 @@ function DiagnosisGenomics() {
       </h2>
       <span>
 The general use of genomics as diagnostics tools along the patient journey depends on:
-        <strong>Advanced diagnostics funding – </strong>
-Level of funding of NGS tests by the healthcare system
-                as diagnostic tool
         <li>
-          <strong>Testing adoption - </strong>
+          <strong>Testing adoption and utility - </strong>
 Level of adoption of biomarker and NGS tests and CGP in
                   diagnostic practice
         </li>
@@ -304,13 +318,21 @@ Level of funding of biomarker and NGS tests by the
         </li>
         <li>
           <strong>Regulatory perspective – </strong>
-Existence of pathway for the approval of
-                  molecularly-informed therapies 3  [internal hyperlink to regulatory policy]
+          {' '}
+    Existence of a
+          <Link to="/phc/systems-enablers/partner/policy">regulatory of pathway</Link>
+          {' '}
+for the approval of
+  molecularly-informed therapies.
         </li>
         <li>
           <strong>Payer acceptance – </strong>
-Level of reimbursement of molecularly-informed therapies
-                  [internal hyperlink to the Stakeholders page under Enablers]
+          Level of
+          {' '}
+          <Link to="/phc/systems-enablers/partner/policy">reimbursement</Link>
+          {' '}
+of molecularly-informed therapies
+    [internal hyperlink to the Stakeholders page under Enablers]
         </li>
       </span>
     </>
@@ -338,7 +360,7 @@ Level of reimbursement of molecularly-informed therapies
     <>
       {zoomOut ? (
         <>
-          <img src={cdsConnection} alt="cds connection" />
+          <img src={connection} alt="cds connection" />
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
