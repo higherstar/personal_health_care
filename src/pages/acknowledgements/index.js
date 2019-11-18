@@ -71,15 +71,17 @@ const navOptions = [
 ];
 
 const modalHeader = (
-  <div className="reference-title">
+  <div className="reference-title d-flex">
     Acknowledgements
+    {' '}
+    <h1 style={{ marginLeft: '50px' }}>Content coming soon</h1>
   </div>
 );
 
 const modalContent = (
   <div className="acknowledgements-content">
     <h3 className="d-md-block d-sm-none d-none">
-      We acknowledge our colleagues for their contribution to this systems map:
+      We acknowledge our colleagues for their contribution:
     </h3>
     <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
       <p><strong>John Doe,</strong> PHC CoE</p>

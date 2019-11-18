@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -61,16 +62,45 @@ Why it is important in PHC
     <span>
 It is important to identify, understand and address key barriers to building and gaining access to
                 Meaningful Data at Scale (MDAS). Initial barriers to considered are:
-      <sup>1</sup>
       <li>Cost</li>
       <li>Scale (breadth and depth)</li>
-      <li>Data privacy laws and regulations</li>
-      <li>Patient cultural perspectives</li>
       <li>Infrastructure</li>
-      <li>Data quality and completeness</li>
-      <li>Access mode</li>
-      <li>Unstructured nature of data</li>
+      <li>Lack of incentives to share data</li>
+      <li>Data quality and completeness; unstructured nature of data</li>
+      <li>Access mode and timeliness of access</li>
+      <li>Data privacy laws and regulations</li>
+      <li>Patient & health system cultural perspectives and attitudes</li>
       <li>Intellectual property</li>
+      <li>Variation in data governance</li>
+      <li>Transparency</li>
+    </span>
+    <h2>What Roche is doing in this area</h2>
+    <span>
+From a data policy perspective as an organization both at the affiliate and global levels we want
+      to work to establish data ecosystems focusing on data privacy, sharing,
+      quality and interoperability. These policy areas will enable collection,
+      aggregation, curation, and analysis of patient-level data from different
+      sources, including
+      {' '}
+      <Link to="/phc/future-patient-journey/data/real-world-data">
+      electronic health records (EHR)
+      </Link>
+, advanced
+      <Link to="/phc/future-patient-journey/diagnosis/diagnostics">diagnostics</Link>
+      {' '}
+platforms,
+      and
+      <Link to="/phc/future-patient-journey/diagnosis/digital-health">digital tools</Link>
+. This generates
+      insights into health, disease, and treatment pathways at the population and patient level,
+      ultimately enabling the delivery of PHC.
+    </span>
+    <span>
+      From a regulatory and access policy perspective, this data can also be used to guide decisions by:
+      <li>Providing disease context</li>
+      <li>Justifying unmet medical need</li>
+      <li>Demonstrating safety and effectiveness in new populations</li>
+      <li>Serving as an external control arm</li>
     </span>
     <br />
     <h2>Key drivers/considerations</h2>

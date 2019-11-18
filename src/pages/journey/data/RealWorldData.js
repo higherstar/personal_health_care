@@ -255,22 +255,6 @@ RWD is a key component of our PHC vision and strategy because:
         Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
         <sup>5</sup>
       </p>
-      <div className="d-flex flex-row">
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="color-box image-description-color-global" />
-          <p className="color-description">Global use cases of RWD</p>
-        </div>
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="color-box image-description-color-regional" />
-          <p className="color-description">Global/Regional</p>
-        </div>
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="color-box image-description-color-local" />
-          <p className="color-description">
-            Local use cases of RWD in close collaboration with Global on e.g., messaging-strategy
-          </p>
-        </div>
-      </div>
       <img
         className="main-content-image d-none d-sm-none d-md-block"
         src={rocheUseImage}
@@ -403,7 +387,7 @@ RWD is a key component of our PHC vision and strategy because:
         open={connectionOpen}
         handleCloseClick={handleCloseClick}
       />
-      <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
+      <ImageModal className="real-world-data" open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );

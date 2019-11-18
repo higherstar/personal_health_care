@@ -71,53 +71,172 @@ const navOptions = [
 ];
 
 const modalHeader = (
-  <div className="reference-title">
+  <div className="reference-title d-flex">
     Abbreviation List
+    {' '}
+    <h1 style={{ marginLeft: '50px' }}>Content coming soon</h1>
   </div>
 );
 
 const modalContent = (
   <div className="abbreviation-content">
     <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare,</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>NGS: </span>Next-generation sequencing</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
-      <p><span>RWD: </span>Real-world data</p>
-      <p><span>PHC: </span>Personalised Healthcare</p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare,
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>NGS: </span>
+Next-generation sequencing
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
+      <p>
+        <span>RWD: </span>
+Real-world data
+      </p>
+      <p>
+        <span>PHC: </span>
+Personalised Healthcare
+      </p>
     </div>
   </div>
 );

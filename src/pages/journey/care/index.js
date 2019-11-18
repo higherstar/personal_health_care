@@ -38,16 +38,6 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'MGTOs',
-    activeMenu: 2,
-    parentTitle: 'Personalised Care Plan',
-    parentLink: '/phc/future-patient-journey',
-    link: '/phc/future-patient-journey/care/mgtos',
-    active: false,
-  },
-  {
-    id: 4,
-    level: 3,
     title: 'Digital Health and SaMD',
     activeMenu: 2,
     parentTitle: 'Personalised Care Plan',

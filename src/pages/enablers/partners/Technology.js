@@ -72,6 +72,7 @@ of
       {' '}
       <Link to="/phc/future-patient-journey/diagnosis/genomics">genomics</Link>
 ,
+      {' '}
       <Link to="/phc/future-patient-journey/diagnosis/advanced-imaging">imaging</Link>
       {' '}
 and digital data sets.
@@ -84,12 +85,8 @@ and digital data sets.
       <Link to="/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics</Link>
       {' '}
 and meaningful
-      data at scale (
-      <Link to="/phc/future-patient-journey/data/real-world-data">MDAS</Link>
-) platform
-      (
-      <a href="https://www.apollo.com/">Apollo</a>
-).
+      data at scale (MDAS) platform
+      (Apollo).
       <br />
       Through automation, we enable data scientists to derive insights faster and more efficiently
       <strong>by reducing turnaround time from months to minutes</strong>
@@ -141,7 +138,10 @@ initiative in several ways:
                   Implementing Apollo to enable the Croatian Oncology Database
       </li>
       <li>
-                  Roche Advanced Analytics Network (RAAN): Building RAAN technology capabilities on Apollo and
+        Roche
+        {' '}
+        <Link to="/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics Network (RAAN)</Link>
+: Building RAAN technology capabilities on Apollo and
                   enabling RAAN challenges, analytics capabilities, and data collaboration across Roche.
       </li>
     </span>

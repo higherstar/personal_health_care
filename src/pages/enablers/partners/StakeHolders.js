@@ -130,9 +130,11 @@ see ways to increase evidence. Several jurisdictions (the US,
     <li>
       FMI recently secured reimbursement from Medicare, the largest payer in the US.
       In the UK, NICE accepted analysis of Flatiron data as basis for
-      reducing discount on Tecentriq (visit our Case
+      reducing discount on Tecentriq (visit our
       {' '}
-      <a href="study.html">Study</a>
+      <a href="https://roche.csod.com/ui/lms-learning-details/app/course/5fb7c735-e564-4ab4-87d7-f24f4a7c5170">
+        Case Study
+      </a>
       {' '}
 for more information)
     </li>

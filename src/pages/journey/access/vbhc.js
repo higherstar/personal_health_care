@@ -88,6 +88,17 @@ function ValueBasedHealthCare() {
         onClick={() => openImageModal(vbhcImage)}
         alt="vbhc description"
       />
+      <span>
+        To learn more, check out the
+        {' '}
+        <a href="https://roche.csod.com/ui/lms-learning-
+        details/app/course/5ebef49d-7151-4d92-90b3-f5c216f80438"
+        >
+        “Value-Based HealthCare”
+        </a>
+        {' '}
+module from the PHC Pharma Starter Pack.
+      </span>
       <h2>Why it is important</h2>
       <li>
         VBHC aligns with Roche’s core focus on what patients need. This model would ensure
@@ -105,7 +116,6 @@ function ValueBasedHealthCare() {
       </li>
       <li>
         Emerging technologies are now making the implementation of VBHC possible on a wider scale.
-        <sup>1</sup>
         Most importantly, Meaningful Data at Scale (MDAS) will allow Roche to use analytics to inform
         our healthcare offerings. We can use data in predictive models to anticipate the outcomes
         associated with different care cycles, reducing the level of risk for patients, healthcare
@@ -145,6 +155,7 @@ function ValueBasedHealthCare() {
       <img
         className="main-content-image d-none d-sm-none d-md-block"
         src={frameImage}
+        onClick={() => openImageModal(frameImage)}
         alt="framework"
       />
       <img
@@ -155,6 +166,7 @@ function ValueBasedHealthCare() {
       />
       <span>
 To learn more about VBHC, please go to the
+        {' '}
         <a href="https://sites.google.com/roche.com/vbhcroche">
                 VBHC webpage
         </a>
@@ -164,11 +176,16 @@ To learn more about VBHC, please go to the
   );
 
   const content = (
-    <div className="enablers-vbhc d-flex align-items-center justify-content-center">
+    <div className="journey-vbhc d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
-      <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
+      <ImageModal
+        className="vbhc-image-modal"
+        open={imageOpen}
+        image={image}
+        handleCloseClick={handleCloseClick}
+      />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );

@@ -38,7 +38,7 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'ROZLYTREK',
+    title: 'Example of PHC in action: ROZLYTREK',
     activeMenu: 3,
     parentTitle: 'Roche Initiatives',
     parentLink: '/phc/systems-enablers',
@@ -85,6 +85,7 @@ PHC, in the form of real-world data, was also essential to the Rozlytrek clinica
     <span>
 Check out the media release of
       <a href="https://www.roche.com/media/releases/med-cor-2019-08-16.htm">
+        {' '}
 FDA’s approval Roche’s Rozlytrek
                   (entrectinib) for people with ROS1-positive, metastatic non-small cell lung cancer and NTRK
                   gene fusion-positive solid tumours.

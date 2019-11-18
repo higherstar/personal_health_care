@@ -37,8 +37,8 @@ function MainContent(props) {
   if (title.includes('Digital Health')) {
     title = 'DIGITAL HEALTH AND SaMD';
   }
-  if (title.includes('MGTOs')) {
-    title = 'MOLECULARLY-GUIDED THERAPY OPTIONS (MGTOs)';
+  if (title.includes('ROZLYTREK')) {
+    title = 'Roche Example in PHC';
   }
   if (title.includes('CDS')) {
     title = 'Clinical Decision Support (CDS) Systems';
@@ -50,7 +50,8 @@ function MainContent(props) {
 
   const exceptionCases = title.includes('DIGITAL HEALTH')
     || title.includes('MOLECULARLY-GUIDED')
-    || title.includes('CDS');
+    || title.includes('CDS')
+    || title.includes('Roche Example');
   const titleStyle = {
     textTransform: !exceptionCases && 'uppercase',
   };

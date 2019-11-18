@@ -79,12 +79,6 @@ const navOptions = [
 
 const dropdownOptions = [
   {
-    className: 'vbhc-dropdown',
-    title: 'Value-based Healthcare',
-    subMenus: ['Value-based Healthcare'],
-    subMenuLinks: ['/phc/future-patient-journey/access/value-based-healthcare'],
-  },
-  {
     className: 'roche-dropdown',
     title: 'Roche Initiatives',
     subMenus: [

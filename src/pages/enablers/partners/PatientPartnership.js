@@ -136,12 +136,13 @@ function PatientPartnership() {
         alt="lifecycle"
       />
       <span>
-                To learn more, check out the Integrated Patient Partnership (iPP)
-                Community:
+        To learn more, check out the
         {' '}
         <a href="https://sites.google.com/roche.com/patient-partnership/home">
-                https://sites.google.com/roche.com/patient-partnership/home
+        Integrated Patient Partnership (iPP) Community
         </a>
+.
+                Community
       </span>
     </>
   );

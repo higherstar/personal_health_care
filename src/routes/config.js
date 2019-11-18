@@ -35,7 +35,7 @@ import CarePlan from '../pages/journey/care';
 import CareDigitalHealth from '../pages/journey/care/DigitalHealth';
 import CareCDSSystems from '../pages/journey/care/CDSSystems';
 import CareDiagnostics from '../pages/journey/care/Diagnostics';
-import MGTOs from '../pages/journey/care/MGTOs';
+// import MGTOs from '../pages/journey/care/MGTOs';
 import CareOverview from '../pages/journey/care/Overview';
 import Access from '../pages/journey/access';
 import AccessCDSSystems from '../pages/journey/access/CDSSystems';
@@ -242,13 +242,13 @@ const Routes = (props) => [
     props={props}
     key="care-diagnostics"
   />,
-  <PublicRoute
-    exact
-    path="/phc/future-patient-journey/care/mgtos"
-    component={MGTOs}
-    props={props}
-    key="care-mgtos"
-  />,
+  // <PublicRoute
+  //  exact
+  //   path="/phc/future-patient-journey/care/mgtos"
+  //   component={MGTOs}
+  //   props={props}
+  //   key="care-mgtos"
+  // />,
   <PublicRoute
     exact
     path="/phc/future-patient-journey/care/overview"

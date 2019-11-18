@@ -2,6 +2,7 @@
 @import "./abbreviation";
 @import "./acknowledgements";
 @import "./journey";
+@import "./enablers";
 
 p {
   span {
@@ -98,28 +99,4 @@ span {
   .dropdown-title:hover {
     background: #ED8B00;
   }
-}
-
-.color-box {
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  margin-right: 5px;
-}
-
-.color-description {
-  margin: 0;
-  font-size: 8px;
-}
-
-.image-description-color-global {
-  background: #2a89ef;
-}
-
-.image-description-color-regional {
-  background: #70b4f7;
-}
-
-.image-description-color-local {
-  background: #87ceeb;
 }

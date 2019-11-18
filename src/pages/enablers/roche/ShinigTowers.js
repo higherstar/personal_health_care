@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
 import ImageModal from '../../../components/modals/ImageModal';
 import mapImage from '../../../assets/common/roche.png';
-import ecosystemImage from '../../../assets/pages/enablers/roche-ecosystem.png';
-import mvpImage from '../../../assets/pages/enablers/roche-mvp.png';
-import phcImage from '../../../assets/pages/enablers/roche-phc.png';
-import solutionImage from '../../../assets/pages/enablers/roche-phc-solutions.png';
-import worldImage from '../../../assets/pages/enablers/roche-world-map.png';
-import assetsImage from '../../../assets/pages/enablers/roche-assets.png';
-import diagnosticsImage from '../../../assets/pages/enablers/roche-diagnostic.png';
-import businessImage from '../../../assets/pages/enablers/roche-business.png';
+import shiningTowersImage from '../../../assets/pages/enablers/shining-towers.png';
+import worldMapImage from '../../../assets/pages/enablers/world-map.png';
+import assetsOneImage from '../../../assets/pages/enablers/assets-one.png';
+import assetsImage from '../../../assets/pages/enablers/assets.png';
 
 const navOptions = [
   {
@@ -47,7 +44,7 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'ROZLYTREK',
+    title: 'Example of PHC in action: ROZLYTREK',
     activeMenu: 3,
     parentTitle: 'Roche Initiatives',
     parentLink: '/phc/systems-enablers',
@@ -78,27 +75,51 @@ function ShiningTowers() {
           accelerate the development of a full PHC
           clinical ecosystem.
         </strong>
-        <sup>1</sup>
       </p>
       <img
-        className="main-content-image d-none d-md-block d-sm-none"
-        src={ecosystemImage}
-        onClick={() => openImageModal(ecosystemImage)}
-        alt="ecosystem"
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={shiningTowersImage}
+        onClick={() => openImageModal(shiningTowersImage)}
+        alt="shiningTowersImage"
       />
       <span>
 We are building local PHC cases to speed up access to advanced diagnostics and treatment.
-        <sup>2</sup>
-                We are leveraging RWE to enable innovative reimbursement models. To do so, we need to:
-        <li>Increase use of genomic profiling</li>
+        We are leveraging
+        {' '}
+        <Link to="/phc/future-patient-journey/data/real-world-data">
+        real-world data (RWE)
+        </Link>
+        {' '}
+        to enable flexible/adaptive access models for PHC treatments, interventions and
+        {' '}
+        <Link to="/phc/future-patient-journey/care/cds-systems">CDS systems</Link>
+        {' '}
+that link to actual value delivered while ensuring affordability. To do so, we need to:
+        <li>
+More precise and earlier
+          <Link to="/phc/future-patient-journey/diagnosis/diagnostics">diagnostics</Link>
+          {' '}
+done more frequently along with an ncreased
+          use of
+          <Link to="/phc/future-patient-journey/diagnosis/genomics">genomic profiling</Link>
+        </li>
         <li>Increase availability of molecularly-guided therapy option (MGTO)</li>
         <li>Design trials adapted to PHC</li>
-        <li>Foster discussion among all relevant stakeholders</li>
+        <li>
+Foster discussion among all relevant
+          <Link to="/phc/systems-enablers/partner/stakeholders">stakeholders</Link>
+        </li>
+        <li>
+          Empowerment of patients (& health systems) to choose the right treatment
+        </li>
+        <li>
+          Co-creation of solutions with health systems to support their adaptation to changes of technology,
+          data and science, as well as catalyze adoption of new PHC paradigms
+        </li>
       </span>
       <br />
       <h2>
         Shining Towers integrated solutions process
-        <sup>1</sup>
       </h2>
       <p>
         We need to establish minimal viable product (MVP) infrastructures
@@ -118,9 +139,6 @@ We are building local PHC cases to speed up access to advanced diagnostics and t
           <li>RWD capture</li>
           <li>Access to therapy</li>
         </div>
-        <div className="col-lg-6 text-content-img img-floodlight">
-          <img src={mvpImage} alt="mvp" className="main-content-image" />
-        </div>
       </div>
       <p>
         2-Through co-creation, identify opportunities to
@@ -134,16 +152,18 @@ We are building local PHC cases to speed up access to advanced diagnostics and t
           <li>Imaging</li>
           <li>Preferred RWD partner solutions</li>
         </div>
-        <div className="col-lg-6 text-content-img img-floodlight">
-          <img src={assetsImage} alt="assets" className="main-content-image" />
-        </div>
       </div>
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={assetsImage}
+        onClick={() => openImageModal(assetsImage)}
+        alt="assetsImage"
+      />
       <p>
         3-Execute and implement
         <strong>integrated PHC solutions</strong>
         {' '}
         by:
-        <sup>1</sup>
       </p>
       <div className="d-flex image-description-list">
         <div className="col-lg-6">
@@ -152,57 +172,27 @@ We are building local PHC cases to speed up access to advanced diagnostics and t
           <li>Tailoring PHC solutions to market needs</li>
           <li>Cycling insights back to the organization for continual development</li>
         </div>
-        <div className="col-lg-6 text-content-img img-floodlight">
-          <img src={phcImage} alt="phc" className="main-content-image" />
-        </div>
       </div>
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={assetsOneImage}
+        onClick={() => openImageModal(assetsOneImage)}
+        alt="assetsOneImage"
+      />
       <br />
-      <h2>Shining Towers in the PHC strategy</h2>
       <p>
-        Shining Towers aim at
         <strong>
-          demonstrating the usefulness PHC integrated solutions.
-          <sup>1</sup>
+          Shining Tower initiatives
         </strong>
-      </p>
-      <p>Current business of Diagnostic solutions & medicines</p>
-      <img
-        className="main-content-image d-none d-sm-none d-md-block"
-        src={diagnosticsImage}
-        onClick={() => openImageModal(diagnosticsImage)}
-        alt="diagnostics"
-      />
-      <p>Leveraging MDAS to enhance current business</p>
-      <img
-        className="main-content-image d-none d-sm-none d-md-block"
-        src={businessImage}
-        onClick={() => openImageModal(businessImage)}
-        alt="business"
-      />
-      <p>Establishing integrated PHC solutions</p>
-      <img
-        className="main-content-image d-none d-sm-none d-md-block"
-        src={solutionImage}
-        onClick={() => openImageModal(solutionImage)}
-        alt="solution"
-      />
-      <p>
-        <strong>Shining Tower initiatives</strong>
-        launched in 10 countries around the World will
-        enable
-        critical business drivers.
-        <sup>1</sup>
         {' '}
-        Each initiative aim at demonstrating the
-        feasibility of PHC and integrates PHC solutions.[Potential visual: World map with hotspots
-        to
-        reveal which initiative is ongoing in a particular country/region]
+launched in 10 countries around the World will enable critical business drivers. Each
+        initiative aim at demonstrating the feasibility of PHC and integrates PHC solutions.
       </p>
       <img
         className="main-content-image d-none d-sm-none d-md-block"
-        src={worldImage}
-        onClick={() => openImageModal(worldImage)}
-        alt="world"
+        src={worldMapImage}
+        onClick={() => openImageModal(worldMapImage)}
+        alt="worldMapImage"
       />
     </>
   );

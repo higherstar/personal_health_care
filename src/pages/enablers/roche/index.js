@@ -38,7 +38,7 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'ROZLYTREK',
+    title: 'Example of PHC in action: ROZLYTREK',
     activeMenu: 3,
     parentTitle: 'Roche Initiatives',
     parentLink: '/phc/systems-enablers',

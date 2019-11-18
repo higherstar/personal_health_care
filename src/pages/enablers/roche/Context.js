@@ -6,6 +6,9 @@ import ImageModal from '../../../components/modals/ImageModal';
 import mapImage from '../../../assets/common/roche.png';
 import engineImage from '../../../assets/pages/enablers/phc-engine.png';
 import acceleratingImage from '../../../assets/pages/enablers/phc-accelerating.png';
+import assessmentImage from '../../../assets/pages/enablers/assessment.png';
+import strategyImage from '../../../assets/pages/enablers/strategy-tool.png';
+import marketImage from '../../../assets/pages/enablers/market.png';
 
 const navOptions = [
   {
@@ -41,7 +44,7 @@ const navOptions = [
   {
     id: 3,
     level: 3,
-    title: 'ROZLYTREK',
+    title: 'Example of PHC in action: ROZLYTREK',
     activeMenu: 3,
     parentTitle: 'Roche Initiatives',
     parentLink: '/phc/systems-enablers',
@@ -81,6 +84,10 @@ function Context() {
         alt="engine"
       />
       <br />
+      <p>
+        Note that this is dependent on your local PHC landscape. Check out the PHC Landscape Assessment and the
+        PHC Strategy Builder presented further down in this section.
+      </p>
       <h2>
         Accelerating Personalised Healthcare Internally and Externally
       </h2>
@@ -90,6 +97,50 @@ function Context() {
         src={acceleratingImage}
         onClick={() => openImageModal(acceleratingImage)}
         alt="accelerating"
+      />
+      <div className="disclaimer">
+        <span>
+          THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL
+          UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY
+          PARTNERS OF THE LOCAL AFFILIATE.
+        </span>
+      </div>
+      <br />
+      <h2>
+        Develop your PHC strategy with the Landscape Assessment and Strategy Builder
+      </h2>
+      <br />
+      <a href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder">
+        <strong>PHC Market Maturity Self Assessment </strong>
+      </a>
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={assessmentImage}
+        onClick={() => openImageModal(assessmentImage)}
+        alt="assessmentImage"
+      />
+      <br />
+      <a href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder?authuser">
+        <strong>PHC Strategy Builder</strong>
+      </a>
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={strategyImage}
+        onClick={() => openImageModal(strategyImage)}
+        alt="strategyImage"
+      />
+      <br />
+      <h2>
+        Develop you PHC strategy with the Landscape Assessment and Strategy Builder
+      </h2>
+      <br />
+      <strong>
+PHC in your market
+      </strong>
+      <img
+        className="main-content-image d-none d-sm-none d-md-block"
+        src={marketImage}
+        alt="marketImage"
       />
     </>
   );
