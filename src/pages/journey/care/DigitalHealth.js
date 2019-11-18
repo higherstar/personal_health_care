@@ -178,6 +178,7 @@ function CareDigitalHealth() {
 
   const handleCloseClick = () => {
     setConnectionOpen(false);
+    setImageOpen(false);
   };
 
   const mainContent = (
