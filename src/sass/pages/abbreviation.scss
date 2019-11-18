@@ -28,7 +28,8 @@
 
       p {
         width: 30%;
-        height: 40px;
+        height: fit-content;
+        min-height: 40px;
         border-bottom: 1px solid #D8D8D8;
         font-size: 18px;
 
