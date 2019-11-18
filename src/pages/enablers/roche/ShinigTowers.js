@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
 import ImageModal from '../../../components/modals/ImageModal';
+import CustomModal from '../../../components/modals/CustomModal';
+import ExpandButton from '../../../atoms/ExpandButton';
 import mapImage from '../../../assets/common/roche.png';
 import shiningTowersImage from '../../../assets/pages/enablers/shining-towers.png';
 import worldMapImage from '../../../assets/pages/enablers/world-map.png';
@@ -53,9 +55,98 @@ const navOptions = [
   },
 ];
 
+const countryData = [
+  {
+    number: 1,
+    name: 'Australia',
+    className: 'australia',
+    content: 'End-to-end PHC practice in a pilot ecosystem, driving standard Comprehensive Genomic '
+      + 'Profiling (CGP) testing, national coverage of Pharmaceutical Benefits Scheme-listed therapies '
+      + 'based upon CGP-identified biomarkers, and pilot co-funding'
+      + 'for molecularly guided therapy options',
+  },
+  {
+    number: 2,
+    name: 'Croatia',
+    className: 'croatia',
+    content: 'Governmental funded Foundation Medicine (FMI) profiling of all metastatic cancer '
+      + 'patients & access to molecularly guided'
+      + 'therapy options and Roche access to corresponding database',
+  },
+  {
+    number: 3,
+    name: 'Middle East',
+    className: 'middle-east',
+    content: 'Key cancer centers and payer commitment to co-fund full PHC ecosystem: FMI results '
+      + 'validated by Molecular Tumor '
+      + 'Board to enable access to molecularly-guided therapy options (MGTOs) with '
+      + 'outcomes collected on Navify real-world data '
+      + '(RWD) platform',
+  },
+  {
+    number: 4,
+    name: 'Switzerland',
+    className: 'switzerland',
+    content: 'Enabling MGTOs funding via an expansion of Health Insurance Ordinance (KVV)71 '
+      + 'access path and co-creation of (and '
+      + 'access to) SAKK RWD platform',
+  },
+  {
+    number: 5,
+    name: 'Canada',
+    className: 'canada',
+    content: 'Large public\'private pannership, transforming the healthcare system through '
+      + 'innovation with S+40M already committed '
+      + 'from industry partners and government enabling RWD acceptance and indication-based pricing',
+  },
+  {
+    number: 6,
+    name: 'Italy',
+    className: 'italy',
+    content: 'Enabling national-level access to molecularly-guided therapy options '
+      + '(MGTOs) through expansion of \'648 law',
+  },
+  {
+    number: 7,
+    name: 'Korea',
+    className: 'korea',
+    content: 'Demonstrate clinical and economic value of end-to-end PHC practice in a pilot '
+      + 'ecosystem to enable MGTOs funding via '
+      + 'an expansion of the \'160 access path and leveraging Molecular Tumor Board: RWD: and CGP',
+  },
+  {
+    number: 8,
+    name: 'Germany',
+    className: 'germany',
+    content: 'Collaboration with Flatiron and three leading cancer centers to establish a common '
+      + 'Clinico-Genomic Database to leverage '
+      + 'in Personalised Reimbursement Models pilots: RWD regulatory decision-making: '
+      + 'clinical recommendation & decision '
+      + 'suppolt',
+  },
+  {
+    number: 9,
+    name: 'singapore',
+    className: 'singapore',
+    content: 'Enabling CGP ubiquity via regional FMI lab & innovative access I public funding to MGTOs',
+  },
+  {
+    number: 10,
+    name: 'USA',
+    className: 'usa',
+    content: 'Utilize the full suite of Roche PHC tools to co-create meaningful pannerships with '
+      + 'priority accounts across three distinct '
+      + 'provider '
+      + 'segments (community practices, academic centers: and risk bearing Integrated '
+      + 'Delivery Networks); designed in a manner '
+      + 'that can be scaled to similar accounts across these segments by 2021',
+  },
+];
+
 function ShiningTowers() {
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
+  const [worldMapModalOpen, setWorldMapModalOpen] = useState(false);
 
   const openImageModal = (image) => {
     setImage(image);
@@ -64,6 +155,14 @@ function ShiningTowers() {
 
   const handleCloseClick = () => {
     setImageOpen(false);
+  };
+
+  const handleWorldMapClose = () => {
+    setWorldMapModalOpen(false);
+  };
+
+  const handleWorldMapOpen = () => {
+    setWorldMapModalOpen(true);
   };
 
   const mainContent = (
@@ -191,9 +290,28 @@ launched in 10 countries around the World will enable critical business drivers.
       <img
         className="main-content-image d-none d-sm-none d-md-block"
         src={worldMapImage}
-        onClick={() => openImageModal(worldMapImage)}
+        onClick={() => handleWorldMapOpen()}
         alt="worldMapImage"
       />
+    </>
+  );
+
+  const worldMapModalContent = (
+    <>
+      <div className="world-map position-relative">
+        <img
+          className="world-map-image d-none d-sm-none d-md-block"
+          src={worldMapImage}
+          alt="worldMapImage"
+        />
+        {countryData.map((country) => (
+          <ExpandButton
+            header={country.name}
+            content={country.content}
+            className={country.className}
+          />
+        ))}
+      </div>
     </>
   );
 
@@ -203,6 +321,11 @@ launched in 10 countries around the World will enable critical business drivers.
         <img src={mapImage} alt="detail map" />
       </div>
       <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
+      <CustomModal
+        open={worldMapModalOpen}
+        content={worldMapModalContent}
+        handleCloseClick={() => handleWorldMapClose()}
+      />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );

@@ -13,7 +13,7 @@ function CustomModal(props) {
   };
 
   const modalStyle = {
-    display: !open || closed ? 'none' : 'block',
+    display: !open && closed ? 'none' : 'block',
   };
 
   return (

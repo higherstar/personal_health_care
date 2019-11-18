@@ -68,6 +68,16 @@
     margin-left: -42px;
     margin-top: 2px; }
 
+.expand-button .expand-content {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #0066cc;
+  overflow: auto;
+  z-index: 3; }
+
 .header {
   width: 100%;
   height: 112px; }
@@ -562,6 +572,43 @@
 
 .roche-context .main-content {
   padding-bottom: 72px; }
+
+.world-map {
+  width: 100%;
+  height: 100%; }
+  .world-map .world-map-image {
+    width: 100%;
+    height: 100%; }
+  .world-map .australia {
+    top: 74%;
+    left: 82%; }
+  .world-map .croatia {
+    left: 54.3%;
+    top: 35%; }
+  .world-map .middle-east {
+    top: 50%;
+    left: 55%; }
+  .world-map .switzerland {
+    top: 29%;
+    left: 41%; }
+  .world-map .canada {
+    top: 30%;
+    left: 17%; }
+  .world-map .italy {
+    top: 40%;
+    left: 40%; }
+  .world-map .korea {
+    top: 42%;
+    left: 80%; }
+  .world-map .germany {
+    left: 44%;
+    top: 25%; }
+  .world-map .singapore {
+    top: 60%;
+    left: 73%; }
+  .world-map .usa {
+    top: 40%;
+    left: 17%; }
 
 p span {
   color: #0066CC;

@@ -3,3 +3,63 @@
     padding-bottom: 72px;
   }
 }
+
+.world-map {
+  width: 100%;
+  height: 100%;
+
+  .world-map-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .australia {
+    top: 74%;
+    left: 82%;
+  }
+
+  .croatia {
+    left: 54.3%;
+    top: 35%;
+  }
+
+  .middle-east {
+    top: 50%;
+    left: 55%;
+  }
+
+  .switzerland {
+    top: 29%;
+    left: 41%;
+  }
+
+  .canada {
+    top: 30%;
+    left: 17%;
+  }
+
+  .italy {
+    top: 40%;
+    left: 40%;
+  }
+
+  .korea {
+    top: 42%;
+    left: 80%;
+  }
+
+  .germany {
+    left: 44%;
+    top: 25%;
+  }
+
+  .singapore {
+    top: 60%;
+    left: 73%;
+  }
+
+  .usa {
+    top: 40%;
+    left: 17%;
+  }
+}

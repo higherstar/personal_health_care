@@ -223,6 +223,7 @@ function Welcome() {
     setModalOpen(false);
   };
 
+
   const modalContent = (
     <div className="welcome-modal">
       <h3>Welcome to The Personalised Healthcare Systems Map</h3>
@@ -281,7 +282,7 @@ function Welcome() {
         <DropDown options={journeyOptions} color="blue" />
         <DropDown options={enablersOptions} color="yellow" />
       </div>
-      <CustomModal open={modalOpen} content={modalContent} />
+      <CustomModal open={modalOpen} content={modalContent} handleCloseClick={handleCloseClick} />
     </div>
   );
 
