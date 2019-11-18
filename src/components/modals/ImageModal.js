@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 function ImageModal(props) {
   const {
-    open, header, image, handleCloseClick,
+    open, header, image, className, handleCloseClick,
   } = props;
 
   const handleClose = () => {
@@ -17,7 +17,7 @@ function ImageModal(props) {
   };
 
   return (
-    <div className="image-modal custom-modal-wrapper" style={modalStyle}>
+    <div className={`image-modal custom-modal-wrapper ${className}`} style={modalStyle}>
       <div className="custom-modal-container phc-container">
         <div className="custom-modal-header d-flex align-items-center justify-content-start">
           {header}
@@ -37,12 +37,14 @@ ImageModal.propTypes = {
   open: PropTypes.bool.isRequired,
   header: PropTypes.node,
   image: PropTypes.node,
+  className: PropTypes.string,
   handleCloseClick: PropTypes.func,
 };
 
 ImageModal.defaultProps = {
   header: '',
   image: '',
+  className: '',
   handleCloseClick: () => null,
 };
 

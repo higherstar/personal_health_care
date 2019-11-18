@@ -3,13 +3,15 @@ import React, { useState } from 'react';
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
 import ConnectionModal from '../../../components/modals/ConnectionModal';
+import ImageModal from '../../../components/modals/ImageModal';
 import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/monitoring.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
-import cdsConnection from '../../../assets/pages/journey/cds-connection-content.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/others-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
+import challengeImage from '../../../assets/pages/journey/challenges.png';
+import connection from '../../../assets/pages/journey/connections/digital-health.png';
 
 const navOptions = [
   {
@@ -170,7 +172,15 @@ const dropdownOptions = [
 ];
 
 function MonitoringDigitalHealth() {
+  const [image, setImage] = useState('');
+  const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
+
+  const openImageModal = (image) => {
+    setImage(image);
+    setImageOpen(true);
+  };
+
 
   const openConnectionModal = () => {
     setConnectionOpen(true);
@@ -184,14 +194,15 @@ function MonitoringDigitalHealth() {
     <>
       <h2>Description</h2>
       <span>
-In our PHC engine, Digital Health is a type of Meaningful Data at Scale (MDAS). At Roche, it is
-                defined as clinically grade data from digital devices that inform R&D or clinical care
-                for the Roche Disease Areas of Focus.
-        <sup>3</sup>
+        <strong>Digital Health</strong>
+        {' '}
+        can be defined as the use of digital technologies in
+        clinical pathways for disease measurement and intervention to improve patient care and outcomes.
         <br />
               One example of a Digital Health solution is the FDA-approved mySugr app, which is the most widely
               used mobile app for diabetes. It provides patients with immediate access to certified diabetes
-              educators when necessary based on algorithmic detection of problematic glucose patterns.
+              educators when necessary based on algorithmic detection of problematic glucose patterns, the app
+        provides patients with immediate access to certified diabetes educators when necessary.
         <br />
               At Roche, there are four archetypes of Digital Health, which are as follows:
         <li>
@@ -215,20 +226,43 @@ Connected drug administration and delivery
                 systems to enhance health outcomes of patients.
         </li>
       </span>
+      <p>
+        To learn more, check out
+        the
+        {' '}
+        <a href="external hyperlink to module https://roche.csod.com/ui/lms-learning-details/app/
+        course/530ba4c4-5a27-42a2-b2aa-abd7d91cc80d"
+        >
+          “Digital Health and Software as a Medical Device”
+        </a>
+        module from the PHC Pharma Starter Pack.
+      </p>
       <br />
       <h2>
         Why it is important
       </h2>
-      <li>
-        Digital Health solutions can solve unmet medical and patient needs along the patient journey.
-        There are applications of Digital Health solutions at every step of the patient journey,
-        such as at screening and diagnosis; disease management, monitoring and adherence to therapy;
-        and, patient satisfaction, quality of life and survival.
-      </li>
-      <li>
+      <p>
+        <strong>
+          Smarter & more efficient R&D
+        </strong>
+        <br />
         Digital Health solutions have the potential to enable more efficient research cycles through
         the refinement of clinical trial eligibility criteria and more sensitive endpoints.
-      </li>
+      </p>
+      <span>
+        Digital Health solutions can solve unmet medical and patient needs along the patient journey.
+        There are applications of Digital Health solutions at every step of the patient journey, such as at:
+        <li>
+Screening and diagnosis
+        </li>
+        <li>
+          Disease management
+        </li>
+        <li>
+          Monitoring and adherence to therapy
+        </li>
+        Digital Health also supports patient satisfaction, quality of life, and survival.
+      </span>
       <br />
       <h2>
         Why it is important for PHC
@@ -250,58 +284,75 @@ Connected drug administration and delivery
       <h2>
         What Roche is doing in this area
       </h2>
-      <li>
-        <strong>Oncology: </strong>
-        The digital patient monitoring program consists of a modular remote
-        monitoring ecosystem for improving interaction between patients and the care team, and capturing
-        patient-reported outcomes. It also involves a partnership with hospitals and Kaiku Health to
-        unify Real-World Data (RWD) on patients.
-      </li>
-      <li>
-        <strong>Ophthalmology: </strong>
-        The myVsion Track (mVT® ) app is a home vision monitoring for
-        track vision improvements/worsening in patients with age-related macular degeneration (AMD)
-        and Diabetic Eye Disease. The mVT® Portal for HCPs helps to manage patients.
-      </li>
-      <li>
-        <strong>Multiple Sclerosis: </strong>
-        Floodlight aims to allow people with Multiple
-        Sclerosis (MS), physicians, and researchers to monitor MS and health over time using a smartphone,
-        with the ultimate goal of creating practical tools to improve the lives of people living with MS.
-      </li>
+      <p>
+        In
+        {' '}
+        <strong>Multiple Sclerosis</strong>
+        {' '}
+        (MS), Floodlight™ is an example of a digital biomarker,
+        which is an archetype
+        of Digital Health solutions. Floodlight™ is a smartphone application that is being developed to
+        detect the disease course and progression in MS in the real world by measuring subtle changes in
+        cognition and motor function every day. This will give people with MS and HCPs a greater understanding
+        of the disease.
+      </p>
+      <p>
+        Floodlight Open is an open, ongoing research project that is searching for new perspectives into
+        MS and utilizes the Floodlight™ mobile application. People with MS are asked to contribute their
+        data and researchers can access this large-scale dataset for their own work and analysis.
+      </p>
+      <span>
+        We hope that Floodlight™ will provide value in the following ways:
+        <br />
+        1. Allow for faster and more efficient R&D through novel, regulated grade endpoints
+        <br />
+        2. Improve MS management in clinical practice
+      </span>
       <br />
       <h2>
         Key considerations of Digital Health
       </h2>
+      <p>
+        Some of the Digital Health solutions fall into a category of medical device called
+        software as a medical device (SaMD)
+      </p>
       <span>
         <strong>Regulations with respect to Software as a Medical Device (SaMD)</strong>
-        <li>
-Certain digital health solutions run with software intended to be used for medical purposes and
-                that can perform these purposes without being part of a hardware medical device. In this case,
-                this software is called Software as a Medical Device (SaMD)
-        </li>
-        <li>
-Any software that is intended to be used for one or more medical purposes will very likely enter
-                the SaMD space. This means that the development, maintenance and operation of the software should
-                be done according to the same specific quality standards,
-that are higher than other types of software.
-        </li>
+        <br />
+        According to the International Medical Device Regulators Forum (IMDRF), SaMD is defined as
+        <strong>
+software intended to be used for one or more medical purposes that perform these purposes
+          without being part of a hardware medical device
+        </strong>
+. SaMD is used to inform clinical management,
+        drive clinical management, or treat and diagnose diseases. Any of the previously mentioned
+        Digital Health archetypes at Roche could be a SaMD.
       </span>
-      <span>
-        <strong>Adoption of Digital Health Solutions</strong>
-        <li>
-                  Once a digital health solution has received the appropriate approvals, adopting it in clinical
-                  practice can pose certain challenges to healthcare professionals, patients, regulators,
-                  industry/R&D and payers.
-        </li>
-        <li>
-                  For example, patients may be concerned about data misuse, which can prevent them from using
-                  digital health solutions.
-        </li>
-      </span>
+      <p>
+        For a Digital Health tool to be used in clinical decision making, it must meet
+        the regulatory requirements of a SaMD.
+      </p>
+      <p>
+        Specific requirements and quality standards for SaMDs are necessary to ensure that they s are
+        reliable and safe tools. Most of the regulators, such as the US FDA and EMA, already
+        have a framework of regulations in place to cover Digital Health products, which includes
+        SaMD. Other countries and regions also have their own regulatory frameworks.
+      </p>
+      <p>
+        <strong>
+          Adoption of Digital Health Solutions
+        </strong>
+        The table below summarizes the various challenges of adopting Digital Health solutions for payers,
+        HCPs, patients, regulators, and industry/R&D.
+      </p>
+      <img
+        className="main-content-image challenge-image d-none d-sm-none d-md-block"
+        src={challengeImage}
+        onClick={() => openImageModal(challengeImage)}
+        alt="roche use"
+      />
     </>
   );
-
 
   const [zoomOut, setZoomOut] = useState(true);
   const handleZoomClick = () => {
@@ -325,7 +376,7 @@ that are higher than other types of software.
     <>
       {zoomOut ? (
         <>
-          <img src={cdsConnection} alt="cds connection" />
+          <img src={connection} alt="cds connection" />
           <div
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
@@ -371,7 +422,7 @@ that are higher than other types of software.
   );
 
   const content = (
-    <div className="monitoring-digital-health page-wrapper d-flex align-items-center justify-content-center">
+    <div className="journey-digital-health page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
@@ -380,6 +431,12 @@ that are higher than other types of software.
         content={connectionContent}
         className={zoomOut ? 'zoom-out' : 'zoom-in'}
         open={connectionOpen}
+        handleCloseClick={handleCloseClick}
+      />
+      <ImageModal
+        className="digital-health-image-modal"
+        open={imageOpen}
+        image={image}
         handleCloseClick={handleCloseClick}
       />
       <MainContent content={mainContent} navOptions={navOptions} />
