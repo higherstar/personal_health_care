@@ -76,7 +76,8 @@
   border-radius: 5px;
   border: 2px solid #0066cc;
   overflow: auto;
-  z-index: 3; }
+  z-index: 3;
+  left: -105px; }
 
 .header {
   width: 100%;
@@ -593,8 +594,8 @@
     top: 29%;
     left: 41%; }
   .world-map .canada {
-    top: 30%;
-    left: 17%; }
+    top: 27%;
+    left: 14%; }
   .world-map .italy {
     top: 40%;
     left: 40%; }
