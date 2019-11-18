@@ -72,12 +72,13 @@
   width: 250px;
   height: 100px;
   position: absolute;
+  left: -105px;
+  padding: 0 5px;
   background: white;
   border-radius: 5px;
   border: 2px solid #0066cc;
   overflow: auto;
-  z-index: 3;
-  left: -105px; }
+  z-index: 3; }
 
 .header {
   width: 100%;
@@ -591,20 +592,20 @@
     top: 50%;
     left: 55%; }
   .world-map .switzerland {
-    top: 29%;
-    left: 41%; }
+    top: 35%;
+    left: 48%; }
   .world-map .canada {
     top: 27%;
     left: 14%; }
   .world-map .italy {
     top: 40%;
-    left: 40%; }
+    left: 49%; }
   .world-map .korea {
     top: 42%;
     left: 80%; }
   .world-map .germany {
-    left: 44%;
-    top: 25%; }
+    left: 48%;
+    top: 30%; }
   .world-map .singapore {
     top: 60%;
     left: 73%; }
