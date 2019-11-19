@@ -25,10 +25,17 @@ function TopBar(props) {
     setCollapsed(collapse);
   };
 
+  let background = backgroundColor(color);
+  let showTitle = true;
+  if (title.includes('Abbreviation List') || title.includes('Acknowledgments')) {
+    background = '#0066CC9E';
+    showTitle = false;
+  }
+
   return (
     <div
       className="top-bar d-flex align-items-center justify-content-center"
-      style={{ background: backgroundColor(color) }}
+      style={{ background }}
     >
       <div className="side-bar-header d-flex align-items-center">
         <ToggleButton
@@ -40,9 +47,9 @@ function TopBar(props) {
           border
         />
         {!collapsed ? (<span>Collapse the Navigation</span>)
-          : (<span>Open the Navigation</span>)}
+          : showTitle && (<span>Open the Navigation</span>)}
       </div>
-      <span>{title}</span>
+      {showTitle && (<span>{title}</span>)}
     </div>
   );
 }

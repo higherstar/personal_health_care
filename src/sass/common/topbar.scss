@@ -21,6 +21,7 @@
     left: 0;
     top: 0;
     z-index: 2;
+    transition: 0.3s all ease;
 
     .collapse-button {
       margin-left: 28px;
@@ -28,7 +29,7 @@
     }
 
     span {
-      font-size: 20px;
+      font-size: 19px;
       color: white;
       margin-left: 10px;
     }

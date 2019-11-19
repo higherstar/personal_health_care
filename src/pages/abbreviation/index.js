@@ -85,11 +85,7 @@ const modalContent = (
       </p>
       <p>
         <span>AI: </span>
-        Artificial Intelligence,
-      </p>
-      <p>
-        <span>Apollo: </span>
-        Sample MDAS platform
+        Artificial Intelligence
       </p>
       <p>
         <span>CDS: </span>
@@ -177,7 +173,7 @@ const modalContent = (
       </p>
       <p>
         <span>IP: </span>
-        Intellectual property
+        Intellectual Property
       </p>
       <p>
         <span>IRISe: </span>
