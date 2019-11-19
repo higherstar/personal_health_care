@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 function CustomModal(props) {
@@ -6,14 +6,12 @@ function CustomModal(props) {
     open, header, content, closeButton, handleCloseClick,
   } = props;
 
-  const [closed, setClosed] = useState(!open);
   const handleClose = () => {
-    setClosed(true);
     handleCloseClick();
   };
 
   const modalStyle = {
-    display: !open && closed ? 'none' : 'block',
+    display: open ? 'block' : 'none',
   };
 
   return (

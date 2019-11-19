@@ -226,7 +226,7 @@ function Welcome() {
 
   const modalContent = (
     <div className="welcome-modal">
-      <h3>Welcome to The Personalised Healthcare Systems Map</h3>
+      <h3>Welcome to The Personalised Healthcare-Enabled Patient Journey</h3>
       <p>
         The complexity of Personalised Healthcare (PHC) calls for us to be systems thinkers with the ability
         to think and act from a whole system perspective and make decisions in light of the long-term health
@@ -245,7 +245,7 @@ function Welcome() {
         </a>
 .
       </span>
-      <h3>How we built the PHC Systems Map</h3>
+      <h3>How We Built the PHC-Enabled Patient Journey</h3>
       <p>
         This site is built around the
         {' '}
