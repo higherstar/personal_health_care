@@ -217,7 +217,7 @@ Connected drug administration and delivery
                 systems to enhance health outcomes of patients.
         </li>
       </span>
-      <p>
+      <span>
         To learn more, check out
         the
         {' '}
@@ -226,8 +226,10 @@ Connected drug administration and delivery
         >
           “Digital Health and Software as a Medical Device”
         </a>
+        {' '}
         module from the PHC Pharma Starter Pack.
-      </p>
+      </span>
+      <br />
       <br />
       <h2>
         Why it is important
@@ -254,6 +256,7 @@ Screening and diagnosis
         </li>
         Digital Health also supports patient satisfaction, quality of life, and survival.
       </span>
+      <br />
       <br />
       <h2>
         Why it is important for PHC
@@ -300,6 +303,7 @@ Screening and diagnosis
         2. Improve MS management in clinical practice
       </span>
       <br />
+      <br />
       <h2>
         Key considerations of Digital Health
       </h2>
@@ -311,6 +315,7 @@ Screening and diagnosis
         <strong>Regulations with respect to Software as a Medical Device (SaMD)</strong>
         <br />
         According to the International Medical Device Regulators Forum (IMDRF), SaMD is defined as
+        {' '}
         <strong>
 software intended to be used for one or more medical purposes that perform these purposes
           without being part of a hardware medical device
@@ -333,6 +338,7 @@ software intended to be used for one or more medical purposes that perform these
         <strong>
           Adoption of Digital Health Solutions
         </strong>
+        {' '}
         The table below summarizes the various challenges of adopting Digital Health solutions for payers,
         HCPs, patients, regulators, and industry/R&D.
       </p>
@@ -372,7 +378,17 @@ software intended to be used for one or more medical purposes that perform these
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6 d-flex align-items-center p-0">               <span>Click to see connections to the PHC-Enabled Patient Journey</span>             </div>             <div className="col-lg-6 d-flex align-items-center">               <img src={zoomOutIcon} alt="zoom out" />             </div>
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              {' '}
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
+              {' '}
+            </div>
+            {' '}
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
+              <img src={zoomOutIcon} alt="zoom out" />
+              {' '}
+            </div>
           </div>
         </>
       ) : (
@@ -389,7 +405,18 @@ software intended to be used for one or more medical purposes that perform these
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6 d-flex align-items-center">               <span>                 Back to                 <br />                 interconnections               </span>             </div>
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
+              <span>
+                {' '}
+                Back to
+                <br />
+                {' '}
+                interconnections
+                {' '}
+              </span>
+              {' '}
+            </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />
             </div>
