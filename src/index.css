@@ -481,6 +481,10 @@
     .main-content .main-content-body li span {
       display: block !important;
       padding-left: 22px; }
+    .main-content .main-content-body .col-lg-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .welcome .custom-modal-content {
   height: calc(100% - 50px); }

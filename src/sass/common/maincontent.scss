@@ -53,5 +53,11 @@
       display: block !important;
       padding-left: 22px;
     }
+
+    .col-lg-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

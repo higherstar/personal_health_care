@@ -99,10 +99,13 @@ function ValueBasedHealthCare() {
         {' '}
 module from the PHC Pharma Starter Pack.
       </span>
+      <br />
+      <br />
       <h2>Why it is important</h2>
       <li>
         VBHC aligns with Roche’s core focus on what patients need. This model would ensure
         that
+        {' '}
         <strong>outcomes that matter to patients</strong>
         {' '}
         are prioritized.
@@ -126,12 +129,13 @@ module from the PHC Pharma Starter Pack.
         By partnering and co-creating with our internal and external stakeholders, we can contribute to
         building sustainable healthcare systems.
       </li>
+      <br />
       <h2>
         Key drivers/considerations
       </h2>
       <span>
         <strong>IT platform, Meaningful Data at Scale (MDAS)</strong>
-, and
+, and{' '}
         <strong>policy</strong>
         {' '}
         all
@@ -150,6 +154,7 @@ module from the PHC Pharma Starter Pack.
                   and segment data effectively and responsibly.
         </li>
       </span>
+      <br />
       <h2>Our VBHC@Roche framework</h2>
       <p>Our program is structured to generate insights across key dimensions of our VBHC framework.</p>
       <img
@@ -158,12 +163,14 @@ module from the PHC Pharma Starter Pack.
         onClick={() => openImageModal(frameImage)}
         alt="framework"
       />
+      <br />
       <img
         className="main-content-image d-none d-sm-none d-md-block"
         src={frameDescImage}
         onClick={() => openImageModal(frameDescImage)}
         alt="framework description"
       />
+      <br />
       <span>
 To learn more about VBHC, please go to the
         {' '}

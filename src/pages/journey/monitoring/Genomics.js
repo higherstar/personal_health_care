@@ -236,7 +236,11 @@ function MonitoringGenomics() {
         cannot be delivered with current technology.
         <br />
         Advanced comprehensive clinical-genomic databases can inform treatment decisions through clinical
-        decision (CDS) systems [link to CDS page under Care] using the power
+        decision
+        {' '}
+        <Link to="/phc/future-patient-journey/care/cds-systems">(CDS) systems</Link>
+        {' '}
+        using the power
         of
         {' '}
         <Link to="/phc/systems-enablers/value-based-healthcare">Meaningful data at scale (MDAS)</Link>
@@ -310,6 +314,7 @@ Level of funding of biomarker and NGS tests by the
           <strong>Regulatory perspective – </strong>
           {' '}
           Existence of a
+          {' '}
           <Link to="/phc/systems-enablers/partner/policy">regulatory of pathway</Link>
           {' '}
           for the approval of
@@ -322,7 +327,6 @@ Level of funding of biomarker and NGS tests by the
           <Link to="/phc/systems-enablers/partner/policy">reimbursement</Link>
           {' '}
           of molecularly-informed therapies
-    [internal hyperlink to the Stakeholders page under Enablers]
         </li>
       </span>
     </>

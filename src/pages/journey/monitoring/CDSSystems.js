@@ -205,10 +205,15 @@ function MonitoringCDSSystems() {
         for Roche.
       </p>
       <span>
-      Most CDS solutions are currently in Oncology, followed by Neuroscience and Ophthalmology—all
-      areas of interest for Roche. For more information, please visit our
+        Most CDS solutions are currently in Oncology, followed by Neuroscience and Ophthalmology—all
+        areas of interest for Roche. For more information, please visit
+        our
         {' '}
-        <span>CDS systems module.</span>
+        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/959e63fb-6d7e-4eca-9374-13adf79c67a8">
+          “CDS systems”
+        </a>
+        {' '}
+        module from the PHC Pharma Starter Pack.
       </span>
       <br />
       <br />
@@ -242,6 +247,7 @@ function MonitoringCDSSystems() {
         onClick={() => openImageModal(customerImage)}
         alt="customer"
       />
+      <br />
       <p>
         CDS systems will also impact pharmaceutical industries by influencing how products
         are represented at the time of clinical decision making.
@@ -252,6 +258,7 @@ function MonitoringCDSSystems() {
         onClick={() => openImageModal(businessImage)}
         alt="business"
       />
+      <br />
       <strong className="d-none d-sm-none d-md-block">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
@@ -302,6 +309,7 @@ function MonitoringCDSSystems() {
         <strong>NAVIFY Clinical Trial Match</strong>
         {' '}
         and
+        {' '}
         <strong>NAVIFY Publication Search</strong>
         {' '}
         make
