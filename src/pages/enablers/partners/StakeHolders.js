@@ -79,7 +79,8 @@ can impact policies and want to be part
 and
       {' '}
       <Link to="/phc/future-patient-journey/monitoring/cds-systems">Decision Support Tools</Link>
-      HCPs
+      {' '}
+HCPs
       are in need of reliable tools to assist in their decisions about
       diagnosis, treatment, and patient management. These tools should seamlessly fit in
       their daily practice, providing relevant information when needed.
@@ -109,9 +110,12 @@ see ways to increase evidence. Several jurisdictions (the US,
       </Link>
 , strategies and initiatives. They have begun to lay the groundwork for a
       PHC future by adopting policies and making investments to
+      {' '}
       <Link to="/phc/systems-enablers/partner/phc-it">strengthen data infrastructure</Link>
+
 , protect
       patient
+      {' '}
       <Link to="/phc/systems-enablers/partner/policy">privacy</Link>
 , spur innovation and enable the
       use of real-world evidence (
@@ -145,10 +149,12 @@ for more information)
     <li>
       In China, the 2030 government mission is :
       <br />
-      1.To treat locally 90% of the overall cancer in decreasing medical nomadism
-      {' '}
-      <br />
-      2.15% improvement of the overall survival in cancer
+      <span>
+        1.To treat locally 90% of the overall cancer in decreasing medical nomadism
+        {' '}
+        <br />
+        2.15% improvement of the overall survival in cancer
+      </span>
     </li>
     <span>
                 New PHC paradigm is the only way to achieve those objectives and consequently represents a huge

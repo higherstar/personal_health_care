@@ -43,6 +43,8 @@
   }
 
   .custom-dropdown-list {
+    width: max-content;
+    width: -moz-max-content;
     display: flex;
     flex-direction: column;
     background: #ffffffbd;

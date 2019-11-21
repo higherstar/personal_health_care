@@ -52,7 +52,7 @@ const navOptions = [
   {
     id: 4,
     level: 3,
-    title: 'Value-based Healthcare',
+    title: 'Value-Based Healthcare',
     activeMenu: 2,
     parentTitle: 'Rapid Access to Personalised Interventions',
     parentLink: '/phc/future-patient-journey',

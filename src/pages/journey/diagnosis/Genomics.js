@@ -264,7 +264,7 @@ function DiagnosisGenomics() {
           Smarter & more efficient R&D
         </strong>
         {' '}
-Leveraging MDAS to accelerate and improve our pipeline, our R&D efforts combine
+        Leveraging MDAS to accelerate and improve our pipeline, our R&D efforts combine
         deep genomic data with other data to better understand diseases and to detect biomarkers
         of responses or resistance to treatment during the product development phase.
         <br />
@@ -298,7 +298,7 @@ Leveraging MDAS to accelerate and improve our pipeline, our R&D efforts combine
           CUPISCO Case Study
         </a>
         {' '}
-from the PHC Pharma Starter Pack.
+        from the PHC Pharma Starter Pack.
       </p>
       <br />
       <h2>
@@ -319,10 +319,10 @@ Level of funding of biomarker and NGS tests by the
         <li>
           <strong>Regulatory perspective – </strong>
           {' '}
-    Existence of a
+          Existence of a
           <Link to="/phc/systems-enablers/partner/policy">regulatory of pathway</Link>
           {' '}
-for the approval of
+          for the approval of
   molecularly-informed therapies.
         </li>
         <li>
@@ -331,7 +331,7 @@ for the approval of
           {' '}
           <Link to="/phc/systems-enablers/partner/policy">reimbursement</Link>
           {' '}
-of molecularly-informed therapies
+          of molecularly-informed therapies
     [internal hyperlink to the Stakeholders page under Enablers]
         </li>
       </span>
@@ -365,15 +365,16 @@ of molecularly-informed therapies
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Click to see the
-              <br />
-              Connections in the
-              <br />
-              PHC Systems Map
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              {' '}
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
+              {' '}
             </div>
-            <div className="col-lg-6">
+            {' '}
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
               <img src={zoomOutIcon} alt="zoom out" />
+              {' '}
             </div>
           </div>
         </>
@@ -391,10 +392,17 @@ of molecularly-informed therapies
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Back to
-              <br />
-              interconnections
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
+              <span>
+                {' '}
+                Back to
+                <br />
+                {' '}
+                interconnections
+                {' '}
+              </span>
+              {' '}
             </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />

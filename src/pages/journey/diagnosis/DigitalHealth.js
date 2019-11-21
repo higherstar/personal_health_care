@@ -207,7 +207,7 @@ function DiagnosisDigitalHealth() {
       <span>
         <strong>Digital Health</strong>
         {' '}
-can be defined as the use of digital technologies in
+        can be defined as the use of digital technologies in
         clinical pathways for disease measurement and intervention to improve patient care and outcomes.
         <br />
               One example of a Digital Health solution is the FDA-approved mySugr app, which is the most widely
@@ -244,7 +244,7 @@ Connected drug administration and delivery
         <a href="external hyperlink to module https://roche.csod.com/ui/lms-learning-details/app/
         course/530ba4c4-5a27-42a2-b2aa-abd7d91cc80d"
         >
-        “Digital Health and Software as a Medical Device”
+          “Digital Health and Software as a Medical Device”
         </a>
         module from the PHC Pharma Starter Pack.
       </p>
@@ -254,7 +254,7 @@ Connected drug administration and delivery
       </h2>
       <p>
         <strong>
-Smarter & more efficient R&D
+          Smarter & more efficient R&D
         </strong>
         <br />
         Digital Health solutions have the potential to enable more efficient research cycles through
@@ -300,7 +300,7 @@ Screening and diagnosis
         {' '}
         <strong>Multiple Sclerosis</strong>
         {' '}
-(MS), Floodlight™ is an example of a digital biomarker,
+        (MS), Floodlight™ is an example of a digital biomarker,
         which is an archetype
         of Digital Health solutions. Floodlight™ is a smartphone application that is being developed to
         detect the disease course and progression in MS in the real world by measuring subtle changes in
@@ -351,7 +351,7 @@ software intended to be used for one or more medical purposes that perform these
       </p>
       <p>
         <strong>
-Adoption of Digital Health Solutions
+          Adoption of Digital Health Solutions
         </strong>
         The table below summarizes the various challenges of adopting Digital Health solutions for payers,
         HCPs, patients, regulators, and industry/R&D.
@@ -392,15 +392,16 @@ Adoption of Digital Health Solutions
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Click to see the
-              <br />
-              Connections in the
-              <br />
-              PHC Systems Map
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              {' '}
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
+              {' '}
             </div>
-            <div className="col-lg-6">
+            {' '}
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
               <img src={zoomOutIcon} alt="zoom out" />
+              {' '}
             </div>
           </div>
         </>
@@ -418,10 +419,17 @@ Adoption of Digital Health Solutions
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Back to
-              <br />
-              interconnections
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
+              <span>
+                {' '}
+                Back to
+                <br />
+                {' '}
+                interconnections
+                {' '}
+              </span>
+              {' '}
             </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />

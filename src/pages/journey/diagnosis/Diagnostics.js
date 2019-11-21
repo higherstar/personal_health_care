@@ -258,7 +258,7 @@ Roche makes these diagnostics available to more patients faster through its comm
         specific treatment and are required by the drug label for the safe and effective use of a therapy.
       </p>
       <p>
-        <strong>2. Complementary diagnostics  </strong>
+        <strong>2. Complementary diagnostics </strong>
         (CoDx): Not required by a drug label, but support
         treatment decision making by providing useful information about a patient
         {'\''}
@@ -296,38 +296,38 @@ Roche makes these diagnostics available to more patients faster through its comm
 “Diagnostics in Personalised Healthcare”
         </a>
         {' '}
-module
+        module
         from the PHC Pharma Starter Pack.
       </span>
       <h2>Key drivers/considerations</h2>
       <li>
         <strong>Fast turnaround time for results</strong>
         {' '}
-from ordering a diagnostic to obtaining results is
+        from ordering a diagnostic to obtaining results is
         a key consideration in use to support timely decision making for patients
       </li>
       <li>
         <strong>Actionability of results </strong>
         {' '}
-is critical to uptake of diagnostic testing
+        is critical to uptake of diagnostic testing
         - i.e. the information provided by test results should impact treatment decision making
       </li>
       <li>
         <strong>Broad access to quality testing </strong>
         {' '}
-is imperative to ensure patients can be identified for
-        appropriate treatment. This is especially important where alternatives do not exist and/or markers
+        is imperative to ensure patients can be identified for
+        appropriate treatment. This is especially important where alternatives do not exist and/or markers
         being tested for are very rare, such as with NTRK testing for
         <Link to="/phc/systems-enablers/
         roches-initiatives/rozlytrek"
         >
-Rozlytrek.
+          Rozlytrek.
         </Link>
       </li>
       <li>
         <strong>Level of funding </strong>
         {' '}
-of advanced diagnostics by healthcare systems
+        of advanced diagnostics by healthcare systems
         is a key consideration as it may greatly vary across countries and regions
       </li>
     </>
@@ -360,15 +360,16 @@ of advanced diagnostics by healthcare systems
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Click to see the
-              <br />
-              Connections in the
-              <br />
-              PHC Systems Map
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              {' '}
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
+              {' '}
             </div>
-            <div className="col-lg-6">
+            {' '}
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
               <img src={zoomOutIcon} alt="zoom out" />
+              {' '}
             </div>
           </div>
         </>
@@ -386,10 +387,17 @@ of advanced diagnostics by healthcare systems
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Back to
-              <br />
-              interconnections
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
+              <span>
+                {' '}
+                Back to
+                <br />
+                {' '}
+                interconnections
+                {' '}
+              </span>
+              {' '}
             </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />

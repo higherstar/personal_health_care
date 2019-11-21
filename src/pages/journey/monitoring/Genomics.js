@@ -355,15 +355,16 @@ Level of funding of biomarker and NGS tests by the
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Click to see the
-              <br />
-              Connections in the
-              <br />
-              PHC Systems Map
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              {' '}
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
+              {' '}
             </div>
-            <div className="col-lg-6">
+            {' '}
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
               <img src={zoomOutIcon} alt="zoom out" />
+              {' '}
             </div>
           </div>
         </>
@@ -381,10 +382,12 @@ Level of funding of biomarker and NGS tests by the
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Back to
-              <br />
-              interconnections
+            <div className="col-lg-6 d-flex align-items-center">
+              <span>
+                Back to
+                <br />
+                interconnections
+              </span>
             </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />

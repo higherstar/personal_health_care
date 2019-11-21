@@ -192,16 +192,12 @@ const modalContent = (
         Molecularly-Guided Therapy Option
       </p>
       <p>
-        <span>MGTO: </span>
-        Molecularly-guided therapy option
-      </p>
-      <p>
         <span>MoA: </span>
         Mode of Action
       </p>
       <p>
         <span>MRI: </span>
-        Magnetic resonance imaging
+        Magnetic Resonance Imaging
       </p>
       <p>
         <span>MS: </span>
@@ -209,7 +205,7 @@ const modalContent = (
       </p>
       <p>
         <span>MVP: </span>
-        Minimal viable product
+        Minimal Viable Product
       </p>
       <p>
         <span>NCCN: </span>
@@ -225,11 +221,11 @@ const modalContent = (
       </p>
       <p>
         <span>NTRK: </span>
-        Neurotrophic tyrosine receptor kinase
+        Neurotrophic Tyrosine Receptor Kinase
       </p>
       <p>
         <span>OKRs: </span>
-        Objectives and Key results
+        Objectives and Key Results
       </p>
       <p>
         <span>PD-L1: </span>

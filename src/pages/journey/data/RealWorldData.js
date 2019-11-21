@@ -175,13 +175,12 @@ function RealWorldData() {
       <p>
         The evidence derived from the analysis and/or synthesis of RWD is
         called
+        {' '}
         <strong>Real-World Evidence (RWE)</strong>
         .
-      </p>
-      <p>
         RWD can be collected from various sources such as electronic/medical health records,
         Digital Health solutions, pharmacy claims, insurance claims, disease and product registries,
-        diagnostics/omics databases, hospitals/outpatient visits, health surveys and patient-reported
+        diagnostics/genomics databases, hospitals/outpatient visits, health surveys and patient-reported
         outcomes (PROs), non-investigational studies, social media, etc.
       </p>
       <h2>
@@ -226,10 +225,10 @@ RWD is a key component of our PHC vision and strategy because:
         <li>
                   RWD fuels the PHC engine with continuous learning from every patient
           {'\''}
-        s experience to create both a
+          s experience to create both a
                   high-resolution view of each patient and treatments personalized to each patient
           {'\''}
-        s needs.
+          s needs.
         </li>
         <li>
                   Downstream use of RWE in regulatory / Health Technology Assessment (HTA) / payer
@@ -238,6 +237,7 @@ RWD is a key component of our PHC vision and strategy because:
           <strong>facilitate and support the approvals of novel PHC solutions</strong>
         </li>
       </span>
+      <br />
       <h2>
         What Roche is doing in this area
       </h2>
@@ -251,9 +251,10 @@ RWD is a key component of our PHC vision and strategy because:
         onClick={() => openImageModal(rocheImage)}
         alt="roche"
       />
+      <br />
+      <br />
       <p>
         Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
-        <sup>5</sup>
       </p>
       <img
         className="main-content-image d-none d-sm-none d-md-block"
@@ -321,14 +322,10 @@ RWD is a key component of our PHC vision and strategy because:
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Click to see the
-              <br />
-              Connections in the
-              <br />
-              PHC Systems Map
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 d-flex align-items-center">
               <img src={zoomOutIcon} alt="zoom out" />
             </div>
           </div>
@@ -347,10 +344,17 @@ RWD is a key component of our PHC vision and strategy because:
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Back to
-              <br />
-              interconnections
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
+              <span>
+                {' '}
+                Back to
+                <br />
+                {' '}
+                interconnections
+                {' '}
+              </span>
+              {' '}
             </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />

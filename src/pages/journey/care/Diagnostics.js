@@ -226,7 +226,7 @@ Roche makes these diagnostics available to more patients faster through its comm
         specific treatment and are required by the drug label for the safe and effective use of a therapy.
       </p>
       <p>
-        <strong>2. Complementary diagnostics  </strong>
+        <strong>2. Complementary diagnostics </strong>
         (CoDx): Not required by a drug label, but support
         treatment decision making by providing useful information about a patient
         {'\''}
@@ -284,7 +284,7 @@ Roche makes these diagnostics available to more patients faster through its comm
         <strong>Broad access to quality testing </strong>
         {' '}
         is imperative to ensure patients can be identified for
-        appropriate treatment. This is especially important where alternatives do not exist and/or markers
+        appropriate treatment. This is especially important where alternatives do not exist and/or markers
         being tested for are very rare, such as with NTRK testing for
         <Link to="/phc/systems-enablers/
         roches-initiatives/rozlytrek"
@@ -328,15 +328,16 @@ Roche makes these diagnostics available to more patients faster through its comm
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Click to see the
-              <br />
-              Connections in the
-              <br />
-              PHC Systems Map
+            <div className="col-lg-6 d-flex align-items-center p-0">
+              {' '}
+              <span>Click to see connections to the PHC-Enabled Patient Journey</span>
+              {' '}
             </div>
-            <div className="col-lg-6">
+            {' '}
+            <div className="col-lg-6 d-flex align-items-center">
+              {' '}
               <img src={zoomOutIcon} alt="zoom out" />
+              {' '}
             </div>
           </div>
         </>
@@ -354,10 +355,15 @@ Roche makes these diagnostics available to more patients faster through its comm
             className="zoom-out-button position-absolute d-flex align-items-center justify-content-center"
             onClick={() => handleZoomClick()}
           >
-            <div className="col-lg-6">
-              Back to
-              <br />
-              interconnections
+            <div className="col-lg-6 d-flex align-items-center">
+              <span>
+                {' '}
+                Back to
+                <br />
+                {' '}
+                interconnections
+                {' '}
+              </span>
             </div>
             <div className="col-lg-6">
               <img src={zoomInIcon} alt="zoom in" />

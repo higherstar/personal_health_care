@@ -74,6 +74,7 @@ It is important to identify, understand and address key barriers to building and
       <li>Variation in data governance</li>
       <li>Transparency</li>
     </span>
+    <br />
     <h2>What Roche is doing in this area</h2>
     <span>
 From a data policy perspective as an organization both at the affiliate and global levels we want
@@ -86,10 +87,12 @@ From a data policy perspective as an organization both at the affiliate and glob
       electronic health records (EHR)
       </Link>
 , advanced
+      {' '}
       <Link to="/phc/future-patient-journey/diagnosis/diagnostics">diagnostics</Link>
       {' '}
 platforms,
       and
+      {' '}
       <Link to="/phc/future-patient-journey/diagnosis/digital-health">digital tools</Link>
 . This generates
       insights into health, disease, and treatment pathways at the population and patient level,
