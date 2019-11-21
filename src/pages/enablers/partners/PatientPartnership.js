@@ -78,6 +78,7 @@ function PatientPartnership() {
         onClick={() => openImageModal(descriptionImage)}
         alt="description"
       />
+      <br />
       <h2>
         Patient Partnership in PHC
       </h2>
@@ -135,6 +136,7 @@ function PatientPartnership() {
         onClick={() => openImageModal(lifecycleImage)}
         alt="lifecycle"
       />
+      <br />
       <span>
         To learn more, check out the
         {' '}
@@ -142,7 +144,6 @@ function PatientPartnership() {
         Integrated Patient Partnership (iPP) Community
         </a>
 .
-                Community
       </span>
     </>
   );

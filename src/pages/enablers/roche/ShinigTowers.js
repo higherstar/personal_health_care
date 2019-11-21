@@ -170,6 +170,7 @@ function ShiningTowers() {
       <h2>Description</h2>
       <p>
         Shining Towers are initiatives that will help
+        {' '}
         <strong>
           accelerate the development of a full PHC
           clinical ecosystem.
@@ -181,6 +182,7 @@ function ShiningTowers() {
         onClick={() => openImageModal(shiningTowersImage)}
         alt="shiningTowersImage"
       />
+      <br />
       <span>
 We are building local PHC cases to speed up access to advanced diagnostics and treatment.
         We are leveraging
@@ -196,16 +198,19 @@ We are building local PHC cases to speed up access to advanced diagnostics and t
 that link to actual value delivered while ensuring affordability. To do so, we need to:
         <li>
 More precise and earlier
+          {' '}
           <Link to="/phc/future-patient-journey/diagnosis/diagnostics">diagnostics</Link>
           {' '}
 done more frequently along with an ncreased
           use of
+          {' '}
           <Link to="/phc/future-patient-journey/diagnosis/genomics">genomic profiling</Link>
         </li>
         <li>Increase availability of molecularly-guided therapy option (MGTO)</li>
         <li>Design trials adapted to PHC</li>
         <li>
 Foster discussion among all relevant
+          {' '}
           <Link to="/phc/systems-enablers/partner/stakeholders">stakeholders</Link>
         </li>
         <li>
@@ -224,7 +229,6 @@ Foster discussion among all relevant
         We need to establish minimal viable product (MVP) infrastructures
         before integrating Roche PHC solutions.
       </p>
-      <br />
       <p>
         1-Achieve partner agreements to
         {' '}
@@ -241,6 +245,7 @@ Foster discussion among all relevant
       </div>
       <p>
         2-Through co-creation, identify opportunities to
+        {' '}
         <strong>augment and expand with Roche assets:</strong>
       </p>
       <div className="d-flex image-description-list">
@@ -258,6 +263,7 @@ Foster discussion among all relevant
         onClick={() => openImageModal(assetsImage)}
         alt="assetsImage"
       />
+      <br />
       <p>
         3-Execute and implement
         <strong>integrated PHC solutions</strong>

@@ -53,6 +53,7 @@ const mainContent = (
     <h2>Description & why it is important for PHC</h2>
     <p>
 Our goal is to empower R&D and the business with a
+      {' '}
       <strong>
 fit-for-purpose, scalable and sustainable
       technology ecosystem
@@ -89,6 +90,7 @@ and meaningful
       (Apollo).
       <br />
       Through automation, we enable data scientists to derive insights faster and more efficiently
+      {' '}
       <strong>by reducing turnaround time from months to minutes</strong>
 .
       <br />

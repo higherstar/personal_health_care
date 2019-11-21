@@ -98,7 +98,6 @@ Clinicians in partnership with patients
       {' '}
       <strong>complete diagnostic work-up leveraging diagnostic guidance tools.</strong>
     </p>
-    <br />
     <span>
       The right diagnostic tools are easily available and reimbursed quickly to ensure
       timely testing. This includes the use of:

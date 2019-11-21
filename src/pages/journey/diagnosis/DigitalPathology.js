@@ -224,6 +224,8 @@ function DiagnosisDigitalPathology() {
         Digital pathology can generate insights with the potential to collate histological
         features with prognosis, outcomes, disease biology, and treatment.
       </span>
+      <br />
+      <br />
       <span>
         <strong>Why is it important for patients</strong>
         <br />

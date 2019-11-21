@@ -87,6 +87,7 @@ data-driven early and continuous monitoring
     <li>
       Optimize adverse event management to trigger earlier intervention when meaningful change occurs
     </li>
+    <br />
     <p>
       This
       {' '}

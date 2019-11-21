@@ -62,6 +62,7 @@ impact of each component of the
 , thus
       {' '}
       <strong>driving continuous efficiency improvements.</strong>
+      {' '}
       Data is also collected and used to
       {' '}
       <strong>
@@ -74,6 +75,7 @@ support and measure the impact of
       {' '}
 are made available in select cases and
       are
+      {' '}
       <strong>used to support advanced tools</strong>
 , such as Clinical Decision Support (CDS) systems,
       and research and development, both within academia and commercial businesses.

@@ -47,13 +47,11 @@ To generate value from MDAS, we employ advanced analytics and sophisticated tech
       precise decisions based on insights and predictions generated from Meaningful Data at Scale.
       We are also integrating data from multiple sources and types.
     </p>
-    <br />
     <h2>Why it is important in PHC</h2>
     <p>
 We are enabling the use of Advanced Analytics (AA) to generate evidence/insights from MDAS to
         create value for R&D and patient care and access.
     </p>
-    <br />
     <h2>
 What Roche is doing in this area
     </h2>
@@ -76,10 +74,12 @@ was launched in mid-2017 (with 300+ members)
       <li>
                   To identify ad address business questions that can be solved using advanced analytics
       </li>
+      <br />
       <strong>Advanced Analytics Academic Collaborations </strong>
 will become a Fit-for-Purpose Academic
                 Outreach Model, matching the complexity of Roche’s business needs with the right level of engagement
                 and specific technical expertise.
+      <br />
       <br />
       <strong>PHC IX Data and Analytics </strong>
 is an extensible cloud platform solution built to
@@ -87,6 +87,7 @@ is an extensible cloud platform solution built to
                 reliable, and globally accessible location for advanced analytics purposes. The combination of
                 getting the right data and analytics tools together in one platform will allow us to take a
                 significant step forward putting Roche at the forefront of our drive to deliver PHC toe very patient.
+      <br />
       <br />
                 The
       {' '}

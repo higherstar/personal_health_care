@@ -471,7 +471,7 @@
       margin-right: auto;
       text-align: center; }
   .main-content .main-content-body {
-    height: calc(100% - 70px);
+    height: calc(100% - 80px);
     padding: 20px;
     overflow: auto; }
     .main-content .main-content-body h2 {
