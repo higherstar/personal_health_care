@@ -209,35 +209,40 @@ function CareDiagnostics() {
         <li>
                 Maximization of efficacy.
         </li>
-        <span>
+        <li>
 Roche makes these diagnostics available to more patients faster through its commercial
                   expertise and unmatched global reach.
-        </span>
+        </li>
       </span>
-      <p>
+      <span>
         <strong>What it means for health systems</strong>
         <br />
         Diagnostic tools are critical to supporting personalised care and access. Diagnostic
         tools provide information and data that:
-      </p>
-      <p>
+      </span>
+      <br />
+      <span>
         <strong>1. Companion diagnostics </strong>
         (CDx): May be predictive of patient response to a
         specific treatment and are required by the drug label for the safe and effective use of a therapy.
-      </p>
-      <p>
+      </span>
+      <br />
+      <span>
         <strong>2. Complementary diagnostics </strong>
         (CoDx): Not required by a drug label, but support
         treatment decision making by providing useful information about a patient
         {'\''}
         s prognosis or
         likelihood of responding to certain therapies
-      </p>
+      </span>
+      <br />
+      <br />
       <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics
       </div>
+      <br />
       <div className="diagnosis-second-section" />
       <h2>
         What Roche is doing in this area
@@ -267,6 +272,8 @@ Roche makes these diagnostics available to more patients faster through its comm
         module
         from the PHC Pharma Starter Pack.
       </span>
+      <br />
+      <br />
       <h2>Key drivers/considerations</h2>
       <li>
         <strong>Fast turnaround time for results</strong>
@@ -286,6 +293,7 @@ Roche makes these diagnostics available to more patients faster through its comm
         is imperative to ensure patients can be identified for
         appropriate treatment. This is especially important where alternatives do not exist and/or markers
         being tested for are very rare, such as with NTRK testing for
+        {' '}
         <Link to="/phc/systems-enablers/
         roches-initiatives/rozlytrek"
         >

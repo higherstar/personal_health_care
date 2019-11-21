@@ -178,7 +178,7 @@ function MGTOs() {
         {'\''}
         s
         genomic profile as opposed to the tumor location.
-        <sup>1</sup>
+
       </p>
       <h2>
         Why it is important & connection to our PHC vision and strategy (see PHC vision & strategy diagram on
@@ -189,14 +189,14 @@ function MGTOs() {
         Understanding mechanisms of resistance in cancer
         patients can help to drive faster, smarter and more efficient decision making in cancer
         immunotherapy development and to enable differentiation and expanded access for our therapies.
-        <sup>3</sup>
+
       </p>
       <p>
         <strong>Improved access & personalized care - </strong>
         Rather than finding the site of tumor origin,
         which can be costly and time-consuming, it may be more efficient to target gene alteration against
         which an effective therapy already existed.
-        <sup>1</sup>
+
         Giving patients MGT early can potentially prolong survival.
       </p>
       <br />
@@ -221,7 +221,7 @@ function MGTOs() {
       <br />
       <h2>
         Key drivers/considerations
-        <sup>1</sup>
+
       </h2>
       <p>
         <strong>Testing adoption – </strong>

@@ -303,14 +303,12 @@ function CareCDSSystems() {
         <strong>High-quality CDS: </strong>
         The impact of CDS on patients, healthcare providers and the
         business is dependent on the quality of CDS.
-        <sup>1</sup>
       </li>
       <li>
         <strong>Objectivity </strong>
         is essential to preserve the integrity of CDS systems and
         pharmaceutical
         credibility.
-        <sup>1</sup>
       </li>
     </>
   );
