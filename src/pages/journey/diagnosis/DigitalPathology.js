@@ -217,6 +217,7 @@ function DiagnosisDigitalPathology() {
           to be detected in pathology today
         </li>
       </span>
+      <br />
       <span>
         <strong>Improved access & personalized care</strong>
         <br />
@@ -231,7 +232,8 @@ function DiagnosisDigitalPathology() {
         it holds the promise to impact clinical and patient care in the future by augmenting current
         diagnostic algorithms and supporting more rapid diagnostic insights.
       </span>
-
+      <br />
+      <br />
       <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />

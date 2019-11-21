@@ -294,7 +294,6 @@ function MonitoringGenomics() {
         {' '}
         from the PHC Pharma Starter Pack.
       </p>
-      <br />
       <h2>
         Key drivers/considerations
       </h2>

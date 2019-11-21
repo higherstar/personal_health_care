@@ -135,7 +135,8 @@ module from the PHC Pharma Starter Pack.
       </h2>
       <span>
         <strong>IT platform, Meaningful Data at Scale (MDAS)</strong>
-, and{' '}
+, and
+        {' '}
         <strong>policy</strong>
         {' '}
         all

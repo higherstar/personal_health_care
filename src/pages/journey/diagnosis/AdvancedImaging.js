@@ -229,13 +229,13 @@ function DiagnosisAdvancedImaging() {
         These could deliver significant savings to health systems, or allow emerging health
         systems to deliver advanced care with a lower investment in infrastructure and other system resources.
       </p>
-      <br />
       <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics
       </div>
       <div className="diagnosis-second-section" />
+      <br />
       <h2>
         What Roche is doing in this area
       </h2>
