@@ -11,18 +11,6 @@ p {
   }
 }
 
-li {
-  margin-left: 20px;
-  list-style: none;
-}
-
-li::before {
-  content: '•';
-  font-size: 16px;
-  margin-left: -18px;
-  margin-right: 11px;
-}
-
 span {
   span {
     text-decoration: underline;

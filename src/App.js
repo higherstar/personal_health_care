@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Switch, Redirect, withRouter,
 } from 'react-router-dom';
@@ -7,9 +7,23 @@ import Header from './components/header';
 import Routes from './routes/config';
 
 function App(props) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const getWindowWidth = () => {
+    setIsMobile(window.innerWidth <= 800);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', getWindowWidth);
+  }, []);
+
+  useEffect(() => {
+    getWindowWidth();
+  });
+
   return (
     <>
-      <Header />
+      <Header isMobile={isMobile} />
       <Switch>
         <Redirect exact from="/" to="/phc/welcome" />
         <Redirect exact from="/phc/introduction" to="/phc/introduction/roche-strategy" />
