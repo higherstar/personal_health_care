@@ -82,7 +82,7 @@ We are leveraging MDAS and advanced analytics in
 
 function Showcases() {
   const content = (
-    <div className="roche-showcases d-flex align-items-center justify-content-center">
+    <div className="enablers-roche roche-showcases d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>

@@ -268,13 +268,13 @@
     font-size: 16px; }
   .custom-modal-wrapper .custom-modal-container {
     width: 90%;
-    height: 90%;
+    height: 86%;
     background: white;
     border-radius: 5px;
     box-shadow: 0 0 6px 0;
     padding: 15px 20px;
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 5%; }
   .custom-modal-wrapper .custom-modal-header {
     width: 100%; }
@@ -458,7 +458,7 @@
 .main-content {
   width: 47%;
   height: 90%;
-  min-width: 550px;
+  min-width: 640px;
   background: white;
   border-radius: 25px;
   box-shadow: 0 0 6px 0 black;
@@ -537,9 +537,9 @@
       text-align: center; }
 
 .abbreviation .custom-modal-container {
-  height: 95%;
+  height: 90%;
   padding: 0;
-  top: 0; }
+  top: 42px; }
   .abbreviation .custom-modal-container .custom-modal-header {
     height: 70px;
     background: #0066CC;
@@ -569,9 +569,9 @@
         font-weight: bold; }
 
 .acknowledgements .custom-modal-container {
-  height: 95%;
+  height: 90%;
   padding: 0;
-  top: 0; }
+  top: 42px; }
   .acknowledgements .custom-modal-container .custom-modal-header {
     height: 70px;
     background: #0066CC;
@@ -606,6 +606,12 @@
   margin-left: auto;
   margin-right: auto;
   left: 0; }
+
+.enablers-roche .detail-map {
+  right: 54%; }
+
+.enablers-roche .image-modal .custom-modal-content img {
+  width: auto; }
 
 .roche-context .main-content {
   padding-bottom: 72px; }
@@ -676,7 +682,7 @@ span span {
 .detail-map {
   height: 80%;
   position: absolute;
-  right: 48%; }
+  right: 47%; }
   .detail-map img {
     height: 100%; }
 

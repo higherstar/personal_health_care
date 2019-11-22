@@ -96,7 +96,7 @@ FDA’s approval Roche’s Rozlytrek
 
 function Rozlytrek() {
   const content = (
-    <div className="roche-rozlytrek d-flex align-items-center justify-content-center">
+    <div className="enablers-roche roche-rozlytrek d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>

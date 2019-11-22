@@ -28,7 +28,7 @@ function TopBar(props) {
   let background = backgroundColor(color);
   let showTitle = true;
   if (title.includes('Abbreviation List') || title.includes('Acknowledgments')) {
-    background = '#0066CC9E';
+    background = 'transparent';
     showTitle = false;
   }
 

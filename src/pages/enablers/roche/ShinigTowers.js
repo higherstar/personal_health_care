@@ -322,7 +322,7 @@ launched in 10 countries around the World will enable critical business drivers.
   );
 
   const content = (
-    <div className="roche-shining-towers d-flex align-items-center justify-content-center">
+    <div className="enablers-roche roche-shining-towers d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>

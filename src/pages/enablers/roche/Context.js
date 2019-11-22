@@ -146,7 +146,7 @@ PHC in your market
   );
 
   const content = (
-    <div className="roche-context d-flex align-items-center justify-content-center">
+    <div className="enablers-roche roche-context d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
