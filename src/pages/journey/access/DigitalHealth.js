@@ -362,7 +362,7 @@ software intended to be used for one or more medical purposes that perform these
         <>
           <img src={connectionIcon} alt="connection icon" className="zoom-in-icon" />
           <div className="connection-title zoom-out">
-            <h2>Connections to the Systems Map</h2>
+            <h2>Connections to the PHC-Enabled Patient Journey</h2>
           </div>
         </>
       )}

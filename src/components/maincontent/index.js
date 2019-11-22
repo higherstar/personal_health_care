@@ -50,7 +50,6 @@ function MainContent(props) {
 
   const exceptionCases = title.includes('DIGITAL HEALTH')
     || title.includes('MOLECULARLY-GUIDED')
-    || title.includes('CDS')
     || title.includes('Roche Example');
   const titleStyle = {
     textTransform: !exceptionCases && 'uppercase',

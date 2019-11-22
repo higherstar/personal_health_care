@@ -156,6 +156,7 @@ for more information)
         2.15% improvement of the overall survival in cancer
       </span>
     </li>
+    <br />
     <span>
                 New PHC paradigm is the only way to achieve those objectives and consequently represents a huge
                 opportunity for Roche.

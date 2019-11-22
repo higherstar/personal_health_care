@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -65,9 +66,6 @@ const mainContent = (
         (HCP) and patient to make an informed and confident decision
       </strong>
       {' '}
-      Clinical Decision
-      Support (CDS) systems empower the healthcare provider
-      (HCP) and patient to make an informed and confident decision
       <li>
         An integrated and customized view of a patient’s clinical profile (including for tumor boards)
       </li>
@@ -94,7 +92,11 @@ const mainContent = (
       <strong>selecting personalized care plans through CDS systems</strong>
       {' '}
       as the volume
-      and quality of real-world data (RWD) increases.
+      and quality of
+      {' '}
+      <Link to="/phc/future-patient-journey/data/real-world-data">real-world data (RWD)</Link>
+      {' '}
+increases.
     </p>
   </>
 );

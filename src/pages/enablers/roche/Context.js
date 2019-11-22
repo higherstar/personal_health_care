@@ -140,6 +140,7 @@ PHC in your market
         className="main-content-image d-none d-sm-none d-md-block"
         src={marketImage}
         alt="marketImage"
+        onClick={() => openImageModal(marketImage)}
       />
     </>
   );

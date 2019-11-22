@@ -95,8 +95,8 @@ const countryData = [
     number: 5,
     name: 'Canada',
     className: 'canada',
-    content: 'Large public\'private pannership, transforming the healthcare system through '
-      + 'innovation with S+40M already committed '
+    content: 'Large public/private pannership, transforming the healthcare system through '
+      + 'innovation with $+40M already committed '
       + 'from industry partners and government enabling RWD acceptance and indication-based pricing',
   },
   {
@@ -112,7 +112,7 @@ const countryData = [
     className: 'korea',
     content: 'Demonstrate clinical and economic value of end-to-end PHC practice in a pilot '
       + 'ecosystem to enable MGTOs funding via '
-      + 'an expansion of the \'160 access path and leveraging Molecular Tumor Board: RWD: and CGP',
+      + 'an expansion of the \'160 access path and leveraging Molecular Tumor Board, RWD, and CGP',
   },
   {
     number: 8,
@@ -120,24 +120,24 @@ const countryData = [
     className: 'germany',
     content: 'Collaboration with Flatiron and three leading cancer centers to establish a common '
       + 'Clinico-Genomic Database to leverage '
-      + 'in Personalised Reimbursement Models pilots: RWD regulatory decision-making: '
+      + 'in Personalised Reimbursement Models pilots, RWD regulatory decision-making, '
       + 'clinical recommendation & decision '
-      + 'suppolt',
+      + 'support',
   },
   {
     number: 9,
     name: 'singapore',
     className: 'singapore',
-    content: 'Enabling CGP ubiquity via regional FMI lab & innovative access I public funding to MGTOs',
+    content: 'Enabling CGP ubiquity via regional FMI lab & innovative access / public funding to MGTOs',
   },
   {
     number: 10,
     name: 'USA',
     className: 'usa',
-    content: 'Utilize the full suite of Roche PHC tools to co-create meaningful pannerships with '
+    content: 'Utilize the full suite of Roche PHC tools to co-create meaningful partnerships with '
       + 'priority accounts across three distinct '
       + 'provider '
-      + 'segments (community practices, academic centers: and risk bearing Integrated '
+      + 'segments (community practices, academic centers, and risk bearing Integrated '
       + 'Delivery Networks); designed in a manner '
       + 'that can be scaled to similar accounts across these segments by 2021',
   },

@@ -212,7 +212,9 @@ function MonitoringGenomics() {
         <br />
         Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene
         panels that detect all classes of genomic alterations and biomarkers, providing a holistic view to
-        healthcare providers of appropriate treatments [internal hyperlink to CDS page in Care]
+        healthcare providers of appropriate
+        {' '}
+        <Link to="/phc/future-patient-journey/card/cds-systems">treatments</Link>
         (targeted or immunotherapy) and potential clinical trials.
       </p>
       <h2>
@@ -342,7 +344,7 @@ Level of funding of biomarker and NGS tests by the
         <>
           <img src={connectionIcon} alt="connection icon" className="zoom-in-icon" />
           <div className="connection-title zoom-out">
-            <h2>Connections to the Systems Map</h2>
+            <h2>Connections to the PHC-Enabled Patient Journey</h2>
           </div>
         </>
       )}

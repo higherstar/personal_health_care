@@ -226,14 +226,14 @@ function Welcome() {
 
   const modalContent = (
     <div className="welcome-modal">
-      <h3>Welcome to The Personalised Healthcare-Enabled Patient Journey</h3>
+      <h2>Welcome to The Personalised Healthcare-Enabled Patient Journey</h2>
       <p>
         The complexity of Personalised Healthcare (PHC) calls for us to be systems thinkers with the ability
         to think and act from a whole system perspective and make decisions in light of the long-term health
         of the whole system. This map will provide a broad picture view and exploration of components of
         the PHC ecosystem, the interconnectedness of the system at play, and how you can engage with PHC.
       </p>
-      <h3>Personalised Healthcare at Roche</h3>
+      <h2>Personalised Healthcare at Roche</h2>
       <span>
         Before diving into the PHC systems map, learn about why PHC is important and Roche’s PHC vision and
         strategy on the
@@ -245,7 +245,9 @@ function Welcome() {
         </a>
 .
       </span>
-      <h3>How We Built the PHC-Enabled Patient Journey</h3>
+      <br />
+      <br />
+      <h2>How We Built the PHC-Enabled Patient Journey</h2>
       <p>
         This site is built around the
         {' '}
@@ -262,6 +264,8 @@ function Welcome() {
           ))}
         </Slider>
       </div>
+      <br />
+      <br />
       <div className="explore-button d-flex align-items-center justify-content-center" onClick={handleCloseClick}>
         <span>Explore the PHC-Enabled Patient Journey</span>
       </div>

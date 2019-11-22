@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .custom-button:active {
   background: #8DD1FF !important; }
 
@@ -71,10 +72,10 @@
     margin-top: 2px; }
 
 .expand-button .expand-content {
-  width: 250px;
+  width: 300px;
   height: 100px;
   position: absolute;
-  left: -105px;
+  left: -135px;
   padding: 0 5px;
   background: white;
   border-radius: 5px;
@@ -432,8 +433,7 @@
 .disclaimer {
   background: #eeeeee;
   width: 100%;
-  text-align: center;
-  padding: 0 25px;
+  padding: 10px 25px;
   border-radius: 0 0 10px 10px;
   position: absolute;
   bottom: 0;
@@ -449,7 +449,7 @@
   padding: 15px;
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 3%;
   color: black;
   overflow: hidden; }
   .main-content .main-content-image {
@@ -479,22 +479,22 @@
       font-weight: bold;
       color: #0066cc;
       margin-bottom: 15px; }
-    .main-content .main-content-body li span {
-      display: block !important;
-      padding-left: 22px; }
     .main-content .main-content-body .col-lg-4 {
       display: flex;
       align-items: center;
       justify-content: center; }
 
 .welcome .custom-modal-content {
-  height: calc(100% - 50px); }
+  height: calc(100% - 60px); }
 
 .welcome .welcome-modal {
   width: 100%;
   padding: 0 10px; }
-  .welcome .welcome-modal h3 {
-    text-align: center; }
+  .welcome .welcome-modal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0066cc;
+    margin-bottom: 15px; }
   .welcome .welcome-modal .welcome-videos {
     width: 50%;
     min-width: 500px;
@@ -510,7 +510,7 @@
     min-width: 500px;
     background: #0066cc;
     border-radius: 30px;
-    margin: 40px auto;
+    margin: 20px auto;
     cursor: pointer; }
     .welcome .welcome-modal .explore-button:active {
       opacity: 0.8; }
@@ -645,6 +645,16 @@ p span {
   color: #0066CC;
   font-weight: bold; }
 
+li {
+  margin-left: 20px;
+  list-style: none; }
+
+li::before {
+  content: '•';
+  font-size: 16px;
+  margin-left: -18px;
+  margin-right: 11px; }
+
 span span {
   text-decoration: underline; }
 
@@ -660,7 +670,7 @@ span span {
 .detail-map {
   height: 80%;
   position: absolute;
-  right: 50%; }
+  right: 48%; }
   .detail-map img {
     height: 100%; }
 
