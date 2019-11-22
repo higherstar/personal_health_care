@@ -264,6 +264,7 @@ Screening and diagnosis
         <li>
           Monitoring and adherence to therapy
         </li>
+        <br />
         Digital Health also supports patient satisfaction, quality of life, and survival.
       </span>
       <br />
