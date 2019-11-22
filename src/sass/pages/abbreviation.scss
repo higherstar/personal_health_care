@@ -24,8 +24,8 @@
     padding: 25px;
 
     .reference-content {
+      height: calc(100% - 21px);
       padding: 10px;
-      height: 100%;
       overflow: auto;
 
       p {
@@ -39,6 +39,15 @@
           color: #0066CC;
           font-weight: bold;
         }
+      }
+    }
+
+    .roche-specific {
+      padding: 10px;
+      a {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
       }
     }
   }

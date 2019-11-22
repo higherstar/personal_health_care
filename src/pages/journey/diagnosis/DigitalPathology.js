@@ -202,7 +202,7 @@ function DiagnosisDigitalPathology() {
         Why it is important for PHC
       </h2>
       <span>
-        <strong>Smarter & more efficient R&D – </strong>
+        <strong>Smarter & more efficient – </strong>
         <br />
         Digital pathology has the potential to transform R&D through the discovery, development, and
         application of Digital Pathology-derived algorithms that can support:
@@ -273,8 +273,8 @@ We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital P
         </li>
         <li>
                   H&E images and algorithm segmentation for tumor infiltrating lymphocytes will be viewable by
-                  scientists Roche-wide in the IRISe [external link to PHC portal under advanced analytics
-                  capability] digital pathology viewer for the IMpower150 biomarker evaluable population
+                  scientists Roche-wide in the IRISe digital pathology viewer for the IMpower150
+          biomarker evaluable population
         </li>
         <li>
                   MATLAB segmentation algorithm for tumor stroma complete in lung adenocarcinoma

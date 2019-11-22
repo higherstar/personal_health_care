@@ -215,6 +215,7 @@ function MonitoringGenomics() {
         healthcare providers of appropriate
         {' '}
         <Link to="/phc/future-patient-journey/card/cds-systems">treatments</Link>
+        {' '}
         (targeted or immunotherapy) and potential clinical trials.
       </p>
       <h2>

@@ -11,7 +11,7 @@ function CustomModal(props) {
   };
 
   const modalStyle = {
-    display: open ? 'block' : 'none',
+    display: open ? 'flex' : 'none',
   };
 
   return (

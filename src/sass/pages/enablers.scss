@@ -9,6 +9,26 @@
       }
     }
   }
+
+  .custom-modal-wrapper {
+    width: 100vw;
+    left: -318px;
+    align-items: center;
+    justify-content: center;
+
+    .custom-modal-container {
+      width: fit-content;
+      height: auto;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 0 6px 0;
+      padding: 15px 20px;
+      position: relative;
+      max-width: 1200px;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .roche-context {
@@ -29,6 +49,12 @@
   .australia {
     top: 74%;
     left: 82%;
+
+    .expand-content {
+      bottom: 35px;
+      right: 0;
+      left: unset;
+    }
   }
 
   .croatia {
@@ -49,6 +75,10 @@
   .canada {
     top: 27%;
     left: 14%;
+
+    .expand-content {
+      left: 0;
+    }
   }
 
   .italy {
@@ -59,6 +89,12 @@
   .korea {
     top: 42%;
     left: 80%;
+
+    .expand-content {
+      bottom: 35px;
+      right: 0;
+      left: unset;
+    }
   }
 
   .germany {
@@ -69,10 +105,20 @@
   .singapore {
     top: 60%;
     left: 73%;
+
+    .expand-content {
+      bottom: 35px;
+      right: 0;
+      left: unset;
+    }
   }
 
   .usa {
     top: 40%;
     left: 17%;
+
+    .expand-content {
+      left: 0;
+    }
   }
 }

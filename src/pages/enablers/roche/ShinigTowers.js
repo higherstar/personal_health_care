@@ -126,7 +126,7 @@ const countryData = [
   },
   {
     number: 9,
-    name: 'singapore',
+    name: 'Singapore',
     className: 'singapore',
     content: 'Enabling CGP ubiquity via regional FMI lab & innovative access / public funding to MGTOs',
   },

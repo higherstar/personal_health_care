@@ -239,6 +239,7 @@ function MonitoringAdvancedImaging() {
         >
                 showcases
         </Link>
+        {' '}
 (Ophthalmology, Cancer Immunotherapy), and Multiple Sclerosis to develop automated algorithms
                 for more accurate predictions for disease
                 progression and response to therapy. This automation will result in:
