@@ -349,7 +349,7 @@ software intended to be used for one or more medical purposes that perform these
         <strong>
           Adoption of Digital Health Solutions
         </strong>
-        {' '}
+        <br />
         The table below summarizes the various challenges of adopting Digital Health solutions for payers,
         HCPs, patients, regulators, and industry/R&D.
       </p>
