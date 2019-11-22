@@ -231,9 +231,7 @@ Connected drug administration and delivery
         To learn more, check out
         the
         {' '}
-        <a href="external hyperlink to module https://roche.csod.com/ui/lms-learning-details/app/
-        course/530ba4c4-5a27-42a2-b2aa-abd7d91cc80d"
-        >
+        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/530ba4c4-5a27-42a2-b2aa-abd7d91cc80d">
           “Digital Health and Software as a Medical Device”
         </a>
         {' '}

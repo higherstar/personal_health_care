@@ -214,7 +214,7 @@ function MonitoringGenomics() {
         panels that detect all classes of genomic alterations and biomarkers, providing a holistic view to
         healthcare providers of appropriate
         {' '}
-        <Link to="/phc/future-patient-journey/card/cds-systems">treatments</Link>
+        <Link to="/phc/future-patient-journey/care/cds-systems">treatments</Link>
         {' '}
         (targeted or immunotherapy) and potential clinical trials.
       </p>
@@ -246,7 +246,7 @@ function MonitoringGenomics() {
         using the power
         of
         {' '}
-        <Link to="/phc/systems-enablers/value-based-healthcare">Meaningful data at scale (MDAS)</Link>
+        <Link to="/phc/future-patient-journey/access/value-based-healthcare">Meaningful data at scale (MDAS)</Link>
         {' '}
         and
         {' '}
@@ -282,7 +282,7 @@ function MonitoringGenomics() {
         collaborate closely
         with
         {' '}
-        <Link to="a/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics</Link>
+        <Link to="/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics</Link>
         , and other teams to
         derive novel
         disease and mode of action (MoA) specific insights to inform drug development.

@@ -238,9 +238,7 @@ function Welcome() {
         Before diving into the PHC systems map, learn about why PHC is important and Roche’s PHC vision and
         strategy on the
         {' '}
-        <a href="http://we.intranet.roche.com/sites/bio/services/fast
-        /FASTApps/Pages/Personalised-Healthcare-Pharma-Starter-Pack-.aspx"
-        >
+        <a href="http://we.intranet.roche.com/sites/bio/services/fast/FASTApps/Pages/Personalised-Healthcare-Pharma-Starter-Pack-.aspx">
         PHC portal
         </a>
 .

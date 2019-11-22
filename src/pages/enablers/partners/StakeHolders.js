@@ -96,7 +96,7 @@ HCPs
 are key stakeholders
       for
       {' '}
-      <Link to="/phc/systems-enablers/value-based-healthcare">value-based healthcare (VBHC)</Link>
+      <Link to="/phc/future-patient-journey/access/value-based-healthcare">value-based healthcare (VBHC)</Link>
 .
     </p>
     <p>
