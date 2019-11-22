@@ -11,7 +11,7 @@ function ConnectionModal(props) {
   };
 
   const modalStyle = {
-    display: !open ? 'none' : 'block',
+    display: !open ? 'none' : 'flex',
   };
 
   return (

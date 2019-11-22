@@ -391,7 +391,7 @@ RWD is a key component of our PHC vision and strategy because:
         open={connectionOpen}
         handleCloseClick={handleCloseClick}
       />
-      <ImageModal className="real-world-data" open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
+      <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <MainContent content={mainContent} navOptions={navOptions} />
     </div>
   );

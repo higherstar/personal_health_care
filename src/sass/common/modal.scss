@@ -1,9 +1,9 @@
 .custom-modal-wrapper {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 112px);
   background: #0066cc9e;
   position: absolute;
-  top: 0;
+  top: -52px;
   left: 0;
   z-index: 10;
   color: black;
@@ -70,25 +70,6 @@
   }
 }
 
-.image-modal {
-  width: 100vw;
-  left: -318px;
-
-  .custom-modal-container {
-    width: 70%;
-    height: 80%;
-    top: 10%;
-    left: 15%;
-
-    .custom-modal-content {
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-}
-
 .image-modal, .connection-modal {
   width: 100vw;
   left: -318px;
@@ -102,18 +83,49 @@
 }
 
 .image-modal {
-  .custom-modal-content {
-    padding: 10px;
+  align-items: center;
+  justify-content: center;
 
+  .custom-modal-container {
+    width: fit-content;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0;
+    padding: 15px 20px;
+    position: relative;
+    max-width: 1200px;
+    top: 0;
+    left: 0;
+  }
+
+  .custom-modal-content {
+    width: fit-content;
+    padding: 10px;
+    height: 100%;
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      max-height: 550px;
     }
   }
 }
 
 .connection-modal {
+  align-items: center;
+  justify-content: center;
+
   .custom-modal-container {
+    width: fit-content;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0;
+    position: relative;
+    max-width: 1200px;
+    min-width: 1000px;
+    top: 0;
+    left: 0;
     padding: 0;
 
     .custom-modal-header {
@@ -143,12 +155,14 @@
     }
 
     .custom-modal-content {
+      width: 100%;
+      padding: 10px;
       height: 100%;
-      padding: 15px;
 
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        max-height: 550px;
       }
     }
   }

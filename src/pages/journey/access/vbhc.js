@@ -189,7 +189,6 @@ To learn more about VBHC, please go to the
         <img src={mapImage} alt="detail map" />
       </div>
       <ImageModal
-        className="vbhc-image-modal"
         open={imageOpen}
         image={image}
         handleCloseClick={handleCloseClick}
