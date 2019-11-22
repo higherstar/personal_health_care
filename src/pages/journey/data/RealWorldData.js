@@ -183,6 +183,15 @@ function RealWorldData() {
         diagnostics/genomics databases, hospitals/outpatient visits, health surveys and patient-reported
         outcomes (PROs), non-investigational studies, social media, etc.
       </p>
+      <span>
+        To learn more, check out the
+        {' '}
+        <a href="https://go.roche.com/PHCStarterPack">“Introduction to Real-World Data”</a>
+        {' '}
+        modules from the PHC Pharma Starter Pack.
+      </span>
+      <br />
+      <br />
       <h2>
         Why it is important for PHC
       </h2>

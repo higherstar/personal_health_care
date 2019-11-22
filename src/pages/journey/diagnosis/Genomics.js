@@ -215,7 +215,7 @@ function DiagnosisGenomics() {
         <br />
         Roche Sequencing Solutions offers best in-class Next-Generation Sequencing (NGS) products.
         Clinical NGS can involve one single gene to many genes and provides clinicians with information
-        to assist in treatment selection [internal hyperlink to CDS in Care], thus enabling personalized
+        to assist in treatment selection, thus enabling personalized
         healthcare (PHC). Advanced reports, such as those FMI deliver, provide information including
         clinical trials, treatments to avoid and potential resistance gene of relevance.
         <br />
@@ -225,6 +225,7 @@ function DiagnosisGenomics() {
         healthcare providers of appropriate
         {' '}
         <Link to="/phc/future-patient-journey/care/cds-systems">treatments</Link>
+        {' '}
         (targeted or immunotherapy) and potential clinical trials.
       </p>
       <h2>
