@@ -298,7 +298,7 @@ function DiagnosisGenomics() {
         <br />
         The CUPISCO trial is an example of the use of CGP in combination with a patient-centric
         decision-making process by a Molecular Tumor Board to provide a highly-specific treatment
-        decision for each patient.2 Click here to learn more about the
+        decision for each patient. Click here to learn more about the
         {' '}
         <a href="https://roche.csod.com/ui/lms-learning-details/app/course/287dbea0-41e0-4d2c-bdaa-025c5fecd987">
           CUPISCO Case Study
