@@ -8,6 +8,7 @@ import Routes from './routes/config';
 
 function App(props) {
   const [isMobile, setIsMobile] = useState(false);
+  const [mobileCollapsed, setMobileCollapsed] = useState(true);
 
   const getWindowWidth = () => {
     setIsMobile(window.innerWidth <= 800);
@@ -21,9 +22,13 @@ function App(props) {
     getWindowWidth();
   });
 
+  const handleMenuClick = () => {
+    setMobileCollapsed(!mobileCollapsed);
+  };
+
   return (
     <>
-      <Header isMobile={isMobile} />
+      <Header isMobile={isMobile} mobileCollapsed={mobileCollapsed} handleMenuClick={handleMenuClick} />
       <Switch>
         <Redirect exact from="/" to="/phc/welcome" />
         <Redirect exact from="/phc/introduction" to="/phc/introduction/roche-strategy" />
@@ -56,7 +61,7 @@ function App(props) {
           from="/phc/future-patient-journey/diagnosis"
           to="/phc/future-patient-journey/diagnosis/overview"
         />
-        {Routes(props)}
+        {Routes({ ...props, isMobile, mobileCollapsed })}
       </Switch>
     </>
   );

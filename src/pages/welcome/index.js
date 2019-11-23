@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import PropTypes from 'prop-types';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -216,13 +217,14 @@ const settings = {
   slidesToScroll: 1,
 };
 
-function Welcome() {
+function Welcome(props) {
+  const { isMobile, mobileCollapsed } = props;
+
   const [modalOpen, setModalOpen] = useState(true);
 
   const handleCloseClick = () => {
     setModalOpen(false);
   };
-
 
   const modalContent = (
     <div className="welcome-modal">
@@ -289,8 +291,20 @@ function Welcome() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Welcome" color="blue" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      title="Welcome"
+      color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+    />
   );
 }
+
+Welcome.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+};
 
 export default Welcome;

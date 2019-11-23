@@ -18,7 +18,7 @@ const backgroundColor = (color) => {
 
 function TopBar(props) {
   const {
-    title, color, collapsed, setCollapsed,
+    title, color, collapsed, isMobile, setCollapsed,
   } = props;
 
   const handleCollapse = (collapse) => {
@@ -38,16 +38,20 @@ function TopBar(props) {
       style={{ background }}
     >
       <div className="side-bar-header d-flex align-items-center">
-        <ToggleButton
-          handleChange={handleCollapse}
-          className="collapse-button"
-          color="white"
-          from={arrowLeft}
-          to={arrowRight}
-          border
-        />
-        {!collapsed ? (<span>Collapse the Navigation</span>)
-          : showTitle && (<span>Open the Navigation</span>)}
+        {!isMobile && (
+          <>
+            <ToggleButton
+              handleChange={handleCollapse}
+              className="collapse-button"
+              color="white"
+              from={arrowLeft}
+              to={arrowRight}
+              border
+            />
+            {!collapsed ? (<span>Collapse the Navigation</span>)
+              : showTitle && (<span>Open the Navigation</span>)}
+          </>
+        )}
       </div>
       {showTitle && (<span>{title}</span>)}
     </div>
@@ -57,6 +61,7 @@ function TopBar(props) {
 TopBar.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  isMobile: PropTypes.bool.isRequired,
   collapsed: PropTypes.bool.isRequired,
   setCollapsed: PropTypes.func.isRequired,
 };

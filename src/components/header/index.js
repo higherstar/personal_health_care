@@ -4,12 +4,14 @@ import logo from '../../assets/common/logo.svg';
 import menuIcon from '../../assets/common/sidebar-icon.svg';
 
 function Header(props) {
-  const { isMobile } = props;
+  const { isMobile, handleMenuClick } = props;
 
   return (
     <>
-      <div className={`${isMobile ? 'mobile-header' : 'header'} d-flex align-items-center justify-content-between`}>
-        {isMobile && <img className="menu-icon" src={menuIcon} alt="menu" />}
+      <div
+        className={`${isMobile ? 'mobile-header' : 'header'} d-flex align-items-center justify-content-between`}
+      >
+        {isMobile && <img className="menu-icon" src={menuIcon} alt="menu" onClick={handleMenuClick} />}
         <span>
           {isMobile ? 'PHC Systems Map' : 'Personalised Healthcare-Enabled Patient Journey'}
         </span>
@@ -21,6 +23,7 @@ function Header(props) {
 
 Header.propTypes = {
   isMobile: PropTypes.bool,
+  handleMenuClick: PropTypes.func.isRequired,
 };
 
 Header.defaultProps = {
