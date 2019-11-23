@@ -202,7 +202,7 @@ function DiagnosisDigitalPathology() {
         Why it is important for PHC
       </h2>
       <span>
-        <strong>Smarter & more efficient – </strong>
+        <strong>Smarter & more efficient R&D </strong>
         <br />
         Digital pathology has the potential to transform R&D through the discovery, development, and
         application of Digital Pathology-derived algorithms that can support:
