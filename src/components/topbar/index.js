@@ -32,6 +32,11 @@ function TopBar(props) {
     showTitle = false;
   }
 
+  const titleMobileStyle = {
+    fontSize: isMobile ? 20 : 28,
+    padding: '5px 10px 5px 10px',
+  };
+
   return (
     <div
       className="top-bar d-flex align-items-center justify-content-center"
@@ -53,7 +58,7 @@ function TopBar(props) {
           </>
         )}
       </div>
-      {showTitle && (<span>{title}</span>)}
+      {showTitle && (<span style={isMobile ? titleMobileStyle : null}>{title}</span>)}
     </div>
   );
 }

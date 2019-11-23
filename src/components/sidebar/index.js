@@ -21,7 +21,12 @@ const backgroundColor = (color) => {
 };
 
 function SideBar(props) {
-  const { collapsed, navOptions, color } = props;
+  const {
+    collapsed,
+    isMobile,
+    navOptions,
+    color,
+  } = props;
 
   const [state, setState] = useState(false);
   const [link, setLink] = useState('');
@@ -52,6 +57,22 @@ function SideBar(props) {
   const sideBarStyle = {
     width: collapsed ? '93px' : '318px',
     background: collapsed ? 'white' : sideBarBackground,
+  };
+
+  const sideBarMobileStyle = {
+    width: collapsed ? 0 : 318,
+    height: '125%',
+    transform: 'scale(0.8)',
+    transformOrigin: 'top left',
+    background: collapsed ? 'white' : sideBarBackground,
+  };
+
+  const mobileLeftBandStyle = {
+    left: collapsed ? -50 : 44,
+  };
+
+  const sideBarContentMobileStyle = {
+    height: 'calc(100% - 96px)',
   };
 
   const footerStyle = {
@@ -182,10 +203,10 @@ function SideBar(props) {
   };
 
   return (
-    <div className="side-bar" style={sideBarStyle}>
-      <div className="side-bar-left-band" />
-      <div className="side-bar-header" style={{ background: backgroundColor(color) }} />
-      <div className="side-bar-content">
+    <div className="side-bar" style={isMobile ? sideBarMobileStyle : sideBarStyle}>
+      <div className="side-bar-left-band" style={isMobile ? mobileLeftBandStyle : null} />
+      {!isMobile && (<div className="side-bar-header" style={{ background: backgroundColor(color) }} />)}
+      <div className="side-bar-content" style={isMobile ? sideBarContentMobileStyle : null}>
         <SearchButton
           open={searchOpen}
           className="search-button"
@@ -285,12 +306,14 @@ function SideBar(props) {
 }
 
 SideBar.propTypes = {
+  isMobile: PropTypes.bool,
   collapsed: PropTypes.bool,
   navOptions: PropTypes.array.isRequired,
   color: PropTypes.string,
 };
 
 SideBar.defaultProps = {
+  isMobile: false,
   collapsed: false,
   color: '',
 };

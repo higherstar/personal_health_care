@@ -15,6 +15,10 @@ function PageContainer(props) {
     setCollapsed(!collapsed);
   };
 
+  const pageContainerStyle = {
+    height: 'calc(100vh - 70px)',
+  };
+
   const pageContentStyle = {
     width: collapsed ? 'calc(100vw - 93px)' : 'calc(100vw - 318px)',
     left: collapsed ? '93px' : '318px',
@@ -27,7 +31,7 @@ function PageContainer(props) {
 
   return (
     <>
-      <div className="page-container">
+      <div className="page-container" style={isMobile ? pageContainerStyle : null}>
         <div className="background-image">
           <img src={backgroundImage} alt="background" />
         </div>
@@ -41,6 +45,7 @@ function PageContainer(props) {
         <div className="side-bar-wrapper">
           <SideBar
             navOptions={navOptions}
+            isMobile={isMobile}
             collapsed={isMobile ? mobileCollapsed : collapsed}
             color={color}
           />

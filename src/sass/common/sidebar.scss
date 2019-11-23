@@ -23,6 +23,7 @@
     top: 0;
     left: 44px;
     z-index: 1;
+    transition: 0.1s all ease;
   }
 
   .side-bar-header {
@@ -44,7 +45,8 @@
     width: 100%;
     height: calc(100% - 147px);
     position: relative;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     .search-result {
       width: 258px;
