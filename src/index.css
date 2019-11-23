@@ -276,7 +276,7 @@
       width: 100%;
       height: calc(100vh - 70px);
       position: absolute;
-      top: -40px;
+      top: -52px;
       left: 0;
       background: #0066cc9e;
       z-index: 100; }
@@ -819,6 +819,8 @@ span span {
     background: #ED8B00; }
 
 @media (max-width: 800px) {
+  .custom-modal-wrapper {
+    height: calc(100vh - 70px) !important; }
   /* width */
   ::-webkit-scrollbar {
     width: 3px !important; }
@@ -833,7 +835,9 @@ span span {
     left: 43%; }
   .data-dropdown {
     top: 48%;
-    left: 45%; } }
+    left: 45%; }
+  .reference-content p {
+    width: 100% !important; } }
 
 /*--------------------------------------------------------------
 # General

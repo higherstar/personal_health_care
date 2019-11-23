@@ -79,7 +79,7 @@ const modalHeader = (
 
 const modalContent = (
   <div className="abbreviation-content">
-    <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
+    <div className="reference-content d-flex justify-content-between align-items-start flex-wrap">
       <p>
         <span>AA: </span>
         Advanced Analytics

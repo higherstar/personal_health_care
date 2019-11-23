@@ -113,6 +113,10 @@ span {
 }
 
 @media (max-width: 800px) {
+  .custom-modal-wrapper {
+    height: calc(100vh - 70px) !important;
+  }
+
   /* width */
   ::-webkit-scrollbar {
     width: 3px !important;
@@ -136,6 +140,12 @@ span {
   .data-dropdown {
     top: 48%;
     left: 45%;
+  }
+
+  .reference-content {
+    p {
+      width: 100% !important;
+    }
   }
 }
 

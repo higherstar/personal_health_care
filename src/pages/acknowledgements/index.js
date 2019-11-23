@@ -75,7 +75,7 @@ const modalHeader = (
   <div className="reference-title d-flex">
     Acknowledgements
     {' '}
-    <h1 style={{ marginLeft: '50px' }}>Content coming soon</h1>
+    <h1 style={{ marginLeft: '50px' }} className="d-none d-md-block d-lg-block d-sm-none">Content coming soon</h1>
   </div>
 );
 
@@ -84,7 +84,7 @@ const modalContent = (
     <h3 className="d-md-block d-sm-none d-none">
       We acknowledge our colleagues for their contribution:
     </h3>
-    <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
+    <div className="reference-content d-flex justify-content-between align-items-start flex-wrap">
       <p>
         <strong>John Doe,</strong>
         {' '}
