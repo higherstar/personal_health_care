@@ -854,7 +854,7 @@ span span {
     right: 0;
     top: 50%;
     border-radius: 0;
-    padding: 0 10px; }
+    padding: 0 10px !important; }
     .main-content .main-content-image {
       pointer-events: none !important; }
     .main-content .main-content-title {

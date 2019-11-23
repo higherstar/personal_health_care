@@ -101,13 +101,6 @@ function Context(props) {
         onClick={() => openImageModal(acceleratingImage)}
         alt="accelerating"
       />
-      <div className="disclaimer">
-        <span>
-          THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL
-          UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY
-          PARTNERS OF THE LOCAL AFFILIATE.
-        </span>
-      </div>
       <br />
       <h2>
         Develop your PHC strategy with the Landscape Assessment and Strategy Builder
@@ -145,6 +138,18 @@ PHC in your market
         alt="marketImage"
         onClick={() => openImageModal(marketImage)}
       />
+      <br />
+      <br />
+      <div
+        className="disclaimer"
+        style={{ position: isMobile ? 'relative' : 'absolute', borderRadius: isMobile ? 0 : '0 0 10px 10px' }}
+      >
+        <span>
+          THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL
+          UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY
+          PARTNERS OF THE LOCAL AFFILIATE.
+        </span>
+      </div>
     </>
   );
 
