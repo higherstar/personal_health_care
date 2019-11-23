@@ -182,11 +182,12 @@ function Journey(props) {
 
   const content = (
     <div className="future-journey d-flex align-items-center justify-content-center">
-      <div className="background-map">
+      <div className={`${isMobile ? 'mobile-background-map' : 'background-map'}`}>
         <img src={mapImage} alt="background map" />
         <DropDown
           color="blue"
           options={dropdownOptions}
+          isMobile={isMobile}
         />
       </div>
     </div>

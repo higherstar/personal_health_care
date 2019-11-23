@@ -86,11 +86,13 @@ function ValueBasedHealthCare(props) {
       </p>
       <p><strong>VBHC focuses on the outcomes that matter to patients.</strong></p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={vbhcImage}
         onClick={() => openImageModal(vbhcImage)}
         alt="vbhc description"
       />
+      <br />
+      <br />
       <span>
         To learn more, check out the
         {' '}
@@ -160,18 +162,19 @@ module from the PHC Pharma Starter Pack.
       <h2>Our VBHC@Roche framework</h2>
       <p>Our program is structured to generate insights across key dimensions of our VBHC framework.</p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={frameImage}
         onClick={() => openImageModal(frameImage)}
         alt="framework"
       />
       <br />
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={frameDescImage}
         onClick={() => openImageModal(frameDescImage)}
         alt="framework description"
       />
+      <br />
       <br />
       <span>
 To learn more about VBHC, please go to the

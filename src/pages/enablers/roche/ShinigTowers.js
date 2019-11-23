@@ -180,7 +180,7 @@ function ShiningTowers(props) {
         </strong>
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={shiningTowersImage}
         onClick={() => openImageModal(shiningTowersImage)}
         alt="shiningTowersImage"
@@ -261,7 +261,7 @@ Foster discussion among all relevant
         </div>
       </div>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={assetsImage}
         onClick={() => openImageModal(assetsImage)}
         alt="assetsImage"
@@ -282,7 +282,7 @@ Foster discussion among all relevant
         </div>
       </div>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={assetsOneImage}
         onClick={() => openImageModal(assetsOneImage)}
         alt="assetsOneImage"
@@ -297,7 +297,7 @@ launched in 10 countries around the World will enable critical business drivers.
         initiative aim at demonstrating the feasibility of PHC and integrates PHC solutions.
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={worldMapImage}
         onClick={() => handleWorldMapOpen()}
         alt="worldMapImage"

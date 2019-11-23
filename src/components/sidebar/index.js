@@ -26,6 +26,7 @@ function SideBar(props) {
     isMobile,
     navOptions,
     color,
+    handleMenuClick,
   } = props;
 
   const [state, setState] = useState(false);
@@ -304,6 +305,9 @@ function SideBar(props) {
           Last Updated October 2019
         </span>
       </div>
+      {isMobile && (
+        <div className="page-content-cover" onClick={handleMenuClick} style={{ left: collapsed ? 0 : 318 }} />
+      )}
     </div>
   );
 }
@@ -313,12 +317,14 @@ SideBar.propTypes = {
   collapsed: PropTypes.bool,
   navOptions: PropTypes.array.isRequired,
   color: PropTypes.string,
+  handleMenuClick: PropTypes.func,
 };
 
 SideBar.defaultProps = {
   isMobile: false,
   collapsed: false,
   color: '',
+  handleMenuClick: () => null,
 };
 
 export default SideBar;

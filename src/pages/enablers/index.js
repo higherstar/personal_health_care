@@ -118,9 +118,9 @@ function Enablers(props) {
 
   const content = (
     <div className="system-enablers d-flex align-items-center justify-content-center">
-      <div className="background-map">
+      <div className={`${isMobile ? 'mobile-background-map' : 'background-map'}`}>
         <img src={mapImage} alt="background map" />
-        <DropDown options={dropdownOptions} color="yellow" />
+        <DropDown options={dropdownOptions} color="yellow" isMobile={isMobile} />
       </div>
     </div>
   );

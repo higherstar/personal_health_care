@@ -273,7 +273,10 @@ function Acknowledgements(props) {
   const { isMobile, mobileCollapsed, handleMenuClick } = props;
 
   const content = (
-    <div className="acknowledgements d-flex align-items-center justify-content-center">
+    <div
+      className="acknowledgements d-flex align-items-center justify-content-center"
+      onClick={!mobileCollapsed && handleMenuClick}
+    >
       <div className="background-map">
         <img src={mapImage} alt="background map" />
       </div>

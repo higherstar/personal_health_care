@@ -81,7 +81,7 @@ function Context(props) {
         , as shown below:
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={engineImage}
         onClick={() => openImageModal(engineImage)}
         alt="engine"
@@ -96,7 +96,7 @@ function Context(props) {
       </h2>
       <br />
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={acceleratingImage}
         onClick={() => openImageModal(acceleratingImage)}
         alt="accelerating"
@@ -116,7 +116,7 @@ function Context(props) {
         <strong>PHC Market Maturity Self Assessment </strong>
       </a>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={assessmentImage}
         onClick={() => openImageModal(assessmentImage)}
         alt="assessmentImage"
@@ -126,7 +126,7 @@ function Context(props) {
         <strong>PHC Strategy Builder</strong>
       </a>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={strategyImage}
         onClick={() => openImageModal(strategyImage)}
         alt="strategyImage"
@@ -140,7 +140,7 @@ function Context(props) {
 PHC in your market
       </strong>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={marketImage}
         alt="marketImage"
         onClick={() => openImageModal(marketImage)}

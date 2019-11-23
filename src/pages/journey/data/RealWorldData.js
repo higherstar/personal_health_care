@@ -269,7 +269,7 @@ RWD is a key component of our PHC vision and strategy because:
         Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={rocheUseImage}
         onClick={() => openImageModal(rocheUseImage)}
         alt="roche use"

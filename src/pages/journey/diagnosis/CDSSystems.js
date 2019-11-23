@@ -243,7 +243,7 @@ function DiagnosisCDSSystems(props) {
         <strong>actively participate and their care plan.</strong>
       </p>
       <img
-        className="main-content-image d-none d-md-block d-sm-none"
+        className="main-content-image"
         src={cdsDescImage}
         onClick={() => openImageModal(cdsDescImage)}
         alt="cds desc"
@@ -261,7 +261,7 @@ function DiagnosisCDSSystems(props) {
         Decision Support by providing relevant information and including a patient interface.
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={customerImage}
         onClick={() => openImageModal(customerImage)}
         alt="customer"
@@ -272,7 +272,7 @@ function DiagnosisCDSSystems(props) {
         are represented at the time of clinical decision making.
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={businessImage}
         onClick={() => openImageModal(businessImage)}
         alt="business"
@@ -311,9 +311,14 @@ function DiagnosisCDSSystems(props) {
             an ecosystems of workflow products, apps and services. It is comprised of:
           </p>
         </div>
-        <div className="col-lg-4 text-content-img img-floodlight">
+        <div className="col-lg-4 d-none d-lg-block d-sm-none text-content-img img-floodlight">
           <img className="main-content-image" src={navifyImage} alt="navify" />
         </div>
+      </div>
+      <div className="col-sm-12 d-lg-none d-sm-block text-content-img img-floodlight">
+        <img className="main-content-image" src={navifyImage} alt="navify" />
+        <br />
+        <br />
       </div>
       <li>
         <strong>NAVIFY Tumor Board</strong>

@@ -54,12 +54,10 @@ function PageContainer(props) {
             isMobile={isMobile}
             collapsed={isMobile ? mobileCollapsed : collapsed}
             color={color}
+            handleMenuClick={handleMenuClick}
           />
         </div>
         <div className="page-content" style={isMobile ? pageContentMobileStyle : pageContentStyle}>
-          {isMobile && !mobileCollapsed && (
-            <div className="page-content-cover" onClick={handleMenuClick} />
-          )}
           {page}
         </div>
       </div>

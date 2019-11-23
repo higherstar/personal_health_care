@@ -135,4 +135,15 @@
       z-index: 4;
     }
   }
+
+  .page-content-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 318px;
+    background: #0066cc9e;
+    z-index: 100;
+    transition: 0.3s all ease;
+  }
 }

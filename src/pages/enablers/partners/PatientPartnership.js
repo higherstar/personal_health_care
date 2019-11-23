@@ -76,7 +76,7 @@ function PatientPartnership(props) {
         orchestrating Roche patient partnerships, both internally and externally.
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={descriptionImage}
         onClick={() => openImageModal(descriptionImage)}
         alt="description"
@@ -101,7 +101,7 @@ function PatientPartnership(props) {
         Strategic Pillars (2019 – 2021)
       </h2>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={pillarsImage}
         onClick={() => openImageModal(pillarsImage)}
         alt="pillars"
@@ -111,7 +111,7 @@ function PatientPartnership(props) {
         Tactics Overview (2019 – 2021)
       </h2>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={tacticsImage}
         onClick={() => openImageModal(tacticsImage)}
         alt="tactics"
@@ -134,7 +134,7 @@ function PatientPartnership(props) {
         teams & activities.
       </p>
       <img
-        className="main-content-image d-none d-sm-none d-md-block"
+        className="main-content-image"
         src={lifecycleImage}
         onClick={() => openImageModal(lifecycleImage)}
         alt="lifecycle"

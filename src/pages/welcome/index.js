@@ -287,7 +287,10 @@ function Welcome(props) {
   );
 
   const content = (
-    <div className="welcome page-wrapper d-flex align-items-center justify-content-center">
+    <div
+      className="welcome page-wrapper d-flex align-items-center justify-content-center"
+      onClick={!mobileCollapsed && handleMenuClick}
+    >
       <div className={`${isMobile ? 'mobile-background-map' : 'background-map'}`}>
         <img src={mapImage} alt="background map" />
         <DropDown options={journeyOptions} color="blue" isMobile={isMobile} />
