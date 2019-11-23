@@ -35,6 +35,7 @@ function TopBar(props) {
   const titleMobileStyle = {
     fontSize: isMobile ? 20 : 28,
     padding: '5px 10px 5px 10px',
+    textAlign: 'center',
   };
 
   return (
