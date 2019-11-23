@@ -22,6 +22,7 @@ function DropDown(props) {
     color,
     type,
     options,
+    isMobile,
   } = props;
 
   const [state, setState] = useState(options.map((option) => ({
@@ -85,10 +86,21 @@ function DropDown(props) {
     display: isCollapsed(option) && 'none',
   });
 
+  const dropdownMobileScale = (option) => ({
+    width: 'fit-content',
+    transform: 'scale(0.75)',
+    transformOrigin: 'top left',
+    zIndex: isCollapsed(option) ? 1 : 5,
+  });
+
   return (
     <>
       {options.map((option) => (
-        <div className={`d-flex align-items-center custom-dropdown ${option.className}`} key={option.className}>
+        <div
+          className={`d-flex align-items-center custom-dropdown ${option.className}`}
+          style={isMobile ? dropdownMobileScale(option) : null}
+          key={option.className}
+        >
           <div
             onClick={() => onClick(option)}
             className="d-flex align-items-center justify-content-center drop-button"
@@ -120,12 +132,14 @@ DropDown.propTypes = {
   color: PropTypes.string,
   type: PropTypes.string,
   options: PropTypes.array,
+  isMobile: PropTypes.bool,
 };
 
 DropDown.defaultProps = {
   color: '',
   type: '',
   options: [],
+  isMobile: false,
 };
 
 export default DropDown;

@@ -40,7 +40,7 @@ function TopBar(props) {
   return (
     <div
       className="top-bar d-flex align-items-center justify-content-center"
-      style={{ background }}
+      style={{ background, height: isMobile ? 'fit-content' : 52 }}
     >
       <div className="side-bar-header d-flex align-items-center">
         {!isMobile && (

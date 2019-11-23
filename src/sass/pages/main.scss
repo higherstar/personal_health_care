@@ -30,6 +30,17 @@ span {
   }
 }
 
+
+.mobile-background-map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
 .detail-map {
   height: 80%;
   position: absolute;
@@ -81,7 +92,7 @@ span {
 }
 
 .partners-dropdown {
-  width: 135px;
+  width: 135px !important;
   position: absolute;
   top: 2%;
   left: 58%;
@@ -100,3 +111,31 @@ span {
     background: #ED8B00;
   }
 }
+
+@media (max-width: 800px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px !important;
+  }
+
+  .roche-dropdown {
+    top: 2%;
+    left: 75%;
+  }
+
+  .partners-dropdown {
+    top: 1%;
+    left: 52%;
+  }
+
+  .access-dropdown {
+    top: 71%;
+    left: 43%;
+  }
+
+  .data-dropdown {
+    top: 48%;
+    left: 45%;
+  }
+}
+

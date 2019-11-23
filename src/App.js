@@ -61,7 +61,9 @@ function App(props) {
           from="/phc/future-patient-journey/diagnosis"
           to="/phc/future-patient-journey/diagnosis/overview"
         />
-        {Routes({ ...props, isMobile, mobileCollapsed })}
+        {Routes({
+          ...props, isMobile, mobileCollapsed, handleMenuClick,
+        })}
       </Switch>
     </>
   );

@@ -7,7 +7,13 @@ import backgroundImage from '../../assets/common/background.png';
 
 function PageContainer(props) {
   const {
-    navOptions, page, title, color, isMobile, mobileCollapsed,
+    navOptions,
+    page,
+    title,
+    color,
+    isMobile,
+    mobileCollapsed,
+    handleMenuClick,
   } = props;
 
   const [collapsed, setCollapsed] = useState(false);
@@ -25,8 +31,8 @@ function PageContainer(props) {
   };
 
   const pageContentMobileStyle = {
-    width: collapsed ? '100vw' : 'calc(100vw - 318px)',
-    left: collapsed ? 0 : '318px',
+    width: '100vw',
+    left: mobileCollapsed ? 0 : 254,
   };
 
   return (
@@ -51,6 +57,9 @@ function PageContainer(props) {
           />
         </div>
         <div className="page-content" style={isMobile ? pageContentMobileStyle : pageContentStyle}>
+          {isMobile && !mobileCollapsed && (
+            <div className="page-content-cover" onClick={handleMenuClick} />
+          )}
           {page}
         </div>
       </div>
@@ -65,6 +74,7 @@ PageContainer.propTypes = {
   color: PropTypes.string,
   isMobile: PropTypes.bool,
   mobileCollapsed: PropTypes.bool,
+  handleMenuClick: PropTypes.func,
 };
 
 PageContainer.defaultProps = {
@@ -72,6 +82,7 @@ PageContainer.defaultProps = {
   color: '',
   isMobile: false,
   mobileCollapsed: false,
+  handleMenuClick: () => null,
 };
 
 export default PageContainer;

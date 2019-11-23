@@ -218,7 +218,7 @@ const settings = {
 };
 
 function Welcome(props) {
-  const { isMobile, mobileCollapsed } = props;
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
 
   const [modalOpen, setModalOpen] = useState(true);
 
@@ -257,7 +257,7 @@ function Welcome(props) {
         that are important to keep in mind. Check out the video below to learn about how we envision the
         future patient journey to be different from the existing one and how we built the PHC systems map.
       </p>
-      <div className="welcome-videos">
+      <div className="welcome-videos" style={{ width: isMobile ? '100%' : '50%', minWidth: isMobile ? 'unset' : 500 }}>
         <Slider {...settings}>
           {videos.map((video, index) => (
             <img src={video} alt="video" key={`video_${index}`} />
@@ -266,14 +266,21 @@ function Welcome(props) {
       </div>
       <br />
       <br />
-      <div className="explore-button d-flex align-items-center justify-content-center" onClick={handleCloseClick}>
-        <span>Explore the PHC-Enabled Patient Journey</span>
+      <div
+        className="explore-button d-flex align-items-center justify-content-center"
+        onClick={handleCloseClick}
+        style={{ width: isMobile ? '100%' : '40%', minWidth: isMobile && 'unset' }}
+      >
+        <span style={{ fontSize: isMobile ? 16 : 20 }}>Explore the PHC-Enabled Patient Journey</span>
       </div>
-      <div className="disclaimer">
+      <div
+        className="disclaimer"
+        style={{ position: isMobile ? 'relative' : 'absolute', borderRadius: isMobile ? 0 : '0 0 10px 10px' }}
+      >
         <span>
-          THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL
-          UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY
-          PARTNERS OF THE LOCAL AFFILIATE.
+            THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL
+            UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY
+            PARTNERS OF THE LOCAL AFFILIATE.
         </span>
       </div>
     </div>
@@ -281,12 +288,12 @@ function Welcome(props) {
 
   const content = (
     <div className="welcome page-wrapper d-flex align-items-center justify-content-center">
-      <div className="background-map">
+      <div className={`${isMobile ? 'mobile-background-map' : 'background-map'}`}>
         <img src={mapImage} alt="background map" />
-        <DropDown options={journeyOptions} color="blue" />
-        <DropDown options={enablersOptions} color="yellow" />
+        <DropDown options={journeyOptions} color="blue" isMobile={isMobile} />
+        <DropDown options={enablersOptions} color="yellow" isMobile={isMobile} />
       </div>
-      <CustomModal open={modalOpen} content={modalContent} handleCloseClick={handleCloseClick} />
+      <CustomModal isMobile={isMobile} open={modalOpen} content={modalContent} handleCloseClick={handleCloseClick} />
     </div>
   );
 
@@ -298,6 +305,7 @@ function Welcome(props) {
       color="blue"
       isMobile={isMobile}
       mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
@@ -305,6 +313,7 @@ function Welcome(props) {
 Welcome.propTypes = {
   isMobile: PropTypes.bool.isRequired,
   mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
 };
 
 export default Welcome;
