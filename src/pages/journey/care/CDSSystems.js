@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -153,7 +154,9 @@ const dropdownOptions = [
   },
 ];
 
-function CareCDSSystems() {
+function CareCDSSystems(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -411,8 +414,17 @@ function CareCDSSystems() {
       navOptions={navOptions}
       title="Personalised care plan"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+CareCDSSystems.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default CareCDSSystems;

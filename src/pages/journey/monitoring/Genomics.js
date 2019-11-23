@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -170,7 +171,9 @@ const dropdownOptions = [
   },
 ];
 
-function MonitoringGenomics() {
+function MonitoringGenomics(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [connectionOpen, setConnectionOpen] = useState(false);
 
   const openConnectionModal = () => {
@@ -426,8 +429,17 @@ Level of funding of biomarker and NGS tests by the
       navOptions={navOptions}
       title="PERSONALISED REMOTE MONITORING & CARE"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+MonitoringGenomics.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default MonitoringGenomics;

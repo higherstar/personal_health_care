@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -143,7 +144,9 @@ const dropdownOptions = [
   },
 ];
 
-function RealWorldData() {
+function RealWorldData(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -411,8 +414,17 @@ RWD is a key component of our PHC vision and strategy because:
       navOptions={navOptions}
       title="Data & Insights"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+RealWorldData.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default RealWorldData;

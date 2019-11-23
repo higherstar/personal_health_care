@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
 import mapImage from '../../../assets/common/data.png';
@@ -26,7 +28,9 @@ const navOptions = [
   },
 ];
 
-function DataInsights() {
+function DataInsights(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="data-insights page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -42,8 +46,17 @@ function DataInsights() {
       navOptions={navOptions}
       title="Data & Insights"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+DataInsights.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default DataInsights;

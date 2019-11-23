@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -174,7 +175,9 @@ const dropdownOptions = [
   },
 ];
 
-function MonitoringCDSSystems() {
+function MonitoringCDSSystems(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -433,8 +436,17 @@ function MonitoringCDSSystems() {
       navOptions={navOptions}
       title="PERSONALISED REMOTE MONITORING & CARE"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+MonitoringCDSSystems.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default MonitoringCDSSystems;

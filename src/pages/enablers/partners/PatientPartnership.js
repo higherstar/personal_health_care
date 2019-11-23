@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -52,7 +53,9 @@ const navOptions = [
   },
 ];
 
-function PatientPartnership() {
+function PatientPartnership(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
 
@@ -159,8 +162,22 @@ function PatientPartnership() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Partners" color="yellow" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Partners"
+      color="yellow"
+    />
   );
 }
+
+PatientPartnership.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default PatientPartnership;

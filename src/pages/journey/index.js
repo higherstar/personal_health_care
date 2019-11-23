@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../components/pagecontainer';
 import DropDown from '../../atoms/DropDown';
@@ -176,7 +177,9 @@ const dropdownOptions = [
   },
 ];
 
-function Journey() {
+function Journey(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="future-journey d-flex align-items-center justify-content-center">
       <div className="background-map">
@@ -190,8 +193,22 @@ function Journey() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Future patient journey" color="blue" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Future patient journey"
+      color="blue"
+    />
   );
 }
+
+Journey.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Journey;

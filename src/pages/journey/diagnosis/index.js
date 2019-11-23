@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 
@@ -75,14 +76,28 @@ const navOptions = [
   },
 ];
 
-function Diagnosis() {
+function Diagnosis(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <h1>Early Personalised Diagnosis</h1>
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+    />
   );
 }
+
+Diagnosis.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Diagnosis;

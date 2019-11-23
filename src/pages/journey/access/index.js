@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -57,7 +58,9 @@ const navOptions = [
   },
 ];
 
-function Access() {
+function Access(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="access page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -73,8 +76,17 @@ function Access() {
       navOptions={navOptions}
       title="Rapid Access to Personalised Interventions"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+Access.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Access;

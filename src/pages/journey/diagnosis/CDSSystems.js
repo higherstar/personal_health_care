@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -185,7 +186,9 @@ const dropdownOptions = [
 ];
 
 
-function DiagnosisCDSSystems() {
+function DiagnosisCDSSystems(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -434,8 +437,22 @@ function DiagnosisCDSSystems() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Early, personalised diagnosis" color="blue" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Early, personalised diagnosis"
+      color="blue"
+    />
   );
 }
+
+DiagnosisCDSSystems.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default DiagnosisCDSSystems;

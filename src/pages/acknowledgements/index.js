@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../components/pagecontainer';
 import CustomModal from '../../components/modals/CustomModal';
@@ -84,47 +85,193 @@ const modalContent = (
       We acknowledge our colleagues for their contribution:
     </h3>
     <div className="reference-content d-flex justify-content-between align-items-start flex-md-wrap">
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
-      <p><strong>John Doe,</strong> PHC CoE</p>
-      <p><strong>Jane Doe,</strong> PDMA</p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
+      <p>
+        <strong>John Doe,</strong>
+        {' '}
+PHC CoE
+      </p>
+      <p>
+        <strong>Jane Doe,</strong>
+        {' '}
+PDMA
+      </p>
     </div>
   </div>
 );
 
-function Acknowledgements() {
+function Acknowledgements(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="acknowledgements d-flex align-items-center justify-content-center">
       <div className="background-map">
@@ -135,8 +282,22 @@ function Acknowledgements() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Acknowledgments (Coming soon)" color="blue" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Acknowledgments (Coming soon)"
+      color="blue"
+    />
   );
 }
+
+Acknowledgements.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Acknowledgements;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -61,7 +62,9 @@ const navOptions = [
   },
 ];
 
-function ValueBasedHealthCare() {
+function ValueBasedHealthCare(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
 
@@ -91,9 +94,7 @@ function ValueBasedHealthCare() {
       <span>
         To learn more, check out the
         {' '}
-        <a href="https://roche.csod.com/ui/lms-learning-
-        details/app/course/5ebef49d-7151-4d92-90b3-f5c216f80438"
-        >
+        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/5ebef49d-7151-4d92-90b3-f5c216f80438">
         “Value-Based HealthCare”
         </a>
         {' '}
@@ -203,8 +204,17 @@ To learn more about VBHC, please go to the
       navOptions={navOptions}
       title="Rapid Access to Personalised Interventions"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+ValueBasedHealthCare.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default ValueBasedHealthCare;

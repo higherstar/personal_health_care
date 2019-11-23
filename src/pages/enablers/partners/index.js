@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -53,7 +54,9 @@ const mainContent = (
   </div>
 );
 
-function Partners() {
+function Partners(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="enablers-partners d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -64,8 +67,22 @@ function Partners() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Partners" color="yellow" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Partners"
+      color="yellow"
+    />
   );
 }
+
+Partners.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Partners;

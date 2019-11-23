@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -143,7 +144,9 @@ const countryData = [
   },
 ];
 
-function ShiningTowers() {
+function ShiningTowers(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [worldMapModalOpen, setWorldMapModalOpen] = useState(false);
@@ -337,8 +340,22 @@ launched in 10 countries around the World will enable critical business drivers.
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Roche initiatives" color="yellow" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Roche initiatives"
+      color="yellow"
+    />
   );
 }
+
+ShiningTowers.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default ShiningTowers;

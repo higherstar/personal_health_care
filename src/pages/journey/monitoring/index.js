@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -67,7 +68,9 @@ const navOptions = [
   },
 ];
 
-function Monitoring() {
+function Monitoring(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="monitoring page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -83,8 +86,17 @@ function Monitoring() {
       navOptions={navOptions}
       title="PERSONALISED REMOTE MONITORING & CARE"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+Monitoring.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Monitoring;

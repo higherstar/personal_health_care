@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -47,7 +48,9 @@ const navOptions = [
   },
 ];
 
-function CarePlan() {
+function CarePlan(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="care-plan page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -63,8 +66,17 @@ function CarePlan() {
       navOptions={navOptions}
       title="Personalised care plan"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+CarePlan.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default CarePlan;

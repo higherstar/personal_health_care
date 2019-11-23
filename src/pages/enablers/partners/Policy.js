@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -133,7 +134,9 @@ and those we share data with collect, manage and analyze data including
   </>
 );
 
-function Policy() {
+function Policy(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="partners-policy d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -144,8 +147,22 @@ function Policy() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Partners" color="yellow" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Partners"
+      color="yellow"
+    />
   );
 }
+
+Policy.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default Policy;

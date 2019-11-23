@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -164,7 +165,9 @@ const dropdownOptions = [
   },
 ];
 
-function AccessCDSSystems() {
+function AccessCDSSystems(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -423,8 +426,17 @@ function AccessCDSSystems() {
       navOptions={navOptions}
       title="Rapid Access to Personalised Interventions"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+AccessCDSSystems.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default AccessCDSSystems;

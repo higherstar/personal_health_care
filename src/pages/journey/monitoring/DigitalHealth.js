@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -171,7 +172,9 @@ const dropdownOptions = [
   },
 ];
 
-function MonitoringDigitalHealth() {
+function MonitoringDigitalHealth(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -463,8 +466,17 @@ software intended to be used for one or more medical purposes that perform these
       navOptions={navOptions}
       title="PERSONALISED REMOTE MONITORING & CARE"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+MonitoringDigitalHealth.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default MonitoringDigitalHealth;

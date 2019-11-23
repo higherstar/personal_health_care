@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -96,7 +97,9 @@ to all those patients with a similar profile and
   </>
 );
 
-function DataOverview() {
+function DataOverview(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="data-overview page-wrapper d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -112,8 +115,17 @@ function DataOverview() {
       navOptions={navOptions}
       title="Data & Insights"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+DataOverview.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default DataOverview;

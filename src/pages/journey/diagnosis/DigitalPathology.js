@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -180,7 +181,9 @@ const dropdownOptions = [
   },
 ];
 
-function DiagnosisDigitalPathology() {
+function DiagnosisDigitalPathology(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [connectionOpen, setConnectionOpen] = useState(false);
 
   const openConnectionModal = () => {
@@ -391,8 +394,22 @@ We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital P
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Early, personalised diagnosis" color="blue" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Early, personalised diagnosis"
+      color="blue"
+    />
   );
 }
+
+DiagnosisDigitalPathology.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default DiagnosisDigitalPathology;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -148,7 +149,9 @@ const dropdownOptions = [
   },
 ];
 
-function CareDiagnostics() {
+function CareDiagnostics(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [connectionOpen, setConnectionOpen] = useState(false);
 
   const openConnectionModal = () => {
@@ -402,8 +405,17 @@ Roche makes these diagnostics available to more patients faster through its comm
       navOptions={navOptions}
       title="Personalised care plan"
       color="blue"
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
     />
   );
 }
+
+CareDiagnostics.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default CareDiagnostics;

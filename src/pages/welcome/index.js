@@ -301,11 +301,11 @@ function Welcome(props) {
     <PageContainer
       page={content}
       navOptions={navOptions}
-      title="Welcome"
-      color="blue"
       isMobile={isMobile}
       mobileCollapsed={mobileCollapsed}
       handleMenuClick={handleMenuClick}
+      title="Welcome"
+      color="blue"
     />
   );
 }

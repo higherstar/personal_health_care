@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer';
 import MainContent from '../../../components/maincontent';
@@ -172,7 +173,9 @@ are part of a consortium focusing on developing
   </>
 );
 
-function StakeHolders() {
+function StakeHolders(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const content = (
     <div className="partners-stakeholders d-flex align-items-center justify-content-center">
       <div className="detail-map">
@@ -183,8 +186,22 @@ function StakeHolders() {
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Partners" color="yellow" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Partners"
+      color="yellow"
+    />
   );
 }
+
+StakeHolders.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default StakeHolders;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import PageContainer from '../../../components/pagecontainer/index';
 import MainContent from '../../../components/maincontent';
@@ -181,7 +182,9 @@ const dropdownOptions = [
   },
 ];
 
-function DiagnosisDigitalHealth() {
+function DiagnosisDigitalHealth(props) {
+  const { isMobile, mobileCollapsed, handleMenuClick } = props;
+
   const [image, setImage] = useState('');
   const [imageOpen, setImageOpen] = useState(false);
   const [connectionOpen, setConnectionOpen] = useState(false);
@@ -468,8 +471,22 @@ software intended to be used for one or more medical purposes that perform these
   );
 
   return (
-    <PageContainer page={content} navOptions={navOptions} title="Early, personalised diagnosis" color="blue" />
+    <PageContainer
+      page={content}
+      navOptions={navOptions}
+      isMobile={isMobile}
+      mobileCollapsed={mobileCollapsed}
+      handleMenuClick={handleMenuClick}
+      title="Early, personalised diagnosis"
+      color="blue"
+    />
   );
 }
+
+DiagnosisDigitalHealth.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  mobileCollapsed: PropTypes.bool.isRequired,
+  handleMenuClick: PropTypes.func.isRequired,
+};
 
 export default DiagnosisDigitalHealth;
