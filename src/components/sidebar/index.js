@@ -57,6 +57,9 @@ function SideBar(props) {
   let sideBarBackground = navOptions[0].level === 3 ? 'transparent' : '#FFFFFFAD';
   if (isMobile) {
     sideBarBackground = '#ffffffd6';
+    if (navOptions[0].level === 3) {
+      sideBarBackground = '#dcdcdcad';
+    }
   }
   const sideBarStyle = {
     width: collapsed ? '93px' : '318px',
