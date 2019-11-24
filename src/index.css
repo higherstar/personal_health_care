@@ -873,7 +873,8 @@ span span {
     .acknowledgements .custom-modal-wrapper .custom-modal-container, .abbreviation .custom-modal-wrapper .custom-modal-container {
       width: 100% !important;
       left: 0 !important;
-      border-radius: 0 !important; }
+      border-radius: 0 !important;
+      top: 40px !important; }
       .acknowledgements .custom-modal-wrapper .custom-modal-container .custom-modal-header, .abbreviation .custom-modal-wrapper .custom-modal-container .custom-modal-header {
         border-radius: 0; }
   .reference-content {
