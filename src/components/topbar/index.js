@@ -33,15 +33,16 @@ function TopBar(props) {
   }
 
   const titleMobileStyle = {
-    fontSize: isMobile ? 20 : 28,
+    fontSize: isMobile ? 16 : 28,
     padding: '5px 10px 5px 10px',
     textAlign: 'center',
+    lineHeight: '18px',
   };
 
   return (
     <div
       className="top-bar d-flex align-items-center justify-content-center"
-      style={{ background, height: isMobile ? 70 : 52 }}
+      style={{ background, height: isMobile ? 40 : 52 }}
     >
       <div className="side-bar-header d-flex align-items-center">
         {!isMobile && (
