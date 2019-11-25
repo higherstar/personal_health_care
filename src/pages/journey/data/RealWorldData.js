@@ -187,11 +187,10 @@ function RealWorldData(props) {
         outcomes (PROs), non-investigational studies, social media, etc.
       </p>
       <span>
-        To learn more, check out the
+        To learn more, check out the “Introduction to Real-World Data” modules from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">“Introduction to Real-World Data”</a>
-        {' '}
-        modules from the PHC Pharma Starter Pack.
+        <a href="https://go.roche.com/PHCStarterPack">PHC Pharma Starter Pack</a>
+        .
       </span>
       <br />
       <br />

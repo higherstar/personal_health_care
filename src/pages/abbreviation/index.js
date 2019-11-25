@@ -284,12 +284,17 @@ const modalContent = (
         <span>VBHC: </span>
         Value-Based HealthCare
       </p>
-    </div>
-    <div className="roche-specific">
-      *
-      <a href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources?authuser=0">
-        Roche-specific terms
-      </a>
+      <span>
+        <i>*Roche-specific terms</i>
+        <br />
+        <br />
+        For more information, consult our
+        {' '}
+        <a href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources?authuser=0">
+          lexicon
+        </a>
+.
+      </span>
     </div>
   </div>
 );
