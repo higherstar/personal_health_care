@@ -15,7 +15,7 @@ function ConnectionModal(props) {
   };
 
   return (
-    <div className={`connection-modal custom-modal-wrapper ${className}`} style={modalStyle}>
+    <div className={`connection-modal custom-modal-wrapper ${className}`} style={modalStyle} onClick={handleClose}>
       <div className="custom-modal-container phc-container">
         <div className="custom-modal-header d-flex align-items-center justify-content-start">
           {header}
@@ -23,7 +23,10 @@ function ConnectionModal(props) {
             <span>&times;</span>
           </button>
         </div>
-        <div className="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap">
+        <div
+          className="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap"
+          onClick={(e) => e.stopPropagation()}
+        >
           {content}
         </div>
       </div>

@@ -241,7 +241,8 @@ function CareCDSSystems(props) {
         alt="business"
       />
       <br />
-      <strong className="d-none d-sm-none d-md-block">Click button below to see:</strong>
+      <br />
+      <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics
@@ -359,6 +360,15 @@ function CareCDSSystems(props) {
               <img src={zoomOutIcon} alt="zoom out" />
               {' '}
             </div>
+          </div>
+          <div className="zoom-in-map position-absolute d-md-none d-sm-block">
+            <DropDown
+              color="red"
+              type="journey"
+              options={dropdownOptions}
+              isMobile={isMobile}
+            />
+            <img src={journeyConnection} alt="cds connection zoom out" />
           </div>
         </>
       ) : (

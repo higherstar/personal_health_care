@@ -239,7 +239,7 @@ function DiagnosisDigitalPathology(props) {
       </span>
       <br />
       <br />
-      <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
+      <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics
@@ -340,6 +340,15 @@ We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital P
               <img src={zoomOutIcon} alt="zoom out" />
               {' '}
             </div>
+          </div>
+          <div className="zoom-in-map position-absolute d-md-none d-sm-block">
+            <DropDown
+              color="red"
+              type="journey"
+              options={dropdownOptions}
+              isMobile={isMobile}
+            />
+            <img src={journeyConnection} alt="cds connection zoom out" />
           </div>
         </>
       ) : (

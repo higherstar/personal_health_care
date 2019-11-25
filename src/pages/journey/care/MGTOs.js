@@ -200,7 +200,7 @@ function MGTOs() {
         Giving patients MGT early can potentially prolong survival.
       </p>
       <br />
-      <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
+      <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics

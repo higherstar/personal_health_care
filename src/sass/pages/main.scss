@@ -126,6 +126,37 @@ span {
     overflow-x: hidden;
   }
 
+  .connection-modal {
+    width: 100vw;
+    position: fixed;
+    margin-top: 110px;
+    left: 0;
+
+    .custom-modal-container {
+      top: -110px;
+    }
+
+    .custom-modal-content > img {
+      width: 100vw !important;
+      pointer-events: none;
+    }
+
+    .zoom-in-map {
+      top: 100% !important;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .zoom-in-map > img {
+      width: 100vw !important;
+      pointer-events: none;
+    }
+
+    .zoom-out-button {
+      display: none !important;
+    }
+  }
+
   .custom-modal-wrapper {
     height: calc(100vh - 70px) !important;
     top: -40px !important;
@@ -175,7 +206,8 @@ span {
     }
 
     .connection-button {
-      display: none !important;
+      font-size: 13px !important;
+      height: 31px !important;
     }
   }
 

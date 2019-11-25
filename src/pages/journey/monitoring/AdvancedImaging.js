@@ -222,7 +222,7 @@ function MonitoringAdvancedImaging(props) {
         These could deliver significant savings to health systems, or allow emerging health
         systems to deliver advanced care with a lower investment in infrastructure and other system resources.
       </p>
-      <strong className="d-none d-md-block d-sm-none">Click button below to see:</strong>
+      <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics
@@ -366,6 +366,15 @@ function MonitoringAdvancedImaging(props) {
               <img src={zoomOutIcon} alt="zoom out" />
               {' '}
             </div>
+          </div>
+          <div className="zoom-in-map position-absolute d-md-none d-sm-block">
+            <DropDown
+              color="red"
+              type="journey"
+              options={dropdownOptions}
+              isMobile={isMobile}
+            />
+            <img src={journeyConnection} alt="cds connection zoom out" />
           </div>
         </>
       ) : (

@@ -32,7 +32,8 @@ function DropDown(props) {
 
   const isCollapsed = (option) => state.find((s) => s.id === option.className).collapsed;
 
-  const onClick = (option) => {
+  const onClick = (e, option) => {
+    e.stopPropagation();
     const newState = state.find((s) => s.id === option.className);
     newState.collapsed = !isCollapsed(option);
 
@@ -102,7 +103,7 @@ function DropDown(props) {
           key={option.className}
         >
           <div
-            onClick={() => onClick(option)}
+            onClick={(e) => onClick(e, option)}
             className="d-flex align-items-center justify-content-center drop-button"
             style={buttonStyle(option)}
           >
@@ -111,7 +112,7 @@ function DropDown(props) {
           <div
             className="dropdown-title d-flex align-items-center"
             style={titleStyle(option)}
-            onClick={() => onClick(option)}
+            onClick={(e) => onClick(e, option)}
           >
             <span>{option.title}</span>
           </div>

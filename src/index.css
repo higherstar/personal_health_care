@@ -830,6 +830,25 @@ span span {
     top: 40px !important;
     overflow-y: auto;
     overflow-x: hidden; }
+  .connection-modal {
+    width: 100vw;
+    position: fixed;
+    margin-top: 110px;
+    left: 0; }
+    .connection-modal .custom-modal-container {
+      top: -110px; }
+    .connection-modal .custom-modal-content > img {
+      width: 100vw !important;
+      pointer-events: none; }
+    .connection-modal .zoom-in-map {
+      top: 100% !important;
+      overflow-x: hidden;
+      overflow-y: auto; }
+    .connection-modal .zoom-in-map > img {
+      width: 100vw !important;
+      pointer-events: none; }
+    .connection-modal .zoom-out-button {
+      display: none !important; }
   .custom-modal-wrapper {
     height: calc(100vh - 70px) !important;
     top: -40px !important; }
@@ -860,7 +879,8 @@ span span {
     .main-content .main-content-title {
       font-size: 20px !important; }
     .main-content .connection-button {
-      display: none !important; }
+      font-size: 13px !important;
+      height: 31px !important; }
   .detail-map {
     height: 50%;
     top: 0;
