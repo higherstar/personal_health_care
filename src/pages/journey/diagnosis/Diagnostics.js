@@ -296,16 +296,12 @@ Roche makes these diagnostics available to more patients faster through its comm
         predictive diagnostics identifying those patients who are more likely to respond to specific therapies.
       </p>
       <span>
-        To learn more, check out the
+        To learn more, check out the “Diagnostics in Personalised Healthcare” module from the
         {' '}
-        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/
-        f4373aea-146c-47fc-8d5c-b8ede371e1d6"
-        >
-“Diagnostics in Personalised Healthcare”
+        <a href="https://go.roche.com/PHCStarterPack">
+          PHC Pharma Starter Pack
         </a>
-        {' '}
-        module
-        from the PHC Pharma Starter Pack.
+        .
       </span>
       <br />
       <br />

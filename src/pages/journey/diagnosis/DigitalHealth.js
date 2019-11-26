@@ -243,12 +243,12 @@ Connected drug administration and delivery
       <span>
         To learn more, check out
         the
+        “Digital Health and Software as a Medical Device” module from the
         {' '}
-        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/530ba4c4-5a27-42a2-b2aa-abd7d91cc80d">
-          “Digital Health and Software as a Medical Device”
+        <a href="https://go.roche.com/PHCStarterPack">
+          PHC Pharma Starter Pack
         </a>
-        {' '}
-        module from the PHC Pharma Starter Pack.
+        .
       </span>
       <br />
       <br />

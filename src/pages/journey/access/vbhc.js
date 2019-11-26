@@ -94,13 +94,12 @@ function ValueBasedHealthCare(props) {
       <br />
       <br />
       <span>
-        To learn more, check out the
+        To learn more, check out the “Value-Based HealthCare” module from the
         {' '}
-        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/5ebef49d-7151-4d92-90b3-f5c216f80438">
-        “Value-Based HealthCare”
+        <a href="https://go.roche.com/PHCStarterPack">
+          PHC Pharma Starter Pack
         </a>
-        {' '}
-module from the PHC Pharma Starter Pack.
+        .
       </span>
       <br />
       <br />

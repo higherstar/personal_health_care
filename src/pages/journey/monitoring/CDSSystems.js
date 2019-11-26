@@ -210,13 +210,12 @@ function MonitoringCDSSystems(props) {
       <span>
         Most CDS solutions are currently in Oncology, followed by Neuroscience and Ophthalmology—all
         areas of interest for Roche. For more information, please visit
-        our
+        our “CDS systems” module from the
         {' '}
-        <a href="https://roche.csod.com/ui/lms-learning-details/app/course/959e63fb-6d7e-4eca-9374-13adf79c67a8">
-          “CDS systems”
+        <a href="https://go.roche.com/PHCStarterPack">
+          PHC Pharma Starter Pack
         </a>
-        {' '}
-        module from the PHC Pharma Starter Pack.
+        .
       </span>
       <br />
       <br />

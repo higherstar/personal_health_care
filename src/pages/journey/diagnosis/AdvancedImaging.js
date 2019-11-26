@@ -202,13 +202,12 @@ function DiagnosisAdvancedImaging(props) {
         computed tomography
         (CT), ultrasound, magnetic resonance imaging (MRI) and positron emission tomography (PET) that are used
         for medical diagnosis.
-        To learn more, check out the
+        To learn more, check out the “Meaningful Data at Scale, Advanced Analytics, and Realizing Value” module from the
         {' '}
-        <a href="https://roche.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=017b1e6b-56a4-48b4-a67c-64c69ad38ac2#t=1">
-          “Meaningful Data at Scale, Advanced Analytics, and Realizing Value”
+        <a href="https://go.roche.com/PHCStarterPack">
+          PHC Pharma Starter Pack
         </a>
-        {' '}
-        module from the PHC Pharma Starter Pack.
+        .
       </p>
       <h2>
         Why it is important in PHC
