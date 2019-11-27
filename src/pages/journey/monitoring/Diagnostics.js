@@ -376,6 +376,12 @@ Roche makes these diagnostics available to more patients faster through its comm
             </div>
           </div>
           <div className="zoom-in-map position-absolute d-md-none d-sm-block">
+            <div className="custom-modal-header">
+              <img src={connectionIcon} alt="connection icon" className="zoom-in-icon" />
+              <div className="connection-title zoom-out">
+                <h2>Connections to the PHC-Enabled Patient Journey</h2>
+              </div>
+            </div>
             <DropDown
               color="red"
               type="journey"

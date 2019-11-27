@@ -10,16 +10,19 @@ function Header(props) {
 
   return (
     <>
-      <Link
+      <div
         className={`${isMobile ? 'mobile-header' : 'header'} d-flex align-items-center justify-content-between`}
-        to="/phc/welcome"
       >
         {isMobile && <img className="menu-icon" src={menuIcon} alt="menu" onClick={handleMenuClick} />}
-        <span>
-          {isMobile ? 'PHC Systems Map' : 'Personalised Healthcare-Enabled Patient Journey'}
-        </span>
-        <img className="logo" src={logo} alt="logo" />
-      </Link>
+        <Link to="/phc/welcome">
+          <span>
+            {isMobile ? 'PHC Systems Map' : 'Personalised Healthcare-Enabled Patient Journey'}
+          </span>
+        </Link>
+        <Link to="/phc/welcome">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
+      </div>
     </>
   );
 }

@@ -87,6 +87,12 @@
   width: 100%;
   height: 112px;
   cursor: pointer; }
+  .header a {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .header a:hover {
+      text-decoration: none; }
   .header span {
     width: fit-content;
     height: fit-content;
@@ -101,8 +107,6 @@
     height: 58px;
     margin-left: auto;
     margin-right: 100px; }
-  .header:hover {
-    text-decoration: none; }
 
 .mobile-header {
   width: 100%;
@@ -111,6 +115,12 @@
   justify-content: space-between;
   padding: 0 10px;
   cursor: pointer; }
+  .mobile-header a {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .mobile-header a:hover {
+      text-decoration: none; }
   .mobile-header span {
     width: fit-content;
     height: fit-content;
@@ -125,8 +135,6 @@
   .mobile-header .logo {
     height: 50%;
     margin-right: 5px; }
-  .mobile-header:hover {
-    text-decoration: none; }
 
 .top-bar {
   width: 100%;
@@ -849,13 +857,34 @@ span span {
     position: fixed;
     margin-top: 110px;
     left: 0; }
+    .connection-modal .zoom-in-map {
+      background: #71C6FF; }
+      .connection-modal .zoom-in-map .custom-modal-header {
+        height: 30px;
+        position: absolute;
+        background: white;
+        padding-left: 5px !important;
+        display: flex;
+        align-items: center; }
+        .connection-modal .zoom-in-map .custom-modal-header .zoom-in-icon {
+          height: 100% !important;
+          width: auto !important; }
+        .connection-modal .zoom-in-map .custom-modal-header .connection-title {
+          display: flex;
+          align-items: center;
+          padding-top: 0;
+          margin-left: 10px; }
+          .connection-modal .zoom-in-map .custom-modal-header .connection-title h2 {
+            font-size: 13px;
+            margin: 0;
+            padding-top: 0; }
     .connection-modal .custom-modal-container {
-      top: -110px; }
+      top: -130px; }
     .connection-modal .custom-modal-content > img {
       width: 100vw !important;
       pointer-events: none; }
     .connection-modal .zoom-in-map {
-      top: 100% !important;
+      top: 101% !important;
       overflow-x: hidden;
       overflow-y: auto; }
     .connection-modal .zoom-in-map > img {

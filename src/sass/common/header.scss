@@ -3,6 +3,16 @@
   height: 112px;
   cursor: pointer;
 
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   span {
     width: fit-content;
     height: fit-content;
@@ -20,11 +30,6 @@
     margin-left: auto;
     margin-right: 100px;
   }
-
-  &:hover {
-    text-decoration: none;
-  }
-
 }
 
 .mobile-header {
@@ -34,6 +39,16 @@
   justify-content: space-between;
   padding: 0 10px;
   cursor: pointer;
+
+  a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   span {
     width: fit-content;
@@ -53,9 +68,5 @@
   .logo {
     height: 50%;
     margin-right: 5px;
-  }
-
-  &:hover {
-    text-decoration: none;
   }
 }

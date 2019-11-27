@@ -132,8 +132,38 @@ span {
     margin-top: 110px;
     left: 0;
 
+    .zoom-in-map {
+      background: #71C6FF;
+      .custom-modal-header {
+        height: 30px;
+        position: absolute;
+        background: white;
+        padding-left: 5px !important;
+        display: flex;
+        align-items: center;
+
+        .zoom-in-icon {
+          height: 100% !important;
+          width: auto !important;
+        }
+
+        .connection-title {
+          display: flex;
+          align-items: center;
+          padding-top: 0;
+          margin-left: 10px;
+
+          h2 {
+            font-size: 13px;
+            margin: 0;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+
     .custom-modal-container {
-      top: -110px;
+      top: -130px;
     }
 
     .custom-modal-content > img {
@@ -142,7 +172,7 @@ span {
     }
 
     .zoom-in-map {
-      top: 100% !important;
+      top: 101% !important;
       overflow-x: hidden;
       overflow-y: auto;
     }
