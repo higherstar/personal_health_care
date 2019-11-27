@@ -309,7 +309,7 @@ function SideBar(props) {
         </span>
       </div>
       {isMobile && (
-        <div className="page-content-cover" onClick={handleMenuClick} style={{ left: collapsed ? 0 : 318 }} />
+        <div className="page-content-cover" onClick={handleMenuClick} style={{ left: collapsed ? '-100vw' : 318 }} />
       )}
     </div>
   );

@@ -1,4 +1,8 @@
 .welcome {
+  .custom-modal-container {
+    transform: scale(1) !important;
+  }
+
   .custom-modal-content {
     height: calc(100% - 60px);
   }

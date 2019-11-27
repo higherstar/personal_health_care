@@ -289,7 +289,7 @@ function Welcome(props) {
   const content = (
     <div
       className="welcome page-wrapper d-flex align-items-center justify-content-center"
-      onClick={!mobileCollapsed && handleMenuClick}
+      onClick={!mobileCollapsed ? handleMenuClick : undefined}
     >
       <div className={`${isMobile ? 'mobile-background-map' : 'background-map'}`}>
         <img src={mapImage} alt="background map" />

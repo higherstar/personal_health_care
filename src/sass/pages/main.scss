@@ -242,3 +242,26 @@ span {
   }
 }
 
+@media (max-width: 1400px) {
+  .custom-modal-container {
+    transform: scale(0.65);
+  }
+}
+
+@media (max-width: 1600px) {
+  .custom-modal-container {
+    transform: scale(0.8) !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  .custom-modal-container {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 800px) {
+  .custom-modal-container {
+    transform: scale(1) !important;
+  }
+}
