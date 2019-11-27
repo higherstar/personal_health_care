@@ -196,24 +196,23 @@ function MonitoringGenomics(props) {
         At the molecular level, the expression of certain genes is used as biomarker to determine the
         appropriate therapy for cancer patients. Biomarkers are thus a key component of Personalised
         Healthcare approaches. Appropriate biomarkers are also essential to design clinical studies and
-        to define their intended or expected outcome. Diagnostic methods such as Next-Generation Sequencing
-        (NGS) and Comprehensive Genomic Profiling (CGP) aim at identifying and quantifying disease-relevant
+        to define their intended or expected outcome. Diagnostic methods such as NGS and CGP aim at
+        identifying and quantifying disease-relevant
         biomarkers.
         <br />
         <br />
-        At Roche, we are developing our genomic diagnostics capability, including biomarkers, Next-Generation
-        Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) to further enable personalised
-        healthcare (PHC).
+        At Roche, we are developing our genomic diagnostics capability, including biomarkers, NGS and CGP to
+        further enable PHC.
         <br />
         <br />
-        Roche Sequencing Solutions offers best in-class Next-Generation Sequencing (NGS) products.
+        Roche Sequencing Solutions offers best in-class NGS products.
         Clinical NGS can involve one single gene to many genes and provides clinicians with information
-        to assist in treatment selection [internal hyperlink to CDS in Care], thus enabling personalised
-        healthcare (PHC). Advanced reports, such as those FMI deliver, provide information including
+        to assist in treatment selection, thus enabling personalised PHC. Advanced reports, such as those
+        FMI deliver, provide information including
         clinical trials, treatments to avoid and potential resistance gene of relevance.
         <br />
         <br />
-        Comprehensive Genomic Profiling (CGP) is a type of genomic profiling that involves large gene
+        CGP is a type of genomic profiling that involves large gene
         panels that detect all classes of genomic alterations and biomarkers, providing a holistic view to
         healthcare providers of appropriate
         {' '}
@@ -241,15 +240,18 @@ function MonitoringGenomics(props) {
         foundation for pan-tumor targeted therapy, which
         cannot be delivered with current technology.
         <br />
-        Advanced comprehensive clinical-genomic databases can inform treatment decisions through clinical
-        decision
+        Advanced comprehensive clinical-genomic databases can inform treatment decisions through
         {' '}
-        <Link to="/phc/future-patient-journey/care/cds-systems">(CDS) systems</Link>
+        <Link to="/phc/future-patient-journey/care/cds-systems">
+          Clinical Decision Support (CDS) systems
+        </Link>
         {' '}
         using the power
         of
         {' '}
-        <Link to="/phc/future-patient-journey/access/value-based-healthcare">Meaningful data at scale (MDAS)</Link>
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/StarterpackM2">
+          Meaningful data at scale (MDAS)
+        </a>
         {' '}
         and
         {' '}
@@ -258,6 +260,7 @@ function MonitoringGenomics(props) {
         >
           Advanced Analytics
         </Link>
+        .
       </p>
       <p>
         <strong>
@@ -286,11 +289,19 @@ function MonitoringGenomics(props) {
         with
         {' '}
         <Link to="/phc/future-patient-journey/data/advanced-analytics">Advanced Analytics</Link>
-        , and other teams to
+        ,
+        {' '}
+        <Link to="/phc/future-patient-journey/diagnosis/digital-pathology">Digital Pathology</Link>
+        {' '}
+        and other teams to
         derive novel
         disease and mode of action (MoA) specific insights to inform drug development.
         <br />
-        The CUPISCO trial is an example of the use of CGP in combination with a patient-centric
+        The
+        {' '}
+        <strong>CUPISCO</strong>
+        {' '}
+        trial is an example of the use of CGP in combination with a patient-centric
         decision-making process by a Molecular Tumor Board to provide a highly-specific treatment
         decision for each patient. Click here to learn more about the CUPISCO Case Study from the
         {' '}
@@ -322,13 +333,13 @@ Level of funding of biomarker and NGS tests by the
           <Link to="/phc/systems-enablers/partner/policy">regulatory of pathway</Link>
           {' '}
           for the approval of
-  molecularly-informed therapies.
+  molecularly-informed therapies
         </li>
         <li>
           <strong>Payer acceptance – </strong>
           Level of
           {' '}
-          <Link to="/phc/systems-enablers/partner/policy">reimbursement</Link>
+          <Link to="/phc/systems-enablers/partner/patient-partnerships">reimbursement</Link>
           {' '}
           of molecularly-informed therapies
         </li>
