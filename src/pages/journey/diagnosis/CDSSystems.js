@@ -282,9 +282,7 @@ function DiagnosisCDSSystems(props) {
         At Roche Pharma, our vision is that high-quality CDS systems improve individual patient
         outcomes by supporting personalised clinical decisions in the clinical setting.
       </p>
-      <br />
       <span>
-        Wrong content, should be
         Roche’s Global Pharma CDS strategy was developed to ensure that:
         <li>CDS systems are of high quality</li>
         <li>
