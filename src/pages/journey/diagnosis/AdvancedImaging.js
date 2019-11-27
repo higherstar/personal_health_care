@@ -216,20 +216,20 @@ function DiagnosisAdvancedImaging(props) {
         How Roche is leveraging advances in imaging:
       </p>
       <p>
-        <strong>Smarter & more efficient R&D - </strong>
+        <strong>Smarter & more efficient R&D </strong>
         By automating time-consuming & costly processes
         (e.g., secondary imaging reads & IRFs), this effort will result in significantly faster trials,
         while more accurate quantification of disease burden will enable robust cohort matching for use in
-        synthetic control arm studies.
+        synthetic control arm studies, as well as reducing costs associated with trials.
       </p>
       <p>
-        <strong>Improved access & personalised care - </strong>
+        <strong>Improved access & personalised care </strong>
         Development of automated algorithms can provide
         better and more accurate measurements of disease than currently available to help predict progression
         and response to therapy.
         <br />
-        These could deliver significant savings to health systems, or allow emerging health
-        systems to deliver advanced care with a lower investment in infrastructure and other system resources.
+        These could deliver significant savings to healthcare systems, or allow emerging healthcare systems
+        to deliver advanced care with a lower investment in infrastructure and other system resources.
       </p>
       <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
@@ -252,9 +252,12 @@ function DiagnosisAdvancedImaging(props) {
                 showcases
         </Link>
         {' '}
-(Ophthalmology, Cancer Immunotherapy), and Multiple Sclerosis to develop automated algorithms
+        (Ophthalmology, Cancer Immunotherapy, and Multiple Sclerosis), and Multiple Sclerosis to
+        develop automated algorithms
                 for more accurate predictions for disease
-                progression and response to therapy. This automation will result in:
+                progression and response to therapy.
+        <br />
+        This automation will result in:
         <li>
                   Faster trials
         </li>
@@ -264,14 +267,13 @@ function DiagnosisAdvancedImaging(props) {
         <li>
                   More robust cohort matching to synthetic control arm studies
         </li>
+        <br />
                 We are also developing imaging-based biomarkers. This include:
         <li>
                   Full automation of existing endpoints that are used to assess efficacy in clinical trials
         </li>
         <li>
-                  Novel prognostics and predictive imaging-based
-          {' '}
-          <Link to="/phc/future-patient-journey/diagnosis/genomics">biomarkers</Link>
+                  Novel prognostics and predictive imaging-based biomarkers
         </li>
       </span>
       <p>
@@ -327,7 +329,7 @@ function DiagnosisAdvancedImaging(props) {
         The scale of the imaging data requires close collaboration and
         coordination with The multi-functional
         {' '}
-        <Link to="/phc/systems-enablers/partner/patient-partnerships">
+        <Link to="/phc/systems-enablers/partner/phc-it">
           PHC
           IX/Technology
         </Link>
