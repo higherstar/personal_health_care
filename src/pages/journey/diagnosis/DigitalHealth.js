@@ -214,30 +214,25 @@ function DiagnosisDigitalHealth(props) {
         clinical pathways for disease measurement and intervention to improve patient care and outcomes.
         <br />
               One example of a Digital Health solution is the FDA-approved mySugr app, which is the most widely
-              used mobile app for diabetes. It provides patients with immediate access to certified diabetes
-              educators when necessary based on algorithmic detection of problematic glucose patterns, the app
-        provides patients with immediate access to certified diabetes educators when necessary.
+              used mobile app for diabetes. Based on algorithmic detection of problematic glucose patterns,
+        the app provides patients with immediate access to certified diabetes educators when necessary.
         <br />
-              At Roche, there are four archetypes of Digital Health, which are as follows:
+              At Roche, there are four archetypes of Digital Health solutions, which are as follows:
         <li>
           <strong>Digital Biomarkers: </strong>
-Community and regulator-accepted endpoints and outcomes
-                that redefine our understanding of the disease.
+Community- and regulator-accepted measurements that redefine our understanding of the disease (e.g., progression)
         </li>
         <li>
           <strong>Digital Care Solutions: </strong>
-Integrated ecosystem of Digital Health solutions
-                for ongoing disease management in routine care.
+Integrated ecosystem of Digital Health solutions for ongoing disease management in routine care
         </li>
         <li>
           <strong>Digital Therapeutics: </strong>
-Software-based disease treatments and rehabilitations
-                that are prescribed by HCPs.
+Prescribed software-based solutions that directly treat symptoms and act on the course of the disease
         </li>
         <li>
           <strong>Smart drug delivery systems: </strong>
-Connected drug administration and delivery
-                systems to enhance health outcomes of patients.
+Connected drug administration and delivery systems to enhance health outcomes of patients
         </li>
       </span>
       <span>
@@ -263,6 +258,10 @@ Connected drug administration and delivery
         Digital Health solutions have the potential to enable more efficient research cycles through
         the refinement of clinical trial eligibility criteria and more sensitive endpoints.
       </p>
+      <strong>
+        Improved access & personalized care
+      </strong>
+      <br />
       <span>
         Digital Health solutions can solve unmet medical and patient needs along the patient journey.
         There are applications of Digital Health solutions at every step of the patient journey, such as at:
@@ -284,9 +283,9 @@ Screening and diagnosis
         Why it is important for PHC
       </h2>
       <p>
-        Digital Health is a key component of our personalised healthcare strategy. It allows us to
+        Digital Health is a key component of our PHC strategy. It allows us to
         learn from real-world patient experiences and data, to speed up medical research, to provide
-        better advice to physicians and patients and to develop new ways of assessing value in healthcare.
+        better advice to physicians and patients, and to develop new ways of assessing value in healthcare.
         Ultimately, it accelerates and enhances our ability to understand a patient’s unique disease and
         individualize treatment to meet their needs.
       </p>
@@ -327,7 +326,7 @@ Screening and diagnosis
       <br />
       <br />
       <h2>
-        Key considerations of Digital Health
+        Key drivers/considerations
       </h2>
       <p>
         Some of the Digital Health solutions fall into a category of medical device called
@@ -351,7 +350,7 @@ software intended to be used for one or more medical purposes that perform these
         the regulatory requirements of a SaMD.
       </p>
       <p>
-        Specific requirements and quality standards for SaMDs are necessary to ensure that they s are
+        Specific requirements and quality standards for SaMDs are necessary to ensure that they are
         reliable and safe tools. Most of the regulators, such as the US FDA and EMA, already
         have a framework of regulations in place to cover Digital Health products, which includes
         SaMD. Other countries and regions also have their own regulatory frameworks.
