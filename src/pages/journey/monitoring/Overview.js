@@ -71,33 +71,27 @@ const navOptions = [
 const mainContent = (
   <>
     <p>
-    Patients are effectively triaged and managed in a more efficient and timely
-    manner through the application of
+      Patients are effectively triaged and managed in a more efficient and timely manner through the application of
       {' '}
       <strong>
-data-driven early and continuous monitoring
-    outside of the specialist’s office.
+        data-driven early and continuous monitoring.
       </strong>
     </p>
-    <li>
-      Assess patient function and disease progression
-    </li>
-    <li>
-      Measure response to treatment
-    </li>
-    <li>
-      Optimize adverse event management to trigger earlier intervention when meaningful change occurs
-    </li>
-    <br />
     <p>
-      This
-      {' '}
-      <strong>minimises patient burden and cost of ongoing treatment</strong>
-, and
+      Technologies, such as circulating tumor DNA (ctDNA) in oncology and digital health tools in both
+      oncology and non-oncology that measure response to treatment and manage toxicity, allow for
       {' '}
       <strong>
-optimises
-      outcomes through timelier intervention.
+        earlier disease intervention and treatment adaptation, or termination to occur
+        early in recurrence or as the disease changes.
+      </strong>
+    </p>
+    <p>
+      This minimizes waste of treatment that is proving ineffective and optimizes outcomes. Patients can get
+      their care through digital tools at home for minor concerns. Together,
+      {' '}
+      <strong>
+        these tools optimize patient care while minimizing the use of unnecessary healthcare resources.
       </strong>
     </p>
   </>
