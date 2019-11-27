@@ -180,11 +180,10 @@ function CareCDSSystems(props) {
       <h2>Description</h2>
       <p>
         Increased volumes of healthcare data are now available to both HCPs and patients. This
-        overwhelming growth in healthcare data is making clinical decisions more complex. High-quality Clinical
-        Decision Support (CDS) leverages objective health data and analytics to improve individual patient
-        outcomes by enabling more confident clinical decisions in real time at the point of care. Most CDS
-        solution are currently in Oncology, followed by Neuroscience and Ophthalmology—all areas of interest
-        for Roche.
+        overwhelming growth in healthcare data is making clinical decisions more complex. We define a CDS system
+        as a tool that enables objective personalized care decisions in the clinical setting by leveraging
+        patient-specific data and analytics to support patient and provider decision making, and ultimately
+        improve clinical outcomes.
       </p>
       <span>
         Most CDS solutions are currently in Oncology, followed by Neuroscience and Ophthalmology—all
@@ -204,13 +203,6 @@ function CareCDSSystems(props) {
         {' '}
         <strong>actively participate and their care plan.</strong>
       </p>
-      <img
-        className="main-content-image"
-        src={cdsDescImage}
-        onClick={() => openImageModal(cdsDescImage)}
-        alt="cds desc"
-      />
-      <br />
       <h2>
         Why it is important for PHC
       </h2>
@@ -254,20 +246,23 @@ function CareCDSSystems(props) {
         At Roche Pharma, our vision is that high-quality CDS systems improve individual patient
         outcomes by supporting personalised clinical decisions in the clinical setting.
       </p>
-      <p>
-        At Roche Pharma, our vision is that high-quality CDS systems improve individual patient
-        outcomes by supporting personalised clinical decisions in the clinical setting.
-        <br />
-        1. CDS systems are of high quality.
-        <br />
-        2. We are prepared to operate in an environment where CDS has significant influence on clinical
-        care.
+      <br />
+      <span>
+        Wrong content, should be
+        Roche’s Global Pharma CDS strategy was developed to ensure that:
+        <li>CDS systems are of high quality</li>
+        <li>
+We are prepared to operate in an environment where CDS has significant influence on clinical
+          care
+        </li>
         <br />
         However, in order to maintain our objectivity and credibility, Roche Pharma is not independently
         developing or commercializing CDS systems.
-      </p>
+      </span>
+      <br />
+      <br />
       <div className="d-flex">
-        <div className="col-lg-8">
+        <div className="col-lg-8 pl-0">
           <p>
             Roche Diagnostics is further developing the CDS system NAVIFY.
             The NAVIFY Decision Support Portfolio consists of a cross-diagnostics platform that hosts
@@ -301,7 +296,7 @@ function CareCDSSystems(props) {
         {' '}
         make
         it
-        easier to pull relevant reference information from global databases.
+        easier to pull relevant reference information from global databases
       </li>
       <br />
       <h2>
