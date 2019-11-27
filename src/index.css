@@ -373,6 +373,9 @@
       width: 100%;
       height: auto;
       max-height: 550px; }
+    .image-modal .custom-modal-content .framework-image {
+      width: auto;
+      height: 100%; }
 
 .connection-modal {
   align-items: center;

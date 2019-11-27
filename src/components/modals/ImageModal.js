@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// import image from '../../assets/pages/journey/cds-desc.png';
+import frameImage from '../../assets/pages/enablers/roche-framework.png';
 
 function ImageModal(props) {
   const {
@@ -26,7 +26,7 @@ function ImageModal(props) {
           </button>
         </div>
         <div className="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap">
-          <img src={image} alt="modal" />
+          <img className={`${image === frameImage && 'framework-image'}`} src={image} alt="modal" />
         </div>
       </div>
     </div>

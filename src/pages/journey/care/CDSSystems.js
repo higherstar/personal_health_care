@@ -7,7 +7,6 @@ import ConnectionModal from '../../../components/modals/ConnectionModal';
 import ImageModal from '../../../components/modals/ImageModal';
 import DropDown from '../../../atoms/DropDown';
 import mapImage from '../../../assets/common/care.png';
-import cdsDescImage from '../../../assets/pages/journey/cds-desc.png';
 import customerImage from '../../../assets/pages/journey/customer-impact.png';
 import businessImage from '../../../assets/pages/journey/business-impact.png';
 import connectionIcon from '../../../assets/atoms/connection-icon-red.png';

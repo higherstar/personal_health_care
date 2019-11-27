@@ -67,23 +67,21 @@ const mainContent = (
         (HCP) and patient to make an informed and confident decision
       </strong>
       {' '}
+by harnessing the experience of many other patients. This support includes:
+      <br />
       <li>
         An integrated and customized view of a patient’s clinical profile (including for tumor boards)
       </li>
       <li>
-        Guideline and pathway recommendations,
+        Guideline and pathway recommendations
       </li>
       <li>
-        Relevant clinical trials and publications,
+        Relevant clinical trials and publications
       </li>
       <li>
-        Relevant coverage and reimbursement information.
+        Relevant coverage and reimbursement information
       </li>
     </span>
-    <p>
-      Moreover, CDS Systems are increasingly evolving to provide information on pools
-      of relevant patients with similar profiles, their treatment plan and outcomes.
-    </p>
     <p>
       <strong>Artificial Intelligence and Machine Learning tools</strong>
       {' '}
