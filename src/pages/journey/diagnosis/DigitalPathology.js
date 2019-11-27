@@ -259,14 +259,13 @@ We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital P
         We will identify resources for curation and uploading images and data, identify image analysis
         technology (e.g. deep learning and machine learning) and algorithms, and build a metadata analysis
         pipeline with genomics and outcomes. To learn more, check out
-        the
+        the “Meaningful Data at Scale,
+        Advanced Analytics, and Realizing Value” module from the
         {' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://roche.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=f1899993-7bb7-4b06-a10b-fd42d1fa3a7f#t=1">
-        “Meaningful Data at Scale,
-        Advanced Analytics, and Realizing Value”
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
+        PHC Pharma Starter Pack
         </a>
-        {' '}
-        module from the PHC Pharma Starter Pack.
+.
         <br />
                 We have strategic objectives/OKRs to build and enhance the PHC platform:
         <li>
@@ -290,7 +289,7 @@ We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital P
       </h2>
       <li>
         Collaboration between Pharma and DIA can combine Roche in-house data and DIA’s
-        technology to produce novel insights.
+        technology to produce novel insights
       </li>
       <li>
         Expands new business models for diagnostics
