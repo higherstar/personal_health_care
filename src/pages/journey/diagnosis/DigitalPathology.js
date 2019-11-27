@@ -222,7 +222,7 @@ function DiagnosisDigitalPathology(props) {
       </span>
       <br />
       <span>
-        <strong>Improved access & personalized care</strong>
+        <strong>Improved access & personalised care</strong>
         <br />
         Digital pathology can generate insights with the potential to collate histological
         features with prognosis, outcomes, disease biology, and treatment.

@@ -192,7 +192,7 @@ function MGTOs() {
 
       </p>
       <p>
-        <strong>Improved access & personalized care - </strong>
+        <strong>Improved access & personalised care - </strong>
         Rather than finding the site of tumor origin,
         which can be costly and time-consuming, it may be more efficient to target gene alteration against
         which an effective therapy already existed.

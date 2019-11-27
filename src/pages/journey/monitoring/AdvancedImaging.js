@@ -213,7 +213,7 @@ function MonitoringAdvancedImaging(props) {
         synthetic control arm studies.
       </p>
       <p>
-        <strong>Improved access & personalized care - </strong>
+        <strong>Improved access & personalised care - </strong>
         Development of automated algorithms can provide
         better and more accurate measurements of disease than currently available to help predict progression
         and response to therapy.

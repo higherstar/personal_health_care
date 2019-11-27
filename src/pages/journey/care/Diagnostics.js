@@ -179,8 +179,9 @@ function CareDiagnostics(props) {
       <span>
         <strong>Smarter and more efficient R&D</strong>
         <br />
-                To support Roche’s PHC efforts, our diagnostics tool offering is evolving as do the diagnostic
-                technology. We are invested in developing PHC-enabling diagnostic tools, such as:
+                To support Roche's PHC efforts, our diagnostics offerings are evolving along with the
+        of new diagnostics technologies. We are investing in applying new technologies that can
+        help support smarter and more efficient R&D across our Pharma programs, such as:
         <li>
           <strong>Next generation sequencing</strong>
           {' '}
@@ -196,7 +197,7 @@ function CareDiagnostics(props) {
       </span>
       <p>
         <br />
-        <strong>Improved access & personalized care</strong>
+        <strong>Improved access & personalised care</strong>
         <br />
       </p>
       <span>
@@ -210,18 +211,25 @@ function CareDiagnostics(props) {
                 Minimization of sides effects
         </li>
         <li>
-                Maximization of efficacy.
+                Maximization of efficacy
         </li>
         <li>
 Roche makes these diagnostics available to more patients faster through its commercial
-                  expertise and unmatched global reach.
+                  expertise and unmatched global reach
         </li>
       </span>
+      <br />
       <span>
         <strong>What it means for health systems</strong>
         <br />
         Diagnostic tools are critical to supporting personalised care and access. Diagnostic
         tools provide information and data that:
+        <li>Help clinicians and health systems tailor care and treatment decisions</li>
+        <li>May support more specific value propositions and improved access to our therapies</li>
+      </span>
+      <br />
+      <span>
+        There are generally two categories of diagnostics that support the patient journey in this way:
       </span>
       <br />
       <span>

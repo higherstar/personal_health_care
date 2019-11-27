@@ -226,7 +226,7 @@ function AccessCDSSystems(props) {
         Why it is important for PHC
       </h2>
       <p>
-        <strong>Improved access & personalized care</strong>
+        <strong>Improved access & personalised care</strong>
         <br />
         CDS systems have the potential to improve
         both healthcare provider and patient experiences as well as to enable a shared decision
@@ -263,11 +263,11 @@ function AccessCDSSystems(props) {
       </h2>
       <p>
         At Roche Pharma, our vision is that high-quality CDS systems improve individual patient
-        outcomes by supporting personalized clinical decisions in the clinical setting.
+        outcomes by supporting personalised clinical decisions in the clinical setting.
       </p>
       <p>
         At Roche Pharma, our vision is that high-quality CDS systems improve individual patient
-        outcomes by supporting personalized clinical decisions in the clinical setting.
+        outcomes by supporting personalised clinical decisions in the clinical setting.
         <br />
         1. CDS systems are of high quality.
         <br />

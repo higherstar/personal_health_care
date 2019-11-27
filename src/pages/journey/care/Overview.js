@@ -90,7 +90,7 @@ const mainContent = (
       can further assist the
       HCP in
       {' '}
-      <strong>selecting personalized care plans through CDS systems</strong>
+      <strong>selecting personalised care plans through CDS systems</strong>
       {' '}
       as the volume
       and quality of

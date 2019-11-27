@@ -60,8 +60,8 @@ fit-for-purpose, scalable and sustainable
       technology ecosystem
       </strong>
       {' '}
-to deliver on personalized healthcare (PHC)’s mission to bring the right
-      treatment to each patient and to improve Personalized Patient Care & Access.
+to deliver on personalised healthcare (PHC)’s mission to bring the right
+      treatment to each patient and to improve Personalised Patient Care & Access.
     </p>
     <p>
       We enable the development of highly-sophisticated algorithms and support the processing
@@ -100,7 +100,7 @@ and meaningful
       Apollo implements FAIR principles (findability, accessibility, interoperability, and reusability)
       enabling Roche scientists and external partners to share data and collaborate on insight generation.
       We define the technology roadmap and implement the capabilities required to enable our
-      mission to improve Personalized Patient Care & Access.
+      mission to improve Personalised Patient Care & Access.
     </p>
     <h2>Connection to our PHC Vision and Strategy</h2>
     <span>

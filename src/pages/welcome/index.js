@@ -251,7 +251,7 @@ function Welcome(props) {
       <p>
         This site is built around the
         {' '}
-        <strong>future patient journey that is fully personalized.</strong>
+        <strong>future patient journey that is fully personalised.</strong>
         {' '}
         It includes key PHC concepts that are relevant for each step of a patient’ care as well as key system enablers
         that are important to keep in mind. Check out the video below to learn about how we envision the

@@ -204,7 +204,7 @@ function DiagnosisGenomics(props) {
         <br />
         <br />
         At the molecular level, the expression of certain genes is used as biomarker to determine the
-        appropriate therapy for cancer patients. Biomarkers are thus a key component of Personalized
+        appropriate therapy for cancer patients. Biomarkers are thus a key component of Personalised
         Healthcare approaches. Appropriate biomarkers are also essential to design clinical studies and
         to define their intended or expected outcome. Diagnostic methods such as Next-Generation Sequencing
         (NGS) and Comprehensive Genomic Profiling (CGP) aim at identifying and quantifying disease-relevant
@@ -212,13 +212,13 @@ function DiagnosisGenomics(props) {
         <br />
         <br />
         At Roche, we are developing our genomic diagnostics capability, including biomarkers, Next-Generation
-        Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) to further enable personalized
+        Sequencing (NGS) and Comprehensive Genomic Profiling (CGP) to further enable personalised
         healthcare (PHC).
         <br />
         <br />
         Roche Sequencing Solutions offers best in-class Next-Generation Sequencing (NGS) products.
         Clinical NGS can involve one single gene to many genes and provides clinicians with information
-        to assist in treatment selection, thus enabling personalized
+        to assist in treatment selection, thus enabling personalised
         healthcare (PHC). Advanced reports, such as those FMI deliver, provide information including
         clinical trials, treatments to avoid and potential resistance gene of relevance.
         <br />
@@ -239,7 +239,7 @@ function DiagnosisGenomics(props) {
       </p>
       <p>
         <strong>
-          Improved access & personalized care
+          Improved access & personalised care
         </strong>
         {' '}
         Foundation Medicine (FMI) is leading the understanding and use of CGP in the clinical setting,

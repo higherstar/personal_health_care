@@ -61,7 +61,7 @@ const navOptions = [
 const mainContent = (
   <>
     <p>
-      With rapid access to personalized interventions, patients and healthcare
+      With rapid access to personalised interventions, patients and healthcare
       providers have access to the
       {' '}
       <strong>treatment options as recommended in the personalised care plan.</strong>

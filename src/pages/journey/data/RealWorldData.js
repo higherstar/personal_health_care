@@ -237,7 +237,7 @@ RWD is a key component of our PHC vision and strategy because:
                   RWD fuels the PHC engine with continuous learning from every patient
           {'\''}
           s experience to create both a
-                  high-resolution view of each patient and treatments personalized to each patient
+                  high-resolution view of each patient and treatments personalised to each patient
           {'\''}
           s needs.
         </li>

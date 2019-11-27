@@ -251,7 +251,7 @@ Screening and diagnosis
         Why it is important for PHC
       </h2>
       <p>
-        Digital Health is a key component of our personalized healthcare strategy. It allows us to
+        Digital Health is a key component of our personalised healthcare strategy. It allows us to
         learn from real-world patient experiences and data, to speed up medical research, to provide
         better advice to physicians and patients and to develop new ways of assessing value in healthcare.
         Ultimately, it accelerates and enhances our ability to understand a patient’s unique disease and

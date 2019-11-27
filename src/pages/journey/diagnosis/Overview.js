@@ -81,7 +81,7 @@ const navOptions = [
 const mainContent = (
   <>
     <p>
-      The goal of early and personalized diagnosis is to
+      The goal of early and personalised diagnosis is to
       {' '}
       <strong>reduce</strong>
       {' '}
@@ -95,7 +95,6 @@ Clinicians in partnership with patients
       {' '}
       <strong>most appropriate</strong>
       {' '}
-(based on disease presentation and activity)
       and
       {' '}
       <strong>complete diagnostic work-up leveraging diagnostic guidance tools.</strong>
