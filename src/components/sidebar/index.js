@@ -183,7 +183,7 @@ function SideBar(props) {
       if (keyword) {
         const keyIndexList = [];
         let result;
-        const regex = new RegExp(keyword, 'gi');
+        const regex = new RegExp(keyword, 'g');
         /* eslint-disable-next-line no-cond-assign */
         while ((result = regex.exec(data.content))) {
           keyIndexList.push(result.index);
