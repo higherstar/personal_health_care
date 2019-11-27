@@ -181,6 +181,8 @@ function RealWorldData(props) {
         {' '}
         <strong>Real-World Evidence (RWE)</strong>
         .
+      </p>
+      <p>
         RWD can be collected from various sources such as electronic/medical health records,
         Digital Health solutions, pharmacy claims, insurance claims, disease and product registries,
         diagnostics/genomics databases, hospitals/outpatient visits, health surveys and patient-reported
@@ -189,7 +191,9 @@ function RealWorldData(props) {
       <span>
         To learn more, check out the “Introduction to Real-World Data” modules from the
         {' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">PHC Pharma Starter Pack</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
+          PHC Pharma Starter Pack
+        </a>
         .
       </span>
       <br />
@@ -197,22 +201,39 @@ function RealWorldData(props) {
       <h2>
         Why it is important for PHC
       </h2>
+      <span>
+        <strong>Bridge evidence gaps of randomized control trials (RCTs)</strong>
+        <li>
+          RCTs in general have low generalizability. Although the exact numbers vary by publications, in
+          Oncology, it is estimated that only 3-4% of patients participate in clinical trials.
+          Ultimately, these lead to evidence gaps in treatments and patient outcomes
+          in the real-world setting. However, RWD provides a much larger and more heterogeneous patient pool.
+        </li>
+        <li>
+          As smaller and smaller patient sub-populations are being identified (e.g. genomic alteration
+          subtypes in rare cancers), it is becoming challenging to run RCTs.
+          Supplementary data sources, such as RWD, are needed to understand patient
+          characteristics and treatment effectiveness.
+        </li>
+        <li>
+          For rare diseases, placebo-controlled studies are sometimes infeasible or unethical,
+          which further highlights the need for RWD.
+        </li>
+        <li>
+          At the time of regulatory approval, there are many questions left unanswered by RCT data.
+          RWD can play a key role in addressing some of those knowledge gaps.
+        </li>
+        <li>
+          RWD can help to save costs and time as compared to RCTs, thereby accelerating patient access to the drug.
+        </li>
+      </span>
+      <br />
       <p>
-        <strong>Bridge evidence gaps of randomized control trials (RCTs)- </strong>
-        The discovery of smaller
-        and smaller patient sub-populations (e.g., rare cancer-driving genomic alterations) is making
-        it unfeasible to run RCTs. Supplementary data sources, such as RWD, are needed to understand
-        patient characteristics and treatment effectiveness. The heterogeneity of patient populations
-        means that RCT data have low generalizability. This also leads to evidence gaps in treatments
-        and patient outcomes in the real-world setting. However, RWD provides a much larger and more
-        heterogeneous patient pool. RCTs are costly and time-consuming as compared to RWD.
-      </p>
-      <p>
-        <strong>Smarter & more efficient R&D – </strong>
-        Insights from RWD can provide learnings,
-        such as treatment decisions in the real-world setting and molecularly-guided treatment
-        options (MGTO). This can potentially fuel new research questions that can lead to smarter
-        and more efficient R&D.
+        <strong>Smarter & more efficient R&D</strong>
+        <br />
+        Insights from RWD can provide knowledge on how treatment decisions are made in the real-world
+        and what treatment options are currently available. This can potentially fuel new research
+        questions that can lead to smarter and more efficient R&D.
       </p>
       <p>
         <strong>Benefits to Stakeholders</strong>
@@ -223,29 +244,19 @@ function RealWorldData(props) {
         onClick={() => openImageModal(benefitImage)}
         alt="benefit"
       />
+      <br />
+      <br />
       <span>
-RWD is a key component of our PHC vision and strategy because:
+PHC is a shared mission at Roche and RWD is a critical component of PHC because:
         <li>
-                  RWD is a source of Meaningful Data at Scale (MDAS). MDAS combines high quality, high volume
-                  of data per patient with the number of patients covered. In other words, MDAS is comprised
-                  of
-          {' '}
-          <strong>deep, longitudinal data from broad patient populations</strong>
-.
+RWD is a source of Meaningful Data at Scale (MDAS). MDAS is comprised of large amounts of high-quality,
+          complementary, longitudinal data across broad patient populations. Therefore, it
+          enables an understanding of patient and disease heterogeneity and its relevance to
+          clinical outcomes at an unprecedented resolution.
         </li>
         <li>
-                  RWD fuels the PHC engine with continuous learning from every patient
-          {'\''}
-          s experience to create both a
-                  high-resolution view of each patient and treatments personalised to each patient
-          {'\''}
-          s needs.
-        </li>
-        <li>
-                  Downstream use of RWE in regulatory / Health Technology Assessment (HTA) / payer
-                  decision-making can also
-          {' '}
-          <strong>facilitate and support the approvals of novel PHC solutions</strong>
+Downstream use of RWE in regulatory/Health Technology Assessment (HTA)/payer decision making can also
+          facilitate and support the approvals of novel PHC solutions.
         </li>
       </span>
       <br />
@@ -308,14 +319,11 @@ RWD is a key component of our PHC vision and strategy because:
         etc.
       </li>
       <li>
-        Taking into consideration the lack of sources of high-quality RWD in ex-US markets
+        Establishing sources of high-quality RWD in ex-US markets
       </li>
       <li>
-        Taking into consideration that the market for structured / curated data is nascent
-      </li>
-      <li>
-        Taking into consideration the possibility of immature consensus of defining regulatory-grade
-        RWD and levels of quality that are fit-for-purpose
+        Establishing regulatory guidance on data standards and quality, which is needed for the generation and
+        analysis of RWD/RWE. Alignment with external stakeholders on these standards is also required.
       </li>
     </>
   );
