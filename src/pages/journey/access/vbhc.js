@@ -96,7 +96,7 @@ function ValueBasedHealthCare(props) {
       <span>
         To learn more, check out the “Value-Based HealthCare” module from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
         .
@@ -178,7 +178,7 @@ function ValueBasedHealthCare(props) {
       <span>
 To learn more about VBHC, please go to the
         {' '}
-        <a href="https://sites.google.com/roche.com/vbhcroche">
+        <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/roche.com/vbhcroche">
                 VBHC webpage
         </a>
 .

@@ -234,7 +234,7 @@ Connected drug administration and delivery
         To learn more, check out
         the “Digital Health and Software as a Medical Device” module from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
         .

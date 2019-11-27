@@ -143,7 +143,7 @@ function PatientPartnership(props) {
       <span>
         To learn more, check out the
         {' '}
-        <a href="https://sites.google.com/roche.com/patient-partnership/home">
+        <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/roche.com/patient-partnership/home">
         Integrated Patient Partnership (iPP) Community
         </a>
 .

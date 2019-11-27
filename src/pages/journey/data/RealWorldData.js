@@ -189,7 +189,7 @@ function RealWorldData(props) {
       <span>
         To learn more, check out the “Introduction to Real-World Data” modules from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">PHC Pharma Starter Pack</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">PHC Pharma Starter Pack</a>
         .
       </span>
       <br />

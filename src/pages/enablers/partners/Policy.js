@@ -128,7 +128,7 @@ and those we share data with collect, manage and analyze data including
     <span>
                 You can address your questions about data privacy to
       <br />
-      <a href="https://global.privacy@roche.com">global.privacy@roche.com</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://global.privacy@roche.com">global.privacy@roche.com</a>
 .
     </span>
   </>

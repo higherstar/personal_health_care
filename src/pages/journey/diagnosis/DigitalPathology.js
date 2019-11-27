@@ -261,7 +261,7 @@ We have formed a Pharmaceuticals-Diagnostics partnership to accelerate Digital P
         pipeline with genomics and outcomes. To learn more, check out
         the
         {' '}
-        <a href="https://roche.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=f1899993-7bb7-4b06-a10b-fd42d1fa3a7f#t=1">
+        <a target="_blank" rel="noopener noreferrer" href="https://roche.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=f1899993-7bb7-4b06-a10b-fd42d1fa3a7f#t=1">
         “Meaningful Data at Scale,
         Advanced Analytics, and Realizing Value”
         </a>

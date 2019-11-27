@@ -191,7 +191,7 @@ function CareCDSSystems(props) {
         areas of interest for Roche. For more information, please visit
         our “CDS systems” module from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
         .

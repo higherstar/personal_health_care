@@ -304,7 +304,7 @@ function DiagnosisGenomics(props) {
         decision-making process by a Molecular Tumor Board to provide a highly-specific treatment
         decision for each patient. Click here to learn more about the CUPISCO Case Study from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
         .

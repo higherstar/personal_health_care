@@ -278,7 +278,7 @@ Roche makes these diagnostics available to more patients faster through its comm
       <span>
         To learn more, check out the “Diagnostics in Personalised Healthcare” module from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
         .

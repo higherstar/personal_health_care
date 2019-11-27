@@ -137,7 +137,7 @@ see ways to increase evidence. Several jurisdictions (the US,
       In the UK, NICE accepted analysis of Flatiron data as basis for
       reducing discount on Tecentriq (visit our Case Study in
       {' '}
-      <a href="https://go.roche.com/PHCStarterPack">
+      <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
         PHC Starter Pack
       </a>
       {' '}

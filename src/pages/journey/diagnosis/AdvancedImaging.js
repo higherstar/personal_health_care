@@ -204,7 +204,7 @@ function DiagnosisAdvancedImaging(props) {
         for medical diagnosis.
         To learn more, check out the “Meaningful Data at Scale, Advanced Analytics, and Realizing Value” module from the
         {' '}
-        <a href="https://go.roche.com/PHCStarterPack">
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
         .
