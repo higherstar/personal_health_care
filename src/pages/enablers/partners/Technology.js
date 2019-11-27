@@ -95,10 +95,13 @@ and meaningful
       <strong>by reducing turnaround time from months to minutes</strong>
 .
       <br />
+      <br />
       We are also engaging the entire Roche scientific community, external academics and
       crowdsourcing innovative ideas via Challenges and Hackathons hosted on the Apollo platform.
       Apollo implements FAIR principles (findability, accessibility, interoperability, and reusability)
       enabling Roche scientists and external partners to share data and collaborate on insight generation.
+      <br />
+      <br />
       We define the technology roadmap and implement the capabilities required to enable our
       mission to improve Personalised Patient Care & Access.
     </p>

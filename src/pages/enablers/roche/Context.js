@@ -102,8 +102,9 @@ function Context(props) {
         alt="accelerating"
       />
       <br />
+      <br />
       <h2>
-        Develop your PHC strategy with the Landscape Assessment and Strategy Builder
+        Develop you PHC strategy with the Landscape Assessment and Strategy Builder
       </h2>
       <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder">
         <strong>PHC Market Maturity Self Assessment </strong>

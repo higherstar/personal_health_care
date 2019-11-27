@@ -54,7 +54,11 @@ const mainContent = (
     <h2>Description</h2>
     <p>
 Legal frameworks around the collection, processing & sharing of data is an important enabler
-      for PHC. Stakeholders such as patients, healthcare providers (HCPs), regulators and policy
+      for PHC.
+      {' '}
+      <Link to="/phc/systems-enablers/partner/stakeholders">Stakeholders</Link>
+      {' '}
+      such as patients, healthcare providers (HCPs), regulators and policy
       makers, may be involved.
     </p>
     <h2>
@@ -99,6 +103,8 @@ platforms,
       insights into health, disease, and treatment pathways at the population and patient level,
       ultimately enabling the delivery of PHC.
     </span>
+    <br />
+    <br />
     <span>
       From a regulatory and access policy perspective, this data can also be used to guide decisions by:
       <li>Providing disease context</li>
@@ -114,11 +120,7 @@ Data Privacy is a key area where adoption of legislation is emerging and require
         consideration for the impact on health data specifically.
     </p>
     <p>
-        How
-      {' '}
-      <strong>Roche</strong>
-      {' '}
-and those we share data with collect, manage and analyze data including
+        How Roche and those we share data with collect, manage and analyze data including
         de-identification,
         anonymization should be transparent to reinforce our commitment to data privacy. Roche needs access
         to high-quality, interoperable data to realize PHC. Policy that enables access to and sharing of

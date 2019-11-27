@@ -51,6 +51,9 @@ const navOptions = [
 
 const mainContent = (
   <>
+    <h2>
+      Who are the PHC stakeholders and what are their needs?
+    </h2>
     <p>
       <span>Patients and caregivers</span>
       {' '}
@@ -80,6 +83,7 @@ can impact policies and want to be part
 and
       {' '}
       <Link to="/phc/future-patient-journey/monitoring/cds-systems">Decision Support Tools</Link>
+.
       {' '}
 HCPs
       are in need of reliable tools to assist in their decisions about
@@ -88,7 +92,7 @@ HCPs
     </p>
     <p>
       <span>Medical and Scientific societies </span>
-(e.g. ESMO, NCCN, ASCO...) have a key role in
+      (e.g., ESMO, NCCN, ASCO, etc.) have a key role in
       driving adoption of new PHC technologies.
     </p>
     <p>
@@ -110,18 +114,20 @@ see ways to increase evidence. Several jurisdictions (the US,
         PHC policies
       </Link>
 , strategies and initiatives. They have begun to lay the groundwork for a
-      PHC future by adopting policies and making investments to
+      PHC future by adopting policies and making investments to strengthen
       {' '}
-      <Link to="/phc/systems-enablers/partner/phc-it">strengthen data infrastructure</Link>
+      <Link to="/phc/systems-enablers/partner/phc-it">data infrastructure</Link>
 
 , protect
       patient
       {' '}
       <Link to="/phc/systems-enablers/partner/policy">privacy</Link>
 , spur innovation and enable the
-      use of real-world evidence (
-      <Link to="/phc/future-patient-journey/data/real-world-data">RWE</Link>
-) in
+      use of
+      {' '}
+      <Link to="/phc/future-patient-journey/data/real-world-data">real-world evidence (RWE)</Link>
+      {' '}
+ in
       healthcare decision-making.
     </p>
     <p>

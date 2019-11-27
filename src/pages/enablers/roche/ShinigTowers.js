@@ -186,6 +186,7 @@ function ShiningTowers(props) {
         alt="shiningTowersImage"
       />
       <br />
+      <br />
       <span>
 We are building local PHC cases to speed up access to advanced diagnostics and treatment.
         We are leveraging
@@ -238,28 +239,25 @@ Foster discussion among all relevant
         <strong>implement MVP components</strong>
         (Roche PHC assets not mandatory):
       </p>
-      <div className="d-flex image-description-list">
-        <div className="col-lg-6">
-          <li>CGP adoption</li>
-          <li>MTB/CDS</li>
-          <li>RWD capture</li>
-          <li>Access to therapy</li>
-        </div>
-      </div>
+      <p>
+        <li>CGP adoption</li>
+        <li>MTB/CDS</li>
+        <li>RWD capture</li>
+        <li>Access to therapy</li>
+      </p>
+      <br />
       <p>
         2-Through co-creation, identify opportunities to
         {' '}
         <strong>augment and expand with Roche assets:</strong>
       </p>
-      <div className="d-flex image-description-list">
-        <div className="col-lg-6">
-          <li>Digital pathology</li>
-          <li>FMI/Avenio + other tests</li>
-          <li>Enhanced Navify engagement</li>
-          <li>Imaging</li>
-          <li>Preferred RWD partner solutions</li>
-        </div>
-      </div>
+      <p>
+        <li>Digital pathology</li>
+        <li>FMI/Avenio + other tests</li>
+        <li>Enhanced Navify engagement</li>
+        <li>Imaging</li>
+        <li>Preferred RWD partner solutions</li>
+      </p>
       <img
         className="main-content-image"
         src={assetsImage}
@@ -267,26 +265,28 @@ Foster discussion among all relevant
         alt="assetsImage"
       />
       <br />
+      <br />
       <p>
         3-Execute and implement
+        {' '}
         <strong>integrated PHC solutions</strong>
         {' '}
         by:
       </p>
-      <div className="d-flex image-description-list">
-        <div className="col-lg-6">
-          <li>Developing guidance for solution integration</li>
-          <li>Creating playbooks for PHC market development</li>
-          <li>Tailoring PHC solutions to market needs</li>
-          <li>Cycling insights back to the organization for continual development</li>
-        </div>
-      </div>
+      <p>
+        <li>Cycling insights back to the organization for continual development</li>
+        <li>Developing guidance for solution integration</li>
+        <li>Creating playbooks for PHC market development</li>
+        <li>Tailoring PHC solutions to market needs</li>
+        <li>Cross affiliate experience sharing</li>
+      </p>
       <img
         className="main-content-image"
         src={assetsOneImage}
         onClick={() => openImageModal(assetsOneImage)}
         alt="assetsOneImage"
       />
+      <br />
       <br />
       <p>
         <strong>
