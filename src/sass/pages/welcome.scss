@@ -1,6 +1,11 @@
 .welcome {
+  .custom-modal-wrapper {
+    top: 0!important;
+  }
+
   .custom-modal-container {
     transform: scale(1) !important;
+    top: 5% !important;
   }
 
   .custom-modal-content {
