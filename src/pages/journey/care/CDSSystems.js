@@ -180,7 +180,7 @@ function CareCDSSystems(props) {
       <p>
         Increased volumes of healthcare data are now available to both healthcare providers (HCPs) and patients. This
         overwhelming growth in healthcare data is making clinical decisions more complex. We define a CDS system
-        as a tool that enables objective personalized care decisions in the clinical setting by leveraging
+        as a tool that enables objective personalised care decisions in the clinical setting by leveraging
         patient-specific data and analytics to support patient and provider decision making, and ultimately
         improve clinical outcomes.
       </p>

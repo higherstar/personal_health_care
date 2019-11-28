@@ -199,7 +199,7 @@ Integrated ecosystem of Digital Health solutions for ongoing disease management 
 Prescribed software-based solutions that directly treat symptoms and act on the course of the disease
         </li>
         <li>
-          <strong>Smart drug delivery systems: </strong>
+          <strong>Smart Drug Delivery Systems: </strong>
 Connected drug administration and delivery systems to enhance health outcomes of patients
         </li>
       </span>
@@ -227,7 +227,7 @@ Connected drug administration and delivery systems to enhance health outcomes of
         the refinement of clinical trial eligibility criteria and more sensitive endpoints.
       </p>
       <strong>
-        Improved access & personalized care
+        Improved access & personalised care
       </strong>
       <br />
       <span>
