@@ -192,6 +192,17 @@ span {
     top: -40px !important;
   }
 
+  .world-map-modal-wrapper {
+    position: fixed;
+    top: 110px !important;
+    left: 0 !important;
+    padding: 0 20px !important;
+
+    .custom-modal-content {
+      height: 70vh !important;
+    }
+  }
+
   .roche-dropdown {
     top: 2%;
     left: 75%;
@@ -229,6 +240,10 @@ span {
 
     .main-content-image {
       pointer-events: none !important;
+    }
+
+    .world-map-image {
+      pointer-events: all !important;
     }
 
     .main-content-title {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function CustomModal(props) {
   const {
-    open, isMobile, header, content, closeButton, handleCloseClick,
+    open, className, isMobile, header, content, closeButton, handleCloseClick,
   } = props;
 
   const handleClose = () => {
@@ -25,7 +25,7 @@ function CustomModal(props) {
   };
 
   return (
-    <div className="custom-modal-wrapper" style={modalStyle}>
+    <div className={`custom-modal-wrapper ${className}`} style={modalStyle}>
       <div className="custom-modal-container phc-container">
         <div className="custom-modal-header d-flex align-items-center justify-content-start">
           {header}
@@ -53,6 +53,7 @@ function CustomModal(props) {
 
 CustomModal.propTypes = {
   open: PropTypes.bool.isRequired,
+  className: PropTypes.string,
   isMobile: PropTypes.bool,
   content: PropTypes.node,
   header: PropTypes.node,
@@ -61,6 +62,7 @@ CustomModal.propTypes = {
 };
 
 CustomModal.defaultProps = {
+  className: '',
   isMobile: false,
   content: '',
   header: '',

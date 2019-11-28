@@ -296,8 +296,12 @@ Foster discussion among all relevant
 launched in 10 countries around the World will enable critical business drivers. Each
         initiative aim at demonstrating the feasibility of PHC and integrates PHC solutions.
       </p>
+      <p>
+        Click on the map to read a brief description of what each Shining Tower
+        initiative is aiming to achieve in the selected countries.
+      </p>
       <img
-        className="main-content-image"
+        className="main-content-image world-map-image"
         src={worldMapImage}
         onClick={() => handleWorldMapOpen()}
         alt="worldMapImage"
@@ -307,20 +311,37 @@ launched in 10 countries around the World will enable critical business drivers.
 
   const worldMapModalContent = (
     <>
-      <div className="world-map position-relative">
-        <img
-          className="world-map-image d-none d-sm-none d-md-block"
-          src={worldMapImage}
-          alt="worldMapImage"
-        />
-        {countryData.map((country) => (
-          <ExpandButton
-            header={country.name}
-            content={country.content}
-            className={country.className}
+      {!isMobile ? (
+        <div className="world-map position-relative">
+          <img
+            className="world-map-image"
+            src={worldMapImage}
+            alt="worldMapImage"
           />
-        ))}
-      </div>
+          {countryData.map((country) => (
+            <ExpandButton
+              header={country.name}
+              content={country.content}
+              className={country.className}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="world-map position-relative">
+          <div className="world-map-details d-flex flex-column">
+            {countryData.map((country) => (
+              <div className="world-map-details-content">
+                <div className="world-map-details-title">
+                  <strong>{country.name}</strong>
+                </div>
+                {country.content}
+                <br />
+                <br />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </>
   );
 
@@ -331,6 +352,8 @@ launched in 10 countries around the World will enable critical business drivers.
       </div>
       <ImageModal open={imageOpen} image={image} handleCloseClick={handleCloseClick} />
       <CustomModal
+        isMobile={isMobile}
+        className="world-map-modal-wrapper"
         open={worldMapModalOpen}
         content={worldMapModalContent}
         handleCloseClick={() => handleWorldMapClose()}

@@ -305,7 +305,7 @@ function SideBar(props) {
           <br />
           &copy;2019 F.Hoffmann-La Roche Ltd
           <br />
-          Last Updated October 2019
+          Last Updated December 2019
         </span>
       </div>
       {isMobile && (

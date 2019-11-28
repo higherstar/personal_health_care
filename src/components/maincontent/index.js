@@ -18,6 +18,9 @@ function MainContent(props) {
     if (activeIndex !== 0) {
       setLink(navOptions[activeIndex - 1].link);
       setState(true);
+    } else {
+      setLink(navOptions[navOptions.length - 1].link);
+      setState(true);
     }
   };
 
@@ -25,6 +28,9 @@ function MainContent(props) {
     const activeIndex = navOptions.findIndex((option) => option.active === true);
     if (activeIndex !== navOptions.length - 1) {
       setLink(navOptions[activeIndex + 1].link);
+      setState(true);
+    } else {
+      setLink(navOptions[0].link);
       setState(true);
     }
   };

@@ -240,7 +240,7 @@ function Welcome(props) {
         Before diving into the PHC systems map, learn about why PHC is important and Roche’s PHC vision and
         strategy on the
         {' '}
-        <a target="_blank" rel="noopener noreferrer" href="http://we.intranet.roche.com/sites/bio/services/fast/FASTApps/Pages/Personalised-Healthcare-Pharma-Starter-Pack-.aspx">
+        <a target="_blank" rel="noopener noreferrer" href="http://phcportal.roche.com/">
         PHC portal
         </a>
 .
@@ -249,14 +249,15 @@ function Welcome(props) {
       <br />
       <h2>How We Built the PHC-Enabled Patient Journey</h2>
       <p>
-        This site is built around the
-        {' '}
-        <strong>future patient journey that is fully personalised.</strong>
-        {' '}
-        It includes key PHC concepts that are relevant for each step of a patient’ care as well as key system enablers
-        that are important to keep in mind. Check out the video below to learn about how we envision the
-        future patient journey to be different from the existing one and how we built the PHC systems map.
+        This systems map is a collaborative initiative brought to you by Medical and Commercial, and received
+        insights from PD, Access, Compliance and Legal. This site will be updated on a half-yearly basis.
+        This systems map is built around the future patient journey that is fully personalised.
+        It includes key PHC concepts that are relevant for each step of a patient’s care as well as
+        key system enablers that are important to keep in mind. Check out the video below to learn
+        about how we envision the future patient journey to be different from the existing one and
+        how we built this site.
       </p>
+      <br />
       <div className="welcome-videos" style={{ width: isMobile ? '100%' : '50%', minWidth: isMobile ? 'unset' : 500 }}>
         <Slider {...settings}>
           {videos.map((video, index) => (
@@ -265,6 +266,12 @@ function Welcome(props) {
         </Slider>
       </div>
       <br />
+      <br />
+      <p>
+        We invite you to dive in and learn more,
+        <br />
+        - Wei-Ping Kuo, Competency Development and Claudia Reichelt, PHC & Patient Access, PDMA
+      </p>
       <br />
       <div
         className="explore-button d-flex align-items-center justify-content-center"

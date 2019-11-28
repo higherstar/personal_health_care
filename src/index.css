@@ -895,6 +895,13 @@ span span {
   .custom-modal-wrapper {
     height: calc(100vh - 70px) !important;
     top: -40px !important; }
+  .world-map-modal-wrapper {
+    position: fixed;
+    top: 110px !important;
+    left: 0 !important;
+    padding: 0 20px !important; }
+    .world-map-modal-wrapper .custom-modal-content {
+      height: 70vh !important; }
   .roche-dropdown {
     top: 2%;
     left: 75%; }
@@ -919,6 +926,8 @@ span span {
     padding: 0 10px !important; }
     .main-content .main-content-image {
       pointer-events: none !important; }
+    .main-content .world-map-image {
+      pointer-events: all !important; }
     .main-content .main-content-title {
       font-size: 20px !important; }
     .main-content .connection-button {

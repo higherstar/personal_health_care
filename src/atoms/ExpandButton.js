@@ -42,7 +42,6 @@ function ExpandButton(props) {
           <div className="expand-content-title">
             <strong>{header}</strong>
           </div>
-
           {content}
         </div>
       )}
