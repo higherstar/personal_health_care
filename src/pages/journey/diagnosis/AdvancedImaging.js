@@ -217,6 +217,7 @@ function DiagnosisAdvancedImaging(props) {
       </p>
       <p>
         <strong>Smarter & more efficient R&D </strong>
+        <br />
         By automating time-consuming & costly processes
         (e.g., secondary imaging reads & IRFs), this effort will result in significantly faster trials,
         while more accurate quantification of disease burden will enable robust cohort matching for use in
@@ -224,6 +225,7 @@ function DiagnosisAdvancedImaging(props) {
       </p>
       <p>
         <strong>Improved access & personalised care </strong>
+        <br />
         Development of automated algorithms can provide
         better and more accurate measurements of disease than currently available to help predict progression
         and response to therapy.

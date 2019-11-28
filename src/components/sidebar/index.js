@@ -85,7 +85,8 @@ function SideBar(props) {
   const footerStyle = {
     height: collapsed ? 0 : '95px',
     borderTop: collapsed ? 'none' : '5px solid #71C6FF',
-    fontSize: collapsed ? 0 : '13px',
+    fontSize: collapsed ? 0 : '12px',
+    lineHeight: collapsed ? 0 : '17px',
   };
 
   const defaultTop = [100, 140, 180, 220, 260];
@@ -299,6 +300,8 @@ function SideBar(props) {
       </div>
       <div className="side-bar-footer d-flex align-items-center justify-content-center" style={footerStyle}>
         <span>
+          PDMA Competency Development
+          <br />
           Roche Confidential & Proprietary.
           <br />
           For Internal Use Only.

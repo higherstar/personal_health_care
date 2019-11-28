@@ -237,6 +237,7 @@ Foster discussion among all relevant
         1-Achieve partner agreements to
         {' '}
         <strong>implement MVP components</strong>
+        {' '}
         (Roche PHC assets not mandatory):
       </p>
       <p>
@@ -309,6 +310,11 @@ launched in 10 countries around the World will enable critical business drivers.
     </>
   );
 
+  const [activeCountry, setActiveCountry] = useState('');
+  const handleExpandButtonClick = (event) => {
+    setActiveCountry(event);
+  };
+
   const worldMapModalContent = (
     <>
       {!isMobile ? (
@@ -320,9 +326,11 @@ launched in 10 countries around the World will enable critical business drivers.
           />
           {countryData.map((country) => (
             <ExpandButton
+              expand={activeCountry === country.name}
               header={country.name}
               content={country.content}
               className={country.className}
+              handleChange={handleExpandButtonClick}
             />
           ))}
         </div>

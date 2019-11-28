@@ -240,7 +240,7 @@ function DiagnosisGenomics(props) {
         <strong>
           Improved access & personalised care
         </strong>
-        {' '}
+        <br />
         Foundation Medicine (FMI) is leading the understanding and use of CGP in the clinical setting,
         establishing new standards for
         {' '}
@@ -276,7 +276,7 @@ function DiagnosisGenomics(props) {
         <strong>
           Smarter & more efficient R&D
         </strong>
-        {' '}
+        <br />
         Leveraging MDAS to accelerate and improve our pipeline, our R&D efforts combine
         deep genomic data with other data to better understand diseases and to detect biomarkers
         of responses or resistance to treatment during the product development phase.
@@ -309,9 +309,9 @@ function DiagnosisGenomics(props) {
         <br />
         The
         {' '}
-        <strong>CUPISCO</strong>
+        <strong>CUPISCO trial</strong>
         {' '}
-trial is an example of the use of CGP in combination with a patient-centric
+is an example of the use of CGP in combination with a patient-centric
         decision-making process by a Molecular Tumor Board to provide a highly-specific treatment
         decision for each patient. Click here to learn more about the CUPISCO Case Study from the
         {' '}
@@ -349,7 +349,7 @@ Level of funding of biomarker and NGS tests by the
           <strong>Payer acceptance – </strong>
           Level of
           {' '}
-          <Link to="/phc/systems-enablers/partner/patient-partnerships">reimbursement</Link>
+          <Link to="/phc/systems-enablers/partner/stakeholders">reimbursement</Link>
           {' '}
           of molecularly-informed therapies
         </li>

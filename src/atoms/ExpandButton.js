@@ -5,13 +5,13 @@ import to from '../assets/atoms/toggle_minus.png';
 
 function ExpandButton(props) {
   const {
-    header, content, className, handleChange,
+    expand, header, content, className, handleChange,
   } = props;
 
   const [state, setState] = useState(true);
   const onClick = () => {
     setState(!state);
-    handleChange(state);
+    handleChange(header);
   };
 
   const buttonStyle = {
@@ -35,9 +35,9 @@ function ExpandButton(props) {
         className="d-flex align-items-center justify-content-center position-relative custom-button"
         style={buttonStyle}
       >
-        <img src={state ? from : to} alt="toggle from" style={imageStyle} />
+        <img src={!expand ? from : to} alt="toggle from" style={imageStyle} />
       </div>
-      { !state && (
+      { expand && (
         <div className="expand-content">
           <div className="expand-content-title">
             <strong>{header}</strong>
@@ -50,6 +50,7 @@ function ExpandButton(props) {
 }
 
 ExpandButton.propTypes = {
+  expand: PropTypes.bool,
   header: PropTypes.string,
   content: PropTypes.string,
   className: PropTypes.string,
@@ -57,6 +58,7 @@ ExpandButton.propTypes = {
 };
 
 ExpandButton.defaultProps = {
+  expand: false,
   header: '',
   content: '',
   className: '',
