@@ -71,7 +71,7 @@ function Context(props) {
 
   const mainContent = (
     <>
-      <h2>Achieving a fully enabled PHC engine</h2>
+      <h2>Achieving a fully enabled personalised healthcare (PHC) engine</h2>
       <p>
         We recognize that fully embedded PHC capabilities won’t happen instantaneously.
         Instead, we see
@@ -103,12 +103,11 @@ function Context(props) {
       />
       <br />
       <br />
-      <h2>
-        Develop you PHC strategy with the Landscape Assessment and Strategy Builder
-      </h2>
       <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder">
         <strong>PHC Market Maturity Self Assessment </strong>
       </a>
+      <br />
+      <br />
       <img
         className="main-content-image"
         src={assessmentImage}
@@ -116,9 +115,12 @@ function Context(props) {
         alt="assessmentImage"
       />
       <br />
+      <br />
       <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder?authuser">
         <strong>PHC Strategy Builder</strong>
       </a>
+      <br />
+      <br />
       <img
         className="main-content-image"
         src={strategyImage}
@@ -126,13 +128,15 @@ function Context(props) {
         alt="strategyImage"
       />
       <br />
+      <br />
       <h2>
         Develop you PHC strategy with the Landscape Assessment and Strategy Builder
       </h2>
-      <br />
       <strong>
 PHC in your market
       </strong>
+      <br />
+      <br />
       <img
         className="main-content-image"
         src={marketImage}

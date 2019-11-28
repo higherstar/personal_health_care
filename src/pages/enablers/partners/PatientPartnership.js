@@ -72,7 +72,7 @@ function PatientPartnership(props) {
     <>
       <h2>Description</h2>
       <p>
-        Our goal is to amplify patients’ voice in shaping the future of personalised healthcare by
+        Our goal is to amplify patients’ voice in shaping the future of personalised healthcare (PHC) by
         orchestrating Roche patient partnerships, both internally and externally.
       </p>
       <img
