@@ -205,7 +205,7 @@ function DiagnosisGenomics(props) {
         <br />
         At the molecular level, the expression of certain genes is used as biomarker to determine the
         appropriate therapy for cancer patients. Biomarkers are thus a key component of Personalised
-        Healthcare approaches. Appropriate biomarkers are also essential to design clinical studies and
+        Healthcare (PHC) approaches. Appropriate biomarkers are also essential to design clinical studies and
         to define their intended or expected outcome. Diagnostic methods such as NGS and CGP aim at
         identifying and quantifying disease-relevant
         biomarkers.
@@ -217,7 +217,7 @@ function DiagnosisGenomics(props) {
         <br />
         Roche Sequencing Solutions offers best in-class NGS products.
         Clinical NGS can involve one single gene to many genes and provides clinicians with information
-        to assist in treatment selection, thus enabling personalised PHC. Advanced reports, such as those
+        to assist in treatment selection, thus enabling PHC. Advanced reports, such as those
         FMI deliver, provide information including
         clinical trials, treatments to avoid and potential resistance gene of relevance.
         <br />
