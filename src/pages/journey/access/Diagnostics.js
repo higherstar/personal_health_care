@@ -192,7 +192,7 @@ function AccessDiagnostics(props) {
         <strong>Smarter and more efficient R&D</strong>
         <br />
                 To support Roche's PHC efforts, our diagnostics offerings are evolving along with the
-        of new diagnostics technologies. We are investing in applying new technologies that can
+        availability of new diagnostics technologies. We are investing in applying new technologies that can
         help support smarter and more efficient R&D across our Pharma programs, such as:
         <li>
           <strong>Next generation sequencing</strong>
@@ -232,7 +232,7 @@ Roche makes these diagnostics available to more patients faster through its comm
       </span>
       <br />
       <span>
-        <strong>What it means for health systems</strong>
+        <strong>What it means for healthcare systems</strong>
         <br />
         Diagnostic tools are critical to supporting personalised care and access. Diagnostic
         tools provide information and data that:
@@ -247,7 +247,7 @@ Roche makes these diagnostics available to more patients faster through its comm
       <span>
         <strong>1. Companion diagnostics </strong>
         (CDx): May be predictive of patient response to a
-        specific treatment and are required by the drug label for the safe and effective use of a therapy.
+        specific treatment and are required by the drug label for the safe and effective use of a therapy
       </span>
       <br />
       <span>

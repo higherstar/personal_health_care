@@ -74,8 +74,6 @@ const navOptions = [
 const modalHeader = (
   <div className="reference-title d-flex">
     Acknowledgements
-    {' '}
-    <h1 style={{ marginLeft: '50px' }} className="d-none d-md-block d-lg-block d-sm-none">Content coming soon</h1>
   </div>
 );
 
@@ -86,184 +84,91 @@ const modalContent = (
     </h3>
     <div className="reference-content d-flex justify-content-between align-items-start flex-wrap">
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Camille Andre</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Mike Baker</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Eric Barrière</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Richard Batchelder</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Don Beasley</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Mary Beattie</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Andreas Beringer</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Ciro Caravaggio</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Isabelle Cognet</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Gordana S. Cvetkovska</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Luca Gambini</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Teresa Gerlock</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Darine Ghanem</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Youssef Ghazi</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Kelly Haenlein</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Ruchika Kumar</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Etienne Laine</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Thai Le</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Jorge Martinalbo</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Martina von Meyenn</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Hans Middelhoven</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Pouya Pakneshan</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Priya Parameswaran</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Camille Perret</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Jennifer Pougnet</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Marlene Thomas</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
+        <strong>Michael de Villiers</strong>
       </p>
       <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Penelope Wood</strong>
       </p>
       <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
-      </p>
-      <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
-      </p>
-      <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
-      </p>
-      <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
-      </p>
-      <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
-      </p>
-      <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
-      </p>
-      <p>
-        <strong>John Doe,</strong>
-        {' '}
-PHC CoE
-      </p>
-      <p>
-        <strong>Jane Doe,</strong>
-        {' '}
-PDMA
+        <strong>Karolina Zydziak</strong>
       </p>
     </div>
   </div>
@@ -291,7 +196,7 @@ function Acknowledgements(props) {
       isMobile={isMobile}
       mobileCollapsed={mobileCollapsed}
       handleMenuClick={handleMenuClick}
-      title="Acknowledgments (Coming soon)"
+      title="Acknowledgments"
       color="blue"
     />
   );

@@ -109,7 +109,7 @@ Clinicians in partnership with patients
         Emerging digital technologies in other diseases
       </li>
       <li>
-        An earlier diagnosis to catch disease when it is more treatable or curable.
+        An earlier diagnosis to catch disease when it is more treatable or curable
       </li>
     </span>
   </>
