@@ -81,7 +81,7 @@ function PatientPartnership(props) {
         onClick={() => openImageModal(descriptionImage)}
         alt="description"
       />
-      <br />
+      <hr />
       <h2>
         Patient Partnership in PHC
       </h2>
@@ -94,7 +94,7 @@ function PatientPartnership(props) {
       </p>
       <p>
         Despite advances that have been made to date, much work is needed to ensure that patients have access
-        to the potentially transformative benefits of PHC, Patient communities have an important role to play
+        to the potentially transformative benefits of PHC; Patient communities have an important role to play
         in advancing the PHC agenda.
       </p>
       <h2>
@@ -106,7 +106,7 @@ function PatientPartnership(props) {
         onClick={() => openImageModal(pillarsImage)}
         alt="pillars"
       />
-      <br />
+      <hr />
       <h2>
         Tactics Overview (2019 – 2021)
       </h2>
@@ -116,7 +116,7 @@ function PatientPartnership(props) {
         onClick={() => openImageModal(tacticsImage)}
         alt="tactics"
       />
-      <br />
+      <hr />
       <h2>
         Patient Partnership along the molecule lifecycle
       </h2>
@@ -125,11 +125,10 @@ function PatientPartnership(props) {
         programs across the value chain. Different partnership activities alongside other stakeholders
         can achieve differing goals along the value chain.
       </p>
+      <h2>
+        Goals of patient partnership across the value chain
+      </h2>
       <p>
-        <strong>
-          Goals of patient partnership across the value chain:
-        </strong>
-        <br />
         Along the product life cycle, Patient Partnership leads and supports cross-functional
         teams & activities.
       </p>
@@ -139,7 +138,7 @@ function PatientPartnership(props) {
         onClick={() => openImageModal(lifecycleImage)}
         alt="lifecycle"
       />
-      <br />
+      <hr />
       <span>
         To learn more, check out the
         {' '}

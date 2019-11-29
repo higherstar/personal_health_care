@@ -245,8 +245,7 @@ function Welcome(props) {
         </a>
 .
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>How We Built the PHC-Enabled Patient Journey</h2>
       <p>
         This systems map is a collaborative initiative brought to you by Medical and Commercial, and received
@@ -265,8 +264,7 @@ function Welcome(props) {
           ))}
         </Slider>
       </div>
-      <br />
-      <br />
+      <hr />
       <p>
         We invite you to dive in and learn more,
         <br />

@@ -235,8 +235,7 @@ Connected drug administration and delivery systems to enhance health outcomes of
         </a>
         .
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>
         Why it is important
       </h2>
@@ -266,8 +265,7 @@ Screening and diagnosis
         </li>
         Digital Health also supports patient satisfaction, quality of life, and survival.
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>
         Why it is important for PHC
       </h2>
@@ -312,8 +310,7 @@ Screening and diagnosis
         <br />
         2. Improve MS management in clinical practice
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>
         Key drivers/considerations
       </h2>

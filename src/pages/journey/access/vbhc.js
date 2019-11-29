@@ -91,8 +91,7 @@ function ValueBasedHealthCare(props) {
         onClick={() => openImageModal(vbhcImage)}
         alt="vbhc description"
       />
-      <br />
-      <br />
+      <hr />
       <span>
         To learn more, check out the “Value-Based HealthCare” module from the
         {' '}
@@ -101,8 +100,7 @@ function ValueBasedHealthCare(props) {
         </a>
         .
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>Why it is important</h2>
       <li>
         VBHC aligns with Roche’s core focus on what patients need. This model would ensure
@@ -173,8 +171,7 @@ function ValueBasedHealthCare(props) {
         onClick={() => openImageModal(frameDescImage)}
         alt="framework description"
       />
-      <br />
-      <br />
+      <hr />
       <span>
 To learn more about VBHC, please go to the
         {' '}

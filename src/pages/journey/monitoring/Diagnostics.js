@@ -268,8 +268,7 @@ Roche makes these diagnostics available to more patients faster through its comm
         s prognosis or
         likelihood of responding to certain therapies
       </span>
-      <br />
-      <br />
+      <hr />
       <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
@@ -301,8 +300,7 @@ Roche makes these diagnostics available to more patients faster through its comm
         </a>
         .
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>Key drivers/considerations</h2>
       <li>
         <strong>Fast turnaround time for results</strong>

@@ -77,6 +77,7 @@ of
       {' '}
       <Link to="/phc/future-patient-journey/diagnosis/advanced-imaging">imaging</Link>
       {' '}
+      ,
 and digital data sets.
     </p>
     <p>
@@ -94,20 +95,18 @@ and meaningful
       {' '}
       <strong>by reducing turnaround time from months to minutes</strong>
 .
-      <br />
-      <br />
+      <hr />
       We are also engaging the entire Roche scientific community, external academics and
       crowdsourcing innovative ideas via Challenges and Hackathons hosted on the Apollo platform.
       Apollo implements FAIR principles (findability, accessibility, interoperability, and reusability)
       enabling Roche scientists and external partners to share data and collaborate on insight generation.
-      <br />
-      <br />
+      <hr />
       We define the technology roadmap and implement the capabilities required to enable our
       mission to improve Personalised Patient Care & Access.
     </p>
     <h2>Connection to our PHC Vision and Strategy</h2>
     <span>
-The PHC IX/Technology team supports the entire PHC strategy with through Apollo:
+The PHC IX/Technology team supports the entire PHC strategy with Apollo:
       <li>Multi-Modal Real World Data and Global Imaging Platform</li>
       <li>Data Challenges Platform</li>
       <li>Collaboration Platforms</li>

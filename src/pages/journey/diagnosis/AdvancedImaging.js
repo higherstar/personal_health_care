@@ -269,7 +269,6 @@ function DiagnosisAdvancedImaging(props) {
         <li>
                   More robust cohort matching to synthetic control arm studies
         </li>
-        <br />
                 We are also developing imaging-based biomarkers. This include:
         <li>
                   Full automation of existing endpoints that are used to assess efficacy in clinical trials

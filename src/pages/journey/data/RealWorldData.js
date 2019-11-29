@@ -196,8 +196,7 @@ function RealWorldData(props) {
         </a>
         .
       </span>
-      <br />
-      <br />
+      <hr />
       <h2>
         Why it is important for PHC
       </h2>
@@ -244,8 +243,7 @@ function RealWorldData(props) {
         onClick={() => openImageModal(benefitImage)}
         alt="benefit"
       />
-      <br />
-      <br />
+      <hr />
       <span>
 PHC is a shared mission at Roche and RWD is a critical component of PHC because:
         <li>
@@ -273,8 +271,7 @@ Downstream use of RWE in regulatory/Health Technology Assessment (HTA)/payer dec
         onClick={() => openImageModal(rocheImage)}
         alt="roche"
       />
-      <br />
-      <br />
+      <hr />
       <p>
         Roche is using RWD to advance Research, Regulatory, Access, Medical and Commercial objectives.
       </p>
@@ -284,8 +281,7 @@ Downstream use of RWE in regulatory/Health Technology Assessment (HTA)/payer dec
         onClick={() => openImageModal(rocheUseImage)}
         alt="roche use"
       />
-      <br />
-      <br />
+      <hr />
       <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />

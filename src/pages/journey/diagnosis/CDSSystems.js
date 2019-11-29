@@ -231,8 +231,7 @@ function DiagnosisCDSSystems(props) {
         </a>
         .
       </span>
-      <br />
-      <br />
+      <hr />
       <p>
         In the future, we can imagine having patient interface in CDS systems and dedicated
         patient decision support tools to help patients
@@ -267,8 +266,7 @@ function DiagnosisCDSSystems(props) {
         onClick={() => openImageModal(businessImage)}
         alt="business"
       />
-      <br />
-      <br />
+      <hr />
       <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />
@@ -289,12 +287,10 @@ function DiagnosisCDSSystems(props) {
 We are prepared to operate in an environment where CDS has significant influence on clinical
           care
         </li>
-        <br />
         However, in order to maintain our objectivity and credibility, Roche Pharma is not independently
         developing or commercializing CDS systems.
       </span>
-      <br />
-      <br />
+      <hr />
       <div className="d-flex">
         <div className="col-lg-8 pl-0">
           <p>

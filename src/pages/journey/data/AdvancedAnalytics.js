@@ -81,16 +81,14 @@ was launched in mid-2017 (with 300+ members)
 will become a Fit-for-Purpose Academic
                 Outreach Model, matching the complexity of Roche’s business needs with the right level of engagement
                 and specific technical expertise.
-      <br />
-      <br />
+      <hr />
       <strong>PHC IX Data and Analytics </strong>
 is an extensible cloud platform solution built to
                 acquire, confirm, curate, process, and expose various data sources in a controlled, secure,
                 reliable, and globally accessible location for advanced analytics purposes. The combination of
                 getting the right data and analytics tools together in one platform will allow us to take a
                 significant step forward putting Roche at the forefront of our drive to deliver PHC toe very patient.
-      <br />
-      <br />
+      <hr />
                 The
       {' '}
       <strong>Challenges Platform </strong>

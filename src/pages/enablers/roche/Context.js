@@ -86,7 +86,7 @@ function Context(props) {
         onClick={() => openImageModal(engineImage)}
         alt="engine"
       />
-      <br />
+      <hr />
       <p>
         Note that this is dependent on your local PHC landscape. Check out the PHC Landscape Assessment and the
         PHC Strategy Builder presented further down in this section.
@@ -101,50 +101,43 @@ function Context(props) {
         onClick={() => openImageModal(acceleratingImage)}
         alt="accelerating"
       />
-      <br />
-      <br />
+      <hr />
       <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder">
         <strong>PHC Market Maturity Self Assessment </strong>
       </a>
-      <br />
-      <br />
+      <hr />
       <img
         className="main-content-image"
         src={assessmentImage}
         onClick={() => openImageModal(assessmentImage)}
         alt="assessmentImage"
       />
-      <br />
-      <br />
+      <hr />
       <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder?authuser">
         <strong>PHC Strategy Builder</strong>
       </a>
-      <br />
-      <br />
+      <hr />
       <img
         className="main-content-image"
         src={strategyImage}
         onClick={() => openImageModal(strategyImage)}
         alt="strategyImage"
       />
-      <br />
-      <br />
+      <hr />
       <h2>
         Develop you PHC strategy with the Landscape Assessment and Strategy Builder
       </h2>
       <strong>
 PHC in your market
       </strong>
-      <br />
-      <br />
+      <hr />
       <img
         className="main-content-image"
         src={marketImage}
         alt="marketImage"
         onClick={() => openImageModal(marketImage)}
       />
-      <br />
-      <br />
+      <hr />
       <div
         className="disclaimer"
         style={{ position: isMobile ? 'relative' : 'absolute', borderRadius: isMobile ? 0 : '0 0 10px 10px' }}

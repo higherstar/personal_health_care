@@ -227,8 +227,7 @@ function DiagnosisDigitalPathology(props) {
         Digital pathology can generate insights with the potential to collate histological
         features with prognosis, outcomes, disease biology, and treatment.
       </span>
-      <br />
-      <br />
+      <hr />
       <span>
         <strong>Why is it important for patients</strong>
         <br />
@@ -237,8 +236,7 @@ function DiagnosisDigitalPathology(props) {
         it holds the promise to impact clinical and patient care in the future by augmenting current
         diagnostic algorithms and supporting more rapid diagnostic insights.
       </span>
-      <br />
-      <br />
+      <hr />
       <strong>Click button below to see:</strong>
       <div className="connection-button d-flex align-items-center" onClick={openConnectionModal}>
         <img src={connectionIcon} alt="connection icon" />

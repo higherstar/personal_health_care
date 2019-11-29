@@ -185,8 +185,7 @@ function ShiningTowers(props) {
         onClick={() => openImageModal(shiningTowersImage)}
         alt="shiningTowersImage"
       />
-      <br />
-      <br />
+      <hr />
       <span>
 We are building local PHC cases to speed up access to advanced diagnostics and treatment.
         We are leveraging
@@ -205,12 +204,12 @@ More precise and earlier
           {' '}
           <Link to="/phc/future-patient-journey/diagnosis/diagnostics">diagnostics</Link>
           {' '}
-done more frequently along with an ncreased
+done more frequently along with an increased
           use of
           {' '}
           <Link to="/phc/future-patient-journey/diagnosis/genomics">genomic profiling</Link>
         </li>
-        <li>Increase availability of molecularly-guided therapy option (MGTO)</li>
+        <li>Increase availability of molecularly-guided therapy options and MGTOs</li>
         <li>Design trials adapted to PHC</li>
         <li>
 Foster discussion among all relevant
@@ -225,7 +224,7 @@ Foster discussion among all relevant
           data and science, as well as catalyze adoption of new PHC paradigms
         </li>
       </span>
-      <br />
+      <hr />
       <h2>
         Shining Towers integrated solutions process
       </h2>
@@ -246,7 +245,6 @@ Foster discussion among all relevant
         <li>RWD capture</li>
         <li>Access to therapy</li>
       </p>
-      <br />
       <p>
         2-Through co-creation, identify opportunities to
         {' '}
@@ -265,8 +263,7 @@ Foster discussion among all relevant
         onClick={() => openImageModal(assetsImage)}
         alt="assetsImage"
       />
-      <br />
-      <br />
+      <hr />
       <p>
         3-Execute and implement
         {' '}
@@ -287,8 +284,7 @@ Foster discussion among all relevant
         onClick={() => openImageModal(assetsOneImage)}
         alt="assetsOneImage"
       />
-      <br />
-      <br />
+      <hr />
       <p>
         <strong>
           Shining Tower initiatives
