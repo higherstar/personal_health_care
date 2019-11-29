@@ -252,7 +252,7 @@ function Welcome(props) {
         This systems map is a collaborative initiative brought to you by Medical and Commercial, and received
         insights from PD, Access, Compliance and Legal. This site will be updated on a half-yearly basis.
         This systems map is built around the future patient journey that is fully personalised.
-        It includes key PHC concepts that are relevant for each step of a patient’s care as well as
+        It includes key PHC concepts that are relevant for each step of a patient’s care, as well as
         key system enablers that are important to keep in mind. Check out the video below to learn
         about how we envision the future patient journey to be different from the existing one and
         how we built this site.

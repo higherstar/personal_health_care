@@ -189,7 +189,7 @@ function MonitoringDiagnostics(props) {
       <h2>Description</h2>
       <p>
         Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a
-        person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support
+        person’s overall health to help prevent, treat, and cure diseases. Moreover, they may support
         precision medicine to identify patients who are likely to benefit from specific treatments or therapies.
         <br />
         Roche is a pioneer and leader in diagnostics, including many technologies in common clinical practice

@@ -287,7 +287,7 @@ const searchData = [
   {
     link: '/phc/future-patient-journey/diagnosis/diagnostics',
     content: 'Description\n'
-      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
+      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help prevent, treat, and cure diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
       + 'Roche is a pioneer and leader in diagnostics, including many technologies in common clinical practice today. Ensuring that patients have access to the right diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a core element of the changes we are driving with personalised healthcare (PHC).\n'
       + '\n'
       + 'Why it is important for PHC\n'
@@ -331,7 +331,7 @@ const searchData = [
   {
     link: '/phc/future-patient-journey/care/diagnostics',
     content: 'Description\n'
-      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
+      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help prevent, treat, and cure diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
       + 'Roche is a pioneer and leader in diagnostics, including many technologies in common clinical practice today. Ensuring that patients have access to the right diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a core element of the changes we are driving with personalised healthcare (PHC).\n'
       + '\n'
       + 'Why it is important for PHC\n'
@@ -375,7 +375,7 @@ const searchData = [
   {
     link: '/phc/future-patient-journey/access/diagnostics',
     content: 'Description\n'
-      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
+      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help prevent, treat, and cure diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
       + 'Roche is a pioneer and leader in diagnostics, including many technologies in common clinical practice today. Ensuring that patients have access to the right diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a core element of the changes we are driving with personalised healthcare (PHC).\n'
       + '\n'
       + 'Why it is important for PHC\n'
@@ -419,7 +419,7 @@ const searchData = [
   {
     link: '/phc/future-patient-journey/monitoring/diagnostics',
     content: 'Description\n'
-      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help cure, treat, or prevent diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
+      + 'Diagnostic tools are used to detect diseases or other conditions, and can be used to monitor a person’s overall health to help prevent, treat, and cure diseases. Moreover, they may support precision medicine to identify patients who are likely to benefit from specific treatments or therapies.\n'
       + 'Roche is a pioneer and leader in diagnostics, including many technologies in common clinical practice today. Ensuring that patients have access to the right diagnostic at the right time at initial diagnosis, monitoring, and at recurrence or progression is a core element of the changes we are driving with personalised healthcare (PHC).\n'
       + '\n'
       + 'Why it is important for PHC\n'
