@@ -349,7 +349,7 @@ Level of funding of biomarker and NGS tests by the
           <strong>Payer acceptance – </strong>
           Level of
           {' '}
-          <Link to="/phc/systems-enablers/partner/stakeholders">reimbursement</Link>
+          <Link to="/phc/systems-enablers">reimbursement</Link>
           {' '}
           of molecularly-informed therapies
         </li>

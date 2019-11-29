@@ -11,7 +11,7 @@ import connectionIcon from '../../../assets/atoms/connection-icon-red.png';
 import benefitImage from '../../../assets/pages/journey/rwd-benefit.png';
 import rocheImage from '../../../assets/pages/journey/real-world-roche.png';
 import rocheUseImage from '../../../assets/pages/journey/real-world-roche-use.png';
-import rwdConnection from '../../../assets/pages/journey/rwd-connection.png';
+import rwdConnection from '../../../assets/pages/journey/connections/real-world-data.png';
 import zoomOutIcon from '../../../assets/pages/journey/journey-zoom-out.png';
 import journeyConnection from '../../../assets/pages/journey/data-zoom-map.png';
 import zoomInIcon from '../../../assets/pages/journey/journey-zoom-in.png';
