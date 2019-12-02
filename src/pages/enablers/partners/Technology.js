@@ -76,7 +76,6 @@ of
 ,
       {' '}
       <Link to="/phc/future-patient-journey/diagnosis/advanced-imaging">imaging</Link>
-      {' '}
       ,
 and digital data sets.
     </p>
