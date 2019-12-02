@@ -130,9 +130,10 @@ see ways to increase evidence. Several jurisdictions (the US,
  in
       healthcare decision-making.
     </p>
-    <p>
+    <p className="mb-0">
       <span>Governments and some payers</span>
-—those willing to move toward PHC—are engaged in
+      {' '}
+—those willing to move toward PHC— are engaged in
       the concept of paying for outcomes and gaining increased budget certainty. Patients and
       their healthcare providers are already beginning to benefit from improved health
       outcomes due to access to a new generation of PHC solutions. Here are a few
@@ -154,21 +155,20 @@ see ways to increase evidence. Several jurisdictions (the US,
       which is one the worst in EU
     </li>
     <li>
-      In China, the 2030 government mission is :
+      In China, the 2030 government mission is:
       <br />
       <span>
-        1.To treat locally 90% of the overall cancer in decreasing medical nomadism
+        1.  To treat locally 90% of the overall cancer in decreasing medical nomadism
         {' '}
         <br />
-        2.15% improvement of the overall survival in cancer
+        2.  15% improvement of the overall survival in cancer
       </span>
     </li>
     <span>
                 New PHC paradigm is the only way to achieve those objectives and consequently represents a huge
                 opportunity for Roche.
     </span>
-    <br />
-    <br />
+    <hr />
     <p>
       <span>Roche and other industry partners</span>
       {' '}
