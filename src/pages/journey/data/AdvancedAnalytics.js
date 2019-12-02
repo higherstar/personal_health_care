@@ -57,13 +57,13 @@ We are enabling the use of Advanced Analytics (AA) to generate evidence/insights
     <h2>
 What Roche is doing in this area
     </h2>
-    <p>
-      <strong>Enhanced Data and Insight Sharing (EDIS) - </strong>
-EDIS is a project at Roche that aims to
+    <span>
+      <strong>Enhanced Data and Insight Sharing (EDIS)</strong>
+      {' '}
+is a project at Roche that aims to
           make our internal data Findable, Accessible, Interoperable, and Reusable (F.A.I.R.).
           This will facilitate data management and sharing.
-    </p>
-    <span>
+      <hr />
       <strong>Roche Advanced Analytics Network (RAAN) </strong>
 was launched in mid-2017 (with 300+ members)
                 to connect advanced analytics experts across Roche. It established the RAAN
@@ -76,7 +76,7 @@ was launched in mid-2017 (with 300+ members)
       <li>
                   To identify ad address business questions that can be solved using advanced analytics
       </li>
-      <br />
+      <hr />
       <strong>Advanced Analytics Academic Collaborations </strong>
 will become a Fit-for-Purpose Academic
                 Outreach Model, matching the complexity of Roche’s business needs with the right level of engagement
@@ -111,7 +111,7 @@ Roche is well positioned to build academic partnerships to continue to strengthe
                   capabilities & enhance our brand as leader in this field
       </li>
     </span>
-    <br />
+    <hr />
     <span>
       <strong>Watch-Outs</strong>
       <li>Data is the bottleneck and should be the core focus initially</li>
