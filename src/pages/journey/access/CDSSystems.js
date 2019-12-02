@@ -194,8 +194,7 @@ function AccessCDSSystems(props) {
         as a tool that enables objective personalised care decisions in the clinical setting by leveraging
         patient-specific data and analytics to support patient and provider decision making, and ultimately
         improve clinical outcomes.
-      </p>
-      <span>
+        <br />
         Most CDS solutions are currently in Oncology, followed by Neuroscience and Ophthalmology—all
         areas of interest for Roche. For more information, please visit
         our “CDS systems” module from the
@@ -204,7 +203,7 @@ function AccessCDSSystems(props) {
           PHC Pharma Starter Pack
         </a>
         .
-      </span>
+      </p>
       <hr />
       <p>
         In the future, we can imagine having patient interface in CDS systems and dedicated
@@ -246,15 +245,14 @@ function AccessCDSSystems(props) {
         <img src={connectionIcon} alt="connection icon" />
         Connections with Other PHC Topics
       </div>
-      <br />
+      <hr />
       <h2>
         What Roche is doing in this area
       </h2>
-      <p>
+      <span>
         At Roche Pharma, our vision is that high-quality CDS systems improve individual patient
         outcomes by supporting personalised clinical decisions in the clinical setting.
-      </p>
-      <span>
+        <br />
         Roche’s Global Pharma CDS strategy was developed to ensure that:
         <li>CDS systems are of high quality</li>
         <li>
@@ -267,20 +265,19 @@ We are prepared to operate in an environment where CDS has significant influence
       <hr />
       <div className="d-flex">
         <div className="col-lg-8 pl-0">
-          <p>
+          <span>
             Roche Diagnostics is further developing the CDS system NAVIFY.
             The NAVIFY Decision Support Portfolio consists of a cross-diagnostics platform that hosts
             an ecosystems of workflow products, apps and services. It is comprised of:
-          </p>
+          </span>
         </div>
-        <div className="col-lg-4 d-none d-lg-block d-sm-none text-content-img img-floodlight">
+        <div className="col-lg-4 d-none d-lg-flex d-sm-none align-items-center text-content-img img-floodlight">
           <img className="main-content-image" src={navifyImage} alt="navify" />
         </div>
       </div>
       <div className="col-sm-12 d-lg-none d-sm-block text-content-img img-floodlight">
         <img className="main-content-image" src={navifyImage} alt="navify" />
-        <br />
-        <br />
+        <hr />
       </div>
       <li>
         <strong>NAVIFY Tumor Board</strong>
@@ -302,7 +299,7 @@ We are prepared to operate in an environment where CDS has significant influence
         it
         easier to pull relevant reference information from global databases
       </li>
-      <br />
+      <hr />
       <h2>
         Key drivers/considerations
       </h2>
