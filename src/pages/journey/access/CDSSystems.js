@@ -269,7 +269,7 @@ We are prepared to operate in an environment where CDS has significant influence
             an ecosystems of workflow products, apps and services. It is comprised of:
           </span>
         </div>
-        <div className="col-lg-4 d-none d-lg-flex d-sm-none align-items-center text-content-img img-floodlight">
+        <div className="col-lg-4 mt-2 d-none d-lg-flex d-sm-none align-items-center text-content-img img-floodlight">
           <img className="main-content-image" src={navifyImage} alt="navify" />
         </div>
       </div>
