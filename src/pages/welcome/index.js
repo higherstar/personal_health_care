@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+import { Player, BigPlayButton } from 'video-react';
 import PropTypes from 'prop-types';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 import PageContainer from '../../components/pagecontainer';
 import DropDown from '../../atoms/DropDown';
 import CustomModal from '../../components/modals/CustomModal';
 import mapImage from '../../assets/maps/map-background.png';
-import videoImage1 from '../../assets/pages/welcome/videoImage1.png';
-import videoImage2 from '../../assets/pages/welcome/videoImage2.png';
-import videoImage3 from '../../assets/pages/welcome/videoImage3.png';
+import video from '../../assets/video/phc.mp4';
+import logo from '../../assets/common/logo.svg';
+
 
 const navOptions = [
   {
@@ -190,15 +188,6 @@ const enablersOptions = [
   },
 ];
 
-const videos = [videoImage1, videoImage2, videoImage3];
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
-
 function Welcome(props) {
   const { isMobile, mobileCollapsed, handleMenuClick } = props;
 
@@ -207,6 +196,7 @@ function Welcome(props) {
   const handleCloseClick = () => {
     setModalOpen(false);
   };
+
 
   const modalContent = (
     <div className="welcome-modal">
@@ -240,11 +230,9 @@ function Welcome(props) {
       </p>
       <br />
       <div className="welcome-videos" style={{ width: isMobile ? '100%' : '50%', minWidth: isMobile ? 'unset' : 500 }}>
-        <Slider {...settings}>
-          {videos.map((video, index) => (
-            <img src={video} alt="video" key={`video_${index}`} />
-          ))}
-        </Slider>
+        <Player src={video}>
+          <BigPlayButton position="center" />
+        </Player>
       </div>
       <br />
       <br />
