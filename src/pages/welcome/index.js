@@ -7,7 +7,6 @@ import DropDown from '../../atoms/DropDown';
 import CustomModal from '../../components/modals/CustomModal';
 import mapImage from '../../assets/maps/map-background.png';
 import video from '../../assets/video/phc.mp4';
-import logo from '../../assets/common/logo.svg';
 
 
 const navOptions = [
