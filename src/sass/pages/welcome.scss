@@ -69,4 +69,10 @@
     right: 0;
     z-index: 5;
   }
+
+  @media (max-width: 800px) {
+    .custom-modal-wrapper {
+      height: calc(100vh - 110px) !important;
+    }
+  }
 }
