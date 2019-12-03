@@ -158,10 +158,22 @@ see ways to increase evidence. Several jurisdictions (the US,
       In China, the 2030 government mission is:
       <br />
       <span>
-        1.  To treat locally 90% of the overall cancer in decreasing medical nomadism
-        {' '}
-        <br />
-        2.  15% improvement of the overall survival in cancer
+        <div className="d-flex">
+          <div>
+        1.
+          </div>
+          {' '}
+          <div className="ml-2 text-decoration-none">
+            To treat locally 90% of the overall cancer in decreasing medical nomadism
+          </div>
+        </div>
+        <div className="d-flex">
+          <div>
+        2.
+          </div>
+          {' '}
+          <div className="ml-2 text-decoration-none">15% improvement of the overall survival in cancer</div>
+        </div>
       </span>
     </li>
     <span>

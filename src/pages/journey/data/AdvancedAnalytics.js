@@ -63,7 +63,7 @@ What Roche is doing in this area
 is a project at Roche that aims to
           make our internal data Findable, Accessible, Interoperable, and Reusable (F.A.I.R.).
           This will facilitate data management and sharing.
-      <hr />
+      <br />
       <strong>Roche Advanced Analytics Network (RAAN) </strong>
 was launched in mid-2017 (with 300+ members)
                 to connect advanced analytics experts across Roche. It established the RAAN
@@ -76,27 +76,25 @@ was launched in mid-2017 (with 300+ members)
       <li>
                   To identify ad address business questions that can be solved using advanced analytics
       </li>
-      <hr />
       <strong>Advanced Analytics Academic Collaborations </strong>
 will become a Fit-for-Purpose Academic
                 Outreach Model, matching the complexity of Roche’s business needs with the right level of engagement
                 and specific technical expertise.
-      <hr />
+      <br />
       <strong>PHC IX Data and Analytics </strong>
 is an extensible cloud platform solution built to
                 acquire, confirm, curate, process, and expose various data sources in a controlled, secure,
                 reliable, and globally accessible location for advanced analytics purposes. The combination of
                 getting the right data and analytics tools together in one platform will allow us to take a
                 significant step forward putting Roche at the forefront of our drive to deliver PHC toe very patient.
-      <hr />
+      <br />
                 The
       {' '}
       <strong>Challenges Platform </strong>
 provides challenge-specific infrastructure and guidance for
                 communities wanting to run data challenges.
     </span>
-    <br />
-    <br />
+    <hr />
     <h2>Key drivers/considerations</h2>
     <span>
       <strong>Key Learnings</strong>

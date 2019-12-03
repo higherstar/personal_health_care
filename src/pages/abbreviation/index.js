@@ -290,7 +290,11 @@ const modalContent = (
         <br />
         For more information, consult our
         {' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources?authuser=0">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://drive.google.com/file/d/1HJ8K_wyZvjIVoe2OG19TdYsZvuKvmnHo/view"
+        >
           lexicon
         </a>
 .

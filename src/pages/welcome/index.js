@@ -240,7 +240,7 @@ function Welcome(props) {
         Before diving into the PHC systems map, learn about why PHC is important and Roche’s PHC vision and
         strategy on the
         {' '}
-        <a target="_blank" rel="noopener noreferrer" href="http://phcportal.roche.com/">
+        <a target="_blank" rel="noopener noreferrer" href="https://phcportal.roche.com/">
         PHC portal
         </a>
 .
@@ -264,13 +264,13 @@ function Welcome(props) {
           ))}
         </Slider>
       </div>
-      <hr />
+      <br />
+      <br />
       <p>
         We invite you to dive in and learn more,
         <br />
         - Wei-Ping Kuo, Competency Development and Claudia Reichelt, PHC & Patient Access, PDMA
       </p>
-      <br />
       <div
         className="explore-button d-flex align-items-center justify-content-center"
         onClick={handleCloseClick}

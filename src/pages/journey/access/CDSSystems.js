@@ -203,9 +203,7 @@ function AccessCDSSystems(props) {
           PHC Pharma Starter Pack
         </a>
         .
-      </p>
-      <hr />
-      <p>
+        <br />
         In the future, we can imagine having patient interface in CDS systems and dedicated
         patient decision support tools to help patients
         {' '}

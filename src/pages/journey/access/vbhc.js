@@ -171,15 +171,6 @@ function ValueBasedHealthCare(props) {
         onClick={() => openImageModal(frameDescImage)}
         alt="framework description"
       />
-      <hr />
-      <span>
-To learn more about VBHC, please go to the
-        {' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/roche.com/vbhcroche">
-                VBHC webpage
-        </a>
-.
-      </span>
     </>
   );
 
