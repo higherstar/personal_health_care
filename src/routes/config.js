@@ -211,13 +211,6 @@ const Routes = (props) => [
     props={props}
     key="care-diagnostics"
   />,
-  // <PublicRoute
-  //  exact
-  //   path="/phc/future-patient-journey/care/mgtos"
-  //   component={MGTOs}
-  //   props={props}
-  //   key="care-mgtos"
-  // />,
   <PublicRoute
     exact
     path="/phc/future-patient-journey/care/overview"
