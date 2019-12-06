@@ -1,15 +1,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="../static/favicon.ico">
+  <link rel="icon" href="../../static/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="apple-touch-icon" href="../static/logo192.png">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="../../static/logo192.png">
   <!--
     manifest.json provides metadata used when your web app is installed on a
     user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
   -->
-  <link rel="manifest" href="../static/manifest.json">
+  <link rel="manifest" href="../../static/manifest.json">
   <!--
     Notice the use of  in the tags above.
     It will be replaced with the URL of the `public` folder during the build.
@@ -19,7 +20,7 @@
     work correctly both with client-side routing and a non-root public URL.
     Learn how to configure a non-root public URL by running `npm run build`.
   -->
-  <title>Persanlised Healthcare Systems</title>
+  <title>React App</title>
   <style>/*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11992,7 +11993,7 @@
 --------------------------------------------------------------*/
   @font-face {
     font-family: 'Imago';
-    src: url("../fonts/Berthold_Imago_Book.ttf");
+    src: url("../../fonts/Berthold_Imago_Book.ttf");
   }
 
   body {
@@ -12035,20 +12036,20 @@
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root">
   <div class="header d-flex align-items-center justify-content-between"><a href="/phc/welcome"><span>Personalised Healthcare-Enabled Patient Journey</span></a><a
-      href="/phc/welcome"><img class="logo" src="../static/media/logo.2c6efde3.svg" alt="logo"></a></div>
+      href="/phc/welcome"><img class="logo" src="../../static/media/logo.2c6efde3.svg" alt="logo"></a></div>
   <div class="page-container">
-    <div class="background-image"><img src="../static/media/background.e88657e9.png" alt="background"></div>
+    <div class="background-image"><img src="../../static/media/background.e88657e9.png" alt="background"></div>
     <div class="top-bar d-flex align-items-center justify-content-center"
-         style="background: transparent; height: 52px;">
+         style="background: rgb(0, 102, 204); height: 52px;">
       <div class="side-bar-header d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-center custom-button collapse-button"
              style="width: 36px; height: 36px; background: rgb(255, 255, 255); border: 4px solid rgb(113, 198, 255); border-radius: 20px; cursor: pointer;">
-          <img src="../static/media/arrow-left.3689acfa.svg" alt="toggle from" style="width: 10px; position: absolute;">
+          <img src="../../static/media/arrow-left.3689acfa.svg" alt="toggle from" style="width: 10px; position: absolute;">
         </div>
         <span>Collapse the Navigation</span></div>
-    </div>
+      <span>Data &amp; Insights</span></div>
     <div class="side-bar-wrapper">
-      <div class="side-bar" style="width: 318px; background: rgba(255, 255, 255, 0.68);">
+      <div class="side-bar" style="width: 318px; background: transparent;">
         <div class="side-bar-left-band"></div>
         <div class="side-bar-header" style="background: rgb(0, 102, 204);"></div>
         <div class="side-bar-content">
@@ -12056,7 +12057,7 @@
                style="width: 280px; height: 40px; background: rgb(113, 198, 255); border-radius: 20px; cursor: pointer; transition: all 0.3s ease 0s;">
             <div class="custom-button d-flex align-items-center justify-content-center"
                  style="width: 32px; height: 32px; background: white; border-radius: 16px; cursor: pointer; margin-left: 4px; position: absolute;">
-              <img src="../static/media/search-icon.30da9b45.svg" alt="search icon"
+              <img src="../../static/media/search-icon.30da9b45.svg" alt="search icon"
                    style="width: 23px; margin-right: 2px; margin-left: 1px;"></div>
             <span style="width: 100%; font-size: 20px; color: white; margin-left: 48px; transition: all 0.3s ease 0s;">SEARCH</span>
           </div>
@@ -12066,65 +12067,50 @@
             <div class="results-container"></div>
           </div>
           <div class="side-bar-nav">
-            <div>
-              <div class="nav-dot"
-                   style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 100px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 90px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/welcome"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>WELCOME</span></a>
-                  <div></div>
-                </div>
+            <div class="side-bar-submenu-left"></div>
+            <div class="side-bar-submenu"
+                 style="width: 230px; height: 100%; background: rgba(255, 255, 255, 0.68); position: absolute; font-size: 17px; top: 0px; right: 0px;">
+              <div class="d-flex align-items-center flex-column side-bar-submenu-title-wrapper"><a
+                  class="side-bar-submenu-title" href="/phc/future-patient-journey">Data &amp; Insights</a></div>
+              <div class="d-flex align-items-center submenu-item-wrapper"><a class="submenu-item"
+                                                                             href="/phc/future-patient-journey/data/overview">Overview</a>
               </div>
+              <div class="d-flex align-items-center submenu-item-wrapper"><a class="submenu-item"
+                                                                             href="/phc/future-patient-journey/data/real-world-data">Real-World
+                Data</a></div>
+              <div class="d-flex align-items-center submenu-item-wrapper" style="background: white; font-weight: bold;">
+                <a class="submenu-item" href="/phc/future-patient-journey/data/advanced-analytics">Advanced
+                  Analytics</a></div>
             </div>
             <div>
               <div class="nav-dot"
-                   style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 140px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 130px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/future-patient-journey"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>FUTURE PATIENT JOURNEY</span></a>
-                  <div></div>
-                </div>
-              </div>
+                   style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 100px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 97px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
+            </div>
+            <div>
+              <div class="nav-dot"
+                   style="width: 20px; height: 20px; background: rgb(0, 102, 204); position: absolute; top: 140px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: block; width: 26px; height: 26px; position: absolute; top: 137px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
                    style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 180px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 170px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/systems-enablers"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>SYSTEMS ENABLERS</span></a>
-                  <div></div>
-                </div>
-              </div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 177px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
-                   style="width: 20px; height: 20px; background: rgb(0, 102, 204); position: absolute; top: 220px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 210px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: white; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/abbreviation"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: bold; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>ABBREVIATION LIST</span></a>
-                  <div></div>
-                </div>
-              </div>
+                   style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 220px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 217px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
                    style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 260px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 250px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/acknowledgements"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>ACKNOWLEDGEMENTS</span></a>
-                  <div></div>
-                </div>
-              </div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 257px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
           </div>
         </div>
@@ -12134,73 +12120,31 @@
       </div>
     </div>
     <div class="page-content" style="width: calc(100vw - 318px); left: 318px;">
-      <div class="abbreviation d-flex align-items-center justify-content-center">
-        <div class="background-map"><img src="../static/media/map-background.0b2cc01f.png" alt="background map"></div>
-        <div class="custom-modal-wrapper " style="display: flex; height: calc(100vh - 112px);">
-          <div class="custom-modal-container phc-container">
-            <div class="custom-modal-header d-flex align-items-center justify-content-start">
-              <div class="reference-title d-flex">Abbreviation List</div>
-            </div>
-            <div class="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap"
-                 style="height: calc(100% - 60px);">
-              <div class="abbreviation-content">
-                <div class="reference-content d-flex justify-content-between align-items-start flex-wrap"><p>
-                  <span>AA: </span>Advanced Analytics</p>
-                  <p><span>AI: </span>Artificial Intelligence</p>
-                  <p><span>CDS: </span>Clinical Decision Support</p>
-                  <p><span>CDx: </span>Companion Diagnostics</p>
-                  <p><span>CGP: </span>Comprehensive Genomic Profiling*</p>
-                  <p><span>CoDx: </span>Complementary Diagnostics</p>
-                  <p><span>ctDNA: </span>Circulating Tumor DNA</p>
-                  <p><span>CUP: </span>Carcinoma of Unknown Primary</p>
-                  <p><span>EDIS: </span>Enhanced Data and Insight Sharing</p>
-                  <p><span>EHR: </span>Electronic Health Record</p>
-                  <p><span>EMA: </span>European Medicines Agency</p>
-                  <p><span>ESMO: </span>European Society for Medical Oncology</p>
-                  <p><span>F.A.I.R.: </span>Findable, Accessible, Interoperable, and Reusable</p>
-                  <p><span>FDA: </span>Food and Drug Administration</p>
-                  <p><span>FISH: </span>Fluorescence In Situ Hybridization</p>
-                  <p><span>FMI: </span>Foundation Medicine</p>
-                  <p><span>H&amp;E: </span>Hematoxylin &amp; Eosin</p>
-                  <p><span>HCPs: </span>Healthcare Providers</p>
-                  <p><span>HER2: </span>Receptor tyrosine-protein kinase erbB-2</p>
-                  <p><span>HTA: </span>Health Technology Assessment</p>
-                  <p><span>IEEPO: </span>International Experience Exchange with Patient Organisations</p>
-                  <p><span>IHC: </span>Immunohistochemistry</p>
-                  <p><span>IMDRF: </span>International Medical Device Regulators Forum</p>
-                  <p><span>IP: </span>Intellectual Property</p>
-                  <p><span>IRISe: </span>IRIS Enterprise</p>
-                  <p><span>KVV: </span>Health Insurance Ordinance (Switzerland)</p>
-                  <p><span>MDAS: </span>Meaningful Data at Scale*</p>
-                  <p><span>MGTO: </span>Molecularly-Guided Therapy Option</p>
-                  <p><span>MoA: </span>Mode of Action</p>
-                  <p><span>MRI: </span>Magnetic Resonance Imaging</p>
-                  <p><span>MS: </span>Multiple Sclerosis</p>
-                  <p><span>MVP: </span>Minimal Viable Product</p>
-                  <p><span>NCCN: </span>National Comprehensive Cancer Network</p>
-                  <p><span>NGS: </span>Next-Generation Sequencing</p>
-                  <p><span>NICE: </span>National Institute for Health and Care Excellence</p>
-                  <p><span>NTRK: </span>Neurotrophic Tyrosine Receptor Kinase</p>
-                  <p><span>OKRs: </span>Objectives and Key Results</p>
-                  <p><span>PD-L1: </span>Programmed Death-Ligand 1</p>
-                  <p><span>PET: </span>Positron Emission Tomography</p>
-                  <p><span>PCR: </span>Polymerase Chain Reaction</p>
-                  <p><span>PHC: </span>Personalised Healthcare*</p>
-                  <p><span>PPC&amp;A: </span>Personalised Patient Care and Access*</p>
-                  <p><span>PRM: </span>Personalised Reimbursement Models*</p>
-                  <p><span>PRO: </span>Patient-Reported Outcome</p>
-                  <p><span>R&amp;D: </span>Research and Development</p>
-                  <p><span>RAAN: </span>Roche Advanced Analytics Network</p>
-                  <p><span>RSI: </span>Roche Science Infrastructure</p>
-                  <p><span>RWD: </span>Real-World Data</p>
-                  <p><span>RWE: </span>Real-World Evidence</p>
-                  <p><span>SaMD: </span>Software as Medical Device</p>
-                  <p><span>VBHC: </span>Value-Based HealthCare</p><span><i>*Roche-specific terms</i><br><br>For more information, consult our <a
-                      target="_blank" rel="noopener noreferrer"
-                      href="https://drive.google.com/file/d/1HJ8K_wyZvjIVoe2OG19TdYsZvuKvmnHo/view">lexicon</a>.</span>
-                </div>
-              </div>
-            </div>
+      <div class="data-advanced-analytics page-wrapper d-flex align-items-center justify-content-center">
+        <div class="detail-map"><img src="../../static/media/data.4a971f3f.png" alt="detail map"></div>
+        <div class="main-content">
+          <div class="main-content-header d-flex align-items-center justify-content-between">
+            <button type="button" class="btn btn-primary nav-button"><img
+                src="../../static/media/arrow-left-wide.2b25b342.svg" alt="prev icon"></button>
+            <div class="main-content-title" style="text-transform: uppercase;">Advanced Analytics</div>
+            <button type="button" class="btn btn-primary nav-button"><img
+                src="../../static/media/arrow-right-wide.522e0059.svg" alt="next icon"></button>
+          </div>
+          <div class="main-content-body"><h2>Description</h2>
+            <p>To generate value from MDAS, we employ advanced analytics and sophisticated techniques to gain deeper
+              insights or make predictions. Technologies, such as machine learning and artificial intelligence, show the
+              promise for wide reaching impact. At Roche, we are building algorithms using Artificial Intelligence (AI)
+              and machine learning to help us make faster, more accurate, and more precise decisions based on insights
+              and predictions generated from Meaningful Data at Scale. We are also integrating data from multiple
+              sources and types.</p>
+            <h2>Why it is important in PHC</h2>
+            <p>We are enabling the use of Advanced Analytics (AA) to generate evidence/insights from MDAS to create
+              value for R&amp;D and patient care and access.</p>
+            <h2>What Roche is doing in this area</h2><span><strong>Enhanced Data and Insight Sharing (EDIS)</strong> is a project at Roche that aims to make our internal data Findable, Accessible, Interoperable, and Reusable (F.A.I.R.). This will facilitate data management and sharing.<br><strong>Roche Advanced Analytics Network (RAAN) </strong>was launched in mid-2017 (with 300+ members) to connect advanced analytics experts across Roche. It established the RAAN Advisory Group and sponsored the RAAD Challenge (130+ teams participating). Its objectives are:<br><li>To foster knowledge sharing and further strengthen our advanced analytics expertise across the organization</li><li>To identify ad address business questions that can be solved using advanced analytics</li><strong>Advanced Analytics Academic Collaborations </strong>will become a Fit-for-Purpose Academic Outreach Model, matching the complexity of Roche’s business needs with the right level of engagement and specific technical expertise.<br><strong>PHC IX Data and Analytics </strong>is an extensible cloud platform solution built to acquire, confirm, curate, process, and expose various data sources in a controlled, secure, reliable, and globally accessible location for advanced analytics purposes. The combination of getting the right data and analytics tools together in one platform will allow us to take a significant step forward putting Roche at the forefront of our drive to deliver PHC toe very patient.<br>The <strong>Challenges Platform </strong>provides challenge-specific infrastructure and guidance for communities wanting to run data challenges.</span>
+            <hr>
+            <h2>Key drivers/considerations</h2><span><strong>Key Learnings</strong><li>Roche has strong existing AA capabilities, however they are fragmented</li><li>Lots of enthusiasm &amp; interest in AA across the organization</li><li>We can better leverage this expertise to help answer business questions, establish external connections and evaluate opportunities</li><li>Roche is well positioned to build academic partnerships to continue to strengthen its AA capabilities &amp; enhance our brand as leader in this field</li></span>
+            <hr>
+            <span><strong>Watch-Outs</strong><li>Data is the bottleneck and should be the core focus initially</li><li>Attracting and retaining AA talent is challenging - highly competitive</li><li>Fast moving environment - easy to fall behind with emerging methodologies and technologies if not proactive</li><li>Need to ensure we keep on fostering an environment of learning and communication between departments to drive our AA capabilities</li><li>Sometimes challenging to coordinate RAAN activities across the globe &amp; keep 400+ people engaged and utilized.  Also this is a volunteer driven network.</li></span>
           </div>
         </div>
       </div>
@@ -12217,9 +12161,9 @@
   To begin the development, run `npm start` or `yarn start`.
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
-<script src="../static/js/bundle.js"></script>
-<script src="../static/js/0.chunk.js"></script>
-<script src="../static/js/main.chunk.js"></script>
+<script src="../../static/js/bundle.js"></script>
+<script src="../../static/js/0.chunk.js"></script>
+<script src="../../static/js/main.chunk.js"></script>
 
 </body>
 </html>

@@ -1,15 +1,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="../static/favicon.ico">
+  <link rel="icon" href="../../static/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="apple-touch-icon" href="../static/logo192.png">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="../../static/logo192.png">
   <!--
     manifest.json provides metadata used when your web app is installed on a
     user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
   -->
-  <link rel="manifest" href="../static/manifest.json">
+  <link rel="manifest" href="../../static/manifest.json">
   <!--
     Notice the use of  in the tags above.
     It will be replaced with the URL of the `public` folder during the build.
@@ -19,7 +20,7 @@
     work correctly both with client-side routing and a non-root public URL.
     Learn how to configure a non-root public URL by running `npm run build`.
   -->
-  <title>Persanlised Healthcare Systems</title>
+  <title>React App</title>
   <style>/*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11992,7 +11993,7 @@
 --------------------------------------------------------------*/
   @font-face {
     font-family: 'Imago';
-    src: url("../fonts/Berthold_Imago_Book.ttf");
+    src: url("../../fonts/Berthold_Imago_Book.ttf");
   }
 
   body {
@@ -12035,28 +12036,28 @@
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root">
   <div class="header d-flex align-items-center justify-content-between"><a href="/phc/welcome"><span>Personalised Healthcare-Enabled Patient Journey</span></a><a
-      href="/phc/welcome"><img class="logo" src="../static/media/logo.2c6efde3.svg" alt="logo"></a></div>
+      href="/phc/welcome"><img class="logo" src="../../static/media/logo.2c6efde3.svg" alt="logo"></a></div>
   <div class="page-container">
-    <div class="background-image"><img src="../static/media/background.e88657e9.png" alt="background"></div>
+    <div class="background-image"><img src="../../static/media/background.e88657e9.png" alt="background"></div>
     <div class="top-bar d-flex align-items-center justify-content-center"
-         style="background: transparent; height: 52px;">
+         style="background: rgb(237, 139, 0); height: 52px;">
       <div class="side-bar-header d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-center custom-button collapse-button"
              style="width: 36px; height: 36px; background: rgb(255, 255, 255); border: 4px solid rgb(113, 198, 255); border-radius: 20px; cursor: pointer;">
-          <img src="../static/media/arrow-left.3689acfa.svg" alt="toggle from" style="width: 10px; position: absolute;">
+          <img src="../../static/media/arrow-left.3689acfa.svg" alt="toggle from" style="width: 10px; position: absolute;">
         </div>
         <span>Collapse the Navigation</span></div>
-    </div>
+      <span>Roche initiatives</span></div>
     <div class="side-bar-wrapper">
-      <div class="side-bar" style="width: 318px; background: rgba(255, 255, 255, 0.68);">
+      <div class="side-bar" style="width: 318px; background: transparent;">
         <div class="side-bar-left-band"></div>
-        <div class="side-bar-header" style="background: rgb(0, 102, 204);"></div>
+        <div class="side-bar-header" style="background: rgb(237, 139, 0);"></div>
         <div class="side-bar-content">
           <div class="d-flex align-items-center search-button"
                style="width: 280px; height: 40px; background: rgb(113, 198, 255); border-radius: 20px; cursor: pointer; transition: all 0.3s ease 0s;">
             <div class="custom-button d-flex align-items-center justify-content-center"
                  style="width: 32px; height: 32px; background: white; border-radius: 16px; cursor: pointer; margin-left: 4px; position: absolute;">
-              <img src="../static/media/search-icon.30da9b45.svg" alt="search icon"
+              <img src="../../static/media/search-icon.30da9b45.svg" alt="search icon"
                    style="width: 23px; margin-right: 2px; margin-left: 1px;"></div>
             <span style="width: 100%; font-size: 20px; color: white; margin-left: 48px; transition: all 0.3s ease 0s;">SEARCH</span>
           </div>
@@ -12066,65 +12067,52 @@
             <div class="results-container"></div>
           </div>
           <div class="side-bar-nav">
+            <div class="side-bar-submenu-left"></div>
+            <div class="side-bar-submenu"
+                 style="width: 230px; height: 100%; background: rgba(255, 255, 255, 0.68); position: absolute; font-size: 17px; top: 0px; right: 0px;">
+              <div class="d-flex align-items-center flex-column side-bar-submenu-title-wrapper"><a
+                  class="side-bar-submenu-title" href="/phc/systems-enablers">Roche Initiatives</a></div>
+              <div class="d-flex align-items-center submenu-item-wrapper" style="background: white; font-weight: bold;">
+                <a class="submenu-item" href="/phc/systems-enablers/roches-initiatives/context">Context</a></div>
+              <div class="d-flex align-items-center submenu-item-wrapper"><a class="submenu-item"
+                                                                             href="/phc/systems-enablers/roches-initiatives/showcases">Showcases</a>
+              </div>
+              <div class="d-flex align-items-center submenu-item-wrapper"><a class="submenu-item"
+                                                                             href="/phc/systems-enablers/roches-initiatives/shining-towers">Shining
+                Towers</a></div>
+              <div class="d-flex align-items-center submenu-item-wrapper"><a class="submenu-item"
+                                                                             href="/phc/systems-enablers/roches-initiatives/rozlytrek">Example
+                of PHC in Action: ROZLYTREK</a></div>
+            </div>
             <div>
               <div class="nav-dot"
                    style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 100px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 90px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/welcome"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>WELCOME</span></a>
-                  <div></div>
-                </div>
-              </div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 97px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
                    style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 140px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 130px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/future-patient-journey"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>FUTURE PATIENT JOURNEY</span></a>
-                  <div></div>
-                </div>
-              </div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 137px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
-                   style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 180px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 170px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/systems-enablers"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>SYSTEMS ENABLERS</span></a>
-                  <div></div>
-                </div>
-              </div>
+                   style="width: 20px; height: 20px; background: rgb(0, 102, 204); position: absolute; top: 180px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: block; width: 26px; height: 26px; position: absolute; top: 177px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
-                   style="width: 20px; height: 20px; background: rgb(0, 102, 204); position: absolute; top: 220px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 210px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: white; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/abbreviation"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: bold; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>ABBREVIATION LIST</span></a>
-                  <div></div>
-                </div>
-              </div>
+                   style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 220px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 217px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
             <div>
               <div class="nav-dot"
                    style="width: 20px; height: 20px; background: rgb(113, 198, 255); position: absolute; top: 260px; left: 36px; border-radius: 10px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;"></div>
-              <div class="nav-menu" style="width: 100%; position: absolute; top: 250px; transition: all 0.3s ease 0s;">
-                <div class="nav-menu"
-                     style="width: 100%; height: 40px; background: transparent; padding-left: 70px; transition: all 0.3s ease 0s;">
-                  <a class="d-flex align-items-center nav-menu-title" href="/phc/acknowledgements"
-                     style="height: 40px; font-size: 18px; font-family: Imago; font-weight: normal; cursor: pointer; transition: all 0.3s ease 0s; color: black; text-decoration: none;"><span>ACKNOWLEDGEMENTS</span></a>
-                  <div></div>
-                </div>
-              </div>
+              <img src="../../static/media/arrow-right-blue.90e4f629.svg" alt="nav icon"
+                   style="display: none; width: 26px; height: 26px; position: absolute; top: 257px; left: 55px; cursor: pointer; z-index: 2; transition: all 0.3s ease 0s;">
             </div>
           </div>
         </div>
@@ -12134,72 +12122,54 @@
       </div>
     </div>
     <div class="page-content" style="width: calc(100vw - 318px); left: 318px;">
-      <div class="abbreviation d-flex align-items-center justify-content-center">
-        <div class="background-map"><img src="../static/media/map-background.0b2cc01f.png" alt="background map"></div>
-        <div class="custom-modal-wrapper " style="display: flex; height: calc(100vh - 112px);">
+      <div class="enablers-roche roche-context d-flex align-items-center justify-content-center">
+        <div class="detail-map"><img src="../../static/media/roche.fe7de51f.png" alt="detail map"></div>
+        <div class="image-modal custom-modal-wrapper " style="display: none;">
           <div class="custom-modal-container phc-container">
             <div class="custom-modal-header d-flex align-items-center justify-content-start">
-              <div class="reference-title d-flex">Abbreviation List</div>
+              <button type="button" class="btn btn-primary close-button"><span>×</span></button>
             </div>
-            <div class="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap"
-                 style="height: calc(100% - 60px);">
-              <div class="abbreviation-content">
-                <div class="reference-content d-flex justify-content-between align-items-start flex-wrap"><p>
-                  <span>AA: </span>Advanced Analytics</p>
-                  <p><span>AI: </span>Artificial Intelligence</p>
-                  <p><span>CDS: </span>Clinical Decision Support</p>
-                  <p><span>CDx: </span>Companion Diagnostics</p>
-                  <p><span>CGP: </span>Comprehensive Genomic Profiling*</p>
-                  <p><span>CoDx: </span>Complementary Diagnostics</p>
-                  <p><span>ctDNA: </span>Circulating Tumor DNA</p>
-                  <p><span>CUP: </span>Carcinoma of Unknown Primary</p>
-                  <p><span>EDIS: </span>Enhanced Data and Insight Sharing</p>
-                  <p><span>EHR: </span>Electronic Health Record</p>
-                  <p><span>EMA: </span>European Medicines Agency</p>
-                  <p><span>ESMO: </span>European Society for Medical Oncology</p>
-                  <p><span>F.A.I.R.: </span>Findable, Accessible, Interoperable, and Reusable</p>
-                  <p><span>FDA: </span>Food and Drug Administration</p>
-                  <p><span>FISH: </span>Fluorescence In Situ Hybridization</p>
-                  <p><span>FMI: </span>Foundation Medicine</p>
-                  <p><span>H&amp;E: </span>Hematoxylin &amp; Eosin</p>
-                  <p><span>HCPs: </span>Healthcare Providers</p>
-                  <p><span>HER2: </span>Receptor tyrosine-protein kinase erbB-2</p>
-                  <p><span>HTA: </span>Health Technology Assessment</p>
-                  <p><span>IEEPO: </span>International Experience Exchange with Patient Organisations</p>
-                  <p><span>IHC: </span>Immunohistochemistry</p>
-                  <p><span>IMDRF: </span>International Medical Device Regulators Forum</p>
-                  <p><span>IP: </span>Intellectual Property</p>
-                  <p><span>IRISe: </span>IRIS Enterprise</p>
-                  <p><span>KVV: </span>Health Insurance Ordinance (Switzerland)</p>
-                  <p><span>MDAS: </span>Meaningful Data at Scale*</p>
-                  <p><span>MGTO: </span>Molecularly-Guided Therapy Option</p>
-                  <p><span>MoA: </span>Mode of Action</p>
-                  <p><span>MRI: </span>Magnetic Resonance Imaging</p>
-                  <p><span>MS: </span>Multiple Sclerosis</p>
-                  <p><span>MVP: </span>Minimal Viable Product</p>
-                  <p><span>NCCN: </span>National Comprehensive Cancer Network</p>
-                  <p><span>NGS: </span>Next-Generation Sequencing</p>
-                  <p><span>NICE: </span>National Institute for Health and Care Excellence</p>
-                  <p><span>NTRK: </span>Neurotrophic Tyrosine Receptor Kinase</p>
-                  <p><span>OKRs: </span>Objectives and Key Results</p>
-                  <p><span>PD-L1: </span>Programmed Death-Ligand 1</p>
-                  <p><span>PET: </span>Positron Emission Tomography</p>
-                  <p><span>PCR: </span>Polymerase Chain Reaction</p>
-                  <p><span>PHC: </span>Personalised Healthcare*</p>
-                  <p><span>PPC&amp;A: </span>Personalised Patient Care and Access*</p>
-                  <p><span>PRM: </span>Personalised Reimbursement Models*</p>
-                  <p><span>PRO: </span>Patient-Reported Outcome</p>
-                  <p><span>R&amp;D: </span>Research and Development</p>
-                  <p><span>RAAN: </span>Roche Advanced Analytics Network</p>
-                  <p><span>RSI: </span>Roche Science Infrastructure</p>
-                  <p><span>RWD: </span>Real-World Data</p>
-                  <p><span>RWE: </span>Real-World Evidence</p>
-                  <p><span>SaMD: </span>Software as Medical Device</p>
-                  <p><span>VBHC: </span>Value-Based HealthCare</p><span><i>*Roche-specific terms</i><br><br>For more information, consult our <a
-                      target="_blank" rel="noopener noreferrer"
-                      href="https://drive.google.com/file/d/1HJ8K_wyZvjIVoe2OG19TdYsZvuKvmnHo/view">lexicon</a>.</span>
-                </div>
-              </div>
+            <div class="custom-modal-content d-flex justify-content-center align-items-center flex-md-wrap"><img
+                class="false" src="" alt="modal"></div>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="main-content-header d-flex align-items-center justify-content-between">
+            <button type="button" class="btn btn-primary nav-button"><img
+                src="../../static/media/arrow-left-wide.2b25b342.svg" alt="prev icon"></button>
+            <div class="main-content-title" style="text-transform: uppercase;">Context</div>
+            <button type="button" class="btn btn-primary nav-button"><img
+                src="../../static/media/arrow-right-wide.522e0059.svg" alt="next icon"></button>
+          </div>
+          <div class="main-content-body"><h2>Achieving a fully enabled personalised healthcare (PHC) engine</h2>
+            <p>We recognize that fully embedded PHC capabilities won’t happen instantaneously. Instead, we see this
+              <strong>transformation towards a fully enabled PHC engine</strong>, as shown below:</p><img
+                class="main-content-image" src="../../static/media/phc-engine.854d3e88.png" alt="engine">
+            <hr>
+            <p>Note that this is dependent on your local PHC landscape. Check out the PHC Landscape Assessment and the
+              PHC Strategy Builder presented further down in this section.</p>
+            <h2>Accelerating Personalised Healthcare Internally and Externally</h2><br><img class="main-content-image"
+                                                                                            src="../../static/media/phc-accelerating.a8be5f2f.png"
+                                                                                            alt="accelerating">
+            <hr>
+            <a target="_blank" rel="noopener noreferrer"
+               href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder"><strong>PHC
+              Market Maturity Self Assessment </strong></a>
+            <hr>
+            <img class="main-content-image" src="../../static/media/assessment.694f6e41.png" alt="assessmentImage">
+            <hr>
+            <a target="_blank" rel="noopener noreferrer"
+               href="https://sites.google.com/gene.com/phc-affiliate-hub/home/tools-resources/strategy-builder?authuser"><strong>PHC
+              Strategy Builder</strong></a>
+            <hr>
+            <img class="main-content-image" src="../../static/media/strategy-tool.4d1cfde1.png" alt="strategyImage">
+            <hr>
+            <h2>Develop you PHC strategy with the Landscape Assessment and Strategy Builder</h2><strong>PHC in your
+              market</strong>
+            <hr>
+            <img class="main-content-image" src="../../static/media/market.7cc085c6.png" alt="marketImage">
+            <hr>
+            <div class="disclaimer" style="position: absolute; border-radius: 0px 0px 10px 10px;"><span>THE IMPLEMENTATION OF ANY STRATEGY OR ACTIVITY IS SUBJECT TO AND CONDITIONAL UPON REVIEW AND APPROVAL BY RELEVANT BUSINESS DECISION-MAKERS AND LEGAL/REGULATORY PARTNERS OF THE LOCAL AFFILIATE.</span>
             </div>
           </div>
         </div>
@@ -12217,9 +12187,9 @@
   To begin the development, run `npm start` or `yarn start`.
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
-<script src="../static/js/bundle.js"></script>
-<script src="../static/js/0.chunk.js"></script>
-<script src="../static/js/main.chunk.js"></script>
+<script src="../../static/js/bundle.js"></script>
+<script src="../../static/js/0.chunk.js"></script>
+<script src="../../static/js/main.chunk.js"></script>
 
 </body>
 </html>
