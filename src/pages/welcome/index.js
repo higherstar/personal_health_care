@@ -158,7 +158,7 @@ const enablersOptions = [
       'Context',
       'Showcases',
       'Shining Towers',
-      'ROZLYTREK',
+      'Examples',
     ],
     subMenuLinks: [
       '/phc/systems-enablers/roches-initiatives/context',
@@ -236,7 +236,7 @@ function Welcome(props) {
       <p>
         We invite you to dive in and learn more,
         <br />
-        - Wei-Ping Kuo, Competency Development and Claudia Reichelt, PHC & Patient Access, PDMA
+        - Wei-Ping Kuo, Competency Development
       </p>
       <div
         className="explore-button d-flex align-items-center justify-content-center"

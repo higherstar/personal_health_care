@@ -68,7 +68,7 @@ const dropdownOptions = [
       'Context',
       'Showcases',
       'Shining Towers',
-      'ROZLYTREK',
+      'Examples',
     ],
     subMenuLinks: [
       '/phc/systems-enablers/roches-initiatives/context',
