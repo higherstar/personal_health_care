@@ -43,7 +43,7 @@ function MainContent(props) {
   if (title.includes('Digital Health')) {
     title = 'DIGITAL HEALTH AND SaMD';
   }
-  if (title.includes('ROZLYTREK')) {
+  if (title.includes('Examples')) {
     title = 'Roche Example in PHC';
   }
   if (title.includes('CDS')) {

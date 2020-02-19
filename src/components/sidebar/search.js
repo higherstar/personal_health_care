@@ -325,7 +325,7 @@ const searchData = [
       + 'Key drivers/considerations\n'
       + 'Fast turnaround time for results from ordering a diagnostic to obtaining results is a key consideration in use to support timely decision making for patients\n'
       + 'Actionability of results is critical to uptake of diagnostic testing - i.e. the information provided by test results should impact treatment decision making\n'
-      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare, such as with NTRK testing for Rozlytrek.\n'
+      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare.\n'
       + 'Level of funding of advanced diagnostics by healthcare systems is a key consideration as it may greatly vary across countries and regions',
   },
   {
@@ -369,7 +369,7 @@ const searchData = [
       + 'Key drivers/considerations\n'
       + 'Fast turnaround time for results from ordering a diagnostic to obtaining results is a key consideration in use to support timely decision making for patients\n'
       + 'Actionability of results is critical to uptake of diagnostic testing - i.e. the information provided by test results should impact treatment decision making\n'
-      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare, such as with NTRK testing for Rozlytrek.\n'
+      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare.\n'
       + 'Level of funding of advanced diagnostics by healthcare systems is a key consideration as it may greatly vary across countries and regions',
   },
   {
@@ -413,7 +413,7 @@ const searchData = [
       + 'Key drivers/considerations\n'
       + 'Fast turnaround time for results from ordering a diagnostic to obtaining results is a key consideration in use to support timely decision making for patients\n'
       + 'Actionability of results is critical to uptake of diagnostic testing - i.e. the information provided by test results should impact treatment decision making\n'
-      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare, such as with NTRK testing for Rozlytrek.\n'
+      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare, such as with NTRK testing for Examples.\n'
       + 'Level of funding of advanced diagnostics by healthcare systems is a key consideration as it may greatly vary across countries and regions',
   },
   {
@@ -457,7 +457,7 @@ const searchData = [
       + 'Key drivers/considerations\n'
       + 'Fast turnaround time for results from ordering a diagnostic to obtaining results is a key consideration in use to support timely decision making for patients\n'
       + 'Actionability of results is critical to uptake of diagnostic testing - i.e. the information provided by test results should impact treatment decision making\n'
-      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare, such as with NTRK testing for Rozlytrek.\n'
+      + 'Broad access to quality testing is imperative to ensure patients can be identified for appropriate treatment. This is especially important where alternatives do not exist and/or markers being tested for are very rare.\n'
       + 'Level of funding of advanced diagnostics by healthcare systems is a key consideration as it may greatly vary across countries and regions',
   },
   {
@@ -1090,16 +1090,16 @@ const searchData = [
       + 'Shining Tower initiatives launched in 10 countries around the World will enable critical business drivers. Each initiative aim at demonstrating the feasibility of PHC and integrates PHC solutions.',
   },
   {
-    link: '/phc/systems-enablers/roches-initiatives/rozlytrek',
-    content: 'Rozlytrek (entrectinib)\n'
-      + 'Quote from Head of Roche Pharma, Bill Anderson, on Rozlytrek:\n'
+    link: '/phc/systems-enablers/roches-initiatives/examples',
+    content: 'Examples (entrectinib)\n'
+      + 'Quote from Head of Roche Pharma, Bill Anderson, on Examples:\n'
       + '\n'
-      + '“Rozlytrek represents everything that we stand for when it comes to personalised healthcare (PHC). In fact it\'s a medicine that is impossible without PHC! Here’s why:\n'
-      + 'In the past we worked to treat a specific tumor type, for example lung cancer or breast cancer, and where possible added a companion diagnostic. With Rozlytrek we have a medicine that is tumor agnostic, meaning we focus on a cancer’s genomic alterations rather than in which organ the cancer started in the body. In the case of Rozlytrek we are targeting tumors with mutations in ROS1 or NTRK genes.\n'
-      + 'Because these rare mutations occur in numerous tumor types, molecular profiling and next-generation sequencing play an essential role in identifying individuals who can benefit, and this has implications for how we work with healthcare systems to bring this medicine to market. Unless we establish molecular profiling as part of the standard of care, many patients will never have the chance to benefit from Rozlytrek. And having seen remarkable response rates, particularly in patients whose cancer has spread to the brain, we are compelled to see this through.\n'
-      + 'PHC, in the form of real-world data, was also essential to the Rozlytrek clinical development approach. In one of our studies it was not feasible to include a comparator arm due to the rarity of the patient group we were studying — so we developed an external control arm using Flatiron data to compare the Rozlytrek treated patients against a real-world cohort treated with the standard of care. This comparative real-word data have been submitted to authorities with our filings in the US, Japan and Europe and are a great example of making research more efficient and providing a better option for participants; since all received Rozlytrek, none received placebo."\n'
+      + '“Examples represents everything that we stand for when it comes to personalised healthcare (PHC). In fact it\'s a medicine that is impossible without PHC! Here’s why:\n'
+      + 'In the past we worked to treat a specific tumor type, for example lung cancer or breast cancer, and where possible added a companion diagnostic. With Examples we have a medicine that is tumor agnostic, meaning we focus on a cancer’s genomic alterations rather than in which organ the cancer started in the body. In the case of Examples we are targeting tumors with mutations in ROS1 or NTRK genes.\n'
+      + 'Because these rare mutations occur in numerous tumor types, molecular profiling and next-generation sequencing play an essential role in identifying individuals who can benefit, and this has implications for how we work with healthcare systems to bring this medicine to market. Unless we establish molecular profiling as part of the standard of care, many patients will never have the chance to benefit from Examples. And having seen remarkable response rates, particularly in patients whose cancer has spread to the brain, we are compelled to see this through.\n'
+      + 'PHC, in the form of real-world data, was also essential to the Examples clinical development approach. In one of our studies it was not feasible to include a comparator arm due to the rarity of the patient group we were studying — so we developed an external control arm using Flatiron data to compare the Examples treated patients against a real-world cohort treated with the standard of care. This comparative real-word data have been submitted to authorities with our filings in the US, Japan and Europe and are a great example of making research more efficient and providing a better option for participants; since all received Examples, none received placebo."\n'
       + '\n'
-      + 'Check out the media release of FDA’s approval Roche’s Rozlytrek (entrectinib) for people with ROS1-positive, metastatic non-small cell lung cancer and NTRK gene fusion-positive solid tumours.',
+      + 'Check out the media release of FDA’s approval Roche’s Examples (entrectinib) for people with ROS1-positive, metastatic non-small cell lung cancer and NTRK gene fusion-positive solid tumours.',
   },
   {
     link: '/phc/future-patient-journey/access/value-based-healthcare',

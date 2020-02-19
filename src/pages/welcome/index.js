@@ -164,7 +164,7 @@ const enablersOptions = [
       '/phc/systems-enablers/roches-initiatives/context',
       '/phc/systems-enablers/roches-initiatives/showcases',
       '/phc/systems-enablers/roches-initiatives/shining-towers',
-      '/phc/systems-enablers/roches-initiatives/rozlytrek',
+      '/phc/systems-enablers/roches-initiatives/examples',
     ],
   },
   {

@@ -39,7 +39,7 @@ import AccessOverview from '../pages/journey/access/Overview';
 import Partners from '../pages/enablers/partners';
 import RocheInitiatives from '../pages/enablers/roche';
 import Context from '../pages/enablers/roche/Context';
-import Rozlytrek from '../pages/enablers/roche/Rozlytrek';
+import Rozlytrek from '../pages/enablers/roche/Examples';
 import ShiningTowers from '../pages/enablers/roche/ShinigTowers';
 import Showcases from '../pages/enablers/roche/Showcases';
 import PatientPartnership from '../pages/enablers/partners/PatientPartnership';
@@ -277,7 +277,7 @@ const Routes = (props) => [
   />,
   <PublicRoute
     exact
-    path="/phc/systems-enablers/roches-initiatives/rozlytrek"
+    path="/phc/systems-enablers/roches-initiatives/examples"
     component={Rozlytrek}
     props={props}
     key="systems-enablers-roches-initiatives-rozlytrek"

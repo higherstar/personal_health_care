@@ -111,6 +111,9 @@ const modalContent = (
         <strong>Kelly Haenlein</strong>
       </p>
       <p>
+        <strong>Ankush Kalbalia</strong>
+      </p>
+      <p>
         <strong>Ruchika Kumar</strong>
       </p>
       <p>
@@ -129,6 +132,9 @@ const modalContent = (
         <strong>Hans Middelhoven</strong>
       </p>
       <p>
+        <strong>Marius Mueller</strong>
+      </p>
+      <p>
         <strong>Pouya Pakneshan</strong>
       </p>
       <p>
@@ -141,6 +147,9 @@ const modalContent = (
         <strong>Jennifer Pougnet</strong>
       </p>
       <p>
+        <strong>Claudia Reichelt</strong>
+      </p>
+      <p>
         <strong>Marlene Thomas</strong>
       </p>
       <p>
@@ -148,6 +157,9 @@ const modalContent = (
       </p>
       <p>
         <strong>Penelope Wood</strong>
+      </p>
+      <p>
+        <strong>Xinzheng Chen</strong>
       </p>
       <p>
         <strong>Karolina Zydziak</strong>

@@ -315,13 +315,8 @@ Roche makes these diagnostics available to more patients faster through its comm
       <li>
         <strong>Broad access to quality testing </strong>
         {' '}
-        is imperative to ensure patients can be identified for
-        appropriate treatment. This is especially important where alternatives do not exist and/or markers
-        being tested for are very rare, such as with NTRK testing for
-        {' '}
-        <Link to="/phc/systems-enablers/roches-initiatives/rozlytrek">
-          Rozlytrek.
-        </Link>
+        is imperative to ensure patients can be identified for appropriate treatment. This is especially important
+        where alternatives do not exist and/or markers being tested for are very rare.
       </li>
       <li>
         <strong>Level of funding </strong>

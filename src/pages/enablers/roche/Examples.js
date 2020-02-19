@@ -44,21 +44,21 @@ const navOptions = [
     parentTitle: 'Roche Initiatives',
     parentLink: '/phc/systems-enablers',
     link: '/phc/systems-enablers/roches-initiatives/examples',
-    active: false,
+    active: true,
   },
 ];
 
 const mainContent = (
   <div className="d-flex justify-content-center">
-    <h1>Coming soon</h1>
+    <h1>Coming Soon</h1>
   </div>
 );
 
-function RocheInitiatives(props) {
+function Examples(props) {
   const { isMobile, mobileCollapsed, handleMenuClick } = props;
 
   const content = (
-    <div className="enablers-roche d-flex align-items-center justify-content-center">
+    <div className="enablers-roche roche-rozlytrek d-flex align-items-center justify-content-center">
       <div className="detail-map">
         <img src={mapImage} alt="detail map" />
       </div>
@@ -79,10 +79,10 @@ function RocheInitiatives(props) {
   );
 }
 
-RocheInitiatives.propTypes = {
+Examples.propTypes = {
   isMobile: PropTypes.bool.isRequired,
   mobileCollapsed: PropTypes.bool.isRequired,
   handleMenuClick: PropTypes.func.isRequired,
 };
 
-export default RocheInitiatives;
+export default Examples;

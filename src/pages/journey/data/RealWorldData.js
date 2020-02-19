@@ -192,6 +192,14 @@ function RealWorldData(props) {
         <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/PHCStarterPack">
           PHC Pharma Starter Pack
         </a>
+        {' '}
+        and the
+        {' '}
+        <a target="_blank" rel="noopener noreferrer" href="https://go.roche.com/RWE">
+          “Advanced Real-World Evidence”
+        </a>
+        {' '}
+        curriculum
         .
       </span>
       <hr />
