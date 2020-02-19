@@ -199,8 +199,7 @@ function RealWorldData(props) {
           “Advanced Real-World Evidence”
         </a>
         {' '}
-        curriculum
-        .
+        curriculum.
       </span>
       <hr />
       <h2>
